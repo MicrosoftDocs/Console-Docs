@@ -1,6 +1,4 @@
 ---
-title: SMALL_RECT structure
-description: Defines the coordinates of the upper left and lower right corners of a rectangle.
 author: bitcrazed
 ms.author: richturn
 ms.topic: article
