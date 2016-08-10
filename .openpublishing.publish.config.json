@@ -1,6 +1,6 @@
 {
     "build_entry_point": "",
-    "git_repository_url_open_to_public_contributors": "https://github.com/Microsoft/CommandLine-Documentation",
+    "git_repository_url_open_to_public_contributors": "https://github.com/Microsoft/Console-Docs",
     "docsets_to_publish": [
         {
             "docset_name": "MSFT_commandline",
@@ -13,6 +13,6 @@
             }
         }
     ],
-    "notification_subscribers": ["richturn@microsoft.com","jahammo@microsoft.com"],
+    "notification_subscribers": ["richturn@microsoft.com","yodurr@microsoft.com","gillesk@microsoft.com","miniksa@microsoft.com"],
     "branches_to_filter": [""]
 }
