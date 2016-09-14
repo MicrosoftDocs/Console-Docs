@@ -1,0 +1,124 @@
+---
+title: GetConsoleScreenBufferInfo function
+description: Retrieves information about the specified console screen buffer.
+MS-HAID:
+- '\_win32\_getconsolescreenbufferinfo'
+- 'base.getconsolescreenbufferinfo'
+- 'consoles.getconsolescreenbufferinfo'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/desktop'
+ms.assetid: eafe819e-a99a-4ce1-8898-8860444a31af
+keywords: ["GetConsoleScreenBufferInfo function Consoles"]
+topic_type:
+- apiref
+api_name:
+- GetConsoleScreenBufferInfo
+api_location:
+- Kernel32.dll
+- API-MS-Win-Core-Console-l2-1-0.dll
+- KernelBase.dll
+- API-MS-Win-DownLevel-Kernel32-l1-1-0.dll
+api_type:
+- DllExport
+---
+
+# GetConsoleScreenBufferInfo function
+
+
+Retrieves information about the specified console screen buffer.
+
+Syntax
+------
+
+```ManagedCPlusPlus
+BOOL WINAPI GetConsoleScreenBufferInfo(
+  _In_  HANDLE                      hConsoleOutput,
+  _Out_ PCONSOLE_SCREEN_BUFFER_INFO lpConsoleScreenBufferInfo
+);
+```
+
+Parameters
+----------
+
+*hConsoleOutput* \[in\]  
+A handle to the console screen buffer. The handle must have the **GENERIC\_READ** access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
+
+*lpConsoleScreenBufferInfo* \[out\]  
+A pointer to a [**CONSOLE\_SCREEN\_BUFFER\_INFO**](console-screen-buffer-info-str.md) structure that receives the console screen buffer information.
+
+Return value
+------------
+
+If the function succeeds, the return value is nonzero.
+
+If the function fails, the return value is zero. To get extended error information, call [**GetLastError**](https://msdn.microsoft.com/library/windows/desktop/ms679360).
+
+Remarks
+-------
+
+The rectangle returned in the **srWindow** member of the [**CONSOLE\_SCREEN\_BUFFER\_INFO**](console-screen-buffer-info-str.md) structure can be modified and then passed to the [**SetConsoleWindowInfo**](setconsolewindowinfo.md) function to scroll the console screen buffer in the window, to change the size of the window, or both.
+
+All coordinates returned in the [**CONSOLE\_SCREEN\_BUFFER\_INFO**](console-screen-buffer-info-str.md) structure are in character-cell coordinates, where the origin (0, 0) is at the upper-left corner of the console screen buffer.
+
+Examples
+--------
+
+For an example, see [Scrolling a Screen Buffer's Window](scrolling-a-screen-buffer-s-window.md).
+
+Requirements
+------------
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><p>Minimum supported client</p></td>
+<td><p>Windows 2000 Professional [desktop apps only]</p></td>
+</tr>
+<tr class="even">
+<td><p>Minimum supported server</p></td>
+<td><p>Windows 2000 Server [desktop apps only]</p></td>
+</tr>
+<tr class="odd">
+<td><p>Header</p></td>
+<td>Wincon.h (include Windows.h)</td>
+</tr>
+<tr class="even">
+<td><p>Library</p></td>
+<td>Kernel32.lib</td>
+</tr>
+<tr class="odd">
+<td><p>DLL</p></td>
+<td>Kernel32.dll</td>
+</tr>
+</tbody>
+</table>
+
+## See also
+
+
+[Console Functions](console-functions.md)
+
+[**CONSOLE\_SCREEN\_BUFFER\_INFO**](console-screen-buffer-info-str.md)
+
+[**GetLargestConsoleWindowSize**](getlargestconsolewindowsize.md)
+
+[**SetConsoleCursorPosition**](setconsolecursorposition.md)
+
+[**SetConsoleScreenBufferSize**](setconsolescreenbuffersize.md)
+
+[**SetConsoleWindowInfo**](setconsolewindowinfo.md)
+
+[Window and Screen Buffer Size](window-and-screen-buffer-size.md)
+
+ 
+
+ 
+
+
+
+

@@ -1,0 +1,114 @@
+---
+title: CONSOLE\_HISTORY\_INFO structure
+description: Contains information about the console history.
+MS-HAID:
+- 'base.console\_history\_info'
+- 'consoles.console\_history\_info'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/desktop'
+ms.assetid: df7d2f12-5299-47ed-b1f6-2db903dba81b
+keywords: ["CONSOLE_HISTORY_INFO structure Consoles", "PCONSOLE_HISTORY_INFO structure pointer Consoles"]
+topic_type:
+- apiref
+api_name:
+- CONSOLE_HISTORY_INFO
+api_location:
+- Wincon.h
+api_type:
+- HeaderDef
+---
+
+# CONSOLE\_HISTORY\_INFO structure
+
+
+Contains information about the console history.
+
+Syntax
+------
+
+```ManagedCPlusPlus
+typedef struct {
+  UINT  cbSize;
+  UINT  HistoryBufferSize;
+  UINT  NumberOfHistoryBuffers;
+  DWORD dwFlags;
+} CONSOLE_HISTORY_INFO, *PCONSOLE_HISTORY_INFO;
+```
+
+Members
+-------
+
+**cbSize**  
+The size of the structure, in bytes. Set this member to `sizeof(CONSOLE_HISTORY_INFO)`.
+
+**HistoryBufferSize**  
+The number of commands kept in each history buffer.
+
+**NumberOfHistoryBuffers**  
+The number of history buffers kept for this console process.
+
+**dwFlags**  
+This parameter can be zero or the following value.
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Value</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="" id="history-no-dup-flag"></a>
+<strong>HISTORY_NO_DUP_FLAG</strong>
+0x1</td>
+<td><p>Duplicate entries will not be stored in the history buffer.</p></td>
+</tr>
+</tbody>
+</table>
+
+ 
+
+Requirements
+------------
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><p>Minimum supported client</p></td>
+<td><p>Windows Vista [desktop apps only]</p></td>
+</tr>
+<tr class="even">
+<td><p>Minimum supported server</p></td>
+<td><p>Windows Server 2008 [desktop apps only]</p></td>
+</tr>
+<tr class="odd">
+<td><p>Header</p></td>
+<td>Wincon.h</td>
+</tr>
+</tbody>
+</table>
+
+## See also
+
+
+[**GetConsoleHistoryInfo**](getconsolehistoryinfo.md)
+
+[**SetConsoleHistoryInfo**](setconsolehistoryinfo.md)
+
+ 
+
+ 
+
+
+
+
