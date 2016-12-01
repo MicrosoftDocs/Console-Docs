@@ -64,7 +64,7 @@ Requirements
 </tbody>
 </table>
 
-## See also
+## <span id="see_also"></span>See also
 
 
 [**INPUT\_RECORD**](input-record-str.md)

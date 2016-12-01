@@ -93,7 +93,7 @@ return 0;
 }
 ```
 
-## Related topics
+## <span id="related_topics"></span>Related topics
 
 
 [Scrolling a Screen Buffer's Window](scrolling-a-screen-buffer-s-window.md)

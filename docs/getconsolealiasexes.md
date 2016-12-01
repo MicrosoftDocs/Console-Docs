@@ -92,10 +92,18 @@ Requirements
 <td><p>Unicode and ANSI names</p></td>
 <td><p><strong>GetConsoleAliasExesW</strong> (Unicode) and <strong>GetConsoleAliasExesA</strong> (ANSI)</p></td>
 </tr>
+<tr class="odd">
+</tr>
+<tr class="even">
+</tr>
+<tr class="odd">
+</tr>
+<tr class="even">
+</tr>
 </tbody>
 </table>
 
-## See also
+## <span id="see_also"></span>See also
 
 
 [**AddConsoleAlias**](addconsolealias.md)

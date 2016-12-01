@@ -110,10 +110,18 @@ Requirements
 <td><p>Unicode and ANSI names</p></td>
 <td><p><strong>ReadConsoleOutputCharacterW</strong> (Unicode) and <strong>ReadConsoleOutputCharacterA</strong> (ANSI)</p></td>
 </tr>
+<tr class="odd">
+</tr>
+<tr class="even">
+</tr>
+<tr class="odd">
+</tr>
+<tr class="even">
+</tr>
 </tbody>
 </table>
 
-## See also
+## <span id="see_also"></span>See also
 
 
 [Console Functions](console-functions.md)

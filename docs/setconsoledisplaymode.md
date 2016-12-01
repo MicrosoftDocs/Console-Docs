@@ -57,13 +57,13 @@ The display mode of the console. This parameter can be one or more of the follow
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="" id="console-fullscreen-mode"></a>
+<td><span id="CONSOLE_FULLSCREEN_MODE"></span><span id="console_fullscreen_mode"></span>
 <strong>CONSOLE_FULLSCREEN_MODE</strong>
 1</td>
 <td><p>Text is displayed in full-screen mode.</p></td>
 </tr>
 <tr class="even">
-<td><a href="" id="console-windowed-mode"></a>
+<td><span id="CONSOLE_WINDOWED_MODE"></span><span id="console_windowed_mode"></span>
 <strong>CONSOLE_WINDOWED_MODE</strong>
 2</td>
 <td><p>Text is displayed in a console window.</p></td>
@@ -112,10 +112,16 @@ Requirements
 <td><p>DLL</p></td>
 <td>Kernel32.dll</td>
 </tr>
+<tr class="even">
+</tr>
+<tr class="odd">
+</tr>
+<tr class="even">
+</tr>
 </tbody>
 </table>
 
-## See also
+## <span id="see_also"></span>See also
 
 
 [Console Functions](console-functions.md)

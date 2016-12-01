@@ -57,13 +57,13 @@ The type of signal to be generated. This parameter can be one of the following v
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="" id="ctrl-c-event"></a>
+<td><span id="CTRL_C_EVENT"></span><span id="ctrl_c_event"></span>
 <strong>CTRL_C_EVENT</strong>
 0</td>
 <td><p>Generates a CTRL+C signal. This signal cannot be generated for process groups. If <em>dwProcessGroupId</em> is nonzero, this function will succeed, but the CTRL+C signal will not be received by processes within the specified process group.</p></td>
 </tr>
 <tr class="even">
-<td><a href="" id="ctrl-break-event"></a>
+<td><span id="CTRL_BREAK_EVENT"></span><span id="ctrl_break_event"></span>
 <strong>CTRL_BREAK_EVENT</strong>
 1</td>
 <td><p>Generates a CTRL+BREAK signal.</p></td>
@@ -121,10 +121,16 @@ Requirements
 <td><p>DLL</p></td>
 <td>Kernel32.dll</td>
 </tr>
+<tr class="even">
+</tr>
+<tr class="odd">
+</tr>
+<tr class="even">
+</tr>
 </tbody>
 </table>
 
-## See also
+## <span id="see_also"></span>See also
 
 
 [Console Control Handlers](console-control-handlers.md)

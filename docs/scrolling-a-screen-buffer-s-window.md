@@ -127,7 +127,7 @@ int main( void )
 }
 ```
 
-## Related topics
+## <span id="related_topics"></span>Related topics
 
 
 [Scrolling a Screen Buffer's Contents](scrolling-a-screen-buffer-s-contents.md)

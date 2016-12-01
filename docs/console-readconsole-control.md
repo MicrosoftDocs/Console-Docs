@@ -64,58 +64,72 @@ The state of the control keys. This member can be one or more of the following v
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="" id="capslock-on"></a>
+<td><span id="CAPSLOCK_ON"></span><span id="capslock_on"></span>
 <strong>CAPSLOCK_ON</strong>
 0x0080</td>
 <td><p>The CAPS LOCK light is on.</p></td>
 </tr>
 <tr class="even">
-<td><a href="" id="enhanced-key"></a>
+<td><span id="ENHANCED_KEY"></span><span id="enhanced_key"></span>
 <strong>ENHANCED_KEY</strong>
 0x0100</td>
 <td><p>The key is enhanced.</p></td>
 </tr>
 <tr class="odd">
-<td><a href="" id="left-alt-pressed"></a>
+<td><span id="LEFT_ALT_PRESSED"></span><span id="left_alt_pressed"></span>
 <strong>LEFT_ALT_PRESSED</strong>
 0x0002</td>
 <td><p>The left ALT key is pressed.</p></td>
 </tr>
 <tr class="even">
-<td><a href="" id="left-ctrl-pressed"></a>
+<td><span id="LEFT_CTRL_PRESSED"></span><span id="left_ctrl_pressed"></span>
 <strong>LEFT_CTRL_PRESSED</strong>
 0x0008</td>
 <td><p>The left CTRL key is pressed.</p></td>
 </tr>
 <tr class="odd">
-<td><a href="" id="numlock-on"></a>
+<td><span id="NUMLOCK_ON"></span><span id="numlock_on"></span>
 <strong>NUMLOCK_ON</strong>
 0x0020</td>
 <td><p>The NUM LOCK light is on.</p></td>
 </tr>
 <tr class="even">
-<td><a href="" id="right-alt-pressed"></a>
+<td><span id="RIGHT_ALT_PRESSED"></span><span id="right_alt_pressed"></span>
 <strong>RIGHT_ALT_PRESSED</strong>
 0x0001</td>
 <td><p>The right ALT key is pressed.</p></td>
 </tr>
 <tr class="odd">
-<td><a href="" id="right-ctrl-pressed"></a>
+<td><span id="RIGHT_CTRL_PRESSED"></span><span id="right_ctrl_pressed"></span>
 <strong>RIGHT_CTRL_PRESSED</strong>
 0x0004</td>
 <td><p>The right CTRL key is pressed.</p></td>
 </tr>
 <tr class="even">
-<td><a href="" id="scrolllock-on"></a>
+<td><span id="SCROLLLOCK_ON"></span><span id="scrolllock_on"></span>
 <strong>SCROLLLOCK_ON</strong>
 0x0040</td>
 <td><p>The SCROLL LOCK light is on.</p></td>
 </tr>
 <tr class="odd">
-<td><a href="" id="shift-pressed"></a>
+<td><span id="SHIFT_PRESSED"></span><span id="shift_pressed"></span>
 <strong>SHIFT_PRESSED</strong>
 0x0010</td>
 <td><p>The SHIFT key is pressed.</p></td>
+</tr>
+<tr class="even">
+</tr>
+<tr class="odd">
+</tr>
+<tr class="even">
+</tr>
+<tr class="odd">
+</tr>
+<tr class="even">
+</tr>
+<tr class="odd">
+</tr>
+<tr class="even">
 </tr>
 </tbody>
 </table>
@@ -146,7 +160,7 @@ Requirements
 </tbody>
 </table>
 
-## See also
+## <span id="see_also"></span>See also
 
 
 [**ReadConsole**](readconsole.md)

@@ -59,19 +59,19 @@ The standard device for which the handle is to be set. This parameter can be one
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="" id="std-input-handle"></a>
+<td><span id="STD_INPUT_HANDLE"></span><span id="std_input_handle"></span>
 <strong>STD_INPUT_HANDLE</strong>
 (DWORD)-10</td>
 <td><p>The standard input device.</p></td>
 </tr>
 <tr class="even">
-<td><a href="" id="std-output-handle"></a>
+<td><span id="STD_OUTPUT_HANDLE"></span><span id="std_output_handle"></span>
 <strong>STD_OUTPUT_HANDLE</strong>
 (DWORD)-11</td>
 <td><p>The standard output device.</p></td>
 </tr>
 <tr class="odd">
-<td><a href="" id="std-error-handle"></a>
+<td><span id="STD_ERROR_HANDLE"></span><span id="std_error_handle"></span>
 <strong>STD_ERROR_HANDLE</strong>
 (DWORD)-12</td>
 <td><p>The standard error device.</p></td>
@@ -130,10 +130,16 @@ Requirements
 <td><p>DLL</p></td>
 <td>Kernel32.dll</td>
 </tr>
+<tr class="even">
+</tr>
+<tr class="odd">
+</tr>
+<tr class="even">
+</tr>
 </tbody>
 </table>
 
-## See also
+## <span id="see_also"></span>See also
 
 
 [Console Functions](console-functions.md)

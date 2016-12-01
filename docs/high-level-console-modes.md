@@ -62,6 +62,12 @@ An application can use the [**GetConsoleMode**](getconsolemode.md) function to d
 <td>Used with a console screen buffer handle to cause the current output position (cursor position) to move to the first column in the next row (line) when the end of the current row is reached. If the bottom of the window region is reached, the window origin is moved down one row. This movement has the effect of scrolling the contents of the window up one row. If the bottom of the console screen buffer is reached, the contents of the console screen buffer are scrolled up one row, and the top row of the console screen buffer is discarded.
 <p>If this mode is disabled, the last character in the row is overwritten with any subsequent characters.</p></td>
 </tr>
+<tr class="even">
+</tr>
+<tr class="odd">
+</tr>
+<tr class="even">
+</tr>
 </tbody>
 </table>
 

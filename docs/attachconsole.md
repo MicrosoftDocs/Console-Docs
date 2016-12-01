@@ -60,7 +60,7 @@ The identifier of the process whose console is to be used. This parameter can be
 <td><p>Use the console of the specified process.</p></td>
 </tr>
 <tr class="even">
-<td><a href="" id="attach-parent-process"></a>
+<td><span id="ATTACH_PARENT_PROCESS"></span><span id="attach_parent_process"></span>
 <strong>ATTACH_PARENT_PROCESS</strong>
 (DWORD)-1</td>
 <td><p>Use the console of the parent of the current process.</p></td>
@@ -80,7 +80,7 @@ If the function fails, the return value is zero. To get extended error informati
 Remarks
 -------
 
-A process can be attached to at most one console. If the calling process is already attached to a console, the error code returned is **ERROR\_ACCESS\_DENIED** (5). If the specified process does not have a console, the error code returned is **ERROR\_INVALID\_HANDLE** (6). If the specified process does not exist, the error code returned is **ERROR\_GEN\_FAILURE** (31).
+A process can be attached to at most one console. If the calling process is already attached to a console, the error code returned is **ERROR\_ACCESS\_DENIED** (5). If the specified process does not have a console, the error code returned is **ERROR\_INVALID\_HANDLE** (6). If the specified process does not exist, the error code returned is **ERROR\_INVALID\_PARAMETER** (87).
 
 A process can use the [**FreeConsole**](freeconsole.md) function to detach itself from its console. If other processes share the console, the console is not destroyed, but the process that called **FreeConsole** cannot refer to it. A console is closed when the last process attached to it terminates or calls **FreeConsole**. After a process calls **FreeConsole**, it can call the [**AllocConsole**](allocconsole.md) function to create a new console or **AttachConsole** to attach to another console.
 
@@ -115,10 +115,16 @@ Requirements
 <td><p>DLL</p></td>
 <td>Kernel32.dll</td>
 </tr>
+<tr class="even">
+</tr>
+<tr class="odd">
+</tr>
+<tr class="even">
+</tr>
 </tbody>
 </table>
 
-## See also
+## <span id="see_also"></span>See also
 
 
 [Console Functions](console-functions.md)

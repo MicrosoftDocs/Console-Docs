@@ -118,10 +118,16 @@ Requirements
 <td><p>DLL</p></td>
 <td>Kernel32.dll</td>
 </tr>
+<tr class="even">
+</tr>
+<tr class="odd">
+</tr>
+<tr class="even">
+</tr>
 </tbody>
 </table>
 
-## See also
+## <span id="see_also"></span>See also
 
 
 [Console Control Handlers](console-control-handlers.md)

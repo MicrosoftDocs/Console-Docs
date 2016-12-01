@@ -61,34 +61,40 @@ The following constants are defined for the first five mouse buttons.
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="" id="from-left-1st-button-pressed"></a>
+<td><span id="FROM_LEFT_1ST_BUTTON_PRESSED"></span><span id="from_left_1st_button_pressed"></span>
 <strong>FROM_LEFT_1ST_BUTTON_PRESSED</strong>
 0x0001</td>
 <td><p>The leftmost mouse button.</p></td>
 </tr>
 <tr class="even">
-<td><a href="" id="from-left-2nd-button-pressed"></a>
+<td><span id="FROM_LEFT_2ND_BUTTON_PRESSED"></span><span id="from_left_2nd_button_pressed"></span>
 <strong>FROM_LEFT_2ND_BUTTON_PRESSED</strong>
 0x0004</td>
 <td><p>The second button from the left.</p></td>
 </tr>
 <tr class="odd">
-<td><a href="" id="from-left-3rd-button-pressed"></a>
+<td><span id="FROM_LEFT_3RD_BUTTON_PRESSED"></span><span id="from_left_3rd_button_pressed"></span>
 <strong>FROM_LEFT_3RD_BUTTON_PRESSED</strong>
 0x0008</td>
 <td><p>The third button from the left.</p></td>
 </tr>
 <tr class="even">
-<td><a href="" id="from-left-4th-button-pressed"></a>
+<td><span id="FROM_LEFT_4TH_BUTTON_PRESSED"></span><span id="from_left_4th_button_pressed"></span>
 <strong>FROM_LEFT_4TH_BUTTON_PRESSED</strong>
 0x0010</td>
 <td><p>The fourth button from the left.</p></td>
 </tr>
 <tr class="odd">
-<td><a href="" id="rightmost-button-pressed"></a>
+<td><span id="RIGHTMOST_BUTTON_PRESSED"></span><span id="rightmost_button_pressed"></span>
 <strong>RIGHTMOST_BUTTON_PRESSED</strong>
 0x0002</td>
 <td><p>The rightmost mouse button.</p></td>
+</tr>
+<tr class="even">
+</tr>
+<tr class="odd">
+</tr>
+<tr class="even">
 </tr>
 </tbody>
 </table>
@@ -111,58 +117,72 @@ The state of the control keys. This member can be one or more of the following v
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="" id="capslock-on"></a>
+<td><span id="CAPSLOCK_ON"></span><span id="capslock_on"></span>
 <strong>CAPSLOCK_ON</strong>
 0x0080</td>
 <td><p>The CAPS LOCK light is on.</p></td>
 </tr>
 <tr class="even">
-<td><a href="" id="enhanced-key"></a>
+<td><span id="ENHANCED_KEY"></span><span id="enhanced_key"></span>
 <strong>ENHANCED_KEY</strong>
 0x0100</td>
 <td><p>The key is enhanced.</p></td>
 </tr>
 <tr class="odd">
-<td><a href="" id="left-alt-pressed"></a>
+<td><span id="LEFT_ALT_PRESSED"></span><span id="left_alt_pressed"></span>
 <strong>LEFT_ALT_PRESSED</strong>
 0x0002</td>
 <td><p>The left ALT key is pressed.</p></td>
 </tr>
 <tr class="even">
-<td><a href="" id="left-ctrl-pressed"></a>
+<td><span id="LEFT_CTRL_PRESSED"></span><span id="left_ctrl_pressed"></span>
 <strong>LEFT_CTRL_PRESSED</strong>
 0x0008</td>
 <td><p>The left CTRL key is pressed.</p></td>
 </tr>
 <tr class="odd">
-<td><a href="" id="numlock-on"></a>
+<td><span id="NUMLOCK_ON"></span><span id="numlock_on"></span>
 <strong>NUMLOCK_ON</strong>
 0x0020</td>
 <td><p>The NUM LOCK light is on.</p></td>
 </tr>
 <tr class="even">
-<td><a href="" id="right-alt-pressed"></a>
+<td><span id="RIGHT_ALT_PRESSED"></span><span id="right_alt_pressed"></span>
 <strong>RIGHT_ALT_PRESSED</strong>
 0x0001</td>
 <td><p>The right ALT key is pressed.</p></td>
 </tr>
 <tr class="odd">
-<td><a href="" id="right-ctrl-pressed"></a>
+<td><span id="RIGHT_CTRL_PRESSED"></span><span id="right_ctrl_pressed"></span>
 <strong>RIGHT_CTRL_PRESSED</strong>
 0x0004</td>
 <td><p>The right CTRL key is pressed.</p></td>
 </tr>
 <tr class="even">
-<td><a href="" id="scrolllock-on"></a>
+<td><span id="SCROLLLOCK_ON"></span><span id="scrolllock_on"></span>
 <strong>SCROLLLOCK_ON</strong>
 0x0040</td>
 <td><p>The SCROLL LOCK light is on.</p></td>
 </tr>
 <tr class="odd">
-<td><a href="" id="shift-pressed"></a>
+<td><span id="SHIFT_PRESSED"></span><span id="shift_pressed"></span>
 <strong>SHIFT_PRESSED</strong>
 0x0010</td>
 <td><p>The SHIFT key is pressed.</p></td>
+</tr>
+<tr class="even">
+</tr>
+<tr class="odd">
+</tr>
+<tr class="even">
+</tr>
+<tr class="odd">
+</tr>
+<tr class="even">
+</tr>
+<tr class="odd">
+</tr>
+<tr class="even">
 </tr>
 </tbody>
 </table>
@@ -185,30 +205,34 @@ The type of mouse event. If this value is zero, it indicates a mouse button bein
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="" id="double-click"></a>
+<td><span id="DOUBLE_CLICK"></span><span id="double_click"></span>
 <strong>DOUBLE_CLICK</strong>
 0x0002</td>
 <td><p>The second click (button press) of a double-click occurred. The first click is returned as a regular button-press event.</p></td>
 </tr>
 <tr class="even">
-<td><a href="" id="mouse-hwheeled"></a>
+<td><span id="MOUSE_HWHEELED"></span><span id="mouse_hwheeled"></span>
 <strong>MOUSE_HWHEELED</strong>
 0x0008</td>
 <td><p>The horizontal mouse wheel was moved.</p>
 <p>If the high word of the <strong>dwButtonState</strong> member contains a positive value, the wheel was rotated to the right. Otherwise, the wheel was rotated to the left.</p></td>
 </tr>
 <tr class="odd">
-<td><a href="" id="mouse-moved"></a>
+<td><span id="MOUSE_MOVED"></span><span id="mouse_moved"></span>
 <strong>MOUSE_MOVED</strong>
 0x0001</td>
 <td><p>A change in mouse position occurred.</p></td>
 </tr>
 <tr class="even">
-<td><a href="" id="mouse-wheeled"></a>
+<td><span id="MOUSE_WHEELED"></span><span id="mouse_wheeled"></span>
 <strong>MOUSE_WHEELED</strong>
 0x0004</td>
 <td><p>The vertical mouse wheel was moved.</p>
 <p>If the high word of the <strong>dwButtonState</strong> member contains a positive value, the wheel was rotated forward, away from the user. Otherwise, the wheel was rotated backward, toward the user.</p></td>
+</tr>
+<tr class="odd">
+</tr>
+<tr class="even">
 </tr>
 </tbody>
 </table>
@@ -251,7 +275,7 @@ Requirements
 </tbody>
 </table>
 
-## See also
+## <span id="see_also"></span>See also
 
 
 [**COORD**](coord-str.md)

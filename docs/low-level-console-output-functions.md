@@ -26,6 +26,10 @@ The following functions read from or write to a specified number of consecutive 
 | [**WriteConsoleOutputAttribute**](writeconsoleoutputattribute.md) | Writes a string of text and background color attributes to a screen buffer.                                             |
 | [**FillConsoleOutputCharacter**](fillconsoleoutputcharacter.md)   | Writes a single Unicode or ANSI character to a specified number of consecutive cells in a screen buffer.                |
 | [**FillConsoleOutputAttribute**](fillconsoleoutputattribute.md)   | Writes a text and background color attribute combination to a specified number of consecutive cells in a screen buffer. |
+||
+||
+||
+||
 
  
 

@@ -58,19 +58,19 @@ The standard device. This parameter can be one of the following values.
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="" id="std-input-handle"></a>
+<td><span id="STD_INPUT_HANDLE"></span><span id="std_input_handle"></span>
 <strong>STD_INPUT_HANDLE</strong>
 (DWORD)-10</td>
 <td><p>The standard input device. Initially, this is the console input buffer, CONIN$.</p></td>
 </tr>
 <tr class="even">
-<td><a href="" id="std-output-handle"></a>
+<td><span id="STD_OUTPUT_HANDLE"></span><span id="std_output_handle"></span>
 <strong>STD_OUTPUT_HANDLE</strong>
 (DWORD)-11</td>
 <td><p>The standard output device. Initially, this is the active console screen buffer, CONOUT$.</p></td>
 </tr>
 <tr class="odd">
-<td><a href="" id="std-error-handle"></a>
+<td><span id="STD_ERROR_HANDLE"></span><span id="std_error_handle"></span>
 <strong>STD_ERROR_HANDLE</strong>
 (DWORD)-12</td>
 <td><p>The standard error device. Initially, this is the active console screen buffer, CONOUT$.</p></td>
@@ -96,7 +96,7 @@ Handles returned by **GetStdHandle** can be used by applications that need to re
 
 The standard handles of a process may be redirected by a call to [**SetStdHandle**](setstdhandle.md), in which case **GetStdHandle** returns the redirected handle. If the standard handles have been redirected, you can specify the CONIN$ value in a call to the [**CreateFile**](https://msdn.microsoft.com/library/windows/desktop/aa363858) function to get a handle to a console's input buffer. Similarly, you can specify the CONOUT$ value to get a handle to a console's active screen buffer.
 
-### Attach/detach behavior
+### <span id="Attach_detach_behavior"></span><span id="attach_detach_behavior"></span><span id="ATTACH_DETACH_BEHAVIOR"></span>Attach/detach behavior
 
 When attaching to a new console, standard handles are always replaced with console handles unless **STARTF\_USESTDHANDLES** was specified during process creation.
 
@@ -138,10 +138,16 @@ Requirements
 <td><p>DLL</p></td>
 <td>Kernel32.dll</td>
 </tr>
+<tr class="even">
+</tr>
+<tr class="odd">
+</tr>
+<tr class="even">
+</tr>
 </tbody>
 </table>
 
-## See also
+## <span id="see_also"></span>See also
 
 
 [Console Functions](console-functions.md)

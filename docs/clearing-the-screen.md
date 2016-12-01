@@ -16,7 +16,7 @@ ms.assetid: 2097cc53-13b9-4f29-9d2c-feea56a27cb8
 
 There are two ways to clear the screen in a console application.
 
-## Example 1
+## <span id="Example_1"></span><span id="example_1"></span><span id="EXAMPLE_1"></span>Example 1
 
 
 The first method is to use the C run-time **system** function. The **system** function invokes the **cls** command provided by the command interpreter to clear the screen.
@@ -31,7 +31,7 @@ int main( void )
 }
 ```
 
-## Example 2
+## <span id="Example_2"></span><span id="example_2"></span><span id="EXAMPLE_2"></span>Example 2
 
 
 The second method is to write a function to programmatically clear the screen using the [**FillConsoleOutputCharacter**](fillconsoleoutputcharacter.md) and [**FillConsoleOutputAttribute**](fillconsoleoutputattribute.md) functions. The following sample code demonstrates this technique.

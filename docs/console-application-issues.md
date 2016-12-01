@@ -32,6 +32,13 @@ The following are file functions:
 | [**GetCurrentDirectory**](https://msdn.microsoft.com/library/windows/desktop/aa364934) | [**GetVolumeInformation**](https://msdn.microsoft.com/library/windows/desktop/aa364993) | [**SetCurrentDirectory**](https://msdn.microsoft.com/library/windows/desktop/aa365530) |
 | [**GetDiskFreeSpace**](https://msdn.microsoft.com/library/windows/desktop/aa364935)       | [**GetWindowsDirectory**](https://msdn.microsoft.com/library/windows/desktop/ms724454)   | [**SetFileAttributes**](https://msdn.microsoft.com/library/windows/desktop/aa365535)     |
 | [**GetDriveType**](https://msdn.microsoft.com/library/windows/desktop/aa364939)               |                                                       |                                                     |
+||
+||
+||
+||
+||
+||
+||
 
  
 

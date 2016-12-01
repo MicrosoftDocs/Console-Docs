@@ -63,13 +63,13 @@ This parameter can be zero, indicating that the buffer cannot be shared, or it c
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="" id="file-share-read"></a>
+<td><span id="FILE_SHARE_READ"></span><span id="file_share_read"></span>
 <strong>FILE_SHARE_READ</strong>
 0x00000001</td>
 <td><p>Other open operations can be performed on the console screen buffer for read access.</p></td>
 </tr>
 <tr class="even">
-<td><a href="" id="file-share-write"></a>
+<td><span id="FILE_SHARE_WRITE"></span><span id="file_share_write"></span>
 <strong>FILE_SHARE_WRITE</strong>
 0x00000002</td>
 <td><p>Other open operations can be performed on the console screen buffer for write access.</p></td>
@@ -140,10 +140,16 @@ Requirements
 <td><p>DLL</p></td>
 <td>Kernel32.dll</td>
 </tr>
+<tr class="even">
+</tr>
+<tr class="odd">
+</tr>
+<tr class="even">
+</tr>
 </tbody>
 </table>
 
-## See also
+## <span id="see_also"></span>See also
 
 
 [Console Functions](console-functions.md)

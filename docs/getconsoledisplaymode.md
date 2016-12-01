@@ -53,13 +53,13 @@ The display mode of the console. This parameter can be one or more of the follow
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="" id="console-fullscreen"></a>
+<td><span id="CONSOLE_FULLSCREEN"></span><span id="console_fullscreen"></span>
 <strong>CONSOLE_FULLSCREEN</strong>
 1</td>
 <td><p>Full-screen console. The console is in this mode as soon as the window is maximized. At this point, the transition to full-screen mode can still fail.</p></td>
 </tr>
 <tr class="even">
-<td><a href="" id="console-fullscreen-hardware"></a>
+<td><span id="CONSOLE_FULLSCREEN_HARDWARE"></span><span id="console_fullscreen_hardware"></span>
 <strong>CONSOLE_FULLSCREEN_HARDWARE</strong>
 2</td>
 <td><p>Full-screen console communicating directly with the video hardware. This mode is set after the console is in <strong>CONSOLE_FULLSCREEN</strong> mode to indicate that the transition to full-screen mode has completed.</p></td>
@@ -110,10 +110,16 @@ Requirements
 <td><p>DLL</p></td>
 <td>Kernel32.dll</td>
 </tr>
+<tr class="even">
+</tr>
+<tr class="odd">
+</tr>
+<tr class="even">
+</tr>
 </tbody>
 </table>
 
-## See also
+## <span id="see_also"></span>See also
 
 
 [Console Functions](console-functions.md)

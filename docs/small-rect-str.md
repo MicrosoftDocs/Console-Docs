@@ -86,7 +86,7 @@ Requirements
 </tbody>
 </table>
 
-## See also
+## <span id="see_also"></span>See also
 
 
 [**RECT**](https://msdn.microsoft.com/library/windows/desktop/dd162897)

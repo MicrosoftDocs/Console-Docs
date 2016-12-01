@@ -64,7 +64,7 @@ This parameter can be zero or the following value.
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="" id="history-no-dup-flag"></a>
+<td><span id="HISTORY_NO_DUP_FLAG"></span><span id="history_no_dup_flag"></span>
 <strong>HISTORY_NO_DUP_FLAG</strong>
 0x1</td>
 <td><p>Duplicate entries will not be stored in the history buffer.</p></td>
@@ -98,7 +98,7 @@ Requirements
 </tbody>
 </table>
 
-## See also
+## <span id="see_also"></span>See also
 
 
 [**GetConsoleHistoryInfo**](getconsolehistoryinfo.md)

@@ -55,34 +55,40 @@ The selection indicator. This member can be one or more of the following values.
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="" id="console-mouse-down"></a>
+<td><span id="CONSOLE_MOUSE_DOWN"></span><span id="console_mouse_down"></span>
 <strong>CONSOLE_MOUSE_DOWN</strong>
 0x0008</td>
 <td><p>Mouse is down</p></td>
 </tr>
 <tr class="even">
-<td><a href="" id="console-mouse-selection"></a>
+<td><span id="CONSOLE_MOUSE_SELECTION"></span><span id="console_mouse_selection"></span>
 <strong>CONSOLE_MOUSE_SELECTION</strong>
 0x0004</td>
 <td><p>Selecting with the mouse</p></td>
 </tr>
 <tr class="odd">
-<td><a href="" id="console-no-selection"></a>
+<td><span id="CONSOLE_NO_SELECTION"></span><span id="console_no_selection"></span>
 <strong>CONSOLE_NO_SELECTION</strong>
 0x0000</td>
 <td><p>No selection</p></td>
 </tr>
 <tr class="even">
-<td><a href="" id="console-selection-in-progress"></a>
+<td><span id="CONSOLE_SELECTION_IN_PROGRESS"></span><span id="console_selection_in_progress"></span>
 <strong>CONSOLE_SELECTION_IN_PROGRESS</strong>
 0x0001</td>
 <td><p>Selection has begun</p></td>
 </tr>
 <tr class="odd">
-<td><a href="" id="console-selection-not-empty"></a>
+<td><span id="CONSOLE_SELECTION_NOT_EMPTY"></span><span id="console_selection_not_empty"></span>
 <strong>CONSOLE_SELECTION_NOT_EMPTY</strong>
 0x0002</td>
 <td><p>Selection rectangle is not empty</p></td>
+</tr>
+<tr class="even">
+</tr>
+<tr class="odd">
+</tr>
+<tr class="even">
 </tr>
 </tbody>
 </table>
@@ -119,7 +125,7 @@ Requirements
 </tbody>
 </table>
 
-## See also
+## <span id="see_also"></span>See also
 
 
 [**COORD**](coord-str.md)

@@ -32,7 +32,7 @@ When a screen buffer is created, it contains blanks. Its cursor is visible and p
 
 Applications that change any of the console screen buffer properties should either create their own screen buffer or save the state of the inherited screen buffer during startup and restore it at exit.
 
-## <a href="" id="-win32-cursor-appearance-and-position"></a>Cursor Appearance and Position
+## <span id="_win32_cursor_appearance_and_position"></span><span id="_WIN32_CURSOR_APPEARANCE_AND_POSITION"></span>Cursor Appearance and Position
 
 
 A screen buffer's cursor can be visible or hidden. When it is visible, its appearance can vary, ranging from completely filling a character cell to appearing as a horizontal line at the bottom of the cell. To retrieve information about the appearance and visibility of the cursor, use the [**GetConsoleCursorInfo**](getconsolecursorinfo.md) function. This function reports whether the cursor is visible and describes the appearance of the cursor as the percentage of a character cell that it fills. To set the appearance and visibility of the cursor, use the [**SetConsoleCursorInfo**](setconsolecursorinfo.md) function.
@@ -41,7 +41,7 @@ Characters written by the high-level console I/O functions are written at the cu
 
 The position, appearance, and visibility of the cursor are set independently for each screen buffer.
 
-## <a href="" id="-win32-character-attributes"></a>Character Attributes
+## <span id="_win32_character_attributes"></span><span id="_WIN32_CHARACTER_ATTRIBUTES"></span>Character Attributes
 
 
 Character attributes can be divided into two classes: color and DBCS. The following attributes are defined in the Wincon.h header file.
@@ -63,6 +63,19 @@ Character attributes can be divided into two classes: color and DBCS. The follow
 | **COMMON\_LVB\_GRID\_RVERTICAL**  | Right vertical.                               |
 | **COMMON\_LVB\_REVERSE\_VIDEO**   | Reverse foreground and background attributes. |
 | **COMMON\_LVB\_UNDERSCORE**       | Underscore.                                   |
+||
+||
+||
+||
+||
+||
+||
+||
+||
+||
+||
+||
+||
 
  
 
@@ -80,7 +93,7 @@ Each screen buffer character cell stores the color attributes for the colors use
 
 An application can use [**GetConsoleScreenBufferInfo**](getconsolescreenbufferinfo.md) to determine the current text attributes of a screen buffer and the [**SetConsoleTextAttribute**](setconsoletextattribute.md) function to set the character attributes. Changing a screen buffer's attributes does not affect the display of characters previously written. These text attributes do not affect characters written by the low-level console I/O functions (such as the [**WriteConsoleOutput**](writeconsoleoutput.md) or [**WriteConsoleOutputCharacter**](writeconsoleoutputcharacter.md) function), which either explicitly specify the attributes for each cell that is written or leave the attributes unchanged.
 
-## <a href="" id="-win32-font-attributes"></a>Font Attributes
+## <span id="_win32_font_attributes"></span><span id="_WIN32_FONT_ATTRIBUTES"></span>Font Attributes
 
 
 The [**GetCurrentConsoleFont**](getcurrentconsolefont.md) function retrieves information about the current console font. The information stored in the [**CONSOLE\_FONT\_INFO**](console-font-info-str.md) structure includes the width and height of each character in the font.

@@ -22,7 +22,7 @@ An input record is a structure containing information about the type of event th
 
 Focus and menu events are placed in a console's input buffer for internal use by the system and should be ignored by applications.
 
-## Keyboard Events
+## <span id="Keyboard_Events"></span><span id="keyboard_events"></span><span id="KEYBOARD_EVENTS"></span>Keyboard Events
 
 
 Keyboard events are generated when any key is pressed or released; this includes control keys. However, the ALT key has special meaning to the system when pressed and released without being combined with another character, and it is not passed through to the application. Also, the CTRL+C key combination is not passed through if the input handle is in processed mode.
@@ -36,7 +36,7 @@ If the input event is a keystroke, the **Event** member in [**INPUT\_RECORD**](i
 -   The translated Unicode™ or ANSI character.
 -   A flag variable indicating the state of the control keys (the ALT, CTRL, SHIFT, NUM LOCK, SCROLL LOCK, and CAPS LOCK keys) and indicating whether an enhanced key was pressed. Enhanced keys for the IBM® 101-key and 102-key keyboards are the INS, DEL, HOME, END, PAGE UP, PAGE DOWN, and arrow keys in the clusters to the left of the numeric keypad and the divide (/) and ENTER keys in the numeric keypad.
 
-## Mouse Events
+## <span id="Mouse_Events"></span><span id="mouse_events"></span><span id="MOUSE_EVENTS"></span>Mouse Events
 
 
 Mouse events are generated whenever the user moves the mouse or presses or releases one of the mouse buttons. Mouse events are placed in the input buffer only if the following conditions are met:
@@ -58,7 +58,7 @@ If the input event is a mouse event, the **Event** member in [**INPUT\_RECORD**]
 
 The **dwButtonState** member of the [**MOUSE\_EVENT\_RECORD**](mouse-event-record-str.md) structure has a bit corresponding to each mouse button. The bit is 1 if the button is down and 0 if the button is up. A button-release event is detected by a 0 value for the **dwEventFlags** member of **MOUSE\_EVENT\_RECORD** and a change in a button's bit from 1 to 0. The [**GetNumberOfConsoleMouseButtons**](getnumberofconsolemousebuttons.md) function retrieves the number of buttons on the mouse.
 
-## Buffer-Resizing Events
+## <span id="Buffer-Resizing_Events"></span><span id="buffer-resizing_events"></span><span id="BUFFER-RESIZING_EVENTS"></span>Buffer-Resizing Events
 
 
 A console window's menu enables the user to change the size of the active screen buffer; this change generates a buffer-resizing event. Buffer-resizing events are placed in the input buffer if the console's input mode is set to **ENABLE\_WINDOW\_INPUT** (that is, the default mode is disabled).

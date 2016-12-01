@@ -66,94 +66,120 @@ The character attributes. This member can be zero or any combination of the foll
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="" id="foreground-blue"></a>
+<td><span id="FOREGROUND_BLUE"></span><span id="foreground_blue"></span>
 <strong>FOREGROUND_BLUE</strong>
 0x0001</td>
 <td><p>Text color contains blue.</p></td>
 </tr>
 <tr class="even">
-<td><a href="" id="foreground-green"></a>
+<td><span id="FOREGROUND_GREEN"></span><span id="foreground_green"></span>
 <strong>FOREGROUND_GREEN</strong>
 0x0002</td>
 <td><p>Text color contains green.</p></td>
 </tr>
 <tr class="odd">
-<td><a href="" id="foreground-red"></a>
+<td><span id="FOREGROUND_RED"></span><span id="foreground_red"></span>
 <strong>FOREGROUND_RED</strong>
 0x0004</td>
 <td><p>Text color contains red.</p></td>
 </tr>
 <tr class="even">
-<td><a href="" id="foreground-intensity"></a>
+<td><span id="FOREGROUND_INTENSITY"></span><span id="foreground_intensity"></span>
 <strong>FOREGROUND_INTENSITY</strong>
 0x0008</td>
 <td><p>Text color is intensified.</p></td>
 </tr>
 <tr class="odd">
-<td><a href="" id="background-blue"></a>
+<td><span id="BACKGROUND_BLUE"></span><span id="background_blue"></span>
 <strong>BACKGROUND_BLUE</strong>
 0x0010</td>
 <td><p>Background color contains blue.</p></td>
 </tr>
 <tr class="even">
-<td><a href="" id="background-green"></a>
+<td><span id="BACKGROUND_GREEN"></span><span id="background_green"></span>
 <strong>BACKGROUND_GREEN</strong>
 0x0020</td>
 <td><p>Background color contains green.</p></td>
 </tr>
 <tr class="odd">
-<td><a href="" id="background-red"></a>
+<td><span id="BACKGROUND_RED"></span><span id="background_red"></span>
 <strong>BACKGROUND_RED</strong>
 0x0040</td>
 <td><p>Background color contains red.</p></td>
 </tr>
 <tr class="even">
-<td><a href="" id="background-intensity"></a>
+<td><span id="BACKGROUND_INTENSITY"></span><span id="background_intensity"></span>
 <strong>BACKGROUND_INTENSITY</strong>
 0x0080</td>
 <td><p>Background color is intensified.</p></td>
 </tr>
 <tr class="odd">
-<td><a href="" id="common-lvb-leading-byte"></a>
+<td><span id="COMMON_LVB_LEADING_BYTE"></span><span id="common_lvb_leading_byte"></span>
 <strong>COMMON_LVB_LEADING_BYTE</strong>
 0x0100</td>
 <td><p>Leading byte.</p></td>
 </tr>
 <tr class="even">
-<td><a href="" id="common-lvb-trailing-byte"></a>
+<td><span id="COMMON_LVB_TRAILING_BYTE"></span><span id="common_lvb_trailing_byte"></span>
 <strong>COMMON_LVB_TRAILING_BYTE</strong>
 0x0200</td>
 <td><p>Trailing byte.</p></td>
 </tr>
 <tr class="odd">
-<td><a href="" id="common-lvb-grid-horizontal"></a>
+<td><span id="COMMON_LVB_GRID_HORIZONTAL"></span><span id="common_lvb_grid_horizontal"></span>
 <strong>COMMON_LVB_GRID_HORIZONTAL</strong>
 0x0400</td>
 <td><p>Top horizontal</p></td>
 </tr>
 <tr class="even">
-<td><a href="" id="common-lvb-grid-lvertical"></a>
+<td><span id="COMMON_LVB_GRID_LVERTICAL"></span><span id="common_lvb_grid_lvertical"></span>
 <strong>COMMON_LVB_GRID_LVERTICAL</strong>
 0x0800</td>
 <td><p>Left vertical.</p></td>
 </tr>
 <tr class="odd">
-<td><a href="" id="common-lvb-grid-rvertical"></a>
+<td><span id="COMMON_LVB_GRID_RVERTICAL"></span><span id="common_lvb_grid_rvertical"></span>
 <strong>COMMON_LVB_GRID_RVERTICAL</strong>
 0x1000</td>
 <td><p>Right vertical.</p></td>
 </tr>
 <tr class="even">
-<td><a href="" id="common-lvb-reverse-video"></a>
+<td><span id="COMMON_LVB_REVERSE_VIDEO"></span><span id="common_lvb_reverse_video"></span>
 <strong>COMMON_LVB_REVERSE_VIDEO</strong>
 0x4000</td>
 <td><p>Reverse foreground and background attribute.</p></td>
 </tr>
 <tr class="odd">
-<td><a href="" id="common-lvb-underscore"></a>
+<td><span id="COMMON_LVB_UNDERSCORE"></span><span id="common_lvb_underscore"></span>
 <strong>COMMON_LVB_UNDERSCORE</strong>
 0x8000</td>
 <td><p>Underscore.</p></td>
+</tr>
+<tr class="even">
+</tr>
+<tr class="odd">
+</tr>
+<tr class="even">
+</tr>
+<tr class="odd">
+</tr>
+<tr class="even">
+</tr>
+<tr class="odd">
+</tr>
+<tr class="even">
+</tr>
+<tr class="odd">
+</tr>
+<tr class="even">
+</tr>
+<tr class="odd">
+</tr>
+<tr class="even">
+</tr>
+<tr class="odd">
+</tr>
+<tr class="even">
 </tr>
 </tbody>
 </table>
@@ -189,7 +215,7 @@ Requirements
 </tbody>
 </table>
 
-## See also
+## <span id="see_also"></span>See also
 
 
 [**ReadConsoleOutput**](readconsoleoutput.md)
