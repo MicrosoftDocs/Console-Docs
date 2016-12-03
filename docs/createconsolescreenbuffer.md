@@ -1,6 +1,10 @@
 ---
 title: CreateConsoleScreenBuffer function
 description: Creates a console screen buffer.
+author: bitcrazed
+ms.author: richturn;miniksa
+
+
 MS-HAID:
 - '\_win32\_createconsolescreenbuffer'
 - 'base.createconsolescreenbuffer'

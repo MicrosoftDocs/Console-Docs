@@ -1,6 +1,10 @@
 ---
 title: Console Application Issues
 description: The 8-bit console functions use the OEM code page.
+author: bitcrazed
+ms.author: richturn;miniksa
+
+
 MS-HAID:
 - '\_win32\_console\_application\_issues'
 - 'base.console\_application\_issues'

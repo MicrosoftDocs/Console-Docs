@@ -1,6 +1,10 @@
 ---
 title: WriteConsoleOutputCharacter function
 description: Copies a number of characters to consecutive cells of a console screen buffer, beginning at a specified location.
+author: bitcrazed
+ms.author: richturn;miniksa
+
+
 MS-HAID:
 - '\_win32\_writeconsoleoutputcharacter'
 - 'base.writeconsoleoutputcharacter'

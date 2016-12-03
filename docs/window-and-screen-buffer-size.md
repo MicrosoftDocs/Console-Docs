@@ -1,6 +1,10 @@
 ---
 title: Window and Screen Buffer Size
 description: The size of a screen buffer is expressed in terms of a coordinate grid based on character cells.
+author: bitcrazed
+ms.author: richturn;miniksa
+
+
 MS-HAID:
 - '\_win32\_window\_and\_screen\_buffer\_size'
 - 'base.window\_and\_screen\_buffer\_size'

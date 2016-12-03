@@ -1,6 +1,10 @@
 ---
 title: CONSOLE\_HISTORY\_INFO structure
 description: Contains information about the console history.
+author: bitcrazed
+ms.author: richturn;miniksa
+
+
 MS-HAID:
 - 'base.console\_history\_info'
 - 'consoles.console\_history\_info'

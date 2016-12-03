@@ -1,6 +1,10 @@
 ---
 title: SetConsoleDisplayMode function
 description: Sets the display mode of the specified console screen buffer.
+author: bitcrazed
+ms.author: richturn;miniksa
+
+
 MS-HAID:
 - 'base.setconsoledisplaymode'
 - 'consoles.setconsoledisplaymode'

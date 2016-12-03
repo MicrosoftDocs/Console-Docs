@@ -1,6 +1,10 @@
 ---
 title: GetNumberOfConsoleInputEvents function
 description: Retrieves the number of unread input records in the console's input buffer.
+author: bitcrazed
+ms.author: richturn;miniksa
+
+
 MS-HAID:
 - '\_win32\_getnumberofconsoleinputevents'
 - 'base.getnumberofconsoleinputevents'

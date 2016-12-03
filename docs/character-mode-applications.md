@@ -1,6 +1,10 @@
 ---
 title: Consoles
 description: Consoles manage input and output (I/O) for character-mode applications (applications that do not provide their own graphical user interface).
+author: bitcrazed
+ms.author: richturn;miniksa
+
+
 MS-HAID:
 - '\_win32\_character\_mode\_applications'
 - 'base.character\_mode\_applications'

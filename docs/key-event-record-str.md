@@ -1,6 +1,10 @@
 ---
 title: KEY\_EVENT\_RECORD structure
 description: Describes a keyboard input event in a console INPUT\_RECORD structure.
+author: bitcrazed
+ms.author: richturn;miniksa
+
+
 MS-HAID:
 - '\_win32\_key\_event\_record\_str'
 - 'base.key\_event\_record\_str'

@@ -1,6 +1,10 @@
 ---
 title: Console Input Buffer
 description: Each console has an input buffer that contains a queue of input event records.
+author: bitcrazed
+ms.author: richturn;miniksa
+
+
 MS-HAID:
 - '\_win32\_console\_input\_buffer'
 - 'base.console\_input\_buffer'

@@ -1,6 +1,10 @@
 ---
 title: WINDOW\_BUFFER\_SIZE\_RECORD structure
 description: Describes a change in the size of the console screen buffer.
+author: bitcrazed
+ms.author: richturn;miniksa
+
+
 MS-HAID:
 - '\_win32\_window\_buffer\_size\_record\_str'
 - 'base.window\_buffer\_size\_record\_str'

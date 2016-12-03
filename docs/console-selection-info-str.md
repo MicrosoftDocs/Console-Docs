@@ -1,6 +1,10 @@
 ---
 title: CONSOLE\_SELECTION\_INFO structure
 description: Contains information for a console selection.
+author: bitcrazed
+ms.author: richturn;miniksa
+
+
 MS-HAID:
 - '\_win32\_console\_selection\_info\_str'
 - 'base.console\_selection\_info\_str'

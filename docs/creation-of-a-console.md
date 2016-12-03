@@ -1,6 +1,10 @@
 ---
 title: Creation of a Console
 description: The system creates a new console when it starts a console process, a character-mode process whose entry point is the main function.
+author: bitcrazed
+ms.author: richturn;miniksa
+
+
 MS-HAID:
 - '\_win32\_creation\_of\_a\_console'
 - 'base.creation\_of\_a\_console'

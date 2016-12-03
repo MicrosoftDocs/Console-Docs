@@ -1,6 +1,10 @@
 ---
 title: Using the High-Level Input and Output Functions
 description: The following example uses the high-level console I/O functions for console I/O. For more information about the high-level console I/O functions, see High-Level Console I/O.
+author: bitcrazed
+ms.author: richturn;miniksa
+
+
 MS-HAID:
 - '\_win32\_using\_the\_high\_level\_input\_and\_output\_functions'
 - 'base.using\_the\_high\_level\_input\_and\_output\_functions'

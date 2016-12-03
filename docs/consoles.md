@@ -1,6 +1,10 @@
 ---
 title: Consoles
 description: A console is an interface that provides I/O to character-mode applications. This processor-independent mechanism makes it easy to port existing character-mode applications or to create new character-mode tools and applications.
+author: bitcrazed
+ms.author: richturn;miniksa
+
+
 MS-HAID:
 - '\_win32\_consoles'
 - 'base.consoles'

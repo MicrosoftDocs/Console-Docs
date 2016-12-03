@@ -1,6 +1,10 @@
 ---
 title: GetCurrentConsoleFont function
 description: Retrieves information about the current console font.
+author: bitcrazed
+ms.author: richturn;miniksa
+
+
 MS-HAID:
 - '\_win32\_getcurrentconsolefont'
 - 'base.getcurrentconsolefont'

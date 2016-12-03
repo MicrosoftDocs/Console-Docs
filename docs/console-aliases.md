@@ -1,6 +1,10 @@
 ---
 title: Console Aliases
 description: Console aliases are used to map source strings to target strings.
+author: bitcrazed
+ms.author: richturn;miniksa
+
+
 MS-HAID:
 - 'base.console\_aliases'
 - 'consoles.console\_aliases'

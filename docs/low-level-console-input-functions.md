@@ -1,6 +1,10 @@
 ---
 title: Low-Level Console Input Functions
 description: A low-level console input functions buffer contains input records that can include information about keyboard, mouse, buffer-resizing, focus, and menu events.
+author: bitcrazed
+ms.author: richturn;miniksa
+
+
 MS-HAID:
 - '\_win32\_low\_level\_console\_input\_functions'
 - 'base.low\_level\_console\_input\_functions'

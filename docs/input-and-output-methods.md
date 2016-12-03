@@ -1,6 +1,10 @@
 ---
 title: Input and Output Methods
 description: There are two different approaches to console I/O, the choice of which depends on how much flexibility and control an application needs.
+author: bitcrazed
+ms.author: richturn;miniksa
+
+
 MS-HAID:
 - '\_win32\_input\_and\_output\_methods'
 - 'base.input\_and\_output\_methods'

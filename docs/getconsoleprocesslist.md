@@ -1,6 +1,10 @@
 ---
 title: GetConsoleProcessList function
 description: Retrieves a list of the processes attached to the current console.
+author: bitcrazed
+ms.author: richturn;miniksa
+
+
 MS-HAID:
 - '\_win32\_getconsoleprocesslist'
 - 'base.getconsoleprocesslist'

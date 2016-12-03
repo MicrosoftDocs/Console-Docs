@@ -1,6 +1,10 @@
 ---
 title: CONSOLE\_READCONSOLE\_CONTROL structure
 description: Contains information for a console read operation.
+author: bitcrazed
+ms.author: richturn;miniksa
+
+
 MS-HAID:
 - 'base.console\_readconsole\_control'
 - 'consoles.console\_readconsole\_control'

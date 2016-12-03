@@ -1,6 +1,10 @@
 ---
 title: GetConsoleScreenBufferInfo function
 description: Retrieves information about the specified console screen buffer.
+author: bitcrazed
+ms.author: richturn;miniksa
+
+
 MS-HAID:
 - '\_win32\_getconsolescreenbufferinfo'
 - 'base.getconsolescreenbufferinfo'

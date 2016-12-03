@@ -1,6 +1,10 @@
 ---
 title: Console Modes
 description: Associated with each console input buffer is a set of input modes that affects input operations.
+author: bitcrazed
+ms.author: richturn;miniksa
+
+
 MS-HAID:
 - '\_win32\_console\_modes'
 - 'base.console\_modes'

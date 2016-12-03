@@ -1,6 +1,10 @@
 ---
 title: Scrolling the Screen Buffer
 description: The console window displays a portion of the active screen buffer.
+author: bitcrazed
+ms.author: richturn;miniksa
+
+
 MS-HAID:
 - '\_win32\_scrolling\_the\_screen\_buffer'
 - 'base.scrolling\_the\_screen\_buffer'

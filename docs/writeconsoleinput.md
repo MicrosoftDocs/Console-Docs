@@ -1,6 +1,10 @@
 ---
 title: WriteConsoleInput function
 description: Writes data directly to the console input buffer.
+author: bitcrazed
+ms.author: richturn;miniksa
+
+
 MS-HAID:
 - '\_win32\_writeconsoleinput'
 - 'base.writeconsoleinput'

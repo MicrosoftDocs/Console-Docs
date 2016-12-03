@@ -1,6 +1,10 @@
 ---
 title: Console Selection
 description: An accessibility application needs information about the user's selection in the console.
+author: bitcrazed
+ms.author: richturn;miniksa
+
+
 MS-HAID:
 - '\_win32\_console\_selection'
 - 'base.console\_selection'

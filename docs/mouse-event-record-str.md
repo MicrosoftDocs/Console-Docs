@@ -1,6 +1,10 @@
 ---
 title: MOUSE\_EVENT\_RECORD structure
 description: Describes a mouse input event in a console INPUT\_RECORD structure.
+author: bitcrazed
+ms.author: richturn;miniksa
+
+
 MS-HAID:
 - '\_win32\_mouse\_event\_record\_str'
 - 'base.mouse\_event\_record\_str'

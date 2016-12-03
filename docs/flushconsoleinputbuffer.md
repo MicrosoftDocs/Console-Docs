@@ -1,6 +1,10 @@
 ---
 title: FlushConsoleInputBuffer function
 description: Flushes the console input buffer. All input records currently in the input buffer are discarded.
+author: bitcrazed
+ms.author: richturn;miniksa
+
+
 MS-HAID:
 - '\_win32\_flushconsoleinputbuffer'
 - 'base.flushconsoleinputbuffer'

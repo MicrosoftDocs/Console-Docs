@@ -1,6 +1,10 @@
 ---
 title: GetConsoleOriginalTitle function
 description: Retrieves the original title for the current console window.
+author: bitcrazed
+ms.author: richturn;miniksa
+
+
 MS-HAID:
 - 'base.getconsoleoriginaltitle'
 - 'consoles.getconsoleoriginaltitle'

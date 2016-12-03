@@ -1,6 +1,10 @@
 ---
 title: GetConsoleWindow function
 description: Retrieves the window handle used by the console associated with the calling process.
+author: bitcrazed
+ms.author: richturn;miniksa
+
+
 MS-HAID:
 - '\_win32\_getconsolewindow'
 - 'base.getconsolewindow'

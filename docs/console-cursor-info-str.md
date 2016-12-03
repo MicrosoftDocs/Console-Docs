@@ -1,6 +1,10 @@
 ---
 title: CONSOLE\_CURSOR\_INFO structure
 description: Contains information about the console cursor.
+author: bitcrazed
+ms.author: richturn;miniksa
+
+
 MS-HAID:
 - '\_win32\_console\_cursor\_info\_str'
 - 'base.console\_cursor\_info\_str'

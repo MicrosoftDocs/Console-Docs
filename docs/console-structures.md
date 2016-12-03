@@ -1,6 +1,10 @@
 ---
 title: Console Structures
 description: The following structures are used to access a console.
+author: bitcrazed
+ms.author: richturn;miniksa
+
+
 MS-HAID:
 - '\_win32\_console\_structures'
 - 'base.console\_structures'

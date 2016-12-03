@@ -1,6 +1,10 @@
 ---
 title: FreeConsole function
 description: Detaches the calling process from its console.
+author: bitcrazed
+ms.author: richturn;miniksa
+
+
 MS-HAID:
 - '\_win32\_freeconsole'
 - 'base.freeconsole'

@@ -1,6 +1,10 @@
 ---
 title: PeekConsoleInput function
 description: Reads data from the specified console input buffer without removing it from the buffer.
+author: bitcrazed
+ms.author: richturn;miniksa
+
+
 MS-HAID:
 - '\_win32\_peekconsoleinput'
 - 'base.peekconsoleinput'

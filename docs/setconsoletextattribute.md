@@ -1,6 +1,10 @@
 ---
 title: SetConsoleTextAttribute function
 description: Sets the attributes of characters written to the console screen buffer by the WriteFile or WriteConsole function, or echoed by the ReadFile or ReadConsole function.
+author: bitcrazed
+ms.author: richturn;miniksa
+
+
 MS-HAID:
 - '\_win32\_setconsoletextattribute'
 - 'base.setconsoletextattribute'

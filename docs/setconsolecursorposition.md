@@ -1,6 +1,10 @@
 ---
 title: SetConsoleCursorPosition function
 description: Sets the cursor position in the specified console screen buffer.
+author: bitcrazed
+ms.author: richturn;miniksa
+
+
 MS-HAID:
 - '\_win32\_setconsolecursorposition'
 - 'base.setconsolecursorposition'

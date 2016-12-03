@@ -1,6 +1,10 @@
 ---
 title: GetConsoleScreenBufferInfoEx function
 description: Retrieves extended information about the specified console screen buffer.
+author: bitcrazed
+ms.author: richturn;miniksa
+
+
 MS-HAID:
 - 'base.getconsolescreenbufferinfoex'
 - 'consoles.getconsolescreenbufferinfoex'

@@ -1,6 +1,10 @@
 ---
 title: FOCUS\_EVENT\_RECORD structure
 description: Describes a focus event in a console INPUT\_RECORD structure. These events are used internally and should be ignored.
+author: bitcrazed
+ms.author: richturn;miniksa
+
+
 MS-HAID:
 - '\_win32\_focus\_event\_record\_str'
 - 'base.focus\_event\_record\_str'

@@ -1,6 +1,10 @@
 ---
 title: GetConsoleSelectionInfo function
 description: Retrieves information about the current console selection.
+author: bitcrazed
+ms.author: richturn;miniksa
+
+
 MS-HAID:
 - '\_win32\_getconsoleselectioninfo'
 - 'base.getconsoleselectioninfo'

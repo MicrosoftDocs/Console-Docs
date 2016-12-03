@@ -1,6 +1,10 @@
 ---
 title: GetConsoleHistoryInfo function
 description: Retrieves the history settings for the calling process's console.
+author: bitcrazed
+ms.author: richturn;miniksa
+
+
 MS-HAID:
 - 'base.getconsolehistoryinfo'
 - 'consoles.getconsolehistoryinfo'

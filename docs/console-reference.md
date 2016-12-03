@@ -1,6 +1,10 @@
 ---
 title: Console Reference
 description: The following elements are associated with accessing a console.
+author: bitcrazed
+ms.author: richturn;miniksa
+
+
 MS-HAID:
 - '\_win32\_console\_reference'
 - 'base.console\_reference'

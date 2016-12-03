@@ -1,6 +1,10 @@
 ---
 title: INPUT\_RECORD structure
 description: Describes an input event in the console input buffer.
+author: bitcrazed
+ms.author: richturn;miniksa
+
+
 MS-HAID:
 - '\_win32\_input\_record\_str'
 - 'base.input\_record\_str'

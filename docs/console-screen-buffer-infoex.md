@@ -1,6 +1,10 @@
 ---
 title: CONSOLE\_SCREEN\_BUFFER\_INFOEX structure
 description: Contains extended information about a console screen buffer.
+author: bitcrazed
+ms.author: richturn;miniksa
+
+
 MS-HAID:
 - 'base.console\_screen\_buffer\_infoex'
 - 'consoles.console\_screen\_buffer\_infoex'

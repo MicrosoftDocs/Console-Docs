@@ -1,6 +1,10 @@
 ---
 title: CONSOLE\_FONT\_INFO structure
 description: Contains information for a console font.
+author: bitcrazed
+ms.author: richturn;miniksa
+
+
 MS-HAID:
 - '\_win32\_console\_font\_info\_str'
 - 'base.console\_font\_info\_str'

@@ -1,6 +1,10 @@
 ---
 title: GetConsoleCursorInfo function
 description: Retrieves information about the size and visibility of the cursor for the specified console screen buffer.
+author: bitcrazed
+ms.author: richturn;miniksa
+
+
 MS-HAID:
 - '\_win32\_getconsolecursorinfo'
 - 'base.getconsolecursorinfo'

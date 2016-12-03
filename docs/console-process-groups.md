@@ -1,6 +1,10 @@
 ---
 title: Console Process Groups
 description: When a process uses the CreateProcess function to create a new console process, it can specify the CREATE\_NEW\_PROCESS\_GROUP flag to make the new process the root process of a console process group.
+author: bitcrazed
+ms.author: richturn;miniksa
+
+
 MS-HAID:
 - '\_win32\_console\_process\_groups'
 - 'base.console\_process\_groups'

@@ -1,6 +1,10 @@
 ---
 title: FillConsoleOutputCharacter function
 description: Writes a character to the console screen buffer a specified number of times, beginning at the specified coordinates.
+author: bitcrazed
+ms.author: richturn;miniksa
+
+
 MS-HAID:
 - '\_win32\_fillconsoleoutputcharacter'
 - 'base.fillconsoleoutputcharacter'

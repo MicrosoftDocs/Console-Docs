@@ -1,6 +1,10 @@
 ---
 title: Registering a Control Handler Function
 description: This is an example of the SetConsoleCtrlHandler function that is used to install a control handler.
+author: bitcrazed
+ms.author: richturn;miniksa
+
+
 MS-HAID:
 - '\_win32\_registering\_a\_control\_handler\_function'
 - 'base.registering\_a\_control\_handler\_function'

@@ -1,6 +1,10 @@
 ---
 title: GetConsoleFontSize function
 description: Retrieves the size of the font used by the specified console screen buffer.
+author: bitcrazed
+ms.author: richturn;miniksa
+
+
 MS-HAID:
 - '\_win32\_getconsolefontsize'
 - 'base.getconsolefontsize'

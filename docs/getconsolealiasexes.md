@@ -1,6 +1,10 @@
 ---
 title: GetConsoleAliasExes function
 description: Retrieves the names of all executable files with console aliases defined.
+author: bitcrazed
+ms.author: richturn;miniksa
+
+
 MS-HAID:
 - 'base.getconsolealiasexes'
 - 'consoles.getconsolealiasexes'

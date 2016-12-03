@@ -1,6 +1,10 @@
 ---
 title: SetStdHandle function
 description: Sets the handle for the specified standard device (standard input, standard output, or standard error).
+author: bitcrazed
+ms.author: richturn;miniksa
+
+
 MS-HAID:
 - '\_win32\_setstdhandle'
 - 'base.setstdhandle'

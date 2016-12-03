@@ -1,6 +1,10 @@
 ---
 title: Using the Console
 description: The following examples demonstrate how to use the console functions.
+author: bitcrazed
+ms.author: richturn;miniksa
+
+
 MS-HAID:
 - '\_win32\_using\_the\_console'
 - 'base.using\_the\_console'

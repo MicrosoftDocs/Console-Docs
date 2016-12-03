@@ -1,6 +1,10 @@
 ---
 title: CONSOLE\_FONT\_INFOEX structure
 description: Contains extended information for a console font.
+author: bitcrazed
+ms.author: richturn;miniksa
+
+
 MS-HAID:
 - 'base.console\_font\_infoex'
 - 'consoles.console\_font\_infoex'

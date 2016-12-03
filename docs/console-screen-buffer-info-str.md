@@ -1,6 +1,10 @@
 ---
 title: CONSOLE\_SCREEN\_BUFFER\_INFO structure
 description: Contains information about a console screen buffer.
+author: bitcrazed
+ms.author: richturn;miniksa
+
+
 MS-HAID:
 - '\_win32\_console\_screen\_buffer\_info\_str'
 - 'base.console\_screen\_buffer\_info\_str'

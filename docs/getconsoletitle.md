@@ -1,6 +1,10 @@
 ---
 title: GetConsoleTitle function
 description: Retrieves the title for the current console window.
+author: bitcrazed
+ms.author: richturn;miniksa
+
+
 MS-HAID:
 - '\_win32\_getconsoletitle'
 - 'base.getconsoletitle'

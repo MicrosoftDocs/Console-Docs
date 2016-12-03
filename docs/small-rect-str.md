@@ -1,6 +1,10 @@
 ---
 title: SMALL\_RECT structure
 description: Defines the coordinates of the upper left and lower right corners of a rectangle.
+author: bitcrazed
+ms.author: richturn;miniksa
+
+
 MS-HAID:
 - '\_win32\_small\_rect\_str'
 - 'base.small\_rect\_str'

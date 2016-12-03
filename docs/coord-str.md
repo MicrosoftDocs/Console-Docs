@@ -1,6 +1,10 @@
 ---
 title: COORD structure
 description: Defines the coordinates of a character cell in a console screen buffer.
+author: bitcrazed
+ms.author: richturn;miniksa
+
+
 MS-HAID:
 - '\_win32\_coord\_str'
 - 'base.coord\_str'

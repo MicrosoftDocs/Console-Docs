@@ -1,6 +1,10 @@
 ---
 title: SetConsoleWindowInfo function
 description: Sets the current size and position of a console screen buffer's window.
+author: bitcrazed
+ms.author: richturn;miniksa
+
+
 MS-HAID:
 - '\_win32\_setconsolewindowinfo'
 - 'base.setconsolewindowinfo'
