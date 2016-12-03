@@ -14,9 +14,7 @@
         }
     ],
     "globalMetadata": {
-        "ROBOTS": "NOINDEX, NOFOLLOW",
-        "ms.sitesec": "library",
-        "breadcrumb_path": "/opsdocs/breadcrumb/toc.json"
+        "ROBOTS": "INDEX, FOLLOW"
     },
     "externalReference": [
     ],
