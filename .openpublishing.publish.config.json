@@ -1,21 +1,18 @@
 {
-    "build_entry_point": "docs",
+    "build_entry_point": "",
     "git_repository_url_open_to_public_contributors": "https://github.com/Microsoft/Console-Docs",
+    "branches_to_filter": ["Live"],
     "need_generate_pdf": false,
     "need_generate_intellisense": false,
     "docsets_to_publish": [
         {
-            "docset_name": "console-docs",
-            "build_source_folder": "docs",
-            "build_output_subfolder": "",
+            "docset_name": "console",
+            "build_output_subfolder": "docs",
             "locale": "en-us",
             "version": 0,
             "open_to_public_contributors": "true",
-            "type_mapping": {
-                "Conceptual": "Content"
-            }
+            "type_mapping": { "Conceptual": "Content" } 
         }
     ],
-    "notification_subscribers": ["richturn@microsoft.com","yodurr@microsoft.com","gillesk@microsoft.com","miniksa@microsoft.com"],
-    "branches_to_filter": [""]
+    "notification_subscribers": ["dartcondocbuild@microsoft.com"]
 }
