@@ -1,0 +1,26 @@
+{
+  "build": {
+    "content":
+      [
+        {
+          "files": ["**/**.md", "**/toc.yml"],
+          "exclude": ["**/obj/**", "**/includes/**"]
+        }
+      ],
+    "resource": [
+        {
+          "files": ["**/images/**","**/**.html"],
+          "exclude": ["**/obj/**"]
+        }
+    ],
+    "globalMetadata": {
+        "ROBOTS": "NOINDEX, NOFOLLOW",
+        "ms.sitesec": "library",
+        "breadcrumb_path": "/opsdocs/breadcrumb/toc.json"
+    },
+    "externalReference": [
+    ],
+    "template": "op.html",
+    "dest": "opsdocs"
+  }
+}
