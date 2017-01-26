@@ -1,8 +1,8 @@
 ---
 title: SetCurrentConsoleFontEx function
 description: Sets extended information about the current console font.
-author: bitcrazed
-ms.author: richturn;miniksa
+author: miniksa
+ms.author: miniksa
 
 
 MS-HAID:

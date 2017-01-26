@@ -1,8 +1,8 @@
 ---
 title: CreateConsoleScreenBuffer function
 description: Creates a console screen buffer.
-author: bitcrazed
-ms.author: richturn;miniksa
+author: miniksa
+ms.author: miniksa
 
 
 MS-HAID:

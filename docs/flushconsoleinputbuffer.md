@@ -1,8 +1,8 @@
 ---
 title: FlushConsoleInputBuffer function
 description: Flushes the console input buffer. All input records currently in the input buffer are discarded.
-author: bitcrazed
-ms.author: richturn;miniksa
+author: miniksa
+ms.author: miniksa
 
 
 MS-HAID:

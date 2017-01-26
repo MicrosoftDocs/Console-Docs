@@ -1,8 +1,8 @@
 ---
 title: Console Reference
 description: The following elements are associated with accessing a console.
-author: bitcrazed
-ms.author: richturn;miniksa
+author: miniksa
+ms.author: miniksa
 
 
 MS-HAID:

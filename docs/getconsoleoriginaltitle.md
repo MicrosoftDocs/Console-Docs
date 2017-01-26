@@ -1,8 +1,8 @@
 ---
 title: GetConsoleOriginalTitle function
 description: Retrieves the original title for the current console window.
-author: bitcrazed
-ms.author: richturn;miniksa
+author: miniksa
+ms.author: miniksa
 
 
 MS-HAID:

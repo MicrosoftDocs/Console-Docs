@@ -1,8 +1,8 @@
 ---
 title: Console Input Buffer
 description: Each console has an input buffer that contains a queue of input event records.
-author: bitcrazed
-ms.author: richturn;miniksa
+author: miniksa
+ms.author: miniksa
 
 
 MS-HAID:

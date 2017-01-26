@@ -1,8 +1,8 @@
 ---
 title: CONSOLE\_SCREEN\_BUFFER\_INFOEX structure
 description: Contains extended information about a console screen buffer.
-author: bitcrazed
-ms.author: richturn;miniksa
+author: miniksa
+ms.author: miniksa
 
 
 MS-HAID:

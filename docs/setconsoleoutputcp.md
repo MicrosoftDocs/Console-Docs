@@ -1,8 +1,8 @@
 ---
 title: SetConsoleOutputCP function
 description: Sets the output code page used by the console associated with the calling process.
-author: bitcrazed
-ms.author: richturn;miniksa
+author: miniksa
+ms.author: miniksa
 
 
 MS-HAID:

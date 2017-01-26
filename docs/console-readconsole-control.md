@@ -1,8 +1,8 @@
 ---
 title: CONSOLE\_READCONSOLE\_CONTROL structure
 description: Contains information for a console read operation.
-author: bitcrazed
-ms.author: richturn;miniksa
+author: miniksa
+ms.author: miniksa
 
 
 MS-HAID:

@@ -1,8 +1,8 @@
 ---
 title: FreeConsole function
 description: Detaches the calling process from its console.
-author: bitcrazed
-ms.author: richturn;miniksa
+author: miniksa
+ms.author: miniksa
 
 
 MS-HAID:

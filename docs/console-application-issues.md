@@ -1,8 +1,8 @@
 ---
 title: Console Application Issues
 description: The 8-bit console functions use the OEM code page.
-author: bitcrazed
-ms.author: richturn;miniksa
+author: miniksa
+ms.author: miniksa
 
 
 MS-HAID:

@@ -1,8 +1,8 @@
 ---
 title: Console Screen Buffers
 description: A screen buffer is a two-dimensional array of character and color data for output in a console window. A console can have multiple screen buffers. The active screen buffer is the one that is displayed on the screen.
-author: bitcrazed
-ms.author: richturn;miniksa
+author: miniksa
+ms.author: miniksa
 
 
 MS-HAID:

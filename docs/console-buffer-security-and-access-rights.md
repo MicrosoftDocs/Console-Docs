@@ -1,8 +1,8 @@
 ---
 title: Console Buffer Security and Access Rights
 description: The Windows security model enables you to control access to console input buffers and console screen buffers. For more information about security, see Access-Control Model.
-author: bitcrazed
-ms.author: richturn;miniksa
+author: miniksa
+ms.author: miniksa
 
 
 MS-HAID:

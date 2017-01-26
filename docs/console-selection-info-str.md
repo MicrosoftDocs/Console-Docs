@@ -1,8 +1,8 @@
 ---
 title: CONSOLE\_SELECTION\_INFO structure
 description: Contains information for a console selection.
-author: bitcrazed
-ms.author: richturn;miniksa
+author: miniksa
+ms.author: miniksa
 
 
 MS-HAID:

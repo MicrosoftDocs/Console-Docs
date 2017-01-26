@@ -1,8 +1,8 @@
 ---
 title: PeekConsoleInput function
 description: Reads data from the specified console input buffer without removing it from the buffer.
-author: bitcrazed
-ms.author: richturn;miniksa
+author: miniksa
+ms.author: miniksa
 
 
 MS-HAID:

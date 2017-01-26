@@ -1,8 +1,8 @@
 ---
 title: FillConsoleOutputAttribute function
 description: Sets the character attributes for a specified number of character cells, beginning at the specified coordinates in a screen buffer.
-author: bitcrazed
-ms.author: richturn;miniksa
+author: miniksa
+ms.author: miniksa
 
 
 MS-HAID:

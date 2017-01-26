@@ -1,8 +1,8 @@
 ---
 title: Reading Input Buffer Events
 description: The ReadConsoleInput function can be used to directly access a console's input buffer.
-author: bitcrazed
-ms.author: richturn;miniksa
+author: miniksa
+ms.author: miniksa
 
 
 MS-HAID:

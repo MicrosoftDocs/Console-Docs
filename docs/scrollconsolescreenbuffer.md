@@ -1,8 +1,8 @@
 ---
 title: ScrollConsoleScreenBuffer function
 description: Moves a block of data in a screen buffer.
-author: bitcrazed
-ms.author: richturn;miniksa
+author: miniksa
+ms.author: miniksa
 
 
 MS-HAID:

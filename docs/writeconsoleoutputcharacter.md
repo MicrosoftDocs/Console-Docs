@@ -1,8 +1,8 @@
 ---
 title: WriteConsoleOutputCharacter function
 description: Copies a number of characters to consecutive cells of a console screen buffer, beginning at a specified location.
-author: bitcrazed
-ms.author: richturn;miniksa
+author: miniksa
+ms.author: miniksa
 
 
 MS-HAID:

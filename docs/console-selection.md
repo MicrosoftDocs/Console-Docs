@@ -1,8 +1,8 @@
 ---
 title: Console Selection
 description: An accessibility application needs information about the user's selection in the console.
-author: bitcrazed
-ms.author: richturn;miniksa
+author: miniksa
+ms.author: miniksa
 
 
 MS-HAID:

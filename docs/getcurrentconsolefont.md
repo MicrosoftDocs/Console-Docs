@@ -1,8 +1,8 @@
 ---
 title: GetCurrentConsoleFont function
 description: Retrieves information about the current console font.
-author: bitcrazed
-ms.author: richturn;miniksa
+author: miniksa
+ms.author: miniksa
 
 
 MS-HAID:

@@ -1,8 +1,8 @@
 ---
 title: Attaching to a Console
 description: A process can use the AttachConsole function to attach to a console. A process can be attached to one console.
-author: bitcrazed
-ms.author: richturn;miniksa
+author: miniksa
+ms.author: miniksa
 
 
 MS-HAID:

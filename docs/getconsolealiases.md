@@ -1,8 +1,8 @@
 ---
 title: GetConsoleAliases function
 description: Retrieves all defined console aliases for the specified executable.
-author: bitcrazed
-ms.author: richturn;miniksa
+author: miniksa
+ms.author: miniksa
 
 
 MS-HAID:

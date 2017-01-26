@@ -1,8 +1,8 @@
 ---
 title: AllocConsole function
 description: Allocates a new console for the calling process.
-author: bitcrazed
-ms.author: richturn;miniksa
+author: miniksa
+ms.author: miniksa
 
 
 MS-HAID:

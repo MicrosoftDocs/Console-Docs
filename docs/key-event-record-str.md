@@ -1,8 +1,8 @@
 ---
 title: KEY\_EVENT\_RECORD structure
 description: Describes a keyboard input event in a console INPUT\_RECORD structure.
-author: bitcrazed
-ms.author: richturn;miniksa
+author: miniksa
+ms.author: miniksa
 
 
 MS-HAID:

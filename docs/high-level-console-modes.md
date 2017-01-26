@@ -1,8 +1,8 @@
 ---
 title: High-Level Console Modes
 description: The behavior of the high-level console functions is affected by the console input and output modes.
-author: bitcrazed
-ms.author: richturn;miniksa
+author: miniksa
+ms.author: miniksa
 
 
 MS-HAID:

@@ -1,8 +1,8 @@
 ---
 title: CONSOLE\_HISTORY\_INFO structure
 description: Contains information about the console history.
-author: bitcrazed
-ms.author: richturn;miniksa
+author: miniksa
+ms.author: miniksa
 
 
 MS-HAID:

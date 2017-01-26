@@ -1,8 +1,8 @@
 ---
 title: GetConsoleMode function
 description: Retrieves the current input mode of a console's input buffer or the current output mode of a console screen buffer.
-author: bitcrazed
-ms.author: richturn;miniksa
+author: zadjii-msft
+ms.author: miniksa
 
 
 MS-HAID:

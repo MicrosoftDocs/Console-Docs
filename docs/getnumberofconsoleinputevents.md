@@ -1,8 +1,8 @@
 ---
 title: GetNumberOfConsoleInputEvents function
 description: Retrieves the number of unread input records in the console's input buffer.
-author: bitcrazed
-ms.author: richturn;miniksa
+author: miniksa
+ms.author: miniksa
 
 
 MS-HAID:

@@ -1,8 +1,8 @@
 ---
 title: ReadConsoleOutputAttribute function
 description: Copies a specified number of character attributes from consecutive cells of a console screen buffer, beginning at a specified location.
-author: bitcrazed
-ms.author: richturn;miniksa
+author: miniksa
+ms.author: miniksa
 
 
 MS-HAID:

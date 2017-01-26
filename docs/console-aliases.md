@@ -1,8 +1,8 @@
 ---
 title: Console Aliases
 description: Console aliases are used to map source strings to target strings.
-author: bitcrazed
-ms.author: richturn;miniksa
+author: miniksa
+ms.author: miniksa
 
 
 MS-HAID:

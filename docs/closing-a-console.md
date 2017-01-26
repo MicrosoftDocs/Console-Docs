@@ -1,8 +1,8 @@
 ---
 title: Closing a Console
 description: A process can use the FreeConsole function to detach itself from its console.
-author: bitcrazed
-ms.author: richturn;miniksa
+author: miniksa
+ms.author: miniksa
 
 
 MS-HAID:

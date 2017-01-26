@@ -1,8 +1,8 @@
 ---
 title: INPUT\_RECORD structure
 description: Describes an input event in the console input buffer.
-author: bitcrazed
-ms.author: richturn;miniksa
+author: miniksa
+ms.author: miniksa
 
 
 MS-HAID:

@@ -1,8 +1,8 @@
 ---
 title: Console WinEvents
 description: The following event constants are used in the event parameter of the WinEventProc callback function. For more information, see WinEvents.
-author: bitcrazed
-ms.author: richturn;miniksa
+author: miniksa
+ms.author: miniksa
 
 
 MS-HAID:

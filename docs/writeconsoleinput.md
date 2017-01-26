@@ -1,8 +1,8 @@
 ---
 title: WriteConsoleInput function
 description: Writes data directly to the console input buffer.
-author: bitcrazed
-ms.author: richturn;miniksa
+author: miniksa
+ms.author: miniksa
 
 
 MS-HAID:

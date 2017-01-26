@@ -1,8 +1,8 @@
 ---
 title: GetNumberOfConsoleMouseButtons function
 description: Retrieves the number of buttons on the mouse used by the current console.
-author: bitcrazed
-ms.author: richturn;miniksa
+author: miniksa
+ms.author: miniksa
 
 
 MS-HAID:

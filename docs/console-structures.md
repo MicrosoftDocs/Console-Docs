@@ -1,8 +1,8 @@
 ---
 title: Console Structures
 description: The following structures are used to access a console.
-author: bitcrazed
-ms.author: richturn;miniksa
+author: miniksa
+ms.author: miniksa
 
 
 MS-HAID:

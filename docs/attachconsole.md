@@ -1,8 +1,8 @@
 ---
 title: AttachConsole function
 description: Attaches the calling process to the console of the specified process.
-author: bitcrazed
-ms.author: richturn;miniksa
+author: miniksa
+ms.author: miniksa
 
 
 MS-HAID:

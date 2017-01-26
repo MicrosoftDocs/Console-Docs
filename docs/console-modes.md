@@ -1,8 +1,8 @@
 ---
 title: Console Modes
 description: Associated with each console input buffer is a set of input modes that affects input operations.
-author: bitcrazed
-ms.author: richturn;miniksa
+author: miniksa
+ms.author: miniksa
 
 
 MS-HAID:

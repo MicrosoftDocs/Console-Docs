@@ -1,8 +1,8 @@
 ---
 title: GetConsoleAliasExesLength function
 description: Retrieves the required size for the buffer used by the GetConsoleAliasExes function.
-author: bitcrazed
-ms.author: richturn;miniksa
+author: miniksa
+ms.author: miniksa
 
 
 MS-HAID:

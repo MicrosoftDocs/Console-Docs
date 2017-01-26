@@ -1,8 +1,8 @@
 ---
 title: Consoles
 description: Consoles manage input and output (I/O) for character-mode applications (applications that do not provide their own graphical user interface).
-author: bitcrazed
-ms.author: richturn;miniksa
+author: miniksa
+ms.author: miniksa
 
 
 MS-HAID:

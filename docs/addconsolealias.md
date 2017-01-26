@@ -1,8 +1,8 @@
 ---
 title: AddConsoleAlias function
 description: Defines a console alias for the specified executable.
-author: bitcrazed
-ms.author: richturn;miniksa
+author: miniksa
+ms.author: miniksa
 
 
 MS-HAID:

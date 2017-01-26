@@ -1,8 +1,8 @@
 ---
 title: About Consoles
 description: Consoles provide high-level support for simple character-mode applications that interact with the user by using functions that read from standard input and write to standard output or standard error.
-author: bitcrazed
-ms.author: richturn;miniksa
+author: miniksa
+ms.author: miniksa
 
 
 MS-HAID:

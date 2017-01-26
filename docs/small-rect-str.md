@@ -1,8 +1,8 @@
 ---
 title: SMALL\_RECT structure
 description: Defines the coordinates of the upper left and lower right corners of a rectangle.
-author: bitcrazed
-ms.author: richturn;miniksa
+author: miniksa
+ms.author: miniksa
 
 
 MS-HAID:

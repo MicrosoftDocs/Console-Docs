@@ -1,8 +1,8 @@
 ---
 title: SetConsoleCursorInfo function
 description: Sets the size and visibility of the cursor for the specified console screen buffer.
-author: bitcrazed
-ms.author: richturn;miniksa
+author: miniksa
+ms.author: miniksa
 
 
 MS-HAID:

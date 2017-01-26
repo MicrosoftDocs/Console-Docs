@@ -1,8 +1,8 @@
 ---
 title: Low-Level Console Output Functions
 description: The low-level console output functions provide direct access to the character cells of a screen buffer.
-author: bitcrazed
-ms.author: richturn;miniksa
+author: miniksa
+ms.author: miniksa
 
 
 MS-HAID:

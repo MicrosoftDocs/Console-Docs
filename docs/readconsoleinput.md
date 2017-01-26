@@ -1,8 +1,8 @@
 ---
 title: ReadConsoleInput function
 description: Reads data from a console input buffer and removes it from the buffer.
-author: bitcrazed
-ms.author: richturn;miniksa
+author: miniksa
+ms.author: miniksa
 
 
 MS-HAID:

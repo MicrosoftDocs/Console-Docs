@@ -1,8 +1,8 @@
 ---
 title: Console Code Pages
 description: A code page is a mapping of 256 character codes to individual characters. Different code pages include different special characters, typically customized for a language or a group of languages.
-author: bitcrazed
-ms.author: richturn;miniksa
+author: miniksa
+ms.author: miniksa
 
 
 MS-HAID:

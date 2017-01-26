@@ -1,8 +1,8 @@
 ---
 title: Input and Output Methods
 description: There are two different approaches to console I/O, the choice of which depends on how much flexibility and control an application needs.
-author: bitcrazed
-ms.author: richturn;miniksa
+author: miniksa
+ms.author: miniksa
 
 
 MS-HAID:

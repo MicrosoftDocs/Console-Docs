@@ -1,8 +1,8 @@
 ---
 title: CONSOLE\_SCREEN\_BUFFER\_INFO structure
 description: Contains information about a console screen buffer.
-author: bitcrazed
-ms.author: richturn;miniksa
+author: miniksa
+ms.author: miniksa
 
 
 MS-HAID:

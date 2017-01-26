@@ -1,8 +1,8 @@
 ---
 title: High-Level Console I/O
 description: The high-level I/O functions provide a simple way to read a stream of characters from console input or to write a stream of characters to console output.
-author: bitcrazed
-ms.author: richturn;miniksa
+author: miniksa
+ms.author: miniksa
 
 
 MS-HAID:

@@ -1,8 +1,8 @@
 ---
 title: SetConsoleActiveScreenBuffer function
 description: Sets the specified screen buffer to be the currently displayed console screen buffer.
-author: bitcrazed
-ms.author: richturn;miniksa
+author: miniksa
+ms.author: miniksa
 
 
 MS-HAID:

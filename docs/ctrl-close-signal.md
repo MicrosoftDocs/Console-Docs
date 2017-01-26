@@ -1,8 +1,8 @@
 ---
 title: CTRL+CLOSE Signal
 description: The system generates a CTRL+CLOSE signal when the user closes a console.
-author: bitcrazed
-ms.author: richturn;miniksa
+author: miniksa
+ms.author: miniksa
 
 
 MS-HAID:

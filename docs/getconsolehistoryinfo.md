@@ -1,8 +1,8 @@
 ---
 title: GetConsoleHistoryInfo function
 description: Retrieves the history settings for the calling process's console.
-author: bitcrazed
-ms.author: richturn;miniksa
+author: miniksa
+ms.author: miniksa
 
 
 MS-HAID:

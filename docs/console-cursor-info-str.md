@@ -1,8 +1,8 @@
 ---
 title: CONSOLE\_CURSOR\_INFO structure
 description: Contains information about the console cursor.
-author: bitcrazed
-ms.author: richturn;miniksa
+author: miniksa
+ms.author: miniksa
 
 
 MS-HAID:

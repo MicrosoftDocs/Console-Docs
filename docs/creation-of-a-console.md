@@ -1,8 +1,8 @@
 ---
 title: Creation of a Console
 description: The system creates a new console when it starts a console process, a character-mode process whose entry point is the main function.
-author: bitcrazed
-ms.author: richturn;miniksa
+author: miniksa
+ms.author: miniksa
 
 
 MS-HAID:

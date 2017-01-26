@@ -1,8 +1,8 @@
 ---
 title: Scrolling the Screen Buffer
 description: The console window displays a portion of the active screen buffer.
-author: bitcrazed
-ms.author: richturn;miniksa
+author: miniksa
+ms.author: miniksa
 
 
 MS-HAID:

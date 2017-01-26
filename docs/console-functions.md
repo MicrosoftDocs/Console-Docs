@@ -1,8 +1,8 @@
 ---
 title: Console Functions
 description: The following functions are used to access a console.
-author: bitcrazed
-ms.author: richturn;miniksa
+author: miniksa
+ms.author: miniksa
 
 
 MS-HAID:

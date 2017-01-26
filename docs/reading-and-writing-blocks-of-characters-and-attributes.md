@@ -1,8 +1,8 @@
 ---
 title: Reading and Writing Blocks of Characters and Attributes
 description: The ReadConsoleOutput function copies a rectangular block of character and color attribute data from a console screen buffer into a destination buffer.
-author: bitcrazed
-ms.author: richturn;miniksa
+author: miniksa
+ms.author: miniksa
 
 
 MS-HAID:

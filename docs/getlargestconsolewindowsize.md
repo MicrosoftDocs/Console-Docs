@@ -1,8 +1,8 @@
 ---
 title: GetLargestConsoleWindowSize function
 description: Retrieves the size of the largest possible console window, based on the current font and the size of the display.
-author: bitcrazed
-ms.author: richturn;miniksa
+author: miniksa
+ms.author: miniksa
 
 
 MS-HAID:

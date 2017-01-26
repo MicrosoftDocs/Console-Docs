@@ -1,8 +1,8 @@
 ---
 title: GenerateConsoleCtrlEvent function
 description: Sends a specified signal to a console process group that shares the console associated with the calling process.
-author: bitcrazed
-ms.author: richturn;miniksa
+author: miniksa
+ms.author: miniksa
 
 
 MS-HAID:

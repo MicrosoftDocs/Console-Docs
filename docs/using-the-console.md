@@ -1,8 +1,8 @@
 ---
 title: Using the Console
 description: The following examples demonstrate how to use the console functions.
-author: bitcrazed
-ms.author: richturn;miniksa
+author: miniksa
+ms.author: miniksa
 
 
 MS-HAID:
