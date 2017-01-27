@@ -3,12 +3,10 @@ title: GetCurrentConsoleFontEx function
 description: Retrieves extended information about the current console font.
 author: miniksa
 ms.author: miniksa
-
-
-MS-HAID:
+ms.HAID:
 - 'base.getcurrentconsolefontex'
 - 'consoles.getcurrentconsolefontex'
-MSHAttr:
+ms.Attr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/desktop'
 ms.assetid: 97d8e730-4110-4be5-b099-0acc1b6f8eb5

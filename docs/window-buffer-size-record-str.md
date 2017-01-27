@@ -3,15 +3,6 @@ title: WINDOW\_BUFFER\_SIZE\_RECORD structure
 description: Describes a change in the size of the console screen buffer.
 author: miniksa
 ms.author: miniksa
-
-
-MS-HAID:
-- '\_win32\_window\_buffer\_size\_record\_str'
-- 'base.window\_buffer\_size\_record\_str'
-- 'consoles.window\_buffer\_size\_record\_str'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: 2f2875e8-aa09-455b-a923-7cc388525b98
 keywords: ["WINDOW_BUFFER_SIZE_RECORD structure Consoles"]
 topic_type:

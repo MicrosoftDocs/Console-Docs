@@ -3,12 +3,10 @@ title: GetConsoleScreenBufferInfoEx function
 description: Retrieves extended information about the specified console screen buffer.
 author: miniksa
 ms.author: miniksa
-
-
-MS-HAID:
+ms.HAID:
 - 'base.getconsolescreenbufferinfoex'
 - 'consoles.getconsolescreenbufferinfoex'
-MSHAttr:
+ms.Attr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/desktop'
 ms.assetid: 60534226-d26f-44e2-a4cc-64811882e308

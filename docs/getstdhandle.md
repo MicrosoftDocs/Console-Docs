@@ -3,15 +3,6 @@ title: GetStdHandle function
 description: Retrieves a handle to the specified standard device (standard input, standard output, or standard error).
 author: miniksa
 ms.author: miniksa
-
-
-MS-HAID:
-- '\_win32\_getstdhandle'
-- 'base.getstdhandle'
-- 'consoles.getstdhandle'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: 23cd76e9-671a-48d0-9b82-2beda8917348
 keywords: ["GetStdHandle function Consoles"]
 topic_type:

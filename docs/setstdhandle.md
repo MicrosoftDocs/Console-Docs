@@ -3,15 +3,6 @@ title: SetStdHandle function
 description: Sets the handle for the specified standard device (standard input, standard output, or standard error).
 author: miniksa
 ms.author: miniksa
-
-
-MS-HAID:
-- '\_win32\_setstdhandle'
-- 'base.setstdhandle'
-- 'consoles.setstdhandle'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: f5952460-1839-415e-b400-2f04425f288a
 keywords: ["SetStdHandle function Consoles"]
 topic_type:

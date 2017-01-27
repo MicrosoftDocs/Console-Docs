@@ -3,15 +3,6 @@ title: WriteConsoleInput function
 description: Writes data directly to the console input buffer.
 author: miniksa
 ms.author: miniksa
-
-
-MS-HAID:
-- '\_win32\_writeconsoleinput'
-- 'base.writeconsoleinput'
-- 'consoles.writeconsoleinput'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: ad06231f-5063-4aff-b14d-8df5e6e42430
 keywords: ["WriteConsoleInput function Consoles"]
 topic_type:

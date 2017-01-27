@@ -3,15 +3,6 @@ title: ReadConsoleOutputCharacter function
 description: Copies a number of characters from consecutive cells of a console screen buffer, beginning at a specified location.
 author: miniksa
 ms.author: miniksa
-
-
-MS-HAID:
-- '\_win32\_readconsoleoutputcharacter'
-- 'base.readconsoleoutputcharacter'
-- 'consoles.readconsoleoutputcharacter'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: f47464a9-6c59-4f15-abd0-be29ab515698
 keywords: ["ReadConsoleOutputCharacter function Consoles"]
 topic_type:

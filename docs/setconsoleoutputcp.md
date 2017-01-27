@@ -3,15 +3,6 @@ title: SetConsoleOutputCP function
 description: Sets the output code page used by the console associated with the calling process.
 author: miniksa
 ms.author: miniksa
-
-
-MS-HAID:
-- '\_win32\_setconsoleoutputcp'
-- 'base.setconsoleoutputcp'
-- 'consoles.setconsoleoutputcp'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: 0b41e66b-ca19-4d69-9f39-92da158344ef
 keywords: ["SetConsoleOutputCP function Consoles"]
 topic_type:

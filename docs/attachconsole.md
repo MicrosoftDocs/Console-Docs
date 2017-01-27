@@ -3,15 +3,6 @@ title: AttachConsole function
 description: Attaches the calling process to the console of the specified process.
 author: miniksa
 ms.author: miniksa
-
-
-MS-HAID:
-- '\_win32\_attachconsole'
-- 'base.attachconsole'
-- 'consoles.attachconsole'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: c00691c3-5878-4a06-9bf3-6073326f36c4
 keywords: ["AttachConsole function Consoles"]
 topic_type:

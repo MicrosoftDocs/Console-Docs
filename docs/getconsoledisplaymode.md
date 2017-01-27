@@ -3,15 +3,6 @@ title: GetConsoleDisplayMode function
 description: Retrieves the display mode of the current console.
 author: miniksa
 ms.author: miniksa
-
-
-MS-HAID:
-- '\_win32\_getconsoledisplaymode'
-- 'base.getconsoledisplaymode'
-- 'consoles.getconsoledisplaymode'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: e19ff900-a671-41d3-a9c8-9e4507c47eff
 keywords: ["GetConsoleDisplayMode function Consoles"]
 topic_type:

@@ -3,12 +3,10 @@ title: SetCurrentConsoleFontEx function
 description: Sets extended information about the current console font.
 author: miniksa
 ms.author: miniksa
-
-
-MS-HAID:
+ms.HAID:
 - 'base.setcurrentconsolefontex'
 - 'consoles.setcurrentconsolefontex'
-MSHAttr:
+ms.Attr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/desktop'
 ms.assetid: fbc31e2a-31df-4e9e-9f61-35a4ff812f8f

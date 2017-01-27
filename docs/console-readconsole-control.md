@@ -3,12 +3,10 @@ title: CONSOLE\_READCONSOLE\_CONTROL structure
 description: Contains information for a console read operation.
 author: miniksa
 ms.author: miniksa
-
-
-MS-HAID:
+ms.HAID:
 - 'base.console\_readconsole\_control'
 - 'consoles.console\_readconsole\_control'
-MSHAttr:
+ms.Attr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/desktop'
 ms.assetid: 6a8451a6-d692-43af-88c4-972c4dc5e07c

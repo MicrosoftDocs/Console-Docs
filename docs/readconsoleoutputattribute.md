@@ -3,15 +3,6 @@ title: ReadConsoleOutputAttribute function
 description: Copies a specified number of character attributes from consecutive cells of a console screen buffer, beginning at a specified location.
 author: miniksa
 ms.author: miniksa
-
-
-MS-HAID:
-- '\_win32\_readconsoleoutputattribute'
-- 'base.readconsoleoutputattribute'
-- 'consoles.readconsoleoutputattribute'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: c3e35779-a487-47f1-8d07-0d5fae99d54a
 keywords: ["ReadConsoleOutputAttribute function Consoles"]
 topic_type:

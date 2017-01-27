@@ -3,15 +3,6 @@ title: INPUT\_RECORD structure
 description: Describes an input event in the console input buffer.
 author: miniksa
 ms.author: miniksa
-
-
-MS-HAID:
-- '\_win32\_input\_record\_str'
-- 'base.input\_record\_str'
-- 'consoles.input\_record\_str'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: a46ba7fd-097a-455d-96ac-13aa01e11dc1
 keywords: ["INPUT_RECORD structure Consoles"]
 topic_type:

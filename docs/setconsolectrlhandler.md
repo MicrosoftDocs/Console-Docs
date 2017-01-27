@@ -3,15 +3,6 @@ title: SetConsoleCtrlHandler function
 description: Adds or removes an application-defined HandlerRoutine function from the list of handler functions for the calling process.
 author: miniksa
 ms.author: miniksa
-
-
-MS-HAID:
-- '\_win32\_setconsolectrlhandler'
-- 'base.setconsolectrlhandler'
-- 'consoles.setconsolectrlhandler'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: 6fc64265-1403-45ea-925c-c5eb31d56734
 keywords: ["SetConsoleCtrlHandler function Consoles"]
 topic_type:

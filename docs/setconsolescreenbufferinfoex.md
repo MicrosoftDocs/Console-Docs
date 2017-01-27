@@ -3,12 +3,10 @@ title: SetConsoleScreenBufferInfoEx function
 description: Sets extended information about the specified console screen buffer.
 author: miniksa
 ms.author: miniksa
-
-
-MS-HAID:
+ms.HAID:
 - 'base.setconsolescreenbufferinfoex'
 - 'consoles.setconsolescreenbufferinfoex'
-MSHAttr:
+ms.Attr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/desktop'
 ms.assetid: ff851144-eee9-4410-8fd1-28aa24fc25f1

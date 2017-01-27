@@ -3,15 +3,6 @@ title: CONSOLE\_SCREEN\_BUFFER\_INFO structure
 description: Contains information about a console screen buffer.
 author: miniksa
 ms.author: miniksa
-
-
-MS-HAID:
-- '\_win32\_console\_screen\_buffer\_info\_str'
-- 'base.console\_screen\_buffer\_info\_str'
-- 'consoles.console\_screen\_buffer\_info\_str'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: 586b3e0f-2f6b-4a03-b8e4-602a892be56d
 keywords: ["CONSOLE_SCREEN_BUFFER_INFO structure Consoles"]
 topic_type:

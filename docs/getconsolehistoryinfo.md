@@ -3,12 +3,10 @@ title: GetConsoleHistoryInfo function
 description: Retrieves the history settings for the calling process's console.
 author: miniksa
 ms.author: miniksa
-
-
-MS-HAID:
+ms.HAID:
 - 'base.getconsolehistoryinfo'
 - 'consoles.getconsolehistoryinfo'
-MSHAttr:
+ms.Attr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/desktop'
 ms.assetid: 145008b3-8a4a-4e6a-9144-ee787ce90ef4

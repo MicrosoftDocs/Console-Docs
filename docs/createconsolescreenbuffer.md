@@ -3,15 +3,6 @@ title: CreateConsoleScreenBuffer function
 description: Creates a console screen buffer.
 author: miniksa
 ms.author: miniksa
-
-
-MS-HAID:
-- '\_win32\_createconsolescreenbuffer'
-- 'base.createconsolescreenbuffer'
-- 'consoles.createconsolescreenbuffer'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: 98bb74e4-dad2-4615-9263-48ba778a06ff
 keywords: ["CreateConsoleScreenBuffer function Consoles"]
 topic_type:

@@ -3,15 +3,6 @@ title: SetConsoleCP function
 description: Sets the input code page used by the console associated with the calling process.
 author: miniksa
 ms.author: miniksa
-
-
-MS-HAID:
-- '\_win32\_setconsolecp'
-- 'base.setconsolecp'
-- 'consoles.setconsolecp'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: 6a1a9ba5-c792-491d-ae51-979f462dcb53
 keywords: ["SetConsoleCP function Consoles"]
 topic_type:

@@ -3,15 +3,6 @@ title: GetConsoleCP function
 description: Retrieves the input code page used by the console associated with the calling process.
 author: miniksa
 ms.author: miniksa
-
-
-MS-HAID:
-- '\_win32\_getconsolecp'
-- 'base.getconsolecp'
-- 'consoles.getconsolecp'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: 9e0af6d9-0f5c-45b3-a686-22449d26de47
 keywords: ["GetConsoleCP function Consoles"]
 topic_type:

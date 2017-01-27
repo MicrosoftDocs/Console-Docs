@@ -3,15 +3,6 @@ title: Using the Console
 description: The following examples demonstrate how to use the console functions.
 author: miniksa
 ms.author: miniksa
-
-
-MS-HAID:
-- '\_win32\_using\_the\_console'
-- 'base.using\_the\_console'
-- 'consoles.using\_the\_console'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: 31bbf2b1-2519-4589-8059-7757cfda105a
 keywords: ["consoles", "consoles, code examples"]
 ---

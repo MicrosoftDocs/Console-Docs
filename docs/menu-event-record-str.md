@@ -3,15 +3,6 @@ title: MENU\_EVENT\_RECORD structure
 description: Describes a menu event in a console INPUT\_RECORD structure. These events are used internally and should be ignored.
 author: miniksa
 ms.author: miniksa
-
-
-MS-HAID:
-- '\_win32\_menu\_event\_record\_str'
-- 'base.menu\_event\_record\_str'
-- 'consoles.menu\_event\_record\_str'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: 7efef0e0-01ba-44ba-a972-25c6b3aed2bd
 keywords: ["MENU_EVENT_RECORD structure Consoles", "PMENU_EVENT_RECORD structure pointer Consoles"]
 topic_type:

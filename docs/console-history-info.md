@@ -3,12 +3,10 @@ title: CONSOLE\_HISTORY\_INFO structure
 description: Contains information about the console history.
 author: miniksa
 ms.author: miniksa
-
-
-MS-HAID:
+ms.HAID:
 - 'base.console\_history\_info'
 - 'consoles.console\_history\_info'
-MSHAttr:
+ms.Attr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/desktop'
 ms.assetid: df7d2f12-5299-47ed-b1f6-2db903dba81b

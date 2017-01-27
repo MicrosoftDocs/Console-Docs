@@ -3,15 +3,6 @@ title: ScrollConsoleScreenBuffer function
 description: Moves a block of data in a screen buffer.
 author: miniksa
 ms.author: miniksa
-
-
-MS-HAID:
-- '\_win32\_scrollconsolescreenbuffer'
-- 'base.scrollconsolescreenbuffer'
-- 'consoles.scrollconsolescreenbuffer'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: d78bf4c9-2314-466c-b617-619259c824b5
 keywords: ["ScrollConsoleScreenBuffer function Consoles"]
 topic_type:

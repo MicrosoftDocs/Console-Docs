@@ -3,15 +3,6 @@ title: SMALL\_RECT structure
 description: Defines the coordinates of the upper left and lower right corners of a rectangle.
 author: miniksa
 ms.author: miniksa
-
-
-MS-HAID:
-- '\_win32\_small\_rect\_str'
-- 'base.small\_rect\_str'
-- 'consoles.small\_rect\_str'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: 62639815-c7e9-4ae2-b152-61290f78422b
 keywords: ["SMALL_RECT structure Consoles"]
 topic_type:

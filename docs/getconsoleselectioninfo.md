@@ -3,15 +3,6 @@ title: GetConsoleSelectionInfo function
 description: Retrieves information about the current console selection.
 author: miniksa
 ms.author: miniksa
-
-
-MS-HAID:
-- '\_win32\_getconsoleselectioninfo'
-- 'base.getconsoleselectioninfo'
-- 'consoles.getconsoleselectioninfo'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: 912efe9d-75dd-43bd-8dca-08671b5ed79c
 keywords: ["GetConsoleSelectionInfo function Consoles"]
 topic_type:

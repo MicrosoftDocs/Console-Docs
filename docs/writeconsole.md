@@ -3,15 +3,6 @@ title: WriteConsole function
 description: Writes a character string to a console screen buffer beginning at the current cursor location.
 author: miniksa
 ms.author: miniksa
-
-
-MS-HAID:
-- '\_win32\_writeconsole'
-- 'base.writeconsole'
-- 'consoles.writeconsole'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: 1a13d9ef-75a9-49fd-9717-207f18612b59
 keywords: ["WriteConsole function Consoles"]
 topic_type:

@@ -3,12 +3,10 @@ title: GetConsoleAlias function
 description: Retrieves the text for the specified console alias and executable.
 author: miniksa
 ms.author: miniksa
-
-
-MS-HAID:
+ms.HAID:
 - 'base.getconsolealias'
 - 'consoles.getconsolealias'
-MSHAttr:
+ms.Attr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/desktop'
 ms.assetid: e8514f24-8121-4fad-94bb-c9eedf7a700d

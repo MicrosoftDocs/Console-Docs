@@ -3,15 +3,6 @@ title: CONSOLE\_FONT\_INFO structure
 description: Contains information for a console font.
 author: miniksa
 ms.author: miniksa
-
-
-MS-HAID:
-- '\_win32\_console\_font\_info\_str'
-- 'base.console\_font\_info\_str'
-- 'consoles.console\_font\_info\_str'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: 380b8183-1964-46f2-a511-01f39f21f5c5
 keywords: ["CONSOLE_FONT_INFO structure Consoles", "PCONSOLE_FONT_INFO structure pointer Consoles"]
 topic_type:

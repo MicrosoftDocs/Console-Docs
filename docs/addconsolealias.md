@@ -3,12 +3,10 @@ title: AddConsoleAlias function
 description: Defines a console alias for the specified executable.
 author: miniksa
 ms.author: miniksa
-
-
-MS-HAID:
+ms.HAID:
 - 'base.addconsolealias'
 - 'consoles.addconsolealias'
-MSHAttr:
+ms.Attr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/desktop'
 ms.assetid: e4072c3c-cf32-4992-847e-efdb846e5784

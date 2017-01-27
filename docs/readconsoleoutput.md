@@ -3,15 +3,6 @@ title: ReadConsoleOutput function
 description: Reads character and color attribute data from a rectangular block of character cells in a console screen buffer, and the function writes the data to a rectangular block at a specified location in the destination buffer.
 author: miniksa
 ms.author: miniksa
-
-
-MS-HAID:
-- '\_win32\_readconsoleoutput'
-- 'base.readconsoleoutput'
-- 'consoles.readconsoleoutput'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: d1391684-6a8f-4b5e-9706-11970a957710
 keywords: ["ReadConsoleOutput function Consoles"]
 topic_type:

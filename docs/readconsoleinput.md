@@ -3,15 +3,6 @@ title: ReadConsoleInput function
 description: Reads data from a console input buffer and removes it from the buffer.
 author: miniksa
 ms.author: miniksa
-
-
-MS-HAID:
-- '\_win32\_readconsoleinput'
-- 'base.readconsoleinput'
-- 'consoles.readconsoleinput'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: 5a9f7b18-cdea-4041-a377-5532d30e0105
 keywords: ["ReadConsoleInput function Consoles"]
 topic_type:

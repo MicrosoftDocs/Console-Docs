@@ -3,15 +3,6 @@ title: SetConsoleMode function
 description: Sets the input mode of a console's input buffer or the output mode of a console screen buffer.
 author: zadjii-msft
 ms.author: miniksa
-
-
-MS-HAID:
-- '\_win32\_setconsolemode'
-- 'base.setconsolemode'
-- 'consoles.setconsolemode'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: 77508d58-8a7a-4c47-9ec5-dc61e5c4beac
 keywords: ["SetConsoleMode function Consoles"]
 topic_type:

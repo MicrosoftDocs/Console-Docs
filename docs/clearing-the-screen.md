@@ -3,15 +3,6 @@ title: Clearing the Screen
 description: There are two ways to clear the screen in a console application.
 author: miniksa
 ms.author: miniksa
-
-
-MS-HAID:
-- '\_win32\_clearing\_the\_screen'
-- 'base.clearing\_the\_screen'
-- 'consoles.clearing\_the\_screen'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: 2097cc53-13b9-4f29-9d2c-feea56a27cb8
 ---
 

@@ -3,12 +3,10 @@ title: SetConsoleHistoryInfo function
 description: Sets the history settings for the calling process's console.
 author: miniksa
 ms.author: miniksa
-
-
-MS-HAID:
+ms.HAID:
 - 'base.setconsolehistoryinfo'
 - 'consoles.setconsolehistoryinfo'
-MSHAttr:
+ms.Attr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/desktop'
 ms.assetid: db180f53-aa3c-4a91-bc3e-9f3f0bb7ab01

@@ -3,15 +3,6 @@ title: Console Control Handlers
 description: Each console process has its own list of control handler functions that are called by the system when the process receives a CTRL+C, CTRL+BREAK, or CTRL+CLOSE signal.
 author: miniksa
 ms.author: miniksa
-
-
-MS-HAID:
-- '\_win32\_console\_control\_handlers'
-- 'base.console\_control\_handlers'
-- 'consoles.console\_control\_handlers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: 6480e8ee-d228-4c07-99df-de1e0c3ca250
 keywords: ["consoles", "consoles,control handlers", "control handler functions"]
 ---

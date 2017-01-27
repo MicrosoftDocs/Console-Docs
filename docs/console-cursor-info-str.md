@@ -3,15 +3,6 @@ title: CONSOLE\_CURSOR\_INFO structure
 description: Contains information about the console cursor.
 author: miniksa
 ms.author: miniksa
-
-
-MS-HAID:
-- '\_win32\_console\_cursor\_info\_str'
-- 'base.console\_cursor\_info\_str'
-- 'consoles.console\_cursor\_info\_str'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: 0e71ce8c-e008-4bd7-922e-c44484b425ef
 keywords: ["CONSOLE_CURSOR_INFO structure Consoles", "PCONSOLE_CURSOR_INFO structure pointer Consoles"]
 topic_type:

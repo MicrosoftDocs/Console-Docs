@@ -3,15 +3,6 @@ title: CONSOLE\_SELECTION\_INFO structure
 description: Contains information for a console selection.
 author: miniksa
 ms.author: miniksa
-
-
-MS-HAID:
-- '\_win32\_console\_selection\_info\_str'
-- 'base.console\_selection\_info\_str'
-- 'consoles.console\_selection\_info\_str'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: 9530b249-8db4-4516-9cc8-2b452c6751f9
 keywords: ["CONSOLE_SELECTION_INFO structure Consoles", "PCONSOLE_SELECTION_INFO structure pointer Consoles"]
 topic_type:

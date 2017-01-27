@@ -3,12 +3,10 @@ title: CONSOLE\_FONT\_INFOEX structure
 description: Contains extended information for a console font.
 author: miniksa
 ms.author: miniksa
-
-
-MS-HAID:
+ms.HAID:
 - 'base.console\_font\_infoex'
 - 'consoles.console\_font\_infoex'
-MSHAttr:
+ms.Attr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/desktop'
 ms.assetid: e9a087e1-264d-4d48-8adb-771a0e35b511

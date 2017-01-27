@@ -3,15 +3,6 @@ title: WriteConsoleOutputAttribute function
 description: Copies a number of character attributes to consecutive cells of a console screen buffer, beginning at a specified location.
 author: miniksa
 ms.author: miniksa
-
-
-MS-HAID:
-- '\_win32\_writeconsoleoutputattribute'
-- 'base.writeconsoleoutputattribute'
-- 'consoles.writeconsoleoutputattribute'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: 52a9d6e5-072e-4411-9945-10bd3dd61e25
 keywords: ["WriteConsoleOutputAttribute function Consoles"]
 topic_type:

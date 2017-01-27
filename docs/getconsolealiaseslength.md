@@ -3,12 +3,10 @@ title: GetConsoleAliasesLength function
 description: Retrieves the required size for the buffer used by the GetConsoleAliases function.
 author: miniksa
 ms.author: miniksa
-
-
-MS-HAID:
+ms.HAID:
 - 'base.getconsolealiaseslength'
 - 'consoles.getconsolealiaseslength'
-MSHAttr:
+ms.Attr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/desktop'
 ms.assetid: 29e49eba-0864-4ed7-af82-1ba639261c40

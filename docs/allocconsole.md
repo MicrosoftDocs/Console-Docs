@@ -3,15 +3,6 @@ title: AllocConsole function
 description: Allocates a new console for the calling process.
 author: miniksa
 ms.author: miniksa
-
-
-MS-HAID:
-- '\_win32\_allocconsole'
-- 'base.allocconsole'
-- 'consoles.allocconsole'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: bdf3bf2f-8eb8-4ba6-bf3a-a67b29dffda2
 keywords: ["AllocConsole function Consoles"]
 topic_type:

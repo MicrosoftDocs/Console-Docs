@@ -3,15 +3,6 @@ title: Low-Level Console Modes
 description: The types of input events reported in a console's input buffer depend on the console's mouse and window input modes.
 author: miniksa
 ms.author: miniksa
-
-
-MS-HAID:
-- '\_win32\_low\_level\_console\_modes'
-- 'base.low\_level\_console\_modes'
-- 'consoles.low\_level\_console\_modes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: 41bfdc51-27cb-4d5e-898c-507ffc8789b9
 ---
 

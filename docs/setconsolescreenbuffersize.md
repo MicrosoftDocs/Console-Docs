@@ -3,15 +3,6 @@ title: SetConsoleScreenBufferSize function
 description: Changes the size of the specified console screen buffer.
 author: miniksa
 ms.author: miniksa
-
-
-MS-HAID:
-- '\_win32\_setconsolescreenbuffersize'
-- 'base.setconsolescreenbuffersize'
-- 'consoles.setconsolescreenbuffersize'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: 50bf1973-5604-42fe-bbeb-611ddc240bdd
 keywords: ["SetConsoleScreenBufferSize function Consoles"]
 topic_type:

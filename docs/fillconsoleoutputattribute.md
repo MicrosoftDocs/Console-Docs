@@ -3,15 +3,6 @@ title: FillConsoleOutputAttribute function
 description: Sets the character attributes for a specified number of character cells, beginning at the specified coordinates in a screen buffer.
 author: miniksa
 ms.author: miniksa
-
-
-MS-HAID:
-- '\_win32\_fillconsoleoutputattribute'
-- 'base.fillconsoleoutputattribute'
-- 'consoles.fillconsoleoutputattribute'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: 09440263-71c4-4b7a-8fc6-a2b4fcd677ff
 keywords: ["FillConsoleOutputAttribute function Consoles"]
 topic_type:

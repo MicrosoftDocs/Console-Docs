@@ -3,15 +3,6 @@ title: WriteConsoleOutput function
 description: Writes character and color attribute data to a specified rectangular block of character cells in a console screen buffer.
 author: miniksa
 ms.author: miniksa
-
-
-MS-HAID:
-- '\_win32\_writeconsoleoutput'
-- 'base.writeconsoleoutput'
-- 'consoles.writeconsoleoutput'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: a98b8118-97ce-4dd4-a337-122d4a76f232
 keywords: ["WriteConsoleOutput function Consoles"]
 topic_type:

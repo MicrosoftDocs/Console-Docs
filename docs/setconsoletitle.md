@@ -3,15 +3,6 @@ title: SetConsoleTitle function
 description: Sets the title for the current console window.
 author: miniksa
 ms.author: miniksa
-
-
-MS-HAID:
-- '\_win32\_setconsoletitle'
-- 'base.setconsoletitle'
-- 'consoles.setconsoletitle'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: f1db449b-0dd0-4d61-bb79-b7da9a5168f4
 keywords: ["SetConsoleTitle function Consoles"]
 topic_type:

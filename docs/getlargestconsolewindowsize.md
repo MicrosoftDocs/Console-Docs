@@ -3,15 +3,6 @@ title: GetLargestConsoleWindowSize function
 description: Retrieves the size of the largest possible console window, based on the current font and the size of the display.
 author: miniksa
 ms.author: miniksa
-
-
-MS-HAID:
-- '\_win32\_getlargestconsolewindowsize'
-- 'base.getlargestconsolewindowsize'
-- 'consoles.getlargestconsolewindowsize'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
 ms.assetid: 3e5897f3-4987-4a82-ab19-06c0b231ba67
 keywords: ["GetLargestConsoleWindowSize function Consoles"]
 topic_type:

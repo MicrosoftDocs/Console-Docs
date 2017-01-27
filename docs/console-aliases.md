@@ -3,12 +3,10 @@ title: Console Aliases
 description: Console aliases are used to map source strings to target strings.
 author: miniksa
 ms.author: miniksa
-
-
-MS-HAID:
+ms.HAID:
 - 'base.console\_aliases'
 - 'consoles.console\_aliases'
-MSHAttr:
+ms.Attr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/desktop'
 ms.assetid: 8169708b-83da-47ef-94be-eca3ca7d0a5b
