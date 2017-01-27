@@ -21,9 +21,9 @@
     "template": "op.html",
     "dest": "opsdocs",
     "fileMetadata": {
-      "ms.prod": "Windows",
-      "ms.technology": "Console",
-      "manager": "richturn"
+      "ms.prod": { "/console/**.yml": "Windows"},
+      "ms.technology": { "/console/**.yml": "Console"},
+      "manager": {"/console/**.yml": "richturn"}
     }
   }
 }
