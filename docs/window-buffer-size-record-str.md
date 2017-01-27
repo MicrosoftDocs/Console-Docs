@@ -23,7 +23,7 @@ Describes a change in the size of the console screen buffer.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C++
 typedef struct _WINDOW_BUFFER_SIZE_RECORD {
   COORD dwSize;
 } WINDOW_BUFFER_SIZE_RECORD;

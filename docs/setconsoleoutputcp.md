@@ -26,7 +26,7 @@ Sets the output code page used by the console associated with the calling proces
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C++
 BOOL WINAPI SetConsoleOutputCP(
   _In_ UINT wCodePageID
 );

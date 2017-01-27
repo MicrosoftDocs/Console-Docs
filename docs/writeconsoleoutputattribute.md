@@ -26,7 +26,7 @@ Copies a number of character attributes to consecutive cells of a console screen
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C++
 BOOL WINAPI WriteConsoleOutputAttribute(
   _In_        HANDLE  hConsoleOutput,
   _In_  const WORD    *lpAttribute,

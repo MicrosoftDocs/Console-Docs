@@ -31,7 +31,7 @@ Retrieves the window handle used by the console associated with the calling proc
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C++
 HWND WINAPI GetConsoleWindow(void);
 ```
 

@@ -29,7 +29,7 @@ Contains information about the console history.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C++
 typedef struct {
   UINT  cbSize;
   UINT  HistoryBufferSize;

@@ -23,7 +23,7 @@ Defines the coordinates of the upper left and lower right corners of a rectangle
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C++
 typedef struct _SMALL_RECT {
   SHORT Left;
   SHORT Top;

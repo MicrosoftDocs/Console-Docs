@@ -23,7 +23,7 @@ Describes a focus event in a console [**INPUT\_RECORD**](input-record-str.md) st
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C++
 typedef struct _FOCUS_EVENT_RECORD {
   BOOL bSetFocus;
 } FOCUS_EVENT_RECORD;

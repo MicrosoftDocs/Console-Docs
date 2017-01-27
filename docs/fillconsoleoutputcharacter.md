@@ -28,7 +28,7 @@ Writes a character to the console screen buffer a specified number of times, beg
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C++
 BOOL WINAPI FillConsoleOutputCharacter(
   _In_  HANDLE  hConsoleOutput,
   _In_  TCHAR   cCharacter,

@@ -26,7 +26,7 @@ Sends a specified signal to a console process group that shares the console asso
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C++
 BOOL WINAPI GenerateConsoleCtrlEvent(
   _In_ DWORD dwCtrlEvent,
   _In_ DWORD dwProcessGroupId

@@ -29,7 +29,7 @@ Contains extended information about a console screen buffer.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C++
 typedef struct _CONSOLE_SCREEN_BUFFER_INFOEX {
   ULONG      cbSize;
   COORD      dwSize;

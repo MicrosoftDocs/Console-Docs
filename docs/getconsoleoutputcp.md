@@ -27,7 +27,7 @@ Retrieves the output code page used by the console associated with the calling p
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C++
 UINT WINAPI GetConsoleOutputCP(void);
 ```
 

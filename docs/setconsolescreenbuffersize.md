@@ -26,7 +26,7 @@ Changes the size of the specified console screen buffer.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C++
 BOOL WINAPI SetConsoleScreenBufferSize(
   _In_ HANDLE hConsoleOutput,
   _In_ COORD  dwSize

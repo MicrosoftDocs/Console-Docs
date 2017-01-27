@@ -28,7 +28,7 @@ Writes character and color attribute data to a specified rectangular block of ch
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C++
 BOOL WINAPI WriteConsoleOutput(
   _In_          HANDLE      hConsoleOutput,
   _In_    const CHAR_INFO   *lpBuffer,

@@ -23,7 +23,7 @@ Describes a mouse input event in a console [**INPUT\_RECORD**](input-record-str.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C++
 typedef struct _MOUSE_EVENT_RECORD {
   COORD dwMousePosition;
   DWORD dwButtonState;

@@ -31,7 +31,7 @@ Retrieves the original title for the current console window.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C++
 DWORD WINAPI GetConsoleOriginalTitle(
   _Out_ LPTSTR lpConsoleTitle,
   _In_  DWORD  nSize

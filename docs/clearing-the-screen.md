@@ -16,7 +16,7 @@ There are two ways to clear the screen in a console application.
 
 The first method is to use the C run-time **system** function. The **system** function invokes the **cls** command provided by the command interpreter to clear the screen.
 
-```ManagedCPlusPlus
+```C++
 #include <stdlib.h>
 
 int main( void )
@@ -31,7 +31,7 @@ int main( void )
 
 The second method is to write a function to programmatically clear the screen using the [**FillConsoleOutputCharacter**](fillconsoleoutputcharacter.md) and [**FillConsoleOutputAttribute**](fillconsoleoutputattribute.md) functions. The following sample code demonstrates this technique.
 
-```ManagedCPlusPlus
+```C++
 #include <windows.h>
 
 void cls( HANDLE hConsole )

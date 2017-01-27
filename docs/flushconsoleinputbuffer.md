@@ -26,7 +26,7 @@ Flushes the console input buffer. All input records currently in the input buffe
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C++
 BOOL WINAPI FlushConsoleInputBuffer(
   _In_ HANDLE hConsoleInput
 );

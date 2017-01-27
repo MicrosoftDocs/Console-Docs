@@ -29,7 +29,7 @@ Contains information for a console read operation.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C++
 typedef struct _CONSOLE_READCONSOLE_CONTROL {
   ULONG nLength;
   ULONG nInitialChars;

@@ -29,7 +29,7 @@ Sets extended information about the current console font.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C++
 BOOL WINAPI SetCurrentConsoleFontEx(
   _In_ HANDLE               hConsoleOutput,
   _In_ BOOL                 bMaximumWindow,

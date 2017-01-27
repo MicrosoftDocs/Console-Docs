@@ -29,7 +29,7 @@ Contains extended information for a console font.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C++
 typedef struct _CONSOLE_FONT_INFOEX {
   ULONG cbSize;
   DWORD nFont;

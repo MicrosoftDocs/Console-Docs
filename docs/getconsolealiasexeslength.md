@@ -31,7 +31,7 @@ Retrieves the required size for the buffer used by the [**GetConsoleAliasExes**]
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C++
 DWORD WINAPI GetConsoleAliasExesLength(void);
 ```
 

@@ -26,7 +26,7 @@ Sets the specified screen buffer to be the currently displayed console screen bu
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C++
 BOOL WINAPI SetConsoleActiveScreenBuffer(
   _In_ HANDLE hConsoleOutput
 );

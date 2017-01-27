@@ -28,7 +28,7 @@ Copies a number of characters from consecutive cells of a console screen buffer,
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C++
 BOOL WINAPI ReadConsoleOutputCharacter(
   _In_  HANDLE  hConsoleOutput,
   _Out_ LPTSTR  lpCharacter,

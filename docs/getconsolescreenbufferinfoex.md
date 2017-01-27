@@ -32,7 +32,7 @@ Retrieves extended information about the specified console screen buffer.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C++
 BOOL WINAPI GetConsoleScreenBufferInfoEx(
   _In_  HANDLE                        hConsoleOutput,
   _Out_ PCONSOLE_SCREEN_BUFFER_INFOEX lpConsoleScreenBufferInfoEx

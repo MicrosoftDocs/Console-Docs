@@ -27,7 +27,7 @@ Allocates a new console for the calling process.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C++
 BOOL WINAPI AllocConsole(void);
 ```
 

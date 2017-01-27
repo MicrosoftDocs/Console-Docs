@@ -28,7 +28,7 @@ Moves a block of data in a screen buffer. The effects of the move can be limited
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C++
 BOOL WINAPI ScrollConsoleScreenBuffer(
   _In_           HANDLE     hConsoleOutput,
   _In_     const SMALL_RECT *lpScrollRectangle,

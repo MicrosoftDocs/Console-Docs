@@ -31,7 +31,7 @@ Defines a console alias for the specified executable.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C++
 BOOL WINAPI AddConsoleAlias(
   _In_ LPCTSTR Source,
   _In_ LPCTSTR Target,

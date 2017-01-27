@@ -23,7 +23,7 @@ Retrieves information about the current console font.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C++
 BOOL WINAPI GetCurrentConsoleFont(
   _In_  HANDLE             hConsoleOutput,
   _In_  BOOL               bMaximumWindow,

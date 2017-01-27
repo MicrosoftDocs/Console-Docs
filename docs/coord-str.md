@@ -23,7 +23,7 @@ Defines the coordinates of a character cell in a console screen buffer. The orig
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C++
 typedef struct _COORD {
   SHORT X;
   SHORT Y;

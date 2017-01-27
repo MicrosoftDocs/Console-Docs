@@ -25,7 +25,7 @@ The **PHANDLER\_ROUTINE** type defines a pointer to this callback function. **Ha
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C++
 BOOL WINAPI HandlerRoutine(
   _In_ DWORD dwCtrlType
 );

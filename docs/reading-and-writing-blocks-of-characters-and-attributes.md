@@ -13,7 +13,7 @@ The [**ReadConsoleOutput**](readconsoleoutput.md) function copies a rectangular 
 
 The following example uses the [**CreateConsoleScreenBuffer**](createconsolescreenbuffer.md) function to create a new screen buffer. After the [**SetConsoleActiveScreenBuffer**](setconsoleactivescreenbuffer.md) function makes this the active screen buffer, a block of characters and color attributes is copied from the top two rows of the STDOUT screen buffer into a temporary buffer. The data is then copied from the temporary buffer into the new active screen buffer. When the application is finished using the new screen buffer, it calls **SetConsoleActiveScreenBuffer** to restore the original STDOUT screen buffer.
 
-```ManagedCPlusPlus
+```C++
 #include <windows.h> 
 #include <stdio.h>
  

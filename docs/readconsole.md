@@ -29,7 +29,7 @@ Reads character input from the console input buffer and removes it from the buff
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C++
 BOOL WINAPI ReadConsole(
   _In_     HANDLE  hConsoleInput,
   _Out_    LPVOID  lpBuffer,

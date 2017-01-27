@@ -23,7 +23,7 @@ Retrieves a list of the processes attached to the current console.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C++
 DWORD WINAPI GetConsoleProcessList(
   _Out_ LPDWORD lpdwProcessList,
   _In_  DWORD   dwProcessCount

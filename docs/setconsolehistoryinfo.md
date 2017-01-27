@@ -29,7 +29,7 @@ Sets the history settings for the calling process's console.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C++
 BOOL WINAPI SetConsoleHistoryInfo(
   _In_ PCONSOLE_HISTORY_INFO lpConsoleHistoryInfo
 );

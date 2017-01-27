@@ -23,7 +23,7 @@ Describes a menu event in a console [**INPUT\_RECORD**](input-record-str.md) str
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C++
 typedef struct _MENU_EVENT_RECORD {
   UINT dwCommandId;
 } MENU_EVENT_RECORD, *PMENU_EVENT_RECORD;

@@ -26,7 +26,7 @@ Sets the attributes of characters written to the console screen buffer by the [*
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C++
 BOOL WINAPI SetConsoleTextAttribute(
   _In_ HANDLE hConsoleOutput,
   _In_ WORD   wAttributes
