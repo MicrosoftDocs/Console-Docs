@@ -1,7 +1,7 @@
 ---
 title: Console Virtual Terminal Sequences
 description: Virtual terminal sequences are control character sequences that can control cursor movement, color/font mode, and other operations when written to the output stream.
-author: migrie
+author: zadjii-msft
 ms.author: miniksa
 ms.Attr:
 - 'PreferredSiteName:MSDN'
