@@ -7,6 +7,7 @@ Tools/NuGet/
 .optemp/
 .vscode/
 _themes*/
+.vs/
 
 .openpublishing.build.mdproj
 .openpublishing.buildcore.ps1
