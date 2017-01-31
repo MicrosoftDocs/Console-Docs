@@ -38,4 +38,4 @@ While some metadata is stored per file (e.g. above), common metadata required by
 }
 
 ```
-The valid for `ms.prod` and `ms.technology` are standard for Win32 API's & desktop technology, as defined in the Excel workbook above. Custom values can be registered if required.
+The values for `ms.prod` and `ms.technology` are standard for Win32 API's & desktop technology, as defined in the Excel workbook above. Custom values can be registered if required.
