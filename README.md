@@ -7,9 +7,7 @@ Each content page in this repo requires some metadata expressed as [YAML](https:
 ``` markdown
 ---
 title: About Consoles
-description: Consoles provide high-level support for simple character-mode applications 
-that interact with the user by using functions that read from standard input and write 
-to standard output or standard error.
+description: Consoles provide high-level support for simple character-mode applications that interact with the user by using functions that read from standard input and write to standard output or standard error.
 author: miniksa
 ms.author: miniksa
 ms.assetid: 39204f0e-b0b8-4f92-af8e-e146ac06c454
