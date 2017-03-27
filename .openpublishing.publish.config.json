@@ -7,14 +7,15 @@
       "build_source_folder": "docs",
       "build_output_subfolder": "console",
       "locale": "en-us",
-      "version": 0,
-      "open_to_public_contributors": false,
+      "monikers": [],
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
         "RestApi": "Content"
       },
-      "build_entry_point": "op"
+      "build_entry_point": "op",
+      "version": 0
     }
   ],
   "notification_subscribers": [
