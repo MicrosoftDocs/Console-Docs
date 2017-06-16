@@ -15,7 +15,7 @@ keywords: ["consoles", "consoles, reference"]
 # Console Reference
 
 
-The following elements are associated with accessing a console.
+The following sections describe the Console API:
 
 -   [Console Functions](console-functions.md)
 -   [Console Structures](console-structures.md)

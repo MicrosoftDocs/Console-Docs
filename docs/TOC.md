@@ -1,7 +1,13 @@
 # [Home](index.md) 
-# Console & Command Line applications
-## [About Character Mode Applications](about-character-mode-applications.md) 
-## [About Consoles](consoles.md) 
+# [About Character Mode Applications](about-character-mode-applications.md) 
+## [Input And Output Methods](input-and-output-methods.md) 
+## [Console Code Pages](console-code-pages.md)
+## [Console Control Handlers](console-control-handlers.md)
+## [Console Aliases](console-aliases.md)
+## [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md)
+## [Console Application Issues](console-application-issues.md)
+
+# [About Consoles](consoles.md) 
 ### [Creation of a Console](creation-of-a-console.md) 
 ### [Attaching to a Console](attaching-to-a-console.md) 
 ### [Closing a Console](closing-a-console.md)
@@ -11,6 +17,9 @@
 ### [Window And Screen Buffer Size](window-and-screen-buffer-size.md) 
 ### [Console Selection](console-selection.md)
 ### [Scrolling the Screen Buffer](scrolling-the-screen-buffer.md) 
+
+# [Console Developer Guide & API Reference](console-reference.md) 
+## Developer's Guide
 ### [Console Virtual Terminal Sequences](console-virtual-terminal-sequences.md) 
 ### [Ctrl C And Ctrl Break Signals](ctrl-c-and-ctrl-break-signals.md) 
 ### [Ctrl Close Signal](ctrl-close-signal.md) 
@@ -26,10 +35,7 @@
 ### [Scrolling The Screen Buffer](scrolling-the-screen-buffer.md) 
 ### [Using The Console](using-the-console.md) 
 ### [Using The High Level Input And Output Functions](using-the-high-level-Input-and-output-functions.md) 
-
-# [Console API Reference](console-reference.md) 
 ## [Console Functions](console-functions.md) 
-### [Input And Output Methods](input-and-output-methods.md) 
 ### [High Level Console Input And Output Functions](high-level-console-input-and-output-functions.md) 
 ### [AddConsoleAlias](addconsolealias.md) 
 ### [AllocConsole](allocconsole.md) 
