@@ -45,7 +45,7 @@ Parameters
 A handle to the console screen buffer. The handle must have the **GENERIC\_READ** access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
 
 *wAttributes* \[in\]  
-The [character attributes](console-screen-buffers.md#-win32-character-attributes).
+The [character attributes](console-screen-buffers.md#_win32_font_attributes).
 
 Return value
 ------------

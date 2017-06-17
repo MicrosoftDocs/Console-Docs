@@ -48,7 +48,7 @@ Parameters
 A handle to the console screen buffer. The handle must have the **GENERIC\_WRITE** access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
 
 *wAttribute* \[in\]  
-The attributes to use when writing to the console screen buffer. For more information, see [Character Attributes](console-screen-buffers.md#-win32-character-attributes).
+The attributes to use when writing to the console screen buffer. For more information, see [Character Attributes](console-screen-buffers.md#_win32_font_attributes).
 
 *nLength* \[in\]  
 The number of character cells to be set to the specified color attributes.

@@ -28,7 +28,7 @@ api_type:
 # Console WinEvents
 
 
-The following event constants are used in the *event* parameter of the [*WinEventProc*](_msaa_wineventproc_callback_function) callback function. For more information, see [WinEvents](https://msdn.microsoft.com/library/windows/desktop/dd373889).
+The following event constants are used in the *event* parameter of the [*WinEventProc*](https://msdn.microsoft.com/en-us/library/windows/desktop/dd373885(v=vs.85).aspx) callback function. For more information, see [WinEvents](https://msdn.microsoft.com/library/windows/desktop/dd373889).
 
 <table>
 <colgroup>
@@ -83,7 +83,7 @@ The following event constants are used in the *event* parameter of the [*WinEven
 <td><span id="EVENT_CONSOLE_UPDATE_SIMPLE"></span><span id="event_console_update_simple"></span>
 <strong>EVENT_CONSOLE_UPDATE_SIMPLE</strong>
 0x4003</td>
-<td><p>A single character has changed. The <em>idObject</em> parameter is a [<strong>COORD</strong>](coord-str.md) structure that specifies the character that has changed. The <em>idChild</em> parameter specifies the character in the low word and the [character attributes](console-screen-buffers.md#-win32-character-attributes) in the high word.</p></td>
+<td><p>A single character has changed. The <em>idObject</em> parameter is a [<strong>COORD</strong>](coord-str.md) structure that specifies the character that has changed. The <em>idChild</em> parameter specifies the character in the low word and the [character attributes](console-screen-buffers.md#_win32_font_attributes) in the high word.</p></td>
 </tr>
 <tr class="even">
 </tr>
