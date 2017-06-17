@@ -27,7 +27,8 @@
   "branches_to_filter": [
     ""
   ],
-  "git_repository_url_open_to_public_contributors": "https://github.com/Microsoft/Console-Docs",
+  "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/Console-Docs",
+  "git_repository_branch_open_to_public_contributors": "Live",
   "skip_source_output_uploading": false,
   "need_preview_pull_request": true,
   "dependent_repositories": [
@@ -38,5 +39,6 @@
       "branch_mapping": {}
     }
   ],
+  "branch_target_mapping": {},
   "need_generate_pdf_url_template": false
 }
