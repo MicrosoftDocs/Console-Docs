@@ -84,7 +84,7 @@ The **WriteConsole** function uses either Unicode characters or ANSI characters 
 
 **WriteConsole** fails if it is used with a standard handle that is redirected to a file. If an application processes multilingual output that can be redirected, determine whether the output handle is a console handle (one method is to call the [**GetConsoleMode**](getconsolemode.md) function and check whether it succeeds). If the handle is a console handle, call **WriteConsole**. If the handle is not a console handle, the output is redirected and you should call [**WriteFile**](https://msdn.microsoft.com/library/windows/desktop/aa365747) to perform the I/O. Be sure to prefix a Unicode plain text file with a byte order mark. For more information, see [Using Byte Order Marks](https://msdn.microsoft.com/library/windows/desktop/dd374101).
 
-Although an application can use **WriteConsole** in ANSI mode to write ANSI characters, consoles do not support ANSI escape sequences. However, some functions provide equivalent functionality. For more information, see [**SetCursorPos**](_win32_setcursorpos_cpp), [**SetConsoleTextAttribute**](setconsoletextattribute.md), and [**GetConsoleCursorInfo**](getconsolecursorinfo.md).
+Although an application can use **WriteConsole** in ANSI mode to write ANSI characters, consoles do not support ANSI escape sequences. However, some functions provide equivalent functionality. For more information, see [**SetCursorPos**](https://msdn.microsoft.com/en-us/library/windows/desktop/ms648394(v=vs.85).aspx), [**SetConsoleTextAttribute**](setconsoletextattribute.md), and [**GetConsoleCursorInfo**](getconsolecursorinfo.md).
 
 Requirements
 ------------
@@ -155,7 +155,7 @@ Requirements
 
 [**SetConsoleTextAttribute**](setconsoletextattribute.md)
 
-[**SetCursorPos**](_win32_setcursorpos_cpp)
+[**SetCursorPos**](https://msdn.microsoft.com/en-us/library/windows/desktop/ms648394(v=vs.85).aspx)
 
 [**WriteFile**](https://msdn.microsoft.com/library/windows/desktop/aa365747)
 

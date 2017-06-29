@@ -52,7 +52,7 @@ A pointer to a buffer that receives the attributes being used by the console scr
 
 The storage for this buffer is allocated from a shared heap for the process that is 64 KB in size. The maximum size of the buffer will depend on heap usage.
 
-For more information, see [Character Attributes](console-screen-buffers.md#-win32-character-attributes).
+For more information, see [Character Attributes](console-screen-buffers.md#_win32_font_attributes).
 
 *nLength* \[in\]  
 The number of screen buffer character cells from which to read. The size of the buffer pointed to by the *lpAttribute* parameter should be `nLength * sizeof(WORD)`.

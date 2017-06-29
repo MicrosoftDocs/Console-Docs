@@ -48,7 +48,7 @@ Parameters
 A handle to the console screen buffer. The handle must have the **GENERIC\_WRITE** access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
 
 *lpAttribute* \[in\]  
-The attributes to be used when writing to the console screen buffer. For more information, see [Character Attributes](console-screen-buffers.md#-win32-character-attributes).
+The attributes to be used when writing to the console screen buffer. For more information, see [Character Attributes](console-screen-buffers.md#_win32_font_attributes).
 
 *nLength* \[in\]  
 The number of screen buffer character cells to which the attributes will be copied.
