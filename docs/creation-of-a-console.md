@@ -1,14 +1,11 @@
 ---
 title: Creation of a Console
 description: The system creates a new console when it starts a console process, a character-mode process whose entry point is the main function.
-MS-HAID:
-- '\_win32\_creation\_of\_a\_console'
-- 'base.creation\_of\_a\_console'
-- 'consoles.creation\_of\_a\_console'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
-ms.assetid: 84ec2559-cade-447e-8594-5b824d3d3e81
+author: bitcrazed
+ms.author: richturn
+ms.topic: article
+ms.prod: console
+keywords: console, character mode applications, command line applications, terminal applications, console api
 ---
 
 # Creation of a Console

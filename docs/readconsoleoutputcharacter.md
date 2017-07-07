@@ -1,28 +1,11 @@
 ---
 title: ReadConsoleOutputCharacter function
 description: Copies a number of characters from consecutive cells of a console screen buffer, beginning at a specified location.
-MS-HAID:
-- '\_win32\_readconsoleoutputcharacter'
-- 'base.readconsoleoutputcharacter'
-- 'consoles.readconsoleoutputcharacter'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
-ms.assetid: f47464a9-6c59-4f15-abd0-be29ab515698
-keywords: ["ReadConsoleOutputCharacter function Consoles"]
-topic_type:
-- apiref
-api_name:
-- ReadConsoleOutputCharacter
-- ReadConsoleOutputCharacterA
-- ReadConsoleOutputCharacterW
-api_location:
-- Kernel32.dll
-- API-MS-Win-Core-Console-l2-1-0.dll
-- KernelBase.dll
-- API-MS-Win-DownLevel-Kernel32-l1-1-0.dll
-api_type:
-- DllExport
+author: bitcrazed
+ms.author: richturn
+ms.topic: article
+ms.prod: console
+keywords: console, character mode applications, command line applications, terminal applications, console api
 ---
 
 # ReadConsoleOutputCharacter function

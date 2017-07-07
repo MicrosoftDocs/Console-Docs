@@ -1,26 +1,11 @@
 ---
 title: SetConsoleCP function
 description: Sets the input code page used by the console associated with the calling process.
-MS-HAID:
-- '\_win32\_setconsolecp'
-- 'base.setconsolecp'
-- 'consoles.setconsolecp'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
-ms.assetid: 6a1a9ba5-c792-491d-ae51-979f462dcb53
-keywords: ["SetConsoleCP function Consoles"]
-topic_type:
-- apiref
-api_name:
-- SetConsoleCP
-api_location:
-- Kernel32.dll
-- API-MS-Win-Core-Console-l2-1-0.dll
-- KernelBase.dll
-- API-MS-Win-DownLevel-Kernel32-l1-1-0.dll
-api_type:
-- DllExport
+author: bitcrazed
+ms.author: richturn
+ms.topic: article
+ms.prod: console
+keywords: console, character mode applications, command line applications, terminal applications, console api
 ---
 
 # SetConsoleCP function

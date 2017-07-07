@@ -1,36 +1,11 @@
 ---
 title: SetConsoleTitle function
 description: Sets the title for the current console window.
-MS-HAID:
-- '\_win32\_setconsoletitle'
-- 'base.setconsoletitle'
-- 'consoles.setconsoletitle'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
-ms.assetid: f1db449b-0dd0-4d61-bb79-b7da9a5168f4
-keywords: ["SetConsoleTitle function Consoles"]
-topic_type:
-- apiref
-api_name:
-- SetConsoleTitle
-- SetConsoleTitleA
-- SetConsoleTitleW
-api_location:
-- Kernel32.dll
-- API-MS-Win-Core-Kernel32-Legacy-l1-1-0.dll
-- kernel32legacy.dll
-- API-MS-Win-Core-Kernel32-Legacy-l1-1-1.dll
-- API-MS-Win-Core-Kernel32-Legacy-l1-1-2.dll
-- API-MS-Win-DownLevel-Kernel32-l2-1-0.dll
-- API-MS-Win-Core-Console-l2-1-0.dll
-- KernelBase.dll
-- API-MS-Win-DownLevel-Kernel32-l1-1-0.dll
-- API-MS-Win-Core-Kernel32-Legacy-L1-1-3.dll
-- API-MS-Win-Core-Kernel32-Legacy-L1-1-4.dll
-- API-MS-Win-Core-Kernel32-Legacy-L1-1-5.dll
-api_type:
-- DllExport
+author: bitcrazed
+ms.author: richturn
+ms.topic: article
+ms.prod: console
+keywords: console, character mode applications, command line applications, terminal applications, console api
 ---
 
 # SetConsoleTitle function

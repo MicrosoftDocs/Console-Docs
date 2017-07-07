@@ -1,14 +1,11 @@
 ---
 title: Scrolling the Screen Buffer
 description: The console window displays a portion of the active screen buffer.
-MS-HAID:
-- '\_win32\_scrolling\_the\_screen\_buffer'
-- 'base.scrolling\_the\_screen\_buffer'
-- 'consoles.scrolling\_the\_screen\_buffer'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
-ms.assetid: c8404e78-9807-4bed-bc12-25377fa96151
+author: bitcrazed
+ms.author: richturn
+ms.topic: article
+ms.prod: console
+keywords: console, character mode applications, command line applications, terminal applications, console api
 ---
 
 # Scrolling the Screen Buffer

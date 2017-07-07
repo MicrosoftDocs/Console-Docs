@@ -1,23 +1,11 @@
 ---
 title: COORD structure
 description: Defines the coordinates of a character cell in a console screen buffer.
-MS-HAID:
-- '\_win32\_coord\_str'
-- 'base.coord\_str'
-- 'consoles.coord\_str'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
-ms.assetid: d730c46e-ea17-475e-b956-8ee5f4f5c04e
-keywords: ["COORD structure Consoles", "PCOORD structure pointer Consoles"]
-topic_type:
-- apiref
-api_name:
-- COORD
-api_location:
-- Wincon.h
-api_type:
-- HeaderDef
+author: bitcrazed
+ms.author: richturn
+ms.topic: article
+ms.prod: console
+keywords: console, character mode applications, command line applications, terminal applications, console api
 ---
 
 # COORD structure

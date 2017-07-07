@@ -1,22 +1,11 @@
 ---
 title: GetConsoleHistoryInfo function
 description: Retrieves the history settings for the calling process's console.
-MS-HAID:
-- 'base.getconsolehistoryinfo'
-- 'consoles.getconsolehistoryinfo'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
-ms.assetid: 145008b3-8a4a-4e6a-9144-ee787ce90ef4
-keywords: ["GetConsoleHistoryInfo function Consoles"]
-topic_type:
-- apiref
-api_name:
-- GetConsoleHistoryInfo
-api_location:
-- Kernel32.dll
-api_type:
-- DllExport
+author: bitcrazed
+ms.author: richturn
+ms.topic: article
+ms.prod: console
+keywords: console, character mode applications, command line applications, terminal applications, console api
 ---
 
 # GetConsoleHistoryInfo function

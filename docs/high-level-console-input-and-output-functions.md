@@ -1,14 +1,11 @@
 ---
 title: High-Level Console Input and Output Functions
 description: The ReadFile and WriteFile functions, or the ReadConsole and WriteConsole functions, enable an application to read console input and write console output as a stream of characters.
-MS-HAID:
-- '\_win32\_high\_level\_console\_input\_and\_output\_functions'
-- 'base.high\_level\_console\_input\_and\_output\_functions'
-- 'consoles.high\_level\_console\_input\_and\_output\_functions'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
-ms.assetid: 086b1bec-85f8-4e31-848d-7cb2d2703a3d
+author: bitcrazed
+ms.author: richturn
+ms.topic: article
+ms.prod: console
+keywords: console, character mode applications, command line applications, terminal applications, console api
 ---
 
 # High-Level Console Input and Output Functions

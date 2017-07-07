@@ -1,15 +1,11 @@
 ---
 title: Console Buffer Security and Access Rights
 description: The Windows security model enables you to control access to console input buffers and console screen buffers. For more information about security, see Access-Control Model.
-MS-HAID:
-- '\_win32\_console\_buffer\_security\_and\_access\_rights'
-- 'base.console\_buffer\_security\_and\_access\_rights'
-- 'consoles.console\_buffer\_security\_and\_access\_rights'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
-ms.assetid: f9a50063-8fc8-4cd1-8f24-9ae3946d3119
-keywords: ["consoles", "consoles, security and access rights"]
+author: bitcrazed
+ms.author: richturn
+ms.topic: article
+ms.prod: console
+keywords: console, character mode applications, command line applications, terminal applications, console api
 ---
 
 # Console Buffer Security and Access Rights

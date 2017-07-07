@@ -1,14 +1,11 @@
 ---
 title: About Consoles
 description: Consoles provide high-level support for simple character-mode applications that interact with the user by using functions that read from standard input and write to standard output or standard error.
-MS-HAID:
-- '\_win32\_about\_character\_mode\_applications'
-- 'base.about\_character\_mode\_applications'
-- 'consoles.about\_character\_mode\_applications'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
-ms.assetid: 39204f0e-b0b8-4f92-af8e-e146ac06c454
+author: bitcrazed
+ms.author: richturn
+ms.topic: article
+ms.prod: console
+keywords: console, character mode applications, command line applications, terminal applications, console api
 ---
 
 # About Character Mode Applications

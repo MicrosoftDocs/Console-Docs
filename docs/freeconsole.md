@@ -1,26 +1,11 @@
 ---
 title: FreeConsole function
 description: Detaches the calling process from its console.
-MS-HAID:
-- '\_win32\_freeconsole'
-- 'base.freeconsole'
-- 'consoles.freeconsole'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
-ms.assetid: 6c525325-696e-4d8b-8337-cbf9e31c900c
-keywords: ["FreeConsole function Consoles"]
-topic_type:
-- apiref
-api_name:
-- FreeConsole
-api_location:
-- Kernel32.dll
-- API-MS-Win-Core-Console-l2-1-0.dll
-- KernelBase.dll
-- API-MS-Win-DownLevel-Kernel32-l1-1-0.dll
-api_type:
-- DllExport
+author: bitcrazed
+ms.author: richturn
+ms.topic: article
+ms.prod: console
+keywords: console, character mode applications, command line applications, terminal applications, console api
 ---
 
 # FreeConsole function

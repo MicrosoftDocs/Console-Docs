@@ -1,26 +1,11 @@
 ---
 title: ReadConsoleOutputAttribute function
 description: Copies a specified number of character attributes from consecutive cells of a console screen buffer, beginning at a specified location.
-MS-HAID:
-- '\_win32\_readconsoleoutputattribute'
-- 'base.readconsoleoutputattribute'
-- 'consoles.readconsoleoutputattribute'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
-ms.assetid: c3e35779-a487-47f1-8d07-0d5fae99d54a
-keywords: ["ReadConsoleOutputAttribute function Consoles"]
-topic_type:
-- apiref
-api_name:
-- ReadConsoleOutputAttribute
-api_location:
-- Kernel32.dll
-- API-MS-Win-Core-Console-l2-1-0.dll
-- KernelBase.dll
-- API-MS-Win-DownLevel-Kernel32-l1-1-0.dll
-api_type:
-- DllExport
+author: bitcrazed
+ms.author: richturn
+ms.topic: article
+ms.prod: console
+keywords: console, character mode applications, command line applications, terminal applications, console api
 ---
 
 # ReadConsoleOutputAttribute function

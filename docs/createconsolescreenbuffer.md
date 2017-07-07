@@ -1,26 +1,11 @@
 ---
 title: CreateConsoleScreenBuffer function
 description: Creates a console screen buffer.
-MS-HAID:
-- '\_win32\_createconsolescreenbuffer'
-- 'base.createconsolescreenbuffer'
-- 'consoles.createconsolescreenbuffer'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
-ms.assetid: 98bb74e4-dad2-4615-9263-48ba778a06ff
-keywords: ["CreateConsoleScreenBuffer function Consoles"]
-topic_type:
-- apiref
-api_name:
-- CreateConsoleScreenBuffer
-api_location:
-- Kernel32.dll
-- API-MS-Win-Core-Console-l2-1-0.dll
-- KernelBase.dll
-- API-MS-Win-DownLevel-Kernel32-l1-1-0.dll
-api_type:
-- DllExport
+author: bitcrazed
+ms.author: richturn
+ms.topic: article
+ms.prod: console
+keywords: console, character mode applications, command line applications, terminal applications, console api
 ---
 
 # CreateConsoleScreenBuffer function

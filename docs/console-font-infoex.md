@@ -1,22 +1,11 @@
 ---
 title: CONSOLE\_FONT\_INFOEX structure
 description: Contains extended information for a console font.
-MS-HAID:
-- 'base.console\_font\_infoex'
-- 'consoles.console\_font\_infoex'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
-ms.assetid: e9a087e1-264d-4d48-8adb-771a0e35b511
-keywords: ["CONSOLE_FONT_INFOEX structure Consoles", "PCONSOLE_FONT_INFOEX structure pointer Consoles"]
-topic_type:
-- apiref
-api_name:
-- CONSOLE_FONT_INFOEX
-api_location:
-- Wincon.h
-api_type:
-- HeaderDef
+author: bitcrazed
+ms.author: richturn
+ms.topic: article
+ms.prod: console
+keywords: console, character mode applications, command line applications, terminal applications, console api
 ---
 
 # CONSOLE\_FONT\_INFOEX structure

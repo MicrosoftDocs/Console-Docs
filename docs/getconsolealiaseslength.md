@@ -1,24 +1,11 @@
 ---
 title: GetConsoleAliasesLength function
 description: Retrieves the required size for the buffer used by the GetConsoleAliases function.
-MS-HAID:
-- 'base.getconsolealiaseslength'
-- 'consoles.getconsolealiaseslength'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
-ms.assetid: 29e49eba-0864-4ed7-af82-1ba639261c40
-keywords: ["GetConsoleAliasesLength function Consoles"]
-topic_type:
-- apiref
-api_name:
-- GetConsoleAliasesLength
-- GetConsoleAliasesLengthA
-- GetConsoleAliasesLengthW
-api_location:
-- Kernel32.dll
-api_type:
-- DllExport
+author: bitcrazed
+ms.author: richturn
+ms.topic: article
+ms.prod: console
+keywords: console, character mode applications, command line applications, terminal applications, console api
 ---
 
 # GetConsoleAliasesLength function

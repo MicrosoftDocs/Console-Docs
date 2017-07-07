@@ -1,26 +1,11 @@
 ---
 title: SetConsoleCursorInfo function
 description: Sets the size and visibility of the cursor for the specified console screen buffer.
-MS-HAID:
-- '\_win32\_setconsolecursorinfo'
-- 'base.setconsolecursorinfo'
-- 'consoles.setconsolecursorinfo'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
-ms.assetid: c98cbffb-18de-41e8-bba7-5fb46a0c5d25
-keywords: ["SetConsoleCursorInfo function Consoles"]
-topic_type:
-- apiref
-api_name:
-- SetConsoleCursorInfo
-api_location:
-- Kernel32.dll
-- API-MS-Win-Core-Console-l2-1-0.dll
-- KernelBase.dll
-- API-MS-Win-DownLevel-Kernel32-l1-1-0.dll
-api_type:
-- DllExport
+author: bitcrazed
+ms.author: richturn
+ms.topic: article
+ms.prod: console
+keywords: console, character mode applications, command line applications, terminal applications, console api
 ---
 
 # SetConsoleCursorInfo function

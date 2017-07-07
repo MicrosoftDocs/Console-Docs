@@ -1,27 +1,11 @@
 ---
 title: GetConsoleOutputCP function
 description: Retrieves the output code page used by the console associated with the calling process.
-MS-HAID:
-- '\_win32\_getconsoleoutputcp'
-- 'base.getconsoleoutputcp'
-- 'consoles.getconsoleoutputcp'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
-ms.assetid: c23706c7-ce17-4825-a494-20ca44534d45
-keywords: ["GetConsoleOutputCP function Consoles"]
-topic_type:
-- apiref
-api_name:
-- GetConsoleOutputCP
-api_location:
-- Kernel32.dll
-- API-MS-Win-Core-Console-l1-1-0.dll
-- KernelBase.dll
-- API-MS-Win-DownLevel-Kernel32-l1-1-0.dll
-- MinKernelBase.dll
-api_type:
-- DllExport
+author: bitcrazed
+ms.author: richturn
+ms.topic: article
+ms.prod: console
+keywords: console, character mode applications, command line applications, terminal applications, console api
 ---
 
 # GetConsoleOutputCP function

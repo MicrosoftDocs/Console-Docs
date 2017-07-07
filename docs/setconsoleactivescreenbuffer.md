@@ -1,26 +1,11 @@
 ---
 title: SetConsoleActiveScreenBuffer function
 description: Sets the specified screen buffer to be the currently displayed console screen buffer.
-MS-HAID:
-- '\_win32\_setconsoleactivescreenbuffer'
-- 'base.setconsoleactivescreenbuffer'
-- 'consoles.setconsoleactivescreenbuffer'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
-ms.assetid: c026cb94-c8ec-44ee-b432-3870ae3006c2
-keywords: ["SetConsoleActiveScreenBuffer function Consoles"]
-topic_type:
-- apiref
-api_name:
-- SetConsoleActiveScreenBuffer
-api_location:
-- Kernel32.dll
-- API-MS-Win-Core-Console-l2-1-0.dll
-- KernelBase.dll
-- API-MS-Win-DownLevel-Kernel32-l1-1-0.dll
-api_type:
-- DllExport
+author: bitcrazed
+ms.author: richturn
+ms.topic: article
+ms.prod: console
+keywords: console, character mode applications, command line applications, terminal applications, console api
 ---
 
 # SetConsoleActiveScreenBuffer function

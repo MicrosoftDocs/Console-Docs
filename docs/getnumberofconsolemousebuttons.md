@@ -1,23 +1,11 @@
 ---
 title: GetNumberOfConsoleMouseButtons function
 description: Retrieves the number of buttons on the mouse used by the current console.
-MS-HAID:
-- '\_win32\_getnumberofconsolemousebuttons'
-- 'base.getnumberofconsolemousebuttons'
-- 'consoles.getnumberofconsolemousebuttons'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
-ms.assetid: 78a6a3be-b42f-4a7a-a612-b6a2019cfec2
-keywords: ["GetNumberOfConsoleMouseButtons function Consoles"]
-topic_type:
-- apiref
-api_name:
-- GetNumberOfConsoleMouseButtons
-api_location:
-- Kernel32.dll
-api_type:
-- DllExport
+author: bitcrazed
+ms.author: richturn
+ms.topic: article
+ms.prod: console
+keywords: console, character mode applications, command line applications, terminal applications, console api
 ---
 
 # GetNumberOfConsoleMouseButtons function

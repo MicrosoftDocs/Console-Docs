@@ -1,22 +1,11 @@
 ---
 title: SetCurrentConsoleFontEx function
 description: Sets extended information about the current console font.
-MS-HAID:
-- 'base.setcurrentconsolefontex'
-- 'consoles.setcurrentconsolefontex'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
-ms.assetid: fbc31e2a-31df-4e9e-9f61-35a4ff812f8f
-keywords: ["SetCurrentConsoleFontEx function Consoles"]
-topic_type:
-- apiref
-api_name:
-- SetCurrentConsoleFontEx
-api_location:
-- Kernel32.dll
-api_type:
-- DllExport
+author: bitcrazed
+ms.author: richturn
+ms.topic: article
+ms.prod: console
+keywords: console, character mode applications, command line applications, terminal applications, console api
 ---
 
 # SetCurrentConsoleFontEx function
