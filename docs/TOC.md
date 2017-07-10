@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# [Index](index.md)
-=======
 # [Home](index.md) 
 # [About Character Mode Applications](about-character-mode-applications.md) 
 ## [Input And Output Methods](input-and-output-methods.md) 
@@ -120,4 +117,3 @@
 ### [WINDOW_BUFFER_SIZE_RECORD structure](window-buffer-size-record-str.md) 
 
 ## [Console API Winevents](console-winevents.md) 
->>>>>>> master
