@@ -1,14 +1,11 @@
 ---
 title: Console Handles
 description: A console process uses handles to access the input and screen buffers of its console. A process can use the GetStdHandle, CreateFile, or CreateConsoleScreenBuffer function to open one of these handles.
-MS-HAID:
-- '\_win32\_console\_handles'
-- 'base.console\_handles'
-- 'consoles.console\_handles'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
-ms.assetid: dc723046-b3e9-418a-b386-79be411e5ac8
+author: bitcrazed
+ms.author: richturn
+ms.topic: article
+ms.prod: console
+keywords: console, character mode applications, command line applications, terminal applications, console api
 ---
 
 # Console Handles

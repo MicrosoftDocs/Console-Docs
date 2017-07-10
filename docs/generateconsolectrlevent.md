@@ -1,26 +1,11 @@
 ---
 title: GenerateConsoleCtrlEvent function
 description: Sends a specified signal to a console process group that shares the console associated with the calling process.
-MS-HAID:
-- '\_win32\_generateconsolectrlevent'
-- 'base.generateconsolectrlevent'
-- 'consoles.generateconsolectrlevent'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
-ms.assetid: ed392d97-6fd0-4256-a783-bc7d27d01a10
-keywords: ["GenerateConsoleCtrlEvent function Consoles"]
-topic_type:
-- apiref
-api_name:
-- GenerateConsoleCtrlEvent
-api_location:
-- Kernel32.dll
-- API-MS-Win-Core-Console-l2-1-0.dll
-- KernelBase.dll
-- API-MS-Win-DownLevel-Kernel32-l1-1-0.dll
-api_type:
-- DllExport
+author: bitcrazed
+ms.author: richturn
+ms.topic: article
+ms.prod: console
+keywords: console, character mode applications, command line applications, terminal applications, console api
 ---
 
 # GenerateConsoleCtrlEvent function

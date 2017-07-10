@@ -1,29 +1,11 @@
 ---
 title: ReadConsole function
 description: Reads character input from the console input buffer and removes it from the buffer.
-MS-HAID:
-- '\_win32\_readconsole'
-- 'base.readconsole'
-- 'consoles.readconsole'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
-ms.assetid: 1aa9ecac-a9b9-4e6d-9206-7a57013de657
-keywords: ["ReadConsole function Consoles"]
-topic_type:
-- apiref
-api_name:
-- ReadConsole
-- ReadConsoleA
-- ReadConsoleW
-api_location:
-- Kernel32.dll
-- API-MS-Win-Core-Console-l1-1-0.dll
-- KernelBase.dll
-- API-MS-Win-DownLevel-Kernel32-l1-1-0.dll
-- MinKernelBase.dll
-api_type:
-- DllExport
+author: bitcrazed
+ms.author: richturn
+ms.topic: article
+ms.prod: console
+keywords: console, character mode applications, command line applications, terminal applications, console api
 ---
 
 # ReadConsole function

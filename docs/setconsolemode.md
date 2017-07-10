@@ -1,27 +1,11 @@
 ---
 title: SetConsoleMode function
 description: Sets the input mode of a console's input buffer or the output mode of a console screen buffer.
-MS-HAID:
-- '\_win32\_setconsolemode'
-- 'base.setconsolemode'
-- 'consoles.setconsolemode'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
-ms.assetid: 77508d58-8a7a-4c47-9ec5-dc61e5c4beac
-keywords: ["SetConsoleMode function Consoles"]
-topic_type:
-- apiref
-api_name:
-- SetConsoleMode
-api_location:
-- Kernel32.dll
-- API-MS-Win-Core-Console-l1-1-0.dll
-- KernelBase.dll
-- API-MS-Win-DownLevel-Kernel32-l1-1-0.dll
-- MinKernelBase.dll
-api_type:
-- DllExport
+author: bitcrazed
+ms.author: richturn
+ms.topic: article
+ms.prod: console
+keywords: console, character mode applications, command line applications, terminal applications, console api
 ---
 
 # SetConsoleMode function

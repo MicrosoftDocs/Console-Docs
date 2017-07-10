@@ -1,26 +1,11 @@
 ---
 title: FillConsoleOutputAttribute function
 description: Sets the character attributes for a specified number of character cells, beginning at the specified coordinates in a screen buffer.
-MS-HAID:
-- '\_win32\_fillconsoleoutputattribute'
-- 'base.fillconsoleoutputattribute'
-- 'consoles.fillconsoleoutputattribute'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
-ms.assetid: 09440263-71c4-4b7a-8fc6-a2b4fcd677ff
-keywords: ["FillConsoleOutputAttribute function Consoles"]
-topic_type:
-- apiref
-api_name:
-- FillConsoleOutputAttribute
-api_location:
-- Kernel32.dll
-- API-MS-Win-Core-Console-l2-1-0.dll
-- KernelBase.dll
-- API-MS-Win-DownLevel-Kernel32-l1-1-0.dll
-api_type:
-- DllExport
+author: bitcrazed
+ms.author: richturn
+ms.topic: article
+ms.prod: console
+keywords: console, character mode applications, command line applications, terminal applications, console api
 ---
 
 # FillConsoleOutputAttribute function

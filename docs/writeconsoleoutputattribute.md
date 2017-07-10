@@ -1,26 +1,11 @@
 ---
 title: WriteConsoleOutputAttribute function
 description: Copies a number of character attributes to consecutive cells of a console screen buffer, beginning at a specified location.
-MS-HAID:
-- '\_win32\_writeconsoleoutputattribute'
-- 'base.writeconsoleoutputattribute'
-- 'consoles.writeconsoleoutputattribute'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
-ms.assetid: 52a9d6e5-072e-4411-9945-10bd3dd61e25
-keywords: ["WriteConsoleOutputAttribute function Consoles"]
-topic_type:
-- apiref
-api_name:
-- WriteConsoleOutputAttribute
-api_location:
-- Kernel32.dll
-- API-MS-Win-Core-Console-l2-1-0.dll
-- KernelBase.dll
-- API-MS-Win-DownLevel-Kernel32-l1-1-0.dll
-api_type:
-- DllExport
+author: bitcrazed
+ms.author: richturn
+ms.topic: article
+ms.prod: console
+keywords: console, character mode applications, command line applications, terminal applications, console api
 ---
 
 # WriteConsoleOutputAttribute function

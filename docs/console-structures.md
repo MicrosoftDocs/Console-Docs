@@ -1,14 +1,11 @@
 ---
 title: Console Structures
 description: The following structures are used to access a console.
-MS-HAID:
-- '\_win32\_console\_structures'
-- 'base.console\_structures'
-- 'consoles.console\_structures'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
-ms.assetid: 60f59616-d42b-469a-acf1-c1b71e68f560
+author: bitcrazed
+ms.author: richturn
+ms.topic: article
+ms.prod: console
+keywords: console, character mode applications, command line applications, terminal applications, console api
 ---
 
 # Console Structures

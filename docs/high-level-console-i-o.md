@@ -1,14 +1,11 @@
 ---
 title: High-Level Console I/O
 description: The high-level I/O functions provide a simple way to read a stream of characters from console input or to write a stream of characters to console output.
-MS-HAID:
-- '\_win32\_high\_level\_console\_i\_o'
-- 'base.high\_level\_console\_i\_o'
-- 'consoles.high\_level\_console\_i\_o'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
-ms.assetid: 6d191fee-87bb-4659-8056-910149e591f7
+author: bitcrazed
+ms.author: richturn
+ms.topic: article
+ms.prod: console
+keywords: console, character mode applications, command line applications, terminal applications, console api
 ---
 
 # High-Level Console I/O

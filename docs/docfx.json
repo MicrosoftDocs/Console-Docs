@@ -27,7 +27,10 @@
     ],
     "overwrite": [],
     "externalReference": [],
-    "globalMetadata": {},
+    "globalMetadata": {
+      "searchScope":
+       ["Console"]
+    },
     "fileMetadata": {},
     "template": [],
     "dest": "console"

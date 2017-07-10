@@ -1,15 +1,11 @@
 ---
 title: Consoles
 description: Consoles manage input and output (I/O) for character-mode applications (applications that do not provide their own graphical user interface).
-MS-HAID:
-- '\_win32\_character\_mode\_applications'
-- 'base.character\_mode\_applications'
-- 'consoles.character\_mode\_applications'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
-ms.assetid: ea3ea214-892c-4953-bc22-7905efbc173f
-keywords: ["character-mode applications"]
+author: bitcrazed
+ms.author: richturn
+ms.topic: article
+ms.prod: console
+keywords: console, character mode applications, command line applications, terminal applications, console api
 ---
 
 # Consoles

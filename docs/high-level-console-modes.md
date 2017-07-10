@@ -1,14 +1,11 @@
 ---
 title: High-Level Console Modes
 description: The behavior of the high-level console functions is affected by the console input and output modes.
-MS-HAID:
-- '\_win32\_high\_level\_console\_modes'
-- 'base.high\_level\_console\_modes'
-- 'consoles.high\_level\_console\_modes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
-ms.assetid: 3ec915eb-333d-484d-a14d-46377b503ecc
+author: bitcrazed
+ms.author: richturn
+ms.topic: article
+ms.prod: console
+keywords: console, character mode applications, command line applications, terminal applications, console api
 ---
 
 # High-Level Console Modes

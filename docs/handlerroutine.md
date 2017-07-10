@@ -1,23 +1,11 @@
 ---
 title: HandlerRoutine callback function
 description: An application-defined function used with the SetConsoleCtrlHandler function. A console process uses this function to handle control signals received by the process.
-MS-HAID:
-- '\_win32\_handlerroutine'
-- 'base.handlerroutine'
-- 'consoles.handlerroutine'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
-ms.assetid: 2e8732fa-7dfd-415b-b2fc-c27a400496f2
-keywords: ["PHANDLER_ROUTINE", "HandlerRoutine callback function Consoles"]
-topic_type:
-- apiref
-api_name:
-- HandlerRoutine
-api_location:
-- Wincon.h
-api_type:
-- UserDefined
+author: bitcrazed
+ms.author: richturn
+ms.topic: article
+ms.prod: console
+keywords: console, character mode applications, command line applications, terminal applications, console api
 ---
 
 # HandlerRoutine callback function

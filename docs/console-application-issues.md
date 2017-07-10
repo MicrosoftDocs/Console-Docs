@@ -1,14 +1,11 @@
 ---
 title: Console Application Issues
 description: The 8-bit console functions use the OEM code page.
-MS-HAID:
-- '\_win32\_console\_application\_issues'
-- 'base.console\_application\_issues'
-- 'consoles.console\_application\_issues'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
-ms.assetid: a561fbdd-b50d-4687-92d7-735377a7991d
+author: bitcrazed
+ms.author: richturn
+ms.topic: article
+ms.prod: console
+keywords: console, character mode applications, command line applications, terminal applications, console api
 ---
 
 # Console Application Issues

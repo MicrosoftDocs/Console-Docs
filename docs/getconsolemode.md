@@ -1,27 +1,11 @@
 ---
 title: GetConsoleMode function
 description: Retrieves the current input mode of a console's input buffer or the current output mode of a console screen buffer.
-MS-HAID:
-- '\_win32\_getconsolemode'
-- 'base.getconsolemode'
-- 'consoles.getconsolemode'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
-ms.assetid: 49adf618-196d-4490-93ca-cd177807f58e
-keywords: ["GetConsoleMode function Consoles"]
-topic_type:
-- apiref
-api_name:
-- GetConsoleMode
-api_location:
-- Kernel32.dll
-- API-MS-Win-Core-Console-l1-1-0.dll
-- KernelBase.dll
-- API-MS-Win-DownLevel-Kernel32-l1-1-0.dll
-- MinKernelBase.dll
-api_type:
-- DllExport
+author: bitcrazed
+ms.author: richturn
+ms.topic: article
+ms.prod: console
+keywords: console, character mode applications, command line applications, terminal applications, console api
 ---
 
 # GetConsoleMode function

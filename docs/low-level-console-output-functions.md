@@ -1,14 +1,11 @@
 ---
 title: Low-Level Console Output Functions
 description: The low-level console output functions provide direct access to the character cells of a screen buffer.
-MS-HAID:
-- '\_win32\_low\_level\_console\_output\_functions'
-- 'base.low\_level\_console\_output\_functions'
-- 'consoles.low\_level\_console\_output\_functions'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
-ms.assetid: 94185428-e8c7-4926-93ec-867b8c97b4ca
+author: bitcrazed
+ms.author: richturn
+ms.topic: article
+ms.prod: console
+keywords: console, character mode applications, command line applications, terminal applications, console api
 ---
 
 # Low-Level Console Output Functions

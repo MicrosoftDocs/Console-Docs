@@ -1,26 +1,11 @@
 ---
 title: SetConsoleWindowInfo function
 description: Sets the current size and position of a console screen buffer's window.
-MS-HAID:
-- '\_win32\_setconsolewindowinfo'
-- 'base.setconsolewindowinfo'
-- 'consoles.setconsolewindowinfo'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
-ms.assetid: ad16a8fe-ca91-41d6-93b1-8cce6d54b1da
-keywords: ["SetConsoleWindowInfo function Consoles"]
-topic_type:
-- apiref
-api_name:
-- SetConsoleWindowInfo
-api_location:
-- Kernel32.dll
-- API-MS-Win-Core-Console-l2-1-0.dll
-- KernelBase.dll
-- API-MS-Win-DownLevel-Kernel32-l1-1-0.dll
-api_type:
-- DllExport
+author: bitcrazed
+ms.author: richturn
+ms.topic: article
+ms.prod: console
+keywords: console, character mode applications, command line applications, terminal applications, console api
 ---
 
 # SetConsoleWindowInfo function

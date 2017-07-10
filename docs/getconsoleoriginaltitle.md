@@ -1,24 +1,11 @@
 ---
 title: GetConsoleOriginalTitle function
 description: Retrieves the original title for the current console window.
-MS-HAID:
-- 'base.getconsoleoriginaltitle'
-- 'consoles.getconsoleoriginaltitle'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
-ms.assetid: e3dd02f4-4899-4df0-a960-3b2625c15fee
-keywords: ["GetConsoleOriginalTitle function Consoles"]
-topic_type:
-- apiref
-api_name:
-- GetConsoleOriginalTitle
-- GetConsoleOriginalTitleA
-- GetConsoleOriginalTitleW
-api_location:
-- Kernel32.dll
-api_type:
-- DllExport
+author: bitcrazed
+ms.author: richturn
+ms.topic: article
+ms.prod: console
+keywords: console, character mode applications, command line applications, terminal applications, console api
 ---
 
 # GetConsoleOriginalTitle function

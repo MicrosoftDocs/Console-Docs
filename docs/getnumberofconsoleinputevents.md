@@ -1,27 +1,11 @@
 ---
 title: GetNumberOfConsoleInputEvents function
 description: Retrieves the number of unread input records in the console's input buffer.
-MS-HAID:
-- '\_win32\_getnumberofconsoleinputevents'
-- 'base.getnumberofconsoleinputevents'
-- 'consoles.getnumberofconsoleinputevents'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
-ms.assetid: 1083b4f1-8fa6-4054-a516-3b447c3b0130
-keywords: ["GetNumberOfConsoleInputEvents function Consoles"]
-topic_type:
-- apiref
-api_name:
-- GetNumberOfConsoleInputEvents
-api_location:
-- Kernel32.dll
-- API-MS-Win-Core-Console-l1-1-0.dll
-- KernelBase.dll
-- API-MS-Win-DownLevel-Kernel32-l1-1-0.dll
-- MinKernelBase.dll
-api_type:
-- DllExport
+author: bitcrazed
+ms.author: richturn
+ms.topic: article
+ms.prod: console
+keywords: console, character mode applications, command line applications, terminal applications, console api
 ---
 
 # GetNumberOfConsoleInputEvents function

@@ -1,26 +1,11 @@
 ---
 title: SetConsoleOutputCP function
 description: Sets the output code page used by the console associated with the calling process.
-MS-HAID:
-- '\_win32\_setconsoleoutputcp'
-- 'base.setconsoleoutputcp'
-- 'consoles.setconsoleoutputcp'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
-ms.assetid: 0b41e66b-ca19-4d69-9f39-92da158344ef
-keywords: ["SetConsoleOutputCP function Consoles"]
-topic_type:
-- apiref
-api_name:
-- SetConsoleOutputCP
-api_location:
-- Kernel32.dll
-- API-MS-Win-Core-Console-l2-1-0.dll
-- KernelBase.dll
-- API-MS-Win-DownLevel-Kernel32-l1-1-0.dll
-api_type:
-- DllExport
+author: bitcrazed
+ms.author: richturn
+ms.topic: article
+ms.prod: console
+keywords: console, character mode applications, command line applications, terminal applications, console api
 ---
 
 # SetConsoleOutputCP function

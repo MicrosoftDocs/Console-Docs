@@ -1,22 +1,11 @@
 ---
 title: SetConsoleHistoryInfo function
 description: Sets the history settings for the calling process's console.
-MS-HAID:
-- 'base.setconsolehistoryinfo'
-- 'consoles.setconsolehistoryinfo'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
-ms.assetid: db180f53-aa3c-4a91-bc3e-9f3f0bb7ab01
-keywords: ["SetConsoleHistoryInfo function Consoles"]
-topic_type:
-- apiref
-api_name:
-- SetConsoleHistoryInfo
-api_location:
-- Kernel32.dll
-api_type:
-- DllExport
+author: bitcrazed
+ms.author: richturn
+ms.topic: article
+ms.prod: console
+keywords: console, character mode applications, command line applications, terminal applications, console api
 ---
 
 # SetConsoleHistoryInfo function

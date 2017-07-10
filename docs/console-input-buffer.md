@@ -1,14 +1,11 @@
 ---
 title: Console Input Buffer
 description: Each console has an input buffer that contains a queue of input event records.
-MS-HAID:
-- '\_win32\_console\_input\_buffer'
-- 'base.console\_input\_buffer'
-- 'consoles.console\_input\_buffer'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
-ms.assetid: 6e536658-8a27-478e-82ee-d1e11f351301
+author: bitcrazed
+ms.author: richturn
+ms.topic: article
+ms.prod: console
+keywords: console, character mode applications, command line applications, terminal applications, console api
 ---
 
 # Console Input Buffer

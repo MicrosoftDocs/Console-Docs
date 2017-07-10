@@ -1,14 +1,11 @@
 ---
 title: Console Functions
 description: The following functions are used to access a console.
-MS-HAID:
-- '\_win32\_console\_functions'
-- 'base.console\_functions'
-- 'consoles.console\_functions'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/desktop'
-ms.assetid: 2a0e5dcc-be48-42ab-a05a-96f68d012a67
+author: bitcrazed
+ms.author: richturn
+ms.topic: article
+ms.prod: console
+keywords: console, character mode applications, command line applications, terminal applications, console api
 ---
 
 # Console Functions
