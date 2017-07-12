@@ -1,6 +1,6 @@
 ---
 title: CreateConsoleScreenBuffer function
-description: Creates a console screen buffer.
+description: CreateConsoleScreenBuffer function creates a screen buffer, active or inactive, for the Windows Console.
 author: bitcrazed
 ms.author: richturn
 ms.topic: article
