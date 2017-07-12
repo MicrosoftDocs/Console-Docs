@@ -1,6 +1,6 @@
 ---
 title: SetConsoleScreenBufferInfoEx function
-description: Sets extended information about the specified console screen buffer.
+description: Sets extended information about the specified console screen buffer to the specified buffer.
 author: bitcrazed
 ms.author: richturn
 ms.topic: article

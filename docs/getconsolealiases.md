@@ -1,6 +1,6 @@
 ---
 title: GetConsoleAliases function
-description: Retrieves all defined console aliases for the specified executable.
+description: Retrieves all of the defined console aliases for the specified executable.
 author: bitcrazed
 ms.author: richturn
 ms.topic: article

@@ -1,6 +1,6 @@
 ---
 title: Console Structures
-description: The following structures are used to access a console.
+description: Describes a complete list of the structurest that are used to access a console.
 author: bitcrazed
 ms.author: richturn
 ms.topic: article

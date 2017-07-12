@@ -1,6 +1,6 @@
 ---
 title: GetCurrentConsoleFontEx function
-description: Retrieves extended information about the current console font.
+description: Retrieves extended information about the currently used console font.
 author: bitcrazed
 ms.author: richturn
 ms.topic: article

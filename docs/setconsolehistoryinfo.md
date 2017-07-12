@@ -1,6 +1,6 @@
 ---
 title: SetConsoleHistoryInfo function
-description: Sets the history settings for the calling process's console.
+description: Sets the history settings for the Windows Console of the calling process.
 author: bitcrazed
 ms.author: richturn
 ms.topic: article

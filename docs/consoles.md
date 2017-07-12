@@ -1,6 +1,6 @@
 ---
-title: Consoles
-description: A console is an application that provides I/O to character-mode applications. This processor-independent mechanism makes it easy to port existing character-mode applications or to create new character-mode tools and applications.
+title: Console Concepts & Internals
+description: Overview of Windows Console concepts, internals, and how command-line applications work.
 author: bitcrazed
 ms.author: richturn
 ms.topic: article
@@ -9,7 +9,6 @@ keywords: console, character mode applications, command line applications, termi
 ---
 
 # Consoles
-
 
 A *console* (or "terminal) is an application that provides I/O to character-mode applications. This processor-independent mechanism makes it easy to port existing character-mode applications or to create new character-mode tools and applications.
 

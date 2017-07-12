@@ -1,6 +1,6 @@
 ---
 title: Console Reference
-description: The following elements are associated with accessing a console.
+description: Describes the three sections of the Console API, console functions, structures, and WinEvents.
 author: bitcrazed
 ms.author: richturn
 ms.topic: article

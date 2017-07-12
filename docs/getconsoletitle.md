@@ -1,6 +1,6 @@
 ---
 title: GetConsoleTitle function
-description: Retrieves the title for the current console window.
+description: Retrieves the title and size of the title for the current console window.
 author: bitcrazed
 ms.author: richturn
 ms.topic: article

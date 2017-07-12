@@ -1,6 +1,6 @@
 ---
 title: CONSOLE\_CURSOR\_INFO structure
-description: Contains information about the console cursor.
+description: Contains the size and visibility information about the about the console cursor.
 author: bitcrazed
 ms.author: richturn
 ms.topic: article

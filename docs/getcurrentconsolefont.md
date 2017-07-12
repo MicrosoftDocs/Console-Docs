@@ -1,6 +1,6 @@
 ---
 title: GetCurrentConsoleFont function
-description: Retrieves information about the current console font.
+description: Retrieves information about the current console font for a specified console screen buffer.
 author: bitcrazed
 ms.author: richturn
 ms.topic: article

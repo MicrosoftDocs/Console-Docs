@@ -1,6 +1,6 @@
 ---
 title: Console Functions
-description: The following functions are used to access a console.
+description: Describes a complete list of all functions that are used to access a console.
 author: bitcrazed
 ms.author: richturn
 ms.topic: article
