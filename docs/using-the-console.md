@@ -1,6 +1,6 @@
 ---
 title: Using the Console
-description: The following examples demonstrate how to use the console functions.
+description: The following examples demonstrate how to use various console functions.
 author: bitcrazed
 ms.author: richturn
 ms.topic: article

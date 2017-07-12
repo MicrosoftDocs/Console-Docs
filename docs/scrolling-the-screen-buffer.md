@@ -1,6 +1,6 @@
 ---
 title: Scrolling the Screen Buffer
-description: The console window displays a portion of the active screen buffer.
+description: Describes how the console window displays a portion of the active screen buffer.
 author: bitcrazed
 ms.author: richturn
 ms.topic: article

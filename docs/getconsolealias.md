@@ -1,6 +1,6 @@
 ---
 title: GetConsoleAlias function
-description: Retrieves the text for the specified console alias and executable.
+description: Retrieves the text for the specified console alias and the name of the executable.
 author: bitcrazed
 ms.author: richturn
 ms.topic: article

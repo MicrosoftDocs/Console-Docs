@@ -1,6 +1,6 @@
 ---
 title: CreateConsoleScreenBuffer function
-description: Creates a console screen buffer.
+description: Creates a screen buffer used to store the characters displayed in the Windows Console.
 author: bitcrazed
 ms.author: richturn
 ms.topic: article

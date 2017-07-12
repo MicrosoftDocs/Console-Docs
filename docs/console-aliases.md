@@ -1,6 +1,6 @@
 ---
 title: Console Aliases
-description: Console aliases are used to map source strings to target strings.
+description: Describes console aliases and how they are used to map source strings to target strings.
 author: bitcrazed
 ms.author: richturn
 ms.topic: article

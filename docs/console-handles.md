@@ -1,6 +1,6 @@
 ---
 title: Console Handles
-description: A console process uses handles to access the input and screen buffers of its console. A process can use the GetStdHandle, CreateFile, or CreateConsoleScreenBuffer function to open one of these handles.
+description: A console process uses handles to access the input and screen buffers of its console, including the GetStdHandle, CreateFile, or CreateConsoleScreenBuffer functions.
 author: bitcrazed
 ms.author: richturn
 ms.topic: article

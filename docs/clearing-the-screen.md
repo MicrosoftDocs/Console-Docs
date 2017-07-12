@@ -1,6 +1,6 @@
 ---
 title: Clearing the Screen
-description: There are two ways to clear the screen in a console application.
+description: How to clear the screen of the Windows Console using the system function or programmatically using public API functions.
 author: bitcrazed
 ms.author: richturn
 ms.topic: article

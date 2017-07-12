@@ -28,8 +28,8 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "searchScope":
-       ["Console"]
+      "titleSuffix": "Windows Console",
+      "searchScope": ["Console"]
     },
     "fileMetadata": {},
     "template": [],
