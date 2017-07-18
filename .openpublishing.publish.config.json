@@ -8,6 +8,7 @@
       "build_output_subfolder": "console",
       "locale": "en-us",
       "monikers": [],
+      "moniker_groups": [],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
