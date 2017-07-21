@@ -17,7 +17,7 @@ You can specify a [security descriptor](https://msdn.microsoft.com/library/windo
 
 The handles returned by [**CreateFile**](https://msdn.microsoft.com/library/windows/desktop/aa363858), [**CreateConsoleScreenBuffer**](createconsolescreenbuffer.md), and [**GetStdHandle**](getstdhandle.md) have the **GENERIC\_READ** and **GENERIC\_WRITE** access rights.
 
-The valid access rights include the **GENERIC\_READ** and **GENERIC\_WRITE**[generic access rights](https://msdn.microsoft.com/library/windows/desktop/aa446632).
+The valid access rights include the **GENERIC\_READ** and **GENERIC\_WRITE**[generic access rights] (https://msdn.microsoft.com/library/windows/desktop/aa446632).
 
 | Value                            | Meaning                                                                                               |
 |----------------------------------|-------------------------------------------------------------------------------------------------------|
