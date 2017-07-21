@@ -1,6 +1,6 @@
 ---
 title: About Consoles
-description: Consoles provide high-level support for simple character-mode applications that interact with the user by using functions that read from standard input and write to standard output or standard error.
+description: Consoles provide high-level support for simple character mode applications that interact with the user by using functions that read from standard input and write to standard output or standard error.
 author: bitcrazed
 ms.author: richturn
 ms.topic: article
@@ -10,15 +10,15 @@ keywords: console, character mode applications, command line applications, termi
 
 # About Character Mode Applications
 
-Character-mode (or "command-line") applications:
+Character mode (or "command-line") applications:
 
-1. [Optionally] Read data from standard-input (stdin)
+1. [Optionally] Read data from standard input (stdin)
 2. Do "work"
-3. [Optionally] Write data to standard-output (stdout) or standard-error (stderr)
+3. [Optionally] Write data to standard output (stdout) or standard error (stderr)
 
-Character-mode applications communicate with the end-user through a "console" (or "terminal") application. A console converts user-input from keyboard, mouse, touch-screen, pen, etc., and send it to a character-mode applciation's stdin. A console may also display a character-mode application's text output on the user's screen.
+Character mode applications communicate with the end-user through a "console" (or "terminal") application. A console converts user input from keyboard, mouse, touch-screen, pen, etc., and send it to a character mode application's stdin. A console may also display a character mode application's text output on the user's screen.
 
-In Windows, the Console is built-in and provides a rich API through which character-mode applications can interact with the user.
+In Windows, the console is built-in and provides a rich API through which character mode applications can interact with the user.
 
 -   [Consoles](consoles.md)
 -   [Input and Output Methods](input-and-output-methods.md)
