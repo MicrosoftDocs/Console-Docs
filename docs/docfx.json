@@ -32,7 +32,11 @@
       "ms.topic": "article",
       "ms.prod": "console",
       "searchScope": ["Console"],
-      "api_location": "Kernel32.dll" 
+      "api_location": "Kernel32.dll",
+      "topic_type": "apiref",
+      "api_name": "AddConsoleAlias", 
+      "api_name": "AddConsoleAliasA", 
+      "api_name": "AddConsoleAliasW"
     },
     "fileMetadata": {},
     "template": [],
