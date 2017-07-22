@@ -31,7 +31,8 @@
       "titleSuffix": "Windows Console",
       "ms.topic": "article",
       "ms.prod": "console",
-      "searchScope": ["Console"]
+      "searchScope": ["Console"],
+      "api_location": "Kernel32.dll" 
     },
     "fileMetadata": {},
     "template": [],
