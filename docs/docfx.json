@@ -31,7 +31,11 @@
       "titleSuffix": "Windows Console",
       "ms.topic": "article",
       "ms.prod": "console",
-      "searchScope": ["Console"]
+      "searchScope": ["Console"],
+      "api_location": "Kernel32.dll",
+      "topic_type": "apiref",
+      "api_name": "AddConsoleAlias", 
+      "api_type": "DllExport" 
     },
     "fileMetadata": {},
     "template": [],
