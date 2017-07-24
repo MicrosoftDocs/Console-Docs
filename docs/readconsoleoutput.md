@@ -6,6 +6,28 @@ ms.author: richturn
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
+MS-HAID:
+- '\_win32\_readconsoleoutput'
+- 'base.readconsoleoutput'
+- 'consoles.readconsoleoutput'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/desktop'
+ms.assetid: d1391684-6a8f-4b5e-9706-11970a957710
+
+topic_type:
+- apiref
+api_name:
+- ReadConsoleOutput
+- ReadConsoleOutputA
+- ReadConsoleOutputW
+api_location:
+- Kernel32.dll
+- API-MS-Win-Core-Console-l2-1-0.dll
+- KernelBase.dll
+- API-MS-Win-DownLevel-Kernel32-l1-1-0.dll
+api_type:
+- DllExport
 ---
 
 # ReadConsoleOutput function

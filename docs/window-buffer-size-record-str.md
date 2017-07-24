@@ -6,6 +6,23 @@ ms.author: richturn
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
+MS-HAID:
+- '\_win32\_window\_buffer\_size\_record\_str'
+- 'base.window\_buffer\_size\_record\_str'
+- 'consoles.window\_buffer\_size\_record\_str'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/desktop'
+ms.assetid: 2f2875e8-aa09-455b-a923-7cc388525b98
+
+topic_type:
+- apiref
+api_name:
+- WINDOW_BUFFER_SIZE_RECORD
+api_location:
+- Wincon.h
+api_type:
+- HeaderDef
 ---
 
 # WINDOW\_BUFFER\_SIZE\_RECORD structure

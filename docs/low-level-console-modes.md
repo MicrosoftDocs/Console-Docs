@@ -6,6 +6,14 @@ ms.author: richturn
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
+MS-HAID:
+- '\_win32\_low\_level\_console\_modes'
+- 'base.low\_level\_console\_modes'
+- 'consoles.low\_level\_console\_modes'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/desktop'
+ms.assetid: 41bfdc51-27cb-4d5e-898c-507ffc8789b9
 ---
 
 # Low-Level Console Modes

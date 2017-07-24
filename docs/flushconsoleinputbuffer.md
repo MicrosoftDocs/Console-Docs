@@ -6,6 +6,25 @@ ms.author: richturn
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
+MS-HAID:
+- '\_win32\_flushconsoleinputbuffer'
+- 'base.flushconsoleinputbuffer'
+- 'consoles.flushconsoleinputbuffer'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/desktop'
+ms.assetid: 6f7832d6-1fb2-4ca8-bd07-43123c990851
+topic_type:
+- apiref
+api_name:
+- FlushConsoleInputBuffer
+api_location:
+- Kernel32.dll
+- API-MS-Win-Core-Console-l2-1-0.dll
+- KernelBase.dll
+- API-MS-Win-DownLevel-Kernel32-l1-1-0.dll
+api_type:
+- DllExport
 ---
 
 # FlushConsoleInputBuffer function

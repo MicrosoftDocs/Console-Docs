@@ -6,6 +6,23 @@ ms.author: richturn
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
+MS-HAID:
+- '\_win32\_console\_cursor\_info\_str'
+- 'base.console\_cursor\_info\_str'
+- 'consoles.console\_cursor\_info\_str'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/desktop'
+ms.assetid: 0e71ce8c-e008-4bd7-922e-c44484b425ef
+
+topic_type:
+- apiref
+api_name:
+- CONSOLE_CURSOR_INFO
+api_location:
+- Wincon.h
+api_type:
+- HeaderDef
 ---
 
 # CONSOLE\_CURSOR\_INFO structure

@@ -6,6 +6,14 @@ ms.author: richturn
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
+MS-HAID:
+- '\_win32\_about\_character\_mode\_applications'
+- 'base.about\_character\_mode\_applications'
+- 'consoles.about\_character\_mode\_applications'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/desktop'
+ms.assetid: 39204f0e-b0b8-4f92-af8e-e146ac06c454
 ---
 
 # About Character Mode Applications

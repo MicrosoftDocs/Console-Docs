@@ -6,6 +6,14 @@ ms.author: richturn
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
+MS-HAID:
+- '\_win32\_scrolling\_a\_screen\_buffer\_s\_window'
+- 'base.scrolling\_a\_screen\_buffer\_s\_window'
+- 'consoles.scrolling\_a\_screen\_buffer\_s\_window'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/desktop'
+ms.assetid: bc300349-9bfa-4417-92ad-57a05a658ce5
 ---
 
 # Scrolling a Screen Buffer's Window

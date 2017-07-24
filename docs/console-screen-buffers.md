@@ -6,6 +6,14 @@ ms.author: richturn
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
+MS-HAID:
+- '\_win32\_console\_screen\_buffers'
+- 'base.console\_screen\_buffers'
+- 'consoles.console\_screen\_buffers'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/desktop'
+ms.assetid: f94995fc-5f5f-4fcd-969d-7e10020634c2
 ---
 
 # Console Screen Buffers

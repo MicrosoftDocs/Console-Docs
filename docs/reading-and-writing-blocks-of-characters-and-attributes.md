@@ -6,6 +6,14 @@ ms.author: richturn
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
+MS-HAID:
+- '\_win32\_reading\_and\_writing\_blocks\_of\_characters\_and\_attributes'
+- 'base.reading\_and\_writing\_blocks\_of\_characters\_and\_attributes'
+- 'consoles.reading\_and\_writing\_blocks\_of\_characters\_and\_attributes'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/desktop'
+ms.assetid: eaa57723-f003-4e90-8156-be8c3b42b912
 ---
 
 # Reading and Writing Blocks of Characters and Attributes

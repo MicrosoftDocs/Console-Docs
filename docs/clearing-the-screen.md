@@ -6,6 +6,14 @@ ms.author: richturn
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
+MS-HAID:
+- '\_win32\_clearing\_the\_screen'
+- 'base.clearing\_the\_screen'
+- 'consoles.clearing\_the\_screen'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/desktop'
+ms.assetid: 2097cc53-13b9-4f29-9d2c-feea56a27cb8
 ---
 
 # Clearing the Screen

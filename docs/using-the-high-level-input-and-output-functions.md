@@ -6,6 +6,14 @@ ms.author: richturn
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
+MS-HAID:
+- '\_win32\_using\_the\_high\_level\_input\_and\_output\_functions'
+- 'base.using\_the\_high\_level\_input\_and\_output\_functions'
+- 'consoles.using\_the\_high\_level\_input\_and\_output\_functions'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/desktop'
+ms.assetid: 0226cd94-86d0-452b-80e6-e0fed8af0a62
 ---
 
 # Using the High-Level Input and Output Functions

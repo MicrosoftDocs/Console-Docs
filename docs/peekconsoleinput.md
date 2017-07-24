@@ -6,6 +6,30 @@ ms.author: richturn
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
+MS-HAID:
+- '\_win32\_peekconsoleinput'
+- 'base.peekconsoleinput'
+- 'consoles.peekconsoleinput'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/desktop'
+ms.assetid: 9982dc20-43bd-4ee3-a68d-157c9134daca
+
+topic_type:
+- apiref
+api_name:
+- PeekConsoleInput
+- PeekConsoleInputA
+- PeekConsoleInputW
+api_location:
+- Kernel32.dll
+- API-MS-Win-Core-Console-l1-1-0.dll
+- KernelBase.dll
+- API-MS-Win-Core-Console-l2-1-0.dll
+- API-MS-Win-DownLevel-Kernel32-l1-1-0.dll
+- MinKernelBase.dll
+api_type:
+- DllExport
 ---
 
 # PeekConsoleInput function

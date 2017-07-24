@@ -6,6 +6,26 @@ ms.author: richturn
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
+MS-HAID:
+- '\_win32\_setconsolewindowinfo'
+- 'base.setconsolewindowinfo'
+- 'consoles.setconsolewindowinfo'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/desktop'
+ms.assetid: ad16a8fe-ca91-41d6-93b1-8cce6d54b1da
+
+topic_type:
+- apiref
+api_name:
+- SetConsoleWindowInfo
+api_location:
+- Kernel32.dll
+- API-MS-Win-Core-Console-l2-1-0.dll
+- KernelBase.dll
+- API-MS-Win-DownLevel-Kernel32-l1-1-0.dll
+api_type:
+- DllExport
 ---
 
 # SetConsoleWindowInfo function

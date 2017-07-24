@@ -6,6 +6,22 @@ ms.author: richturn
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
+MS-HAID:
+- 'base.console\_readconsole\_control'
+- 'consoles.console\_readconsole\_control'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/desktop'
+ms.assetid: 6a8451a6-d692-43af-88c4-972c4dc5e07c
+
+topic_type:
+- apiref
+api_name:
+- CONSOLE_READCONSOLE_CONTROL
+api_location:
+- Wincon.h
+api_type:
+- HeaderDef
 ---
 
 # CONSOLE\_READCONSOLE\_CONTROL structure

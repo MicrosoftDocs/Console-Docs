@@ -6,6 +6,24 @@ ms.author: richturn
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
+MS-HAID:
+- 'base.getconsolealiasexeslength'
+- 'consoles.getconsolealiasexeslength'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/desktop'
+ms.assetid: 4f23bbb1-3e43-47a9-b91a-e91529b07fb5
+
+topic_type:
+- apiref
+api_name:
+- GetConsoleAliasExesLength
+- GetConsoleAliasExesLengthA
+- GetConsoleAliasExesLengthW
+api_location:
+- Kernel32.dll
+api_type:
+- DllExport
 ---
 
 # GetConsoleAliasExesLength function

@@ -6,6 +6,14 @@ ms.author: richturn
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
+MS-HAID:
+- '\_win32\_console\_input\_buffer'
+- 'base.console\_input\_buffer'
+- 'consoles.console\_input\_buffer'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/desktop'
+ms.assetid: 6e536658-8a27-478e-82ee-d1e11f351301
 ---
 
 # Console Input Buffer

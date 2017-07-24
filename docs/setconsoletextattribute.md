@@ -6,6 +6,26 @@ ms.author: richturn
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
+MS-HAID:
+- '\_win32\_setconsoletextattribute'
+- 'base.setconsoletextattribute'
+- 'consoles.setconsoletextattribute'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/desktop'
+ms.assetid: 9fba5bb5-b999-4abd-ab39-7a63d58b8074
+
+topic_type:
+- apiref
+api_name:
+- SetConsoleTextAttribute
+api_location:
+- Kernel32.dll
+- API-MS-Win-Core-Console-l2-1-0.dll
+- KernelBase.dll
+- API-MS-Win-DownLevel-Kernel32-l1-1-0.dll
+api_type:
+- DllExport
 ---
 
 # SetConsoleTextAttribute function
