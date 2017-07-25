@@ -6,6 +6,23 @@ ms.author: richturn
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
+MS-HAID:
+- '\_win32\_key\_event\_record\_str'
+- 'base.key\_event\_record\_str'
+- 'consoles.key\_event\_record\_str'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/desktop'
+ms.assetid: b3fed86b-84ef-48e4-97e1-cb3d65f714a7
+
+topic_type:
+- apiref
+api_name:
+- KEY_EVENT_RECORD
+api_location:
+- Wincon.h
+api_type:
+- HeaderDef
 ---
 
 # KEY\_EVENT\_RECORD structure

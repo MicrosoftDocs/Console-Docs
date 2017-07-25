@@ -6,6 +6,23 @@ ms.author: richturn
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
+MS-HAID:
+- '\_win32\_getconsolefontsize'
+- 'base.getconsolefontsize'
+- 'consoles.getconsolefontsize'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/desktop'
+ms.assetid: 51b1f58d-b3fb-4e09-8398-671b3959bb01
+
+topic_type:
+- apiref
+api_name:
+- GetConsoleFontSize
+api_location:
+- Kernel32.dll
+api_type:
+- DllExport
 ---
 
 # GetConsoleFontSize function

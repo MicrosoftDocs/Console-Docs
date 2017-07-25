@@ -6,6 +6,10 @@ ms.author: richturn
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/desktop'
+ms.assetid: A5C553A5-FD84-4D16-A814-EDB3B8699B91
 ---
 
 # Console Virtual Terminal Sequences

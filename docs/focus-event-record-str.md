@@ -6,6 +6,23 @@ ms.author: richturn
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
+MS-HAID:
+- '\_win32\_focus\_event\_record\_str'
+- 'base.focus\_event\_record\_str'
+- 'consoles.focus\_event\_record\_str'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/desktop'
+ms.assetid: 4db0ae89-8446-4f0a-98e2-ba0b11ef7efe
+
+topic_type:
+- apiref
+api_name:
+- FOCUS_EVENT_RECORD
+api_location:
+- Wincon.h
+api_type:
+- HeaderDef
 ---
 
 # FOCUS\_EVENT\_RECORD structure

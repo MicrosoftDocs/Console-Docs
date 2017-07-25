@@ -6,6 +6,14 @@ ms.author: richturn
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
+MS-HAID:
+- '\_win32\_registering\_a\_control\_handler\_function'
+- 'base.registering\_a\_control\_handler\_function'
+- 'consoles.registering\_a\_control\_handler\_function'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/desktop'
+ms.assetid: f1c72277-f06c-4147-a74c-6aaf6feb730e
 ---
 
 # Registering a Control Handler Function

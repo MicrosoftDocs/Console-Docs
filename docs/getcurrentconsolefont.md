@@ -6,6 +6,23 @@ ms.author: richturn
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
+MS-HAID:
+- '\_win32\_getcurrentconsolefont'
+- 'base.getcurrentconsolefont'
+- 'consoles.getcurrentconsolefont'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/desktop'
+ms.assetid: 347508ea-5c15-4568-b99f-1e7f5cdac8c1
+
+topic_type:
+- apiref
+api_name:
+- GetCurrentConsoleFont
+api_location:
+- Kernel32.dll
+api_type:
+- DllExport
 ---
 
 # GetCurrentConsoleFont function

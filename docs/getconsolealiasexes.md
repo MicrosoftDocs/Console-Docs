@@ -6,6 +6,24 @@ ms.author: richturn
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
+MS-HAID:
+- 'base.getconsolealiasexes'
+- 'consoles.getconsolealiasexes'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/desktop'
+ms.assetid: c229de09-cfa6-4829-9c9a-8ff63500eaf4
+
+topic_type:
+- apiref
+api_name:
+- GetConsoleAliasExes
+- GetConsoleAliasExesA
+- GetConsoleAliasExesW
+api_location:
+- Kernel32.dll
+api_type:
+- DllExport
 ---
 
 # GetConsoleAliasExes function

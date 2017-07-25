@@ -6,6 +6,25 @@ ms.author: richturn
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
+MS-HAID:
+- 'base.getconsolescreenbufferinfoex'
+- 'consoles.getconsolescreenbufferinfoex'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/desktop'
+ms.assetid: 60534226-d26f-44e2-a4cc-64811882e308
+
+topic_type:
+- apiref
+api_name:
+- GetConsoleScreenBufferInfoEx
+api_location:
+- Kernel32.dll
+- API-MS-Win-Core-Console-l2-1-0.dll
+- KernelBase.dll
+- API-MS-Win-DownLevel-Kernel32-l1-1-0.dll
+api_type:
+- DllExport
 ---
 
 # GetConsoleScreenBufferInfoEx function

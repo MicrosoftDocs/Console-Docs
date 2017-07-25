@@ -6,6 +6,22 @@ ms.author: richturn
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
+MS-HAID:
+- 'base.console\_screen\_buffer\_infoex'
+- 'consoles.console\_screen\_buffer\_infoex'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/desktop'
+ms.assetid: 6ed40df3-063d-41c9-8637-510c95104603
+
+topic_type:
+- apiref
+api_name:
+- CONSOLE_SCREEN_BUFFER_INFOEX
+api_location:
+- Wincon.h
+api_type:
+- HeaderDef
 ---
 
 # CONSOLE\_SCREEN\_BUFFER\_INFOEX structure

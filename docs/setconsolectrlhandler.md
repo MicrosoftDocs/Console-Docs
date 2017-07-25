@@ -6,6 +6,27 @@ ms.author: richturn
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
+MS-HAID:
+- '\_win32\_setconsolectrlhandler'
+- 'base.setconsolectrlhandler'
+- 'consoles.setconsolectrlhandler'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/desktop'
+ms.assetid: 6fc64265-1403-45ea-925c-c5eb31d56734
+
+topic_type:
+- apiref
+api_name:
+- SetConsoleCtrlHandler
+api_location:
+- Kernel32.dll
+- API-MS-Win-Core-Console-l1-1-0.dll
+- KernelBase.dll
+- API-MS-Win-DownLevel-Kernel32-l1-1-0.dll
+- MinKernelBase.dll
+api_type:
+- DllExport
 ---
 
 # SetConsoleCtrlHandler function

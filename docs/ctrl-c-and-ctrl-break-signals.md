@@ -6,6 +6,14 @@ ms.author: richturn
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
+MS-HAID:
+- '\_win32\_ctrl\_c\_and\_ctrl\_break\_signals'
+- 'base.ctrl\_c\_and\_ctrl\_break\_signals'
+- 'consoles.ctrl\_c\_and\_ctrl\_break\_signals'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/desktop'
+ms.assetid: 5357ed99-920b-47a0-a922-d5faed7bf23e
 ---
 
 # CTRL+C and CTRL+BREAK Signals

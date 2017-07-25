@@ -6,6 +6,22 @@ ms.author: richturn
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
+MS-HAID:
+- 'base.console\_history\_info'
+- 'consoles.console\_history\_info'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/desktop'
+ms.assetid: df7d2f12-5299-47ed-b1f6-2db903dba81b
+
+topic_type:
+- apiref
+api_name:
+- CONSOLE_HISTORY_INFO
+api_location:
+- Wincon.h
+api_type:
+- HeaderDef
 ---
 
 # CONSOLE\_HISTORY\_INFO structure

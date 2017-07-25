@@ -6,6 +6,22 @@ ms.author: richturn
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
+MS-HAID:
+- 'base.console\_font\_infoex'
+- 'consoles.console\_font\_infoex'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/desktop'
+ms.assetid: e9a087e1-264d-4d48-8adb-771a0e35b511
+
+topic_type:
+- apiref
+api_name:
+- CONSOLE_FONT_INFOEX
+api_location:
+- Wincon.h
+api_type:
+- HeaderDef
 ---
 
 # CONSOLE\_FONT\_INFOEX structure

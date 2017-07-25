@@ -6,6 +6,28 @@ ms.author: richturn
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
+MS-HAID:
+- '\_win32\_console\_winevents'
+- 'base.console\_winevents'
+- 'consoles.console\_winevents'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/desktop'
+ms.assetid: b7078b2d-5508-4e42-bac2-34b70f1856e2
+topic_type:
+- apiref
+api_name:
+- EVENT_CONSOLE_CARET
+- EVENT_CONSOLE_END_APPLICATION
+- EVENT_CONSOLE_LAYOUT
+- EVENT_CONSOLE_START_APPLICATION
+- EVENT_CONSOLE_UPDATE_REGION
+- EVENT_CONSOLE_UPDATE_SCROLL
+- EVENT_CONSOLE_UPDATE_SIMPLE
+api_location:
+- Winuser.h
+api_type:
+- HeaderDef
 ---
 
 # Console WinEvents

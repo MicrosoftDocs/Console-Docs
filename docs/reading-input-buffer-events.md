@@ -6,6 +6,14 @@ ms.author: richturn
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
+MS-HAID:
+- '\_win32\_reading\_input\_buffer\_events'
+- 'base.reading\_input\_buffer\_events'
+- 'consoles.reading\_input\_buffer\_events'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/desktop'
+ms.assetid: 57570f3b-4a37-4789-bf6c-474fae60171d
 ---
 
 # Reading Input Buffer Events
