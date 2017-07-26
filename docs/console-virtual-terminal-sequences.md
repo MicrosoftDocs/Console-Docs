@@ -598,7 +598,7 @@ int main()
     }
 
     DWORD dwMode = 0;
-    if (!GetConsoleMode(hOut, &amp;dwMode))
+    if (!GetConsoleMode(hOut, &dwMode))
     {
         return GetLastError();
     }
@@ -660,11 +660,11 @@ int main()
 
     DWORD dwOriginalOutMode = 0;
     DWORD dwOriginalInMode = 0;
-    if (!GetConsoleMode(hOut, &amp;dwOriginalOutMode))
+    if (!GetConsoleMode(hOut, &dwOriginalOutMode))
     {
         return false;
     }
-    if (!GetConsoleMode(hIn, &amp;dwOriginalInMode))
+    if (!GetConsoleMode(hIn, &dwOriginalInMode))
     {
         return false;
     }
@@ -729,7 +729,7 @@ bool EnableVTMode()
     }
 
     DWORD dwMode = 0;
-    if (!GetConsoleMode(hOut, &amp;dwMode))
+    if (!GetConsoleMode(hOut, &dwMode))
     {
         return false;
     }
@@ -791,7 +791,7 @@ int __cdecl wmain(int argc, WCHAR* argv[])
     }
 
     CONSOLE_SCREEN_BUFFER_INFO ScreenBufferInfo;
-    GetConsoleScreenBufferInfo(hOut, &amp;ScreenBufferInfo);
+    GetConsoleScreenBufferInfo(hOut, &ScreenBufferInfo);
     COORD Size;
     Size.X = ScreenBufferInfo.srWindow.Right - ScreenBufferInfo.srWindow.Left + 1;
     Size.Y = ScreenBufferInfo.srWindow.Bottom -  ScreenBufferInfo.srWindow.Top + 1;
