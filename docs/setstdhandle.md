@@ -38,7 +38,7 @@ Sets the handle for the specified standard device (standard input, standard outp
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 BOOL WINAPI SetStdHandle(
   _In_ DWORD  nStdHandle,
   _In_ HANDLE hHandle
