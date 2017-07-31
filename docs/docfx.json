@@ -31,7 +31,7 @@
       "titleSuffix": "Windows Console",
       "ms.topic": "article",
       "ms.technology": "", 
-      "ms.date": "7/12/2017",       
+      "ms.date": "07/12/2017",       
       "ms.prod": "console",
       "searchScope": ["Console"],
       "api_location": "Kernel32.dll",
