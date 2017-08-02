@@ -1,5 +1,5 @@
 ---
-title: FOCUS\_EVENT\_RECORD structure
+title: FOCUS_EVENT_RECORD structure
 description: Describes a focus event in a console INPUT\_RECORD structure. These events are used internally and should be ignored.
 author: bitcrazed
 ms.author: richturn

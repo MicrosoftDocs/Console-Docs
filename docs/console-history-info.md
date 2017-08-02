@@ -1,5 +1,5 @@
 ---
-title: CONSOLE\_HISTORY\_INFO structure
+title: CONSOLE_HISTORY_INFO structure
 description: Contains information about the console history.
 author: bitcrazed
 ms.author: richturn

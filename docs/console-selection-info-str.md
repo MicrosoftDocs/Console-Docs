@@ -1,5 +1,5 @@
 ---
-title: CONSOLE\_SELECTION\_INFO structure
+title: CONSOLE_SELECTION_INFO structure
 description: Contains information for a console selection.
 author: bitcrazed
 ms.author: richturn

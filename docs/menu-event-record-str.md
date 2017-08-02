@@ -1,5 +1,5 @@
 ---
-title: MENU\_EVENT\_RECORD structure
+title: MENU_EVENT_RECORD structure
 description: Describes a menu event in a console INPUT\_RECORD structure. These events are used internally and should be ignored.
 author: bitcrazed
 ms.author: richturn
