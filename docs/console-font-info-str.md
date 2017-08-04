@@ -1,5 +1,5 @@
 ---
-title: CONSOLE\_FONT\_INFO structure
+title: CONSOLE_FONT_INFO structure
 description: Contains the index and size for a console font.
 author: bitcrazed
 ms.author: richturn

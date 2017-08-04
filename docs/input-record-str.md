@@ -1,5 +1,5 @@
 ---
-title: INPUT\_RECORD structure
+title: INPUT_RECORD structure
 description: Describes an input event in the console input buffer.
 author: bitcrazed
 ms.author: richturn
