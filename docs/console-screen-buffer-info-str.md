@@ -1,5 +1,5 @@
 ---
-title: CONSOLE\_SCREEN\_BUFFER\_INFO structure
+title: CONSOLE_SCREEN_BUFFER_INFO structure
 description: Contains information about a console screen buffer.
 author: bitcrazed
 ms.author: richturn

@@ -1,5 +1,5 @@
 ---
-title: CONSOLE\_FONT\_INFOEX structure
+title: CONSOLE_FONT_INFOEX structure
 description: Contains extended information for a console font.
 author: bitcrazed
 ms.author: richturn

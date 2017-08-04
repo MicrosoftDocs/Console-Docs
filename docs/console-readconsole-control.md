@@ -1,5 +1,5 @@
 ---
-title: CONSOLE\_READCONSOLE\_CONTROL structure
+title: CONSOLE_READCONSOLE_CONTROL structure
 description: Contains information for a console read operation.
 author: bitcrazed
 ms.author: richturn
