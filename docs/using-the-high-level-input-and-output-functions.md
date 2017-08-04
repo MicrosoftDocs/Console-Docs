@@ -56,7 +56,7 @@ int main(void)
 
     // Save the current text colors. 
 
-    if (! GetConsoleScreenBufferInfo(hStdout, &amp;csbiInfo)) 
+    if (! GetConsoleScreenBufferInfo(hStdout, &csbiInfo)) 
     {
         MessageBox(NULL, TEXT("GetConsoleScreenBufferInfo"), 
             TEXT("Console Error"), MB_OK); 
@@ -88,7 +88,7 @@ int main(void)
             hStdout,               // output handle 
             lpszPrompt1,           // prompt string 
             lstrlenA(lpszPrompt1), // string length 
-            &amp;cWritten,             // bytes written 
+            &cWritten,             // bytes written 
             NULL) )                // not overlapped 
         {
             MessageBox(NULL, TEXT("WriteFile"), TEXT("Console Error"), 
@@ -100,22 +100,22 @@ int main(void)
             hStdin,    // input handle 
             chBuffer,  // buffer to read into 
             255,       // size of buffer 
-            &amp;cRead,    // actual bytes read 
+            &cRead,    // actual bytes read 
             NULL) )    // not overlapped 
         break; 
-        if (chBuffer[0] == &#39;q&#39;) break; 
+        if (chBuffer[0] == 'q') break; 
     } 
 
     // Turn off the line input and echo input modes 
 
-    if (! GetConsoleMode(hStdin, &amp;fdwOldMode)) 
+    if (! GetConsoleMode(hStdin, &fdwOldMode)) 
     {
        MessageBox(NULL, TEXT("GetConsoleMode"), TEXT("Console Error"),
            MB_OK); 
        return 1;
     }
 
-    fdwMode = fdwOldMode &amp; 
+    fdwMode = fdwOldMode & 
         ~(ENABLE_LINE_INPUT | ENABLE_ECHO_INPUT); 
     if (! SetConsoleMode(hStdin, fdwMode)) 
     {
@@ -135,7 +135,7 @@ int main(void)
             hStdout,               // output handle 
             lpszPrompt2,           // prompt string 
             lstrlenA(lpszPrompt2), // string length 
-            &amp;cWritten,             // bytes written 
+            &cWritten,             // bytes written 
             NULL) )                // not overlapped 
         {
             MessageBox(NULL, TEXT("WriteFile"), TEXT("Console Error"), 
@@ -143,15 +143,15 @@ int main(void)
             return 1;
         }
 
-        if (! ReadFile(hStdin, chBuffer, 1, &amp;cRead, NULL)) 
+        if (! ReadFile(hStdin, chBuffer, 1, &cRead, NULL)) 
             break; 
-        if (chBuffer[0] == &#39;\r&#39;)
+        if (chBuffer[0] == '\r')
             NewLine();
         else if (! WriteFile(hStdout, chBuffer, cRead, 
-            &amp;cWritten, NULL)) break;
+            &cWritten, NULL)) break;
         else
             NewLine();
-        if (chBuffer[0] == &#39;q&#39;) break; 
+        if (chBuffer[0] == 'q') break; 
     } 
 
     // Restore the original console mode. 
@@ -171,7 +171,7 @@ int main(void)
  
 void NewLine(void) 
 { 
-    if (! GetConsoleScreenBufferInfo(hStdout, &amp;csbiInfo)) 
+    if (! GetConsoleScreenBufferInfo(hStdout, &csbiInfo)) 
     {
         MessageBox(NULL, TEXT("GetConsoleScreenBufferInfo"), 
             TEXT("Console Error"), MB_OK); 
@@ -225,16 +225,16 @@ void ScrollScreenBuffer(HANDLE h, INT x)
     // Set the fill character and attributes. 
  
     chiFill.Attributes = FOREGROUND_RED|FOREGROUND_INTENSITY; 
-    chiFill.Char.AsciiChar = (char)&#39; &#39;; 
+    chiFill.Char.AsciiChar = (char)' '; 
  
     // Scroll up one line. 
  
     ScrollConsoleScreenBuffer( 
         h,               // screen buffer handle 
-        &amp;srctScrollRect, // scrolling rectangle 
-        &amp;srctClipRect,   // clipping rectangle 
+        &srctScrollRect, // scrolling rectangle 
+        &srctClipRect,   // clipping rectangle 
         coordDest,       // top left destination cell 
-        &amp;chiFill);       // fill character and color 
+        &chiFill);       // fill character and color 
 }
 ```
 
