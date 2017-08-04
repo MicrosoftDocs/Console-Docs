@@ -37,7 +37,7 @@ int ScrollByAbsoluteCoord(int iRows)
  
     // Get the current screen buffer size and window position. 
  
-    if (! GetConsoleScreenBufferInfo(hStdout, &amp;csbiInfo)) 
+    if (! GetConsoleScreenBufferInfo(hStdout, &csbiInfo)) 
     {
         printf("GetConsoleScreenBufferInfo (%d)\n", GetLastError()); 
         return 0;
@@ -57,7 +57,7 @@ int ScrollByAbsoluteCoord(int iRows)
         if (! SetConsoleWindowInfo( 
                    hStdout,          // screen buffer handle 
                    TRUE,             // absolute coordinates 
-                   &amp;srctWindow))     // specifies new location 
+                   &srctWindow))     // specifies new location 
         {
             printf("SetConsoleWindowInfo (%d)\n", GetLastError()); 
             return 0;
@@ -78,7 +78,7 @@ int ScrollByRelativeCoord(int iRows)
 
     // Get the current screen buffer window position. 
  
-    if (! GetConsoleScreenBufferInfo(hStdout, &amp;csbiInfo)) 
+    if (! GetConsoleScreenBufferInfo(hStdout, &csbiInfo)) 
     {
         printf("GetConsoleScreenBufferInfo (%d)\n", GetLastError()); 
         return 0;
@@ -96,7 +96,7 @@ int ScrollByRelativeCoord(int iRows)
         if (! SetConsoleWindowInfo( 
                    hStdout,          // screen buffer handle 
                    FALSE,            // relative coordinates
-                   &amp;srctWindow))     // specifies new location 
+                   &srctWindow))     // specifies new location 
         {
             printf("SetConsoleWindowInfo (%d)\n", GetLastError()); 
             return 0;

@@ -598,7 +598,7 @@ int main()
     }
 
     DWORD dwMode = 0;
-    if (!GetConsoleMode(hOut, &amp;dwMode))
+    if (!GetConsoleMode(hOut, &dwMode))
     {
         return GetLastError();
     }
@@ -660,11 +660,11 @@ int main()
 
     DWORD dwOriginalOutMode = 0;
     DWORD dwOriginalInMode = 0;
-    if (!GetConsoleMode(hOut, &amp;dwOriginalOutMode))
+    if (!GetConsoleMode(hOut, &dwOriginalOutMode))
     {
         return false;
     }
-    if (!GetConsoleMode(hIn, &amp;dwOriginalInMode))
+    if (!GetConsoleMode(hIn, &dwOriginalInMode))
     {
         return false;
     }
@@ -680,7 +680,7 @@ int main()
         dwOutMode = dwOriginalOutMode | dwRequestedOutModes;
         if (!SetConsoleMode(hOut, dwOutMode))
         {
-            // Failed to set any VT mode, can&#39;t do anything here.
+            // Failed to set any VT mode, can't do anything here.
             return -1;
         }
     }
@@ -688,7 +688,7 @@ int main()
     DWORD dwInMode = dwOriginalInMode | ENABLE_VIRTUAL_TERMINAL_INPUT;
     if (!SetConsoleMode(hIn, dwInMode))
     {
-        // Failed to set VT input mode, can&#39;t do anything here.
+        // Failed to set VT input mode, can't do anything here.
         return -1;
     }
 
@@ -729,7 +729,7 @@ bool EnableVTMode()
     }
 
     DWORD dwMode = 0;
-    if (!GetConsoleMode(hOut, &amp;dwMode))
+    if (!GetConsoleMode(hOut, &dwMode))
     {
         return false;
     }
@@ -786,12 +786,12 @@ int __cdecl wmain(int argc, WCHAR* argv[])
     HANDLE hOut = GetStdHandle(STD_OUTPUT_HANDLE);
     if (hOut == INVALID_HANDLE_VALUE)
     {
-        printf("Couldn&#39;t get the console handle. Quitting.\n");
+        printf("Couldn't get the console handle. Quitting.\n");
         return -1;
     }
 
     CONSOLE_SCREEN_BUFFER_INFO ScreenBufferInfo;
-    GetConsoleScreenBufferInfo(hOut, &amp;ScreenBufferInfo);
+    GetConsoleScreenBufferInfo(hOut, &ScreenBufferInfo);
     COORD Size;
     Size.X = ScreenBufferInfo.srWindow.Right - ScreenBufferInfo.srWindow.Left + 1;
     Size.Y = ScreenBufferInfo.srWindow.Bottom -  ScreenBufferInfo.srWindow.Top + 1;
@@ -836,7 +836,7 @@ int __cdecl wmain(int argc, WCHAR* argv[])
     for (line = 0; line < iNumLines * iNumTabStops; line++)
     {
         PrintVerticalBorder();
-        if (line + 1 != iNumLines * iNumTabStops) // don&#39;t advance to next line if this is the last line
+        if (line + 1 != iNumLines * iNumTabStops) // don't advance to next line if this is the last line
             printf("\t"); // advance to next tab stop
 
     }
@@ -877,7 +877,7 @@ int __cdecl wmain(int argc, WCHAR* argv[])
         PrintVerticalBorder(); // print border at right side
         if (line+1 != iNumLines * 2)
         {
-            printf("\n"); //Advance to next line. If we&#39;re at the bottom of the margins, the text will scroll.
+            printf("\n"); //Advance to next line. If we're at the bottom of the margins, the text will scroll.
             printf("\r"); //return to first col in buffer
         }
     }

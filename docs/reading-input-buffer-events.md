@@ -47,7 +47,7 @@ int main(VOID)
  
     // Save the current input mode, to be restored on exit. 
  
-    if (! GetConsoleMode(hStdin, &amp;fdwSaveOldMode) ) 
+    if (! GetConsoleMode(hStdin, &fdwSaveOldMode) ) 
         ErrorExit("GetConsoleMode"); 
 
     // Enable the window and mouse input events. 
@@ -66,7 +66,7 @@ int main(VOID)
                 hStdin,      // input buffer handle 
                 irInBuf,     // buffer to read into 
                 128,         // size of read buffer 
-                &amp;cNumRead) ) // number of records read 
+                &cNumRead) ) // number of records read 
             ErrorExit("ReadConsoleInput"); 
  
         // Dispatch the events to the appropriate handler. 

@@ -53,7 +53,7 @@ int main( void )
  
     // Get the screen buffer size. 
  
-    if (!GetConsoleScreenBufferInfo(hStdout, &amp;csbiInfo)) 
+    if (!GetConsoleScreenBufferInfo(hStdout, &csbiInfo)) 
     {
         printf("GetConsoleScreenBufferInfo failed %d\n", GetLastError()); 
         return 1;
@@ -80,16 +80,16 @@ int main( void )
     // Fill the bottom row with green blanks. 
  
     chiFill.Attributes = BACKGROUND_GREEN | FOREGROUND_RED; 
-    chiFill.Char.AsciiChar = (char)&#39; &#39;; 
+    chiFill.Char.AsciiChar = (char)' '; 
  
     // Scroll up one line. 
  
     if(!ScrollConsoleScreenBuffer(  
         hStdout,         // screen buffer handle 
-        &amp;srctScrollRect, // scrolling rectangle 
-        &amp;srctClipRect,   // clipping rectangle 
+        &srctScrollRect, // scrolling rectangle 
+        &srctClipRect,   // clipping rectangle 
         coordDest,       // top left destination cell 
-        &amp;chiFill))       // fill character and color
+        &chiFill))       // fill character and color
     {
         printf("ScrollConsoleScreenBuffer failed %d\n", GetLastError()); 
         return 1;

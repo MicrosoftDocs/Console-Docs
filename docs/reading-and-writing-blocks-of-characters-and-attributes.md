@@ -89,7 +89,7 @@ int main(void)
        chiBuffer,      // buffer to copy into 
        coordBufSize,   // col-row size of chiBuffer 
        coordBufCoord,  // top left dest. cell in chiBuffer 
-       &amp;srctReadRect); // screen buffer source rectangle 
+       &srctReadRect); // screen buffer source rectangle 
     if (! fSuccess) 
     {
         printf("ReadConsoleOutput failed - (%d)\n", GetLastError()); 
@@ -110,7 +110,7 @@ int main(void)
         chiBuffer,        // buffer to copy from 
         coordBufSize,     // col-row size of chiBuffer 
         coordBufCoord,    // top left src cell in chiBuffer 
-        &amp;srctWriteRect);  // dest. screen buffer rectangle 
+        &srctWriteRect);  // dest. screen buffer rectangle 
     if (! fSuccess) 
     {
         printf("WriteConsoleOutput failed - (%d)\n", GetLastError()); 
