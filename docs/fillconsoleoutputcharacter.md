@@ -6,6 +6,28 @@ ms.author: richturn
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
+MS-HAID:
+- '\_win32\_fillconsoleoutputcharacter'
+- 'base.fillconsoleoutputcharacter'
+- 'consoles.fillconsoleoutputcharacter'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/desktop'
+ms.assetid: 37579cc9-14b3-4fd9-81ed-abaad5c7bd1a
+
+topic_type:
+- apiref
+api_name:
+- FillConsoleOutputCharacter
+- FillConsoleOutputCharacterA
+- FillConsoleOutputCharacterW
+api_location:
+- Kernel32.dll
+- API-MS-Win-Core-Console-l2-1-0.dll
+- KernelBase.dll
+- API-MS-Win-DownLevel-Kernel32-l1-1-0.dll
+api_type:
+- DllExport
 ---
 
 # FillConsoleOutputCharacter function

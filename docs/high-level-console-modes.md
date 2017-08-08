@@ -6,6 +6,14 @@ ms.author: richturn
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
+MS-HAID:
+- '\_win32\_high\_level\_console\_modes'
+- 'base.high\_level\_console\_modes'
+- 'consoles.high\_level\_console\_modes'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/desktop'
+ms.assetid: 3ec915eb-333d-484d-a14d-46377b503ecc
 ---
 
 # High-Level Console Modes

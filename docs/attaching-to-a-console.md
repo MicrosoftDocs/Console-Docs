@@ -6,6 +6,14 @@ ms.author: richturn
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
+MS-HAID:
+- '\_win32\_attaching\_to\_a\_console'
+- 'base.attaching\_to\_a\_console'
+- 'consoles.attaching\_to\_a\_console'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/desktop'
+ms.assetid: 348e572f-2448-4384-9822-fab01d4ba255
 ---
 
 # Attaching to a Console

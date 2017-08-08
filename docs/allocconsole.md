@@ -6,6 +6,26 @@ ms.author: richturn
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
+MS-HAID:
+- '\_win32\_allocconsole'
+- 'base.allocconsole'
+- 'consoles.allocconsole'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/desktop'
+ms.assetid: bdf3bf2f-8eb8-4ba6-bf3a-a67b29dffda2
+topic_type:
+- apiref
+api_name:
+- AllocConsole
+api_location:
+- Kernel32.dll
+- API-MS-Win-Core-Console-l1-1-0.dll
+- KernelBase.dll
+- API-MS-Win-DownLevel-Kernel32-l1-1-0.dll
+- MinKernelBase.dll
+api_type:
+- DllExport
 ---
 
 # AllocConsole function

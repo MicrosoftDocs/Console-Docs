@@ -6,6 +6,14 @@ ms.author: richturn
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
+MS-HAID:
+- '\_win32\_reading\_input\_buffer\_events'
+- 'base.reading\_input\_buffer\_events'
+- 'consoles.reading\_input\_buffer\_events'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/desktop'
+ms.assetid: 57570f3b-4a37-4789-bf6c-474fae60171d
 ---
 
 # Reading Input Buffer Events
@@ -39,7 +47,7 @@ int main(VOID)
  
     // Save the current input mode, to be restored on exit. 
  
-    if (! GetConsoleMode(hStdin, &amp;fdwSaveOldMode) ) 
+    if (! GetConsoleMode(hStdin, &fdwSaveOldMode) ) 
         ErrorExit("GetConsoleMode"); 
 
     // Enable the window and mouse input events. 
@@ -58,7 +66,7 @@ int main(VOID)
                 hStdin,      // input buffer handle 
                 irInBuf,     // buffer to read into 
                 128,         // size of read buffer 
-                &amp;cNumRead) ) // number of records read 
+                &cNumRead) ) // number of records read 
             ErrorExit("ReadConsoleInput"); 
  
         // Dispatch the events to the appropriate handler. 

@@ -6,6 +6,14 @@ ms.author: richturn
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
+MS-HAID:
+- '\_win32\_console\_control\_handlers'
+- 'base.console\_control\_handlers'
+- 'consoles.console\_control\_handlers'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/desktop'
+ms.assetid: 6480e8ee-d228-4c07-99df-de1e0c3ca250
 ---
 
 # Console Control Handlers

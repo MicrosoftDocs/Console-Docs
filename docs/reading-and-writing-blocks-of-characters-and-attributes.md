@@ -6,6 +6,14 @@ ms.author: richturn
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
+MS-HAID:
+- '\_win32\_reading\_and\_writing\_blocks\_of\_characters\_and\_attributes'
+- 'base.reading\_and\_writing\_blocks\_of\_characters\_and\_attributes'
+- 'consoles.reading\_and\_writing\_blocks\_of\_characters\_and\_attributes'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/desktop'
+ms.assetid: eaa57723-f003-4e90-8156-be8c3b42b912
 ---
 
 # Reading and Writing Blocks of Characters and Attributes
@@ -81,7 +89,7 @@ int main(void)
        chiBuffer,      // buffer to copy into 
        coordBufSize,   // col-row size of chiBuffer 
        coordBufCoord,  // top left dest. cell in chiBuffer 
-       &amp;srctReadRect); // screen buffer source rectangle 
+       &srctReadRect); // screen buffer source rectangle 
     if (! fSuccess) 
     {
         printf("ReadConsoleOutput failed - (%d)\n", GetLastError()); 
@@ -102,7 +110,7 @@ int main(void)
         chiBuffer,        // buffer to copy from 
         coordBufSize,     // col-row size of chiBuffer 
         coordBufCoord,    // top left src cell in chiBuffer 
-        &amp;srctWriteRect);  // dest. screen buffer rectangle 
+        &srctWriteRect);  // dest. screen buffer rectangle 
     if (! fSuccess) 
     {
         printf("WriteConsoleOutput failed - (%d)\n", GetLastError()); 

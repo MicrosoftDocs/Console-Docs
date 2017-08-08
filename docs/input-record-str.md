@@ -1,11 +1,28 @@
 ---
-title: INPUT\_RECORD structure
+title: INPUT_RECORD structure
 description: Describes an input event in the console input buffer.
 author: bitcrazed
 ms.author: richturn
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
+MS-HAID:
+- '\_win32\_input\_record\_str'
+- 'base.input\_record\_str'
+- 'consoles.input\_record\_str'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/desktop'
+ms.assetid: a46ba7fd-097a-455d-96ac-13aa01e11dc1
+
+topic_type:
+- apiref
+api_name:
+- INPUT_RECORD
+api_location:
+- Wincon.h
+api_type:
+- HeaderDef
 ---
 
 # INPUT\_RECORD structure

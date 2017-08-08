@@ -6,6 +6,14 @@ ms.author: richturn
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
+MS-HAID:
+- '\_win32\_clearing\_the\_screen'
+- 'base.clearing\_the\_screen'
+- 'consoles.clearing\_the\_screen'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/desktop'
+ms.assetid: 2097cc53-13b9-4f29-9d2c-feea56a27cb8
 ---
 
 # Clearing the Screen
@@ -45,7 +53,7 @@ void cls( HANDLE hConsole )
 
 // Get the number of character cells in the current buffer. 
 
-   if( !GetConsoleScreenBufferInfo( hConsole, &amp;csbi ))
+   if( !GetConsoleScreenBufferInfo( hConsole, &csbi ))
    {
       return;
    }
@@ -55,28 +63,28 @@ void cls( HANDLE hConsole )
    // Fill the entire screen with blanks.
 
    if( !FillConsoleOutputCharacter( hConsole,        // Handle to console screen buffer 
-                                    (TCHAR) &#39; &#39;,     // Character to write to the buffer
+                                    (TCHAR) ' ',     // Character to write to the buffer
                                     dwConSize,       // Number of cells to write 
                                     coordScreen,     // Coordinates of first cell 
-                                    &amp;cCharsWritten ))// Receive number of characters written
+                                    &cCharsWritten ))// Receive number of characters written
    {
       return;
    }
 
    // Get the current text attribute.
 
-   if( !GetConsoleScreenBufferInfo( hConsole, &amp;csbi ))
+   if( !GetConsoleScreenBufferInfo( hConsole, &csbi ))
    {
       return;
    }
 
-   // Set the buffer&#39;s attributes accordingly.
+   // Set the buffer's attributes accordingly.
 
    if( !FillConsoleOutputAttribute( hConsole,         // Handle to console screen buffer 
                                     csbi.wAttributes, // Character attributes to use
                                     dwConSize,        // Number of cells to set attribute 
                                     coordScreen,      // Coordinates of first cell 
-                                    &amp;cCharsWritten )) // Receive number of characters written
+                                    &cCharsWritten )) // Receive number of characters written
    {
       return;
    }

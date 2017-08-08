@@ -6,6 +6,24 @@ ms.author: richturn
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/desktop'
+ms.assetid: d78bf4c9-2314-466c-b617-619259c824b5
+
+topic_type:
+- apiref
+api_name:
+- ScrollConsoleScreenBuffer
+- ScrollConsoleScreenBufferA
+- ScrollConsoleScreenBufferW
+api_location:
+- Kernel32.dll
+- API-MS-Win-Core-Console-l2-1-0.dll
+- KernelBase.dll
+- API-MS-Win-DownLevel-Kernel32-l1-1-0.dll
+api_type:
+- DllExport
 ---
 
 # ScrollConsoleScreenBuffer function

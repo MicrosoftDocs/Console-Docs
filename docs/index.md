@@ -1,6 +1,6 @@
 ---
-title: Welcome to the Windows Console Developer Documentation
-description: Home of the developer documentation for Windows Console internals & APIs.
+title: Console documentation 
+description: Home page for Windows Console documentation.
 author: bitcrazed
 ms.author: richturn
 ms.topic: article

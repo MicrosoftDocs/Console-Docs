@@ -1,11 +1,31 @@
 ---
 title: CreateConsoleScreenBuffer function
-description: Creates a screen buffer used to store the characters displayed in the Windows Console.
+description: CreateConsoleScreenBuffer function creates a screen buffer for the Windows Console.
 author: bitcrazed
 ms.author: richturn
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
+MS-HAID:
+- '\_win32\_createconsolescreenbuffer'
+- 'base.createconsolescreenbuffer'
+- 'consoles.createconsolescreenbuffer'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/desktop'
+ms.assetid: 98bb74e4-dad2-4615-9263-48ba778a06ff
+
+topic_type:
+- apiref
+api_name:
+- CreateConsoleScreenBuffer
+api_location:
+- Kernel32.dll
+- API-MS-Win-Core-Console-l2-1-0.dll
+- KernelBase.dll
+- API-MS-Win-DownLevel-Kernel32-l1-1-0.dll
+api_type:
+- DllExport
 ---
 
 # CreateConsoleScreenBuffer function

@@ -6,6 +6,28 @@ ms.author: richturn
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
+MS-HAID:
+- '\_win32\_getstdhandle'
+- 'base.getstdhandle'
+- 'consoles.getstdhandle'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/desktop'
+ms.assetid: 23cd76e9-671a-48d0-9b82-2beda8917348
+
+topic_type:
+- apiref
+api_name:
+- GetStdHandle
+api_location:
+- Kernel32.dll
+- API-MS-Win-Core-ProcessEnvironment-l1-1-0.dll
+- KernelBase.dll
+- API-MS-Win-Core-ProcessEnvironment-l1-2-0.dll
+- API-MS-Win-DownLevel-Kernel32-l1-1-0.dll
+- MinKernelBase.dll
+api_type:
+- DllExport
 ---
 
 # GetStdHandle function

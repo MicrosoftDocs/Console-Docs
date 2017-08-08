@@ -1,11 +1,30 @@
 ---
-title: SMALL\_RECT structure
+title: SMALL_RECT structure
 description: Defines the coordinates of the upper left and lower right corners of a rectangle.
 author: bitcrazed
 ms.author: richturn
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
+title: SMALL_RECT structure
+description: Defines the coordinates of the upper left and lower right corners of a rectangle.
+MS-HAID:
+- '\_win32\_small\_rect\_str'
+- 'base.small\_rect\_str'
+- 'consoles.small\_rect\_str'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/desktop'
+ms.assetid: 62639815-c7e9-4ae2-b152-61290f78422b
+
+topic_type:
+- apiref
+api_name:
+- SMALL_RECT
+api_location:
+- Wincon.h
+api_type:
+- HeaderDef
 ---
 
 # SMALL\_RECT structure

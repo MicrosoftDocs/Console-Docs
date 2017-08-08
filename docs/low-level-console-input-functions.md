@@ -6,6 +6,14 @@ ms.author: richturn
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
+MS-HAID:
+- '\_win32\_low\_level\_console\_input\_functions'
+- 'base.low\_level\_console\_input\_functions'
+- 'consoles.low\_level\_console\_input\_functions'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/desktop'
+ms.assetid: 41488614-ca7c-4207-b706-f7776423c7ba
 ---
 
 # Low-Level Console Input Functions

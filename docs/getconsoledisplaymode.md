@@ -6,6 +6,23 @@ ms.author: richturn
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
+MS-HAID:
+- '\_win32\_getconsoledisplaymode'
+- 'base.getconsoledisplaymode'
+- 'consoles.getconsoledisplaymode'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/desktop'
+ms.assetid: e19ff900-a671-41d3-a9c8-9e4507c47eff
+
+topic_type:
+- apiref
+api_name:
+- GetConsoleDisplayMode
+api_location:
+- Kernel32.dll
+api_type:
+- DllExport
 ---
 
 # GetConsoleDisplayMode function

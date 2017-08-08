@@ -6,6 +6,30 @@ ms.author: richturn
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
+MS-HAID:
+- '\_win32\_getconsoletitle'
+- 'base.getconsoletitle'
+- 'consoles.getconsoletitle'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/desktop'
+ms.assetid: c58bba36-9813-4bdc-83bf-30d55f8d7d79
+
+topic_type:
+- apiref
+api_name:
+- GetConsoleTitle
+- GetConsoleTitleA
+- GetConsoleTitleW
+api_location:
+- Kernel32.dll
+- API-MS-Win-Core-Console-l2-1-0.dll
+- KernelBase.dll
+- API-MS-Win-DownLevel-Kernel32-l1-1-0.dll
+- API-Ms-Win-Core-Console-Ansi-L2-1-0.dll
+- Kernel32Legacy.dll
+api_type:
+- DllExport
 ---
 
 # GetConsoleTitle function

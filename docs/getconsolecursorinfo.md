@@ -6,6 +6,26 @@ ms.author: richturn
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
+MS-HAID:
+- '\_win32\_getconsolecursorinfo'
+- 'base.getconsolecursorinfo'
+- 'consoles.getconsolecursorinfo'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/desktop'
+ms.assetid: 6200577d-8d84-46bd-9330-d0b6cbbb3e52
+
+topic_type:
+- apiref
+api_name:
+- GetConsoleCursorInfo
+api_location:
+- Kernel32.dll
+- API-MS-Win-Core-Console-l2-1-0.dll
+- KernelBase.dll
+- API-MS-Win-DownLevel-Kernel32-l1-1-0.dll
+api_type:
+- DllExport
 ---
 
 # GetConsoleCursorInfo function

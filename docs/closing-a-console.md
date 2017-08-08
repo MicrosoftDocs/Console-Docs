@@ -6,6 +6,14 @@ ms.author: richturn
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
+MS-HAID:
+- '\_win32\_closing\_a\_console'
+- 'base.closing\_a\_console'
+- 'consoles.closing\_a\_console'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/desktop'
+ms.assetid: 254b7cfc-4dee-452f-a409-4fc90d20d4c1
 ---
 
 # Closing a Console

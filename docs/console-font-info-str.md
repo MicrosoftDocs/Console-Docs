@@ -1,11 +1,27 @@
 ---
-title: CONSOLE\_FONT\_INFO structure
+title: CONSOLE_FONT_INFO structure
 description: Contains the index and size for a console font.
 author: bitcrazed
 ms.author: richturn
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
+MS-HAID:
+- '\_win32\_console\_font\_info\_str'
+- 'base.console\_font\_info\_str'
+- 'consoles.console\_font\_info\_str'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/desktop'
+ms.assetid: 380b8183-1964-46f2-a511-01f39f21f5c5
+topic_type:
+- apiref
+api_name:
+- CONSOLE_FONT_INFO
+api_location:
+- Wincon.h
+api_type:
+- HeaderDef
 ---
 
 # CONSOLE\_FONT\_INFO structure

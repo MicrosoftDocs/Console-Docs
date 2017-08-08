@@ -6,6 +6,14 @@ ms.author: richturn
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
+MS-HAID:
+- '\_win32\_ctrl\_close\_signal'
+- 'base.ctrl\_close\_signal'
+- 'consoles.ctrl\_close\_signal'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/desktop'
+ms.assetid: a327dd55-3250-40ee-b1c4-6ba3b80984a8
 ---
 
 # CTRL+CLOSE Signal
