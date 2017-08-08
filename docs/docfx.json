@@ -29,6 +29,7 @@
     "externalReference": [],
     "globalMetadata": {
       "titleSuffix": "Windows Console",
+      "searchScope": ["Console"],
       "ms.topic": "article",
       "ms.technology": "", 
       "ms.date": "07/12/2017",       
