@@ -6,6 +6,23 @@ ms.author: richturn
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
+MS-HAID:
+- '\_win32\_getconsoleprocesslist'
+- 'base.getconsoleprocesslist'
+- 'consoles.getconsoleprocesslist'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/desktop'
+ms.assetid: 3d21103b-662d-4393-ae3f-773cd9e4a930
+
+topic_type:
+- apiref
+api_name:
+- GetConsoleProcessList
+api_location:
+- Kernel32.dll
+api_type:
+- DllExport
 ---
 
 # GetConsoleProcessList function

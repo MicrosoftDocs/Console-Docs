@@ -6,6 +6,26 @@ ms.author: richturn
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
+MS-HAID:
+- '\_win32\_setconsolescreenbuffersize'
+- 'base.setconsolescreenbuffersize'
+- 'consoles.setconsolescreenbuffersize'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/desktop'
+ms.assetid: 50bf1973-5604-42fe-bbeb-611ddc240bdd
+
+topic_type:
+- apiref
+api_name:
+- SetConsoleScreenBufferSize
+api_location:
+- Kernel32.dll
+- API-MS-Win-Core-Console-l2-1-0.dll
+- KernelBase.dll
+- API-MS-Win-DownLevel-Kernel32-l1-1-0.dll
+api_type:
+- DllExport
 ---
 
 # SetConsoleScreenBufferSize function

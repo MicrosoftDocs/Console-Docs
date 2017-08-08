@@ -6,6 +6,23 @@ ms.author: richturn
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
+MS-HAID:
+- '\_win32\_getconsoleselectioninfo'
+- 'base.getconsoleselectioninfo'
+- 'consoles.getconsoleselectioninfo'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/desktop'
+ms.assetid: 912efe9d-75dd-43bd-8dca-08671b5ed79c
+
+topic_type:
+- apiref
+api_name:
+- GetConsoleSelectionInfo
+api_location:
+- Kernel32.dll
+api_type:
+- DllExport
 ---
 
 # GetConsoleSelectionInfo function

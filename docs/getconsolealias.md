@@ -1,11 +1,29 @@
 ---
 title: GetConsoleAlias function
-description: Retrieves the text for the specified console alias and executable.
+description: Retrieves the text for the specified console alias and the name of the executable.
 author: bitcrazed
 ms.author: richturn
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
+MS-HAID:
+- 'base.getconsolealias'
+- 'consoles.getconsolealias'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/desktop'
+ms.assetid: e8514f24-8121-4fad-94bb-c9eedf7a700d
+
+topic_type:
+- apiref
+api_name:
+- GetConsoleAlias
+- GetConsoleAliasA
+- GetConsoleAliasW
+api_location:
+- Kernel32.dll
+api_type:
+- DllExport
 ---
 
 # GetConsoleAlias function

@@ -1,11 +1,19 @@
 ---
 title: Using the Console
-description: The following examples demonstrate how to use the console functions.
+description: The following examples demonstrate how to use various console functions.
 author: bitcrazed
 ms.author: richturn
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
+MS-HAID:
+- '\_win32\_using\_the\_console'
+- 'base.using\_the\_console'
+- 'consoles.using\_the\_console'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/desktop'
+ms.assetid: 31bbf2b1-2519-4589-8059-7757cfda105a
 ---
 
 # Using the Console

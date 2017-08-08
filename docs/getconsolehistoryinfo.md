@@ -6,6 +6,22 @@ ms.author: richturn
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
+MS-HAID:
+- 'base.getconsolehistoryinfo'
+- 'consoles.getconsolehistoryinfo'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/desktop'
+ms.assetid: 145008b3-8a4a-4e6a-9144-ee787ce90ef4
+
+topic_type:
+- apiref
+api_name:
+- GetConsoleHistoryInfo
+api_location:
+- Kernel32.dll
+api_type:
+- DllExport
 ---
 
 # GetConsoleHistoryInfo function

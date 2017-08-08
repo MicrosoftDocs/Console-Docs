@@ -1,11 +1,18 @@
 ---
 title: Console Aliases
-description: Console aliases are used to map source strings to target strings.
+description: Describes console aliases and how they are used to map source strings to target strings.
 author: bitcrazed
 ms.author: richturn
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
+MS-HAID:
+- 'base.console\_aliases'
+- 'consoles.console\_aliases'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/desktop'
+ms.assetid: 8169708b-83da-47ef-94be-eca3ca7d0a5b
 ---
 
 # Console Aliases

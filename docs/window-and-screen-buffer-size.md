@@ -6,6 +6,14 @@ ms.author: richturn
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
+MS-HAID:
+- '\_win32\_window\_and\_screen\_buffer\_size'
+- 'base.window\_and\_screen\_buffer\_size'
+- 'consoles.window\_and\_screen\_buffer\_size'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/desktop'
+ms.assetid: 55246039-31eb-41ca-ad8e-d314cb508644
 ---
 
 # Window and Screen Buffer Size

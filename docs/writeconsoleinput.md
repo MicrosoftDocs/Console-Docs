@@ -6,6 +6,28 @@ ms.author: richturn
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
+MS-HAID:
+- '\_win32\_writeconsoleinput'
+- 'base.writeconsoleinput'
+- 'consoles.writeconsoleinput'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/desktop'
+ms.assetid: ad06231f-5063-4aff-b14d-8df5e6e42430
+
+topic_type:
+- apiref
+api_name:
+- WriteConsoleInput
+- WriteConsoleInputA
+- WriteConsoleInputW
+api_location:
+- Kernel32.dll
+- API-MS-Win-Core-Console-l2-1-0.dll
+- KernelBase.dll
+- API-MS-Win-DownLevel-Kernel32-l1-1-0.dll
+api_type:
+- DllExport
 ---
 
 # WriteConsoleInput function

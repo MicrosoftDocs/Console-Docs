@@ -1,15 +1,22 @@
 ---
 title: Consoles – Windows Desktop 
-description: A console is an application that provides I/O to character-mode applications. 
+description: A console is an application that provides I/O to command-line applications. 
 author: bitcrazed
 ms.author: richturn
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
+MS-HAID:
+- '\_win32\_consoles'
+- 'base.consoles'
+- 'consoles.consoles'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/desktop'
+ms.assetid: 16148ce6-d3be-40dd-b82e-50ea1df67c4e
 ---
 
 # Consoles
-
 
 A *console* (or "terminal) is an application that provides I/O to character-mode applications. This processor-independent mechanism makes it easy to port existing character-mode applications or to create new character-mode tools and applications.
 

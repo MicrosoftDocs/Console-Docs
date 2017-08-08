@@ -6,6 +6,14 @@ ms.author: richturn
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
+MS-HAID:
+- '\_win32\_console\_process\_groups'
+- 'base.console\_process\_groups'
+- 'consoles.console\_process\_groups'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/desktop'
+ms.assetid: 6cfe5b4b-d677-4747-bbf2-c7243db2346e
 ---
 
 # Console Process Groups

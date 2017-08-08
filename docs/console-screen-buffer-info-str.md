@@ -1,11 +1,28 @@
 ---
-title: CONSOLE\_SCREEN\_BUFFER\_INFO structure
+title: CONSOLE_SCREEN_BUFFER_INFO structure
 description: Contains information about a console screen buffer.
 author: bitcrazed
 ms.author: richturn
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
+MS-HAID:
+- '\_win32\_console\_screen\_buffer\_info\_str'
+- 'base.console\_screen\_buffer\_info\_str'
+- 'consoles.console\_screen\_buffer\_info\_str'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/desktop'
+ms.assetid: 586b3e0f-2f6b-4a03-b8e4-602a892be56d
+
+topic_type:
+- apiref
+api_name:
+- CONSOLE_SCREEN_BUFFER_INFO
+api_location:
+- Wincon.h
+api_type:
+- HeaderDef
 ---
 
 # CONSOLE\_SCREEN\_BUFFER\_INFO structure

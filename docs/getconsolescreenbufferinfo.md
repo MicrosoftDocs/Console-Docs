@@ -6,6 +6,11 @@ ms.author: richturn
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
+ms.assetid: eafe819e-a99a-4ce1-8898-8860444a31af
+topic_type:apiref
+api_name:GetConsoleScreenBufferInfo
+api_location:Kernel32.dll
+api_type:DllExport
 ---
 
 # GetConsoleScreenBufferInfo function

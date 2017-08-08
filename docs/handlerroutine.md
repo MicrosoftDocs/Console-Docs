@@ -6,6 +6,23 @@ ms.author: richturn
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
+MS-HAID:
+- '\_win32\_handlerroutine'
+- 'base.handlerroutine'
+- 'consoles.handlerroutine'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/desktop'
+ms.assetid: 2e8732fa-7dfd-415b-b2fc-c27a400496f2
+
+topic_type:
+- apiref
+api_name:
+- HandlerRoutine
+api_location:
+- Wincon.h
+api_type:
+- UserDefined
 ---
 
 # HandlerRoutine callback function

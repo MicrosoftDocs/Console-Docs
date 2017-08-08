@@ -6,6 +6,14 @@ ms.author: richturn
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
+MS-HAID:
+- '\_win32\_creation\_of\_a\_console'
+- 'base.creation\_of\_a\_console'
+- 'consoles.creation\_of\_a\_console'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/desktop'
+ms.assetid: 84ec2559-cade-447e-8594-5b824d3d3e81
 ---
 
 # Creation of a Console
