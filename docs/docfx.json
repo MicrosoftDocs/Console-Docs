@@ -31,14 +31,8 @@
       "titleSuffix": "Windows Console",
       "searchScope": ["Console"],
       "ms.topic": "article",
-      "ms.technology": "", 
       "ms.date": "07/12/2017",       
-      "ms.prod": "console",
-      "searchScope": ["Console"],
-      "api_location": "Kernel32.dll",
-      "topic_type": "apiref",
-      "api_name": "GetConsoleScreenBufferInfo", 
-      "api_type": "DllExport" 
+      "ms.prod": "console"
     },
     "fileMetadata": {},
     "template": [],
