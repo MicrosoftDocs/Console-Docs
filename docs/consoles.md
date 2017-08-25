@@ -1,6 +1,6 @@
 ---
-title: Console Concepts & Internals
-description: Overview of Windows Console concepts, internals, and how command-line applications work.
+title: Consoles – Windows Desktop 
+description: A console is an application that provides I/O to command-line applications. 
 author: bitcrazed
 ms.author: richturn
 ms.topic: article
