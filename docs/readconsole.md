@@ -91,7 +91,7 @@ This function uses either Unicode characters or 8-bit characters from the consol
 
 The *pInputControl* parameter can be used to enable intermediate wakeups from the read in response to a file-completion control character specified in a [**CONSOLE\_READCONSOLE\_CONTROL**](console-readconsole-control.md) structure. This feature requires command extensions to be enabled, the standard output handle to be a console output handle, and input to be Unicode.
 
-**Windows Server 2003 and Windows XP/2000:  **The intermediate read feature is not supported.
+**Windows Server 2003 and Windows XP/2000:** The intermediate read feature is not supported.
 
 Requirements
 ------------
