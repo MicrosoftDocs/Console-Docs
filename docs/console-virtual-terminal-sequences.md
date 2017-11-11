@@ -46,10 +46,6 @@ Cursor movement will be bounded by the current viewport into the buffer. Scrolli
 | ESC M    | RI        | Reverse Index – Performs the reverse operation of \\n, moves cursor up one line, maintains horizontal position, scrolls buffer if necessary\* |
 | ESC 7    | DECSC     | Save Cursor Position in Memory\*\*                                                                                                            |
 | ESC 8    | DECSR     | Restore Cursor Position from Memory\*\*                                                                                                       |
-||
-||
-||
-||
 
  
 
@@ -90,14 +86,6 @@ Cursor movement will be bounded by the current viewport into the buffer. Scrolli
 | ESC \[ &lt;y&gt; ; &lt;x&gt; f | HVP       | Horizontal Vertical Position        | \*Cursor moves to &lt;x&gt;; &lt;y&gt; coordinate within the viewport, where &lt;x&gt; is the column of the &lt;y&gt; line |
 | ESC \[ s                       | ANSISYSSC | Save Cursor – Ansi.sys emulation    | \*\*With no parameters, performs a save cursor operation like DECSC                                                        |
 | ESC \[ u                       | ANSISYSSC | Restore Cursor – Ansi.sys emulation | \*\*With no parameters, performs a restore cursor operation like DECRC                                                     |
-||
-||
-||
-||
-||
-||
-||
-||
 
  
 
@@ -244,45 +232,6 @@ For options that specify colors, the colors will be used as defined in the conso
 | 105   | Bright Background Magenta | Applies bold/bright magenta to background                          |
 | 106   | Bright Background Cyan    | Applies bold/bright cyan to background                             |
 | 107   | Bright Background White   | Applies bold/bright white to background                            |
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
 
  
 
@@ -296,8 +245,6 @@ Some virtual terminal emulators support a palette of colors greater than the 16 
 | 48 ; 2 ; &lt;r&gt; ; &lt;g&gt; ; &lt;b&gt; | Set background color to RGB value specified in &lt;r&gt;, &lt;g&gt;, &lt;b&gt; parameters\* |
 | 38 ; 5 ; &lt;s&gt;                         | Set foreground color to &lt;s&gt; index in 88 or 256 color table\*                          |
 | 48 ; 5 ; &lt;s&gt;                         | Set background color to &lt;s&gt; index in 88 or 256 color table\*                          |
-||
-||
 
  
 
@@ -385,14 +332,7 @@ Notably, the DEC Line Drawing mode is used for drawing borders in console applic
 | 0x76 | v     | ┴                |
 | 0x77 | w     | ┬                |
 | 0x78 | x     | │                |
-||
-||
-||
-||
-||
-||
-||
-||
+
 
  
 
@@ -491,9 +431,6 @@ There are two internal modes that control which sequences are emitted for the gi
 | Left Arrow  | ESC \[ D    | ESC O D          |
 | Home        | ESC \[ H    | ESC O H          |
 | End         | ESC \[ F    | ESC O F          |
-||
-||
-||
 
  
 
@@ -505,8 +442,6 @@ Additionally, if Ctrl is pressed with any of these keys, the following sequences
 | Ctrl + Down Arrow  | ESC \[ 1 ; 5 B |
 | Ctrl + Right Arrow | ESC \[ 1 ; 5 C |
 | Ctrl + Left Arrow  | ESC \[ 1 ; 5 D |
-||
-||
 
  
 
@@ -533,23 +468,6 @@ Additionally, if Ctrl is pressed with any of these keys, the following sequences
 | F10       | ESC \[ 2 1 ~ |
 | F11       | ESC \[ 2 3 ~ |
 | F12       | ESC \[ 2 4 ~ |
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
 
  
 
@@ -566,9 +484,6 @@ Ctrl is generally passed through exactly as received from the system. This is ty
 | Ctrl + Down Arrow  | ESC \[ 1 ; 5 B |
 | Ctrl + Right Arrow | ESC \[ 1 ; 5 C |
 | Ctrl + Left Arrow  | ESC \[ 1 ; 5 D |
-||
-||
-||
 
  
 
