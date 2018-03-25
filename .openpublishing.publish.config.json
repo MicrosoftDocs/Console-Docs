@@ -8,7 +8,7 @@
       "build_output_subfolder": "console",
       "locale": "en-us",
       "monikers": [],
-      "moniker_groups": [],
+      "moniker_ranges": [],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
@@ -16,6 +16,8 @@
         "RestApi": "Content"
       },
       "build_entry_point": "docs",
+      "template_folder": "_themes",
+      "moniker_groups": [],
       "version": 0
     }
   ],
