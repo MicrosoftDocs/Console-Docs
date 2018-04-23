@@ -38,7 +38,7 @@ Retrieves a handle to the specified standard device (standard input, standard ou
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C
 HANDLE WINAPI GetStdHandle(
   _In_ DWORD nStdHandle
 );

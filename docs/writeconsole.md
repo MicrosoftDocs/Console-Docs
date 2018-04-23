@@ -39,7 +39,7 @@ Writes a character string to a console screen buffer beginning at the current cu
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C
 BOOL WINAPI WriteConsole(
   _In_             HANDLE  hConsoleOutput,
   _In_       const VOID    *lpBuffer,

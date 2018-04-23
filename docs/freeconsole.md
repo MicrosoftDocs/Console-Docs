@@ -36,7 +36,7 @@ Detaches the calling process from its console.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C
 BOOL WINAPI FreeConsole(void);
 ```
 

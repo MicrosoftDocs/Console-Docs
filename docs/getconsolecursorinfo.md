@@ -36,7 +36,7 @@ Retrieves information about the size and visibility of the cursor for the specif
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C
 BOOL WINAPI GetConsoleCursorInfo(
   _In_  HANDLE               hConsoleOutput,
   _Out_ PCONSOLE_CURSOR_INFO lpConsoleCursorInfo

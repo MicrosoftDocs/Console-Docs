@@ -26,7 +26,7 @@ Retrieves information about the specified console screen buffer.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C
 BOOL WINAPI GetConsoleScreenBufferInfo(
   _In_  HANDLE                      hConsoleOutput,
   _Out_ PCONSOLE_SCREEN_BUFFER_INFO lpConsoleScreenBufferInfo

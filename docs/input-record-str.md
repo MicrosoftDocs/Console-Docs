@@ -33,7 +33,7 @@ Describes an input event in the console input buffer. These records can be read 
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C
 typedef struct _INPUT_RECORD {
   WORD  EventType;
   union {

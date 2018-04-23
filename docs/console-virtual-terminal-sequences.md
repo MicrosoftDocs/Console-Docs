@@ -554,7 +554,7 @@ The following code provides an example of the recommended way to enable virtual 
 
 2. SetConsoleMode returning with STATUS\_INVALID\_PARAMETER is the current mechanism to determine when running on a down-level system. An application receiving STATUS\_INVALID\_PARAMETER with one of the newer console mode flags in the bit field should gracefully degrade behavior and try again.
 
-```ManagedCPlusPlus
+```C
 #include <stdio.h>
 #include <wchar.h>
 #include <windows.h>
@@ -617,7 +617,7 @@ The following example is intended to be a more robust example of code using a va
 
 This example makes use of the alternate screen buffer, manipulating tab stops, setting scrolling margins, and changing the character set.
 
-```ManagedCPlusPlus
+```C
 //
 //    Copyright (C) Microsoft.  All rights reserved.
 //

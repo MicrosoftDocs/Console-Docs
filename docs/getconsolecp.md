@@ -37,7 +37,7 @@ Retrieves the input code page used by the console associated with the calling pr
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C
 UINT WINAPI GetConsoleCP(void);
 ```
 

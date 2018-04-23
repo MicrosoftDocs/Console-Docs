@@ -36,7 +36,7 @@ Sets the character attributes for a specified number of character cells, beginni
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C
 BOOL WINAPI FillConsoleOutputAttribute(
   _In_  HANDLE  hConsoleOutput,
   _In_  WORD    wAttribute,

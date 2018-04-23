@@ -27,7 +27,7 @@ When a **CTRL\_CLOSE\_EVENT** signal is received, the control handler returns **
 
 When a **CTRL\_BREAK\_EVENT**, **CTRL\_LOGOFF\_EVENT**, or **CTRL\_SHUTDOWN\_EVENT** signal is received, the control handler returns **FALSE**. Doing this causes the signal to be passed to the next control handler function. If no other control handlers have been registered or none of the registered handlers returns **TRUE**, the default handler will be used, resulting in the process being terminated.
 
-```ManagedCPlusPlus
+```C
 #include <windows.h> 
 #include <stdio.h> 
  

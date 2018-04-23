@@ -37,7 +37,7 @@ Sets the input mode of a console's input buffer or the output mode of a console 
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C
 BOOL WINAPI SetConsoleMode(
   _In_ HANDLE hConsoleHandle,
   _In_ DWORD  dwMode

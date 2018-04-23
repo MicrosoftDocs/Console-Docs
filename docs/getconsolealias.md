@@ -34,7 +34,7 @@ Retrieves the text for the specified console alias and executable.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C
 DWORD WINAPI GetConsoleAlias(
   _In_  LPTSTR lpSource,
   _Out_ LPTSTR lpTargetBuffer,

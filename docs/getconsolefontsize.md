@@ -33,7 +33,7 @@ Retrieves the size of the font used by the specified console screen buffer.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C
 COORD WINAPI GetConsoleFontSize(
   _In_ HANDLE hConsoleOutput,
   _In_ DWORD  nFont

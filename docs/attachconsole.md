@@ -35,7 +35,7 @@ Attaches the calling process to the console of the specified process.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C
 BOOL WINAPI AttachConsole(
   _In_ DWORD dwProcessId
 );

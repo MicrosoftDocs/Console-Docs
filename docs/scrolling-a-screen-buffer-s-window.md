@@ -23,7 +23,7 @@ The [**SetConsoleWindowInfo**](setconsolewindowinfo.md) function can be used to 
 
 The following example scrolls the view of the console screen buffer up by modifying the window coordinates returned by the [**GetConsoleScreenBufferInfo**](getconsolescreenbufferinfo.md) function. The `ScrollByAbsoluteCoord` function demonstrates how to specify absolute coordinates, while the `ScrollByRelativeCoord` function demonstrates how to specify relative coordinates.
 
-```ManagedCPlusPlus
+```C
 #include <windows.h>
 #include <stdio.h>
 #include <conio.h>

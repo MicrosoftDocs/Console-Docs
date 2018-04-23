@@ -33,7 +33,7 @@ Contains information about the console cursor.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C
 typedef struct _CONSOLE_CURSOR_INFO {
   DWORD dwSize;
   BOOL  bVisible;

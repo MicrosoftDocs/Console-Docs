@@ -32,7 +32,7 @@ Specifies a Unicode or ANSI character and its attributes. This structure is used
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C
 typedef struct _CHAR_INFO {
   union {
     WCHAR UnicodeChar;

@@ -37,7 +37,7 @@ Retrieves the number of unread input records in the console's input buffer.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C
 BOOL WINAPI GetNumberOfConsoleInputEvents(
   _In_  HANDLE  hConsoleInput,
   _Out_ LPDWORD lpcNumberOfEvents

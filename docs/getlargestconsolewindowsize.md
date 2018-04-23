@@ -36,7 +36,7 @@ Retrieves the size of the largest possible console window, based on the current 
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C
 COORD WINAPI GetLargestConsoleWindowSize(
   _In_ HANDLE hConsoleOutput
 );
