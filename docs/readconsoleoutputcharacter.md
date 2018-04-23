@@ -57,8 +57,6 @@ A handle to the console screen buffer. The handle must have the **GENERIC\_READ*
 *lpCharacter* \[out\]  
 A pointer to a buffer that receives the characters read from the console screen buffer.
 
-The storage for this buffer is allocated from a shared heap for the process that is 64 KB in size. The maximum size of the buffer will depend on heap usage.
-
 *nLength* \[in\]  
 The number of screen buffer character cells from which to read. The size of the buffer pointed to by the *lpCharacter* parameter should be `nLength * sizeof(TCHAR)`.
 

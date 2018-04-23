@@ -47,8 +47,6 @@ Parameters
 *lpConsoleTitle* \[out\]  
 A pointer to a buffer that receives a null-terminated string containing the original title.
 
-The storage for this buffer is allocated from a shared heap for the process that is 64 KB in size. The maximum size of the buffer will depend on heap usage.
-
 *nSize* \[in\]  
 The size of the *lpConsoleTitle* buffer, in characters.
 

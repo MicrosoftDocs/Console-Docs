@@ -56,8 +56,6 @@ A handle to the console input buffer. The handle must have the **GENERIC\_WRITE*
 *lpBuffer* \[in\]  
 A pointer to an array of [**INPUT\_RECORD**](input-record-str.md) structures that contain data to be written to the input buffer.
 
-The storage for this buffer is allocated from a shared heap for the process that is 64 KB in size. The maximum size of the buffer will depend on heap usage.
-
 *nLength* \[in\]  
 The number of input records to be written.
 

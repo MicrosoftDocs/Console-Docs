@@ -46,8 +46,6 @@ Parameters
 *lpdwProcessList* \[out\]  
 A pointer to a buffer that receives an array of process identifiers upon success.
 
-The storage for this buffer is allocated from a shared heap for the process that is 64 KB in size. The maximum size of the buffer will depend on heap usage.
-
 *dwProcessCount* \[in\]  
 The maximum number of process identifiers that can be stored in the *lpdwProcessList* buffer.
 

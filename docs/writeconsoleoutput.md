@@ -57,8 +57,6 @@ A handle to the console screen buffer. The handle must have the **GENERIC\_WRITE
 *lpBuffer* \[in\]  
 The data to be written to the console screen buffer. This pointer is treated as the origin of a two-dimensional array of [**CHAR\_INFO**](char-info-str.md) structures whose size is specified by the *dwBufferSize* parameter.
 
-The storage for this buffer is allocated from a shared heap for the process that is 64 KB in size. The maximum size of the buffer will depend on heap usage.
-
 *dwBufferSize* \[in\]  
 The size of the buffer pointed to by the *lpBuffer* parameter, in character cells. The **X** member of the [**COORD**](coord-str.md) structure is the number of columns; the **Y** member is the number of rows.
 
