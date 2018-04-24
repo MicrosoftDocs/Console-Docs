@@ -38,7 +38,7 @@ Reads character and color attribute data from a rectangular block of character c
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C
 BOOL WINAPI ReadConsoleOutput(
   _In_    HANDLE      hConsoleOutput,
   _Out_   PCHAR_INFO  lpBuffer,

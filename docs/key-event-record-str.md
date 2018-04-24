@@ -33,7 +33,7 @@ Describes a keyboard input event in a console [**INPUT\_RECORD**](input-record-s
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C
 typedef struct _KEY_EVENT_RECORD {
   BOOL  bKeyDown;
   WORD  wRepeatCount;

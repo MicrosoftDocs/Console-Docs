@@ -34,7 +34,7 @@ Retrieves the required size for the buffer used by the [**GetConsoleAliases**](g
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C
 DWORD WINAPI GetConsoleAliasesLength(
   _In_ LPTSTR lpExeName
 );

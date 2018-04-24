@@ -35,7 +35,7 @@ Sets extended information about the specified console screen buffer.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C
 BOOL WINAPI SetConsoleScreenBufferInfoEx(
   _In_ HANDLE                        hConsoleOutput,
   _In_ PCONSOLE_SCREEN_BUFFER_INFOEX lpConsoleScreenBufferInfoEx

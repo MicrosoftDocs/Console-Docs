@@ -36,7 +36,7 @@ Sets the size and visibility of the cursor for the specified console screen buff
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C
 BOOL WINAPI SetConsoleCursorInfo(
   _In_       HANDLE              hConsoleOutput,
   _In_ const CONSOLE_CURSOR_INFO *lpConsoleCursorInfo

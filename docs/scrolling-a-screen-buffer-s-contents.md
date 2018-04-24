@@ -25,7 +25,7 @@ The [**ScrollConsoleScreenBuffer**](scrollconsolescreenbuffer.md) function moves
 
 The following example shows the use of a clipping rectangle to scroll only the bottom 15 rows of the console screen buffer. The rows in the specified rectangle are scrolled up one line at a time, and the top row of the block is discarded. The contents of the console screen buffer outside the clipping rectangle are left unchanged.
 
-```ManagedCPlusPlus
+```C
 #include <windows.h>
 #include <stdio.h>
 

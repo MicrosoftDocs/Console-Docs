@@ -38,7 +38,7 @@ Writes data directly to the console input buffer.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C
 BOOL WINAPI WriteConsoleInput(
   _In_        HANDLE       hConsoleInput,
   _In_  const INPUT_RECORD *lpBuffer,

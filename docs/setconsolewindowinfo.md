@@ -36,7 +36,7 @@ Sets the current size and position of a console screen buffer's window.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C
 BOOL WINAPI SetConsoleWindowInfo(
   _In_       HANDLE     hConsoleOutput,
   _In_       BOOL       bAbsolute,

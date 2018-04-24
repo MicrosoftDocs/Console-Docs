@@ -39,7 +39,7 @@ Reads data from a console input buffer and removes it from the buffer.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C
 BOOL WINAPI ReadConsoleInput(
   _In_  HANDLE        hConsoleInput,
   _Out_ PINPUT_RECORD lpBuffer,

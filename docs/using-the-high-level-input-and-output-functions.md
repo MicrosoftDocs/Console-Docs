@@ -25,7 +25,7 @@ The example assumes that the default I/O modes are in effect initially for the f
 
 The example's `NewLine` function is used when line input mode is disabled. It handles carriage returns by moving the cursor position to the first cell of the next row. If the cursor is already in the last row of the console screen buffer, the contents of the console screen buffer are scrolled up one line.
 
-```ManagedCPlusPlus
+```C
 #include <windows.h> 
  
 void NewLine(void); 

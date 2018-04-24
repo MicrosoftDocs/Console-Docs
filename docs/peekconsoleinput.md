@@ -40,7 +40,7 @@ Reads data from the specified console input buffer without removing it from the 
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C
 BOOL WINAPI PeekConsoleInput(
   _In_  HANDLE        hConsoleInput,
   _Out_ PINPUT_RECORD lpBuffer,

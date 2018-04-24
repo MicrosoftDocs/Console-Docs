@@ -37,7 +37,7 @@ Retrieves the current input mode of a console's input buffer or the current outp
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C
 BOOL WINAPI GetConsoleMode(
   _In_  HANDLE  hConsoleHandle,
   _Out_ LPDWORD lpMode

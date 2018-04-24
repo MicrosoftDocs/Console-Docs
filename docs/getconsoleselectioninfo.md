@@ -33,7 +33,7 @@ Retrieves information about the current console selection.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C
 BOOL WINAPI GetConsoleSelectionInfo(
   _Out_ PCONSOLE_SELECTION_INFO lpConsoleSelectionInfo
 );

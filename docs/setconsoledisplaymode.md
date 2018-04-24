@@ -32,7 +32,7 @@ Sets the display mode of the specified console screen buffer.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C
 BOOL WINAPI SetConsoleDisplayMode(
   _In_      HANDLE hConsoleOutput,
   _In_      DWORD  dwFlags,

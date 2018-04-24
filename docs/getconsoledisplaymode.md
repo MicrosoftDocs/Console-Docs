@@ -33,7 +33,7 @@ Retrieves the display mode of the current console.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C
 BOOL WINAPI GetConsoleDisplayMode(
   _Out_ LPDWORD lpModeFlags
 );

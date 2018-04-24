@@ -46,7 +46,7 @@ Sets the title for the current console window.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C
 BOOL WINAPI SetConsoleTitle(
   _In_ LPCTSTR lpConsoleTitle
 );
@@ -77,7 +77,7 @@ Examples
 
 The following example shows how to retrieve and modify the console title.
 
-```ManagedCPlusPlus
+```C
 #include <windows.h>
 #include <tchar.h>
 #include <conio.h>

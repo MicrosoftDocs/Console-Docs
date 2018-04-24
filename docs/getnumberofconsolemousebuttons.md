@@ -33,7 +33,7 @@ Retrieves the number of buttons on the mouse used by the current console.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C
 BOOL WINAPI GetNumberOfConsoleMouseButtons(
   _Out_ LPDWORD lpNumberOfMouseButtons
 );

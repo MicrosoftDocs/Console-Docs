@@ -39,7 +39,7 @@ If no handler function is specified, the function sets an inheritable attribute 
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C
 BOOL WINAPI SetConsoleCtrlHandler(
   _In_opt_ PHANDLER_ROUTINE HandlerRoutine,
   _In_     BOOL             Add

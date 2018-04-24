@@ -36,7 +36,7 @@ Copies a specified number of character attributes from consecutive cells of a co
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C
 BOOL WINAPI ReadConsoleOutputAttribute(
   _In_  HANDLE  hConsoleOutput,
   _Out_ LPWORD  lpAttribute,
