@@ -36,7 +36,7 @@ Copies a number of character attributes to consecutive cells of a console screen
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C
 BOOL WINAPI WriteConsoleOutputAttribute(
   _In_        HANDLE  hConsoleOutput,
   _In_  const WORD    *lpAttribute,
@@ -57,8 +57,6 @@ The attributes to be used when writing to the console screen buffer. For more in
 
 *nLength* \[in\]  
 The number of screen buffer character cells to which the attributes will be copied.
-
-The storage for this buffer is allocated from a shared heap for the process that is 64 KB in size. The maximum size of the buffer will depend on heap usage.
 
 *dwWriteCoord* \[in\]  
 A [**COORD**](coord-str.md) structure that specifies the character coordinates of the first cell in the console screen buffer to which the attributes will be written.

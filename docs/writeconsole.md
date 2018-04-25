@@ -39,7 +39,7 @@ Writes a character string to a console screen buffer beginning at the current cu
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C
 BOOL WINAPI WriteConsole(
   _In_             HANDLE  hConsoleOutput,
   _In_       const VOID    *lpBuffer,
@@ -57,8 +57,6 @@ A handle to the console screen buffer. The handle must have the **GENERIC\_WRITE
 
 *lpBuffer* \[in\]  
 A pointer to a buffer that contains characters to be written to the console screen buffer.
-
-The storage for this buffer is allocated from a shared heap for the process that is 64 KB in size. The maximum size of the buffer will depend on heap usage.
 
 *nNumberOfCharsToWrite* \[in\]  
 The number of characters to be written. If the total size of the specified number of characters exceeds the available heap, the function fails with **ERROR\_NOT\_ENOUGH\_MEMORY**.

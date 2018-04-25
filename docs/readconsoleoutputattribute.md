@@ -36,7 +36,7 @@ Copies a specified number of character attributes from consecutive cells of a co
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C
 BOOL WINAPI ReadConsoleOutputAttribute(
   _In_  HANDLE  hConsoleOutput,
   _Out_ LPWORD  lpAttribute,
@@ -54,8 +54,6 @@ A handle to the console screen buffer. The handle must have the **GENERIC\_READ*
 
 *lpAttribute* \[out\]  
 A pointer to a buffer that receives the attributes being used by the console screen buffer.
-
-The storage for this buffer is allocated from a shared heap for the process that is 64 KB in size. The maximum size of the buffer will depend on heap usage.
 
 For more information, see [Character Attributes](console-screen-buffers.md#_win32_font_attributes).
 

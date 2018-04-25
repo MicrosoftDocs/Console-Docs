@@ -36,7 +36,7 @@ Creates a console screen buffer.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C
 HANDLE WINAPI CreateConsoleScreenBuffer(
   _In_             DWORD               dwDesiredAccess,
   _In_             DWORD               dwShareMode,

@@ -39,7 +39,7 @@ Reads character input from the console input buffer and removes it from the buff
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C
 BOOL WINAPI ReadConsole(
   _In_     HANDLE  hConsoleInput,
   _Out_    LPVOID  lpBuffer,
@@ -57,8 +57,6 @@ A handle to the console input buffer. The handle must have the **GENERIC\_READ**
 
 *lpBuffer* \[out\]  
 A pointer to a buffer that receives the data read from the console input buffer.
-
-The storage for this buffer is allocated from a shared heap for the process that is 64 KB in size. The maximum size of the buffer will depend on heap usage.
 
 *nNumberOfCharsToRead* \[in\]  
 The number of characters to be read. The size of the buffer pointed to by the *lpBuffer* parameter should be at least `nNumberOfCharsToRead * sizeof(TCHAR)` bytes.

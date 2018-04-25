@@ -40,7 +40,7 @@ Retrieves the title for the current console window.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C
 DWORD WINAPI GetConsoleTitle(
   _Out_ LPTSTR lpConsoleTitle,
   _In_  DWORD  nSize
@@ -52,8 +52,6 @@ Parameters
 
 *lpConsoleTitle* \[out\]  
 A pointer to a buffer that receives a null-terminated string containing the title. If the buffer is too small to store the title, the function stores as many characters of the title as will fit in the buffer, ending with a null terminator.
-
-The storage for this buffer is allocated from a shared heap for the process that is 64 KB in size. The maximum size of the buffer will depend on heap usage.
 
 *nSize* \[in\]  
 The size of the buffer pointed to by the *lpConsoleTitle* parameter, in characters.

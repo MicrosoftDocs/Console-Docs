@@ -34,7 +34,7 @@ Retrieves the names of all executable files with console aliases defined.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C
 DWORD WINAPI GetConsoleAliasExes(
   _Out_ LPTSTR lpExeNameBuffer,
   _In_  DWORD  ExeNameBufferLength

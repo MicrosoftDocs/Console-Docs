@@ -37,7 +37,7 @@ Copies a number of characters to consecutive cells of a console screen buffer, b
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C
 BOOL WINAPI WriteConsoleOutputCharacter(
   _In_  HANDLE  hConsoleOutput,
   _In_  LPCTSTR lpCharacter,
@@ -55,8 +55,6 @@ A handle to the console screen buffer. The handle must have the **GENERIC\_WRITE
 
 *lpCharacter* \[in\]  
 The characters to be written to the console screen buffer.
-
-The storage for this buffer is allocated from a shared heap for the process that is 64 KB in size. The maximum size of the buffer will depend on heap usage.
 
 *nLength* \[in\]  
 The number of characters to be written.

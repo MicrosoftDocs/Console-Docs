@@ -21,7 +21,7 @@ ms.assetid: 57570f3b-4a37-4789-bf6c-474fae60171d
 
 The [**ReadConsoleInput**](readconsoleinput.md) function can be used to directly access a console's input buffer. When a console is created, mouse input is enabled and window input is disabled. To ensure that the process receives all types of events, this example uses the [**SetConsoleMode**](setconsolemode.md) function to enable window and mouse input. Then it goes into a loop that reads and handles 100 console input events. For example, the message "Keyboard event" is displayed when the user presses a key and the message "Mouse event" is displayed when the user interacts with the mouse.
 
-```ManagedCPlusPlus
+```C
 #include <windows.h>
 #include <stdio.h>
 

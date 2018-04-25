@@ -33,7 +33,7 @@ Contains information for a console selection.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C
 typedef struct _CONSOLE_SELECTION_INFO {
   DWORD      dwFlags;
   COORD      dwSelectionAnchor;

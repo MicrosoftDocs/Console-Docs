@@ -38,7 +38,7 @@ Reads character and color attribute data from a rectangular block of character c
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C
 BOOL WINAPI ReadConsoleOutput(
   _In_    HANDLE      hConsoleOutput,
   _Out_   PCHAR_INFO  lpBuffer,
@@ -56,8 +56,6 @@ A handle to the console screen buffer. The handle must have the **GENERIC\_READ*
 
 *lpBuffer* \[out\]  
 A pointer to a destination buffer that receives the data read from the console screen buffer. This pointer is treated as the origin of a two-dimensional array of [**CHAR\_INFO**](char-info-str.md) structures whose size is specified by the *dwBufferSize* parameter.
-
-The storage for this buffer is allocated from a shared heap for the process that is 64 KB in size. The maximum size of the buffer will depend on heap usage.
 
 *dwBufferSize* \[in\]  
 The size of the *lpBuffer* parameter, in character cells. The **X** member of the [**COORD**](coord-str.md) structure is the number of columns; the **Y** member is the number of rows.

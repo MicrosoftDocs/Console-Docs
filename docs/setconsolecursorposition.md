@@ -36,7 +36,7 @@ Sets the cursor position in the specified console screen buffer.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```C
 BOOL WINAPI SetConsoleCursorPosition(
   _In_ HANDLE hConsoleOutput,
   _In_ COORD  dwCursorPosition
