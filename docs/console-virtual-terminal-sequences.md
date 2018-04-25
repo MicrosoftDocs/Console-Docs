@@ -552,7 +552,7 @@ The following code provides an example of the recommended way to enable virtual 
 
 1. The existing mode should always be retrieved via GetConsoleMode and analyzed before being set with SetConsoleMode.
 
-2. SetConsoleMode returning with STATUS\_INVALID\_PARAMETER is the current mechanism to determine when running on a down-level system. An application receiving STATUS\_INVALID\_PARAMETER with one of the newer console mode flags in the bit field should gracefully degrade behavior and try again.
+2. Checking whether SetConsoleMode returns `0` and GetLastError returns STATUS\_INVALID\_PARAMETER is the current mechanism to determine when running on a down-level system. An application receiving STATUS\_INVALID\_PARAMETER with one of the newer console mode flags in the bit field should gracefully degrade behavior and try again.
 
 ```C
 #include <stdio.h>
