@@ -37,24 +37,25 @@ All commands in this table are generally equivalent to calling the [**SetConsole
 
 Cursor movement will be bounded by the current viewport into the buffer. Scrolling (if available) will not occur.
 
+
 | Sequence | Shorthand | Behavior                                                                                                                                      |
 |----------|-----------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| ESC A    | CUU       | Cursor Up by 1                                                                                                                                |
-| ESC B    | CUD       | Cursor Down by 1                                                                                                                              |
-| ESC C    | CUF       | Cursor Forward (Right) by 1                                                                                                                   |
-| ESC D    | CUB       | Cursor Backward (Left) by 1                                                                                                                   |
-| ESC M    | RI        | Reverse Index – Performs the reverse operation of \\n, moves cursor up one line, maintains horizontal position, scrolls buffer if necessary\* |
-| ESC 7    | DECSC     | Save Cursor Position in Memory\*\*                                                                                                            |
-| ESC 8    | DECSR     | Restore Cursor Position from Memory\*\*                                                                                                       |
+| ESC A    | CUU       | Cursor Up by 1                                                                                                                                |
+| ESC B    | CUD       | Cursor Down by 1                                                                                                                              |
+| ESC C    | CUF       | Cursor Forward (Right) by 1                                                                                                                   |
+| ESC D    | CUB       | Cursor Backward (Left) by 1                                                                                                                   |
+| ESC M    | RI        | Reverse Index – Performs the reverse operation of \\n, moves cursor up one line, maintains horizontal position, scrolls buffer if necessary\* |
+| ESC 7    | DECSC     | Save Cursor Position in Memory\*\*                                                                                                            |
+| ESC 8    | DECSR     | Restore Cursor Position from Memory\*\*                                                                                                       |
 
- 
 
-**Note**  
+
+**Note**  
 \* If there are scroll margins set, RI inside the margins will scroll only the contents of the margins, and leave the viewport unchanged. (See Scrolling Margins)
 
 \*\*There will be no value saved in memory until the first use of the save command. The only way to access the saved value is with the restore command.
 
- 
+
 
 ## <span id="Cursor_Positioning"></span><span id="cursor_positioning"></span><span id="CURSOR_POSITIONING"></span>Cursor Positioning
 
@@ -63,68 +64,71 @@ The following tables encompass Control Sequence Introducer (CSI) type sequences.
 
 For all parameters, the following rules apply unless otherwise noted:
 
--   &lt;n&gt; represents the distance to move and is an optional parameter
--   If &lt;n&gt; is omitted or equals 0, it will be treated as a 1
--   &lt;n&gt; cannot be larger than 32,767 (maximum short value)
--   &lt;n&gt; cannot be negative
+- &lt;n&gt; represents the distance to move and is an optional parameter
+- If &lt;n&gt; is omitted or equals 0, it will be treated as a 1
+- &lt;n&gt; cannot be larger than 32,767 (maximum short value)
+- &lt;n&gt; cannot be negative
 
 All commands in this section are generally equivalent to calling the [**SetConsoleCursorPosition**](setconsolecursorposition.md) console API.
 
 Cursor movement will be bounded by the current viewport into the buffer. Scrolling (if available) will not occur.
 
+
 | Sequence                       | Code      | Description                         | Behavior                                                                                                                   |
 |--------------------------------|-----------|-------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| ESC \[ &lt;n&gt; A             | CUU       | Cursor Up                           | Cursor up by &lt;n&gt;                                                                                                     |
-| ESC \[ &lt;n&gt; B             | CUD       | Cursor Down                         | Cursor down by &lt;n&gt;                                                                                                   |
-| ESC \[ &lt;n&gt; C             | CUF       | Cursor Forward                      | Cursor forward (Right) by &lt;n&gt;                                                                                        |
-| ESC \[ &lt;n&gt; D             | CUB       | Cursor Backward                     | Cursor backward (Left) by &lt;n&gt;                                                                                        |
-| ESC \[ &lt;n&gt; E             | CNL       | Cursor Next Line                    | Cursor down to beginning of &lt;n&gt;th line in the viewport                                                               |
-| ESC \[ &lt;n&gt; F             | CPL       | Cursor Previous Line                | Cursor up to beginning of &lt;n&gt;th line in the viewport                                                                 |
-| ESC \[ &lt;n&gt; G             | CHA       | Cursor Horizontal Absolute          | Cursor moves to &lt;n&gt;th position horizontally in the current line                                                      |
-| ESC \[ &lt;n&gt; d             | VPA       | Vertical Line Position Absolute     | Cursor moves to the &lt;n&gt;th position vertically in the current column                                                  |
-| ESC \[ &lt;y&gt; ; &lt;x&gt; H | CUP       | Cursor Position                     | \*Cursor moves to &lt;x&gt;; &lt;y&gt; coordinate within the viewport, where &lt;x&gt; is the column of the &lt;y&gt; line |
-| ESC \[ &lt;y&gt; ; &lt;x&gt; f | HVP       | Horizontal Vertical Position        | \*Cursor moves to &lt;x&gt;; &lt;y&gt; coordinate within the viewport, where &lt;x&gt; is the column of the &lt;y&gt; line |
-| ESC \[ s                       | ANSISYSSC | Save Cursor – Ansi.sys emulation    | \*\*With no parameters, performs a save cursor operation like DECSC                                                        |
-| ESC \[ u                       | ANSISYSSC | Restore Cursor – Ansi.sys emulation | \*\*With no parameters, performs a restore cursor operation like DECRC                                                     |
+| ESC \[ &lt;n&gt; A             | CUU       | Cursor Up                           | Cursor up by &lt;n&gt;                                                                                                     |
+| ESC \[ &lt;n&gt; B             | CUD       | Cursor Down                         | Cursor down by &lt;n&gt;                                                                                                   |
+| ESC \[ &lt;n&gt; C             | CUF       | Cursor Forward                      | Cursor forward (Right) by &lt;n&gt;                                                                                        |
+| ESC \[ &lt;n&gt; D             | CUB       | Cursor Backward                     | Cursor backward (Left) by &lt;n&gt;                                                                                        |
+| ESC \[ &lt;n&gt; E             | CNL       | Cursor Next Line                    | Cursor down to beginning of &lt;n&gt;th line in the viewport                                                               |
+| ESC \[ &lt;n&gt; F             | CPL       | Cursor Previous Line                | Cursor up to beginning of &lt;n&gt;th line in the viewport                                                                 |
+| ESC \[ &lt;n&gt; G             | CHA       | Cursor Horizontal Absolute          | Cursor moves to &lt;n&gt;th position horizontally in the current line                                                      |
+| ESC \[ &lt;n&gt; d             | VPA       | Vertical Line Position Absolute     | Cursor moves to the &lt;n&gt;th position vertically in the current column                                                  |
+| ESC \[ &lt;y&gt; ; &lt;x&gt; H | CUP       | Cursor Position                     | \*Cursor moves to &lt;x&gt;; &lt;y&gt; coordinate within the viewport, where &lt;x&gt; is the column of the &lt;y&gt; line |
+| ESC \[ &lt;y&gt; ; &lt;x&gt; f | HVP       | Horizontal Vertical Position        | \*Cursor moves to &lt;x&gt;; &lt;y&gt; coordinate within the viewport, where &lt;x&gt; is the column of the &lt;y&gt; line |
+| ESC \[ s                       | ANSISYSSC | Save Cursor – Ansi.sys emulation    | \*\*With no parameters, performs a save cursor operation like DECSC                                                        |
+| ESC \[ u                       | ANSISYSSC | Restore Cursor – Ansi.sys emulation | \*\*With no parameters, performs a restore cursor operation like DECRC                                                     |
 
- 
 
-**Note**  
+
+**Note**  
 \*&lt;x&gt; and &lt;y&gt; parameters have the same limitations as &lt;n&gt; above. If &lt;x&gt; and &lt;y&gt; are omitted, they will be set to 1;1.
 
 \*\*ANSI.sys historical documentation can be found at <https://msdn.microsoft.com/library/cc722862.aspx> and is implemented for convenience/compatibility.
 
- 
+
 
 ## <span id="Cursor_Visibility"></span><span id="cursor_visibility"></span><span id="CURSOR_VISIBILITY"></span>Cursor Visibility
 
 
 The following commands control the visibility of the cursor and it’s blinking state. The DECTCEM sequences are generally equivalent to calling [**SetConsoleCursorInfo**](setconsolecursorinfo.md) console API to toggle cursor visibility.
 
+
 | Sequence      | Code    | Description                  | Behavior                  |
 |---------------|---------|------------------------------|---------------------------|
-| ESC \[ ? 12 h | ATT160  | Text Cursor Enable Blinking  | Start the cursor blinking |
-| ESC \[ ? 12 l | ATT160  | Text Cursor Enable Blinking  | Stop blinking the cursor  |
-| ESC \[ ? 25 h | DECTCEM | Text Cursor Enable Mode Show | Show the cursor           |
-| ESC \[ ? 25 l | DECTCEM | Text Cursor Enable Mode Hide | Hide the cursor           |
+| ESC \[ ? 12 h | ATT160  | Text Cursor Enable Blinking  | Start the cursor blinking |
+| ESC \[ ? 12 l | ATT160  | Text Cursor Enable Blinking  | Stop blinking the cursor  |
+| ESC \[ ? 25 h | DECTCEM | Text Cursor Enable Mode Show | Show the cursor           |
+| ESC \[ ? 25 l | DECTCEM | Text Cursor Enable Mode Hide | Hide the cursor           |
 
- 
+
 
 ## <span id="Viewport_Positioning"></span><span id="viewport_positioning"></span><span id="VIEWPORT_POSITIONING"></span>Viewport Positioning
 
 
 All commands in this section are generally equivalent to calling [**ScrollConsoleScreenBuffer**](scrollconsolescreenbuffer.md) console API to move the contents of the console buffer.
 
-**Caution**  The command names are misleading. Scroll refers to which direction the text moves during the operation, not which way the viewport would seem to move.
+**Caution**  The command names are misleading. Scroll refers to which direction the text moves during the operation, not which way the viewport would seem to move.
 
- 
+
+
 
 | Sequence           | Code | Description | Behavior                                                                                             |
 |--------------------|------|-------------|------------------------------------------------------------------------------------------------------|
-| ESC \[ &lt;n&gt; S | SU   | Scroll Up   | Scroll text up by &lt;n&gt;. Also known as pan down, new lines fill in from the bottom of the screen |
-| ESC \[ &lt;n&gt; T | SD   | Scroll Down | Scroll down by &lt;n&gt;. Also known as pan up, new lines fill in from the top of the screen         |
+| ESC \[ &lt;n&gt; S | SU   | Scroll Up   | Scroll text up by &lt;n&gt;. Also known as pan down, new lines fill in from the bottom of the screen |
+| ESC \[ &lt;n&gt; T | SD   | Scroll Down | Scroll down by &lt;n&gt;. Also known as pan up, new lines fill in from the top of the screen         |
 
- 
+
 
 The text is moved starting with the line the cursor is on. If the cursor is on the middle row of the viewport, then scroll up would move the bottom half of the viewport, and insert blank lines at the bottom. Scroll down would move the top half of the viewport’s rows, and insert new lines at the top.
 
@@ -137,35 +141,37 @@ The default value for &lt;n&gt; is 1, and the value can be optionally omitted.
 
 All commands in this section are generally equivalent to calling [**FillConsoleOutputCharacter**](fillconsoleoutputcharacter.md), [**FillConsoleOutputAttribute**](fillconsoleoutputattribute.md), and [**ScrollConsoleScreenBuffer**](scrollconsolescreenbuffer.md) console APIs to modify the text buffer contents.
 
+
 | Sequence           | Code | Description      | Behavior                                                                                                                                          |
 |--------------------|------|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| ESC \[ &lt;n&gt; @ | ICH  | Insert Character | Insert &lt;n&gt; spaces at the current cursor position, shifting all existing text to the right. Text exiting the screen to the right is removed. |
-| ESC \[ &lt;n&gt; P | DCH  | Delete Character | Delete &lt;n&gt; characters at the current cursor position, shifting in space characters from the right edge of the screen.                       |
-| ESC \[ &lt;n&gt; X | ECH  | Erase Character  | Erase &lt;n&gt; characters from the current cursor position by overwriting them with a space character.                                           |
-| ESC \[ &lt;n&gt; L | IL   | Insert Line      | Inserts &lt;n&gt; lines into the buffer at the cursor position. The line the cursor is on, and lines below it, will be shifted downwards.         |
-| ESC \[ &lt;n&gt; M | DL   | Delete Line      | Deletes &lt;n&gt; lines from the buffer, starting with the row the cursor is on.                                                                  |
+| ESC \[ &lt;n&gt; @ | ICH  | Insert Character | Insert &lt;n&gt; spaces at the current cursor position, shifting all existing text to the right. Text exiting the screen to the right is removed. |
+| ESC \[ &lt;n&gt; P | DCH  | Delete Character | Delete &lt;n&gt; characters at the current cursor position, shifting in space characters from the right edge of the screen.                       |
+| ESC \[ &lt;n&gt; X | ECH  | Erase Character  | Erase &lt;n&gt; characters from the current cursor position by overwriting them with a space character.                                           |
+| ESC \[ &lt;n&gt; L | IL   | Insert Line      | Inserts &lt;n&gt; lines into the buffer at the cursor position. The line the cursor is on, and lines below it, will be shifted downwards.         |
+| ESC \[ &lt;n&gt; M | DL   | Delete Line      | Deletes &lt;n&gt; lines from the buffer, starting with the row the cursor is on.                                                                  |
 
- 
 
-**Note**  
+
+**Note**  
 For IL and DL, only the lines in the scrolling margins (see Scrolling Margins) are affected. If no margins are set, the default margin borders are the current viewport. If lines would be shifted below the margins, they are discarded. When lines are deleted, blank lines are inserted at the bottom of the margins, lines from outside the viewport are never affected.
 
 For each of the sequences, the default value for &lt;n&gt; if it is omitted is 1.
 
- 
+
 
 For the following commands, the parameter &lt;n&gt; has 3 valid values:
 
--   0 erases from the beginning of the line/display up to and including the current cursor position
--   1 erases from the current cursor position (inclusive) to the end of the line/display
--   2 erases the entire line/display
+- 0 erases from the beginning of the line/display up to and including the current cursor position
+- 1 erases from the current cursor position (inclusive) to the end of the line/display
+- 2 erases the entire line/display
+
 
 | Sequence           | Code | Description      | Behavior                                                                                     |
 |--------------------|------|------------------|----------------------------------------------------------------------------------------------|
-| ESC \[ &lt;n&gt; J | ED   | Erase in Display | Replace all text in the current viewport/screen specified by &lt;n&gt; with space characters |
-| ESC \[ &lt;n&gt; K | EL   | Erase in Line    | Replace all text on the line with the cursor specified by &lt;n&gt; with space characters    |
+| ESC \[ &lt;n&gt; J | ED   | Erase in Display | Replace all text in the current viewport/screen specified by &lt;n&gt; with space characters |
+| ESC \[ &lt;n&gt; K | EL   | Erase in Line    | Replace all text on the line with the cursor specified by &lt;n&gt; with space characters    |
 
- 
+
 
 ## <span id="Text_Formatting"></span><span id="text_formatting"></span><span id="TEXT_FORMATTING"></span>Text Formatting
 
@@ -176,17 +182,19 @@ This command is special in that the &lt;n&gt; position below can accept between 
 
 When no parameters are specified, it is treated the same as a single 0 parameter.
 
+
 | Sequence           | Code | Description            | Behavior                                                        |
 |--------------------|------|------------------------|-----------------------------------------------------------------|
-| ESC \[ &lt;n&gt; m | SGR  | Set Graphics Rendition | Set the format of the screen and text as specified by &lt;n&gt; |
+| ESC \[ &lt;n&gt; m | SGR  | Set Graphics Rendition | Set the format of the screen and text as specified by &lt;n&gt; |
 
- 
+
 
 The following table of values can be used in &lt;n&gt; to represent different formatting modes.
 
 Formatting modes are applied from left to right. Applying competing formatting options will result in the right-most option taking precedence.
 
 For options that specify colors, the colors will be used as defined in the console color table which can be modified using the [**SetConsoleScreenBufferInfoEx**](setconsolescreenbufferinfoex.md) API. If the table is modified to make the “blue” position in the table display an RGB shade of red, then all calls to **Foreground Blue** will display that red color until otherwise changed.
+
 
 | Value | Description               | Behavior                                                           |
 |-------|---------------------------|--------------------------------------------------------------------|
@@ -233,11 +241,12 @@ For options that specify colors, the colors will be used as defined in the conso
 | 106   | Bright Background Cyan    | Applies bold/bright cyan to background                             |
 | 107   | Bright Background White   | Applies bold/bright white to background                            |
 
- 
+
 
 ### <span id="Extended_Colors"></span><span id="extended_colors"></span><span id="EXTENDED_COLORS"></span>Extended Colors
 
 Some virtual terminal emulators support a palette of colors greater than the 16 colors provided by the Windows Console. For these extended colors, the Windows Console will choose the nearest appropriate color from the existing 16 color table for display. Unlike typical SGR values above, the extended values will consume additional parameters after the initial indicator according to the table below.
+
 
 | SGR Subsequence                            | Description                                                                                 |
 |--------------------------------------------|---------------------------------------------------------------------------------------------|
@@ -246,7 +255,7 @@ Some virtual terminal emulators support a palette of colors greater than the 16 
 | 38 ; 5 ; &lt;s&gt;                         | Set foreground color to &lt;s&gt; index in 88 or 256 color table\*                          |
 | 48 ; 5 ; &lt;s&gt;                         | Set background color to &lt;s&gt; index in 88 or 256 color table\*                          |
 
- 
+
 
 \*The 88 and 256 color palettes maintained internally for comparison are based from the xterm terminal emulator. The comparison/rounding tables cannot be modified at this time.
 
@@ -259,6 +268,7 @@ Each of these modes are simple boolean settings – the Cursor Keys Mode is eith
 
 See the Cursor Keys and Numpad & Function Keys sections for the sequences emitted in these modes.
 
+
 | Sequence     | Code    | Description                                            | Behavior                                                |
 |--------------|---------|--------------------------------------------------------|---------------------------------------------------------|
 | ESC =        | DECKPAM | Enable Keypad Application Mode                         | Keypad keys will emit their Application Mode sequences. |
@@ -266,23 +276,24 @@ See the Cursor Keys and Numpad & Function Keys sections for the sequences emitte
 | ESC \[ ? 1 h | DECCKM  | Enable Cursor Keys Application Mode                    | Keypad keys will emit their Application Mode sequences. |
 | ESC \[ ? 1 l | DECCKM  | Disable Cursor Keys Application Mode (use Normal Mode) | Keypad keys will emit their Numeric Mode sequences.     |
 
- 
+
 
 ## <span id="Query_State"></span><span id="query_state"></span><span id="QUERY_STATE"></span>Query State
 
 
 All commands in this section are generally equivalent to calling Get\* console APIs to retrieve status information about the current console buffer state.
 
-**Note**  These queries will emit their responses into the console input stream immediately after being recognized on the output stream while ENABLE\_VIRTUAL\_TERMINAL\_PROCESSING is set. The ENABLE\_VIRTUAL\_TERMINAL\_INPUT flag does not apply to query commands as it is assumed that an application making the query will always want to receive the reply.
+**Note**  These queries will emit their responses into the console input stream immediately after being recognized on the output stream while ENABLE\_VIRTUAL\_TERMINAL\_PROCESSING is set. The ENABLE\_VIRTUAL\_TERMINAL\_INPUT flag does not apply to query commands as it is assumed that an application making the query will always want to receive the reply.
 
- 
+
+
 
 | Sequence   | Code    | Description            | Behavior                                                                                                               |
 |------------|---------|------------------------|------------------------------------------------------------------------------------------------------------------------|
 | ESC \[ 6 n | DECXCPR | Report Cursor Position | Emit the cursor position as: ESC \[ &lt;r&gt; ; &lt;c&gt; R Where &lt;r&gt; = cursor row and &lt;c&gt; = cursor column |
 | ESC \[ 0 c | DA      | Device Attributes      | Report the terminal identity. Will emit “\\x1b\[?1;0c”, indicating "VT101 with No Options".                            |
 
- 
+
 
 ## <span id="Tabs"></span><span id="tabs"></span><span id="TABS"></span>Tabs
 
@@ -290,6 +301,7 @@ All commands in this section are generally equivalent to calling Get\* console A
 While the windows console traditionally expects tabs to be exclusively eight characters wide, \*nix applications utilizing certain sequences can manipulate where the tab stops are within the console windows to optimize cursor movement by the application.
 
 The following sequences allow an application to set the tab stop locations within the console window, remove them, and navigate between them.
+
 
 | Sequence           | Code | Description                     | Behavior                                                                                                                                                                                                                    |
 |--------------------|------|---------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -299,25 +311,27 @@ The following sequences allow an application to set the tab stop locations withi
 | ESC \[ 0 g         | TBC  | Tab Clear (current column)      | Clears the tab stop in the current column, if there is one. Otherwise does nothing.                                                                                                                                         |
 | ESC \[ 3 g         | TBC  | Tab Clear (all columns)         | Clears all currently set tab stops.                                                                                                                                                                                         |
 
- 
 
--   For both CHT and CBT, &lt;n&gt; is an optional parameter that (default=1) indicating how many times to advance the cursor in the specified direction.
--   If there are no tab stops set via HTS, CHT and CBT will treat the first and last columns of the window as the only two tab stops.
--   Using HTS to set a tab stop will also cause the console to navigate to the next tab stop on the output of a TAB (0x09, ‘\\t’) character, in the same manner as CHT.
+
+- For both CHT and CBT, &lt;n&gt; is an optional parameter that (default=1) indicating how many times to advance the cursor in the specified direction.
+- If there are no tab stops set via HTS, CHT and CBT will treat the first and last columns of the window as the only two tab stops.
+- Using HTS to set a tab stop will also cause the console to navigate to the next tab stop on the output of a TAB (0x09, ‘\\t’) character, in the same manner as CHT.
 
 ## <span id="Designate_Character_Set"></span><span id="designate_character_set"></span><span id="DESIGNATE_CHARACTER_SET"></span>Designate Character Set
 
 
 The following sequences allow a program to change the active character set mapping. This allows a program to emit 7-bit ASCII characters, but have them displayed as other glyphs on the terminal screen itself. Currently, the only two supported character sets are ASCII (default) and the DEC Special Graphics Character Set. See <http://vt100.net/docs/vt220-rm/table2-4.html> for a listing of all of the characters represented by the DEC Special Graphics Character Set.
 
+
 | Sequence | Description                                | Behavior                      |
 |----------|--------------------------------------------|-------------------------------|
 | ESC ( 0  | Designate Character Set – DEC Line Drawing | Enables DEC Line Drawing Mode |
 | ESC ( B  | Designate Character Set – US ASCII         | Enables ASCII Mode (Default)  |
 
- 
+
 
 Notably, the DEC Line Drawing mode is used for drawing borders in console applications. The following table shows what ASCII character maps to which line drawing character.
+
 
 | Hex  | ASCII | DEC Line Drawing |
 |------|-------|------------------|
@@ -334,7 +348,7 @@ Notably, the DEC Line Drawing mode is used for drawing borders in console applic
 | 0x78 | x     | │                |
 
 
- 
+
 
 ## <span id="Scrolling_Margins"></span><span id="scrolling_margins"></span><span id="SCROLLING_MARGINS"></span>Scrolling Margins
 
@@ -347,11 +361,12 @@ For DECSTBM, there are two optional parameters, &lt;t&gt; and &lt;b&gt;, which a
 
 Scrolling margins are per-buffer, so importantly, the Alternate Buffer and Main Buffer maintain separate scrolling margins settings (so a full screen application in the alternate buffer will not poison the main buffer’s margins).
 
+
 | Sequence                       | Code    | Description          | Behavior                                       |
 |--------------------------------|---------|----------------------|------------------------------------------------|
 | ESC \[ &lt;t&gt; ; &lt;b&gt; r | DECSTBM | Set Scrolling Region | Sets the VT scrolling margins of the viewport. |
 
- 
+
 
 ## <span id="Window_Title"></span><span id="window_title"></span><span id="WINDOW_TITLE"></span>Window Title
 
@@ -360,12 +375,13 @@ The following commands allows the application to set the title of the console wi
 
 Note that these sequences are OSC “Operating system command” sequences, and not a CSI like many of the other sequences listed, and as such starts with “\\x1b\]”, not “\\x1b\[”.
 
+
 | Sequence                      | Description               | Behavior                                           |
 |-------------------------------|---------------------------|----------------------------------------------------|
 | ESC \] 0 ; &lt;string&gt; BEL | Set Icon and Window Title | Sets the console window’s title to &lt;string&gt;. |
 | ESC \] 2 ; &lt;string&gt; BEL | Set Window Title          | Sets the console window’s title to &lt;string&gt;. |
 
- 
+
 
 The terminating character here is the “Bell” character, ‘\\x07’
 
@@ -376,43 +392,46 @@ The terminating character here is the “Bell” character, ‘\\x07’
 
 For an example of this behavior, consider when vim is launched from bash. Vim uses the entirety of the screen to edit the file, then returning to bash leaves the original buffer unchanged.
 
+
 | Sequence           | Description                 | Behavior                                   |
 |--------------------|-----------------------------|--------------------------------------------|
 | ESC \[ ? 1 0 4 9 h | Use Alternate Screen Buffer | Switches to a new alternate screen buffer. |
 | ESC \[ ? 1 0 4 9 l | Use Alternate Screen Buffer | Switches to the main buffer.               |
 
- 
+
 
 ## <span id="Window_Width"></span><span id="window_width"></span><span id="WINDOW_WIDTH"></span>Window Width
 
 
 The following sequences can be used to control the width of the console window. They are roughly equivalent to the calling the SetConsoleScreenBufferInfoEx console API to set the window width.
 
+
 | Sequence     | Code    | Description                  | Behavior                                    |
 |--------------|---------|------------------------------|---------------------------------------------|
 | ESC \[ ? 3 h | DECCOLM | Set Number of Columns to 132 | Sets the console width to 132 columns wide. |
 | ESC \[ ? 3 l | DECCOLM | Set Number of Columns to 80  | Sets the console width to 80 columns wide.  |
 
- 
+
 
 ## <span id="Soft_Reset"></span><span id="soft_reset"></span><span id="SOFT_RESET"></span>Soft Reset
 
 
 The following sequence can be used to reset certain properties to their default values.The following properties are reset to the following default values (also listed are the sequences that control those properties):
 
--   Cursor visibility: visible (DECTEM)
--   Numeric Keypad: Numeric Mode (DECNKM)
--   Cursor Keys Mode: Normal Mode (DECCKM)
--   Top and Bottom Margins: Top=1, Bottom=Console height (DECSTBM)
--   Character Set: US ASCII
--   Graphics Rendition: Default/Off (SGR)
--   Save cursor state: Home position (0,0) (DECSC)
+- Cursor visibility: visible (DECTEM)
+- Numeric Keypad: Numeric Mode (DECNKM)
+- Cursor Keys Mode: Normal Mode (DECCKM)
+- Top and Bottom Margins: Top=1, Bottom=Console height (DECSTBM)
+- Character Set: US ASCII
+- Graphics Rendition: Default/Off (SGR)
+- Save cursor state: Home position (0,0) (DECSC)
+
 
 | Sequence   | Code   | Description | Behavior                                           |
 |------------|--------|-------------|----------------------------------------------------|
 | ESC \[ ! p | DECSTR | Soft Reset  | Reset certain terminal settings to their defaults. |
 
- 
+
 
 ## <span id="Input_Sequences"></span><span id="input_sequences"></span><span id="INPUT_SEQUENCES"></span>Input Sequences
 
@@ -423,6 +442,7 @@ There are two internal modes that control which sequences are emitted for the gi
 
 ### <span id="Cursor_Keys__"></span><span id="cursor_keys__"></span><span id="CURSOR_KEYS__"></span>Cursor Keys
 
+
 | Key         | Normal Mode | Application Mode |
 |-------------|-------------|------------------|
 | Up Arrow    | ESC \[ A    | ESC O A          |
@@ -432,9 +452,10 @@ There are two internal modes that control which sequences are emitted for the gi
 | Home        | ESC \[ H    | ESC O H          |
 | End         | ESC \[ F    | ESC O F          |
 
- 
+
 
 Additionally, if Ctrl is pressed with any of these keys, the following sequences are emitted instead, regardless of the Cursor Keys Mode:
+
 
 | Key                | Any Mode       |
 |--------------------|----------------|
@@ -443,9 +464,10 @@ Additionally, if Ctrl is pressed with any of these keys, the following sequences
 | Ctrl + Right Arrow | ESC \[ 1 ; 5 C |
 | Ctrl + Left Arrow  | ESC \[ 1 ; 5 D |
 
- 
+
 
 ### <span id="Numpad___Function_Keys__"></span><span id="numpad___function_keys__"></span><span id="NUMPAD___FUNCTION_KEYS__"></span>Numpad & Function Keys
+
 
 | Key       | Sequence     |
 |-----------|--------------|
@@ -469,13 +491,14 @@ Additionally, if Ctrl is pressed with any of these keys, the following sequences
 | F11       | ESC \[ 2 3 ~ |
 | F12       | ESC \[ 2 4 ~ |
 
- 
+
 
 ### <span id="Modifiers__"></span><span id="modifiers__"></span><span id="MODIFIERS__"></span>Modifiers
 
 Alt is treated by prefixing the sequence with an escape: ESC &lt;c&gt; where &lt;c&gt; is the character passed by the operating system. Alt+Ctrl is handled the same way except that the operating system will have pre-shifted the &lt;c&gt; key to the appropriate control character which will be relayed to the application.
 
 Ctrl is generally passed through exactly as received from the system. This is typically a single character shifted down into the control character reserved space (0x0-0x1f). For example, Ctrl+@ (0x40) becomes NUL (0x00), Ctrl+\[ (0x5b) becomes ESC (0x1b), etc. A few Ctrl key combinations are treated specially according to the following table:
+
 
 | Key                | Sequence       |
 |--------------------|----------------|
@@ -485,11 +508,11 @@ Ctrl is generally passed through exactly as received from the system. This is ty
 | Ctrl + Right Arrow | ESC \[ 1 ; 5 C |
 | Ctrl + Left Arrow  | ESC \[ 1 ; 5 D |
 
- 
 
-**Note**  Left Ctrl + Right Alt is treated as AltGr. When both are seen together, they will be stripped and the Unicode value of the character presented by the system will be passed into the target. The system will pre-translate AltGr values according to the current system input settings.
 
- 
+**Note**  Left Ctrl + Right Alt is treated as AltGr. When both are seen together, they will be stripped and the Unicode value of the character presented by the system will be passed into the target. The system will pre-translate AltGr values according to the current system input settings.
+
+
 
 ## <span id="Samples"></span><span id="samples"></span><span id="SAMPLES"></span>Samples
 
@@ -523,7 +546,7 @@ int main()
     {
         return GetLastError();
     }
-    
+
     // Try some Set Graphics Rendition (SGR) terminal escape sequences
     wprintf(L"\x1b[31mThis text has a red foreground using SGR.31.\r\n");
     wprintf(L"\x1b[1mThis text has a bright (bold) red foreground using SGR.1 to affect the previous color setting.\r\n");
@@ -538,9 +561,9 @@ int main()
 }
 ```
 
-**Note**  In the previous example, the string '`\x1b[31m`' is the implementation of **ESC \[ &lt;n&gt; m** with &lt;n&gt; being 31.
+**Note**  In the previous example, the string '`\x1b[31m`' is the implementation of **ESC \[ &lt;n&gt; m** with &lt;n&gt; being 31.
 
- 
+
 
 The following graphic shows the output of the previous code example.
 
@@ -734,7 +757,7 @@ int __cdecl wmain(int argc, WCHAR* argv[])
     printf(CSI "102;30m");
     printf("Windows 10 Anniversary Update - VT Example"); 
     printf(CSI "0m");
-    
+
     // Print a top border - Yellow
     printf(CSI "2;1H");
     PrintHorizontalBorder(Size, true);
@@ -742,7 +765,7 @@ int __cdecl wmain(int argc, WCHAR* argv[])
     // // Print a bottom border
     printf(CSI "%d;1H", Size.Y-1);
     PrintHorizontalBorder(Size, false);
-    
+
     wchar_t wch;
 
     // draw columns
@@ -758,7 +781,7 @@ int __cdecl wmain(int argc, WCHAR* argv[])
 
     PrintStatusLine("Press any key to see text printed between tab stops.", Size);
     wch = _getwch();
-    
+
     // Fill columns with output
     printf(CSI "3;1H"); 
     for (line = 0; line < iNumLines; line++)
@@ -806,9 +829,9 @@ int __cdecl wmain(int argc, WCHAR* argv[])
 }
 ```
 
- 
 
- 
+
+
 
 
 

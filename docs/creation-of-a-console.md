@@ -23,8 +23,8 @@ The system creates a new console when it starts a *console process*, a character
 
 A process can create a console by using one of the following methods:
 
--   A GUI or console process can use the [**CreateProcess**](https://msdn.microsoft.com/library/windows/desktop/ms682425) function with **CREATE\_NEW\_CONSOLE** to create a console process with a new console. (By default, a console process inherits its parent's console, and there is no guarantee that input is received by the process for which it was intended.)
--   A graphical user interface (GUI) or console process that is not currently attached to a console can use the [**AllocConsole**](allocconsole.md) function to create a new console. (GUI processes are not attached to a console when they are created. Console processes are not attached to a console if they are created using [**CreateProcess**](https://msdn.microsoft.com/library/windows/desktop/ms682425) with **DETACHED\_PROCESS**.)
+- A GUI or console process can use the [**CreateProcess**](https://msdn.microsoft.com/library/windows/desktop/ms682425) function with **CREATE\_NEW\_CONSOLE** to create a console process with a new console. (By default, a console process inherits its parent's console, and there is no guarantee that input is received by the process for which it was intended.)
+- A graphical user interface (GUI) or console process that is not currently attached to a console can use the [**AllocConsole**](allocconsole.md) function to create a new console. (GUI processes are not attached to a console when they are created. Console processes are not attached to a console if they are created using [**CreateProcess**](https://msdn.microsoft.com/library/windows/desktop/ms682425) with **DETACHED\_PROCESS**.)
 
 Typically, a process uses [**AllocConsole**](allocconsole.md) to create a console when an error occurs requiring interaction with the user. For example, a GUI process can create a console when an error occurs that prevents it from using its normal graphical interface, or a console process that does not normally interact with the user can create a console to display an error.
 
@@ -34,15 +34,16 @@ Creating a new console results in a new console window, as well as separate I/O 
 
 When a process uses [**CreateProcess**](https://msdn.microsoft.com/library/windows/desktop/ms682425), it can specify a [**STARTUPINFO**](https://msdn.microsoft.com/library/windows/desktop/ms686331) structure, whose members control the characteristics of the first new console (if any) created for the child process. The **STARTUPINFO** structure specified in the call to **CreateProcess** affects a console created if the **CREATE\_NEW\_CONSOLE** flag is specified. It also affects a console created if the child process subsequently uses [**AllocConsole**](allocconsole.md). The following console characteristics can be specified:
 
--   Size of the new console window, in character cells
--   Location of the new console window, in screen pixel coordinates
--   Size of the new console's screen buffer, in character cells
--   Text and background color attributes of the new console's screen buffer
--   Display name for the title bar of the new console's window
+- Size of the new console window, in character cells
+- Location of the new console window, in screen pixel coordinates
+- Size of the new console's screen buffer, in character cells
+- Text and background color attributes of the new console's screen buffer
+- Display name for the title bar of the new console's window
 
 The system uses default values if the [**STARTUPINFO**](https://msdn.microsoft.com/library/windows/desktop/ms686331) values are not specified. A child process can use the [**GetStartupInfo**](https://msdn.microsoft.com/library/windows/desktop/ms683230) function to determine the values in its **STARTUPINFO** structure.
 
 A process cannot change the location of its console window on the screen, but the following console functions are available to set or retrieve the other properties specified in the [**STARTUPINFO**](https://msdn.microsoft.com/library/windows/desktop/ms686331) structure.
+
 
 | Function                                                         | Description                                                          |
 |------------------------------------------------------------------|----------------------------------------------------------------------|
@@ -57,13 +58,13 @@ A process cannot change the location of its console window on the screen, but th
 ||
 ||
 
- 
+
 
 A process can use the [**FreeConsole**](freeconsole.md) function to detach itself from an inherited console or from a console created by [**AllocConsole**](allocconsole.md).
 
- 
 
- 
+
+
 
 
 

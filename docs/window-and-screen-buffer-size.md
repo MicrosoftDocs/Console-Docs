@@ -25,9 +25,9 @@ A screen buffer can be any size, limited only by available memory. The dimension
 
 The [**GetConsoleScreenBufferInfo**](getconsolescreenbufferinfo.md) function returns the following information about a screen buffer and its window:
 
--   The current size of the console screen buffer
--   The current location of the window
--   The maximum size of the window given the current screen buffer size, the current font size, and the screen size
+- The current size of the console screen buffer
+- The current location of the window
+- The maximum size of the window given the current screen buffer size, the current font size, and the screen size
 
 The [**GetLargestConsoleWindowSize**](getlargestconsolewindowsize.md) function returns the maximum size of a console's window based on the current font and screen sizes. This size differs from the maximum window size returned by [**GetConsoleScreenBufferInfo**](getconsolescreenbufferinfo.md) in that the console screen buffer size is ignored.
 

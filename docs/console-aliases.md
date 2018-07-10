@@ -22,7 +22,7 @@ Console aliases are used to map source strings to target strings. For example, y
 
 To define a console alias, use Doskey.exe to create a macro, or use the [**AddConsoleAlias**](addconsolealias.md) function. The following example uses Doskey.exe:
 
-**doskey test=cd \\***a\_very\_long\_path***\\test**
+**doskey test=cd \\**<em>a\_very\_long\_path</em>**\\test**
 
 The following call to [**AddConsoleAlias**](addconsolealias.md) creates the same console alias:
 
