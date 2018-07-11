@@ -36,7 +36,8 @@
       "breadcrumb_path": "/windows/console/breadcrumb/toc.json",
       "extendBreadcrumb": true,
       "feedback_system": "GitHub",
-      "feedback_github_repo": "MicrosoftDocs/Console-Docs"
+      "feedback_github_repo": "MicrosoftDocs/Console-Docs",
+      "feedback_product_url": "https://wpdev.uservoice.com/forums/266908-command-prompt-console-windows-subsystem-for-l"
     },
     "fileMetadata": {},
     "template": [],
