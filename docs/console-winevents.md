@@ -52,7 +52,7 @@ The following event constants are used in the *event* parameter of the [*WinEven
 <strong>EVENT_CONSOLE_CARET</strong>
 0x4001</td>
 <td><p>The console caret has moved. The <em>idObject</em> parameter is one or more of the following values: <strong>CONSOLE_CARET_SELECTION</strong> or <strong>CONSOLE_CARET_VISIBLE</strong>.</p>
-<p>The <em>idChild</em> parameter is a <a href="coord-str.md" data-raw-source="[&lt;strong&gt;COORD&lt;/strong&gt;](coord-str.md)"><strong>COORD</strong></a> structure that specifies the cursor&#39;s current position.</p></td>
+<p>The <em>idChild</em> parameter is a <a href="coord-str.md"><strong>COORD</strong></a> structure that specifies the cursor&#39;s current position.</p></td>
 </tr>
 <tr class="even">
 <td><span id="EVENT_CONSOLE_END_APPLICATION"></span><span id="event_console_end_application"></span>
