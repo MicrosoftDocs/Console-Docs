@@ -29,14 +29,14 @@ The high-level and low-level I/O methods are not mutually exclusive, and an appl
 
 The following topics describe the console modes and the high-level and low-level I/O functions.
 
--   [Console Modes](console-modes.md)
--   [High-Level Console I/O](high-level-console-i-o.md)
--   [High-Level Console Modes](high-level-console-modes.md)
--   [High-Level Console Input and Output Functions](high-level-console-input-and-output-functions.md)
--   [Low-Level Console I/O](low-level-console-i-o.md)
--   [Low-Level Console Modes](low-level-console-modes.md)
--   [Low-Level Console Input Functions](low-level-console-input-functions.md)
--   [Low-Level Console Output Functions](low-level-console-output-functions.md)
+- [Console Modes](console-modes.md)
+- [High-Level Console I/O](high-level-console-i-o.md)
+- [High-Level Console Modes](high-level-console-modes.md)
+- [High-Level Console Input and Output Functions](high-level-console-input-and-output-functions.md)
+- [Low-Level Console I/O](low-level-console-i-o.md)
+- [Low-Level Console Modes](low-level-console-modes.md)
+- [Low-Level Console Input Functions](low-level-console-input-functions.md)
+- [Low-Level Console Output Functions](low-level-console-output-functions.md)
 
  
 

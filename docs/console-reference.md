@@ -21,9 +21,9 @@ ms.assetid: be1aa828-04dc-4d9d-ae88-92842dcafa85
 
 The following sections describe the Console API:
 
--   [Console Functions](console-functions.md)
--   [Console Structures](console-structures.md)
--   [Console WinEvents](console-winevents.md)
+- [Console Functions](console-functions.md)
+- [Console Structures](console-structures.md)
+- [Console WinEvents](console-winevents.md)
 
  
 

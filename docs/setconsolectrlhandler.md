@@ -75,9 +75,9 @@ For console processes, the CTRL+C and CTRL+BREAK key combinations are typically 
 
 CTRL+BREAK is always treated as a signal, but typical CTRL+C behavior can be changed in three ways that prevent the handler functions from being called:
 
--   The [**SetConsoleMode**](setconsolemode.md) function can disable the **ENABLE\_PROCESSED\_INPUT** mode for a console's input buffer, so CTRL+C is reported as keyboard input rather than as a signal.
--   Calling **SetConsoleCtrlHandler** with the **NULL** and **TRUE** arguments causes the calling process to ignore CTRL+C signals. This attribute is inherited by child processes, but it can be enabled or disabled by any process without affecting existing processes.
--   If a console process is being debugged and CTRL+C signals have not been disabled, the system generates a **DBG\_CONTROL\_C** exception. This exception is raised only for the benefit of the debugger, and an application should never use an exception handler to deal with it. If the debugger handles the exception, an application will not notice the CTRL+C, with one exception: alertable waits will terminate. If the debugger passes the exception on unhandled, CTRL+C is passed to the console process and treated as a signal, as previously discussed.
+- The [**SetConsoleMode**](setconsolemode.md) function can disable the **ENABLE\_PROCESSED\_INPUT** mode for a console's input buffer, so CTRL+C is reported as keyboard input rather than as a signal.
+- Calling **SetConsoleCtrlHandler** with the **NULL** and **TRUE** arguments causes the calling process to ignore CTRL+C signals. This attribute is inherited by child processes, but it can be enabled or disabled by any process without affecting existing processes.
+- If a console process is being debugged and CTRL+C signals have not been disabled, the system generates a **DBG\_CONTROL\_C** exception. This exception is raised only for the benefit of the debugger, and an application should never use an exception handler to deal with it. If the debugger handles the exception, an application will not notice the CTRL+C, with one exception: alertable waits will terminate. If the debugger passes the exception on unhandled, CTRL+C is passed to the console process and treated as a signal, as previously discussed.
 
 A console process can use the [**GenerateConsoleCtrlEvent**](generateconsolectrlevent.md) function to send a CTRL+C or CTRL+BREAK signal to a console process group.
 

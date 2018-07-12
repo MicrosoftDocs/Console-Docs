@@ -70,31 +70,31 @@ This member can be one of the following values.
 <td><span id="FOCUS_EVENT"></span><span id="focus_event"></span>
 <strong>FOCUS_EVENT</strong>
 0x0010</td>
-<td><p>The <strong>Event</strong> member contains a [<strong>FOCUS_EVENT_RECORD</strong>](focus-event-record-str.md) structure. These events are used internally and should be ignored.</p></td>
+<td><p>The <strong>Event</strong> member contains a <a href="focus-event-record-str.md" data-raw-source="[&lt;strong&gt;FOCUS_EVENT_RECORD&lt;/strong&gt;](focus-event-record-str.md)"><strong>FOCUS_EVENT_RECORD</strong></a> structure. These events are used internally and should be ignored.</p></td>
 </tr>
 <tr class="even">
 <td><span id="KEY_EVENT"></span><span id="key_event"></span>
 <strong>KEY_EVENT</strong>
 0x0001</td>
-<td><p>The <strong>Event</strong> member contains a [<strong>KEY_EVENT_RECORD</strong>](key-event-record-str.md) structure with information about a keyboard event.</p></td>
+<td><p>The <strong>Event</strong> member contains a <a href="key-event-record-str.md" data-raw-source="[&lt;strong&gt;KEY_EVENT_RECORD&lt;/strong&gt;](key-event-record-str.md)"><strong>KEY_EVENT_RECORD</strong></a> structure with information about a keyboard event.</p></td>
 </tr>
 <tr class="odd">
 <td><span id="MENU_EVENT"></span><span id="menu_event"></span>
 <strong>MENU_EVENT</strong>
 0x0008</td>
-<td><p>The <strong>Event</strong> member contains a [<strong>MENU_EVENT_RECORD</strong>](menu-event-record-str.md) structure. These events are used internally and should be ignored.</p></td>
+<td><p>The <strong>Event</strong> member contains a <a href="menu-event-record-str.md" data-raw-source="[&lt;strong&gt;MENU_EVENT_RECORD&lt;/strong&gt;](menu-event-record-str.md)"><strong>MENU_EVENT_RECORD</strong></a> structure. These events are used internally and should be ignored.</p></td>
 </tr>
 <tr class="even">
 <td><span id="MOUSE_EVENT"></span><span id="mouse_event"></span>
 <strong>MOUSE_EVENT</strong>
 0x0002</td>
-<td><p>The <strong>Event</strong> member contains a [<strong>MOUSE_EVENT_RECORD</strong>](mouse-event-record-str.md) structure with information about a mouse movement or button press event.</p></td>
+<td><p>The <strong>Event</strong> member contains a <a href="mouse-event-record-str.md" data-raw-source="[&lt;strong&gt;MOUSE_EVENT_RECORD&lt;/strong&gt;](mouse-event-record-str.md)"><strong>MOUSE_EVENT_RECORD</strong></a> structure with information about a mouse movement or button press event.</p></td>
 </tr>
 <tr class="odd">
 <td><span id="WINDOW_BUFFER_SIZE_EVENT"></span><span id="window_buffer_size_event"></span>
 <strong>WINDOW_BUFFER_SIZE_EVENT</strong>
 0x0004</td>
-<td><p>The <strong>Event</strong> member contains a [<strong>WINDOW_BUFFER_SIZE_RECORD</strong>](window-buffer-size-record-str.md) structure with information about the new size of the console screen buffer.</p></td>
+<td><p>The <strong>Event</strong> member contains a <a href="window-buffer-size-record-str.md" data-raw-source="[&lt;strong&gt;WINDOW_BUFFER_SIZE_RECORD&lt;/strong&gt;](window-buffer-size-record-str.md)"><strong>WINDOW_BUFFER_SIZE_RECORD</strong></a> structure with information about the new size of the console screen buffer.</p></td>
 </tr>
 <tr class="even">
 </tr>

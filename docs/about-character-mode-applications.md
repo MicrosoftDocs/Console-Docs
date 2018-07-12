@@ -28,13 +28,13 @@ Character mode applications communicate with the end-user through a "console" (o
 
 In Windows, the console is built-in and provides a rich API through which character mode applications can interact with the user.
 
--   [Consoles](consoles.md)
--   [Input and Output Methods](input-and-output-methods.md)
--   [Console Code Pages](console-code-pages.md)
--   [Console Control Handlers](console-control-handlers.md)
--   [Console Aliases](console-aliases.md)
--   [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md)
--   [Console Application Issues](console-application-issues.md)
+- [Consoles](consoles.md)
+- [Input and Output Methods](input-and-output-methods.md)
+- [Console Code Pages](console-code-pages.md)
+- [Console Control Handlers](console-control-handlers.md)
+- [Console Aliases](console-aliases.md)
+- [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md)
+- [Console Application Issues](console-application-issues.md)
 
  
 

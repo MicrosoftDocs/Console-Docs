@@ -25,6 +25,7 @@ The best long-term solution for a console application is to use Unicode. Barring
 
 The following are file functions:
 
+
 |                                                     |                                                       |                                                     |
 |-----------------------------------------------------|-------------------------------------------------------|-----------------------------------------------------|
 | [**CopyFile**](https://msdn.microsoft.com/library/windows/desktop/aa363851)                       | [**GetFileAttributes**](https://msdn.microsoft.com/library/windows/desktop/aa364944)       | [**LoadLibrary**](https://msdn.microsoft.com/library/windows/desktop/ms684175)                 |
@@ -36,7 +37,7 @@ The following are file functions:
 | [**FindNextFile**](https://msdn.microsoft.com/library/windows/desktop/aa364428)               | [**GetTempPath**](https://msdn.microsoft.com/library/windows/desktop/aa364992)                   | [**SearchPath**](https://msdn.microsoft.com/library/windows/desktop/aa365527)                   |
 | [**GetCurrentDirectory**](https://msdn.microsoft.com/library/windows/desktop/aa364934) | [**GetVolumeInformation**](https://msdn.microsoft.com/library/windows/desktop/aa364993) | [**SetCurrentDirectory**](https://msdn.microsoft.com/library/windows/desktop/aa365530) |
 | [**GetDiskFreeSpace**](https://msdn.microsoft.com/library/windows/desktop/aa364935)       | [**GetWindowsDirectory**](https://msdn.microsoft.com/library/windows/desktop/ms724454)   | [**SetFileAttributes**](https://msdn.microsoft.com/library/windows/desktop/aa365535)     |
-| [**GetDriveType**](https://msdn.microsoft.com/library/windows/desktop/aa364939)               |                                                       |                                                     |
+| [**GetDriveType**](https://msdn.microsoft.com/library/windows/desktop/aa364939)               |                                                       |                                                     |
 ||
 ||
 ||
@@ -45,13 +46,13 @@ The following are file functions:
 ||
 ||
 
- 
+
 
 When dealing with command lines, a console application should obtain the command line in Unicode form and convert it to OEM form, using the relevant character-to-OEM functions. Note, also, that *argv* uses the ANSI character set.
 
- 
 
- 
+
+
 
 
 

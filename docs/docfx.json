@@ -29,13 +29,16 @@
     "externalReference": [],
     "globalMetadata": {
       "titleSuffix": "Windows Console",
-      "searchScope": ["Console"],
+      "searchScope": [
+        "Console"
+      ],
       "ms.topic": "article",
-      "ms.date": "07/12/2017",       
+      "ms.date": "07/12/2017",
       "ms.prod": "console"
     },
     "fileMetadata": {},
     "template": [],
-    "dest": "console"
+    "dest": "console",
+    "markdownEngineName": "markdig"
   }
 }
