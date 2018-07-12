@@ -27,11 +27,11 @@ Each screen buffer has its own two-dimensional array of character information re
 
 A number of properties associated with a screen buffer can be set independently for each screen buffer. This means that changing the active screen buffer can have a dramatic effect on the appearance of the console window. The properties associated with a screen buffer include:
 
--   Screen buffer size, in character rows and columns.
--   Text attributes (foreground and background colors for displaying text to be written by the [**WriteFile**](https://msdn.microsoft.com/library/windows/desktop/aa365747) or [**WriteConsole**](writeconsole.md) function).
--   Window size and location (the rectangular region of the console screen buffer that is displayed in the console window).
--   Cursor position, appearance, and visibility.
--   Output modes (**ENABLE\_PROCESSED\_OUTPUT** and **ENABLE\_WRAP\_AT\_EOL\_OUTPUT**). For more information about console output modes, see [High-Level Console Modes](high-level-console-modes.md).
+- Screen buffer size, in character rows and columns.
+- Text attributes (foreground and background colors for displaying text to be written by the [**WriteFile**](https://msdn.microsoft.com/library/windows/desktop/aa365747) or [**WriteConsole**](writeconsole.md) function).
+- Window size and location (the rectangular region of the console screen buffer that is displayed in the console window).
+- Cursor position, appearance, and visibility.
+- Output modes (**ENABLE\_PROCESSED\_OUTPUT** and **ENABLE\_WRAP\_AT\_EOL\_OUTPUT**). For more information about console output modes, see [High-Level Console Modes](high-level-console-modes.md).
 
 When a screen buffer is created, it contains blanks. Its cursor is visible and positioned at the buffer's origin (0,0), and the window is positioned with its upper left corner at the buffer's origin. The size of the console screen buffer, the window size, the text attributes, and the appearance of the cursor are determined by the user or by the system defaults. To retrieve the current values of the various properties associated with the console screen buffer, use the [**GetConsoleScreenBufferInfo**](getconsolescreenbufferinfo.md), [**GetConsoleCursorInfo**](getconsolecursorinfo.md), and [**GetConsoleMode**](getconsolemode.md) functions.
 
@@ -50,6 +50,7 @@ The position, appearance, and visibility of the cursor are set independently for
 
 
 Character attributes can be divided into two classes: color and DBCS. The following attributes are defined in the Wincon.h header file.
+
 
 | Attribute                         | Meaning                                       |
 |-----------------------------------|-----------------------------------------------|
@@ -82,7 +83,7 @@ Character attributes can be divided into two classes: color and DBCS. The follow
 ||
 ||
 
- 
+
 
 The foreground attributes specify the text color. The background attributes specify the color used to fill the cell's background. The other attributes are used with [DBCS](https://msdn.microsoft.com/library/windows/desktop/dd317794).
 
@@ -105,9 +106,9 @@ The [**GetCurrentConsoleFont**](getcurrentconsolefont.md) function retrieves inf
 
 The [**GetConsoleFontSize**](getconsolefontsize.md) function retrieves the size of the font used by the specified console screen buffer.
 
- 
 
- 
+
+
 
 
 

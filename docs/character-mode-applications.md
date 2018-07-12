@@ -25,9 +25,9 @@ The console functions enable different levels of access to a console. The high-l
 
 This overview describes support for character-mode applications.
 
--   [About Consoles](about-character-mode-applications.md)
--   [Using the Console](using-the-console.md)
--   [Console Reference](console-reference.md)
+- [About Consoles](about-character-mode-applications.md)
+- [Using the Console](using-the-console.md)
+- [Console Reference](console-reference.md)
 
  
 

@@ -25,16 +25,16 @@ High-level I/O gives you a choice between the [**ReadFile**](https://msdn.micros
 
 When using either set of high-level functions, an application can control the text and background colors used to display characters subsequently written to a screen buffer. An application can also use the console modes that affect high-level console I/O to enable or disable the following properties:
 
--   Echoing of keyboard input to the active screen buffer
--   Line input, in which a read operation does not return until the ENTER key is pressed
--   Automatic processing of keyboard input to handle carriage returns, CTRL+C, and other input details
--   Automatic processing of output to handle line wrapping, carriage returns, backspaces, and other output details
+- Echoing of keyboard input to the active screen buffer
+- Line input, in which a read operation does not return until the ENTER key is pressed
+- Automatic processing of keyboard input to handle carriage returns, CTRL+C, and other input details
+- Automatic processing of output to handle line wrapping, carriage returns, backspaces, and other output details
 
 For more information, see the following topics:
 
--   [Console Modes](console-modes.md)
--   [High-Level Console Modes](high-level-console-modes.md)
--   [High-Level Console Input and Output Functions](high-level-console-input-and-output-functions.md)
+- [Console Modes](console-modes.md)
+- [High-Level Console Modes](high-level-console-modes.md)
+- [High-Level Console Input and Output Functions](high-level-console-input-and-output-functions.md)
 
  
 
