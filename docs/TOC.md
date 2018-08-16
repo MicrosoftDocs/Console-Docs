@@ -16,6 +16,8 @@
 ## [Console Screen Buffers](console-screen-buffers.md) 
 ## [Window And Screen Buffer Size](window-and-screen-buffer-size.md) 
 ## [Console Selection](console-selection.md)
+## [About PseudoConsoles](pseudoconsoles.md)
+
 
 # [Console Developer's guide & API Reference](console-reference.md) 
 ## [Using The Console API](using-the-console.md) 
@@ -34,13 +36,16 @@
 ### [Ctrl Close Signal](ctrl-close-signal.md) 
 ### [Registering a Control Handler Function](registering-a-control-handler-function.md) 
 ### [Console Virtual Terminal Sequences](console-virtual-terminal-sequences.md) 
+## [Creating a PseudoConsole Session](creating-a-pseudoconsole-session.md)
 
 ## [Console API Functions](console-functions.md) 
 ### [High Level Console Input And Output Functions](high-level-console-input-and-output-functions.md) 
 ### [AddConsoleAlias](addconsolealias.md) 
 ### [AllocConsole](allocconsole.md) 
 ### [AttachConsole](attachconsole.md) 
+### [ClosePseudoConsole](closepseudoconsole.md)
 ### [CreateConsoleScreenBuffer](createconsolescreenbuffer.md) 
+### [CreatePseudoConsole](createpseudoconsole.md)
 ### [FillConsoleOutputAttribute](fillconsoleoutputattribute.md) 
 ### [FillConsoleOutputCharacter](fillconsoleoutputcharacter.md) 
 ### [FlushConsoleInputBuffer](flushconsoleinputbuffer.md) 
@@ -78,6 +83,7 @@
 ### [ReadConsoleOutput](readconsoleoutput.md) 
 ### [ReadConsoleOutputAttribute](readconsoleoutputattribute.md) 
 ### [ReadConsoleOutputCharacter](readconsoleoutputcharacter.md) 
+### [ResizePseudoConsole](resizepseudoconsole.md)
 ### [ScrollConsoleScreenBuffer](scrollconsolescreenbuffer.md) 
 ### [SetConsoleActiveScreenBuffer](setconsoleactivescreenbuffer.md) 
 ### [SetConsoleCP](setconsolecp.md) 
