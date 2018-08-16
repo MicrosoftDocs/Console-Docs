@@ -1,8 +1,8 @@
 ---
 title: ClosePseudoConsole function
 description: Closes a pseudoconsole from the given handle
-author: miniksa
-ms.author: miniksa
+author: bitcrazed
+ms.author: richturn
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api, conpty, pseudoconsole
@@ -91,10 +91,10 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[Console Functions](console-functions.md)
+[PseudoConsole Functions](pseudoconsole-functions.md)
 
 [PseudoConsoles](pseudoconsoles.md)
 
-[**CreatePseudoConsole**](createpsuedoconsole.md)
+[**CreatePseudoConsole**](createpseudoconsole.md)
 
 [**ResizePseudoConsole**](resizepseudoconsole.md)

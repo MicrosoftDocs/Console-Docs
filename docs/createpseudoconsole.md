@@ -137,8 +137,6 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[PseudoConsole Functions](pseudoconsole-functions.md)
-
 [PseudoConsoles](pseudoconsoles.md)
 
 [Creating a Pseudoconsole Session](creating-a-pseudoconsole-session.md)
