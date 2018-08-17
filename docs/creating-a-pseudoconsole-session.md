@@ -1,5 +1,5 @@
 ---
-title: Creating a PseudoConsole session
+title: Creating a Pseudoconsole session
 description: A pseudoconsole session will allow an application to host the activities of a character-mode application
 author: miniksa
 ms.author: miniksa
@@ -8,7 +8,7 @@ ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api, conpty, pseudoconsole
 ---
 
-# Creating a PseudoConsole session
+# Creating a Pseudoconsole session
 
 Hosting a pseudoconsole session is a bit different than a traditional console session. Traditional console sessions automatically start when the operating system recognizes that a character-mode application is about to run. In contrast, a pseudoconsole session and the communication channels need to be created by the hosting application prior to creating the process with the child character-mode application to be hosted. The child process will still be created using the [**CreateProcess**](https://msdn.microsoft.com/library/windows/desktop/ms682425) function, but with some additional information that will direct the operating system to establish the appropriate environment.
 
@@ -16,7 +16,7 @@ Hosting a pseudoconsole session is a bit different than a traditional console se
 
 The first step is to create a pair of synchronous communication channels that will be provided during creation of the pseudoconsole session for bidirectional communication with the hosted application. These channels are processed by the pseudoconsole system using [**ReadFile**](https://docs.microsoft.com/en-us/windows/desktop/api/fileapi/nf-fileapi-readfile) and [**WriteFile**](https://docs.microsoft.com/en-us/windows/desktop/api/fileapi/nf-fileapi-writefile) with [synchronous I/O](https://docs.microsoft.com/en-us/windows/desktop/Sync/synchronization-and-overlapped-input-and-output). Any file or I/O device handle like a file, file stream, physical disk, volume, tape drive, socket, communications resource, mailslot, or pipe is acceptable as long as it does not require an [**OVERLAPPED**](https://docs.microsoft.com/en-us/windows/desktop/api/minwinbase/ns-minwinbase-_overlapped) structure to be processed for asynchronous communication.
 
-## Creating the PseudoConsole
+## Creating the Pseudoconsole
 
 With the communications channels that have been established, identify the "read" end of the input channel and the "write" end of the output channel. This pair of handles is provided on calling [**CreatePseudoConsole**](createpseudoconsole.md) to create the object.
 
@@ -177,7 +177,7 @@ HRESULT SetUpPseudoConsole(COORD size)
 }
 ```
 
-## Communicating with the PseudoConsole Session
+## Communicating with the Pseudoconsole Session
 
 Once the process is created successfully, the hosting application can use the write end of the input pipe to send user interaction information into the pseudoconsole and the read end of the output pipe to receive graphical presentation information from the pseudo console. 
 
@@ -185,7 +185,7 @@ It is completely up to the hosting application to decide how to handle further a
 
 Threads could also be used to relay the information from the pseudoconsole channels out to a different channel or device including a network to remote information to another process or machine and avoiding any local transcoding of the information.
 
-## Resizing the PseudoConsole
+## Resizing the Pseudoconsole
 
 Throughout the course of runtime, there may be a circumstance by which the size of the buffer needs to be changed due to a user interaction or a request received out of band from another display/interaction device.
 
@@ -210,7 +210,7 @@ void OnWindowResize(Event e)
 }
 ```
 
-## Ending the PseudoConsole Session
+## Ending the Pseudoconsole Session
 
 To end the session, call the [**ClosePseudoConsole**](closepseudoconsole.md) function with the handle from the original PseudoConsole creation. Any attached client character-mode applications, such as the one from the [**CreateProcess**](https://msdn.microsoft.com/library/windows/desktop/ms682425) call, will be terminated when the session is closed. If the original child was a shell-type application that creates other processes, any related attached processes in the tree will also be terminated.
 

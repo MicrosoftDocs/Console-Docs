@@ -9,7 +9,7 @@ keywords: console, character mode applications, command line applications, termi
 
 ---
 
-# PseudoConsoles
+# Pseudoconsoles
 
 A *pseudoconsole* is a device type that allows applications to become the host for character-mode applications. 
 
@@ -23,6 +23,6 @@ Note that the underlying console session will still be created on behalf of the 
 
 To provide maximum compatibility with the existing world of  pseudoterminal functionality, the information provided over the pseudoconsole channel will always be encoded in UTF-8. This does not affect the codepage or encoding of the client applications that are attached. Translation will happen inside the pseudoconsole system as necessary.
 
-An example for getting started can be found at [Creating a PseudoConsole Session](creating-a-pseudoconsole-session.md).
+An example for getting started can be found at [Creating a Pseudoconsole Session](creating-a-pseudoconsole-session.md).
 
 Some additional background information on PseudoConsoles can be found at the announcement blog post: [Windows Command-Line: Introducing the Windows Pseudo Console (ConPTY)](https://blogs.msdn.microsoft.com/commandline/2018/08/02/windows-command-line-introducing-the-windows-pseudo-console-conpty/).
