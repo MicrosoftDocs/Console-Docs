@@ -36,10 +36,10 @@ HRESULT WINAPI ResizePseudoConsole(
 Parameters
 ----------
 
-*hPc* \[in\]
+*hPc* \[in\]  
 A handle to an active psuedoconsole as opened by [CreatePseudoConsole](createpseudoconsole.md).
 
-*size* \[in\]
+*size* \[in\]  
 The dimensions of the window/buffer in count of characters that will be used for the internal buffer of this pseudoconsole. 
 
 Return value

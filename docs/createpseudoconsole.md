@@ -39,16 +39,16 @@ HRESULT WINAPI CreatePseudoConsole(
 Parameters
 ----------
 
-*size* \[in\]
+*size* \[in\]  
 The dimensions of the window/buffer in count of characters that will be used on initial creation of the pseudoconsole. This can be adjusted later with [ResizePseudoConsole](resizepseudoconsole.md).
 
-*hInput* \[in\]
+*hInput* \[in\]  
 An open handle to a stream of data that represents user input to the device. This is currently restricted to [synchronous](https://docs.microsoft.com/en-us/windows/desktop/Sync/synchronization-and-overlapped-input-and-output) I/O.
 
-*hOutput* \[in\]
+*hOutput* \[in\]  
 An open handle to a stream of data that represents application output from the device. This is currently restricted to [synchronous](https://docs.microsoft.com/en-us/windows/desktop/Sync/synchronization-and-overlapped-input-and-output) I/O.
 
-*dwFlags* \[in\]
+*dwFlags* \[in\]  
 The value can be one of the following:
 <table>
 <colgroup>
@@ -75,7 +75,7 @@ The value can be one of the following:
 </tbody>
 </table>
 
-*phPC* \[out\]
+*phPC* \[out\]  
 Pointer to a location that will receive a handle to the new pseudoconsole device.
 
 Return value
