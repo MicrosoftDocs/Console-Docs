@@ -68,7 +68,7 @@ HRESULT SetUpPseudoConsole(COORD size)
 
 **NOTE**: 
 
-This snippet is incomplete and used for demonstration of this specific call only. You will need to manage the lifetime of the HANDLEs appropriately. Failure to manage the lifetime of HANDLEs correctly can result in deadlock scenarios, especially with synchronous I/O calls.
+This snippet is incomplete and used for demonstration of this specific call only. You will need to manage the lifetime of the **HANDLE**s appropriately. Failure to manage the lifetime of **HANDLE**s correctly can result in deadlock scenarios, especially with synchronous I/O calls.
 
 Upon completion of the [**CreateProcess**](https://msdn.microsoft.com/library/windows/desktop/ms682425) call to create the client character-mode application attached to the pseudoconsole, the handles given during creation should be freed from this process. This will decrease the reference count on the underlying device object and allow I/O operations to properly detect a broken channel when the pseudoconsole session closes its copy of the handles.
 
