@@ -19,7 +19,7 @@ With a pseudoconsole, the hosting window is not created. The application that ma
 
 This functionality is designed for third-party "terminal window" applications to exist on the platform or for redirection of character-mode activities to a remote "terminal window" session on another machine or even on another platform.
 
-Note that the underyling console session will still be created on behalf of the application requesting the pseudoconsole. All the rules of [console sessions](consoles.md) still apply including the ability for multiple client character-mode applications to connect to the session.
+Note that the underlying console session will still be created on behalf of the application requesting the pseudoconsole. All the rules of [console sessions](consoles.md) still apply including the ability for multiple client character-mode applications to connect to the session.
 
 To provide maximum compatibility with the existing world of  pseudoterminal functionality, the information provided over the pseudoconsole channel will always be encoded in UTF-8. This does not affect the codepage or encoding of the client applications that are attached. Translation will happen inside the pseudoconsole system as necessary.
 
