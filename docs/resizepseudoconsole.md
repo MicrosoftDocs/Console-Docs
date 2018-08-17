@@ -65,7 +65,7 @@ Requirements
 <tbody>
 <tr class="odd">
 <td><p>Minimum supported client</p></td>
-<td><p>Windows 10 RS5 [desktop apps only]</p></td>
+<td><p>Windows 10 1809 [desktop apps only]</p></td>
 </tr>
 <tr class="even">
 <td><p>Minimum supported server</p></td>
