@@ -88,7 +88,7 @@ If this method succeeds, it returns **S_OK**. Otherwise, it returns an **HRESULT
 Remarks
 -------
 
-This function is primarily used by applications attempting to be a terminal window for a command-line interface (CUI) application. The callers become responsible for presentation of the information on the output stream and for collecting user input and serializing it into the input stream.
+This function is primarily used by applications attempting to be a terminal window for a command-line user interface (CUI) application. The callers become responsible for presentation of the information on the output stream and for collecting user input and serializing it into the input stream.
 
 The input and output streams contain information encoded as UTF-8. The information will be plain text interleaved with [Virtual Terminal Sequences](console-virtual-terminal-sequences.md). 
 

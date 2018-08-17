@@ -93,11 +93,8 @@ HRESULT PrepareStartupInformation(HPCON hpc, STARTUPINFOEX* psi)
 
     // Discover the size required for the list
     size_t bytesRequired;
-    if (!InitializeProcThreadAttributeList(NULL, 1, 0, &bytesRequired))
-    {
-        return HRESULT_FROM_WIN32(GetLastError());
-    }
-
+    InitializeProcThreadAttributeList(NULL, 1, 0, &bytesRequired);
+    
     // Allocate memory to represent the list
     si.lpAttributeList = (PPROC_THREAD_ATTRIBUTE_LIST)HeapAlloc(GetProcessHeap(), 0, bytesRequired);
     if (!si.lpAttributeList)
@@ -162,7 +159,7 @@ HRESULT SetUpPseudoConsole(COORD size)
                         cmdLineMutable,
                         NULL,
                         NULL,
-                        TRUE,
+                        FALSE,
                         EXTENDED_STARTUPINFO_PRESENT,
                         NULL,
                         NULL,
