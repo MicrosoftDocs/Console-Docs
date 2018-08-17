@@ -20,15 +20,15 @@ The first step is to create a pair of synchronous communication channels that wi
 
 With the communications channels that have been established, identify the "read" end of the input channel and the "write" end of the output channel. This pair of handles is provided on calling [**CreatePseudoConsole**](createpseudoconsole.md) to create the object.
 
-When creating, a size representing the X and Y dimensions (in count of characters) is also provided. This is the dimensions that will apply to the display surface for the final (terminal) presentation window. The values are used to create an in-memory buffer inside the PseudoConsole system. 
+When creating, a size representing the X and Y dimensions (in count of characters) is also provided. This is the dimensions that will apply to the display surface for the final (terminal) presentation window. The values are used to create an in-memory buffer inside the pseudoconsole system. 
 
 The buffer size provide answers to client character-mode applications that probe for information using the [client-side console functions](console-functions.md) like [**GetConsoleScreenBufferInfoEx**](getconsolescreenbufferinfoex.md) and dictates the layout and positioning of text when clients use functions like [**WriteConsoleOutput**](writeconsoleoutput.md).
 
 Finally, a flags field is provided on creation of a pseudoconsole to perform special functionality. By default, set this to 0 to have no special functionality.
 
-At this time, only one special flag is available to request the inheritence of the cursor position from a console session already attached to the caller of the PseudoConsole API. This is intended for use in more advanced scenarios where a hosting application that is preparing a pseudoconsole session is itself also a client character-mode application of a another console environment. 
+At this time, only one special flag is available to request the inheritence of the cursor position from a console session already attached to the caller of the pseudoconsole API. This is intended for use in more advanced scenarios where a hosting application that is preparing a pseudoconsole session is itself also a client character-mode application of a another console environment. 
 
-A sample snippet is provided below utilizing [**CreatePipe**](https://msdn.microsoft.com/en-us/library/windows/desktop/aa365152(v=vs.85).aspx) to establish a pair of communication channels and create the PseudoConsole.
+A sample snippet is provided below utilizing [**CreatePipe**](https://msdn.microsoft.com/en-us/library/windows/desktop/aa365152(v=vs.85).aspx) to establish a pair of communication channels and create the pseudoconsole.
 
 ```C
 
@@ -38,7 +38,7 @@ HRESULT SetUpPseudoConsole(COORD size)
 
     // Create communication channels
 
-    // - Close these after CreateProcess of child application with PseudoConsole object.
+    // - Close these after CreateProcess of child application with pseudoconsole object.
     HANDLE inputReadSide, outputWriteSide; 
 
     // - Hold onto these and use them for communication with the child through the pseudoconsole. 
@@ -74,7 +74,7 @@ Upon completion of the [**CreateProcess**](https://msdn.microsoft.com/library/wi
 
 ## Preparing for Creation of the Child Process
 
-The next phase is to prepare the [**STARTUPINFOEX**](https://docs.microsoft.com/en-us/windows/desktop/api/winbase/ns-winbase-_startupinfoexw) structure that will convey the PseudoConsole information while starting the child process.
+The next phase is to prepare the [**STARTUPINFOEX**](https://docs.microsoft.com/en-us/windows/desktop/api/winbase/ns-winbase-_startupinfoexw) structure that will convey the pseudoconsole information while starting the child process.
 
 This structure contains the ability to provide complex startup information including attributes for process and thread creation.
 
@@ -109,7 +109,7 @@ HRESULT PrepareStartupInformation(HPCON hpc, STARTUPINFOEX* psi)
         return HRESULT_FROM_WIN32(GetLastError());
     }
 
-    // Set the PseudoConsole information into the list
+    // Set the pseudoconsole information into the list
     if (!UpdateProcThreadAttributeList(attributeList,
                                     0,
                                     PROC_THREAD_ATTRIBUTE_PSEUDOCONSOLE,
@@ -131,7 +131,7 @@ HRESULT PrepareStartupInformation(HPCON hpc, STARTUPINFOEX* psi)
 
 ## Creating the Hosted Process
 
-Next, call [**CreateProcess**](https://msdn.microsoft.com/library/windows/desktop/ms682425) passing the [**STARTUPINFOEX**](https://docs.microsoft.com/en-us/windows/desktop/api/winbase/ns-winbase-_startupinfoexw) structure along with the path to the executable and any additional configuration information if applicable. It is important to set the **EXTENDED_STARTUPINFO_PRESENT** flag when calling to alert the system that the PseudoConsole reference is contained in the extended information.
+Next, call [**CreateProcess**](https://msdn.microsoft.com/library/windows/desktop/ms682425) passing the [**STARTUPINFOEX**](https://docs.microsoft.com/en-us/windows/desktop/api/winbase/ns-winbase-_startupinfoexw) structure along with the path to the executable and any additional configuration information if applicable. It is important to set the **EXTENDED_STARTUPINFO_PRESENT** flag when calling to alert the system that the pseudoconsole reference is contained in the extended information.
 
 ```C
 HRESULT SetUpPseudoConsole(COORD size)
@@ -202,12 +202,12 @@ void OnWindowResize(Event e)
     size.X = GetViewWidth(e.Source);
     size.Y = GetViewHeight(e.Source);
 
-    // Call PseudoConsole API to inform buffer dimension update
+    // Call pseudoconsole API to inform buffer dimension update
     ResizePseudoConsole(m_hpc, size);
 }
 ```
 
 ## Ending the Pseudoconsole Session
 
-To end the session, call the [**ClosePseudoConsole**](closepseudoconsole.md) function with the handle from the original PseudoConsole creation. Any attached client character-mode applications, such as the one from the [**CreateProcess**](https://msdn.microsoft.com/library/windows/desktop/ms682425) call, will be terminated when the session is closed. If the original child was a shell-type application that creates other processes, any related attached processes in the tree will also be terminated.
+To end the session, call the [**ClosePseudoConsole**](closepseudoconsole.md) function with the handle from the original pseudoconsole creation. Any attached client character-mode applications, such as the one from the [**CreateProcess**](https://msdn.microsoft.com/library/windows/desktop/ms682425) call, will be terminated when the session is closed. If the original child was a shell-type application that creates other processes, any related attached processes in the tree will also be terminated.
 

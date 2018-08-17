@@ -90,11 +90,11 @@ Remarks
 
 This function is primarily used by applications attempting to be a terminal window for a command-line user interface (CUI) application. The callers become responsible for presentation of the information on the output stream and for collecting user input and serializing it into the input stream.
 
-The input and output streams contain information encoded as UTF-8. The information will be plain text interleaved with [Virtual Terminal Sequences](console-virtual-terminal-sequences.md). 
+The input and output streams encoded as UTF-8 contain plain text interleaved with [Virtual Terminal Sequences](console-virtual-terminal-sequences.md). 
 
-On the output stream, the sequences can be decoded by the calling application to help with presentation/layout of the plain text in a display window. 
+On the output stream, the [virtual terminal sequences](console-virtual-terminal-sequences.md) can be decoded by the calling application to layout and present the plain text in a display window. 
 
-On the input stream, plain text represents standard keyboard keys input by a user. More complicated operations are represented by encoding control keys and mouse movements as sequences embedded in this stream.
+On the input stream, plain text represents standard keyboard keys input by a user. More complicated operations are represented by encoding control keys and mouse movements as [virtual terminal sequences](console-virtual-terminal-sequences.md) embedded in this stream.
 
 The handle created by this function must be closed with [ClosePseudoConsole](closepseudoconsole.md) when operations are complete.
 
@@ -144,14 +144,10 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[PseudoConsoles](pseudoconsoles.md)
+[Pseudoconsoles](pseudoconsoles.md)
 
 [Creating a Pseudoconsole Session](creating-a-pseudoconsole-session.md)
 
 [**ResizePseudoConsole**](resizepseudoconsole.md)
 
 [**ClosePseudoConsole**](closepseudoconsole.md)
-
-[**CreateProcess**](https://docs.microsoft.com/en-us/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessw)
-
-[**UpdateProcThreadAttribute**](https://docs.microsoft.com/en-us/windows/desktop/api/processthreadsapi/nf-processthreadsapi-updateprocthreadattribute)

@@ -90,7 +90,7 @@ Requirements
 
 ## <span id="see_also"></span>See also
 
-[PseudoConsoles](pseudoconsoles.md)
+[Pseudoconsoles](pseudoconsoles.md)
 
 [**CreatePseudoConsole**](createpseudoconsole.md)
 

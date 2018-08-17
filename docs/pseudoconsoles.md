@@ -25,4 +25,4 @@ To provide maximum compatibility with the existing world of  pseudoterminal func
 
 An example for getting started can be found at [Creating a Pseudoconsole Session](creating-a-pseudoconsole-session.md).
 
-Some additional background information on PseudoConsoles can be found at the announcement blog post: [Windows Command-Line: Introducing the Windows Pseudo Console (ConPTY)](https://blogs.msdn.microsoft.com/commandline/2018/08/02/windows-command-line-introducing-the-windows-pseudo-console-conpty/).
+Some additional background information on pseudoconsoles can be found at the announcement blog post: [Windows Command-Line: Introducing the Windows Pseudo Console (ConPTY)](https://blogs.msdn.microsoft.com/commandline/2018/08/02/windows-command-line-introducing-the-windows-pseudo-console-conpty/).

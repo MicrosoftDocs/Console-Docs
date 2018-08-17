@@ -36,7 +36,7 @@ HRESULT WINAPI ResizePseudoConsole(
 Parameters
 ----------
 
-*hPc* \[in\]  
+*hPC* \[in\]  
 A handle to an active psuedoconsole as opened by [CreatePseudoConsole](createpseudoconsole.md).
 
 *size* \[in\]  
@@ -94,7 +94,7 @@ Requirements
 
 ## <span id="see_also"></span>See also
 
-[PseudoConsoles](pseudoconsoles.md)
+[Pseudoconsoles](pseudoconsoles.md)
 
 [**CreatePseudoConsole**](createpseudoconsole.md)
 
