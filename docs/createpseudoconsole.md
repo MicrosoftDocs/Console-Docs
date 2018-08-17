@@ -96,6 +96,9 @@ On the output stream, the sequences can be decoded by the calling application to
 
 On the input stream, plain text represents standard keyboard keys input by a user. More complicated operations are represented by encoding control keys and mouse movements as sequences embedded in this stream.
 
+Examples
+--------
+
 For a full walkthrough on using this function to establish a psuedoconsole session, please see [Creating a Pseudoconsole Session](creating-a-pseudoconsole-session.md).
 
 Requirements
