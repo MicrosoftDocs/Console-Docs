@@ -1,5 +1,5 @@
 ---
-title: PseudoConsoles – Windows Desktop 
+title: Pseudoconsoles – Windows Desktop 
 description: A pseudoconsole is a concept used to provide the hosting or servicing aspect of a character-mode application.
 author: miniksa
 ms.author: miniksa
