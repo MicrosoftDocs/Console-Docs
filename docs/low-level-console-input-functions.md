@@ -23,15 +23,16 @@ A low-level console input functions buffer contains input records that can inclu
 
 There are five low-level functions for accessing a console's input buffer:
 
--   [**ReadConsoleInput**](readconsoleinput.md)
--   [**PeekConsoleInput**](peekconsoleinput.md)
--   [**GetNumberOfConsoleInputEvents**](getnumberofconsoleinputevents.md)
--   [**WriteConsoleInput**](writeconsoleinput.md)
--   [**FlushConsoleInputBuffer**](flushconsoleinputbuffer.md)
+- [**ReadConsoleInput**](readconsoleinput.md)
+- [**PeekConsoleInput**](peekconsoleinput.md)
+- [**GetNumberOfConsoleInputEvents**](getnumberofconsoleinputevents.md)
+- [**WriteConsoleInput**](writeconsoleinput.md)
+- [**FlushConsoleInputBuffer**](flushconsoleinputbuffer.md)
 
 The [**ReadConsoleInput**](readconsoleinput.md), [**PeekConsoleInput**](peekconsoleinput.md), and [**WriteConsoleInput**](writeconsoleinput.md) functions use the [**INPUT\_RECORD**](input-record-str.md) structure to read from or write to an input buffer.
 
 Following are descriptions of the low-level console input functions.
+
 
 | Function                                                               | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 |------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -44,13 +45,13 @@ Following are descriptions of the low-level console input functions.
 ||
 ||
 
- 
+
 
 A thread of an application's process can perform a wait operation to wait for input to be available in an input buffer. To initiate a wait operation, specify a handle to the input buffer in a call to any of the [wait functions](https://msdn.microsoft.com/library/windows/desktop/ms687069). These functions can return when the state of one or more objects is signaled. The state of a console input handle becomes signaled when there are unread records in its input buffer. The state is reset to nonsignaled when the input buffer becomes empty. If there is no input available, the calling thread enters an efficient wait state, consuming very little processor time while waiting for the conditions of the wait operation to be satisfied.
 
- 
 
- 
+
+
 
 
 

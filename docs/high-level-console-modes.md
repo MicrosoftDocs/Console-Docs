@@ -21,14 +21,14 @@ ms.assetid: 3ec915eb-333d-484d-a14d-46377b503ecc
 
 The behavior of the high-level console functions is affected by the console input and output modes. All of the following console input modes are enabled for a console's input buffer when a console is created:
 
--   Line input mode
--   Processed input mode
--   Echo input mode
+- Line input mode
+- Processed input mode
+- Echo input mode
 
 Both of the following console output modes are enabled for a console screen buffer when it is created:
 
--   Processed output mode
--   Wrapping at EOL output mode
+- Processed output mode
+- Wrapping at EOL output mode
 
 All three input modes, along with processed output mode, are designed to work together. It is best to either enable or disable all of these modes as a group. When all are enabled, the application is said to be in "cooked" mode, which means that most of the processing is handled for the application. When all are disabled, the application is in "raw" mode, which means that input is unfiltered and any processing is left to the application.
 
@@ -48,15 +48,15 @@ An application can use the [**GetConsoleMode**](getconsolemode.md) function to d
 <tbody>
 <tr class="odd">
 <td><strong>ENABLE_PROCESSED_INPUT</strong></td>
-<td>Used with a console input handle to cause the system to process any system editing or control key input rather than returning it as input in the read operation's buffer. If line input is also enabled, backspaces and carriage returns are handled correctly. A backspace causes the cursor to move back one space without affecting the character at the cursor position. A carriage return is converted to carriage return – line feed character combination. If echo input mode is enabled and the output should reflect system editing, processed output must be enabled for the active screen buffer. If processed input is enabled, the CTRL+C key combination is passed on to the appropriate handler regardless of whether line input is enabled. For more information about control handlers, see [Console Control Handlers](console-control-handlers.md).</td>
+<td>Used with a console input handle to cause the system to process any system editing or control key input rather than returning it as input in the read operation&#39;s buffer. If line input is also enabled, backspaces and carriage returns are handled correctly. A backspace causes the cursor to move back one space without affecting the character at the cursor position. A carriage return is converted to carriage return – line feed character combination. If echo input mode is enabled and the output should reflect system editing, processed output must be enabled for the active screen buffer. If processed input is enabled, the CTRL+C key combination is passed on to the appropriate handler regardless of whether line input is enabled. For more information about control handlers, see <a href="console-control-handlers.md" data-raw-source="[Console Control Handlers](console-control-handlers.md)">Console Control Handlers</a>.</td>
 </tr>
 <tr class="even">
 <td><strong>ENABLE_LINE_INPUT</strong></td>
-<td>Used with a console input handle to cause the [<strong>ReadFile</strong>](https://msdn.microsoft.com/library/windows/desktop/aa365467) and [<strong>ReadConsole</strong>](readconsole.md) functions to return when the ENTER key is pressed. If line input mode is disabled, the functions return when one or more characters are available in the input buffer.</td>
+<td>Used with a console input handle to cause the <a href="https://msdn.microsoft.com/library/windows/desktop/aa365467" data-raw-source="[&lt;strong&gt;ReadFile&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/desktop/aa365467)"><strong>ReadFile</strong></a> and <a href="readconsole.md" data-raw-source="[&lt;strong&gt;ReadConsole&lt;/strong&gt;](readconsole.md)"><strong>ReadConsole</strong></a> functions to return when the ENTER key is pressed. If line input mode is disabled, the functions return when one or more characters are available in the input buffer.</td>
 </tr>
 <tr class="odd">
 <td><strong>ENABLE_ECHO_INPUT</strong></td>
-<td>Used with a console input handle to cause keyboard input read by the [<strong>ReadFile</strong>](https://msdn.microsoft.com/library/windows/desktop/aa365467) or [<strong>ReadConsole</strong>](readconsole.md) function to be echoed to the active screen buffer. Characters are echoed only if the process that calls <strong>ReadFile</strong> or <strong>ReadConsole</strong> has an open handle to the active screen buffer. Echo mode cannot be enabled unless line input is also enabled. The output mode of the active screen buffer affects the way echoed input is displayed.</td>
+<td>Used with a console input handle to cause keyboard input read by the <a href="https://msdn.microsoft.com/library/windows/desktop/aa365467" data-raw-source="[&lt;strong&gt;ReadFile&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/desktop/aa365467)"><strong>ReadFile</strong></a> or <a href="readconsole.md" data-raw-source="[&lt;strong&gt;ReadConsole&lt;/strong&gt;](readconsole.md)"><strong>ReadConsole</strong></a> function to be echoed to the active screen buffer. Characters are echoed only if the process that calls <strong>ReadFile</strong> or <strong>ReadConsole</strong> has an open handle to the active screen buffer. Echo mode cannot be enabled unless line input is also enabled. The output mode of the active screen buffer affects the way echoed input is displayed.</td>
 </tr>
 <tr class="even">
 <td><strong>ENABLE_PROCESSED_OUTPUT</strong></td>

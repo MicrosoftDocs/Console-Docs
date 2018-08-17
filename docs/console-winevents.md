@@ -52,7 +52,7 @@ The following event constants are used in the *event* parameter of the [*WinEven
 <strong>EVENT_CONSOLE_CARET</strong>
 0x4001</td>
 <td><p>The console caret has moved. The <em>idObject</em> parameter is one or more of the following values: <strong>CONSOLE_CARET_SELECTION</strong> or <strong>CONSOLE_CARET_VISIBLE</strong>.</p>
-<p>The <em>idChild</em> parameter is a [<strong>COORD</strong>](coord-str.md) structure that specifies the cursor's current position.</p></td>
+<p>The <em>idChild</em> parameter is a <strong><a href="https://docs.microsoft.com/windows/console/coord-str">COORD</a></strong> structure that specifies the cursor's current position.</p></td>
 </tr>
 <tr class="even">
 <td><span id="EVENT_CONSOLE_END_APPLICATION"></span><span id="event_console_end_application"></span>
@@ -76,7 +76,7 @@ The following event constants are used in the *event* parameter of the [*WinEven
 <td><span id="EVENT_CONSOLE_UPDATE_REGION"></span><span id="event_console_update_region"></span>
 <strong>EVENT_CONSOLE_UPDATE_REGION</strong>
 0x4002</td>
-<td><p>More than one character has changed. The <em>idObject</em> parameter is a [<strong>COORD</strong>](coord-str.md) structure that specifies the start of the changed region. The <em>idChild</em> parameter is a <strong>COORD</strong> structure that specifies the end of the changed region.</p></td>
+<td><p>More than one character has changed. The <em>idObject</em> parameter is a <a href="coord-str.md" data-raw-source="[&lt;strong&gt;COORD&lt;/strong&gt;](coord-str.md)"><strong>COORD</strong></a> structure that specifies the start of the changed region. The <em>idChild</em> parameter is a <strong>COORD</strong> structure that specifies the end of the changed region.</p></td>
 </tr>
 <tr class="even">
 <td><span id="EVENT_CONSOLE_UPDATE_SCROLL"></span><span id="event_console_update_scroll"></span>
@@ -88,7 +88,7 @@ The following event constants are used in the *event* parameter of the [*WinEven
 <td><span id="EVENT_CONSOLE_UPDATE_SIMPLE"></span><span id="event_console_update_simple"></span>
 <strong>EVENT_CONSOLE_UPDATE_SIMPLE</strong>
 0x4003</td>
-<td><p>A single character has changed. The <em>idObject</em> parameter is a [<strong>COORD</strong>](coord-str.md) structure that specifies the character that has changed. The <em>idChild</em> parameter specifies the character in the low word and the [character attributes](console-screen-buffers.md#_win32_font_attributes) in the high word.</p></td>
+<td><p>A single character has changed. The <em>idObject</em> parameter is a <a href="coord-str.md" data-raw-source="[&lt;strong&gt;COORD&lt;/strong&gt;](coord-str.md)"><strong>COORD</strong></a> structure that specifies the character that has changed. The <em>idChild</em> parameter specifies the character in the low word and the <a href="console-screen-buffers.md#_win32_font_attributes" data-raw-source="[character attributes](console-screen-buffers.md#_win32_font_attributes)">character attributes</a> in the high word.</p></td>
 </tr>
 <tr class="even">
 </tr>
@@ -126,11 +126,3 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
-
-
-

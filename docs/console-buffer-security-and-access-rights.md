@@ -27,16 +27,17 @@ The handles returned by [**CreateFile**](https://msdn.microsoft.com/library/wind
 
 The valid access rights include the **GENERIC\_READ** and **GENERIC\_WRITE** [generic access rights](https://msdn.microsoft.com/library/windows/desktop/aa446632).
 
+
 | Value                            | Meaning                                                                                               |
 |----------------------------------|-------------------------------------------------------------------------------------------------------|
 | **GENERIC\_READ** (0x80000000L)  | Requests read access to the console screen buffer, enabling the process to read data from the buffer. |
 | **GENERIC\_WRITE** (0x40000000L) | Requests write access to the console screen buffer, enabling the process to write data to the buffer. |
 
- 
 
- 
 
- 
+
+
+
 
 
 
