@@ -1,8 +1,8 @@
 ---
 title: Console Functions
 description: Describes a complete list of all functions that are used to access a console.
-author: bitcrazed
-ms.author: richturn
+author: miniksa
+ms.author: miniksa
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api

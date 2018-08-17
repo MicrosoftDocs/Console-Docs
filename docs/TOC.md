@@ -36,7 +36,7 @@
 ### [Ctrl Close Signal](ctrl-close-signal.md) 
 ### [Registering a Control Handler Function](registering-a-control-handler-function.md) 
 ### [Console Virtual Terminal Sequences](console-virtual-terminal-sequences.md) 
-## [Creating a PseudoConsole Session](creating-a-pseudoconsole-session.md)
+### [Creating a PseudoConsole Session](creating-a-pseudoconsole-session.md)
 
 ## [Console API Functions](console-functions.md) 
 ### [High Level Console Input And Output Functions](high-level-console-input-and-output-functions.md) 

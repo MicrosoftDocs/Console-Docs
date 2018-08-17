@@ -1,8 +1,8 @@
 ---
 title: CreatePseudoConsole function
 description: Allocates a new pseudoconsole for the calling process.
-author: bitcrazed
-ms.author: richturn
+author: miniksa
+ms.author: miniksa
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api, conpty, pseudoconsole
@@ -43,10 +43,10 @@ Parameters
 The dimensions of the window/buffer in count of characters that will be used on initial creation of the pseudoconsole. This can be adjusted later with [ResizePseudoConsole](resizepseudoconsole.md).
 
 *hInput* \[in\]
-An open handle to a stream of data that represents user input to the device. 
+An open handle to a stream of data that represents user input to the device. This is currently restricted to [synchronous](https://docs.microsoft.com/en-us/windows/desktop/Sync/synchronization-and-overlapped-input-and-output) I/O.
 
 *hOutput* \[in\]
-An open handle to a stream of data that represents application output from the device. 
+An open handle to a stream of data that represents application output from the device. This is currently restricted to [synchronous](https://docs.microsoft.com/en-us/windows/desktop/Sync/synchronization-and-overlapped-input-and-output) I/O.
 
 *dwFlags* \[in\]
 The value can be one of the following:
@@ -95,6 +95,8 @@ The input and output streams contain information encoded as UTF-8. The informati
 On the output stream, the sequences can be decoded by the calling application to help with presentation/layout of the plain text in a display window. 
 
 On the input stream, plain text represents standard keyboard keys input by a user. More complicated operations are represented by encoding control keys and mouse movements as sequences embedded in this stream.
+
+For a full walkthrough on using this function to establish a psuedoconsole session, please see [Creating a Pseudoconsole Session](creating-a-pseudoconsole-session.md).
 
 Requirements
 ------------

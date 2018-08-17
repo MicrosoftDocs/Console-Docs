@@ -95,7 +95,7 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[Console Functions](console-functions.md)
+[PseudoConsole Functions](pseudoconsole-functions.md)
 
 [PseudoConsoles](pseudoconsoles.md)
 
