@@ -145,7 +145,7 @@ Requirements
 </tr>
 <tr class="odd">
 <td><p>Header</p></td>
-<td>Wincon.h (include Windows.h)</td>
+<td>ConsoleApi.h (via Wincon.h, include Windows.h)</td>
 </tr>
 </tbody>
 </table>

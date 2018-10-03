@@ -89,7 +89,7 @@ Requirements
 </tr>
 <tr class="odd">
 <td><p>Header</p></td>
-<td>Wincon.h (include Windows.h)</td>
+<td>ConsoleApi3.h (via Wincon.h, include Windows.h)</td>
 </tr>
 <tr class="even">
 <td><p>Library</p></td>
