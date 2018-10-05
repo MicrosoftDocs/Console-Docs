@@ -133,7 +133,7 @@ Requirements
 </tr>
 <tr class="odd">
 <td><p>Header</p></td>
-<td>Winbase.h (include Windows.h)</td>
+<td>ProcessEnv.h (via Winbase.h, include Windows.h)</td>
 </tr>
 <tr class="even">
 <td><p>Library</p></td>
