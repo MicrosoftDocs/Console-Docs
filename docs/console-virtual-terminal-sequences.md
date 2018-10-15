@@ -259,6 +259,23 @@ Some virtual terminal emulators support a palette of colors greater than the 16 
 
 \*The 88 and 256 color palettes maintained internally for comparison are based from the xterm terminal emulator. The comparison/rounding tables cannot be modified at this time.
 
+
+## <span id="Screen_Colors"></span><span id="screen_colors"></span><span id="SCREEN_COLORS"></span>Screen Colors
+
+
+The following command allows the application to set the screen colors palette values to any RGB value.
+
+The RGB values should be hexadecimal values between `0` and `ff`, and separated by the forward-slash character (e.g. `rgb:1/24/86`).
+
+Note that this sequence is an OSC “Operating system command” sequence, and not a CSI like many of the other sequences listed, and as such start with “\\x1b\]”, not “\\x1b\[”.
+
+
+| Sequence                                                           | Description          | Behavior                                                                                                     |
+|--------------------------------------------------------------------|----------------------|--------------------------------------------------------------------------------------------------------------|
+| ESC \] 4 ; &lt;i&gt; ; rgb : &lt;r&gt; / &lt;g&gt; / &lt;b&gt; ESC | Modify Screen Colors | Sets the screen color palette index &lt;i&gt; to the RGB values specified in &lt;r&gt;, &lt;g&gt;, &lt;b&gt; |
+
+
+
 ## <span id="Mode_Changes__"></span><span id="mode_changes__"></span><span id="MODE_CHANGES__"></span>Mode Changes
 
 
@@ -396,7 +413,7 @@ For an example of this behavior, consider when vim is launched from bash. Vim us
 | Sequence           | Description                 | Behavior                                   |
 |--------------------|-----------------------------|--------------------------------------------|
 | ESC \[ ? 1 0 4 9 h | Use Alternate Screen Buffer | Switches to a new alternate screen buffer. |
-| ESC \[ ? 1 0 4 9 l | Use Alternate Screen Buffer | Switches to the main buffer.               |
+| ESC \[ ? 1 0 4 9 l | Use Main Screen Buffer      | Switches to the main buffer.               |
 
 
 
