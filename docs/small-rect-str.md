@@ -4,7 +4,6 @@ description: Defines the coordinates of the upper left and lower right corners o
 author: bitcrazed
 ms.author: richturn
 ms.topic: article
-ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
 title: SMALL_RECT structure
 description: Defines the coordinates of the upper left and lower right corners of a rectangle.

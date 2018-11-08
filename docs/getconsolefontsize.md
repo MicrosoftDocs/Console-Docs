@@ -4,7 +4,6 @@ description: Retrieves the size of the font used by the specified console screen
 author: bitcrazed
 ms.author: richturn
 ms.topic: article
-ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
 - '\_win32\_getconsolefontsize'

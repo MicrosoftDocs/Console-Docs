@@ -4,7 +4,6 @@ description: Describes a complete list of all functions that are used to access 
 author: bitcrazed
 ms.author: richturn
 ms.topic: article
-ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
 - '\_win32\_console\_functions'

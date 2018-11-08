@@ -4,7 +4,6 @@ description: Describes a change in the size of the console screen buffer.
 author: bitcrazed
 ms.author: richturn
 ms.topic: article
-ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
 - '\_win32\_window\_buffer\_size\_record\_str'

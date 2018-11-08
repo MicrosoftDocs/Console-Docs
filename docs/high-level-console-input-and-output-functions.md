@@ -4,7 +4,6 @@ description: The ReadFile and WriteFile functions, or the ReadConsole and WriteC
 author: bitcrazed
 ms.author: richturn
 ms.topic: article
-ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
 - '\_win32\_high\_level\_console\_input\_and\_output\_functions'

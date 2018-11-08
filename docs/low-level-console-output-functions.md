@@ -4,7 +4,6 @@ description: The low-level console output functions provide direct access to the
 author: bitcrazed
 ms.author: richturn
 ms.topic: article
-ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
 - '\_win32\_low\_level\_console\_output\_functions'

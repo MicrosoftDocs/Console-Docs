@@ -4,7 +4,6 @@ description: Retrieves information about the specified console screen buffer.
 author: bitcrazed
 ms.author: richturn
 ms.topic: article
-ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
 ms.assetid: eafe819e-a99a-4ce1-8898-8860444a31af
 

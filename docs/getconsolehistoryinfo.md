@@ -4,7 +4,6 @@ description: Retrieves the history settings for the calling process's console.
 author: bitcrazed
 ms.author: richturn
 ms.topic: article
-ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
 - 'base.getconsolehistoryinfo'

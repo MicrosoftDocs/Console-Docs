@@ -4,7 +4,6 @@ description: Retrieves extended information about the specified console screen b
 author: bitcrazed
 ms.author: richturn
 ms.topic: article
-ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
 - 'base.getconsolescreenbufferinfoex'

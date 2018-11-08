@@ -4,7 +4,6 @@ description: The size of a screen buffer is expressed in terms of a coordinate g
 author: bitcrazed
 ms.author: richturn
 ms.topic: article
-ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
 - '\_win32\_window\_and\_screen\_buffer\_size'

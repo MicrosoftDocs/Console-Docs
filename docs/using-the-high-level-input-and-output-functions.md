@@ -4,7 +4,6 @@ description: The following example uses the high-level console I/O functions for
 author: bitcrazed
 ms.author: richturn
 ms.topic: article
-ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
 - '\_win32\_using\_the\_high\_level\_input\_and\_output\_functions'

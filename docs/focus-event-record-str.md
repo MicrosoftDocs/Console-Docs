@@ -4,7 +4,6 @@ description: Describes a focus event in a console INPUT\_RECORD structure. These
 author: bitcrazed
 ms.author: richturn
 ms.topic: article
-ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
 - '\_win32\_focus\_event\_record\_str'

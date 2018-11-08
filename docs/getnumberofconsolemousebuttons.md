@@ -4,7 +4,6 @@ description: Retrieves the number of buttons on the mouse used by the current co
 author: bitcrazed
 ms.author: richturn
 ms.topic: article
-ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
 - '\_win32\_getnumberofconsolemousebuttons'

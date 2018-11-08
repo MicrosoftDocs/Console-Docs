@@ -4,7 +4,6 @@ description: Retrieves the number of unread input records in the console's input
 author: bitcrazed
 ms.author: richturn
 ms.topic: article
-ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
 - '\_win32\_getnumberofconsoleinputevents'

@@ -4,7 +4,6 @@ description: The following event constants are used in the event parameter of th
 author: bitcrazed
 ms.author: richturn
 ms.topic: article
-ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
 - '\_win32\_console\_winevents'

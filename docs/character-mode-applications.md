@@ -4,7 +4,6 @@ description: Consoles manage input and output (I/O) for character-mode applicati
 author: bitcrazed
 ms.author: richturn
 ms.topic: article
-ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
 - '\_win32\_character\_mode\_applications'

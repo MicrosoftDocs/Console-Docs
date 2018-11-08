@@ -4,7 +4,6 @@ description: Sets the specified screen buffer to be the currently displayed cons
 author: bitcrazed
 ms.author: richturn
 ms.topic: article
-ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
 - '\_win32\_setconsoleactivescreenbuffer'
