@@ -5,12 +5,16 @@ author: miniksa
 ms.author: miniksa
 ms.topic: article
 ms.prod: console
-keywords: console, character mode applications, command line applications, terminal applications, console api, conpty, pseudoconsole
+keywords: console, character mode applications, command line applications, terminal applications, console api, conpty, pseudoconsole, windows pty, pseudo console
 ---
 
 # Creating a Pseudoconsole session
 
+The Windows Pseudoconsole, sometimes also referred to as psuedo console, ConPTY, or the Windows PTY, is a mechanism designed for creating an external host for character-mode subsystem activities that replace the user interactivity portion of the default console host window.
+
 Hosting a pseudoconsole session is a bit different than a traditional console session. Traditional console sessions automatically start when the operating system recognizes that a character-mode application is about to run. In contrast, a pseudoconsole session and the communication channels need to be created by the hosting application prior to creating the process with the child character-mode application to be hosted. The child process will still be created using the [**CreateProcess**](https://msdn.microsoft.com/library/windows/desktop/ms682425) function, but with some additional information that will direct the operating system to establish the appropriate environment.
+
+You can find additional background information about this system on the [initial announcement blog post](https://blogs.msdn.microsoft.com/commandline/2018/08/02/windows-command-line-introducing-the-windows-pseudo-console-conpty/).
 
 ## Preparing the communication channels
 
