@@ -841,7 +841,7 @@ int __cdecl wmain(int argc, WCHAR* argv[])
     wch = _getwch();
 
     // Exit the alternate buffer
-    printf(CSI "?1049h");
+    printf(CSI "?1049l");
 
 }
 ```
