@@ -47,7 +47,7 @@ Members
 -------
 
 **cbSize**  
-The size of this structure, in bytes.
+The size of this structure, in bytes. This member must be set to `sizeof(CONSOLE_FONT_INFOEX)` before calling [**GetCurrentConsoleFontEx**](getcurrentconsolefontex.md) or it will fail.
 
 **nFont**  
 The index of the font in the system's console font table.
