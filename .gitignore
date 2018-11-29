@@ -11,3 +11,4 @@ Tools/NuGet/
 packages.config
 
 .vs/
+.vscode/

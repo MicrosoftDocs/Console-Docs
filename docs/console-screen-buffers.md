@@ -69,20 +69,6 @@ Character attributes can be divided into two classes: color and DBCS. The follow
 | **COMMON\_LVB\_GRID\_RVERTICAL**  | Right vertical.                               |
 | **COMMON\_LVB\_REVERSE\_VIDEO**   | Reverse foreground and background attributes. |
 | **COMMON\_LVB\_UNDERSCORE**       | Underscore.                                   |
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-
 
 
 The foreground attributes specify the text color. The background attributes specify the color used to fill the cell's background. The other attributes are used with [DBCS](https://msdn.microsoft.com/library/windows/desktop/dd317794).

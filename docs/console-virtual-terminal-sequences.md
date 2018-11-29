@@ -161,8 +161,8 @@ For each of the sequences, the default value for &lt;n&gt; if it is omitted is 1
 
 For the following commands, the parameter &lt;n&gt; has 3 valid values:
 
-- 0 erases from the beginning of the line/display up to and including the current cursor position
-- 1 erases from the current cursor position (inclusive) to the end of the line/display
+- 0 erases from the current cursor position (inclusive) to the end of the line/display
+- 1 erases from the beginning of the line/display up to and including the current cursor position
 - 2 erases the entire line/display
 
 
@@ -841,7 +841,7 @@ int __cdecl wmain(int argc, WCHAR* argv[])
     wch = _getwch();
 
     // Exit the alternate buffer
-    printf(CSI "?1049h");
+    printf(CSI "?1049l");
 
 }
 ```

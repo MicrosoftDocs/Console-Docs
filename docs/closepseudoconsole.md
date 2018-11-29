@@ -27,7 +27,7 @@ Syntax
 ------
 
 ```C
-HRESULT WINAPI ClosePseudoConsole(
+void WINAPI ClosePseudoConsole(
     _In_ HPCON hPC 
 );
 ```
@@ -41,9 +41,7 @@ A handle to an active psuedoconsole as opened by [CreatePseudoConsole](createpse
 Return value
 ------------
 
-Type: **HRESULT**
-
-If this method succeeds, it returns **S_OK**. Otherwise, it returns an **HRESULT** error code.
+*none*
 
 Remarks
 -------
