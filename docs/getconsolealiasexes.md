@@ -4,7 +4,6 @@ description: Retrieves the names of all executable files with console aliases de
 author: bitcrazed
 ms.author: richturn
 ms.topic: article
-ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
 - 'base.getconsolealiasexes'

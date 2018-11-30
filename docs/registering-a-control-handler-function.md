@@ -4,7 +4,6 @@ description: This is an example of the SetConsoleCtrlHandler function that is us
 author: bitcrazed
 ms.author: richturn
 ms.topic: article
-ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
 - '\_win32\_registering\_a\_control\_handler\_function'

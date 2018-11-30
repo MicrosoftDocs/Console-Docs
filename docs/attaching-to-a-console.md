@@ -4,7 +4,6 @@ description: A process can use the AttachConsole function to attach to a console
 author: bitcrazed
 ms.author: richturn
 ms.topic: article
-ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
 - '\_win32\_attaching\_to\_a\_console'

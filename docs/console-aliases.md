@@ -4,7 +4,6 @@ description: Describes console aliases and how they are used to map source strin
 author: bitcrazed
 ms.author: richturn
 ms.topic: article
-ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
 - 'base.console\_aliases'

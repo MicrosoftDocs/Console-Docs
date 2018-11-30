@@ -4,7 +4,6 @@ description: Defines the coordinates of a character cell in a console screen buf
 author: bitcrazed
 ms.author: richturn
 ms.topic: article
-ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
 - '\_win32\_coord\_str'

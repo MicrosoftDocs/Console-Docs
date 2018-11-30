@@ -4,7 +4,6 @@ description: Each console has an input buffer that contains a queue of input eve
 author: bitcrazed
 ms.author: richturn
 ms.topic: article
-ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
 - '\_win32\_console\_input\_buffer'
