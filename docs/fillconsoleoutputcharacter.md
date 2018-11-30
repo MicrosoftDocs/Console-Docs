@@ -4,7 +4,6 @@ description: Writes a character to the console screen buffer a specified number 
 author: bitcrazed
 ms.author: richturn
 ms.topic: article
-ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
 - '\_win32\_fillconsoleoutputcharacter'

@@ -4,7 +4,6 @@ description: Describes how the console window displays a portion of the active s
 author: bitcrazed
 ms.author: richturn
 ms.topic: article
-ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
 - '\_win32\_scrolling\_the\_screen\_buffer'

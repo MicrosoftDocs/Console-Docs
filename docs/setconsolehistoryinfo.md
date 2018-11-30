@@ -4,7 +4,6 @@ description: Sets the history settings for the Windows Console of the calling pr
 author: bitcrazed
 ms.author: richturn
 ms.topic: article
-ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
 - 'base.setconsolehistoryinfo'

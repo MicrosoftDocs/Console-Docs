@@ -4,7 +4,6 @@ description: The 8-bit console functions use the OEM code page.
 author: bitcrazed
 ms.author: richturn
 ms.topic: article
-ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
 - '\_win32\_console\_application\_issues'

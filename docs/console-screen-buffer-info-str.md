@@ -4,7 +4,6 @@ description: Contains information about a console screen buffer.
 author: bitcrazed
 ms.author: richturn
 ms.topic: article
-ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
 - '\_win32\_console\_screen\_buffer\_info\_str'

@@ -4,7 +4,6 @@ description: Retrieves the text for the specified console alias and the name of 
 author: bitcrazed
 ms.author: richturn
 ms.topic: article
-ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
 - 'base.getconsolealias'

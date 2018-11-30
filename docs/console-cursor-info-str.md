@@ -4,7 +4,6 @@ description: Contains the size and visibility information about the about the co
 author: bitcrazed
 ms.author: richturn
 ms.topic: article
-ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
 - '\_win32\_console\_cursor\_info\_str'

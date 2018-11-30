@@ -4,7 +4,6 @@ description: There are two different approaches to console I/O, the choice of wh
 author: bitcrazed
 ms.author: richturn
 ms.topic: article
-ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
 - '\_win32\_input\_and\_output\_methods'

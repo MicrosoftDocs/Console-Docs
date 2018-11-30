@@ -4,7 +4,6 @@ description: Retrieves information about the size and visibility of the cursor f
 author: bitcrazed
 ms.author: richturn
 ms.topic: article
-ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
 - '\_win32\_getconsolecursorinfo'
