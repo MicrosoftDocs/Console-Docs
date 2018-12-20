@@ -16,6 +16,8 @@ Hosting a pseudoconsole session is a bit different than a traditional console se
 
 You can find additional background information about this system on the [initial announcement blog post](https://blogs.msdn.microsoft.com/commandline/2018/08/02/windows-command-line-introducing-the-windows-pseudo-console-conpty/).
 
+Complete examples of using the Pseudoconsole are available on our GitHub repository [Microsoft/console](https://github.com/Microsoft/console) in the samples directory.
+
 ## Preparing the communication channels
 
 The first step is to create a pair of synchronous communication channels that will be provided during creation of the pseudoconsole session for bidirectional communication with the hosted application. These channels are processed by the pseudoconsole system using [**ReadFile**](https://docs.microsoft.com/en-us/windows/desktop/api/fileapi/nf-fileapi-readfile) and [**WriteFile**](https://docs.microsoft.com/en-us/windows/desktop/api/fileapi/nf-fileapi-writefile) with [synchronous I/O](https://docs.microsoft.com/en-us/windows/desktop/Sync/synchronization-and-overlapped-input-and-output). Any file or I/O device handle like a file, file stream, physical disk, volume, tape drive, socket, communications resource, mailslot, or pipe is acceptable as long as it does not require an [**OVERLAPPED**](https://docs.microsoft.com/en-us/windows/desktop/api/minwinbase/ns-minwinbase-_overlapped) structure to be processed for asynchronous communication.
@@ -55,9 +57,10 @@ HRESULT SetUpPseudoConsole(COORD size)
 
     if (!CreatePipe(&outputReadSide, &outputWriteSide, NULL, 0))
     {
-        return HRESULT_FROM_WIN32(GetLastError())
+        return HRESULT_FROM_WIN32(GetLastError());
     }
 
+    HPCON hPC;
     hr = CreatePseudoConsole(size, inputReadSide, outputWriteSide, 0, &hPC);
     if (FAILED(hr))
     {
@@ -114,13 +117,13 @@ HRESULT PrepareStartupInformation(HPCON hpc, STARTUPINFOEX* psi)
     }
 
     // Set the pseudoconsole information into the list
-    if (!UpdateProcThreadAttributeList(attributeList,
-                                    0,
-                                    PROC_THREAD_ATTRIBUTE_PSEUDOCONSOLE,
-                                    hpc,
-                                    sizeof(hpc),
-                                    NULL,
-                                    NULL))
+    if (!UpdateProcThreadAttribute(attributeList,
+                                   0,
+                                   PROC_THREAD_ATTRIBUTE_PSEUDOCONSOLE,
+                                   hpc,
+                                   sizeof(hpc),
+                                   NULL,
+                                   NULL))
     {
         HeapFree(GetProcessHeap(), 0, si.lpAttributeList);
         return HRESULT_FROM_WIN32(GetLastError());
