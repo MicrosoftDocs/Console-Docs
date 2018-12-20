@@ -50,6 +50,8 @@ Return value
 
 The return value is a code that identifies the code page. For a list of identifiers, see [Code Page Identifiers](https://msdn.microsoft.com/library/windows/desktop/dd317756).
 
+If the return value is zero, the function has failed. To get extended error information, call [**GetLastError**](https://msdn.microsoft.com/library/windows/desktop/ms679360).
+
 Remarks
 -------
 
