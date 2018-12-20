@@ -52,10 +52,7 @@ A process cannot change the location of its console window on the screen, but th
 | [**SetConsoleTextAttribute**](setconsoletextattribute.md)       | Sets the color attributes.                                           |
 | [**SetConsoleTitle**](setconsoletitle.md)                       | Sets the console window title.                                       |
 | [**GetConsoleTitle**](getconsoletitle.md)                       | Retrieves the console window title.                                  |
-||
-||
-||
-||
+
 
 
 
