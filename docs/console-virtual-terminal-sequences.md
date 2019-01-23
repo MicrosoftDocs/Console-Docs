@@ -154,7 +154,7 @@ All commands in this section are generally equivalent to calling [**FillConsoleO
 **Note**  
 For IL and DL, only the lines in the scrolling margins (see Scrolling Margins) are affected. If no margins are set, the default margin borders are the current viewport. If lines would be shifted below the margins, they are discarded. When lines are deleted, blank lines are inserted at the bottom of the margins, lines from outside the viewport are never affected.
 
-For each of the sequences, the default value for &lt;n&gt; if it is omitted is 1.
+For each of the sequences, the default value for &lt;n&gt; if it is omitted is 0.
 
 
 
