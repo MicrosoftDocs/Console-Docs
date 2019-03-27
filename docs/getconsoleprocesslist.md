@@ -43,10 +43,10 @@ Parameters
 ----------
 
 *lpdwProcessList* \[out\]  
-A pointer to a buffer that receives an array of process identifiers upon success. This must be a valid buffer and cannot be `NULL`.
+A pointer to a buffer that receives an array of process identifiers upon success. This must be a valid buffer and cannot be `NULL`. The buffer must have space to receive at least 1 returned process id.
 
 *dwProcessCount* \[in\]  
-The maximum number of process identifiers that can be stored in the *lpdwProcessList* buffer. This must be greater than 0 and refer to the length of `lpdwProcessList`.
+The maximum number of process identifiers that can be stored in the *lpdwProcessList* buffer. This must be greater than 0.
 
 Return value
 ------------
