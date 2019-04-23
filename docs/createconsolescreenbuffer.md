@@ -104,6 +104,13 @@ Remarks
 
 A console can have multiple screen buffers but only one active screen buffer. Inactive screen buffers can be accessed for reading and writing, but only the active screen buffer is displayed. To make the new screen buffer the active screen buffer, use the [**SetConsoleActiveScreenBuffer**](setconsoleactivescreenbuffer.md) function.
 
+The newly created screen buffer will copy some properties from the active screen buffer at the time that this function is called. The behavior is as follows:
+- `Font` - copied from active screen buffer
+- `Display Window Size` - copied from active screen buffer
+- `Buffer Size` - matched to `Display Window Size` (**NOT** copied)
+- `Default Attributes` (colors) - copied from active screen buffer
+- `Default Popup Attributes` (colors) - copied from active screen buffer
+
 The calling process can use the returned handle in any function that requires a handle to a console screen buffer, subject to the limitations of access specified by the *dwDesiredAccess* parameter.
 
 The calling process can use the [**DuplicateHandle**](https://msdn.microsoft.com/library/windows/desktop/ms724251) function to create a duplicate screen buffer handle that has different access or inheritability from the original handle. However, **DuplicateHandle** cannot be used to create a duplicate that is valid for a different process (except through inheritance).
