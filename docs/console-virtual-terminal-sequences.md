@@ -100,7 +100,7 @@ Cursor movement will be bounded by the current viewport into the buffer. Scrolli
 ## <span id="Cursor_Visibility"></span><span id="cursor_visibility"></span><span id="CURSOR_VISIBILITY"></span>Cursor Visibility
 
 
-The following commands control the visibility of the cursor and it’s blinking state. The DECTCEM sequences are generally equivalent to calling [**SetConsoleCursorInfo**](setconsolecursorinfo.md) console API to toggle cursor visibility.
+The following commands control the visibility of the cursor and its blinking state. The DECTCEM sequences are generally equivalent to calling [**SetConsoleCursorInfo**](setconsolecursorinfo.md) console API to toggle cursor visibility.
 
 
 | Sequence      | Code    | Description                  | Behavior                  |
