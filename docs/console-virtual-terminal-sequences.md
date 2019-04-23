@@ -106,7 +106,7 @@ The following commands control the visibility of the cursor and its blinking sta
 | Sequence      | Code    | Description                  | Behavior                  |
 |---------------|---------|------------------------------|---------------------------|
 | ESC \[ ? 12 h | ATT160  | Text Cursor Enable Blinking  | Start the cursor blinking |
-| ESC \[ ? 12 l | ATT160  | Text Cursor Enable Blinking  | Stop blinking the cursor  |
+| ESC \[ ? 12 l | ATT160  | Text Cursor Disable Blinking  | Stop blinking the cursor  |
 | ESC \[ ? 25 h | DECTCEM | Text Cursor Enable Mode Show | Show the cursor           |
 | ESC \[ ? 25 l | DECTCEM | Text Cursor Enable Mode Hide | Hide the cursor           |
 
