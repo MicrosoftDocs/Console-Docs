@@ -21,9 +21,12 @@
 
 # [Console Developer's guide & API Reference](console-reference.md) 
 ## [Using The Console API](using-the-console.md) 
+### [High Level Console Input And Output Functions](high-level-console-input-and-output-functions.md) 
 ### [Using The High Level Input And Output Functions](using-the-high-level-Input-and-output-functions.md) 
 ### [High Level Console Modes](high-level-console-modes.md) 
 ### [High Level Console I/O](high-level-console-i-o.md) 
+### [Low Level Console Input Functions](low-level-console-input-functions.md)
+### [Low Level Console Output Functions](low-level-console-output-functions.md)
 ### [Low Level Console I/O](low-level-console-i-o.md) 
 ### [Low Level Console Modes](low-level-console-modes.md) 
 ### [Reading And Writing Blocks Of Characters And Attributes](reading-and-writing-blocks-of-Characters-and-attributes.md) 
@@ -39,7 +42,6 @@
 ### [Creating a Pseudoconsole Session](creating-a-pseudoconsole-session.md)
 
 ## [Console API Functions](console-functions.md) 
-### [High Level Console Input And Output Functions](high-level-console-input-and-output-functions.md) 
 ### [AddConsoleAlias](addconsolealias.md) 
 ### [AllocConsole](allocconsole.md) 
 ### [AttachConsole](attachconsole.md) 
