@@ -125,6 +125,20 @@ When a console application is run as a service, it receives a modified default c
 
 Note that a third-party library or DLL can install a console control handler for your application. If it does, this handler overrides the default handler, and can cause the application to exit when the user logs off.
 
+## Timeouts
+
+| Event                  | Circumstances                   | Timeout                                                     |
+|------------------------|---------------------------------|-------------------------------------------------------------|
+| `CTRL_CLOSE_EVENT`     | _any_                           | system parameter `SPI_GETHUNGAPPTIMEOUT`, 5000ms            |
+| `CTRL_LOGOFF_EVENT`    | _quick_[1] | registry key `CriticalAppShutdownTimeout` or 500ms          |
+| `CTRL_LOGOFF_EVENT`    | _none of the above_             | system parameter `SPI_GETWAITTOKILLTIMEOUT`, 5000ms         |
+| `CTRL_SHUTDOWN_EVENT`  | **service process**             | system parameter `SPI_GETWAITTOKILLSERVICETIMEOUT`, 20000ms |
+| `CTRL_SHUTDOWN_EVENT`  | _quick_[1] | registry key `CriticalAppShutdownTimeout` or 500ms          |
+| `CTRL_SHUTDOWN_EVENT`  | _none of the above_             | system parameter `SPI_GETWAITTOKILLTIMEOUT`, 5000ms         |
+| `CTRL_C`, `CTRL_BREAK` | _any_                           | **no timeout**                                              |
+
+_[1]: "quick" events are never used, but there's still code to support them._
+
 Requirements
 ------------
 

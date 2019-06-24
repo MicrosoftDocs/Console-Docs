@@ -55,7 +55,7 @@ BOOL WINAPI CtrlHandler(DWORD fdwCtrlType)
     case CTRL_BREAK_EVENT:
         Beep(900, 200);
         printf("Ctrl-Break event\n\n");
-        return TRUE;
+        return FALSE;
 
     case CTRL_LOGOFF_EVENT:
         Beep(1000, 200);
