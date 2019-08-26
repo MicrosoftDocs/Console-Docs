@@ -22,6 +22,10 @@ Complete examples of using the Pseudoconsole are available on our GitHub reposit
 
 The first step is to create a pair of synchronous communication channels that will be provided during creation of the pseudoconsole session for bidirectional communication with the hosted application. These channels are processed by the pseudoconsole system using [**ReadFile**](https://docs.microsoft.com/en-us/windows/desktop/api/fileapi/nf-fileapi-readfile) and [**WriteFile**](https://docs.microsoft.com/en-us/windows/desktop/api/fileapi/nf-fileapi-writefile) with [synchronous I/O](https://docs.microsoft.com/en-us/windows/desktop/Sync/synchronization-and-overlapped-input-and-output). Any file or I/O device handle like a file, file stream, physical disk, volume, tape drive, socket, communications resource, mailslot, or pipe is acceptable as long as it does not require an [**OVERLAPPED**](https://docs.microsoft.com/en-us/windows/desktop/api/minwinbase/ns-minwinbase-_overlapped) structure to be processed for asynchronous communication.
 
+**NOTE:**
+
+To prevent race conditions and deadlocks, we highly recommend that each of the communication channels is serviced on a separate thread that maintains its own client buffer state and messaging queue inside your application. Servicing all of the pseudoconsole activities on the same thread may result in a deadlock where one of the communications buffers is filled and waiting for your action while you attempt to dispatch a blocking request on another channel.
+
 ## Creating the Pseudoconsole
 
 With the communications channels that have been established, identify the "read" end of the input channel and the "write" end of the output channel. This pair of handles is provided on calling [**CreatePseudoConsole**](createpseudoconsole.md) to create the object.
@@ -181,6 +185,10 @@ HRESULT SetUpPseudoConsole(COORD size)
 }
 ```
 
+**NOTE:**
+
+Closing the pseudoconsole session while the hosted process is still starting up and connecting can result in an error dialog being shown by the client application. The same error dialog is shown if the hosted process is given an invalid pseudoconsole handle for startup. To the hosted process initialization code, the two circumstances are identical. The pop-up dialog from the hosted client application on failure will read `0xc0000142` with a localized message detailing failure to initialize.
+
 ## Communicating with the Pseudoconsole Session
 
 Once the process is created successfully, the hosting application can use the write end of the input pipe to send user interaction information into the pseudoconsole and the read end of the output pipe to receive graphical presentation information from the pseudo console. 
@@ -218,3 +226,6 @@ void OnWindowResize(Event e)
 
 To end the session, call the [**ClosePseudoConsole**](closepseudoconsole.md) function with the handle from the original pseudoconsole creation. Any attached client character-mode applications, such as the one from the [**CreateProcess**](https://msdn.microsoft.com/library/windows/desktop/ms682425) call, will be terminated when the session is closed. If the original child was a shell-type application that creates other processes, any related attached processes in the tree will also be terminated.
 
+**NOTE:**
+
+Closing the session has several side effects which can result in a deadlock condition if the pseudoconsole is used in a single-threaded synchronous fashion. The act of closing the pseudoconsole session may emit a final frame update to `hOutput` which should be drained from the communications channel buffer. Additionally, if `PSEUDOCONSOLE_INHERIT_CURSOR` was selected while creating the pseudoconsole, attempting to close the pseudoconsole without responding to the cursor inheritence query message (received on `hOutput` and replied to via `hInput`) may result in another deadlock condition. It is recommended that communications channels for the pseudoconsole are serviced on individual threads and remain drained and processed until broken of their own accord by the client application exiting or by the completion of teardown activities in calling the [**ClosePseudoConsole**](closepseudoconsole.md) function.
