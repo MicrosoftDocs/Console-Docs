@@ -43,10 +43,10 @@ Parameters
 The dimensions of the window/buffer in count of characters that will be used on initial creation of the pseudoconsole. This can be adjusted later with [ResizePseudoConsole](resizepseudoconsole.md).
 
 *hInput* \[in\]  
-An open handle to a stream of data that represents user input to the device. This is currently restricted to [synchronous](https://docs.microsoft.com/en-us/windows/desktop/Sync/synchronization-and-overlapped-input-and-output) I/O.
+An open handle to a stream of data that represents user input to the device. This is currently restricted to [synchronous](https://docs.microsoft.com/windows/desktop/Sync/synchronization-and-overlapped-input-and-output) I/O.
 
 *hOutput* \[in\]  
-An open handle to a stream of data that represents application output from the device. This is currently restricted to [synchronous](https://docs.microsoft.com/en-us/windows/desktop/Sync/synchronization-and-overlapped-input-and-output) I/O.
+An open handle to a stream of data that represents application output from the device. This is currently restricted to [synchronous](https://docs.microsoft.com/windows/desktop/Sync/synchronization-and-overlapped-input-and-output) I/O.
 
 *dwFlags* \[in\]  
 The value can be one of the following:
