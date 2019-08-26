@@ -32,7 +32,7 @@ api_type:
 # Console WinEvents
 
 
-The following event constants are used in the *event* parameter of the [*WinEventProc*](https://msdn.microsoft.com/en-us/library/windows/desktop/dd373885(v=vs.85).aspx) callback function. For more information, see [WinEvents](https://msdn.microsoft.com/library/windows/desktop/dd373889).
+The following event constants are used in the *event* parameter of the [*WinEventProc*](https://msdn.microsoft.com/library/windows/desktop/dd373885(v=vs.85).aspx) callback function. For more information, see [WinEvents](https://msdn.microsoft.com/library/windows/desktop/dd373889).
 
 <table>
 <colgroup>
