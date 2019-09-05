@@ -28,7 +28,7 @@
 ### [Low Level Console Input Functions](low-level-console-input-functions.md)
 ### [Low Level Console Output Functions](low-level-console-output-functions.md)
 ### [Low Level Console I/O](low-level-console-i-o.md) 
-### [Low Level Console Modes](low-level-console-modes.md) 
+### [Low Level Console Modes](low-level-console-modes.md)
 ### [Reading And Writing Blocks Of Characters And Attributes](reading-and-writing-blocks-of-Characters-and-attributes.md) 
 ### [Reading Input Buffer Events](reading-input-buffer-events.md) 
 ### [Clearing the screen](clearing-the-screen.md)
