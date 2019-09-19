@@ -98,6 +98,8 @@ On the input stream, plain text represents standard keyboard keys input by a use
 
 The handle created by this function must be closed with [ClosePseudoConsole](closepseudoconsole.md) when operations are complete.
 
+If using `PSEUDOCONSOLE_INHERIT_CURSOR`, the calling application should be prepared to respond to the request for the cursor state in an asynchronous fashion on a background thread by forwarding or interpreting the request for cursor information that will be received on `hOutput` and replying on `hInput`. Failure to do so may cause the calling application to hang while making another request of the pseudoconsole system.
+
 Examples
 --------
 
