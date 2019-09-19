@@ -48,6 +48,8 @@ Remarks
 
 Upon closing a pseudoconsole, client applications attached to the session will be terminated as well.
 
+A final painted frame may arrive on `hOutput` from the pseudoconsole when this API is called. It is expected that the caller will drain this information from the communication channel buffer and either present it or discard it. Failure to drain the buffer may cause the Close call to wait indefinitely until it is drained or the communication channels are broken another way.
+
 Requirements
 ------------
 
