@@ -64,19 +64,19 @@ The standard device. This parameter can be one of the following values.
 <tr class="odd">
 <td><span id="STD_INPUT_HANDLE"></span><span id="std_input_handle"></span>
 <strong>STD_INPUT_HANDLE</strong>
-(DWORD)-10</td>
+(DWORD) -10</td>
 <td><p>The standard input device. Initially, this is the console input buffer, CONIN$.</p></td>
 </tr>
 <tr class="even">
 <td><span id="STD_OUTPUT_HANDLE"></span><span id="std_output_handle"></span>
 <strong>STD_OUTPUT_HANDLE</strong>
-(DWORD)-11</td>
+(DWORD) -11</td>
 <td><p>The standard output device. Initially, this is the active console screen buffer, CONOUT$.</p></td>
 </tr>
 <tr class="odd">
 <td><span id="STD_ERROR_HANDLE"></span><span id="std_error_handle"></span>
 <strong>STD_ERROR_HANDLE</strong>
-(DWORD)-12</td>
+(DWORD) -12</td>
 <td><p>The standard error device. Initially, this is the active console screen buffer, CONOUT$.</p></td>
 </tr>
 </tbody>
