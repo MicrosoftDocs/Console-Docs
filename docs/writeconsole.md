@@ -43,7 +43,7 @@ BOOL WINAPI WriteConsole(
   _In_             HANDLE  hConsoleOutput,
   _In_       const VOID    *lpBuffer,
   _In_             DWORD   nNumberOfCharsToWrite,
-  _Out_            LPDWORD lpNumberOfCharsWritten,
+  _Out_opt_        LPDWORD lpNumberOfCharsWritten,
   _Reserved_       LPVOID  lpReserved
 );
 ```
@@ -60,7 +60,7 @@ A pointer to a buffer that contains characters to be written to the console scre
 *nNumberOfCharsToWrite* \[in\]  
 The number of characters to be written. If the total size of the specified number of characters exceeds the available heap, the function fails with **ERROR\_NOT\_ENOUGH\_MEMORY**.
 
-*lpNumberOfCharsWritten* \[out\]  
+*lpNumberOfCharsWritten* \[out, optional\]  
 A pointer to a variable that receives the number of characters actually written.
 
 *lpReserved*   
