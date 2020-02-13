@@ -16,6 +16,7 @@
 ## [Console Screen Buffers](console-screen-buffers.md) 
 ## [Window And Screen Buffer Size](window-and-screen-buffer-size.md) 
 ## [Console Selection](console-selection.md)
+## [About Legacy Console Mode](legacymode.md)
 ## [About Pseudoconsoles](pseudoconsoles.md)
 
 
