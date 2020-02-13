@@ -1,5 +1,8 @@
 # Windows Console Documentation
 Welcome to the Windows Console documentation repo. The MSDN Console Docs are generated from the markdown stored in this repo.
+The published docs can be found at [https://docs.microsoft.com/windows/console/]()
+
+For code issues related to the Windows Console, Windows Terminal, and related command-line and terminal tooling products acquired with Windows, from the Windows Store, or other sources like GitHub, please check out the [Microsoft/Terminal](https://github.com/microsoft/terminal) repository.
 
 # Metadata
 Each content page in this repo requires some metadata expressed as [YAML](https://en.wikipedia.org/wiki/YAML), stored at the top of each doc between '---' markers. For example:
