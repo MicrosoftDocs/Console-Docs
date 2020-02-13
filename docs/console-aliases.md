@@ -31,7 +31,7 @@ AddConsoleAlias( TEXT("test"),
                  TEXT("cmd.exe"));
 ```
 
-To add parameters to a console alias macro using Doskey.exe, use the batch parameters $1 through $9. For more information on the special codes that can be used in Doskey macro definitions, see the command-line help for Doskey.exe or [Doskey](http://go.microsoft.com/fwlink/p/?linkid=196265) on TechNet.
+To add parameters to a console alias macro using Doskey.exe, use the batch parameters $1 through $9. For more information on the special codes that can be used in Doskey macro definitions, see the command-line help for Doskey.exe or [Doskey](https://go.microsoft.com/fwlink/p/?linkid=196265) on TechNet.
 
 All instances of an executable file running in the same console window share any defined console aliases. Multiple instances of the same executable file running in different console windows do not share console aliases. Different executable files running in the same console window do not share console aliases.
 
