@@ -152,8 +152,8 @@ HRESULT SetUpPseudoConsole(COORD size)
     PCWSTR childApplication = L"C:\\windows\\system32\\cmd.exe";
 
     // Create mutable text string for CreateProcessW command line string.
-    const size_t bytesRequired = wcslen(childApplication) + 1; // +1 null terminator
-    PWSTR cmdLineMutable = (PWSTR)HeapAlloc(GetProcessHeap(), 0, bytesRequired);
+    const size_t charsRequired = wcslen(childApplication) + 1; // +1 null terminator
+    PWSTR cmdLineMutable = (PWSTR)HeapAlloc(GetProcessHeap(), 0, sizeof(wchar_t) * charsRequired);
 
     if (!cmdLineMutable)
     {
