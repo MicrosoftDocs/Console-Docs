@@ -537,7 +537,7 @@ Ctrl is generally passed through exactly as received from the system. This is ty
 
 The following code provides several examples of text formatting.
 
-```
+```C
 #include <stdio.h>
 #include <wchar.h>
 #include <windows.h>
