@@ -1,6 +1,6 @@
 ---
 title: GetConsoleSelectionInfo function
-description: Retrieves information about the current console selection.
+description: See reference information about the GetConsoleSelectionInfo function, which retrieves information about the current console selection.
 author: bitcrazed
 ms.author: richturn
 ms.topic: article

@@ -1,6 +1,6 @@
 ---
 title: GetConsoleProcessList function
-description: Retrieves a list of the processes attached to the current console.
+description: See reference information about the GetConsoleProcessList function, which retrieves a list of the processes attached to the current console.
 author: bitcrazed
 ms.author: richturn
 ms.topic: article

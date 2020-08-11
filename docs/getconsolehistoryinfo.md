@@ -1,6 +1,6 @@
 ---
 title: GetConsoleHistoryInfo function
-description: Retrieves the history settings for the calling process's console.
+description: See reference information about the GetConsoleHistoryInfo function, which retrieves the history settings for the console of the calling process.
 author: bitcrazed
 ms.author: richturn
 ms.topic: article

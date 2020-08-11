@@ -1,6 +1,6 @@
 ---
 title: SetConsoleDisplayMode function
-description: Sets the display mode of the specified console screen buffer.
+description: See reference information about the SetConsoleDisplayMode function, which sets the display mode of the specified console screen buffer.
 author: bitcrazed
 ms.author: richturn
 ms.topic: article

@@ -1,6 +1,6 @@
 ---
 title: GetConsoleDisplayMode function
-description: Retrieves the display mode of the current console.
+description: See reference information about the GetConsoleDisplayMode function, which retrieves the display mode of the current console.
 author: bitcrazed
 ms.author: richturn
 ms.topic: article

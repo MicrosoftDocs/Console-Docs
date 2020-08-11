@@ -1,6 +1,6 @@
 ---
 title: CONSOLE_FONT_INFOEX structure
-description: Contains extended information for a console font.
+description: See reference information about the CONSOLE_FONT_INFOEX structure, which contains extended information for a console font.
 author: bitcrazed
 ms.author: richturn
 ms.topic: article
