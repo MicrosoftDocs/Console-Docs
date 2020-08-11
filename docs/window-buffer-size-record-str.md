@@ -1,6 +1,6 @@
 ---
 title: WINDOW_BUFFER_SIZE_RECORD structure
-description: Describes a change in the size of the console screen buffer.
+description: See reference information about the WINDOW_BUFFER_SIZE_RECORD structure, which describes a change in the size of the console screen buffer.
 author: bitcrazed
 ms.author: richturn
 ms.topic: article

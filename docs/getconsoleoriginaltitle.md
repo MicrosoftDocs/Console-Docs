@@ -1,6 +1,6 @@
 ---
 title: GetConsoleOriginalTitle function
-description: Retrieves the original title for the current console window.
+description: See reference information about the GetConsoleOriginalTitle function, which retrieves the original title for the current console window.
 author: bitcrazed
 ms.author: richturn
 ms.topic: article

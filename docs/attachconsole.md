@@ -1,6 +1,6 @@
 ---
 title: AttachConsole function
-description: Attaches the calling process to the console of the specified process.
+description: See reference information about the AttachConsole function, which attaches the calling process to the console of the specified process.
 author: bitcrazed
 ms.author: richturn
 ms.topic: article

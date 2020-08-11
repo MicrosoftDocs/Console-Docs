@@ -1,6 +1,6 @@
 ---
 title: GetConsoleScreenBufferInfo function
-description: Retrieves information about the specified console screen buffer.
+description: See reference information about the GetConsoleScreenBufferInfo function, which retrieves information about the specified console screen buffer.
 author: bitcrazed
 ms.author: richturn
 ms.topic: article

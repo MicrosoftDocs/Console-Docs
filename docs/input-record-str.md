@@ -1,6 +1,6 @@
 ---
 title: INPUT_RECORD structure
-description: Describes an input event in the console input buffer.
+description: See reference information about the INPUT_RECORD structure, which describes an input event in the console input buffer.
 author: bitcrazed
 ms.author: richturn
 ms.topic: article

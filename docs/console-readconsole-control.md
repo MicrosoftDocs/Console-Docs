@@ -1,6 +1,6 @@
 ---
 title: CONSOLE_READCONSOLE_CONTROL structure
-description: Contains information for a console read operation.
+description: See reference information about the CONSOLE_READCONSOLE_CONTROL structure, which contains information for a console read operation.
 author: bitcrazed
 ms.author: richturn
 ms.topic: article
