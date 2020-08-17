@@ -1,6 +1,6 @@
 ---
 title: AddConsoleAlias function
-description: Adds a console alias for the specified executable.
+description: See reference information about the AddConsoleAlias function, which defines a console alias for the specified executable.
 author: bitcrazed
 ms.author: richturn
 ms.topic: article

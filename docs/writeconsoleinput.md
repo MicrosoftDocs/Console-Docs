@@ -1,6 +1,6 @@
 ---
 title: WriteConsoleInput function
-description: Writes data directly to the console input buffer.
+description: See reference information about the WriteConsoleInput function, which writes data directly to the console input buffer.
 author: bitcrazed
 ms.author: richturn
 ms.topic: article

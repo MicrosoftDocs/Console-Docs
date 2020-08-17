@@ -1,6 +1,6 @@
 ---
 title: ResizePseudoConsole function
-description: Resizes the internal buffers for a pseudoconsole to the given size.
+description: See reference information about the ResizePseudoConsole function, which resizes the internal buffers for a pseudoconsole to the given size.
 author: miniksa
 ms.author: miniksa
 ms.topic: article

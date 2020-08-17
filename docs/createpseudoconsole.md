@@ -1,6 +1,6 @@
 ---
 title: CreatePseudoConsole function
-description: Allocates a new pseudoconsole for the calling process.
+description: See reference information about the CreatePseudoConsole function, which allocates a new pseudoconsole for the calling process.
 author: miniksa
 ms.author: miniksa
 ms.topic: article

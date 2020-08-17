@@ -1,6 +1,6 @@
 ---
 title: MOUSE_EVENT_RECORD structure
-description: Describes a mouse input event in a console INPUT\_RECORD structure.
+description: See reference information about the MOUSE_EVENT_RECORD structure, which describes a mouse input event in a console INPUT_RECORD structure.
 author: bitcrazed
 ms.author: richturn
 ms.topic: article
