@@ -1,6 +1,6 @@
 ---
 title: SetConsoleScreenBufferSize function
-description: Changes the size of the specified console screen buffer.
+description: See reference information about the SetConsoleScreenBufferSize function, which changes the size of the specified console screen buffer.
 author: bitcrazed
 ms.author: richturn
 ms.topic: article

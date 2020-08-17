@@ -1,6 +1,6 @@
 ---
 title: ClosePseudoConsole function
-description: Closes a pseudoconsole from the given handle
+description: See reference information about the ClosePseudoConsole function, which closes a pseudoconsole from the given handle.
 author: miniksa
 ms.author: miniksa
 ms.topic: article

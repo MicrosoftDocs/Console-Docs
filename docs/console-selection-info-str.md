@@ -1,6 +1,6 @@
 ---
 title: CONSOLE_SELECTION_INFO structure
-description: Contains information for a console selection.
+description: See reference information about the CONSOLE_SELECTION_INFO structure, which contains information for a console selection.
 author: bitcrazed
 ms.author: richturn
 ms.topic: article

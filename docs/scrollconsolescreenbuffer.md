@@ -1,6 +1,6 @@
 ---
 title: ScrollConsoleScreenBuffer function
-description: Moves a block of data in a screen buffer.
+description: See reference information about the ScrollConsoleScreenBuffer function, which moves a block of data in a screen buffer.
 author: bitcrazed
 ms.author: richturn
 ms.topic: article

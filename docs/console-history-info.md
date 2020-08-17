@@ -1,6 +1,6 @@
 ---
 title: CONSOLE_HISTORY_INFO structure
-description: Contains information about the console history.
+description: See reference information about the CONSOLE_HISTORY_INFO structure, which contains information about the console history.
 author: bitcrazed
 ms.author: richturn
 ms.topic: article

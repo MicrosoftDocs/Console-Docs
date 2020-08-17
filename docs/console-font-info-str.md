@@ -1,6 +1,6 @@
 ---
 title: CONSOLE_FONT_INFO structure
-description: Contains the index and size for a console font.
+description: See reference information about the CONSOLE_FONT_INFO structure, which contains the index and size for a console font.
 author: bitcrazed
 ms.author: richturn
 ms.topic: article
