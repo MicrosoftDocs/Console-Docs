@@ -1,6 +1,6 @@
 ---
 title: SetConsoleCursorPosition function
-description: Sets the cursor position in the specified console screen buffer.
+description: See reference information about the SetConsoleCursorPosition function, which sets the cursor position in the specified console screen buffer.
 author: bitcrazed
 ms.author: richturn
 ms.topic: article

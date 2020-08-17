@@ -1,6 +1,6 @@
 ---
 title: SetConsoleTitle function
-description: Sets the title for the current console window.
+description: See reference information about the SetConsoleTitle function, which sets the title for the current console window.
 author: bitcrazed
 ms.author: richturn
 ms.topic: article

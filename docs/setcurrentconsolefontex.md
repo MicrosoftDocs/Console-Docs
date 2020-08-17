@@ -1,6 +1,6 @@
 ---
 title: SetCurrentConsoleFontEx function
-description: Sets extended information about the current console font.
+description: See reference information about the SetCurrentConsoleFontEx function, which sets extended information about the current console font.
 author: bitcrazed
 ms.author: richturn
 ms.topic: article

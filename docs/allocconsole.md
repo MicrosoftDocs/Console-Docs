@@ -1,6 +1,6 @@
 ---
 title: AllocConsole function
-description: Allocates a new console for the calling process.
+description: See reference information about the AllocConsole function, which allocates a new console for the calling process.
 author: bitcrazed
 ms.author: richturn
 ms.topic: article

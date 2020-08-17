@@ -1,6 +1,6 @@
 ---
 title: FreeConsole function
-description: Detaches the calling process from its console.
+description: See reference information about the FreeConsole function, which detaches the calling process from its console.
 author: bitcrazed
 ms.author: richturn
 ms.topic: article
