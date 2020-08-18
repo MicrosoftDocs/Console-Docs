@@ -1,8 +1,8 @@
 ---
 title: FOCUS_EVENT_RECORD structure
 description: Describes a focus event in a console INPUT\_RECORD structure. These events are used internally and should be ignored.
-author: bitcrazed
-ms.author: richturn
+author: miniksa
+ms.author: miniksa
 ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:

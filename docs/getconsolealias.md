@@ -1,8 +1,8 @@
 ---
 title: GetConsoleAlias function
 description: Retrieves the text for the specified console alias and the name of the executable.
-author: bitcrazed
-ms.author: richturn
+author: miniksa
+ms.author: miniksa
 ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:

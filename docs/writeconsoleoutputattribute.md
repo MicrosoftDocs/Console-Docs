@@ -1,8 +1,8 @@
 ---
 title: WriteConsoleOutputAttribute function
 description: Copies a number of character attributes to consecutive cells of a console screen buffer, beginning at a specified location.
-author: bitcrazed
-ms.author: richturn
+author: miniksa
+ms.author: miniksa
 ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:

@@ -1,8 +1,8 @@
 ---
 title: GetConsoleSelectionInfo function
 description: See reference information about the GetConsoleSelectionInfo function, which retrieves information about the current console selection.
-author: bitcrazed
-ms.author: richturn
+author: miniksa
+ms.author: miniksa
 ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:

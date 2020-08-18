@@ -1,8 +1,8 @@
 ---
 title: HandlerRoutine callback function
 description: An application-defined function used with the SetConsoleCtrlHandler function. A console process uses this function to handle control signals received by the process.
-author: bitcrazed
-ms.author: richturn
+author: miniksa
+ms.author: miniksa
 ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:

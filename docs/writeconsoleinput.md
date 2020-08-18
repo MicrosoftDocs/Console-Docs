@@ -1,8 +1,8 @@
 ---
 title: WriteConsoleInput function
 description: See reference information about the WriteConsoleInput function, which writes data directly to the console input buffer.
-author: bitcrazed
-ms.author: richturn
+author: miniksa
+ms.author: miniksa
 ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:

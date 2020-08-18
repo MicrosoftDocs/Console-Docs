@@ -1,8 +1,8 @@
 ---
 title: KEY_EVENT_RECORD structure
 description: Describes a keyboard input event in a console INPUT\_RECORD structure.
-author: bitcrazed
-ms.author: richturn
+author: miniksa
+ms.author: miniksa
 ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:

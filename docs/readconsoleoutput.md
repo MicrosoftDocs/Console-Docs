@@ -1,8 +1,8 @@
 ---
 title: ReadConsoleOutput function
 description: Reads character and color attribute data from a rectangular block of character cells in a console screen buffer and writes data in the destination buffer.
-author: bitcrazed
-ms.author: richturn
+author: miniksa
+ms.author: miniksa
 ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:

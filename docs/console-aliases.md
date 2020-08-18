@@ -1,8 +1,8 @@
 ---
 title: Console Aliases
 description: Describes console aliases and how they are used to map source strings to target strings.
-author: bitcrazed
-ms.author: richturn
+author: miniksa
+ms.author: miniksa
 ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:

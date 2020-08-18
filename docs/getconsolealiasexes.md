@@ -1,8 +1,8 @@
 ---
 title: GetConsoleAliasExes function
 description: Retrieves the names of all executable files with console aliases defined.
-author: bitcrazed
-ms.author: richturn
+author: miniksa
+ms.author: miniksa
 ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:

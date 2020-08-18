@@ -1,8 +1,8 @@
 ---
 title: SetConsoleCtrlHandler function
 description: Adds or removes an application-defined HandlerRoutine function from the list of handler functions for the calling process.
-author: bitcrazed
-ms.author: richturn
+author: miniksa
+ms.author: miniksa
 ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
