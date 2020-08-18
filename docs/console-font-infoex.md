@@ -5,6 +5,13 @@ author: miniksa
 ms.author: miniksa
 ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
+f1_keywords: 
+- consoleapi3/CONSOLE_FONT_INFOEX
+- wincon/CONSOLE_FONT_INFOEX
+- CONSOLE_FONT_INFOEX
+- consoleapi3/PCONSOLE_FONT_INFOEX
+- wincon/PCONSOLE_FONT_INFOEX
+- PCONSOLE_FONT_INFOEX
 MS-HAID:
 - 'base.console\_font\_infoex'
 - 'consoles.console\_font\_infoex'

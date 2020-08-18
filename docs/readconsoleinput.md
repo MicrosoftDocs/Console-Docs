@@ -5,6 +5,16 @@ author: miniksa
 ms.author: miniksa
 ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
+f1_keywords:
+- consoleapi/ReadConsoleInput
+- wincon/ReadConsoleInput
+- ReadConsoleInput
+- consoleapi/ReadConsoleInputA
+- wincon/ReadConsoleInputA
+- ReadConsoleInputA
+- consoleapi/ReadConsoleInputW
+- wincon/ReadConsoleInputW
+- ReadConsoleInputW
 MS-HAID:
 - '\_win32\_readconsoleinput'
 - 'base.readconsoleinput'

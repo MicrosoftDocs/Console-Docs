@@ -5,6 +5,16 @@ author: miniksa
 ms.author: miniksa
 ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
+f1_keywords:
+- consoleapi2/WriteConsoleInput
+- wincon/WriteConsoleInput
+- WriteConsoleInput
+- consoleapi2/WriteConsoleInputA
+- wincon/WriteConsoleInputA
+- WriteConsoleInputA
+- consoleapi2/WriteConsoleInputW
+- wincon/WriteConsoleInputW
+- WriteConsoleInputW
 MS-HAID:
 - '\_win32\_writeconsoleinput'
 - 'base.writeconsoleinput'

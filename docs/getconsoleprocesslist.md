@@ -5,6 +5,10 @@ author: miniksa
 ms.author: miniksa
 ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
+f1_keywords:
+- consoleapi3/GetConsoleProcessList
+- wincon/GetConsoleProcessList
+- GetConsoleProcessList
 MS-HAID:
 - '\_win32\_getconsoleprocesslist'
 - 'base.getconsoleprocesslist'

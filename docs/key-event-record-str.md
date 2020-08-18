@@ -5,6 +5,13 @@ author: miniksa
 ms.author: miniksa
 ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
+f1_keywords:
+- wincontypes/KEY_EVENT_RECORD
+- wincon/KEY_EVENT_RECORD
+- KEY_EVENT_RECORD
+- wincontypes/PKEY_EVENT_RECORD
+- wincon/PKEY_EVENT_RECORD
+- PKEY_EVENT_RECORD
 MS-HAID:
 - '\_win32\_key\_event\_record\_str'
 - 'base.key\_event\_record\_str'

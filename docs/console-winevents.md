@@ -5,6 +5,21 @@ author: miniksa
 ms.author: miniksa
 ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
+f1_keywords:
+- winuser/EVENT_CONSOLE_CARET
+- winuser/EVENT_CONSOLE_END_APPLICATION
+- winuser/EVENT_CONSOLE_LAYOUT
+- winuser/EVENT_CONSOLE_START_APPLICATION
+- winuser/EVENT_CONSOLE_UPDATE_REGION
+- winuser/EVENT_CONSOLE_UPDATE_SCROLL
+- winuser/EVENT_CONSOLE_UPDATE_SIMPLE
+- EVENT_CONSOLE_CARET
+- EVENT_CONSOLE_END_APPLICATION
+- EVENT_CONSOLE_LAYOUT
+- EVENT_CONSOLE_START_APPLICATION
+- EVENT_CONSOLE_UPDATE_REGION
+- EVENT_CONSOLE_UPDATE_SCROLL
+- EVENT_CONSOLE_UPDATE_SIMPLE
 MS-HAID:
 - '\_win32\_console\_winevents'
 - 'base.console\_winevents'

@@ -5,6 +5,10 @@ author: miniksa
 ms.author: miniksa
 ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
+f1_keywords:
+- consoleapi2/GetConsoleScreenBufferInfoEx
+- wincon/GetConsoleScreenBufferInfoEx
+- GetConsoleScreenBufferInfoEx
 MS-HAID:
 - 'base.getconsolescreenbufferinfoex'
 - 'consoles.getconsolescreenbufferinfoex'

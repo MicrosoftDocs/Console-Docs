@@ -5,6 +5,16 @@ author: miniksa
 ms.author: miniksa
 ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
+f1_keywords:
+- consoleapi3/GetConsoleAliases
+- wincon/GetConsoleAliases
+- GetConsoleAliases
+- consoleapi3/GetConsoleAliasesA
+- wincon/GetConsoleAliasesA
+- GetConsoleAliasesA
+- consoleapi3/GetConsoleAliasesW
+- wincon/GetConsoleAliasesW
+- GetConsoleAliasesW
 MS-HAID:
 - 'base.getconsolealiases'
 - 'consoles.getconsolealiases'
