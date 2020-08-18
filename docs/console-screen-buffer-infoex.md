@@ -5,6 +5,9 @@ author: bitcrazed
 ms.author: richturn
 ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
+f1_keywords:
+- CONSOLEAPI2/CONSOLE_SCREEN_BUFFER_INFOEX
+- CONSOLE_SCREEN_BUFFER_INFOEX
 MS-HAID:
 - 'base.console\_screen\_buffer\_infoex'
 - 'consoles.console\_screen\_buffer\_infoex'

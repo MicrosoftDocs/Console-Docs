@@ -5,6 +5,9 @@ author: bitcrazed
 ms.author: richturn
 ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
+f1_keywords:
+- WINNT/FILE_SHARE_READ
+- FILE_SHARE_READ
 MS-HAID:
 - '\_win32\_createconsolescreenbuffer'
 - 'base.createconsolescreenbuffer'

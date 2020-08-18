@@ -5,6 +5,9 @@ author: bitcrazed
 ms.author: richturn
 ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
+f1_keywords:
+- WINCONTYPES/PCHAR_INFO
+- PCHAR_INFO
 MS-HAID:
 - '\_win32\_char\_info\_str'
 - 'base.char\_info\_str'

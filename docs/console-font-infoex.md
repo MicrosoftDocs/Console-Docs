@@ -5,6 +5,9 @@ author: bitcrazed
 ms.author: richturn
 ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
+f1_keywords:
+- WINCON/CONSOLE_FONT_INFOEX
+- CONSOLE_FONT_INFOEX
 MS-HAID:
 - 'base.console\_font\_infoex'
 - 'consoles.console\_font\_infoex'

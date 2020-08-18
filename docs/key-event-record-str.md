@@ -5,6 +5,9 @@ author: bitcrazed
 ms.author: richturn
 ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
+f1_keywords:
+- WINCONTYPES/KEY_EVENT_RECORD
+- KEY_EVENT_RECORD
 MS-HAID:
 - '\_win32\_key\_event\_record\_str'
 - 'base.key\_event\_record\_str'
