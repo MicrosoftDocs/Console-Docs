@@ -1,10 +1,14 @@
 ---
 title: GetConsoleScreenBufferInfo function
 description: See reference information about the GetConsoleScreenBufferInfo function, which retrieves information about the specified console screen buffer.
-author: bitcrazed
-ms.author: richturn
+author: miniksa
+ms.author: miniksa
 ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
+f1_keywords:
+- consoleapi2/GetConsoleScreenBufferInfo
+- wincon/GetConsoleScreenBufferInfo
+- GetConsoleScreenBufferInfo
 ms.assetid: eafe819e-a99a-4ce1-8898-8860444a31af
 
 topic_type:

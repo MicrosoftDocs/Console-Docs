@@ -1,10 +1,14 @@
 ---
 title: GenerateConsoleCtrlEvent function
 description: Sends a specified signal to a console process group that shares the console associated with the calling process.
-author: bitcrazed
-ms.author: richturn
+author: miniksa
+ms.author: miniksa
 ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
+f1_keywords:
+- consoleapi2/GenerateConsoleCtrlEvent
+- wincon/GenerateConsoleCtrlEvent
+- GenerateConsoleCtrlEvent
 MS-HAID:
 - '\_win32\_generateconsolectrlevent'
 - 'base.generateconsolectrlevent'

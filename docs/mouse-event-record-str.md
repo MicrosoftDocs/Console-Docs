@@ -1,10 +1,17 @@
 ---
 title: MOUSE_EVENT_RECORD structure
 description: See reference information about the MOUSE_EVENT_RECORD structure, which describes a mouse input event in a console INPUT_RECORD structure.
-author: bitcrazed
-ms.author: richturn
+author: miniksa
+ms.author: miniksa
 ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
+f1_keywords:
+- wincontypes/MOUSE_EVENT_RECORD
+- wincon/MOUSE_EVENT_RECORD
+- MOUSE_EVENT_RECORD
+- wincontypes/PMOUSE_EVENT_RECORD
+- wincon/PMOUSE_EVENT_RECORD
+- PMOUSE_EVENT_RECORD
 MS-HAID:
 - '\_win32\_mouse\_event\_record\_str'
 - 'base.mouse\_event\_record\_str'

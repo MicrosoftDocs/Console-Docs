@@ -1,10 +1,20 @@
 ---
 title: ScrollConsoleScreenBuffer function
 description: See reference information about the ScrollConsoleScreenBuffer function, which moves a block of data in a screen buffer.
-author: bitcrazed
-ms.author: richturn
+author: miniksa
+ms.author: miniksa
 ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
+f1_keywords:
+- consoleapi2/ScrollConsoleScreenBuffer
+- wincon/ScrollConsoleScreenBuffer
+- ScrollConsoleScreenBuffer
+- consoleapi2/ScrollConsoleScreenBufferA
+- wincon/ScrollConsoleScreenBufferA
+- ScrollConsoleScreenBufferA
+- consoleapi2/ScrollConsoleScreenBufferW
+- wincon/ScrollConsoleScreenBufferW
+- ScrollConsoleScreenBufferW
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/desktop'

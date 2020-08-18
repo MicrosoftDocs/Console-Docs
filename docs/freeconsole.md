@@ -1,10 +1,14 @@
 ---
 title: FreeConsole function
 description: See reference information about the FreeConsole function, which detaches the calling process from its console.
-author: bitcrazed
-ms.author: richturn
+author: miniksa
+ms.author: miniksa
 ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
+f1_keywords:
+- consoleapi/FreeConsole
+- wincon/FreeConsole
+- FreeConsole
 MS-HAID:
 - '\_win32\_freeconsole'
 - 'base.freeconsole'

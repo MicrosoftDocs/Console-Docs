@@ -1,10 +1,14 @@
 ---
 title: GetCurrentConsoleFontEx function
 description: See reference information about the GetCurrentConsoleFontEx function, which retrieves extended information about the currently used console font.
-author: bitcrazed
-ms.author: richturn
+author: miniksa
+ms.author: miniksa
 ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
+f1_keywords:
+- consoleapi3/GetCurrentConsoleFontEx
+- wincon/GetCurrentConsoleFontEx
+- GetCurrentConsoleFontEx
 MS-HAID:
 - 'base.getcurrentconsolefontex'
 - 'consoles.getcurrentconsolefontex'

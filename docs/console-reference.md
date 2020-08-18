@@ -1,8 +1,8 @@
 ---
 title: Console Reference
 description: Describes the three sections of the Console API, console functions, structures, and WinEvents.
-author: bitcrazed
-ms.author: richturn
+author: miniksa
+ms.author: miniksa
 ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:

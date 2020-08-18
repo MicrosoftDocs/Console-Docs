@@ -1,8 +1,8 @@
 ---
 title: Console Input Buffer
 description: Each console has an input buffer that contains a queue of input event records.
-author: bitcrazed
-ms.author: richturn
+author: miniksa
+ms.author: miniksa
 ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:

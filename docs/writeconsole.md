@@ -1,10 +1,20 @@
 ---
 title: WriteConsole function
 description: Writes a character string to a console screen buffer beginning at the current cursor location.
-author: bitcrazed
-ms.author: richturn
+author: miniksa
+ms.author: miniksa
 ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
+f1_keywords:
+- consoleapi/WriteConsole
+- wincon/WriteConsole
+- WriteConsole
+- consoleapi/WriteConsoleA
+- wincon/WriteConsoleA
+- WriteConsoleA
+- consoleapi/WriteConsoleW
+- wincon/WriteConsoleW
+- WriteConsoleW
 MS-HAID:
 - '\_win32\_writeconsole'
 - 'base.writeconsole'

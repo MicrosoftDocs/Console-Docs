@@ -1,10 +1,14 @@
 ---
 title: GetConsoleMode function
 description: Retrieves the current input mode of a console's input buffer or the current output mode of a console screen buffer.
-author: bitcrazed
-ms.author: richturn
+author: miniksa
+ms.author: miniksa
 ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
+f1_keywords:
+- consoleapi/GetConsoleMode
+- wincon/GetConsoleMode
+- GetConsoleMode
 MS-HAID:
 - '\_win32\_getconsolemode'
 - 'base.getconsolemode'

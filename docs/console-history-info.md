@@ -1,10 +1,17 @@
 ---
 title: CONSOLE_HISTORY_INFO structure
 description: See reference information about the CONSOLE_HISTORY_INFO structure, which contains information about the console history.
-author: bitcrazed
-ms.author: richturn
+author: miniksa
+ms.author: miniksa
 ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
+f1_keywords: 
+- consoleapi3/CONSOLE_HISTORY_INFO
+- wincon/CONSOLE_HISTORY_INFO
+- CONSOLE_HISTORY_INFO
+- consoleapi3/PCONSOLE_HISTORY_INFO
+- wincon/PCONSOLE_HISTORY_INFO
+- PCONSOLE_HISTORY_INFO
 MS-HAID:
 - 'base.console\_history\_info'
 - 'consoles.console\_history\_info'

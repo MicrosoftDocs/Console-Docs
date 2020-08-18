@@ -1,10 +1,20 @@
 ---
 title: GetConsoleOriginalTitle function
 description: See reference information about the GetConsoleOriginalTitle function, which retrieves the original title for the current console window.
-author: bitcrazed
-ms.author: richturn
+author: miniksa
+ms.author: miniksa
 ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
+f1_keywords:
+- consoleapi2/GetConsoleOriginalTitle
+- wincon/GetConsoleOriginalTitle
+- GetConsoleOriginalTitle
+- consoleapi2/GetConsoleOriginalTitleA
+- wincon/GetConsoleOriginalTitleA
+- GetConsoleOriginalTitleA
+- consoleapi2/GetConsoleOriginalTitleW
+- wincon/GetConsoleOriginalTitleW
+- GetConsoleOriginalTitleW
 MS-HAID:
 - 'base.getconsoleoriginaltitle'
 - 'consoles.getconsoleoriginaltitle'

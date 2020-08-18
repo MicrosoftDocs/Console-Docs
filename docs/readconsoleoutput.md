@@ -1,10 +1,20 @@
 ---
 title: ReadConsoleOutput function
 description: Reads character and color attribute data from a rectangular block of character cells in a console screen buffer and writes data in the destination buffer.
-author: bitcrazed
-ms.author: richturn
+author: miniksa
+ms.author: miniksa
 ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
+f1_keywords:
+- consoleapi2/ReadConsoleOutput
+- wincon/ReadConsoleOutput
+- ReadConsoleOutput
+- consoleapi2/ReadConsoleOutputA
+- wincon/ReadConsoleOutputA
+- ReadConsoleOutputA
+- consoleapi2/ReadConsoleOutputW
+- wincon/ReadConsoleOutputW
+- ReadConsoleOutputW
 MS-HAID:
 - '\_win32\_readconsoleoutput'
 - 'base.readconsoleoutput'

@@ -6,6 +6,9 @@ ms.author: miniksa
 ms.topic: article
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api, conpty, pseudoconsole
+f1_keywords:
+- consoleapi/ResizePseudoConsole
+- ResizePseudoConsole
 topic_type:
 - apiref
 api_name:

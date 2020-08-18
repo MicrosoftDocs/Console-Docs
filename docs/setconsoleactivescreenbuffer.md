@@ -1,10 +1,14 @@
 ---
 title: SetConsoleActiveScreenBuffer function
 description: Sets the specified screen buffer to be the currently displayed console screen buffer.
-author: bitcrazed
-ms.author: richturn
+author: miniksa
+ms.author: miniksa
 ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
+f1_keywords:
+- consoleapi2/SetConsoleActiveScreenBuffer
+- wincon/SetConsoleActiveScreenBuffer
+- SetConsoleActiveScreenBuffer
 MS-HAID:
 - '\_win32\_setconsoleactivescreenbuffer'
 - 'base.setconsoleactivescreenbuffer'

@@ -1,10 +1,14 @@
 ---
 title: SetConsoleScreenBufferInfoEx function
 description: Sets extended information about the specified console screen buffer to the specified buffer.
-author: bitcrazed
-ms.author: richturn
+author: miniksa
+ms.author: miniksa
 ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
+f1_keywords:
+- consoleapi2/SetConsoleScreenBufferInfoEx
+- wincon/SetConsoleScreenBufferInfoEx
+- SetConsoleScreenBufferInfoEx
 MS-HAID:
 - 'base.setconsolescreenbufferinfoex'
 - 'consoles.setconsolescreenbufferinfoex'

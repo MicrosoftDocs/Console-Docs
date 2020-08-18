@@ -1,10 +1,14 @@
 ---
 title: GetConsoleSelectionInfo function
 description: See reference information about the GetConsoleSelectionInfo function, which retrieves information about the current console selection.
-author: bitcrazed
-ms.author: richturn
+author: miniksa
+ms.author: miniksa
 ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
+f1_keywords:
+- consoleapi3/GetConsoleSelectionInfo
+- wincon/GetConsoleSelectionInfo
+- GetConsoleSelectionInfo
 MS-HAID:
 - '\_win32\_getconsoleselectioninfo'
 - 'base.getconsoleselectioninfo'

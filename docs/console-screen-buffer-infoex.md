@@ -1,10 +1,17 @@
 ---
 title: CONSOLE_SCREEN_BUFFER_INFOEX structure
 description: See reference information about the CONSOLE_SCREEN_BUFFER_INFOEX structure, which contains extended information about a console screen buffer.
-author: bitcrazed
-ms.author: richturn
+author: miniksa
+ms.author: miniksa
 ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
+f1_keywords: 
+- consoleapi2/CONSOLE_SCREEN_BUFFER_INFOEX
+- wincon/CONSOLE_SCREEN_BUFFER_INFOEX
+- CONSOLE_SCREEN_BUFFER_INFOEX
+- consoleapi2/PCONSOLE_SCREEN_BUFFER_INFOEX
+- wincon/PCONSOLE_SCREEN_BUFFER_INFOEX
+- PCONSOLE_SCREEN_BUFFER_INFOEX
 MS-HAID:
 - 'base.console\_screen\_buffer\_infoex'
 - 'consoles.console\_screen\_buffer\_infoex'

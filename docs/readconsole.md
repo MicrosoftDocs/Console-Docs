@@ -1,10 +1,20 @@
 ---
 title: ReadConsole function
 description: Reads character input from the console input buffer and removes it from the buffer.
-author: bitcrazed
-ms.author: richturn
+author: miniksa
+ms.author: miniksa
 ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
+f1_keywords:
+- consoleapi/ReadConsole
+- wincon/ReadConsole
+- ReadConsole
+- consoleapi/ReadConsoleA
+- wincon/ReadConsoleA
+- ReadConsoleA
+- consoleapi/ReadConsoleW
+- wincon/ReadConsoleW
+- ReadConsoleW
 MS-HAID:
 - '\_win32\_readconsole'
 - 'base.readconsole'

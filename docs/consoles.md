@@ -1,8 +1,8 @@
 ---
 title: Consoles – Windows Desktop 
 description: A console is an application that provides I/O to command-line applications. 
-author: bitcrazed
-ms.author: richturn
+author: miniksa
+ms.author: miniksa
 ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:

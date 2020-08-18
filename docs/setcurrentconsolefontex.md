@@ -1,10 +1,14 @@
 ---
 title: SetCurrentConsoleFontEx function
 description: See reference information about the SetCurrentConsoleFontEx function, which sets extended information about the current console font.
-author: bitcrazed
-ms.author: richturn
+author: miniksa
+ms.author: miniksa
 ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
+f1_keywords:
+- consoleapi3/SetCurrentConsoleFontEx
+- wincon/SetCurrentConsoleFontEx
+- SetCurrentConsoleFontEx
 MS-HAID:
 - 'base.setcurrentconsolefontex'
 - 'consoles.setcurrentconsolefontex'

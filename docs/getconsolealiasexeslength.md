@@ -1,10 +1,20 @@
 ---
 title: GetConsoleAliasExesLength function
 description: Retrieves the required size for the buffer used by the GetConsoleAliasExes function.
-author: bitcrazed
-ms.author: richturn
+author: miniksa
+ms.author: miniksa
 ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
+f1_keywords:
+- consoleapie/GetConsoleAliasExesLength
+- wincon/GetConsoleAliasExesLength
+- GetConsoleAliasExesLength
+- consoleapie/GetConsoleAliasExesLengthA
+- wincon/GetConsoleAliasExesLengthA
+- GetConsoleAliasExesLengthA
+- consoleapie/GetConsoleAliasExesLengthW
+- wincon/GetConsoleAliasExesLengthW
+- GetConsoleAliasExesLengthW
 MS-HAID:
 - 'base.getconsolealiasexeslength'
 - 'consoles.getconsolealiasexeslength'

@@ -1,10 +1,14 @@
 ---
 title: SetConsoleMode function
 description: Sets the input mode of a console's input buffer or the output mode of a console screen buffer.
-author: bitcrazed
-ms.author: richturn
+author: miniksa
+ms.author: miniksa
 ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
+f1_keywords:
+- consoleapi/SetConsoleMode
+- wincon/SetConsoleMode
+- SetConsoleMode
 MS-HAID:
 - '\_win32\_setconsolemode'
 - 'base.setconsolemode'

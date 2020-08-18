@@ -1,10 +1,14 @@
 ---
 title: CreateConsoleScreenBuffer function
 description: CreateConsoleScreenBuffer function creates a screen buffer for the Windows Console.
-author: bitcrazed
-ms.author: richturn
+author: miniksa
+ms.author: miniksa
 ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
+f1_keywords:
+- consoleapi2/CreateConsoleScreenBuffer
+- wincon/CreateConsoleScreenBuffer
+- CreateConsoleScreenBuffer
 MS-HAID:
 - '\_win32\_createconsolescreenbuffer'
 - 'base.createconsolescreenbuffer'

@@ -1,10 +1,17 @@
 ---
 title: COORD structure
 description: Defines the coordinates of a character cell in a console screen buffer.
-author: bitcrazed
-ms.author: richturn
+author: miniksa
+ms.author: miniksa
 ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
+f1_keywords:
+- wincontypes/COORD
+- wincon/COORD
+- COORD
+- wincontypes/PCOORD
+- wincon/PCOORD
+- PCOORD
 MS-HAID:
 - '\_win32\_coord\_str'
 - 'base.coord\_str'

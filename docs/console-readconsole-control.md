@@ -1,10 +1,17 @@
 ---
 title: CONSOLE_READCONSOLE_CONTROL structure
 description: See reference information about the CONSOLE_READCONSOLE_CONTROL structure, which contains information for a console read operation.
-author: bitcrazed
-ms.author: richturn
+author: miniksa
+ms.author: miniksa
 ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
+f1_keywords: 
+- consoleapi/CONSOLE_READCONSOLE_CONTROL
+- wincon/CONSOLE_READCONSOLE_CONTROL
+- CONSOLE_READCONSOLE_CONTROL
+- consoleapi/PCONSOLE_READCONSOLE_CONTROL
+- wincon/PCONSOLE_READCONSOLE_CONTROL
+- PCONSOLE_READCONSOLE_CONTROL
 MS-HAID:
 - 'base.console\_readconsole\_control'
 - 'consoles.console\_readconsole\_control'
