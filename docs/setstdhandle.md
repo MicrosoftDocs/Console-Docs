@@ -1,8 +1,8 @@
 ---
 title: SetStdHandle function
 description: Sets the handle for the specified standard device (standard input, standard output, or standard error).
-author: bitcrazed
-ms.author: richturn
+author: miniksa
+ms.author: miniksa
 ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:

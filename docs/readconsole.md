@@ -1,8 +1,8 @@
 ---
 title: ReadConsole function
 description: Reads character input from the console input buffer and removes it from the buffer.
-author: bitcrazed
-ms.author: richturn
+author: miniksa
+ms.author: miniksa
 ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:

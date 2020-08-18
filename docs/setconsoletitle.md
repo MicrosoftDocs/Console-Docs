@@ -1,8 +1,8 @@
 ---
 title: SetConsoleTitle function
 description: See reference information about the SetConsoleTitle function, which sets the title for the current console window.
-author: bitcrazed
-ms.author: richturn
+author: miniksa
+ms.author: miniksa
 ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:

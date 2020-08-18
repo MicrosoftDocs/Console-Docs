@@ -1,8 +1,8 @@
 ---
 title: GetConsoleDisplayMode function
 description: See reference information about the GetConsoleDisplayMode function, which retrieves the display mode of the current console.
-author: bitcrazed
-ms.author: richturn
+author: miniksa
+ms.author: miniksa
 ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:

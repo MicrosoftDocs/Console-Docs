@@ -1,8 +1,8 @@
 ---
 title: Scrolling a Screen Buffer's Window
 description: The SetConsoleWindowInfo function can be used to scroll the contents of a screen buffer in the console window.
-author: bitcrazed
-ms.author: richturn
+author: miniksa
+ms.author: miniksa
 ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
