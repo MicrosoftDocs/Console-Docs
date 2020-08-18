@@ -5,6 +5,16 @@ author: bitcrazed
 ms.author: richturn
 ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
+f1_keywords:
+- consoleapi/ReadConsole
+- wincon/ReadConsole
+- ReadConsole
+- consoleapi/ReadConsoleA
+- wincon/ReadConsoleA
+- ReadConsoleA
+- consoleapi/ReadConsoleW
+- wincon/ReadConsoleW
+- ReadConsoleW
 MS-HAID:
 - '\_win32\_readconsole'
 - 'base.readconsole'

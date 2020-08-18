@@ -3,6 +3,10 @@ author: bitcrazed
 ms.author: richturn
 ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
+f1_keywords:
+- wincontypes/SMALL_RECT
+- wincon/SMALL_RECT
+- SMALL_RECT
 title: SMALL_RECT structure
 description: Defines the coordinates of the upper left and lower right corners of a rectangle.
 MS-HAID:

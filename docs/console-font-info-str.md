@@ -5,6 +5,13 @@ author: bitcrazed
 ms.author: richturn
 ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
+f1_keywords: 
+- wincontypes/CONSOLE_FONT_INFO
+- wincon/CONSOLE_FONT_INFO
+- CONSOLE_FONT_INFO
+- wincontypes/PCONSOLE_FONT_INFO
+- wincon/PCONSOLE_FONT_INFO
+- PCONSOLE_FONT_INFO
 MS-HAID:
 - '\_win32\_console\_font\_info\_str'
 - 'base.console\_font\_info\_str'

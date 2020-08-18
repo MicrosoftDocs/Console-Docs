@@ -5,6 +5,10 @@ author: bitcrazed
 ms.author: richturn
 ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
+f1_keywords:
+- consoleapi2/ReadConsoleOutputAttribute
+- wincon/ReadConsoleOutputAttribute
+- ReadConsoleOutputAttribute
 MS-HAID:
 - '\_win32\_readconsoleoutputattribute'
 - 'base.readconsoleoutputattribute'

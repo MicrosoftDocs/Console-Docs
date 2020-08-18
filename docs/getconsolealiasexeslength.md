@@ -5,6 +5,16 @@ author: bitcrazed
 ms.author: richturn
 ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
+f1_keywords:
+- consoleapie/GetConsoleAliasExesLength
+- wincon/GetConsoleAliasExesLength
+- GetConsoleAliasExesLength
+- consoleapie/GetConsoleAliasExesLengthA
+- wincon/GetConsoleAliasExesLengthA
+- GetConsoleAliasExesLengthA
+- consoleapie/GetConsoleAliasExesLengthW
+- wincon/GetConsoleAliasExesLengthW
+- GetConsoleAliasExesLengthW
 MS-HAID:
 - 'base.getconsolealiasexeslength'
 - 'consoles.getconsolealiasexeslength'

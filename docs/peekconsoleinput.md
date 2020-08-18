@@ -5,6 +5,16 @@ author: bitcrazed
 ms.author: richturn
 ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
+f1_keywords:
+- consoleapi/PeekConsoleInput
+- wincon/PeekConsoleInput
+- PeekConsoleInput
+- consoleapi/PeekConsoleInputA
+- wincon/PeekConsoleInputA
+- PeekConsoleInputA
+- consoleapi/PeekConsoleInputW
+- wincon/PeekConsoleInputW
+- PeekConsoleInputW
 MS-HAID:
 - '\_win32\_peekconsoleinput'
 - 'base.peekconsoleinput'

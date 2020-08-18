@@ -5,6 +5,13 @@ author: bitcrazed
 ms.author: richturn
 ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
+f1_keywords: 
+- consoleapi2/CONSOLE_SCREEN_BUFFER_INFO
+- wincon/CONSOLE_SCREEN_BUFFER_INFO
+- CONSOLE_SCREEN_BUFFER_INFO
+- consoleapi2/PCONSOLE_SCREEN_BUFFER_INFO
+- wincon/PCONSOLE_SCREEN_BUFFER_INFO
+- PCONSOLE_SCREEN_BUFFER_INFO
 MS-HAID:
 - '\_win32\_console\_screen\_buffer\_info\_str'
 - 'base.console\_screen\_buffer\_info\_str'

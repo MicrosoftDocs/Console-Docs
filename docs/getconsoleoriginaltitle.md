@@ -5,6 +5,16 @@ author: bitcrazed
 ms.author: richturn
 ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
+f1_keywords:
+- consoleapi2/GetConsoleOriginalTitle
+- wincon/GetConsoleOriginalTitle
+- GetConsoleOriginalTitle
+- consoleapi2/GetConsoleOriginalTitleA
+- wincon/GetConsoleOriginalTitleA
+- GetConsoleOriginalTitleA
+- consoleapi2/GetConsoleOriginalTitleW
+- wincon/GetConsoleOriginalTitleW
+- GetConsoleOriginalTitleW
 MS-HAID:
 - 'base.getconsoleoriginaltitle'
 - 'consoles.getconsoleoriginaltitle'

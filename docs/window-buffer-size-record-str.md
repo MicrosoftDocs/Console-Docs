@@ -5,6 +5,13 @@ author: bitcrazed
 ms.author: richturn
 ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
+f1_keywords:
+- wincontypes/WINDOW_BUFFER_SIZE_RECORD
+- wincon/WINDOW_BUFFER_SIZE_RECORD
+- WINDOW_BUFFER_SIZE_RECORD
+- wincontypes/PWINDOW_BUFFER_SIZE_RECORD
+- wincon/PWINDOW_BUFFER_SIZE_RECORD
+- PWINDOW_BUFFER_SIZE_RECORD
 MS-HAID:
 - '\_win32\_window\_buffer\_size\_record\_str'
 - 'base.window\_buffer\_size\_record\_str'

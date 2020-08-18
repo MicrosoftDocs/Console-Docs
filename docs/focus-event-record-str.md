@@ -5,6 +5,13 @@ author: bitcrazed
 ms.author: richturn
 ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
+f1_keywords:
+- wincontypes/FOCUS_EVENT_RECORD
+- wincon/FOCUS_EVENT_RECORD
+- FOCUS_EVENT_RECORD
+- wincontypes/PFOCUS_EVENT_RECORD
+- wincon/PFOCUS_EVENT_RECORD
+- PFOCUS_EVENT_RECORD
 MS-HAID:
 - '\_win32\_focus\_event\_record\_str'
 - 'base.focus\_event\_record\_str'

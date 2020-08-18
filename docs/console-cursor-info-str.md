@@ -5,6 +5,13 @@ author: bitcrazed
 ms.author: richturn
 ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
+f1_keywords: 
+- wincontypes/CONSOLE_CURSOR_INFO
+- wincon/CONSOLE_CURSOR_INFO
+- CONSOLE_CURSOR_INFO
+- wincontypes/PCONSOLE_CURSOR_INFO
+- wincon/PCONSOLE_CURSOR_INFO
+- PCONSOLE_CURSOR_INFO
 MS-HAID:
 - '\_win32\_console\_cursor\_info\_str'
 - 'base.console\_cursor\_info\_str'

@@ -5,6 +5,13 @@ author: bitcrazed
 ms.author: richturn
 ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
+f1_keywords:
+- consoleapi3/CONSOLE_SELECTION_INFO
+- wincon/CONSOLE_SELECTION_INFO
+- CONSOLE_SELECTION_INFO
+- consoleapi3/PCONSOLE_SELECTION_INFO
+- wincon/PCONSOLE_SELECTION_INFO
+- PCONSOLE_SELECTION_INFO
 MS-HAID:
 - '\_win32\_console\_selection\_info\_str'
 - 'base.console\_selection\_info\_str'

@@ -5,6 +5,16 @@ author: bitcrazed
 ms.author: richturn
 ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
+f1_keywords:
+- consoleapi3/GetConsoleAlias
+- wincon/GetConsoleAlias
+- GetConsoleAlias
+- consoleapi3/GetConsoleAliasA
+- wincon/GetConsoleAliasA
+- GetConsoleAliasA
+- consoleapi3/GetConsoleAliasW
+- wincon/GetConsoleAliasW
+- GetConsoleAliasW
 MS-HAID:
 - 'base.getconsolealias'
 - 'consoles.getconsolealias'
