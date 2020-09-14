@@ -1,6 +1,6 @@
 ---
 title: GenerateConsoleCtrlEvent function
-description: Sends a specified signal to a console process group that shares the console associated with the calling process.
+description: Sends a specified signal to processes that share the console associated with the calling process.
 author: miniksa
 ms.author: miniksa
 ms.topic: article
@@ -68,7 +68,7 @@ The type of signal to be generated. This parameter can be one of the following v
 <td><span id="CTRL_C_EVENT"></span><span id="ctrl_c_event"></span>
 <strong>CTRL_C_EVENT</strong>
 0</td>
-<td><p>Generates a CTRL+C signal. This signal cannot be generated for process groups. If <em>dwProcessGroupId</em> is nonzero, this function will succeed, but the CTRL+C signal will not be received by processes within the specified process group.</p></td>
+<td><p>Generates a CTRL+C signal. This signal cannot be limited to a specific process group. If <em>dwProcessGroupId</em> is nonzero, this function will succeed, but the CTRL+C signal will not be received by processes within the specified process group.</p></td>
 </tr>
 <tr class="even">
 <td><span id="CTRL_BREAK_EVENT"></span><span id="ctrl_break_event"></span>
