@@ -4,7 +4,6 @@ description: The system creates a new console when it starts a console process, 
 author: miniksa
 ms.author: miniksa
 ms.topic: conceptual
-ms.localizationpriority: high
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
 - '\_win32\_creation\_of\_a\_console'

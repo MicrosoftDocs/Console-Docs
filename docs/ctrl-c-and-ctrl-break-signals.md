@@ -4,7 +4,6 @@ description: The CTRL+C and CTRL+BREAK key combinations receive special handling
 author: miniksa
 ms.author: miniksa
 ms.topic: conceptual
-ms.localizationpriority: high
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
 - '\_win32\_ctrl\_c\_and\_ctrl\_break\_signals'

@@ -4,7 +4,6 @@ description: See reference information about the AllocConsole function, which al
 author: miniksa
 ms.author: miniksa
 ms.topic: article
-ms.localizationpriority: high
 keywords: console, character mode applications, command line applications, terminal applications, console api
 f1_keywords: 
 - consoleapi/AllocConsole

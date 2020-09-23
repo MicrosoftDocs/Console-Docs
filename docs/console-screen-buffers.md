@@ -4,7 +4,6 @@ description: A screen buffer is a two-dimensional array of character and color d
 author: miniksa
 ms.author: miniksa
 ms.topic: conceptual
-ms.localizationpriority: high
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
 - '\_win32\_console\_screen\_buffers'

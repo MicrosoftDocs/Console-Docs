@@ -4,7 +4,6 @@ description: Virtual terminal sequences are control character sequences that can
 author: miniksa
 ms.author: miniksa
 ms.topic: conceptual
-ms.localizationpriority: high
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MSHAttr:
 - 'PreferredSiteName:MSDN'
