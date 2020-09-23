@@ -18,8 +18,7 @@ ms.assetid: 84ec2559-cade-447e-8594-5b824d3d3e81
 
 # Creation of a Console
 
-
-The system creates a new console when it starts a *console process*, a character-mode process whose entry point is the **main** function. For example, the system creates a new console when it starts the command processor. When the command processor starts a new console process, the user can specify whether the system creates a new console for the new process or whether it inherits the command processor's console.
+The system creates a new console when it starts a *console process*, a character-mode process whose entry point is the **main** function. For example, the system creates a new console when it starts the command processor `cmd.exe`. When the command processor starts a new console process, the user can specify whether the system creates a new console for the new process or whether it inherits the command processor's console.
 
 A process can create a console by using one of the following methods:
 
@@ -45,24 +44,15 @@ The system uses default values if the [**STARTUPINFO**](https://msdn.microsoft.c
 A process cannot change the location of its console window on the screen, but the following console functions are available to set or retrieve the other properties specified in the [**STARTUPINFO**](https://msdn.microsoft.com/library/windows/desktop/ms686331) structure.
 
 
-| Function                                                         | Description                                                          |
-|------------------------------------------------------------------|----------------------------------------------------------------------|
+| Function | Description |
+|---|---|
 | [**GetConsoleScreenBufferInfo**](getconsolescreenbufferinfo.md) | Retrieves the window size, screen buffer size, and color attributes. |
-| [**SetConsoleWindowInfo**](setconsolewindowinfo.md)             | Changes the size of the console window.                              |
-| [**SetConsoleScreenBufferSize**](setconsolescreenbuffersize.md) | Changes the size of the console screen buffer.                       |
-| [**SetConsoleTextAttribute**](setconsoletextattribute.md)       | Sets the color attributes.                                           |
-| [**SetConsoleTitle**](setconsoletitle.md)                       | Sets the console window title.                                       |
-| [**GetConsoleTitle**](getconsoletitle.md)                       | Retrieves the console window title.                                  |
-
-
-
+| [**SetConsoleWindowInfo**](setconsolewindowinfo.md)  | Changes the size of the console window.  |
+| [**SetConsoleScreenBufferSize**](setconsolescreenbuffersize.md) | Changes the size of the console screen buffer. |
+| [**SetConsoleTextAttribute**](setconsoletextattribute.md) | Sets the color attributes.  |
+| [**SetConsoleTitle**](setconsoletitle.md)  | Sets the console window title. |
+| [**GetConsoleTitle**](getconsoletitle.md)  | Retrieves the console window title.  |
 
 A process can use the [**FreeConsole**](freeconsole.md) function to detach itself from an inherited console or from a console created by [**AllocConsole**](allocconsole.md).
 
-
-
-
-
-
-
-
+A process can use the [**AttachConsole**](attachconsole.md) function to attach itself to another existing console session after using [**FreeConsole**](freeconsole.md) to detach from its own session (or if there is otherwise no attached session).

@@ -17,7 +17,7 @@ Hosting a pseudoconsole session is a bit different than a traditional console se
 
 You can find additional background information about this system on the [initial announcement blog post](https://blogs.msdn.microsoft.com/commandline/2018/08/02/windows-command-line-introducing-the-windows-pseudo-console-conpty/).
 
-Complete examples of using the Pseudoconsole are available on our GitHub repository [Microsoft/console](https://github.com/Microsoft/console) in the samples directory.
+Complete examples of using the Pseudoconsole are available on our GitHub repository [Microsoft/terminal](https://github.com/Microsoft/terminal) in the samples directory.
 
 ## Preparing the communication channels
 

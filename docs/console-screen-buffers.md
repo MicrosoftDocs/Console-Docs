@@ -33,23 +33,23 @@ A number of properties associated with a screen buffer can be set independently 
 - Cursor position, appearance, and visibility.
 - Output modes (**ENABLE\_PROCESSED\_OUTPUT** and **ENABLE\_WRAP\_AT\_EOL\_OUTPUT**). For more information about console output modes, see [High-Level Console Modes](high-level-console-modes.md).
 
-When a screen buffer is created, it contains blanks. Its cursor is visible and positioned at the buffer's origin (0,0), and the window is positioned with its upper left corner at the buffer's origin. The size of the console screen buffer, the window size, the text attributes, and the appearance of the cursor are determined by the user or by the system defaults. To retrieve the current values of the various properties associated with the console screen buffer, use the [**GetConsoleScreenBufferInfo**](getconsolescreenbufferinfo.md), [**GetConsoleCursorInfo**](getconsolecursorinfo.md), and [**GetConsoleMode**](getconsolemode.md) functions.
+When a screen buffer is created, it contains space characters in every position. Its cursor is visible and positioned at the buffer's origin (0,0), and the window is positioned with its upper left corner at the buffer's origin. The size of the console screen buffer, the window size, the text attributes, and the appearance of the cursor are determined by the user or by the system defaults. To retrieve the current values of the various properties associated with the console screen buffer, use the [**GetConsoleScreenBufferInfo**](getconsolescreenbufferinfo.md), [**GetConsoleCursorInfo**](getconsolecursorinfo.md), and [**GetConsoleMode**](getconsolemode.md) functions.
 
-Applications that change any of the console screen buffer properties should either create their own screen buffer or save the state of the inherited screen buffer during startup and restore it at exit.
+Applications that change any of the console screen buffer properties should either create their own screen buffer or save the state of the inherited screen buffer during startup and restore it at exit. This cooperative behavior is required to ensure that other applications sharing the same console session are not impacted by the changes.
 
 ## <span id="_win32_cursor_appearance_and_position"></span><span id="_WIN32_CURSOR_APPEARANCE_AND_POSITION"></span>Cursor Appearance and Position
 
 
 A screen buffer's cursor can be visible or hidden. When it is visible, its appearance can vary, ranging from completely filling a character cell to appearing as a horizontal line at the bottom of the cell. To retrieve information about the appearance and visibility of the cursor, use the [**GetConsoleCursorInfo**](getconsolecursorinfo.md) function. This function reports whether the cursor is visible and describes the appearance of the cursor as the percentage of a character cell that it fills. To set the appearance and visibility of the cursor, use the [**SetConsoleCursorInfo**](setconsolecursorinfo.md) function.
 
-Characters written by the high-level console I/O functions are written at the current cursor location, advancing the cursor to the next location. To determine the current cursor position in the coordinate system of a screen buffer, use [**GetConsoleScreenBufferInfo**](getconsolescreenbufferinfo.md). You can use [**SetConsoleCursorPosition**](setconsolecursorposition.md) to set the cursor position and, thereby, control the placement of text that is written or echoed by the high-level I/O functions. If you move the cursor, text at the new cursor location is overwritten.
+Characters written by the [high-level console I/O functions](high-level-console-i-o.md) are written at the current cursor location, advancing the cursor to the next location. To determine the current cursor position in the coordinate system of a screen buffer, use [**GetConsoleScreenBufferInfo**](getconsolescreenbufferinfo.md). You can use [**SetConsoleCursorPosition**](setconsolecursorposition.md) to set the cursor position and, thereby, control the placement of text that is written or echoed by the high-level I/O functions. If you move the cursor, text at the new cursor location is overwritten.
 
 The position, appearance, and visibility of the cursor are set independently for each screen buffer.
 
 ## <span id="_win32_character_attributes"></span><span id="_WIN32_CHARACTER_ATTRIBUTES"></span>Character Attributes
 
 
-Character attributes can be divided into two classes: color and DBCS. The following attributes are defined in the Wincon.h header file.
+Character attributes can be divided into two classes: color and DBCS. The following attributes are defined in the `wincon.h` header file.
 
 
 | Attribute                         | Meaning                                       |

@@ -120,10 +120,3 @@ Requirements
 
 [**GetStdHandle**](getstdhandle.md)
 
- 
-
- 
-
-
-
-
