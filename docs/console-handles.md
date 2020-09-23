@@ -4,6 +4,7 @@ description: A console process uses handles to access the input and screen buffe
 author: miniksa
 ms.author: miniksa
 ms.topic: article
+ms.localizationpriority: high
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
 - '\_win32\_console\_handles'

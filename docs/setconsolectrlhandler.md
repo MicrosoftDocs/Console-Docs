@@ -4,6 +4,7 @@ description: Adds or removes an application-defined HandlerRoutine function from
 author: miniksa
 ms.author: miniksa
 ms.topic: article
+ms.localizationpriority: high
 keywords: console, character mode applications, command line applications, terminal applications, console api
 f1_keywords:
 - consoleapi/SetConsoleCtrlHandler

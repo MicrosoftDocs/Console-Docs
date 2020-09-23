@@ -4,6 +4,7 @@ description: Legacy console mode is a compatibility tool to assist with running 
 author: miniksa
 ms.author: miniksa
 ms.topic: article
+ms.localizationpriority: high
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api, compatibility
 

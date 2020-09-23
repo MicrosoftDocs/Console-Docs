@@ -4,6 +4,7 @@ description: Writes a character string to a console screen buffer beginning at t
 author: miniksa
 ms.author: miniksa
 ms.topic: article
+ms.localizationpriority: high
 keywords: console, character mode applications, command line applications, terminal applications, console api
 f1_keywords:
 - consoleapi/WriteConsole

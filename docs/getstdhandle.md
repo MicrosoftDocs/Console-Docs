@@ -4,6 +4,7 @@ description: Retrieves a handle to the specified standard device (standard input
 author: miniksa
 ms.author: miniksa
 ms.topic: article
+ms.localizationpriority: high
 keywords: console, character mode applications, command line applications, terminal applications, console api
 f1_keywords:
 - processenv/GetStdHandle
