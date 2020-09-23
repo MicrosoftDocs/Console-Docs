@@ -3,7 +3,7 @@ title: Using the Console
 description: The following examples demonstrate how to use various console functions.
 author: miniksa
 ms.author: miniksa
-ms.topic: article
+ms.topic: hub-page
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
 - '\_win32\_using\_the\_console'

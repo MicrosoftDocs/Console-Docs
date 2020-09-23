@@ -3,7 +3,7 @@ title: Creation of a Console
 description: The system creates a new console when it starts a console process, a character-mode process whose entry point is the main function.
 author: miniksa
 ms.author: miniksa
-ms.topic: article
+ms.topic: conceptual
 ms.localizationpriority: high
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:

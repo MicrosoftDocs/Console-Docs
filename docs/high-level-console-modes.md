@@ -3,7 +3,7 @@ title: High-Level Console Modes
 description: The behavior of the high-level console functions is affected by the console input and output modes.
 author: miniksa
 ms.author: miniksa
-ms.topic: article
+ms.topic: conceptual
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
 - '\_win32\_high\_level\_console\_modes'

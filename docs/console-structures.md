@@ -3,7 +3,7 @@ title: Console Structures
 description: Describes a complete list of the structurest that are used to access a console.
 author: miniksa
 ms.author: miniksa
-ms.topic: article
+ms.topic: hub-page
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
 - '\_win32\_console\_structures'

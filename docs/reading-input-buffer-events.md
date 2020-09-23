@@ -3,7 +3,7 @@ title: Reading Input Buffer Events
 description: The ReadConsoleInput function can be used to directly access a console's input buffer.
 author: miniksa
 ms.author: miniksa
-ms.topic: article
+ms.topic: sample
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
 - '\_win32\_reading\_input\_buffer\_events'

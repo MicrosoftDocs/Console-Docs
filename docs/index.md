@@ -3,7 +3,7 @@ title: Console documentation
 description: Read the home page for Windows Console documentation, which describes how you can programmatically control and interact with the Windows Console.
 author: miniksa
 ms.author: miniksa
-ms.topic: article
+ms.topic: landing-page
 keywords: console, character mode applications, command line applications, terminal applications, console api
 ---
 

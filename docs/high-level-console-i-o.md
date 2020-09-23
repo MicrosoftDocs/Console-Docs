@@ -3,7 +3,7 @@ title: High-Level Console I/O
 description: The high-level I/O functions provide a simple way to read a stream of characters from console input or to write a stream of characters to console output.
 author: miniksa
 ms.author: miniksa
-ms.topic: article
+ms.topic: conceptual
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
 - '\_win32\_high\_level\_console\_i\_o'

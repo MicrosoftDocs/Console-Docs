@@ -3,7 +3,7 @@ title: Clearing the Screen
 description: How to clear the screen of the Windows Console using the system function or programmatically using public API functions.
 author: miniksa
 ms.author: miniksa
-ms.topic: article
+ms.topic: sample
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
 - '\_win32\_clearing\_the\_screen'

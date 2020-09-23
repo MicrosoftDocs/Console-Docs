@@ -3,7 +3,7 @@ title: Scrolling a Screen Buffer's Contents
 description: The ScrollConsoleScreenBuffer function moves a block of character cells from one part of a screen buffer to another part of the same screen buffer.
 author: miniksa
 ms.author: miniksa
-ms.topic: article
+ms.topic: sample
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
 - '\_win32\_scrolling\_a\_screen\_buffer\_s\_contents'

@@ -3,7 +3,7 @@ title: Pseudoconsoles – Windows Desktop
 description: A pseudoconsole is a concept used to provide the hosting or servicing aspect of a character-mode application.
 author: miniksa
 ms.author: miniksa
-ms.topic: article
+ms.topic: conceptual
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api, conpty, pseudoconsole
 
@@ -21,7 +21,7 @@ This functionality is designed for third-party "terminal window" applications to
 
 Note that the underlying console session will still be created on behalf of the application requesting the pseudoconsole. All the rules of [console sessions](consoles.md) still apply including the ability for multiple client character-mode applications to connect to the session.
 
-To provide maximum compatibility with the existing world of  pseudoterminal functionality, the information provided over the pseudoconsole channel will always be encoded in UTF-8. This does not affect the codepage or encoding of the client applications that are attached. Translation will happen inside the pseudoconsole system as necessary.
+To provide maximum compatibility with the existing world of pseudoterminal functionality, the information provided over the pseudoconsole channel will always be encoded in UTF-8. This does not affect the codepage or encoding of the client applications that are attached. Translation will happen inside the pseudoconsole system as necessary.
 
 An example for getting started can be found at [Creating a Pseudoconsole Session](creating-a-pseudoconsole-session.md).
 

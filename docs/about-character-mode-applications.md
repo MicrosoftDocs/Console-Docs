@@ -3,7 +3,7 @@ title: About Consoles
 description: Consoles provide high-level support for simple character mode applications that interact with the user by using functions that read from standard input and write to standard output or standard error.
 author: miniksa
 ms.author: miniksa
-ms.topic: article
+ms.topic: conceptual
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
 - '\_win32\_about\_character\_mode\_applications'

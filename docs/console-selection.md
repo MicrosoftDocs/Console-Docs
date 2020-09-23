@@ -3,7 +3,7 @@ title: Console Selection
 description: An accessibility application needs information about the user's selection in the console.
 author: miniksa
 ms.author: miniksa
-ms.topic: article
+ms.topic: conceptual
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
 - '\_win32\_console\_selection'

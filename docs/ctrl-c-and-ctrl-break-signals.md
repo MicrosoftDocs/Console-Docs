@@ -3,7 +3,7 @@ title: CTRL+C and CTRL+BREAK Signals
 description: The CTRL+C and CTRL+BREAK key combinations receive special handling by console processes.
 author: miniksa
 ms.author: miniksa
-ms.topic: article
+ms.topic: conceptual
 ms.localizationpriority: high
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:

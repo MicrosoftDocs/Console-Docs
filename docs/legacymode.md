@@ -3,7 +3,7 @@ title: Legacy Console Mode – Windows Desktop
 description: Legacy console mode is a compatibility tool to assist with running command-line applications that may not work with the Windows 10 console host
 author: miniksa
 ms.author: miniksa
-ms.topic: article
+ms.topic: conceptual
 ms.localizationpriority: high
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api, compatibility
