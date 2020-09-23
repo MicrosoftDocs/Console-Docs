@@ -1,5 +1,5 @@
 ---
-title: Consoles
+title: Character Mode Applications
 description: Consoles manage input and output (I/O) for character-mode applications (applications that do not provide their own graphical user interface).
 author: miniksa
 ms.author: miniksa
@@ -15,8 +15,7 @@ MSHAttr:
 ms.assetid: ea3ea214-892c-4953-bc22-7905efbc173f
 ---
 
-# Consoles
-
+# Character Mode Applications
 
 Consoles manage input and output (I/O) for character-mode applications (applications that do not provide their own graphical user interface).
 
