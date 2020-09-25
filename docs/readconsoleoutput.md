@@ -41,7 +41,7 @@ api_type:
 
 # ReadConsoleOutput function
 
-[!INCLUDE [not-recommended-banner](.\includes\not-recommended-banner.md)]
+[!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
 Reads character and color attribute data from a rectangular block of character cells in a console screen buffer, and the function writes the data to a rectangular block at a specified location in the destination buffer.
 
