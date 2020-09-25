@@ -33,6 +33,7 @@ api_type:
 
 # FillConsoleOutputAttribute function
 
+[!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
 Sets the character attributes for a specified number of character cells, beginning at the specified coordinates in a screen buffer.
 
@@ -121,7 +122,6 @@ Requirements
 
 ## <span id="see_also"></span>See also
 
-
 [Console Functions](console-functions.md)
 
 [**COORD**](coord-str.md)
@@ -133,11 +133,3 @@ Requirements
 [**SetConsoleTextAttribute**](setconsoletextattribute.md)
 
 [**WriteConsoleOutputAttribute**](writeconsoleoutputattribute.md)
-
- 
-
- 
-
-
-
-

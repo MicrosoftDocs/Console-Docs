@@ -279,11 +279,3 @@ Requirements
 [**WriteConsole**](writeconsole.md)
 
 [**WriteFile**](https://msdn.microsoft.com/library/windows/desktop/aa365747)
-
- 
-
- 
-
-
-
-

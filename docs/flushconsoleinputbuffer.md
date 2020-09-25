@@ -32,7 +32,6 @@ api_type:
 
 # FlushConsoleInputBuffer function
 
-
 Flushes the console input buffer. All input records currently in the input buffer are discarded.
 
 Syntax
@@ -109,11 +108,3 @@ Requirements
 [**ReadConsoleInput**](readconsoleinput.md)
 
 [**WriteConsoleInput**](writeconsoleinput.md)
-
- 
-
- 
-
-
-
-

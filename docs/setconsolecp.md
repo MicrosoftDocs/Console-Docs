@@ -123,11 +123,3 @@ Requirements
 [**GetConsoleOutputCP**](getconsoleoutputcp.md)
 
 [**SetConsoleOutputCP**](setconsoleoutputcp.md)
-
- 
-
- 
-
-
-
-

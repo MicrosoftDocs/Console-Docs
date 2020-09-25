@@ -110,11 +110,3 @@ Requirements
 [Console Functions](console-functions.md)
 
 [Consoles](consoles.md)
-
- 
-
- 
-
-
-
-

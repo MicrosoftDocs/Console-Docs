@@ -30,7 +30,6 @@ api_type:
 
 # HandlerRoutine callback function
 
-
 An application-defined function used with the [**SetConsoleCtrlHandler**](setconsolectrlhandler.md) function. A console process uses this function to handle control signals received by the process. When the signal is received, the system creates a new thread in the process to execute the function.
 
 The **PHANDLER\_ROUTINE** type defines a pointer to this callback function. **HandlerRoutine** is a placeholder for the application-defined function name.
@@ -183,11 +182,3 @@ Requirements
 [**SetConsoleCtrlHandler**](setconsolectrlhandler.md)
 
 [**SetProcessShutdownParameters**](https://msdn.microsoft.com/library/windows/desktop/ms686227)
-
- 
-
- 
-
-
-
-

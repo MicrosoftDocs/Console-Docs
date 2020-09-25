@@ -17,7 +17,6 @@ ms.assetid: 31bbf2b1-2519-4589-8059-7757cfda105a
 
 # Using the Console
 
-
 The following examples demonstrate how to use the console functions:
 
 - [Using the high-level input and output functions](using-the-high-level-input-and-output-functions.md)
@@ -27,11 +26,3 @@ The following examples demonstrate how to use the console functions:
 - [Scrolling a screen buffer's window](scrolling-a-screen-buffer-s-window.md)
 - [Scrolling a screen buffer's contents](scrolling-a-screen-buffer-s-contents.md)
 - [Registering a control handler function](registering-a-control-handler-function.md)
-
- 
-
- 
-
-
-
-

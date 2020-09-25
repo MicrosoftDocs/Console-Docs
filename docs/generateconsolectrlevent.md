@@ -150,11 +150,3 @@ Requirements
 [**ExitProcess**](https://msdn.microsoft.com/library/windows/desktop/ms682658)
 
 [**SetConsoleCtrlHandler**](setconsolectrlhandler.md)
-
- 
-
- 
-
-
-
-

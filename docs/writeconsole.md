@@ -42,7 +42,6 @@ api_type:
 
 # WriteConsole function
 
-
 Writes a character string to a console screen buffer beginning at the current cursor location.
 
 Syntax
@@ -172,11 +171,3 @@ Requirements
 [**SetCursorPos**](https://msdn.microsoft.com/library/windows/desktop/ms648394(v=vs.85).aspx)
 
 [**WriteFile**](https://msdn.microsoft.com/library/windows/desktop/aa365747)
-
- 
-
- 
-
-
-
-

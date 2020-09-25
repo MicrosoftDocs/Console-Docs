@@ -17,6 +17,7 @@ ms.assetid: 41bfdc51-27cb-4d5e-898c-507ffc8789b9
 
 # Low-Level Console Modes
 
+[!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
 The types of input events reported in a console's input buffer depend on the console's mouse and window input modes. The console's processed input mode determines how the system handles the CTRL+C key combination. To set or retrieve the state of a console's input modes, an application can specify a console input buffer handle in a call to the [**SetConsoleMode**](setconsolemode.md) or [**GetConsoleMode**](getconsolemode.md) function. The following modes are used with console input handles.
 
@@ -30,11 +31,3 @@ The types of input events reported in a console's input buffer depend on the con
 
 
 The output modes of a screen buffer do not affect the behavior of the low-level output functions.
-
-
-
-
-
-
-
-

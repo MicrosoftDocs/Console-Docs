@@ -30,6 +30,7 @@ api_type:
 
 # GetConsoleFontSize function
 
+[!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
 Retrieves the size of the font used by the specified console screen buffer.
 
@@ -109,11 +110,3 @@ Requirements
 [**COORD**](coord-str.md)
 
 [**GetCurrentConsoleFont**](getcurrentconsolefont.md)
-
- 
-
- 
-
-
-
-

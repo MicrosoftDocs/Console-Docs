@@ -23,6 +23,7 @@ api_type:
 
 # GetConsoleScreenBufferInfo function
 
+[!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
 Retrieves information about the specified console screen buffer.
 
@@ -118,11 +119,3 @@ Requirements
 [**SetConsoleWindowInfo**](setconsolewindowinfo.md)
 
 [Window and Screen Buffer Size](window-and-screen-buffer-size.md)
-
- 
-
- 
-
-
-
-

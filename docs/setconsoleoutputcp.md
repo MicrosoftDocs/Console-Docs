@@ -33,7 +33,6 @@ api_type:
 
 # SetConsoleOutputCP function
 
-
 Sets the output code page used by the console associated with the calling process. A console uses its output code page to translate the character values written by the various output functions into the images displayed in the console window.
 
 Syntax
@@ -124,11 +123,3 @@ Requirements
 [**GetConsoleOutputCP**](getconsoleoutputcp.md)
 
 [**SetConsoleCP**](setconsolecp.md)
-
- 
-
- 
-
-
-
-

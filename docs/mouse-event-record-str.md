@@ -33,6 +33,7 @@ api_type:
 
 # MOUSE\_EVENT\_RECORD structure
 
+[!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
 Describes a mouse input event in a console [**INPUT\_RECORD**](input-record-str.md) structure.
 
@@ -298,11 +299,3 @@ Requirements
 [**ReadConsoleInput**](readconsoleinput.md)
 
 [**WriteConsoleInput**](writeconsoleinput.md)
-
- 
-
- 
-
-
-
-

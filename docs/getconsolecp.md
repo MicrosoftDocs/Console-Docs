@@ -113,11 +113,3 @@ Requirements
 [**SetConsoleCP**](setconsolecp.md)
 
 [**SetConsoleOutputCP**](setconsoleoutputcp.md)
-
- 
-
- 
-
-
-
-

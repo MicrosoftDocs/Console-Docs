@@ -32,6 +32,7 @@ api_type:
 
 # CONSOLE\_FONT\_INFOEX structure
 
+[!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
 Contains extended information for a console font.
 
@@ -101,13 +102,4 @@ Requirements
 
 ## <span id="see_also"></span>See also
 
-
 [**GetCurrentConsoleFontEx**](getcurrentconsolefontex.md)
-
- 
-
- 
-
-
-
-

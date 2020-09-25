@@ -90,11 +90,3 @@ An application can use [**GetConsoleScreenBufferInfo**](getconsolescreenbufferin
 The [**GetCurrentConsoleFont**](getcurrentconsolefont.md) function retrieves information about the current console font. The information stored in the [**CONSOLE\_FONT\_INFO**](console-font-info-str.md) structure includes the width and height of each character in the font.
 
 The [**GetConsoleFontSize**](getconsolefontsize.md) function retrieves the size of the font used by the specified console screen buffer.
-
-
-
-
-
-
-
-

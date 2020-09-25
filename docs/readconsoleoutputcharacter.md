@@ -41,6 +41,7 @@ api_type:
 
 # ReadConsoleOutputCharacter function
 
+[!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
 Copies a number of characters from consecutive cells of a console screen buffer, beginning at a specified location.
 
@@ -155,11 +156,3 @@ Requirements
 [**WriteConsoleOutputAttribute**](writeconsoleoutputattribute.md)
 
 [**WriteConsoleOutputCharacter**](writeconsoleoutputcharacter.md)
-
- 
-
- 
-
-
-
-

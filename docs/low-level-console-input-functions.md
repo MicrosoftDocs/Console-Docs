@@ -17,6 +17,7 @@ ms.assetid: 41488614-ca7c-4207-b706-f7776423c7ba
 
 # Low-Level Console Input Functions
 
+[!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
 A low-level console input functions buffer contains input records that can include information about keyboard, mouse, buffer-resizing, focus, and menu events. The low-level functions provide direct access to the input buffer, unlike the high-level functions that filter and process the input buffer's data, discarding all but keyboard input.
 

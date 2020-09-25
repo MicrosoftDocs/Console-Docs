@@ -33,6 +33,7 @@ api_type:
 
 # SetConsoleCursorInfo function
 
+[!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
 Sets the size and visibility of the cursor for the specified console screen buffer.
 
@@ -117,11 +118,3 @@ Requirements
 [**GetConsoleCursorInfo**](getconsolecursorinfo.md)
 
 [**SetConsoleCursorPosition**](setconsolecursorposition.md)
-
- 
-
- 
-
-
-
-

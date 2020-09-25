@@ -29,6 +29,7 @@ api_type:
 
 # GetConsoleHistoryInfo function
 
+[!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
 Retrieves the history settings for the calling process's console.
 
@@ -105,11 +106,3 @@ Requirements
 [**CONSOLE\_HISTORY\_INFO**](console-history-info.md)
 
 [**SetConsoleHistoryInfo**](setconsolehistoryinfo.md)
-
- 
-
- 
-
-
-
-

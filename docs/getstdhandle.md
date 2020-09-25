@@ -35,7 +35,6 @@ api_type:
 
 # GetStdHandle function
 
-
 Retrieves a handle to the specified standard device (standard input, standard output, or standard error).
 
 Syntax
@@ -175,11 +174,3 @@ Requirements
 [**WriteConsole**](writeconsole.md)
 
 [**WriteFile**](https://msdn.microsoft.com/library/windows/desktop/aa365747)
-
- 
-
- 
-
-
-
-

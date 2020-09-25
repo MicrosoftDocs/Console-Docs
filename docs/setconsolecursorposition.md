@@ -33,6 +33,7 @@ api_type:
 
 # SetConsoleCursorPosition function
 
+[!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
 Sets the cursor position in the specified console screen buffer.
 
@@ -132,11 +133,3 @@ Requirements
 [**WriteConsole**](writeconsole.md)
 
 [**WriteFile**](https://msdn.microsoft.com/library/windows/desktop/aa365747)
-
- 
-
- 
-
-
-
-

@@ -17,6 +17,7 @@ ms.assetid: 0226cd94-86d0-452b-80e6-e0fed8af0a62
 
 # Using the High-Level Input and Output Functions
 
+[!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
 The following example uses the high-level console I/O functions for console I/O. For more information about the high-level console I/O functions, see [High-Level Console I/O](high-level-console-i-o.md).
 
@@ -236,11 +237,3 @@ void ScrollScreenBuffer(HANDLE h, INT x)
         &chiFill);       // fill character and color 
 }
 ```
-
- 
-
- 
-
-
-
-

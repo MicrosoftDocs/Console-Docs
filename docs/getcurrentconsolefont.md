@@ -30,6 +30,7 @@ api_type:
 
 # GetCurrentConsoleFont function
 
+[!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
 Retrieves information about the current console font.
 
@@ -108,7 +109,6 @@ Requirements
 
 ## <span id="see_also"></span>See also
 
-
 [Console Functions](console-functions.md)
 
 [Console Screen Buffers](console-screen-buffers.md)
@@ -116,11 +116,3 @@ Requirements
 [**CONSOLE\_FONT\_INFO**](console-font-info-str.md)
 
 [**GetConsoleFontSize**](getconsolefontsize.md)
-
- 
-
- 
-
-
-
-

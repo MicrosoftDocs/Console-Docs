@@ -72,11 +72,3 @@ If the input event is a buffer-resizing event, the **Event** member of [**INPUT\
 If the user reduces the size of the console screen buffer, any data in the discarded portion of the buffer is lost.
 
 Changes to the console screen buffer size as a result of application calls to the [**SetConsoleScreenBufferSize**](setconsolescreenbuffersize.md) function are not generated as buffer-resizing events.
-
- 
-
- 
-
-
-
-

@@ -35,11 +35,3 @@ To change a screen buffer's size, use the [**SetConsoleScreenBufferSize**](setco
 To change the size or location of a screen buffer's window, use the [**SetConsoleWindowInfo**](setconsolewindowinfo.md) function. This function fails if the specified window-corner coordinates exceed the limits of the console screen buffer or the screen. Changing the window size of the active screen buffer changes the size of the console window displayed on the screen.
 
 A process can change its console's input mode to enable window input so that the process is able to receive input when the user changes the console screen buffer size. If an application enables window input, it can use [**GetConsoleScreenBufferInfo**](getconsolescreenbufferinfo.md) to retrieve window and screen buffer size at startup. This information can then be used to determine the way data is displayed in the window. If the user changes the console screen buffer size, the application can respond by changing the way data is displayed. For example, an application can adjust the way text wraps at the end of the line if the number of characters per row changes. If an application does not enable window input, it must either use the inherited window and screen buffer sizes, or set them to the desired size during startup and restore the inherited sizes at exit. For additional information about window input mode, see [Low-Level Console Modes](low-level-console-modes.md).
-
- 
-
- 
-
-
-
-

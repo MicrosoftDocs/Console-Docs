@@ -33,7 +33,6 @@ api_type:
 
 # CONSOLE\_SCREEN\_BUFFER\_INFO structure
 
-
 Contains information about a console screen buffer.
 
 Syntax

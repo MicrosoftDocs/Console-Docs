@@ -17,6 +17,7 @@ ms.assetid: c8404e78-9807-4bed-bc12-25377fa96151
 
 # Scrolling the Screen Buffer
 
+[!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
 The console window displays a portion of the active screen buffer. Each screen buffer maintains its own current window rectangle that specifies the coordinates of the upper left and lower right character cells to be displayed in the console window. To determine the current window rectangle of a screen buffer, use [**GetConsoleScreenBufferInfo**](getconsolescreenbufferinfo.md). When a screen buffer is created, the upper left corner of its window is at the upper left corner of the console screen buffer at (0,0).
 
@@ -42,11 +43,3 @@ The illustration shows a [**ScrollConsoleScreenBuffer**](scrollconsolescreenbuff
 ![screen buffer window](images/cscon-02.png)
 
 The effects of [**ScrollConsoleScreenBuffer**](scrollconsolescreenbuffer.md) can be limited by specifying an optional clipping rectangle so that the contents of the console screen buffer outside the clipping rectangle are unchanged. The effect of clipping is to create a subwindow (the clipping rectangle) whose contents are scrolled without affecting the rest of the console screen buffer. For an example that uses **ScrollConsoleScreenBuffer**, see [Scrolling a Screen Buffer's Contents](scrolling-a-screen-buffer-s-contents.md).
-
- 
-
- 
-
-
-
-

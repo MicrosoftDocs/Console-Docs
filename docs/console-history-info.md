@@ -32,6 +32,7 @@ api_type:
 
 # CONSOLE\_HISTORY\_INFO structure
 
+[!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
 Contains information about the console history.
 

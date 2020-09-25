@@ -33,6 +33,7 @@ api_type:
 
 # CONSOLE\_SELECTION\_INFO structure
 
+[!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
 Contains information for a console selection.
 
@@ -144,11 +145,3 @@ Requirements
 [**GetConsoleSelectionInfo**](getconsoleselectioninfo.md)
 
 [**SMALL\_RECT**](small-rect-str.md)
-
- 
-
- 
-
-
-
-

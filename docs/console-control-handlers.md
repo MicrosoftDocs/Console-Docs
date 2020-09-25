@@ -23,11 +23,3 @@ Each console process has its own list of control handler functions that are call
 The function's *dwCtrlType* parameter identifies which control signal was received, and the return value indicates whether the signal was handled.
 
 For an example of a control handler function, see [Registering a Control Handler Function](registering-a-control-handler-function.md).
-
- 
-
- 
-
-
-
-

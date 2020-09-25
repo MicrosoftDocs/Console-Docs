@@ -41,7 +41,6 @@ api_type:
 
 # WriteConsoleOutput function
 
-
 Writes character and color attribute data to a specified rectangular block of character cells in a console screen buffer. The data to be written is taken from a correspondingly sized rectangular block at a specified location in the source buffer.
 
 Syntax
@@ -174,11 +173,3 @@ Requirements
 [**WriteConsoleOutputAttribute**](writeconsoleoutputattribute.md)
 
 [**WriteConsoleOutputCharacter**](writeconsoleoutputcharacter.md)
-
- 
-
- 
-
-
-
-

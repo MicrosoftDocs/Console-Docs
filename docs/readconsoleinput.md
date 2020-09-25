@@ -163,11 +163,3 @@ Requirements
 [**SetConsoleOutputCP**](setconsoleoutputcp.md)
 
 [**WriteConsoleInput**](writeconsoleinput.md)
-
- 
-
- 
-
-
-
-

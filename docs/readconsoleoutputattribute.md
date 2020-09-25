@@ -33,6 +33,7 @@ api_type:
 
 # ReadConsoleOutputAttribute function
 
+[!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
 Copies a specified number of character attributes from consecutive cells of a console screen buffer, beginning at a specified location.
 
@@ -137,11 +138,3 @@ Requirements
 [**WriteConsoleOutputAttribute**](writeconsoleoutputattribute.md)
 
 [**WriteConsoleOutputCharacter**](writeconsoleoutputcharacter.md)
-
- 
-
- 
-
-
-
-

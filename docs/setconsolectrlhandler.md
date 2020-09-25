@@ -34,7 +34,6 @@ api_type:
 
 # SetConsoleCtrlHandler function
 
-
 Adds or removes an application-defined [**HandlerRoutine**](handlerroutine.md) function from the list of handler functions for the calling process.
 
 If no handler function is specified, the function sets an inheritable attribute that determines whether the calling process ignores <kbd>CTRL</kbd>+<kbd>C</kbd> signals.
@@ -151,11 +150,3 @@ Requirements
 [**HandlerRoutine**](handlerroutine.md)
 
 [**SetConsoleMode**](setconsolemode.md)
-
- 
-
- 
-
-
-
-

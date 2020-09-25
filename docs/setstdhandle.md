@@ -35,7 +35,6 @@ api_type:
 
 # SetStdHandle function
 
-
 Sets the handle for the specified standard device (standard input, standard output, or standard error).
 
 Syntax
@@ -157,11 +156,3 @@ Requirements
 [**CreateFile**](https://msdn.microsoft.com/library/windows/desktop/aa363858)
 
 [**GetStdHandle**](getstdhandle.md)
-
- 
-
- 
-
-
-
-

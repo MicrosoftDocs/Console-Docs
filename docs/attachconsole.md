@@ -143,11 +143,3 @@ Requirements
 [**FreeConsole**](freeconsole.md)
 
 [**GetConsoleProcessList**](getconsoleprocesslist.md)
-
- 
-
- 
-
-
-
-

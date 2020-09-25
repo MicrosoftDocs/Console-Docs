@@ -33,6 +33,7 @@ api_type:
 
 # CONSOLE\_CURSOR\_INFO structure
 
+[!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
 Contains information about the console cursor.
 
@@ -89,11 +90,3 @@ Requirements
 [**GetConsoleCursorInfo**](getconsolecursorinfo.md)
 
 [**SetConsoleCursorInfo**](setconsolecursorinfo.md)
-
- 
-
- 
-
-
-
-

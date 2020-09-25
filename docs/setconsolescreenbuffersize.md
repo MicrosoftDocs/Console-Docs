@@ -33,6 +33,7 @@ api_type:
 
 # SetConsoleScreenBufferSize function
 
+[!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
 Changes the size of the specified console screen buffer.
 
@@ -112,11 +113,3 @@ Requirements
 [**GetConsoleScreenBufferInfo**](getconsolescreenbufferinfo.md)
 
 [**SetConsoleWindowInfo**](setconsolewindowinfo.md)
-
- 
-
- 
-
-
-
-

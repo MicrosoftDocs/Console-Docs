@@ -21,11 +21,3 @@ ms.assetid: 254b7cfc-4dee-452f-a409-4fc90d20d4c1
 A process can use the [**FreeConsole**](freeconsole.md) function to detach itself from its console. If other processes share the console, the console is not destroyed, but the process that called **FreeConsole** cannot refer to it. After calling **FreeConsole**, the process can use [**AllocConsole**](allocconsole.md) to create a new console or [**AttachConsole**](attachconsole.md) to attach to another console.
 
 A console is closed when the last process attached to it terminates or calls [**FreeConsole**](freeconsole.md).
-
- 
-
- 
-
-
-
-

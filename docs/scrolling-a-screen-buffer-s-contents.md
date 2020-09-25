@@ -17,6 +17,7 @@ ms.assetid: 288c6a0f-fbaa-4eee-895e-a25884b7b70a
 
 # Scrolling a Screen Buffer's Contents
 
+[!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
 The [**ScrollConsoleScreenBuffer**](scrollconsolescreenbuffer.md) function moves a block of character cells from one part of a screen buffer to another part of the same screen buffer. The function specifies the upper left and lower right cells of the source rectangle to be moved and the destination coordinates of the new location for the upper left cell. The character and color data in the source cells is moved to the new location, and any cells left empty by the move are filled in with a specified character and color. If a clipping rectangle is specified, the cells outside of it are left unchanged.
 
@@ -103,11 +104,3 @@ return 0;
 [Scrolling a Screen Buffer's Window](scrolling-a-screen-buffer-s-window.md)
 
 [Scrolling the Screen Buffer](scrolling-the-screen-buffer.md)
-
- 
-
- 
-
-
-
-

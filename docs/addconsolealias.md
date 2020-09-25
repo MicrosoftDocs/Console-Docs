@@ -36,6 +36,7 @@ api_type:
 
 # AddConsoleAlias function
 
+[!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
 Defines a console alias for the specified executable.
 
@@ -73,6 +74,8 @@ Remarks
 -------
 
 To compile an application that uses this function, define **\_WIN32\_WINNT** as 0x0501 or later. For more information, see [Using the Windows Headers](https://msdn.microsoft.com/library/windows/desktop/aa383745).
+
+[!INCLUDE [no-vt-equiv-shell-banner](./includes/no-vt-equiv-shell-banner.md)]
 
 Examples
 --------
@@ -135,11 +138,3 @@ Requirements
 [**GetConsoleAliases**](getconsolealiases.md)
 
 [**GetConsoleAliasExes**](getconsolealiasexes.md)
-
- 
-
- 
-
-
-
-

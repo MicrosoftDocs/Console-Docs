@@ -17,20 +17,21 @@ ms.assetid: 94185428-e8c7-4926-93ec-867b8c97b4ca
 
 # Low-Level Console Output Functions
 
+[!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
 The low-level console output functions provide direct access to the character cells of a screen buffer. One set of functions reads from or writes to consecutive cells beginning at any location in the console screen buffer. Another set of functions reads from or writes to rectangular blocks of cells.
 
 The following functions read from or write to a specified number of consecutive character cells in a screen buffer, beginning with a specified cell.
 
 
-| Function                                                           | Description                                                                                                             |
+| Function | Description |
 |--------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| [**ReadConsoleOutputCharacter**](readconsoleoutputcharacter.md)   | Copies a string of Unicode or ANSI characters from a screen buffer.                                                     |
-| [**WriteConsoleOutputCharacter**](writeconsoleoutputcharacter.md) | Writes a string of Unicode or ANSI characters to a screen buffer.                                                       |
-| [**ReadConsoleOutputAttribute**](readconsoleoutputattribute.md)   | Copies a string of text and background color attributes from a screen buffer.                                           |
-| [**WriteConsoleOutputAttribute**](writeconsoleoutputattribute.md) | Writes a string of text and background color attributes to a screen buffer.                                             |
-| [**FillConsoleOutputCharacter**](fillconsoleoutputcharacter.md)   | Writes a single Unicode or ANSI character to a specified number of consecutive cells in a screen buffer.                |
-| [**FillConsoleOutputAttribute**](fillconsoleoutputattribute.md)   | Writes a text and background color attribute combination to a specified number of consecutive cells in a screen buffer. |
+| [**ReadConsoleOutputCharacter**](readconsoleoutputcharacter.md) | Copies a string of Unicode or ANSI characters from a screen buffer. |
+| [**WriteConsoleOutputCharacter**](writeconsoleoutputcharacter.md) | Writes a string of Unicode or ANSI characters to a screen buffer. |
+| [**ReadConsoleOutputAttribute**](readconsoleoutputattribute.md) | Copies a string of text and background color attributes from a screen buffer. |
+| [**WriteConsoleOutputAttribute**](writeconsoleoutputattribute.md) | Writes a string of text and background color attributes to a screen buffer. |
+| [**FillConsoleOutputCharacter**](fillconsoleoutputcharacter.md) | Writes a single Unicode or ANSI character to a specified number of consecutive cells in a screen buffer. |
+| [**FillConsoleOutputAttribute**](fillconsoleoutputattribute.md) | Writes a text and background color attribute combination to a specified number of consecutive cells in a screen buffer. |
 
 
 For all of these functions, when the last cell of a row is encountered, reading or writing wraps around to the first cell of the next row. When the end of the last row of the console screen buffer is encountered, the write functions discard all unwritten characters or attributes, and the read functions report the number of characters or attributes actually written.
@@ -38,10 +39,10 @@ For all of these functions, when the last cell of a row is encountered, reading 
 The following functions read from or write to rectangular blocks of character cells at a specified location in a screen buffer.
 
 
-| Function                                         | Description                                                                                                               |
+| Function | Description |
 |--------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
-| [**ReadConsoleOutput**](readconsoleoutput.md)   | Copies character and color data from a specified block of screen buffer cells into a given block in a destination buffer. |
-| [**WriteConsoleOutput**](writeconsoleoutput.md) | Writes character and color data to a specified block of screen buffer cells from a given block in a source buffer.        |
+| [**ReadConsoleOutput**](readconsoleoutput.md) | Copies character and color data from a specified block of screen buffer cells into a given block in a destination buffer. |
+| [**WriteConsoleOutput**](writeconsoleoutput.md) | Writes character and color data to a specified block of screen buffer cells from a given block in a source buffer. |
 
 
 
@@ -52,11 +53,3 @@ These functions automatically clip the specified screen buffer rectangle to fit 
 The illustration shows a [**ReadConsoleOutput**](readconsoleoutput.md) operation where clipping occurs when the block is read from the console screen buffer, and again when the block is copied into the destination buffer. The function reports the actual screen buffer rectangle that it copied from.
 
 ![screen buffer window with destination buffer](images/cscon-03.png)
-
-
-
-
-
-
-
-

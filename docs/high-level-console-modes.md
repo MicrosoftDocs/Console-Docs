@@ -74,13 +74,3 @@ An application can use the [**GetConsoleMode**](getconsolemode.md) function to d
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
- 
-
-
-
-

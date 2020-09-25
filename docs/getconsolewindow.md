@@ -38,6 +38,7 @@ api_type:
 
 # GetConsoleWindow function
 
+[!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
 Retrieves the window handle used by the console associated with the calling process.
 
@@ -105,11 +106,3 @@ Requirements
 
 
 [Console Functions](console-functions.md)
-
- 
-
- 
-
-
-
-

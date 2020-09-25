@@ -21,11 +21,3 @@ ms.assetid: 348e572f-2448-4384-9822-fab01d4ba255
 A process can use the [**AttachConsole**](attachconsole.md) function to attach to a console. A process can be attached to one console.
 
 A console can have many processes attached to it. To retrieve a list of the processes attached to a console, call the [**GetConsoleProcessList**](getconsoleprocesslist.md) function.
-
- 
-
- 
-
-
-
-

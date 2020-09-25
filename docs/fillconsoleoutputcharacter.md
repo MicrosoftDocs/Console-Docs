@@ -41,6 +41,7 @@ api_type:
 
 # FillConsoleOutputCharacter function
 
+[!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
 Writes a character to the console screen buffer a specified number of times, beginning at the specified coordinates.
 
@@ -151,11 +152,3 @@ Requirements
 [**SetConsoleOutputCP**](setconsoleoutputcp.md)
 
 [**WriteConsoleOutputCharacter**](writeconsoleoutputcharacter.md)
-
- 
-
- 
-
-
-
-

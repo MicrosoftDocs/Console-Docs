@@ -17,6 +17,7 @@ ms.assetid: eaa57723-f003-4e90-8156-be8c3b42b912
 
 # Reading and Writing Blocks of Characters and Attributes
 
+[!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
 The [**ReadConsoleOutput**](readconsoleoutput.md) function copies a rectangular block of character and color attribute data from a console screen buffer into a destination buffer. The function treats the destination buffer as a two-dimensional array of [**CHAR\_INFO**](char-info-str.md) structures. Similarly, the [**WriteConsoleOutput**](writeconsoleoutput.md) function copies a rectangular block of character and color attribute data from a source buffer to a console screen buffer. For more information about reading from or writing to rectangular blocks of screen buffer cells, see [Input and Output Methods](input-and-output-methods.md).
 
@@ -128,11 +129,3 @@ int main(void)
     return 0;
 }
 ```
-
- 
-
- 
-
-
-
-

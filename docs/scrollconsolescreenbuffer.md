@@ -37,6 +37,7 @@ api_type:
 
 # ScrollConsoleScreenBuffer function
 
+[!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
 Moves a block of data in a screen buffer. The effects of the move can be limited by specifying a clipping rectangle, so the contents of the console screen buffer outside the clipping rectangle are unchanged.
 
@@ -156,11 +157,3 @@ Requirements
 [**SetConsoleWindowInfo**](setconsolewindowinfo.md)
 
 [**SMALL\_RECT**](small-rect-str.md)
-
- 
-
- 
-
-
-
-

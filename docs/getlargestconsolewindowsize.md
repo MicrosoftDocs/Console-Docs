@@ -33,6 +33,7 @@ api_type:
 
 # GetLargestConsoleWindowSize function
 
+[!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
 Retrieves the size of the largest possible console window, based on the current font and the size of the display.
 
@@ -113,11 +114,3 @@ Requirements
 [**SetConsoleWindowInfo**](setconsolewindowinfo.md)
 
 [Window and Screen Buffer Size](window-and-screen-buffer-size.md)
-
- 
-
- 
-
-
-
-

@@ -33,6 +33,7 @@ api_type:
 
 # MENU\_EVENT\_RECORD structure
 
+[!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
 Describes a menu event in a console [**INPUT\_RECORD**](input-record-str.md) structure. These events are used internally and should be ignored.
 
@@ -79,11 +80,3 @@ Requirements
 
 
 [**INPUT\_RECORD**](input-record-str.md)
-
- 
-
- 
-
-
-
-

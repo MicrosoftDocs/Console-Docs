@@ -23,7 +23,6 @@ api_type:
 
 # ResizePseudoConsole function
 
-
 Resizes the internal buffers for a pseudoconsole to the given size.
 
 Syntax

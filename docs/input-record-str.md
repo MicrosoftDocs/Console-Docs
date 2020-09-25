@@ -161,11 +161,3 @@ Requirements
 [**ReadConsoleInput**](readconsoleinput.md)
 
 [**WriteConsoleInput**](writeconsoleinput.md)
-
- 
-
- 
-
-
-
-

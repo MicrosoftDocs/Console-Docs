@@ -29,6 +29,7 @@ api_type:
 
 # GetCurrentConsoleFontEx function
 
+[!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
 Retrieves extended information about the current console font.
 
@@ -106,11 +107,3 @@ Requirements
 [Console Functions](console-functions.md)
 
 [**CONSOLE\_FONT\_INFOEX**](console-font-infoex.md)
-
- 
-
- 
-
-
-
-

@@ -98,6 +98,8 @@ The **ReadConsoleOutput** function has no effect on the console screen buffer's 
 
 This function uses either Unicode characters or 8-bit characters from the console's current code page. The console's code page defaults initially to the system's OEM code page. To change the console's code page, use the [**SetConsoleCP**](setconsolecp.md) or [**SetConsoleOutputCP**](setconsoleoutputcp.md) functions, or use the **chcp** or **mode con cp select=** commands.
 
+[!INCLUDE [no-vt-equiv-banner](./includes/no-vt-equiv-banner.md)]
+
 Examples
 --------
 

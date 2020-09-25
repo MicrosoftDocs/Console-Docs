@@ -31,11 +31,3 @@ A process can use [**WriteFile**](https://msdn.microsoft.com/library/windows/des
 Characters written by [**WriteFile**](https://msdn.microsoft.com/library/windows/desktop/aa365747) or [**WriteConsole**](writeconsole.md), or echoed by [**ReadFile**](https://msdn.microsoft.com/library/windows/desktop/aa365467) or [**ReadConsole**](readconsole.md), are inserted in a screen buffer at the current cursor position. As each character is written, the cursor position advances to the next character cell; however, the behavior at the end of a row depends on the console screen buffer's wrap at EOL output mode. An application can use the [**GetConsoleScreenBufferInfo**](getconsolescreenbufferinfo.md) function to determine the current cursor position and the [**SetConsoleCursorPosition**](setconsolecursorposition.md) function to set the cursor position.
 
 For an example that uses the high-level console I/O functions, see [Using the High-Level Input and Output Functions](using-the-high-level-input-and-output-functions.md).
-
- 
-
- 
-
-
-
-

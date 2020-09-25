@@ -32,6 +32,7 @@ api_type:
 
 # GetConsoleScreenBufferInfoEx function
 
+[!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
 Retrieves extended information about the specified console screen buffer.
 
@@ -114,11 +115,3 @@ Requirements
 [**CONSOLE\_SCREEN\_BUFFER\_INFOEX**](console-screen-buffer-infoex.md)
 
 [**SetConsoleScreenBufferInfoEx**](setconsolescreenbufferinfoex.md)
-
- 
-
- 
-
-
-
-

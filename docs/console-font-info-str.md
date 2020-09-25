@@ -32,6 +32,7 @@ api_type:
 
 # CONSOLE\_FONT\_INFO structure
 
+[!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
 Contains information for a console font.
 
@@ -89,11 +90,3 @@ Requirements
 [**COORD**](coord-str.md)
 
 [**GetCurrentConsoleFont**](getcurrentconsolefont.md)
-
- 
-
- 
-
-
-
-

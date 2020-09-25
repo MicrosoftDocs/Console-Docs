@@ -41,6 +41,7 @@ api_type:
 
 # WriteConsoleInput function
 
+[!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
 Writes data directly to the console input buffer.
 
@@ -149,11 +150,3 @@ Requirements
 [**SetConsoleOutputCP**](setconsoleoutputcp.md)
 
 [**VkKeyScan**](https://msdn.microsoft.com/library/windows/desktop/ms646329)
-
- 
-
- 
-
-
-
-

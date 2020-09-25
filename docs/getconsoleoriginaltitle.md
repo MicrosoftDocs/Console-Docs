@@ -37,6 +37,7 @@ api_type:
 
 # GetConsoleOriginalTitle function
 
+[!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
 Retrieves the original title for the current console window.
 
@@ -127,11 +128,3 @@ Requirements
 [**GetConsoleTitle**](getconsoletitle.md)
 
 [**SetConsoleTitle**](setconsoletitle.md)
-
- 
-
- 
-
-
-
-

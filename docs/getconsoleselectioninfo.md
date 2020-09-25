@@ -30,6 +30,7 @@ api_type:
 
 # GetConsoleSelectionInfo function
 
+[!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
 Retrieves information about the current console selection.
 
@@ -106,11 +107,3 @@ Requirements
 [Console Selection](console-selection.md)
 
 [**CONSOLE\_SELECTION\_INFO**](console-selection-info-str.md)
-
- 
-
- 
-
-
-
-

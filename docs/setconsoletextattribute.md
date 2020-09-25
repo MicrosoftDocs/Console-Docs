@@ -33,6 +33,7 @@ api_type:
 
 # SetConsoleTextAttribute function
 
+[!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
 Sets the attributes of characters written to the console screen buffer by the [**WriteFile**](https://msdn.microsoft.com/library/windows/desktop/aa365747) or [**WriteConsole**](writeconsole.md) function, or echoed by the [**ReadFile**](https://msdn.microsoft.com/library/windows/desktop/aa365467) or [**ReadConsole**](readconsole.md) function. This function affects text written after the function call.
 
@@ -126,11 +127,3 @@ Requirements
 [**WriteConsole**](writeconsole.md)
 
 [**WriteFile**](https://msdn.microsoft.com/library/windows/desktop/aa365747)
-
- 
-
- 
-
-
-
-

@@ -42,7 +42,6 @@ api_type:
 
 # ReadConsole function
 
-
 Reads character input from the console input buffer and removes it from the buffer.
 
 Syntax
@@ -166,11 +165,3 @@ Requirements
 [**SetConsoleOutputCP**](setconsoleoutputcp.md)
 
 [**WriteConsole**](writeconsole.md)
-
- 
-
- 
-
-
-
-

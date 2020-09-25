@@ -33,6 +33,7 @@ api_type:
 
 # GetConsoleCursorInfo function
 
+[!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
 Retrieves information about the size and visibility of the cursor for the specified console screen buffer.
 
@@ -110,11 +111,3 @@ Requirements
 [**CONSOLE\_CURSOR\_INFO**](console-cursor-info-str.md)
 
 [**SetConsoleCursorInfo**](setconsolecursorinfo.md)
-
- 
-
- 
-
-
-
-

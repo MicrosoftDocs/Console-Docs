@@ -33,6 +33,7 @@ api_type:
 
 # SetConsoleWindowInfo function
 
+[!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
 Sets the current size and position of a console screen buffer's window.
 
@@ -134,11 +135,3 @@ Requirements
 [Scrolling the Screen Buffer](scrolling-the-screen-buffer.md)
 
 [**SMALL\_RECT**](small-rect-str.md)
-
- 
-
- 
-
-
-
-

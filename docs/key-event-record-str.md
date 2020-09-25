@@ -211,11 +211,3 @@ Requirements
 [**WriteConsoleInput**](writeconsoleinput.md)
 
 [**INPUT\_RECORD**](input-record-str.md)
-
- 
-
- 
-
-
-
-

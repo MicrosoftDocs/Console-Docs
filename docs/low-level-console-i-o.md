@@ -17,6 +17,7 @@ ms.assetid: c874aff4-6129-4dbc-8949-24d46382d81c
 
 # Low-Level Console I/O
 
+[!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
 The low-level console I/O functions expand an application's control over console I/O by enabling direct access to a console's input and screen buffers. These functions enable an application to perform the following tasks:
 
@@ -37,11 +38,3 @@ For more information, see the following topics:
 - [Low-Level Console Modes](low-level-console-modes.md)
 - [Low-Level Console Input Functions](low-level-console-input-functions.md)
 - [Low-Level Console Output Functions](low-level-console-output-functions.md)
-
- 
-
- 
-
-
-
-

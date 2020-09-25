@@ -37,6 +37,7 @@ api_type:
 
 # GetConsoleAlias function
 
+[!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
 Retrieves the text for the specified console alias and executable.
 
@@ -135,11 +136,3 @@ Requirements
 [**GetConsoleAliases**](getconsolealiases.md)
 
 [**GetConsoleAliasExes**](getconsolealiasexes.md)
-
- 
-
- 
-
-
-
-

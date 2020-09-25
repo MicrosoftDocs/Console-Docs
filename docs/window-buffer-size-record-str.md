@@ -33,7 +33,6 @@ api_type:
 
 # WINDOW\_BUFFER\_SIZE\_RECORD structure
 
-
 Describes a change in the size of the console screen buffer.
 
 Syntax
@@ -93,11 +92,3 @@ Requirements
 [**INPUT\_RECORD**](input-record-str.md)
 
 [**ReadConsoleInput**](readconsoleinput.md)
-
- 
-
- 
-
-
-
-

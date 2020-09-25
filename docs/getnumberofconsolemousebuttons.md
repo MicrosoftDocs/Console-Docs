@@ -30,6 +30,7 @@ api_type:
 
 # GetNumberOfConsoleMouseButtons function
 
+[!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
 Retrieves the number of buttons on the mouse used by the current console.
 
@@ -110,11 +111,3 @@ Requirements
 [**INPUT\_RECORD**](input-record-str.md)
 
 [**MOUSE\_EVENT\_RECORD**](mouse-event-record-str.md)
-
- 
-
- 
-
-
-
-

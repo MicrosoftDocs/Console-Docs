@@ -116,11 +116,3 @@ Requirements
 [**SetConsoleScreenBufferInfoEx**](setconsolescreenbufferinfoex.md)
 
 [**SMALL\_RECT**](small-rect-str.md)
-
- 
-
- 
-
-
-
-

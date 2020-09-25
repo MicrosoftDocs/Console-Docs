@@ -17,6 +17,7 @@ ms.assetid: bc300349-9bfa-4417-92ad-57a05a658ce5
 
 # Scrolling a Screen Buffer's Window
 
+[!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
 The [**SetConsoleWindowInfo**](setconsolewindowinfo.md) function can be used to scroll the contents of a screen buffer in the console window. This function can also change the window size. The function can either specify the new upper left and lower right corners of the console screen buffer's window as absolute screen buffer coordinates or specify the changes from the current window coordinates. The function fails if the specified window coordinates are outside the boundaries of the console screen buffer.
 
@@ -137,11 +138,3 @@ int main( void )
 [Scrolling a Screen Buffer's Contents](scrolling-a-screen-buffer-s-contents.md)
 
 [Scrolling the Screen Buffer](scrolling-the-screen-buffer.md)
-
- 
-
- 
-
-
-
-

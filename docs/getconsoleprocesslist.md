@@ -30,7 +30,6 @@ api_type:
 
 # GetConsoleProcessList function
 
-
 Retrieves a list of the processes attached to the current console.
 
 Syntax
@@ -112,11 +111,3 @@ Requirements
 [**AttachConsole**](attachconsole.md)
 
 [Console Functions](console-functions.md)
-
- 
-
- 
-
-
-
-

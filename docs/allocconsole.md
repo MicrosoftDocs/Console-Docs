@@ -118,4 +118,3 @@ Requirements
 [**FreeConsole**](freeconsole.md)
 
 [**GetStdHandle**](getstdhandle.md)
-

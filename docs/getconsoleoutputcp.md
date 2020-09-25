@@ -34,7 +34,6 @@ api_type:
 
 # GetConsoleOutputCP function
 
-
 Retrieves the output code page used by the console associated with the calling process. A console uses its output code page to translate the character values written by the various output functions into the images displayed in the console window.
 
 Syntax
@@ -103,7 +102,6 @@ Requirements
 
 ## <span id="see_also"></span>See also
 
-
 [Console Code Pages](console-code-pages.md)
 
 [Console Functions](console-functions.md)
@@ -113,11 +111,3 @@ Requirements
 [**SetConsoleCP**](setconsolecp.md)
 
 [**SetConsoleOutputCP**](setconsoleoutputcp.md)
-
- 
-
- 
-
-
-
-

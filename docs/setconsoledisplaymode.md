@@ -29,6 +29,7 @@ api_type:
 
 # SetConsoleDisplayMode function
 
+[!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
 Sets the display mode of the specified console screen buffer.
 
@@ -137,11 +138,3 @@ Requirements
 [Console Modes](console-modes.md)
 
 [**GetConsoleDisplayMode**](getconsoledisplaymode.md)
-
- 
-
- 
-
-
-
-

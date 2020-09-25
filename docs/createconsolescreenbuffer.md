@@ -33,6 +33,7 @@ api_type:
 
 # CreateConsoleScreenBuffer function
 
+[!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
 Creates a console screen buffer.
 
@@ -166,7 +167,6 @@ Requirements
 
 ## <span id="see_also"></span>See also
 
-
 [Console Functions](console-functions.md)
 
 [Console Screen Buffers](console-screen-buffers.md)
@@ -182,11 +182,3 @@ Requirements
 [**SetConsoleActiveScreenBuffer**](setconsoleactivescreenbuffer.md)
 
 [**SetConsoleScreenBufferSize**](setconsolescreenbuffersize.md)
-
- 
-
- 
-
-
-
-

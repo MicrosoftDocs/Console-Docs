@@ -37,6 +37,7 @@ api_type:
 
 # GetConsoleAliasExes function
 
+[!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
 Retrieves the names of all executable files with console aliases defined.
 
@@ -131,11 +132,3 @@ Requirements
 [**GetConsoleAliasExesLength**](getconsolealiasexeslength.md)
 
 [**GetConsoleAliases**](getconsolealiases.md)
-
- 
-
- 
-
-
-
-

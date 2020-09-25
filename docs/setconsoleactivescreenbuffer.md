@@ -33,6 +33,7 @@ api_type:
 
 # SetConsoleActiveScreenBuffer function
 
+[!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
 Sets the specified screen buffer to be the currently displayed console screen buffer.
 
@@ -114,11 +115,3 @@ Requirements
 [Console Screen Buffers](console-screen-buffers.md)
 
 [**CreateConsoleScreenBuffer**](createconsolescreenbuffer.md)
-
- 
-
- 
-
-
-
-

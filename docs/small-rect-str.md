@@ -30,7 +30,6 @@ api_type:
 
 # SMALL\_RECT structure
 
-
 Defines the coordinates of the upper left and lower right corners of a rectangle.
 
 Syntax
@@ -100,11 +99,3 @@ Requirements
 [**RECT**](https://msdn.microsoft.com/library/windows/desktop/dd162897)
 
 [**RECTL**](https://msdn.microsoft.com/library/windows/desktop/dd162907)
-
- 
-
- 
-
-
-
-

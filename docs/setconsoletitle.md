@@ -49,6 +49,7 @@ api_type:
 
 # SetConsoleTitle function
 
+[!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
 Sets the title for the current console window.
 
@@ -176,11 +177,3 @@ Requirements
 [**SetConsoleCP**](setconsolecp.md)
 
 [**SetConsoleOutputCP**](setconsoleoutputcp.md)
-
- 
-
- 
-
-
-
-

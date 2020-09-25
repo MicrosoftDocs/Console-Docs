@@ -37,10 +37,3 @@ The following structures are used to access a console.
 [**MOUSE\_EVENT\_RECORD**](mouse-event-record-str.md)
 [**SMALL\_RECT**](small-rect-str.md)
 [**WINDOW\_BUFFER\_SIZE\_RECORD**](window-buffer-size-record-str.md)
- 
-
- 
-
-
-
-

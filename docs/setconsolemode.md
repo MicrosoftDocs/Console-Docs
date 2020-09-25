@@ -34,7 +34,6 @@ api_type:
 
 # SetConsoleMode function
 
-
 Sets the input mode of a console's input buffer or the output mode of a console screen buffer.
 
 Syntax
@@ -288,11 +287,3 @@ Requirements
 [**WriteConsole**](writeconsole.md)
 
 [**WriteFile**](https://msdn.microsoft.com/library/windows/desktop/aa365747)
-
- 
-
- 
-
-
-
-

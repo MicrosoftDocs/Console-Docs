@@ -32,7 +32,6 @@ api_type:
 
 # CONSOLE\_READCONSOLE\_CONTROL structure
 
-
 Contains information for a console read operation.
 
 Syntax
@@ -145,8 +144,6 @@ The state of the control keys. This member can be one or more of the following v
 </tbody>
 </table>
 
- 
-
 Requirements
 ------------
 
@@ -173,13 +170,4 @@ Requirements
 
 ## <span id="see_also"></span>See also
 
-
 [**ReadConsole**](readconsole.md)
-
- 
-
- 
-
-
-
-

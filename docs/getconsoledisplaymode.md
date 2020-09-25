@@ -30,6 +30,7 @@ api_type:
 
 # GetConsoleDisplayMode function
 
+[!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
 Retrieves the display mode of the current console.
 
@@ -135,11 +136,3 @@ Requirements
 [Console Modes](console-modes.md)
 
 [**SetConsoleDisplayMode**](setconsoledisplaymode.md)
-
- 
-
- 
-
-
-
-
