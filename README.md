@@ -35,7 +35,7 @@ While some metadata is stored per file (e.g. above), common metadata required by
     "fileMetadata": {
       "ms.prod": { "/console/**.yml": "windows"},
       "ms.technology": { "/console/**.yml": "desktop"},
-      "manager": {"/console/**.yml": "richturn"}
+      "manager": {"/console/**.yml": "miniksa"}
     }
   }
 }
