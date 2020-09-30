@@ -25,7 +25,7 @@ The following functions read from or write to a specified number of consecutive 
 
 
 | Function | Description |
-|--------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
+|---|---|
 | [**ReadConsoleOutputCharacter**](readconsoleoutputcharacter.md) | Copies a string of Unicode or ANSI characters from a screen buffer. |
 | [**WriteConsoleOutputCharacter**](writeconsoleoutputcharacter.md) | Writes a string of Unicode or ANSI characters to a screen buffer. |
 | [**ReadConsoleOutputAttribute**](readconsoleoutputattribute.md) | Copies a string of text and background color attributes from a screen buffer. |
@@ -40,7 +40,7 @@ The following functions read from or write to rectangular blocks of character ce
 
 
 | Function | Description |
-|--------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
+|---|---|
 | [**ReadConsoleOutput**](readconsoleoutput.md) | Copies character and color data from a specified block of screen buffer cells into a given block in a destination buffer. |
 | [**WriteConsoleOutput**](writeconsoleoutput.md) | Writes character and color data to a specified block of screen buffer cells from a given block in a source buffer. |
 
