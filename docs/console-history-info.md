@@ -116,11 +116,3 @@ Requirements
 [**GetConsoleHistoryInfo**](getconsolehistoryinfo.md)
 
 [**SetConsoleHistoryInfo**](setconsolehistoryinfo.md)
-
- 
-
- 
-
-
-
-

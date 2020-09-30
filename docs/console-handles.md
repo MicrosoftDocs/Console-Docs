@@ -34,11 +34,3 @@ A process can use the [**DuplicateHandle**](https://msdn.microsoft.com/library/w
 Access to a console must be shared during [creation](creation-of-a-console.md) of the other process or may be requested by the other process through the [**AttachConsole**](attachconsole.md) mechanism.
 
 To close a console handle, a process can use the [**CloseHandle**](https://msdn.microsoft.com/library/windows/desktop/ms724211) function.
-
- 
-
- 
-
-
-
-

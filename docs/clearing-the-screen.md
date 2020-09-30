@@ -169,7 +169,7 @@ int main( void )
 
 ## <span id="Example_4"></span><span id="example_4"></span><span id="EXAMPLE_4"></span>Example 4
 
-The fourth method is to use the C run-time **system** function. The **system** function invokes the **cls** command provided by the command interpreter to clear the screen.
+The fourth method is to use the C run-time **system** function. The **system** function invokes the **cls** command provided by the command interpreter `cmd.exe` to clear the screen.
 
 ```C
 #include <stdlib.h>
