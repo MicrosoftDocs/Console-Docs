@@ -33,4 +33,4 @@ For more information, see the following topics:
 - [Console Modes](console-modes.md)
 - [High-Level Console Modes](high-level-console-modes.md)
 - [High-Level Console Input and Output Functions](high-level-console-input-and-output-functions.md)
-- [Classic functions versus virtual terminal sequences](classic-vs-vt.md)
+- [Classic APIs Versus Virtual Terminal Sequences](classic-vs-vt.md)
