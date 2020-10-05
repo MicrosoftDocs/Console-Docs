@@ -41,6 +41,8 @@ api_type:
 
 # WriteConsoleOutput function
 
+[!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
+
 Writes character and color attribute data to a specified rectangular block of character cells in a console screen buffer. The data to be written is taken from a correspondingly sized rectangular block at a specified location in the source buffer.
 
 ## Syntax

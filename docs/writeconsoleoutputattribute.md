@@ -33,6 +33,8 @@ api_type:
 
 # WriteConsoleOutputAttribute function
 
+[!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
+
 Copies a number of character attributes to consecutive cells of a console screen buffer, beginning at a specified location.
 
 ## Syntax

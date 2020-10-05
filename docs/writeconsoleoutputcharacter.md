@@ -40,6 +40,8 @@ api_type:
 
 # WriteConsoleOutputCharacter function
 
+[!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
+
 Copies a number of characters to consecutive cells of a console screen buffer, beginning at a specified location.
 
 ## Syntax
