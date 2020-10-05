@@ -25,7 +25,7 @@ topic_type:
 api_name:
 - CONSOLE_READCONSOLE_CONTROL
 api_location:
-- Wincon.h
+- WinCon.h
 api_type:
 - HeaderDef
 ---
@@ -34,8 +34,7 @@ api_type:
 
 Contains information for a console read operation.
 
-Syntax
-------
+## Syntax
 
 ```C
 typedef struct _CONSOLE_READCONSOLE_CONTROL {
@@ -46,8 +45,7 @@ typedef struct _CONSOLE_READCONSOLE_CONTROL {
 } CONSOLE_READCONSOLE_CONTROL, *PCONSOLE_READCONSOLE_CONTROL;
 ```
 
-Members
--------
+## Members
 
 **nLength**  
 The size of the structure. Set this member to `sizeof(CONSOLE_READCONSOLE_CONTROL)`.
@@ -61,113 +59,26 @@ A user-defined control character used to signal that the read is complete.
 **dwControlKeyState**  
 The state of the control keys. This member can be one or more of the following values.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Value</th>
-<th>Meaning</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span id="CAPSLOCK_ON"></span><span id="capslock_on"></span>
-<strong>CAPSLOCK_ON</strong>
-0x0080</td>
-<td><p>The CAPS LOCK light is on.</p></td>
-</tr>
-<tr class="even">
-<td><span id="ENHANCED_KEY"></span><span id="enhanced_key"></span>
-<strong>ENHANCED_KEY</strong>
-0x0100</td>
-<td><p>The key is enhanced.</p></td>
-</tr>
-<tr class="odd">
-<td><span id="LEFT_ALT_PRESSED"></span><span id="left_alt_pressed"></span>
-<strong>LEFT_ALT_PRESSED</strong>
-0x0002</td>
-<td><p>The left ALT key is pressed.</p></td>
-</tr>
-<tr class="even">
-<td><span id="LEFT_CTRL_PRESSED"></span><span id="left_ctrl_pressed"></span>
-<strong>LEFT_CTRL_PRESSED</strong>
-0x0008</td>
-<td><p>The left CTRL key is pressed.</p></td>
-</tr>
-<tr class="odd">
-<td><span id="NUMLOCK_ON"></span><span id="numlock_on"></span>
-<strong>NUMLOCK_ON</strong>
-0x0020</td>
-<td><p>The NUM LOCK light is on.</p></td>
-</tr>
-<tr class="even">
-<td><span id="RIGHT_ALT_PRESSED"></span><span id="right_alt_pressed"></span>
-<strong>RIGHT_ALT_PRESSED</strong>
-0x0001</td>
-<td><p>The right ALT key is pressed.</p></td>
-</tr>
-<tr class="odd">
-<td><span id="RIGHT_CTRL_PRESSED"></span><span id="right_ctrl_pressed"></span>
-<strong>RIGHT_CTRL_PRESSED</strong>
-0x0004</td>
-<td><p>The right CTRL key is pressed.</p></td>
-</tr>
-<tr class="even">
-<td><span id="SCROLLLOCK_ON"></span><span id="scrolllock_on"></span>
-<strong>SCROLLLOCK_ON</strong>
-0x0040</td>
-<td><p>The SCROLL LOCK light is on.</p></td>
-</tr>
-<tr class="odd">
-<td><span id="SHIFT_PRESSED"></span><span id="shift_pressed"></span>
-<strong>SHIFT_PRESSED</strong>
-0x0010</td>
-<td><p>The SHIFT key is pressed.</p></td>
-</tr>
-<tr class="even">
-</tr>
-<tr class="odd">
-</tr>
-<tr class="even">
-</tr>
-<tr class="odd">
-</tr>
-<tr class="even">
-</tr>
-<tr class="odd">
-</tr>
-<tr class="even">
-</tr>
-</tbody>
-</table>
+| Value | Meaning |
+|-|-|
+| **CAPSLOCK_ON** 0x0080 | The CAPS LOCK light is on. |
+| **ENHANCED_KEY** 0x0100 | The key is enhanced. See [remarks](key-event-record-str#remarks). |
+| **LEFT_ALT_PRESSED** 0x0002 | The left ALT key is pressed. |
+| **LEFT_CTRL_PRESSED** 0x0008 | The left CTRL key is pressed. |
+| **NUMLOCK_ON** 0x0020 | The NUM LOCK light is on. |
+| **RIGHT_ALT_PRESSED** 0x0001 | The right ALT key is pressed. |
+| **RIGHT_CTRL_PRESSED** 0x0004 | The right CTRL key is pressed. |
+| **SCROLLLOCK_ON** 0x0040 | The SCROLL LOCK light is on. |
+| **SHIFT_PRESSED** 0x0010 | The SHIFT key is pressed. |
 
-Requirements
-------------
+## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Minimum supported client</p></td>
-<td><p>Windows Vista [desktop apps only]</p></td>
-</tr>
-<tr class="even">
-<td><p>Minimum supported server</p></td>
-<td><p>Windows Server 2008 [desktop apps only]</p></td>
-</tr>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>ConsoleApi.h (via Wincon.h, include Windows.h)</td>
-</tr>
-</tbody>
-</table>
+| | |
+|-|-|
+| Minimum supported client | Windows Vista \[desktop apps only\] |
+| Minimum supported server | Windows Server 2008 \[desktop apps only\] |
+| Header | ConsoleApi.h (via WinCon.h, include Windows.h) |
 
-## <span id="see_also"></span>See also
+## See also
 
 [**ReadConsole**](readconsole.md)

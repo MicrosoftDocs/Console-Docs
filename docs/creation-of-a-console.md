@@ -42,9 +42,8 @@ The system uses default values if the [**STARTUPINFO**](https://msdn.microsoft.c
 
 A process cannot change the location of its console window on the screen, but the following console functions are available to set or retrieve the other properties specified in the [**STARTUPINFO**](https://msdn.microsoft.com/library/windows/desktop/ms686331) structure.
 
-
 | Function | Description |
-|---|---|
+|-|-|
 | [**GetConsoleScreenBufferInfo**](getconsolescreenbufferinfo.md) | Retrieves the window size, screen buffer size, and color attributes. |
 | [**SetConsoleWindowInfo**](setconsolewindowinfo.md)  | Changes the size of the console window.  |
 | [**SetConsoleScreenBufferSize**](setconsolescreenbuffersize.md) | Changes the size of the console screen buffer. |

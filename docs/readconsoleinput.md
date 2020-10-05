@@ -42,11 +42,9 @@ api_type:
 
 # ReadConsoleInput function
 
-
 Reads data from a console input buffer and removes it from the buffer.
 
-Syntax
-------
+## Syntax
 
 ```C
 BOOL WINAPI ReadConsoleInput(
@@ -57,8 +55,7 @@ BOOL WINAPI ReadConsoleInput(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *hConsoleInput* \[in\]  
 A handle to the console input buffer. The handle must have the **GENERIC\_READ** access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
@@ -72,15 +69,13 @@ The size of the array pointed to by the *lpBuffer* parameter, in array elements.
 *lpNumberOfEventsRead* \[out\]  
 A pointer to a variable that receives the number of input records read.
 
-Return value
-------------
+## Return value
 
 If the function succeeds, the return value is nonzero.
 
 If the function fails, the return value is zero. To get extended error information, call [**GetLastError**](https://msdn.microsoft.com/library/windows/desktop/ms679360).
 
-Remarks
--------
+## Remarks
 
 If the number of records requested in the *nLength* parameter exceeds the number of records available in the buffer, the number available is read. The function does not return until at least one input record has been read.
 
@@ -88,59 +83,24 @@ A process can specify a console input buffer handle in one of the [wait function
 
 To determine the number of unread input records in a console's input buffer, use the [**GetNumberOfConsoleInputEvents**](getnumberofconsoleinputevents.md) function. To read input records from a console input buffer without affecting the number of unread records, use the [**PeekConsoleInput**](peekconsoleinput.md) function. To discard all unread records in a console's input buffer, use the [**FlushConsoleInputBuffer**](flushconsoleinputbuffer.md) function.
 
-This function uses either Unicode characters or 8-bit characters from the console's current code page. The console's code page defaults initially to the system's OEM code page. To change the console's code page, use the [**SetConsoleCP**](setconsolecp.md) or [**SetConsoleOutputCP**](setconsoleoutputcp.md) functions, or use the **chcp** or **mode con cp select=** commands.
+[!INCLUDE [setting-codepage-mode-remarks](./includes/setting-codepage-mode-remarks.md)]
 
-Examples
---------
+## Examples
 
 For an example, see [Reading Input Buffer Events](reading-input-buffer-events.md).
 
-Requirements
-------------
+## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Minimum supported client</p></td>
-<td><p>Windows 2000 Professional [desktop apps only]</p></td>
-</tr>
-<tr class="even">
-<td><p>Minimum supported server</p></td>
-<td><p>Windows 2000 Server [desktop apps only]</p></td>
-</tr>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>ConsoleApi3.h (via Wincon.h, include Windows.h)</td>
-</tr>
-<tr class="even">
-<td><p>Library</p></td>
-<td>Kernel32.lib</td>
-</tr>
-<tr class="odd">
-<td><p>DLL</p></td>
-<td>Kernel32.dll</td>
-</tr>
-<tr class="even">
-<td><p>Unicode and ANSI names</p></td>
-<td><p><strong>ReadConsoleInputW</strong> (Unicode) and <strong>ReadConsoleInputA</strong> (ANSI)</p></td>
-</tr>
-<tr class="odd">
-</tr>
-<tr class="even">
-</tr>
-<tr class="odd">
-</tr>
-<tr class="even">
-</tr>
-</tbody>
-</table>
+| | |
+|-|-|
+| Minimum supported client | Windows 2000 Professional \[desktop apps only\] |
+| Minimum supported server | Windows 2000 Server \[desktop apps only\] |
+| Header | ConsoleApi.h (via WinCon.h, include Windows.h) |
+| Library | Kernel32.lib |
+| DLL | Kernel32.dll |
+| Unicode and ANSI names | **ReadConsoleInputW** (Unicode) and **ReadConsoleInputA** (ANSI) |
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [Console Functions](console-functions.md)
 

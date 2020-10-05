@@ -17,8 +17,10 @@ ms.assetid: 55246039-31eb-41ca-ad8e-d314cb508644
 
 # Window and Screen Buffer Size
 
-
 The size of a screen buffer is expressed in terms of a coordinate grid based on character cells. The width is the number of character cells in each row, and the height is the number of rows. Associated with each screen buffer is a window that determines the size and location of the rectangular portion of the console screen buffer displayed in the console window. A screen buffer's window is defined by specifying the character-cell coordinates of the upper left and lower right cells of the window's rectangle.
+
+> [!NOTE]
+> In the **[virtual terminal sequences](console-virtual-terminal-sequences.md)** world, the size of the window and the size of the screen buffer are fixed to the same value. The terminal handles any scrollback region that would be the equivalent of a console with a screen buffer size larger than its window size. That content belongs to the terminal and is generally no longer a part of the addressable area. For more information, please see our comparison of the **[classic console functions versus virtual terminal sequences](classic-vs-vt.md)**.
 
 A screen buffer can be any size, limited only by available memory. The dimensions of a screen buffer's window cannot exceed the corresponding dimensions of either the console screen buffer or the maximum window that can fit on the screen based on the current font size (controlled exclusively by the user).
 

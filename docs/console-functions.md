@@ -17,11 +17,10 @@ ms.assetid: 2a0e5dcc-be48-42ab-a05a-96f68d012a67
 
 # Console Functions
 
-
 The following functions are used to access a console.
 
 | Function | Description |
-|---|---|
+|-|-|
 | [**AddConsoleAlias**](addconsolealias.md) | Defines a console alias for the specified executable. |
 | [**AllocConsole**](allocconsole.md) | Allocates a new console for the calling process. |
 | [**AttachConsole**](attachconsole.md) | Attaches the calling process to the console of the specified process. |

@@ -49,12 +49,10 @@ Cursor movement will be bounded by the current viewport into the buffer. Scrolli
 
 
 
-**Note**  
-\* If there are scroll margins set, RI inside the margins will scroll only the contents of the margins, and leave the viewport unchanged. (See Scrolling Margins)
-
-\*\*There will be no value saved in memory until the first use of the save command. The only way to access the saved value is with the restore command.
-
-
+> [!NOTE]
+>\* If there are scroll margins set, RI inside the margins will scroll only the contents of the margins, and leave the viewport unchanged. (See Scrolling Margins)
+>
+>\*\*There will be no value saved in memory until the first use of the save command. The only way to access the saved value is with the restore command.
 
 ## <span id="Cursor_Positioning"></span><span id="cursor_positioning"></span><span id="CURSOR_POSITIONING"></span>Cursor Positioning
 
@@ -90,10 +88,10 @@ Cursor movement will be bounded by the current viewport into the buffer. Scrolli
 
 
 
-**Note**  
-\*&lt;x&gt; and &lt;y&gt; parameters have the same limitations as &lt;n&gt; above. If &lt;x&gt; and &lt;y&gt; are omitted, they will be set to 1;1.
-
-\*\*ANSI.sys historical documentation can be found at <https://msdn.microsoft.com/library/cc722862.aspx> and is implemented for convenience/compatibility.
+> [!NOTE]
+>\*&lt;x&gt; and &lt;y&gt; parameters have the same limitations as &lt;n&gt; above. If &lt;x&gt; and &lt;y&gt; are omitted, they will be set to 1;1.
+>
+>\*\*ANSI.sys historical documentation can be found at <https://msdn.microsoft.com/library/cc722862.aspx> and is implemented for convenience/compatibility.
 
 
 
@@ -151,8 +149,8 @@ All commands in this section are generally equivalent to calling [**FillConsoleO
 
 
 
-**Note**  
-For IL and DL, only the lines in the scrolling margins (see Scrolling Margins) are affected. If no margins are set, the default margin borders are the current viewport. If lines would be shifted below the margins, they are discarded. When lines are deleted, blank lines are inserted at the bottom of the margins, lines from outside the viewport are never affected.
+> [!NOTE]
+>For IL and DL, only the lines in the scrolling margins (see Scrolling Margins) are affected. If no margins are set, the default margin borders are the current viewport. If lines would be shifted below the margins, they are discarded. When lines are deleted, blank lines are inserted at the bottom of the margins, lines from outside the viewport are never affected.
 
 For each of the sequences, the default value for &lt;n&gt; if it is omitted is 0.
 
@@ -299,7 +297,8 @@ See the Cursor Keys and Numpad & Function Keys sections for the sequences emitte
 
 All commands in this section are generally equivalent to calling Get\* console APIs to retrieve status information about the current console buffer state.
 
-**Note**  These queries will emit their responses into the console input stream immediately after being recognized on the output stream while ENABLE\_VIRTUAL\_TERMINAL\_PROCESSING is set. The ENABLE\_VIRTUAL\_TERMINAL\_INPUT flag does not apply to query commands as it is assumed that an application making the query will always want to receive the reply.
+> [!NOTE]
+>These queries will emit their responses into the console input stream immediately after being recognized on the output stream while ENABLE\_VIRTUAL\_TERMINAL\_PROCESSING is set. The ENABLE\_VIRTUAL\_TERMINAL\_INPUT flag does not apply to query commands as it is assumed that an application making the query will always want to receive the reply.
 
 
 
@@ -526,7 +525,8 @@ Ctrl is generally passed through exactly as received from the system. This is ty
 
 
 
-**Note**  Left Ctrl + Right Alt is treated as AltGr. When both are seen together, they will be stripped and the Unicode value of the character presented by the system will be passed into the target. The system will pre-translate AltGr values according to the current system input settings.
+> [!NOTE]
+>Left Ctrl + Right Alt is treated as AltGr. When both are seen together, they will be stripped and the Unicode value of the character presented by the system will be passed into the target. The system will pre-translate AltGr values according to the current system input settings.
 
 
 
@@ -577,7 +577,8 @@ int main()
 }
 ```
 
-**Note**  In the previous example, the string '`\x1b[31m`' is the implementation of **ESC \[ &lt;n&gt; m** with &lt;n&gt; being 31.
+> [!NOTE]
+>In the previous example, the string '`\x1b[31m`' is the implementation of **ESC \[ &lt;n&gt; m** with &lt;n&gt; being 31.
 
 
 

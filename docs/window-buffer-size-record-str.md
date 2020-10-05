@@ -26,7 +26,7 @@ topic_type:
 api_name:
 - WINDOW_BUFFER_SIZE_RECORD
 api_location:
-- Wincon.h
+- WinCon.h
 api_type:
 - HeaderDef
 ---
@@ -35,8 +35,7 @@ api_type:
 
 Describes a change in the size of the console screen buffer.
 
-Syntax
-------
+## Syntax
 
 ```C
 typedef struct _WINDOW_BUFFER_SIZE_RECORD {
@@ -44,48 +43,28 @@ typedef struct _WINDOW_BUFFER_SIZE_RECORD {
 } WINDOW_BUFFER_SIZE_RECORD;
 ```
 
-Members
--------
+## Members
 
 **dwSize**  
 A [**COORD**](coord-str.md) structure that contains the size of the console screen buffer, in character cell columns and rows.
 
-Remarks
--------
+## Remarks
 
 Buffer size events are placed in the input buffer when the console is in window-aware mode (**ENABLE\_WINDOW\_INPUT**).
 
-Examples
---------
+## Examples
 
 For an example, see [Reading Input Buffer Events](reading-input-buffer-events.md).
 
-Requirements
-------------
+## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Minimum supported client</p></td>
-<td><p>Windows 2000 Professional [desktop apps only]</p></td>
-</tr>
-<tr class="even">
-<td><p>Minimum supported server</p></td>
-<td><p>Windows 2000 Server [desktop apps only]</p></td>
-</tr>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>WinConTypes.h (via Wincon.h, include Windows.h)</td>
-</tr>
-</tbody>
-</table>
+| | |
+|-|-|
+| Minimum supported client | Windows 2000 Professional \[desktop apps only\] |
+| Minimum supported server | Windows 2000 Server \[desktop apps only\] |
+| Header | WinConTypes.h (via WinCon.h, include Windows.h) |
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [**COORD**](coord-str.md)
 

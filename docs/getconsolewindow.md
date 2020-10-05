@@ -42,67 +42,36 @@ api_type:
 
 Retrieves the window handle used by the console associated with the calling process.
 
-Syntax
-------
+## Syntax
 
 ```C
 HWND WINAPI GetConsoleWindow(void);
 ```
 
-Parameters
-----------
+## Parameters
 
 This function has no parameters.
 
-Return value
-------------
+## Return value
 
 The return value is a handle to the window used by the console associated with the calling process or **NULL** if there is no such associated console.
 
-Remarks
--------
+## Remarks
 
 To compile an application that uses this function, define **\_WIN32\_WINNT** as 0x0500 or later. For more information, see [Using the Windows Headers](https://msdn.microsoft.com/library/windows/desktop/aa383745).
 
-Requirements
-------------
+## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Minimum supported client</p></td>
-<td><p>Windows 2000 Professional [desktop apps only]</p></td>
-</tr>
-<tr class="even">
-<td><p>Minimum supported server</p></td>
-<td><p>Windows 2000 Server [desktop apps only]</p></td>
-</tr>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>ConsoleApi3.h (via Wincon.h, include Windows.h)</td>
-</tr>
-<tr class="even">
-<td><p>Library</p></td>
-<td>Kernel32.lib</td>
-</tr>
-<tr class="odd">
-<td><p>DLL</p></td>
-<td>Kernel32.dll</td>
-</tr>
-<tr class="even">
-</tr>
-<tr class="odd">
-</tr>
-<tr class="even">
-</tr>
-</tbody>
+| | |
+|-|-|
+| Minimum supported client | Windows 2000 Professional \[desktop apps only\] |
+| Minimum supported server | Windows 2000 Server \[desktop apps only\] |
+| Header | ConsoleApi3.h (via WinCon.h, include Windows.h) |
+| Library | Kernel32.lib |
+| DLL | Kernel32.dll |
+
 </table>
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [Console Functions](console-functions.md)

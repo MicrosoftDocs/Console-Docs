@@ -25,7 +25,7 @@ topic_type:
 api_name:
 - CONSOLE_FONT_INFO
 api_location:
-- Wincon.h
+- WinCon.h
 api_type:
 - HeaderDef
 ---
@@ -36,8 +36,7 @@ api_type:
 
 Contains information for a console font.
 
-Syntax
-------
+## Syntax
 
 ```C
 typedef struct _CONSOLE_FONT_INFO {
@@ -46,8 +45,7 @@ typedef struct _CONSOLE_FONT_INFO {
 } CONSOLE_FONT_INFO, *PCONSOLE_FONT_INFO;
 ```
 
-Members
--------
+## Members
 
 **nFont**  
 The index of the font in the system's console font table.
@@ -55,37 +53,19 @@ The index of the font in the system's console font table.
 **dwFontSize**  
 A [**COORD**](coord-str.md) structure that contains the width and height of each character in the font, in logical units. The **X** member contains the width, while the **Y** member contains the height.
 
-Remarks
--------
+## Remarks
 
 To obtain the size of the font, pass the font index to the [**GetConsoleFontSize**](getconsolefontsize.md) function.
 
-Requirements
-------------
+## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Minimum supported client</p></td>
-<td><p>Windows XP [desktop apps only]</p></td>
-</tr>
-<tr class="even">
-<td><p>Minimum supported server</p></td>
-<td><p>Windows Server 2003 [desktop apps only]</p></td>
-</tr>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Wincon.h (include Windows.h)</td>
-</tr>
-</tbody>
-</table>
+| | |
+|-|-|
+| Minimum supported client | Windows XP \[desktop apps only\] |
+| Minimum supported server | Windows Server 2003 \[desktop apps only\] |
+| Header | WinCon.h (include Windows.h) |
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [**COORD**](coord-str.md)
 

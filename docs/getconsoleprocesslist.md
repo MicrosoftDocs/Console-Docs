@@ -32,8 +32,7 @@ api_type:
 
 Retrieves a list of the processes attached to the current console.
 
-Syntax
-------
+## Syntax
 
 ```C
 DWORD WINAPI GetConsoleProcessList(
@@ -42,8 +41,7 @@ DWORD WINAPI GetConsoleProcessList(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *lpdwProcessList* \[out\]  
 A pointer to a buffer that receives an array of process identifiers upon success. This must be a valid buffer and cannot be `NULL`. The buffer must have space to receive at least 1 returned process id.
@@ -51,8 +49,7 @@ A pointer to a buffer that receives an array of process identifiers upon success
 *dwProcessCount* \[in\]  
 The maximum number of process identifiers that can be stored in the *lpdwProcessList* buffer. This must be greater than 0.
 
-Return value
-------------
+## Return value
 
 If the function succeeds, the return value is less than or equal to *dwProcessCount* and represents the number of process identifiers stored in the *lpdwProcessList* buffer.
 
@@ -62,51 +59,21 @@ If the return value is zero, the function has failed, because every console has 
 
 If a `NULL` process list was provided or the process count was 0, the call will return 0 and `GetLastError` will return `ERROR_INVALID_PARAMETER`. Please provide a buffer of at least one element to call this function. Allocate a larger buffer and call again if the return code is larger than the length of the provided buffer.
 
-Remarks
--------
+## Remarks
 
 To compile an application that uses this function, define **\_WIN32\_WINNT** as 0x0501 or later. For more information, see [Using the Windows Headers](https://msdn.microsoft.com/library/windows/desktop/aa383745).
 
-Requirements
-------------
+## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Minimum supported client</p></td>
-<td><p>Windows XP [desktop apps only]</p></td>
-</tr>
-<tr class="even">
-<td><p>Minimum supported server</p></td>
-<td><p>Windows Server 2003 [desktop apps only]</p></td>
-</tr>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>ConsoleApi3.h (via Wincon.h, include Windows.h)</td>
-</tr>
-<tr class="even">
-<td><p>Library</p></td>
-<td>Kernel32.lib</td>
-</tr>
-<tr class="odd">
-<td><p>DLL</p></td>
-<td>Kernel32.dll</td>
-</tr>
-<tr class="even">
-</tr>
-<tr class="odd">
-</tr>
-<tr class="even">
-</tr>
-</tbody>
-</table>
+| | |
+|-|-|
+| Minimum supported client | Windows XP \[desktop apps only\] |
+| Minimum supported server | Windows Server 2003 \[desktop apps only\] |
+| Header | ConsoleApi3.h (via WinCon.h, include Windows.h) |
+| Library | Kernel32.lib |
+| DLL | Kernel32.dll |
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [**AttachConsole**](attachconsole.md)
 

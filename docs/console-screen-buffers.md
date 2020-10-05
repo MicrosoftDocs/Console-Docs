@@ -17,7 +17,6 @@ ms.assetid: f94995fc-5f5f-4fcd-969d-7e10020634c2
 
 # Console Screen Buffers
 
-
 A *screen buffer* is a two-dimensional array of character and color data for output in a console window. A console can have multiple screen buffers. The *active screen buffer* is the one that is displayed on the screen.
 
 The system creates a screen buffer whenever it creates a new console. To open a handle to a console's active screen buffer, specify the **CONOUT$** value in a call to the [**CreateFile**](https://msdn.microsoft.com/library/windows/desktop/aa363858) function. A process can use the [**CreateConsoleScreenBuffer**](createconsolescreenbuffer.md) function to create additional screen buffers for its console. A new screen buffer is not active until its handle is specified in a call to the [**SetConsoleActiveScreenBuffer**](setconsoleactivescreenbuffer.md) function. However, screen buffers can be accessed for reading and writing whether they are active or inactive.
@@ -36,39 +35,38 @@ When a screen buffer is created, it contains space characters in every position.
 
 Applications that change any of the console screen buffer properties should either create their own screen buffer or save the state of the inherited screen buffer during startup and restore it at exit. This cooperative behavior is required to ensure that other applications sharing the same console session are not impacted by the changes.
 
-## <span id="_win32_cursor_appearance_and_position"></span><span id="_WIN32_CURSOR_APPEARANCE_AND_POSITION"></span>Cursor Appearance and Position
-
+## Cursor Appearance and Position
 
 A screen buffer's cursor can be visible or hidden. When it is visible, its appearance can vary, ranging from completely filling a character cell to appearing as a horizontal line at the bottom of the cell. To retrieve information about the appearance and visibility of the cursor, use the [**GetConsoleCursorInfo**](getconsolecursorinfo.md) function. This function reports whether the cursor is visible and describes the appearance of the cursor as the percentage of a character cell that it fills. To set the appearance and visibility of the cursor, use the [**SetConsoleCursorInfo**](setconsolecursorinfo.md) function.
 
 Characters written by the [high-level console I/O functions](high-level-console-i-o.md) are written at the current cursor location, advancing the cursor to the next location. To determine the current cursor position in the coordinate system of a screen buffer, use [**GetConsoleScreenBufferInfo**](getconsolescreenbufferinfo.md). You can use [**SetConsoleCursorPosition**](setconsolecursorposition.md) to set the cursor position and, thereby, control the placement of text that is written or echoed by the high-level I/O functions. If you move the cursor, text at the new cursor location is overwritten.
 
+> [!NOTE]
+> Using the low-level functions to find the cursor position is discouraged. It is recommended to use [virtual terminal sequences](console-virtual-terminal-sequences.md) to query this position if necessary for advanced layouts. More information about preferring virtual terminal sequences can be found in the **[classic functions versus virtual terminal](classic-vs-vt.md)** document.
+
 The position, appearance, and visibility of the cursor are set independently for each screen buffer.
 
-## <span id="_win32_character_attributes"></span><span id="_WIN32_CHARACTER_ATTRIBUTES"></span>Character Attributes
+## Character Attributes
 
+Character attributes can be divided into two classes: color and DBCS. The following attributes are defined in the `WinCon.h` header file.
 
-Character attributes can be divided into two classes: color and DBCS. The following attributes are defined in the `wincon.h` header file.
-
-
-| Attribute                         | Meaning                                       |
-|-----------------------------------|-----------------------------------------------|
-| **FOREGROUND\_BLUE**              | Text color contains blue.                     |
-| **FOREGROUND\_GREEN**             | Text color contains green.                    |
-| **FOREGROUND\_RED**               | Text color contains red.                      |
-| **FOREGROUND\_INTENSITY**         | Text color is intensified.                    |
-| **BACKGROUND\_BLUE**              | Background color contains blue.               |
-| **BACKGROUND\_GREEN**             | Background color contains green.              |
-| **BACKGROUND\_RED**               | Background color contains red.                |
-| **BACKGROUND\_INTENSITY**         | Background color is intensified.              |
-| **COMMON\_LVB\_LEADING\_BYTE**    | Leading byte.                                 |
-| **COMMON\_LVB\_TRAILING\_BYTE**   | Trailing byte.                                |
-| **COMMON\_LVB\_GRID\_HORIZONTAL** | Top horizontal.                               |
-| **COMMON\_LVB\_GRID\_LVERTICAL**  | Left vertical.                                |
-| **COMMON\_LVB\_GRID\_RVERTICAL**  | Right vertical.                               |
-| **COMMON\_LVB\_REVERSE\_VIDEO**   | Reverse foreground and background attributes. |
-| **COMMON\_LVB\_UNDERSCORE**       | Underscore.                                   |
-
+| Attribute | Meaning |
+|-|-|
+| **FOREGROUND\_BLUE** | Text color contains blue. |
+| **FOREGROUND\_GREEN** | Text color contains green. |
+| **FOREGROUND\_RED** | Text color contains red. |
+| **FOREGROUND\_INTENSITY** | Text color is intensified. |
+| **BACKGROUND\_BLUE** | Background color contains blue. |
+| **BACKGROUND\_GREEN** | Background color contains green. |
+| **BACKGROUND\_RED** | Background color contains red. |
+| **BACKGROUND\_INTENSITY** | Background color is intensified. |
+| **COMMON\_LVB\_LEADING\_BYTE** | Leading byte. |
+| **COMMON\_LVB\_TRAILING\_BYTE** | Trailing byte. |
+| **COMMON\_LVB\_GRID\_HORIZONTAL** | Top horizontal. |
+| **COMMON\_LVB\_GRID\_LVERTICAL** | Left vertical. |
+| **COMMON\_LVB\_GRID\_RVERTICAL** | Right vertical. |
+| **COMMON\_LVB\_REVERSE\_VIDEO** | Reverse foreground and background attributes. |
+| **COMMON\_LVB\_UNDERSCORE** | Underscore. |
 
 The foreground attributes specify the text color. The background attributes specify the color used to fill the cell's background. The other attributes are used with [DBCS](https://msdn.microsoft.com/library/windows/desktop/dd317794).
 
@@ -84,9 +82,14 @@ Each screen buffer character cell stores the color attributes for the colors use
 
 An application can use [**GetConsoleScreenBufferInfo**](getconsolescreenbufferinfo.md) to determine the current text attributes of a screen buffer and the [**SetConsoleTextAttribute**](setconsoletextattribute.md) function to set the character attributes. Changing a screen buffer's attributes does not affect the display of characters previously written. These text attributes do not affect characters written by the low-level console I/O functions (such as the [**WriteConsoleOutput**](writeconsoleoutput.md) or [**WriteConsoleOutputCharacter**](writeconsoleoutputcharacter.md) function), which either explicitly specify the attributes for each cell that is written or leave the attributes unchanged.
 
-## <span id="_win32_font_attributes"></span><span id="_WIN32_FONT_ATTRIBUTES"></span>Font Attributes
+> [!NOTE]
+> Using the low-level functions to manipulate default and specific text attributes is discouraged. It is recommended to use [virtual terminal sequences](console-virtual-terminal-sequences.md) to set text attributes. More information about preferring virtual terminal sequences can be found in the **[classic functions versus virtual terminal](classic-vs-vt.md)** document.
 
+## Font Attributes
 
 The [**GetCurrentConsoleFont**](getcurrentconsolefont.md) function retrieves information about the current console font. The information stored in the [**CONSOLE\_FONT\_INFO**](console-font-info-str.md) structure includes the width and height of each character in the font.
 
 The [**GetConsoleFontSize**](getconsolefontsize.md) function retrieves the size of the font used by the specified console screen buffer.
+
+> [!NOTE]
+> Using functions to find and manipulate font information is discouraged. It is recommended to operate command-line applications in a font neutral manner to ensure cross-platform compatibility as well as compatibility with host environments that allow the user to customize the font. More information user preferences and host environments including terminals, please see the **[ecosystem roadmap](ecosystem-roadmap.md)**.

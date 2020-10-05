@@ -34,8 +34,7 @@ api_type:
 
 Retrieves the number of buttons on the mouse used by the current console.
 
-Syntax
-------
+## Syntax
 
 ```C
 BOOL WINAPI GetNumberOfConsoleMouseButtons(
@@ -43,64 +42,32 @@ BOOL WINAPI GetNumberOfConsoleMouseButtons(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *lpNumberOfMouseButtons* \[out\]  
 A pointer to a variable that receives the number of mouse buttons.
 
-Return value
-------------
+## Return value
 
 If the function succeeds, the return value is nonzero.
 
 If the function fails, the return value is zero. To get extended error information, call [**GetLastError**](https://msdn.microsoft.com/library/windows/desktop/ms679360).
 
-Remarks
--------
+## Remarks
 
 When a console receives mouse input, an [**INPUT\_RECORD**](input-record-str.md) structure containing a [**MOUSE\_EVENT\_RECORD**](mouse-event-record-str.md) structure is placed in the console's input buffer. The **dwButtonState** member of **MOUSE\_EVENT\_RECORD** has a bit indicating the state of each mouse button. The bit is 1 if the button is down and 0 if the button is up. To determine the number of bits that are significant, use **GetNumberOfConsoleMouseButtons**.
 
-Requirements
-------------
+## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Minimum supported client</p></td>
-<td><p>Windows 2000 Professional [desktop apps only]</p></td>
-</tr>
-<tr class="even">
-<td><p>Minimum supported server</p></td>
-<td><p>Windows 2000 Server [desktop apps only]</p></td>
-</tr>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>ConsoleApi3.h (via Wincon.h, include Windows.h)</td>
-</tr>
-<tr class="even">
-<td><p>Library</p></td>
-<td>Kernel32.lib</td>
-</tr>
-<tr class="odd">
-<td><p>DLL</p></td>
-<td>Kernel32.dll</td>
-</tr>
-<tr class="even">
-</tr>
-<tr class="odd">
-</tr>
-<tr class="even">
-</tr>
-</tbody>
-</table>
+| | |
+|-|-|
+| Minimum supported client | Windows 2000 Professional \[desktop apps only\] |
+| Minimum supported server | Windows 2000 Server \[desktop apps only\] |
+| Header | ConsoleApi3.h (via WinCon.h, include Windows.h) |
+| Library | Kernel32.lib |
+| DLL | Kernel32.dll |
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [Console Functions](console-functions.md)
 

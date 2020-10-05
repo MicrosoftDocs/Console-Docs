@@ -11,7 +11,7 @@ keywords: console, character mode applications, command line applications, termi
 
 # Pseudoconsoles
 
-A *pseudoconsole* is a device type that allows applications to become the host for character-mode applications. 
+A *pseudoconsole* is a device type that allows applications to become the host for character-mode applications.
 
 This is in contrast to a typical console session where the operating system will create a hosting window on behalf of the character-mode application to handle graphical output and user input.
 

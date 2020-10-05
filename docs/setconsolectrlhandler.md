@@ -38,8 +38,7 @@ Adds or removes an application-defined [**HandlerRoutine**](handlerroutine.md) f
 
 If no handler function is specified, the function sets an inheritable attribute that determines whether the calling process ignores <kbd>CTRL</kbd>+<kbd>C</kbd> signals.
 
-Syntax
-------
+## Syntax
 
 ```C
 BOOL WINAPI SetConsoleCtrlHandler(
@@ -48,8 +47,7 @@ BOOL WINAPI SetConsoleCtrlHandler(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *HandlerRoutine* \[in, optional\]  
 A pointer to the application-defined [**HandlerRoutine**](handlerroutine.md) function to be added or removed. This parameter can be **NULL**.
@@ -59,15 +57,13 @@ If this parameter is **TRUE**, the handler is added; if it is **FALSE**, the han
 
 If the *HandlerRoutine* parameter is **NULL**, a **TRUE** value causes the calling process to ignore <kbd>CTRL</kbd>+<kbd>C</kbd> input, and a **FALSE** value restores normal processing of <kbd>CTRL</kbd>+<kbd>C</kbd> input. This attribute of ignoring or processing <kbd>CTRL</kbd>+<kbd>C</kbd> is inherited by child processes.
 
-Return value
-------------
+## Return value
 
 If the function succeeds, the return value is nonzero.
 
 If the function fails, the return value is zero. To get extended error information, call [**GetLastError**](https://msdn.microsoft.com/library/windows/desktop/ms679360).
 
-Remarks
--------
+## Remarks
 
 This function provides a similar notification for console application and services that [**WM\_QUERYENDSESSION**](https://msdn.microsoft.com/library/windows/desktop/aa376890) provides for graphical applications with a message pump. You could also use this function from a graphical application, but there is no guarantee it would arrive before the notification from **WM\_QUERYENDSESSION**.
 
@@ -91,51 +87,22 @@ If a console application loads the gdi32.dll or user32.dll library, the [**Handl
 
 To receive events when a user signs out or the device shuts down in these circumstances, create a hidden window in your console application, and then handle the [**WM\_QUERYENDSESSION**](https://msdn.microsoft.com/library/windows/desktop/aa376890) and [**WM\_ENDSESSION**](https://msdn.microsoft.com/library/windows/desktop/aa376889) window messages that the hidden window receives. You can create a hidden window by calling the [**CreateWindowEx**](https://msdn.microsoft.com/library/windows/desktop/ms632680) method with the *dwExStyle* parameter set to 0.
 
-Examples
---------
+## Examples
 
 For an example, see [Registering a Control Handler Function](registering-a-control-handler-function.md).
 
-Requirements
-------------
+## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Minimum supported client</p></td>
-<td><p>Windows 2000 Professional [desktop apps only]</p></td>
-</tr>
-<tr class="even">
-<td><p>Minimum supported server</p></td>
-<td><p>Windows 2000 Server [desktop apps only]</p></td>
-</tr>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>ConsoleApi.h (via Wincon.h, include Windows.h)</td>
-</tr>
-<tr class="even">
-<td><p>Library</p></td>
-<td>Kernel32.lib</td>
-</tr>
-<tr class="odd">
-<td><p>DLL</p></td>
-<td>Kernel32.dll</td>
-</tr>
-<tr class="even">
-</tr>
-<tr class="odd">
-</tr>
-<tr class="even">
-</tr>
-</tbody>
-</table>
+| | |
+|-|-|
+| Minimum supported client | Windows 2000 Professional \[desktop apps only\] |
+| Minimum supported server | Windows 2000 Server \[desktop apps only\] |
+| Header | ConsoleApi.h (via WinCon.h, include Windows.h) |
+| Library | Kernel32.lib |
+| DLL | Kernel32.dll |
+| Unicode and ANSI names | |
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [Console Control Handlers](console-control-handlers.md)
 

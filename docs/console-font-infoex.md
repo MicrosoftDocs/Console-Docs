@@ -25,7 +25,7 @@ topic_type:
 api_name:
 - CONSOLE_FONT_INFOEX
 api_location:
-- Wincon.h
+- WinCon.h
 api_type:
 - HeaderDef
 ---
@@ -36,8 +36,7 @@ api_type:
 
 Contains extended information for a console font.
 
-Syntax
-------
+## Syntax
 
 ```C
 typedef struct _CONSOLE_FONT_INFOEX {
@@ -50,8 +49,7 @@ typedef struct _CONSOLE_FONT_INFOEX {
 } CONSOLE_FONT_INFOEX, *PCONSOLE_FONT_INFOEX;
 ```
 
-Members
--------
+## Members
 
 **cbSize**  
 The size of this structure, in bytes. This member must be set to `sizeof(CONSOLE_FONT_INFOEX)` before calling [**GetCurrentConsoleFontEx**](getcurrentconsolefontex.md) or it will fail.
@@ -71,35 +69,18 @@ The font weight. The weight can range from 100 to 1000, in multiples of 100. For
 **FaceName**  
 The name of the typeface (such as Courier or Arial).
 
-Remarks
--------
+## Remarks
 
 To obtain the size of the font, pass the font index to the [**GetConsoleFontSize**](getconsolefontsize.md) function.
 
-Requirements
-------------
+## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Minimum supported client</p></td>
-<td><p>Windows Vista [desktop apps only]</p></td>
-</tr>
-<tr class="even">
-<td><p>Minimum supported server</p></td>
-<td><p>Windows Server 2008 [desktop apps only]</p></td>
-</tr>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Wincon.h (include Windows.h)</td>
-</tr>
-</tbody>
-</table>
+| | |
+|-|-|
+| Minimum supported client | Windows Vista \[desktop apps only\] |
+| Minimum supported server | Windows Server 2008 \[desktop apps only\] |
+| Header | WinCon.h (include Windows.h) |
 
-## <span id="see_also"></span>See also
+## See also
 
 [**GetCurrentConsoleFontEx**](getcurrentconsolefontex.md)

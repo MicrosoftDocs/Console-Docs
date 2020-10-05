@@ -33,8 +33,7 @@ api_type:
 
 Retrieves extended information about the current console font.
 
-Syntax
-------
+## Syntax
 
 ```C
 BOOL WINAPI GetCurrentConsoleFontEx(
@@ -44,8 +43,7 @@ BOOL WINAPI GetCurrentConsoleFontEx(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *hConsoleOutput* \[in\]  
 A handle to the console screen buffer. The handle must have the **GENERIC\_READ** access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
@@ -56,53 +54,23 @@ If this parameter is **TRUE**, font information is retrieved for the maximum win
 *lpConsoleCurrentFontEx* \[out\]  
 A pointer to a [**CONSOLE\_FONT\_INFOEX**](console-font-infoex.md) structure that receives the requested font information.
 
-Return value
-------------
+## Return value
 
 If the function succeeds, the return value is nonzero.
 
 If the function fails, the return value is zero. To get extended error information, call [**GetLastError**](https://msdn.microsoft.com/library/windows/desktop/ms679360).
 
-Requirements
-------------
+## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Minimum supported client</p></td>
-<td><p>Windows Vista [desktop apps only]</p></td>
-</tr>
-<tr class="even">
-<td><p>Minimum supported server</p></td>
-<td><p>Windows Server 2008 [desktop apps only]</p></td>
-</tr>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>ConsoleApi3.h (via Wincon.h, include Windows.h)</td>
-</tr>
-<tr class="even">
-<td><p>Library</p></td>
-<td>Kernel32.lib</td>
-</tr>
-<tr class="odd">
-<td><p>DLL</p></td>
-<td>Kernel32.dll</td>
-</tr>
-<tr class="even">
-</tr>
-<tr class="odd">
-</tr>
-<tr class="even">
-</tr>
-</tbody>
-</table>
+| | |
+|-|-|
+| Minimum supported client | Windows Vista \[desktop apps only\] |
+| Minimum supported server | Windows Server 2008 \[desktop apps only\] |
+| Header | ConsoleApi3.h (via WinCon.h, include Windows.h) |
+| Library | Kernel32.lib |
+| DLL | Kernel32.dll |
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [Console Functions](console-functions.md)
 

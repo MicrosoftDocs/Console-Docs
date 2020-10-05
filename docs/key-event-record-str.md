@@ -26,18 +26,16 @@ topic_type:
 api_name:
 - KEY_EVENT_RECORD
 api_location:
-- Wincon.h
+- WinCon.h
 api_type:
 - HeaderDef
 ---
 
 # KEY\_EVENT\_RECORD structure
 
-
 Describes a keyboard input event in a console [**INPUT\_RECORD**](input-record-str.md) structure.
 
-Syntax
-------
+## Syntax
 
 ```C
 typedef struct _KEY_EVENT_RECORD {
@@ -53,8 +51,7 @@ typedef struct _KEY_EVENT_RECORD {
 } KEY_EVENT_RECORD;
 ```
 
-Members
--------
+## Members
 
 **bKeyDown**  
 If the key is pressed, this member is **TRUE**. Otherwise, this member is **FALSE** (the key is released).
@@ -80,129 +77,37 @@ Translated ASCII character.
 **dwControlKeyState**  
 The state of the control keys. This member can be one or more of the following values.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Value</th>
-<th>Meaning</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span id="CAPSLOCK_ON"></span><span id="capslock_on"></span>
-<strong>CAPSLOCK_ON</strong>
-0x0080</td>
-<td><p>The CAPS LOCK light is on.</p></td>
-</tr>
-<tr class="even">
-<td><span id="ENHANCED_KEY"></span><span id="enhanced_key"></span>
-<strong>ENHANCED_KEY</strong>
-0x0100</td>
-<td><p>The key is enhanced.</p></td>
-</tr>
-<tr class="odd">
-<td><span id="LEFT_ALT_PRESSED"></span><span id="left_alt_pressed"></span>
-<strong>LEFT_ALT_PRESSED</strong>
-0x0002</td>
-<td><p>The left ALT key is pressed.</p></td>
-</tr>
-<tr class="even">
-<td><span id="LEFT_CTRL_PRESSED"></span><span id="left_ctrl_pressed"></span>
-<strong>LEFT_CTRL_PRESSED</strong>
-0x0008</td>
-<td><p>The left CTRL key is pressed.</p></td>
-</tr>
-<tr class="odd">
-<td><span id="NUMLOCK_ON"></span><span id="numlock_on"></span>
-<strong>NUMLOCK_ON</strong>
-0x0020</td>
-<td><p>The NUM LOCK light is on.</p></td>
-</tr>
-<tr class="even">
-<td><span id="RIGHT_ALT_PRESSED"></span><span id="right_alt_pressed"></span>
-<strong>RIGHT_ALT_PRESSED</strong>
-0x0001</td>
-<td><p>The right ALT key is pressed.</p></td>
-</tr>
-<tr class="odd">
-<td><span id="RIGHT_CTRL_PRESSED"></span><span id="right_ctrl_pressed"></span>
-<strong>RIGHT_CTRL_PRESSED</strong>
-0x0004</td>
-<td><p>The right CTRL key is pressed.</p></td>
-</tr>
-<tr class="even">
-<td><span id="SCROLLLOCK_ON"></span><span id="scrolllock_on"></span>
-<strong>SCROLLLOCK_ON</strong>
-0x0040</td>
-<td><p>The SCROLL LOCK light is on.</p></td>
-</tr>
-<tr class="odd">
-<td><span id="SHIFT_PRESSED"></span><span id="shift_pressed"></span>
-<strong>SHIFT_PRESSED</strong>
-0x0010</td>
-<td><p>The SHIFT key is pressed.</p></td>
-</tr>
-<tr class="even">
-</tr>
-<tr class="odd">
-</tr>
-<tr class="even">
-</tr>
-<tr class="odd">
-</tr>
-<tr class="even">
-</tr>
-<tr class="odd">
-</tr>
-<tr class="even">
-</tr>
-</tbody>
-</table>
+| Value | Meaning |
+|-|-|
+| **CAPSLOCK_ON** 0x0080 | The CAPS LOCK light is on. |
+| **ENHANCED_KEY** 0x0100 | The key is enhanced. See [remarks](key-event-record-str#remarks). |
+| **LEFT_ALT_PRESSED** 0x0002 | The left ALT key is pressed. |
+| **LEFT_CTRL_PRESSED** 0x0008 | The left CTRL key is pressed. |
+| **NUMLOCK_ON** 0x0020 | The NUM LOCK light is on. |
+| **RIGHT_ALT_PRESSED** 0x0001 | The right ALT key is pressed. |
+| **RIGHT_CTRL_PRESSED** 0x0004 | The right CTRL key is pressed. |
+| **SCROLLLOCK_ON** 0x0040 | The SCROLL LOCK light is on. |
+| **SHIFT_PRESSED** 0x0010 | The SHIFT key is pressed. |
 
- 
-
-Remarks
--------
+## Remarks
 
 Enhanced keys for the IBM® 101- and 102-key keyboards are the INS, DEL, HOME, END, PAGE UP, PAGE DOWN, and direction keys in the clusters to the left of the keypad; and the divide (/) and ENTER keys in the keypad.
 
 Keyboard input events are generated when any key, including control keys, is pressed or released. However, the ALT key when pressed and released without combining with another character, has special meaning to the system and is not passed through to the application. Also, the CTRL+C key combination is not passed through if the input handle is in processed mode (**ENABLE\_PROCESSED\_INPUT**).
 
-Examples
---------
+## Examples
 
 For an example, see [Reading Input Buffer Events](reading-input-buffer-events.md).
 
-Requirements
-------------
+## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Minimum supported client</p></td>
-<td><p>Windows 2000 Professional [desktop apps only]</p></td>
-</tr>
-<tr class="even">
-<td><p>Minimum supported server</p></td>
-<td><p>Windows 2000 Server [desktop apps only]</p></td>
-</tr>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>WinConTypes.h (via Wincon.h, include Windows.h)</td>
-</tr>
-</tbody>
-</table>
+| | |
+|-|-|
+| Minimum supported client | Windows 2000 Professional \[desktop apps only\] |
+| Minimum supported server | Windows 2000 Server \[desktop apps only\] |
+| Header | WinConTypes.h (via WinCon.h, include Windows.h) |
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [**PeekConsoleInput**](peekconsoleinput.md)
 

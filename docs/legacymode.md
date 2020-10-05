@@ -21,7 +21,8 @@ Right-click on the application title bar and choose the `Properties` menu option
 
 The setting can be reverted by returning to the same property sheet menu and unchecking the box then pressing `OK`.
 
-**NOTE:** This setting is globally applied to all sessions that start after the preference is changed. Sessions that are already open will not be changed.
+> [!NOTE]
+>This setting is globally applied to all sessions that start after the preference is changed. Sessions that are already open will not be changed.
 
 ## Differences between modes
 
@@ -37,6 +38,6 @@ The legacy Console Host embedded the suggestion portion of the IME inside the ho
 
 ### API Differences
 
-The major known difference between legacy and current is the implementation of UTF-8. The legacy host has extremely rudimentary and often incorrect support of UTF-8 with [code page 65001](https://docs.microsoft.com/windows/win32/intl/code-pages). The current console host contains incremental improvements release-over-release of Windows 10 to improve this support. Applications that are attempting to rely on predicting "known incorrect" interpretations of UTF-8 from the legacy console will find themselves receiving different answers as support is improved. 
+The major known difference between legacy and current is the implementation of UTF-8. The legacy host has extremely rudimentary and often incorrect support of UTF-8 with [code page 65001](https://docs.microsoft.com/windows/win32/intl/code-pages). The current console host contains incremental improvements release-over-release of Windows 10 to improve this support. Applications that are attempting to rely on predicting "known incorrect" interpretations of UTF-8 from the legacy console will find themselves receiving different answers as support is improved.
 
 Other differences experienced with APIs should be reported to [Microsoft/Terminal](https://github.com/microsoft/terminal/) GitHub repository or via the [Feedback Hub](https://docs.microsoft.com/windows-insider/feedback-hub/feedback-hub-app) for triage and possible remediation.

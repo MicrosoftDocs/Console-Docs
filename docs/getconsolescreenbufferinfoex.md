@@ -36,8 +36,7 @@ api_type:
 
 Retrieves extended information about the specified console screen buffer.
 
-Syntax
-------
+## Syntax
 
 ```C
 BOOL WINAPI GetConsoleScreenBufferInfoEx(
@@ -46,8 +45,7 @@ BOOL WINAPI GetConsoleScreenBufferInfoEx(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *hConsoleOutput* \[in\]  
 A handle to the console screen buffer. The handle must have the **GENERIC\_READ** access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
@@ -55,60 +53,29 @@ A handle to the console screen buffer. The handle must have the **GENERIC\_READ*
 *lpConsoleScreenBufferInfoEx* \[out\]  
 A [**CONSOLE\_SCREEN\_BUFFER\_INFOEX**](console-screen-buffer-infoex.md) structure that receives the requested console screen buffer information.
 
-Return value
-------------
+## Return value
 
 If the function succeeds, the return value is nonzero.
 
 If the function fails, the return value is zero. To get extended error information, call [**GetLastError**](https://msdn.microsoft.com/library/windows/desktop/ms679360).
 
-Remarks
--------
+## Remarks
 
 The rectangle returned in the **srWindow** member of the [**CONSOLE\_SCREEN\_BUFFER\_INFOEX**](console-screen-buffer-infoex.md) structure can be modified and then passed to the [**SetConsoleWindowInfo**](setconsolewindowinfo.md) function to scroll the console screen buffer in the window, to change the size of the window, or both.
 
 All coordinates returned in the [**CONSOLE\_SCREEN\_BUFFER\_INFOEX**](console-screen-buffer-infoex.md) structure are in character-cell coordinates, where the origin (0, 0) is at the upper-left corner of the console screen buffer.
 
-Requirements
-------------
+## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Minimum supported client</p></td>
-<td><p>Windows Vista [desktop apps only]</p></td>
-</tr>
-<tr class="even">
-<td><p>Minimum supported server</p></td>
-<td><p>Windows Server 2008 [desktop apps only]</p></td>
-</tr>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>ConsoleApi2.h (via Wincon.h, include Windows.h)</td>
-</tr>
-<tr class="even">
-<td><p>Library</p></td>
-<td>Kernel32.lib</td>
-</tr>
-<tr class="odd">
-<td><p>DLL</p></td>
-<td>Kernel32.dll</td>
-</tr>
-<tr class="even">
-</tr>
-<tr class="odd">
-</tr>
-<tr class="even">
-</tr>
-</tbody>
-</table>
+| | |
+|-|-|
+| Minimum supported client | Windows Vista \[desktop apps only\] |
+| Minimum supported server | Windows Server 2008 \[desktop apps only\] |
+| Header | ConsoleApi2.h (via WinCon.h, include Windows.h) |
+| Library | Kernel32.lib |
+| DLL | Kernel32.dll |
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [Console Functions](console-functions.md)
 

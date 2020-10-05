@@ -26,7 +26,7 @@ topic_type:
 api_name:
 - MENU_EVENT_RECORD
 api_location:
-- Wincon.h
+- WinCon.h
 api_type:
 - HeaderDef
 ---
@@ -37,8 +37,7 @@ api_type:
 
 Describes a menu event in a console [**INPUT\_RECORD**](input-record-str.md) structure. These events are used internally and should be ignored.
 
-Syntax
-------
+## Syntax
 
 ```C
 typedef struct _MENU_EVENT_RECORD {
@@ -46,37 +45,19 @@ typedef struct _MENU_EVENT_RECORD {
 } MENU_EVENT_RECORD, *PMENU_EVENT_RECORD;
 ```
 
-Members
--------
+## Members
 
 **dwCommandId**  
 Reserved.
 
-Requirements
-------------
+## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Minimum supported client</p></td>
-<td><p>Windows 2000 Professional [desktop apps only]</p></td>
-</tr>
-<tr class="even">
-<td><p>Minimum supported server</p></td>
-<td><p>Windows 2000 Server [desktop apps only]</p></td>
-</tr>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>WinConTypes.h (via Wincon.h, include Windows.h)</td>
-</tr>
-</tbody>
-</table>
+| | |
+|-|-|
+| Minimum supported client | Windows 2000 Professional \[desktop apps only\] |
+| Minimum supported server | Windows 2000 Server \[desktop apps only\] |
+| Header | WinConTypes.h (via WinCon.h, include Windows.h) |
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [**INPUT\_RECORD**](input-record-str.md)

@@ -17,7 +17,6 @@ ms.assetid: f1c72277-f06c-4147-a74c-6aaf6feb730e
 
 # Registering a Control Handler Function
 
-
 This is an example of the [**SetConsoleCtrlHandler**](setconsolectrlhandler.md) function that is used to install a control handler.
 
 When a CTRL+C signal is received, the control handler returns **TRUE**, indicating that it has handled the signal. Doing this prevents other control handlers from being called.
@@ -32,26 +31,26 @@ When a **CTRL\_BREAK\_EVENT**, **CTRL\_LOGOFF\_EVENT**, or **CTRL\_SHUTDOWN\_EVE
 
 #include "pch.h"
 
-#include <windows.h> 
-#include <stdio.h> 
+#include <windows.h>
+#include <stdio.h>
 
 BOOL WINAPI CtrlHandler(DWORD fdwCtrlType)
 {
     switch (fdwCtrlType)
     {
-        // Handle the CTRL-C signal. 
+        // Handle the CTRL-C signal.
     case CTRL_C_EVENT:
         printf("Ctrl-C event\n\n");
         Beep(750, 300);
         return TRUE;
 
-        // CTRL-CLOSE: confirm that the user wants to exit. 
+        // CTRL-CLOSE: confirm that the user wants to exit.
     case CTRL_CLOSE_EVENT:
         Beep(600, 200);
         printf("Ctrl-Close event\n\n");
         return TRUE;
 
-        // Pass other signals to the next handler. 
+        // Pass other signals to the next handler.
     case CTRL_BREAK_EVENT:
         Beep(900, 200);
         printf("Ctrl-Break event\n\n");

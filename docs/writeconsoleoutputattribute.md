@@ -33,11 +33,9 @@ api_type:
 
 # WriteConsoleOutputAttribute function
 
-
 Copies a number of character attributes to consecutive cells of a console screen buffer, beginning at a specified location.
 
-Syntax
-------
+## Syntax
 
 ```C
 BOOL WINAPI WriteConsoleOutputAttribute(
@@ -49,14 +47,13 @@ BOOL WINAPI WriteConsoleOutputAttribute(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *hConsoleOutput* \[in\]  
 A handle to the console screen buffer. The handle must have the **GENERIC\_WRITE** access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
 
 *lpAttribute* \[in\]  
-The attributes to be used when writing to the console screen buffer. For more information, see [Character Attributes](console-screen-buffers.md#_win32_font_attributes).
+The attributes to be used when writing to the console screen buffer. For more information, see [Character Attributes](console-screen-buffers.md#character-attributes).
 
 *nLength* \[in\]  
 The number of screen buffer character cells to which the attributes will be copied.
@@ -67,60 +64,29 @@ A [**COORD**](coord-str.md) structure that specifies the character coordinates o
 *lpNumberOfAttrsWritten* \[out\]  
 A pointer to a variable that receives the number of attributes actually written to the console screen buffer.
 
-Return value
-------------
+## Return value
 
 If the function succeeds, the return value is nonzero.
 
 If the function fails, the return value is zero. To get extended error information, call [**GetLastError**](https://msdn.microsoft.com/library/windows/desktop/ms679360).
 
-Remarks
--------
+## Remarks
 
 If the number of attributes to be written to extends beyond the end of the specified row in the console screen buffer, attributes are written to the next row. If the number of attributes to be written to extends beyond the end of the console screen buffer, the attributes are written up to the end of the console screen buffer.
 
 The character values at the positions written to are not changed.
 
-Requirements
-------------
+## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Minimum supported client</p></td>
-<td><p>Windows 2000 Professional [desktop apps only]</p></td>
-</tr>
-<tr class="even">
-<td><p>Minimum supported server</p></td>
-<td><p>Windows 2000 Server [desktop apps only]</p></td>
-</tr>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>ConsoleApi2.h (via Wincon.h, include Windows.h)</td>
-</tr>
-<tr class="even">
-<td><p>Library</p></td>
-<td>Kernel32.lib</td>
-</tr>
-<tr class="odd">
-<td><p>DLL</p></td>
-<td>Kernel32.dll</td>
-</tr>
-<tr class="even">
-</tr>
-<tr class="odd">
-</tr>
-<tr class="even">
-</tr>
-</tbody>
-</table>
+| | |
+|-|-|
+| Minimum supported client | Windows 2000 Professional \[desktop apps only\] |
+| Minimum supported server | Windows 2000 Server \[desktop apps only\] |
+| Header | ConsoleApi2.h (via WinCon.h, include Windows.h) |
+| Library | Kernel32.lib |
+| DLL | Kernel32.dll |
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [Console Functions](console-functions.md)
 
@@ -137,11 +103,3 @@ Requirements
 [**WriteConsoleOutput**](writeconsoleoutput.md)
 
 [**WriteConsoleOutputCharacter**](writeconsoleoutputcharacter.md)
-
- 
-
- 
-
-
-
-
