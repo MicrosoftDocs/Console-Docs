@@ -33,7 +33,7 @@ void WINAPI ClosePseudoConsole(
 ## Parameters
 
 *hPC* \[in\]  
-A handle to an active psuedoconsole as opened by [CreatePseudoConsole](createpseudoconsole.md).
+A handle to an active pseudoconsole as opened by [CreatePseudoConsole](createpseudoconsole.md).
 
 ## Return value
 

@@ -32,7 +32,7 @@ Within this space, we're referring to "clients" as applications that do the work
 
 ## Console Subsystem
 
-This is a catch-all term representing all modules in the console team's space. It specifically refers to a flag that is a part of the Portable Executable header that specifies whether the starting application is either a command-line/console application (and must have standard handles to start) or a windows application (and does not need them).
+This is a catch-all term representing all modules affecting console and command-line operations. It specifically refers to a flag that is a part of the Portable Executable header that specifies whether the starting application is either a command-line/console application (and must have standard handles to start) or a windows application (and does not need them).
 
 The console host, command-line client applications, the console driver, the console API surface, the psuedoconsole infrastructure, terminals, configuration property sheets, the mechanisms and stubs inside the process loader, and any utilities related to the workings of these forms of applications are considered to belong to this group.
 
@@ -40,7 +40,7 @@ The console host, command-line client applications, the console driver, the cons
 
 The Windows Console Host, or `conhost.exe`, is both the server application for all of the Windows Console APIs as well as the classic Windows user interface for working with command-line applications. The complete contents of this binary, both the API server and the UI, historically belonged to Windows `csrss.exe`, a critical system process, and was diverged for security and isolation purposes. Going forward, this binary will continue to be responsible for API call servicing and translation, but the user-interface components are intended to be delegated through a pseudoconsole to a terminal.
 
-## Psuedoconsole
+## Pseudoconsole
 
 This is the Windows simulation of a pseudoterminal or "PTY" from other platforms. It tries to match the general interface philosophy of PTYs, providing a simple bidirectional channel of text based communication, but it supplements it on Windows with a large compatibility layer to translate the breadth of Windows applications written prior to this design philosophy change from the classic console API surface into the simple text channel communication form. Terminals can use the pseudoconsole to take ownership of the user-interface elements away from the console host, `conhost.exe`, while leaving the API servicing, translation, and compatibility efforts with that OS component.
 

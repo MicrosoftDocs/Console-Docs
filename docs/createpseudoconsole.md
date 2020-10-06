@@ -81,7 +81,7 @@ If using `PSEUDOCONSOLE_INHERIT_CURSOR`, the calling application should be prepa
 
 ## Examples
 
-For a full walkthrough on using this function to establish a psuedoconsole session, please see [Creating a Pseudoconsole Session](creating-a-pseudoconsole-session.md).
+For a full walkthrough on using this function to establish a pseudoconsole session, please see [Creating a Pseudoconsole Session](creating-a-pseudoconsole-session.md).
 
 ## Requirements
 

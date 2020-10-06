@@ -33,7 +33,9 @@ Virtual Terminal Sequences hold a major advantage for remote access as they requ
 
 Some of the Windows Console APIs provide low-level access to the input and output buffers or convenience functions for interactive command-lines like aliases and command history programmed within the console subsystem and host environment, instead of within the command-line client application itself. This is in contrast to other platforms where both the memory of the current state of the application and convenience functionality is the responsibility of the command-line utility or shell itself.
 
-While the Windows way of handling this responsibility in the console host and API makes it quicker and easier to write a command-line application with these features and without responsibility of remembering drawing state or handling editing convenience features, it makes it nearly impossible to connect those activities remotely across platforms, versions, or scenarios due to variations in implementations and availability. It also makes the final interactive experience of these Windows command-line applications completely dependent on the console host's implementation, priorities, and release cycle.
+While the Windows way of handling this responsibility in the console host and API makes it quicker and easier to write a command-line application with these features and without responsibility of remembering drawing state or handling editing convenience features, it makes it nearly impossible to connect those activities remotely across platforms, versions, or scenarios due to variations in implementations and availability. It also makes the final interactive experience of these Windows command-line applications completely dependent on the console host's implementation, priorities, and release cycle. 
+
+For example, advanced line editing features like syntax highlighting and complex selection are only possible when a command-line application handles editing concerns itself. The console could never have enough context to fully understand these scenarios in a broad manner like the client application can.
 
 By contrast, other platforms handle these activities and virtual terminal communication itself through reusable client-side libraries like [readline](https://tiswww.case.edu/php/chet/readline/rltop.html) and [ncurses](https://invisible-island.net/ncurses/ncurses.html). The final terminal is only responsible for displaying information and receiving input through that bidirectional communication channel.
 
@@ -43,32 +45,32 @@ On Windows, some actions can be performed in the opposite-to-natural direction o
 
 ### Direct Window Access
 
-On Windows, the exact window handle to the hosting window is available through the Console API surface. This allows a command-line utility to perform advanced window operations by reaching into the wide gamut of Win32 APIs permitted against a window handle and manipulate the window state, frame, icon, or other properties about the window. By contrast, on other platforms with virtual terminal sequences, there is a specific gamut of commands that can be performed against the window to do things like changing its size or displayed title and they must be done in the same band and under the same control as the remainder of the stream.
+On Windows, the exact window handle to the hosting window is available through the Console API surface. This allows a command-line utility to perform advanced window operations by reaching into the wide gamut of Win32 APIs permitted against a window handle and manipulate the window state, frame, icon, or other properties about the window. By contrast, on other platforms with virtual terminal sequences, there is a narrow set of commands that can be performed against the window to do things like changing its size or displayed title and they must be done in the same band and under the same control as the remainder of the stream.
 
 As Windows has evolved, the security controls and restrictions on window handles have increased. Additionally, the nature and existence of an application-addressable window handle on any specific user interface element has evolved, especially with the increased support of device form factors and platforms. This makes direct window access to command-line applications fragile as the platform and experiences evolve.
 
 ### Unicode
 
-The implicit standard for communication across platforms and the web is Unicode, specifically in the UTF-8 form. Of course, other encodings still exist, but generally speaking, when otherwise undefined, using UTF-8 is accepted as the appropriate default balance of portability, storage/transmission size, and breadth of expression required to support the world's languages and glyphs.
+The implicit standard for communication across platforms and the web is Unicode, specifically in the UTF-8 form. Of course, other encodings still exist.  However, when otherwise undefined, using UTF-8 is widely accepted as the appropriate default. It represents the balance of portability, storage/transmission size, and breadth of expression required to support the world's languages and glyphs.
 
-The Windows console platform has and will continue to support all existing code pages and encodings, but we recommend UTF-8 for all forward looking development and also accept UTF-16 as an algorithmically-translatable alternative representation of the same information that is more compatible with Windows' historical Unicode philosophies extending from initial UCS-2 implementations.
+The Windows console platform has supported and will continue to support all existing code pages and encodings, but we recommend UTF-8 for all forward looking development and also accept UTF-16 as an algorithmically-translatable alternative.
 
-UTF-8 support in the console can be found via the _A_ variant of all Console APIs or the filesystem [**WriteFile**](https://msdn.microsoft.com/library/windows/desktop/aa365747) and [**ReadFile**](https://msdn.microsoft.com/library/windows/desktop/aa365467) methods against console handles after setting the codepage to `65001` or `CP_UTF8` with the [**SetConsoleOutputCP**](setconsoleoutputcp.md) and [**SetConsoleCP**](setconsolecp.md) methods as appropriate. Setting the code pages in advance is only necessary if the machine has not chosen "Use Unicode UTF-8 for worldwide language support" in the settings for Non-Unicode applications in the Region section of the Control Panel.
+UTF-8 support in the console can be found via the _A_ variant of all Console APIs against console handles after setting the codepage to `65001` or `CP_UTF8` with the [**SetConsoleOutputCP**](setconsoleoutputcp.md) and [**SetConsoleCP**](setconsolecp.md) methods as appropriate. Setting the code pages in advance is only necessary if the machine has not chosen "Use Unicode UTF-8 for worldwide language support" in the settings for Non-Unicode applications in the Region section of the Control Panel.
 
-UTF-16 support in the console can be found with no additional configuration via the _W_ variant of all console APIs and is a more likely choice for applications already well versed in UTF-16 through communication with the `wchar_t` and _W_ variant of other Microsoft and Windows platform functions and products.
+UTF-16 support in the console can be utilized with no additional configuration via the _W_ variant of all console APIs and is a more likely choice for applications already well versed in UTF-16 through communication with the `wchar_t` and _W_ variant of other Microsoft and Windows platform functions and products.
 
 ## Recommendations
 
 For all new and ongoing development on Windows, virtual terminal sequences are recommended as the way of interacting with the terminal. This will converge Windows command-line client applications with the style of application programming on all other platforms.
 
-A limited subset of Windows Console APIs are still necessary to establish the initial environment as the Windows platform still differs from others in process, signal, device, and encoding handling:
+A limited subset of Windows Console APIs is still necessary to establish the initial environment as the Windows platform still differs from others in process, signal, device, and encoding handling:
 
 - The standard handles to a process will still be controlled with **[GetStdHandle](getstdhandle.md)** and **[SetStdHandle](setstdhandle.md)**.
 - Configuration of the console modes on a handle to opt in to Virtual Terminal Sequence support will be handled with **[GetConsoleMode](getconsolemode.md)** and **[SetConsoleMode](setconsolemode.md)**.
 - Declaration of code page or UTF-8 support is conducted with [**SetConsoleOutputCP**](setconsoleoutputcp.md) and [**SetConsoleCP**](setconsolecp.md) methods.
 - Some level of overall process management may be required with the [**AllocConsole**](allocconsole.md), [**AttachConsole**](attachconsole.md) and [**FreeConsole**](freeconsole.md) to join or leave a console device session.
 - Signals and signal handling will continue to be conducted with [**SetConsoleCtrlHandler**](setconsolectrlhandler.md), [**HandlerRoutine**](handlerroutine.md), and [**GenerateConsoleCtrlEvent**](generateconsolectrlevent.md).
-- Communication with the console device handles can be conducted with [**WriteConsole**](writeconsole.md), [**ReadConsole**](readconsole.md), [**WriteFile**](https://msdn.microsoft.com/library/windows/desktop/aa365747) and [**ReadFile**](https://msdn.microsoft.com/library/windows/desktop/aa365467).
+- Communication with the console device handles can be conducted with [**WriteConsole**](writeconsole.md) and [**ReadConsole**](readconsole.md).
     - These may also be leveraged through programming language runtimes in the forms of:
         - C Runtime (CRT): [Stream I/O](https://docs.microsoft.com/cpp/c-runtime-library/stream-i-o) like **printf**, **scanf**, **putc**, **getc**, or [other levels of I/O functions](https://docs.microsoft.com/cpp/c-runtime-library/input-and-output).
         - C++ Standard Library (STL): [iostream](https://docs.microsoft.com/cpp/standard-library/iostream) like **cout** and **cin**.
