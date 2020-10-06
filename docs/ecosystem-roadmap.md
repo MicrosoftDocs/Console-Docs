@@ -10,5 +10,3 @@ ms.prod: console
 ---
 
 # Windows Console and Terminal Ecosystem Roadmap
-
-
