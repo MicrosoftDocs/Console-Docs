@@ -27,7 +27,7 @@ As every platform in the world, except Windows, natively spoke virtual terminal 
 
 ### Remote Access
 
-Virtual Terminal Sequences hold a major advantage for remote access as they require no additional work to transport or perform remote procedure calls over what is required to set up a standard remote command-line connection. Simply connecting an outbound and an inbound transport channel (or a single bidirectional channel) over a pipe, socket, file, serial port, or any other device is sufficient to completely carry all information necessary required for an application speaking these sequences to a remote host. On the contrary, the Windows Console APIs have only been accessible on the local machine and all efforts to remote them would require building an entire remote calling and transport interface layer beyond just a simple channel.
+Virtual Terminal Sequences hold a major advantage for remote access as they require no additional work to transport or perform remote procedure calls over what is required to set up a standard remote command-line connection. Simply connecting an outbound and an inbound transport channel (or a single bidirectional channel) over a pipe, socket, file, serial port, or any other device is sufficient to completely carry all information required for an application speaking these sequences to a remote host. On the contrary, the Windows Console APIs have only been accessible on the local machine and all efforts to remote them would require building an entire remote calling and transport interface layer beyond just a simple channel.
 
 ### Separation of Concerns
 

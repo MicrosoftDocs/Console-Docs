@@ -6,7 +6,6 @@ ms.author: miniksa
 ms.topic: conceptual
 keywords: console, terminal, virtual terminal, console host, command-line, subsystem, roadmap, ecosystem
 ms.prod: console
-
 ---
 
 # Windows Console and Terminal Ecosystem Roadmap
@@ -15,43 +14,7 @@ This document is intended to provide a high-level overview of the Windows Consol
 
 ## Definitions
 
-We'll start with some definitions of command words and phrases in this space that can help you understand the overall strategy and be used as reference throughout this document set.
-
-### Command Line Applications
-
-Command line applications, or sometimes called "console applications" and/or referred to as "clients" of the console subsystem, are programs that operate mainly on a stream of text or character information. They generally contain no user interface elements of their own and delegate both the output/display and the input/interaction roles to a hosting application. Command line applications receive a stream of text on their standard input `STDIN` handle which represents a user's keyboard input, process that information, then respond with a stream of text on their standard output `STDOUT` for display back to the user's monitor. Of course, this has evolved over time for additional input devices and remote scenarios, but the same basic philosophy remains the same: command-line clients operate on text and someone else manages display/input.
-
-### Standard Handles
-
-The standard handles are a series of handles, `STDIN`, `STDOUT`, and `STDERR`, that are introduced a part of process space on startup and represent a place where information can be accepted on the way in and sent back on the way out (including a special place to report errors out). For command-line applications, these must always exist when the application starts and are either inherited from the parent automatically, set explicitly by the parent, or created automatically by the operating system if neither of the first two are specified/permitted. For classic windows applications, these may be blank on startup, but can be implicitly or explicitly inherited from the parent or allocated, attached, and freed during runtime by the application itself.
-
-Standard handles do not imply a specific type of attached device, though in the case of command-line applications, the device is most commonly a console device, file (from redirection in a shell), or a pipe (from a shell connecting the output of one utility to the input of the next). It may also be a socket or any other type of device.
-
-### TTY/PTY
-
-On non-Windows platforms, the TTY and PTY devices represent respectively either a true physical device or a software-created pseudo-device that represent the same as a Windows console session: a channel where communication between a command-line client application and a server host interactivity application or physical keyboard/display device can exchange text-based information.
-
-### Clients and Servers
-
-Within this space, we're referring to "clients" as applications that do the work of processing information and running commands. The "server" applications are those that are responsible for the user interface and are workers to translate input and output into standard forms on behalf of the clients.
-
-### Console Subsystem
-
-This is a catch-all term representing all modules in the console team's space. It specifically refers to a flag that is a part of the Portable Executable header that specifies whether the starting application is either a command-line/console application (and must have standard handles to start) or a windows application (and does not need them).
-
-The console host, command-line client applications, the console driver, the console API surface, the psuedoconsole infrastructure, terminals, configuration property sheets, the mechanisms and stubs inside the process loader, and any utilities related to the workings of these forms of applications are considered to belong to this group.
-
-### Console Host
-
-The Windows Console Host, or `conhost.exe`, is both the server application for all of the Windows Console APIs as well as the classic Windows user interface for working with command-line applications. The complete contents of this binary, both the API server and the UI, historically belonged to Windows `csrss.exe`, a critical system process, and was diverged for security and isolation purposes. Going forward, this binary will continue to be responsible for API call servicing and translation, but the user-interface components are intended to be delegated through a pseudoconsole to a terminal.
-
-### Psuedoconsole
-
-This is the Windows simulation of a pseudoterminal or "PTY" from other platforms. It tries to match the general interface philosophy of PTYs, providing a simple bidirectional channel of text based communication, but it supplements it on Windows with a large compatibility layer to translate the breadth of Windows applications written prior to this design philosophy change from the classic console API surface into the simple text channel communication form. Terminals can use the pseudoconsole to take ownership of the user-interface elements away from the console host, `conhost.exe`, while leaving the API servicing, translation, and compatibility efforts with that OS component.
-
-### Terminal
-
-A terminal is the user-interface and interaction module for a command-line application. Today, it's a software representation of what used to be historically a physical device with a display monitor, a keyboard, and a bidirectional serial communication channel. It is responsible for gathering input from the user in a variety of forms, translating it and encoding it and any special command information into a single text stream, and submitting it to the PTY for transmission on to the `STDIN` channel of the command-line client application. It is also responsible for receiving back information, via the PTY, that came from a client application's `STDOUT` channel, decoding any special information in the payload, laying out all the text and additional commands, and presenting that graphically to the end user.
+It is highly recommended to familiarize yourself with the [definitions](definitions.md) behind common terminology in this space before proceeding with the remainder of this document.
 
 ## Products
 
@@ -69,12 +32,46 @@ This is the new Windows interface for command-line applications, intended as a f
 
 ## Roadmap
 
+This roadmap starts with a brief history of major milestones in the console subsystem prior to 2015. It then moves into an overview of work performed since 2015 when the renewed focus on the command-line was formed in the Windows 10 era and finishes with what is intended to come next.
+
+### Implementation
+
+**\[1989-1990s]** The initial console host system was implemented as an emulation of the DOS environment within the Windows operating system. Its code is entangled and cooperative with the Command Prompt, `cmd.exe`, that is a representation of that DOS environemnt and shares responsibilities and privileges with that interpreter/shell. It also provides a base level of services for other command-line utilities to perform services in a CMD-like manner.
+
+### DBCS for CJK
+
+**\[1997-1999\]** Around this time, DBCS support ("Double-byte character set") is introduced to support CJK (Chinese, Japanese, and Korean) markets. This effort results in a bifurcation of many of the writing and reading methods inside the console to provide both "western" versions to deal with single-byte characters as well as an alternative representation for "eastern" versions where two bytes are required to represent the vast array of characters. This also included the expansion of the representation of a cell in the console environment to be either 1 or 2 cells wide, where 1 cell is narrow (taller than it is wide) and 2 cells is wide, full-width, or otherwise a square in which typical Chinese, Japanese, and Korean ideographs can be inscribed.
+
+### Security/Isolation
+
+**\[2005-2009\]** With the console subsystem experience running inside the critical system process, `csrss.exe`, connecting assorted client applications at varying access levels to a single super-critical and privileged process was noticed as particularly dangerous. In this era, the console subsystem was split out into client, driver, and server applications that can each run in their own context, reducing the responsibilities and privilege in each. This isolation also increased general robustness of the system as any failure in the console subsystem no longer affected other critical process functionality.
+
+### Windows 10 User Experience Improvements
+
+**\[2014-2016\]** After a long time of general scattered maintenance of the console subsystem by assorted teams across the organization, a new developer focused team was formed to own and drive improvements in the console. This time frame included line selection, smooth window resizing, reflowing text, copy and paste, high DPI support, and a focus on Unicode including the convergence of the split between "western" and "eastern" storage and stream manipulation algorithms.
+
 ### Virtual Terminal client
+
+**\[2015-2017\]** With the advent of the Windows Subsystem for Linux, Microsoft efforts to improve the experience of Docker on Windows, and the adoption of OpenSSH by the PowerShell team as the premier command-line remote execution technology, the initial implementations of Virtual Terminal Sequences were introduced into the console host. This allowed the existing console to act as the terminal attached directly to those Linux-native applications in their respective environments, rendering graphical and text attributes to the display and returning user input in the appropriate dialect.
 
 ### Virtual Terminal server
 
+**\[2018\]** Over the past twenty years, third-party alternatives for the inbox console host had arisen to offer additional developer productivity prominently centered in rich customizations and tabbed interfaces. These applications were still beholden to run and hide the console host window and attach as a secondary "client" application to scrape out buffer information in polling loops as the primary command-line client application operated. Their goal was to be a terminal, like on other platforms, but in the Windows world where terminals were not replaceable. 
+
+In this time period, the psuedoconsole infrastructure was introduced, to permit any application in this position to launch the console host in a non-interactive mode and become the final terminal interface for the user. The main limitation in this effort was the continued compatibility promise of Windows in servicing all published Windows Console APIs for the indefinite future while providing a replacement server hosting interface that matched what is expected on all other platforms: virtual terminal sequences. As such, this effort performed the mirror image of the client phase: the pseudoconsole projects what would be displayed onto the screen as virtual terminal sequences for a delegated host and interprets replies into Windows-format input sequences for client application consumption.
+
 ### Terminal applications
+
+**\[2019-Now\]** This era is the open source era for the console subsystem including the new Windows Terminal project. As of the Microsoft Build conference in May 2019, the entire project is on GitHub at [Microsoft/Terminal](https://github.com/microsoft/terminal). The focus now is building the Windows Terminal application on top of the refined platform for pseudoconsoles to bring a first class terminal experience directly to developers on the Windows platform.
+
+It is intended not only as a showcase for the platform including the WinUI technology, the MSIX packaging model, and the C++/WinRT component architecture, but also as a validation of the platform itself, driving the Windows organization to open and evolve the app platform as necessary to continue to lift the productivity of developers. The Windows Terminal's unique set of power user and developer requirements drive the modern Windows platform requirements for what those markets truly need from Windows.
+
+Inside the Windows operating system, this also includes retiring the classic console host user interface from its default position in favor of the Terminal, ConPTY, and VT sequence experience. And finally, it is intended to offer full choice over the default experience, whether it is the Windows Terminal product or any alternative terminals.
+
+### Client support library
+
+**\[Future\]** With the support and documentation of virtual terminal sequences on the client side, we strongly encourage Windows command-line utility developers to use VT sequences first over the classic Windows APIs to gain the benefit of a united ecosystem with all platforms. However, one significant missing piece is that other platforms have a wide array of client-side helper libraries for handling input like [readline](https://tiswww.case.edu/php/chet/readline/rltop.html) and graphical display like [ncurses](https://invisible-island.net/ncurses/ncurses.html). This particular future road map element represents the exploration of what the ecosystem offers and how we can accelerate the adoption of VT sequences in Windows command-line applications over the classic Console API.
 
 ### Sequence Passthrough
 
-### Client support library
+**\[Future\]** While the combination of virtual terminal client and server implementations allows the full mixing and matching of client command-line and terminal hosting applications that speak either the classic Windows Console APIs or Virtual Terminal Sequences, there is an overhead cost to translating the world into the classic compatible Windows method and then back into the more universal VT method. Once the market is sufficiently virtual terminal sequences and UTF-8 on Windows, the conversion/interpretation job of the console host can be optionally disabled and turn into a simple API call servicer and relay from device calls to the hosting application via the psuedoconsole. This increases performance and maximizes the dialect of sequences that can be spoken between client application and the terminal enabling additional interactivity scenarios and finally bringing the Windows world into the family with all other platforms in the command-line application space.
