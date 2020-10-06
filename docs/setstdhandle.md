@@ -76,6 +76,24 @@ For an example, see [Creating a Child Process with Redirected Input and Output](
 
 ## Requirements
 
+:::row:::
+    :::column:::
+        Minimum supported client
+    :::column-end:::
+    :::column:::
+        Windows 2000 Professional \[desktop apps only\]
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        Minimum supported server
+    :::column-end:::
+    :::column:::
+        Windows 2000 Server \[desktop apps only\]
+    :::column-end:::
+:::row-end:::
+
+
 | | |
 |-|-|
 | Minimum supported client | Windows 2000 Professional \[desktop apps only\] |
