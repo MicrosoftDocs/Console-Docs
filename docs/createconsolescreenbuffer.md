@@ -95,6 +95,9 @@ The calling process can use the [**DuplicateHandle**](https://msdn.microsoft.com
 
 To close the console screen buffer handle, use the [**CloseHandle**](https://msdn.microsoft.com/library/windows/desktop/ms724211) function.
 
+> [!TIP]
+> This API is not recommended but it does have an approximate **[virtual terminal](console-virtual-terminal-sequences)** equivalent in the **[alternate screen buffer](console-virtual-terminal-sequences#alternate-screen-buffer)** sequence. Setting the _alternate screen buffer_ can provide an application with a separate, isolated space for drawing over the course of its session runtime while preserving the content that was displayed by the application's invoker. This maintains that drawing information for simple restoration on process exit.
+
 ## Examples
 
 For an example, see [Reading and Writing Blocks of Characters and Attributes](reading-and-writing-blocks-of-characters-and-attributes.md).

@@ -27,8 +27,8 @@ To define a console alias, use `Doskey.exe` to create a macro, or use the [**Add
 The following call to [**AddConsoleAlias**](addconsolealias.md) creates the same console alias:
 
 ``` C
-AddConsoleAlias( TEXT("test"), 
-                 TEXT("cd \\<a_very_long_path>\\test"), 
+AddConsoleAlias( TEXT("test"),
+                 TEXT("cd \\<a_very_long_path>\\test"),
                  TEXT("cmd.exe"));
 ```
 
