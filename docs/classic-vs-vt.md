@@ -63,7 +63,7 @@ For all new and ongoing development on Windows, virtual terminal sequences are r
 
 A limited subset of Windows Console APIs are still necessary to establish the initial environment as the Windows platform still differs from others in process, signal, device, and encoding handling:
 
-- The standard handles to a process will still be controlled with **[GetStdHandle](getstdhandle.md)** and **[SetStdHandle](setsetdhandle.md)**.
+- The standard handles to a process will still be controlled with **[GetStdHandle](getstdhandle.md)** and **[SetStdHandle](setstdhandle.md)**.
 - Configuration of the console modes on a handle to opt in to Virtual Terminal Sequence support will be handled with **[GetConsoleMode](getconsolemode.md)** and **[SetConsoleMode](setconsolemode.md)**.
 - Declaration of code page or UTF-8 support is conducted with [**SetConsoleOutputCP**](setconsoleoutputcp.md) and [**SetConsoleCP**](setconsolecp.md) methods.
 - Some level of overall process management may be required with the [**AllocConsole**](allocconsole.md), [**AttachConsole**](attachconsole.md) and [**FreeConsole**](freeconsole.md) to join or leave a console device session.

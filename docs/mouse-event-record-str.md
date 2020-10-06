@@ -72,7 +72,7 @@ The state of the control keys. This member can be one or more of the following v
 | Value | Meaning |
 |-|-|
 | **CAPSLOCK_ON** 0x0080 | The CAPS LOCK light is on. |
-| **ENHANCED_KEY** 0x0100 | The key is enhanced. See [remarks](key-event-record-str#remarks). |
+| **ENHANCED_KEY** 0x0100 | The key is enhanced. See [remarks](key-event-record-str.md#remarks). |
 | **LEFT_ALT_PRESSED** 0x0002 | The left ALT key is pressed. |
 | **LEFT_CTRL_PRESSED** 0x0008 | The left CTRL key is pressed. |
 | **NUMLOCK_ON** 0x0020 | The NUM LOCK light is on. |

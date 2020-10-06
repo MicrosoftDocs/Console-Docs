@@ -21,6 +21,6 @@ Each console process has its own list of control handler functions that are call
 
 The function's *dwCtrlType* parameter identifies which control signal was received, and the return value indicates whether the signal was handled.
 
-A new thread is started inside the command-line client process to run the handler routines. More information on the timeout values and action of this thread can be found in the [**HandlerRoutine**](handlerroutine#remarks) function documentation.
+A new thread is started inside the command-line client process to run the handler routines. More information on the timeout values and action of this thread can be found in the [**HandlerRoutine**](handlerroutine.md#remarks) function documentation.
 
 For an example of a control handler function, see [Registering a Control Handler Function](registering-a-control-handler-function.md).

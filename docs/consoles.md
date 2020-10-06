@@ -22,7 +22,7 @@ A *console* is an application that provides I/O services to character-mode appli
 A console consists of an input buffer and one or more screen buffers. The *input buffer* contains a queue of input records, each of which contains information about an input event. The input queue always includes key-press and key-release events. It may also include mouse events (pointer movements and button presses and releases) and events during which user actions affect the size of the active screen buffer. A *screen buffer* is a two-dimensional array of character and color data for output in a console window. Any number of processes can share a console.
 
 > [!TIP]
->A broader idea of consoles and how they relate to terminals and command-line client applications can be found in the **[ecosystem roadmap](ecosystem-roadmap)**.
+>A broader idea of consoles and how they relate to terminals and command-line client applications can be found in the **[ecosystem roadmap](ecosystem-roadmap.md)**.
 
 - [Creation of a Console](creation-of-a-console.md)
 - [Attaching to a Console](attaching-to-a-console.md)

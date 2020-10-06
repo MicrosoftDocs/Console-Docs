@@ -44,7 +44,7 @@ The term "wrong-way verbs" is intended to apply to the operation that is the con
 The two scenarios where this can be found are:
 
 1. **[Universal Windows Platform console apps](https://docs.microsoft.com/windows/uwp/launch-resume/console-uwp)**. As these are cousins of other Universal Windows Platform applications, they hold a promise that they are isolated from other applications and provide user guarantees around the effects of their operation.
-1. Any console application intentionally launched with a lower **[integrity level](https://docs.microsoft.com/windows/win32/secauthz/mandatory-integrity-control)** than the existing session which can be accomplished with **[labeling or token manipulation during CreateProcess](https://docs.microsoft.com/en-us/previous-versions/dotnet/articles/bb625960(v=msdn.10))**.
+1. Any console application intentionally launched with a lower **[integrity level](https://docs.microsoft.com/windows/win32/secauthz/mandatory-integrity-control)** than the existing session which can be accomplished with **[labeling or token manipulation during CreateProcess](https://docs.microsoft.com/previous-versions/dotnet/articles/bb625960(v=msdn.10))**.
 
 If either of these scenarios is detected, the console will apply the "wrong-way verbs" flag to the command-line application connection and reject calls to the following APIs to reduce the surface of communication between the levels:
 
