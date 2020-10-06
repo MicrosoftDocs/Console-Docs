@@ -1,4 +1,9 @@
 # [Home](index.md) 
+
+## [Ecosystem Roadmap](ecosystem-roadmap.md)
+## [Definitions](definitions.md)
+## [Console APIs vs. Virtual Terminal](classic-vs-vt.md)
+
 # [About Character Mode Applications](about-character-mode-applications.md) 
 ## [Input And Output Methods](input-and-output-methods.md) 
 ## [Console Code Pages](console-code-pages.md)
