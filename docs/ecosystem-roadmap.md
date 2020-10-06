@@ -55,7 +55,17 @@ A terminal is the user-interface and interaction module for a command-line appli
 
 ## Products
 
-## Architecture 
+All of our products are now available on GitHub in our open source repository, [Microsoft/Terminal](https://github.com/microsoft/terminal).
+
+### Windows Console Host
+
+This is the traditional Windows user-interface for command-line applications. It handles all console API servicing called from any attached command-line application as well as the graphical user interface representation on behalf of all of those applications. It is found as `conhost.exe`, or `openconsole.exe` in its open source form. It comes with the Windows operating system and can be redistributed from the open source repository for a more up-to-date usage of the pseudoconsole infrastructure with a modern terminal application.
+
+### Windows Terminal
+
+This is the new Windows interface for command-line applications, intended as a first-party example of using the pseudoconsole to separate the concerns between API servicing and text-based application interfacing, much like all non-Windows platforms. It is intended to be the flagship text mode user interface for Windows and demonstrate the capabilities of the ecosystem, drive Windows development toward a unification with other platforms, and be an example of how to build a robust and complex modern application that spans the history and gamut of Windows APIs and frameworks.
+
+## Architecture
 
 ## Roadmap
 
