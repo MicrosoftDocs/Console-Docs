@@ -79,7 +79,7 @@ When the process terminates, the system restores the original console title.
 [!INCLUDE [setting-codepage-mode-remarks](./includes/setting-codepage-mode-remarks.md)]
 
 > [!TIP]
-> This API has a **[virtual terminal](console-virtual-terminal-sequences)** equivalent in the **[window title](console-virtual-terminal-sequences#window-title)** sequences. _Virtual terminal sequences_ are recommended for all new and ongoing development.
+> This API has a **[virtual terminal](console-virtual-terminal-sequences.md)** equivalent in the **[window title](console-virtual-terminal-sequences.md#window-title)** sequences. _Virtual terminal sequences_ are recommended for all new and ongoing development.
 
 ## Examples
 

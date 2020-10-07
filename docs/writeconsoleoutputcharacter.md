@@ -88,7 +88,7 @@ The attribute values at the positions written to are not changed.
 [!INCLUDE [setting-codepage-mode-remarks](./includes/setting-codepage-mode-remarks.md)]
 
 > [!TIP]
-> This API has a **[virtual terminal](console-virtual-terminal-sequences)** equivalent in the **[text formatting](console-virtual-terminal-sequences#text-formatting)** and **[cursor positioning](console-virtual-terminal-sequences#cursor-positioning)** sequences. Move the cursor to the location to insert, apply the formatting desired, and write out text to fill. There is no equivalent to emit text to an area without also applying the active color formatting. This decision intentionally aligns the Windows platform with other operating systems where the individual client application is expected to remember its own drawn state for further manipulation.
+> This API has a **[virtual terminal](console-virtual-terminal-sequences.md)** equivalent in the **[text formatting](console-virtual-terminal-sequences.md#text-formatting)** and **[cursor positioning](console-virtual-terminal-sequences.md#cursor-positioning)** sequences. Move the cursor to the location to insert, apply the formatting desired, and write out text to fill. There is no equivalent to emit text to an area without also applying the active color formatting. This decision intentionally aligns the Windows platform with other operating systems where the individual client application is expected to remember its own drawn state for further manipulation.
 
 ## Requirements
 

@@ -79,7 +79,7 @@ If the number of attributes to be written to extends beyond the end of the speci
 The character values at the positions written to are not changed.
 
 > [!TIP]
-> This API has a **[virtual terminal](console-virtual-terminal-sequences)** equivalent in the **[text formatting](console-virtual-terminal-sequences#text-formatting)** and **[cursor positioning](console-virtual-terminal-sequences#cursor-positioning)** sequences. Move the cursor to the location to insert, apply the formatting desired, and write out text to fill. There is no equivalent to apply color to an area without also emitting text. This decision intentionally aligns the Windows platform with other operating systems where the individual client application is expected to remember its own drawn state for further manipulation.
+> This API has a **[virtual terminal](console-virtual-terminal-sequences.md)** equivalent in the **[text formatting](console-virtual-terminal-sequences.md#text-formatting)** and **[cursor positioning](console-virtual-terminal-sequences.md#cursor-positioning)** sequences. Move the cursor to the location to insert, apply the formatting desired, and write out text to fill. There is no equivalent to apply color to an area without also emitting text. This decision intentionally aligns the Windows platform with other operating systems where the individual client application is expected to remember its own drawn state for further manipulation.
 
 ## Requirements
 
