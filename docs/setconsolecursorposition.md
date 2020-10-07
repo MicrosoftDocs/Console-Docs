@@ -66,6 +66,9 @@ The cursor position determines where characters written by the [**WriteFile**](h
 
 If the new cursor position is not within the boundaries of the console screen buffer's window, the window origin changes to make the cursor visible.
 
+> [!TIP]
+> This API has a **[virtual terminal](console-virtual-terminal-sequences.md)** equivalent in the **[simple cursor positioning](console-virtual-terminal-sequences.md#simple-cursor-positioning)** and **[cursor positioning](console-virtual-terminal-sequences.md#cursor-positioning)** sections. Use of the newline, carriage return, backspace, and tab control sequences can also assist with cursor positioning.
+
 ## Examples
 
 For an example, see [Using the High-Level Input and Output Functions](using-the-high-level-input-and-output-functions.md).

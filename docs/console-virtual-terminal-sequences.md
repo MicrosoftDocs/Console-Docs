@@ -526,7 +526,7 @@ Ctrl is generally passed through exactly as received from the system. This is ty
 
 
 > [!NOTE]
->Left Ctrl + Right Alt is treated as AltGr. When both are seen together, they will be stripped and the Unicode value of the character presented by the system will be passed into the target. The system will pre-translate AltGr values according to the current system input settings.
+>Left <kbd>Ctrl</kbd> + Right <kbd>Alt</kbd> is treated as AltGr. When both are seen together, they will be stripped and the Unicode value of the character presented by the system will be passed into the target. The system will pre-translate AltGr values according to the current system input settings.
 
 
 

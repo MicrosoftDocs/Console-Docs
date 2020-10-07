@@ -72,6 +72,9 @@ To set the title for a console window, use the [**SetConsoleTitle**](setconsolet
 
 To compile an application that uses this function, define **\_WIN32\_WINNT** as 0x0600 or later. For more information, see [Using the Windows Headers](https://msdn.microsoft.com/library/windows/desktop/aa383745).
 
+> [!TIP]
+> This API is not recommended and does not have a **[virtual terminal](console-virtual-terminal-sequences.md)** equivalent. This decision intentionally aligns the Windows platform with other operating systems. Applications remoting via cross-platform utilities and transports like SSH may not work as expected if using this API.
+
 ## Requirements
 
 | | |

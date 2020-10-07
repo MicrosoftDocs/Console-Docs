@@ -76,6 +76,9 @@ To set the title for a console window, use the [**SetConsoleTitle**](setconsolet
 
 [!INCLUDE [setting-codepage-mode-remarks](./includes/setting-codepage-mode-remarks.md)]
 
+> [!TIP]
+> This API is not recommended and does not have a **[virtual terminal](console-virtual-terminal-sequences.md)** equivalent. This decision intentionally aligns the Windows platform with other operating systems. Applications remoting via cross-platform utilities and transports like SSH may not work as expected if using this API.
+
 ## Examples
 
 For an example, see [**SetConsoleTitle**](setconsoletitle.md).

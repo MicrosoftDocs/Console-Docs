@@ -57,7 +57,11 @@ If the function succeeds, the return value is a [**COORD**](coord-str.md) struct
 
 If the function fails, the width and the height are zero. To get extended error information, call [**GetLastError**](https://msdn.microsoft.com/library/windows/desktop/ms679360).
 
+## Remarks
+
 To compile an application that uses this function, define **\_WIN32\_WINNT** as 0x0500 or later. For more information, see [Using the Windows Headers](https://msdn.microsoft.com/library/windows/desktop/aa383745).
+
+[!INCLUDE [no-vt-equiv-user-priv](./includes/no-vt-equiv-user-priv.md)]
 
 ## Requirements
 

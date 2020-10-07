@@ -23,4 +23,4 @@ The [**GetConsoleMode**](getconsolemode.md) function reports the current input m
 
 A command-line application should expect that other command-line applications may change the console mode at any time and may not restore it to its original form before control is returned. Additionally, we recommend that all command-line applications should capture the initial console mode at startup and attempt to restore it when exiting to ensure minimal impact on other command-line applications attached to the same console.
 
-The [**GetConsoleDisplayMode**](getconsoledisplaymode.md) function reports whether the current console is in full-screen mode and whether it communicates directly with the hardware.
+The [**GetConsoleDisplayMode**](getconsoledisplaymode.md) function reports whether the current console is in full-screen mode.

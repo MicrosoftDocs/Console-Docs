@@ -35,6 +35,9 @@ When a screen buffer is created, it contains space characters in every position.
 
 Applications that change any of the console screen buffer properties should either create their own screen buffer or save the state of the inherited screen buffer during startup and restore it at exit. This cooperative behavior is required to ensure that other applications sharing the same console session are not impacted by the changes.
 
+> [!TIP]
+> It is recommended to use the [**alternate buffer mode**](console-virtual-terminal-sequences.md#alternate-screen-buffer) going forward, if possible, instead of creating a second screen buffer for this purpose. **Alternate buffer mode** offers increased compatibility across remote devices and with other platforms. Please see our discussion on [**classic console APIs versus virtual terminal**](classic-vs-vt.md) for more information.
+
 ## Cursor Appearance and Position
 
 A screen buffer's cursor can be visible or hidden. When it is visible, its appearance can vary, ranging from completely filling a character cell to appearing as a horizontal line at the bottom of the cell. To retrieve information about the appearance and visibility of the cursor, use the [**GetConsoleCursorInfo**](getconsolecursorinfo.md) function. This function reports whether the cursor is visible and describes the appearance of the cursor as the percentage of a character cell that it fills. To set the appearance and visibility of the cursor, use the [**SetConsoleCursorInfo**](setconsolecursorinfo.md) function.

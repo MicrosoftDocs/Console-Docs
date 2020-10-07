@@ -86,6 +86,8 @@ If the number of characters to be read from extends beyond the end of the specif
 
 [!INCLUDE [setting-codepage-mode-remarks](./includes/setting-codepage-mode-remarks.md)]
 
+[!INCLUDE [no-vt-equiv-banner](./includes/no-vt-equiv-banner.md)]
+
 ## Requirements
 
 | | |

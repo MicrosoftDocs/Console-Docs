@@ -63,6 +63,8 @@ If a `NULL` process list was provided or the process count was 0, the call will 
 
 To compile an application that uses this function, define **\_WIN32\_WINNT** as 0x0501 or later. For more information, see [Using the Windows Headers](https://msdn.microsoft.com/library/windows/desktop/aa383745).
 
+[!INCLUDE [no-vt-equiv-local-context](./includes/no-vt-equiv-local-context.md)]
+
 ## Requirements
 
 | | |

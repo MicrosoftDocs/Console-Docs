@@ -44,11 +44,11 @@ On non-Windows platforms, the Server and Terminal roles are a single unit becaus
 
 ## Products
 
-All of our products are now available on GitHub in our open source repository, [Microsoft/Terminal](https://github.com/microsoft/terminal).
+All of our products are now available on GitHub in our open source repository, [microsoft/terminal](https://github.com/microsoft/terminal).
 
 ### Windows Console Host
 
-This is the traditional Windows user-interface for command-line applications. It handles all console API servicing called from any attached command-line application as well as the graphical user interface representation on behalf of all of those applications. It is found as `conhost.exe`, or `openconsole.exe` in its open source form. It comes with the Windows operating system and can be redistributed from the open source repository for a more up-to-date usage of the [pseudoconsole](pseudoconsoles.md) infrastructure with a modern terminal application. Per the definitions above, it operates in either a combined server and terminal role traditionally, or a server-only role through the preferred _pseudoconsole_ infrastructure.
+This is the traditional Windows user-interface for command-line applications. It handles all console API servicing called from any attached command-line application as well as the graphical user interface representation on behalf of all of those applications. It is found in the system directory as `conhost.exe`, or `openconsole.exe` in its open source form. It comes with the Windows operating system and can be found in other Microsoft products built from the open source repository for a more up-to-date implementation of the [pseudoconsole](pseudoconsoles.md) infrastructure. Per the definitions above, it operates in either a combined server and terminal role traditionally, or a server-only role through the preferred _pseudoconsole_ infrastructure.
 
 ### Windows Terminal
 
@@ -86,7 +86,7 @@ In this time period, the [pseudoconsole](pseudoconsoles.md) infrastructure was i
 
 ### Terminal applications
 
-**\[2019-Now\]** This era is the open source era for the console subsystem including the new Windows Terminal project. As of the Microsoft Build conference in May 2019, the entire project is on GitHub at [Microsoft/Terminal](https://github.com/microsoft/terminal). The focus now is building the Windows Terminal application on top of the refined platform for [pseudoconsole](pseudoconsoles.md)s to bring a first class terminal experience directly to developers on the Windows platform.
+**\[2019-Now\]** This era is the open source era for the console subsystem including the new Windows Terminal project. As of the Microsoft Build conference in May 2019, the entire project is on GitHub at [microsoft/terminal](https://github.com/microsoft/terminal). The focus now is building the Windows Terminal application on top of the refined platform for [pseudoconsole](pseudoconsoles.md)s to bring a first class terminal experience directly to developers on the Windows platform.
 
 It is intended not only as a showcase for the platform including the [WinUI](https://docs.microsoft.com/windows/apps/winui/) technology, the [MSIX](https://docs.microsoft.com/windows/msix/) packaging model, and the [C++/WinRT](https://docs.microsoft.com/windows/uwp/cpp-and-winrt-apis/) component architecture, but also as a validation of the platform itself, driving the Windows organization to open and evolve the app platform as necessary to continue to lift the productivity of developers. The Windows Terminal's unique set of power user and developer requirements drive the modern Windows platform requirements for what those markets truly need from Windows.
 

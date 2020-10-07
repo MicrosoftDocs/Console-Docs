@@ -78,6 +78,8 @@ If the function fails, the return value is zero. To get extended error informati
 
 If the number of attributes to be read from extends beyond the end of the specified screen buffer row, attributes are read from the next row. If the number of attributes to be read from extends beyond the end of the console screen buffer, attributes up to the end of the console screen buffer are read.
 
+[!INCLUDE [no-vt-equiv-banner](./includes/no-vt-equiv-banner.md)]
+
 ## Requirements
 
 | | |

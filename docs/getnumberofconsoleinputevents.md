@@ -34,8 +34,6 @@ api_type:
 
 # GetNumberOfConsoleInputEvents function
 
-[!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
-
 Retrieves the number of unread input records in the console's input buffer.
 
 ## Syntax

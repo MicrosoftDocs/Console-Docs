@@ -74,7 +74,7 @@ A [**COORD**](coord-str.md) structure that contains the maximum size of the cons
 The fill attribute for console pop-ups.
 
 **bFullscreenSupported**  
-If this member is `TRUE`, full-screen mode is supported; otherwise, it is not.
+If this member is `TRUE`, full-screen mode is supported; otherwise, it is not. This will always be `FALSE` for systems after Windows Vista with the [WDDM driver model](https://docs.microsoft.com/windows-hardware/drivers/display/introduction-to-the-windows-vista-and-later-display-driver-model) as true direct VGA access to the monitor is no longer available.
 
 **ColorTable**  
 An array of [**COLORREF**](https://msdn.microsoft.com/library/windows/desktop/dd183449) values that describe the console's color settings.

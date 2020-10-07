@@ -62,21 +62,14 @@ int main( void )
         return ::GetLastError();
     }
 
+    // To also clear the scroll back, emit L"\x1b[3J" as well.
+    // 2J only clears the visible window and 3J only clears the scroll back.
+
     // Restore the mode on the way out to be nice to other command-line applications.
     SetConsoleMode(hStdOut, originalMode);
 
     return 0;
 }
-```
-
-A variation on this command is to use the "clear buffer" command to remove all history scrolling up and down, not just what is visible within the window.
-
-```C
-...
-
-PCWSTR sequence = L"\x1b[3J";
-
-...
 ```
 
 You can find additional variations on this command in the virtual terminal sequences documentation on **[Erase In Display](console-virtual-terminal-sequences.md#text-modification)**.
@@ -202,20 +195,6 @@ int main(void)
 
     cls(hStdout);
 
-    return 0;
-}
-```
-
-## Example 4
-
-The fourth method is to use the C run-time **system** function. The **system** function invokes the **cls** command provided by the command interpreter `cmd.exe` to clear the screen.
-
-```C
-#include <stdlib.h>
-
-int main(void)
-{
-    system("cls");
     return 0;
 }
 ```

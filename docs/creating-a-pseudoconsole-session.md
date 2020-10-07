@@ -16,7 +16,7 @@ Hosting a pseudoconsole session is a bit different than a traditional console se
 
 You can find additional background information about this system on the [initial announcement blog post](https://blogs.msdn.microsoft.com/commandline/2018/08/02/windows-command-line-introducing-the-windows-pseudo-console-conpty/).
 
-Complete examples of using the Pseudoconsole are available on our GitHub repository [Microsoft/terminal](https://github.com/Microsoft/terminal) in the samples directory.
+Complete examples of using the Pseudoconsole are available on our GitHub repository [microsoft/terminal](https://github.com/microsoft/terminal) in the samples directory.
 
 ## Preparing the communication channels
 
@@ -29,7 +29,7 @@ The first step is to create a pair of synchronous communication channels that wi
 
 With the communications channels that have been established, identify the "read" end of the input channel and the "write" end of the output channel. This pair of handles is provided on calling [**CreatePseudoConsole**](createpseudoconsole.md) to create the object.
 
-When creating, a size representing the X and Y dimensions (in count of characters) is also provided. This is the dimensions that will apply to the display surface for the final (terminal) presentation window. The values are used to create an in-memory buffer inside the pseudoconsole system.
+On creation, a size representing the X and Y dimensions (in count of characters) is required. These are the dimensions that will apply to the display surface for the final (terminal) presentation window. The values are used to create an in-memory buffer inside the pseudoconsole system.
 
 The buffer size provide answers to client character-mode applications that probe for information using the [client-side console functions](console-functions.md) like [**GetConsoleScreenBufferInfoEx**](getconsolescreenbufferinfoex.md) and dictates the layout and positioning of text when clients use functions like [**WriteConsoleOutput**](writeconsoleoutput.md).
 

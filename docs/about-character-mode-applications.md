@@ -25,7 +25,7 @@ Character mode (or "command-line") applications:
 
 Character mode applications communicate with the end-user through a "console" (or "terminal") application. A console converts user input from keyboard, mouse, touch-screen, pen, etc., and sends it to a character mode application's stdin. A console may also display a character mode application's text output on the user's screen.
 
-In Windows, the console is built-in and provides a rich API through which character mode applications can interact with the user. However, in the recent era, the console team is encouraging all character mode applications to be developed with [virtual terminal sequences](console-virtual-terminal-sequences.md) over the classic API calls for maximum compatibility between Windows and other operating system platforms. More details on this transition and the trade offs involved can be found in our discussion of [classic APIs versus virtual terminal sequences](classic-vs-vt.md).
+In Windows, the console is built-in and provides a rich API through which character mode applications can interact with the user. However, in the recent era, the console team is encouraging all character mode applications to be developed with [virtual terminal sequences](console-virtual-terminal-sequences.md) over the classic API calls for maximum compatibility between Windows and other operating systems. More details on this transition and the trade offs involved can be found in our discussion of [classic APIs versus virtual terminal sequences](classic-vs-vt.md).
 
 - [Consoles](consoles.md)
 - [Input and Output Methods](input-and-output-methods.md)

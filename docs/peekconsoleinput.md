@@ -43,8 +43,6 @@ api_type:
 
 # PeekConsoleInput function
 
-[!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
-
 Reads data from the specified console input buffer without removing it from the buffer.
 
 ## Syntax
