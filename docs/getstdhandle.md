@@ -87,11 +87,8 @@ For an example, see [Reading Input Buffer Events](reading-input-buffer-events.md
 
 ## Requirements
 
-+---------+---------+
-| This is | a table |
-
-
-+----+----+
+| | |
+|-|-|
 | Minimum supported client | Windows 2000 Professional \[desktop apps only\] |
 | Minimum supported server | Windows 2000 Server \[desktop apps only\] |
 | Header | ProcessEnv.h (via Winbase.h, include Windows.h) |
