@@ -66,7 +66,7 @@ If the function fails, the return value is zero. To get extended error informati
 
 ## Requirements
 
-| | |
+| &nbsp; | &nbsp; |
 |-|-|
 | Minimum supported client | Windows Vista \[desktop apps only\] |
 | Minimum supported server | Windows Server 2008 \[desktop apps only\] |

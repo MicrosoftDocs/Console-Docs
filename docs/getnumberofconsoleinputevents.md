@@ -69,7 +69,7 @@ To read input records from a console input buffer without affecting the number o
 
 ## Requirements
 
-| | |
+| &nbsp; | &nbsp; |
 |-|-|
 | Minimum supported client | Windows 2000 Professional \[desktop apps only\] |
 | Minimum supported server | Windows 2000 Server \[desktop apps only\] |

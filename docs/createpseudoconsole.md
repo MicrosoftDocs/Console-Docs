@@ -85,7 +85,7 @@ For a full walkthrough on using this function to establish a pseudoconsole sessi
 
 ## Requirements
 
-| | |
+| &nbsp; | &nbsp; |
 |-|-|
 | Minimum supported client | Windows 10 October 2018 Update (version 1809) \[desktop apps only\] |
 | Minimum supported server | Windows Server 2019 \[desktop apps only\] |

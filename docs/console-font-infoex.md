@@ -75,7 +75,7 @@ To obtain the size of the font, pass the font index to the [**GetConsoleFontSize
 
 ## Requirements
 
-| | |
+| &nbsp; | &nbsp; |
 |-|-|
 | Minimum supported client | Windows Vista \[desktop apps only\] |
 | Minimum supported server | Windows Server 2008 \[desktop apps only\] |

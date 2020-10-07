@@ -68,7 +68,7 @@ All coordinates returned in the [**CONSOLE\_SCREEN\_BUFFER\_INFOEX**](console-sc
 
 ## Requirements
 
-| | |
+| &nbsp; | &nbsp; |
 |-|-|
 | Minimum supported client | Windows Vista \[desktop apps only\] |
 | Minimum supported server | Windows Server 2008 \[desktop apps only\] |

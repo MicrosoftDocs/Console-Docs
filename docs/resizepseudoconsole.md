@@ -54,7 +54,7 @@ This function can resize the internal buffers in the pseudoconsole session to ma
 
 ## Requirements
 
-| | |
+| &nbsp; | &nbsp; |
 |-|-|
 | Minimum supported client | Windows 10 October 2018 Update (version 1809) \[desktop apps only\] |
 | Minimum supported server | Windows Server 2019 \[desktop apps only\] |

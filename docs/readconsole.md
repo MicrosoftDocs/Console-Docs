@@ -97,7 +97,7 @@ The *pInputControl* parameter can be used to enable intermediate wakeups from th
 
 ## Requirements
 
-| | |
+| &nbsp; | &nbsp; |
 |-|-|
 | Minimum supported client | Windows 2000 Professional \[desktop apps only\] |
 | Minimum supported server | Windows 2000 Server \[desktop apps only\] |

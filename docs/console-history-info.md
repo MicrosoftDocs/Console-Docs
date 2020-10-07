@@ -67,7 +67,7 @@ This parameter can be zero or the following value.
 
 ## Requirements
 
-| | |
+| &nbsp; | &nbsp; |
 |-|-|
 | Minimum supported client | Windows Vista \[desktop apps only\] |
 | Minimum supported server | Windows Server 2008 \[desktop apps only\] |

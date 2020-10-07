@@ -61,7 +61,7 @@ To compile an application that uses this function, define **\_WIN32\_WINNT** as 
 
 ## Requirements
 
-| | |
+| &nbsp; | &nbsp; |
 |-|-|
 | Minimum supported client | Windows XP \[desktop apps only\] |
 | Minimum supported server | Windows Server 2003 \[desktop apps only\] |

@@ -59,7 +59,7 @@ To obtain the size of the font, pass the font index to the [**GetConsoleFontSize
 
 ## Requirements
 
-| | |
+| &nbsp; | &nbsp; |
 |-|-|
 | Minimum supported client | Windows XP \[desktop apps only\] |
 | Minimum supported server | Windows Server 2003 \[desktop apps only\] |

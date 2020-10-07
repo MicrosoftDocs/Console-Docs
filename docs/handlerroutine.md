@@ -93,7 +93,7 @@ _[1]: "quick" events are never used, but there's still code to support them._
 
 ## Requirements
 
-| | |
+| &nbsp; | &nbsp; |
 |-|-|
 | Minimum supported client | Windows 2000 Professional \[desktop apps only\] |
 | Minimum supported server | Windows 2000 Server \[desktop apps only\] |

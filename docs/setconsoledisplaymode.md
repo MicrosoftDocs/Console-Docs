@@ -71,7 +71,7 @@ If the function fails, the return value is zero. To get extended error informati
 
 ## Requirements
 
-| | |
+| &nbsp; | &nbsp; |
 |-|-|
 | Minimum supported client | Windows XP \[desktop apps only\] |
 | Minimum supported server | Windows Server 2003 \[desktop apps only\] |
