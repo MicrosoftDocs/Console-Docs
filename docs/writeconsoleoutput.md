@@ -94,6 +94,9 @@ If the rectangle specified by *lpWriteRegion* lies completely outside the bounda
 
 [!INCLUDE [setting-codepage-mode-remarks](./includes/setting-codepage-mode-remarks.md)]
 
+> [!TIP]
+> This API has a **[virtual terminal](console-virtual-terminal-sequences)** equivalent in the **[text formatting](console-virtual-terminal-sequences#text-formatting)** and **[cursor positioning](console-virtual-terminal-sequences#cursor-positioning)** sequences. Move the cursor to the location to insert, apply the formatting desired, and write out the text. _Virtual terminal sequences_ are recommended for all new and ongoing development.
+
 ## Examples
 
 For an example, see [Reading and Writing Blocks of Characters and Attributes](reading-and-writing-blocks-of-characters-and-attributes.md).

@@ -56,6 +56,8 @@ If the function fails, the return value is zero. To get extended error informati
 
 If the calling process is not a console process, the function fails and sets the last error code to **ERROR\_ACCESS\_DENIED**.
 
+[!INCLUDE [no-vt-equiv-shell-banner](./includes/no-vt-equiv-shell-banner.md)]
+
 ## Requirements
 
 | | |

@@ -64,6 +64,9 @@ If the function fails, the return value is zero. To get extended error informati
 
 To determine the current color attributes of a screen buffer, call the [**GetConsoleScreenBufferInfo**](getconsolescreenbufferinfo.md) function.
 
+> [!TIP]
+> This API has a **[virtual terminal](console-virtual-terminal-sequences)** equivalent in the **[text formatting](console-virtual-terminal-sequences#text-formatting)** sequences. _Virtual terminal sequences_ are recommended for all new and ongoing development.
+
 ## Examples
 
 For an example, see [Using the High-Level Input and Output Functions](using-the-high-level-input-and-output-functions.md).

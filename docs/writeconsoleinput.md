@@ -82,6 +82,9 @@ If the function fails, the return value is zero. To get extended error informati
 
 [!INCLUDE [setting-codepage-mode-remarks](./includes/setting-codepage-mode-remarks.md)]
 
+> [!TIP]
+> This API is not recommended and does not have a **[virtual terminal](console-virtual-terminal-sequences.md)** equivalent. This decision intentionally aligns the Windows platform with other operating systems. This operation is considered the **[wrong-way verb](console-buffer-security-and-access-rights.md#wrong-way-verbs)** for this buffer. Applications remoting via cross-platform utilities and transports like SSH may not work as expected if using this API.
+
 ## Requirements
 
 | | |

@@ -74,6 +74,8 @@ To determine the current size and position of a screen buffer's window, use the 
 
 **SetConsoleWindowInfo** can be used to scroll the contents of the console screen buffer by shifting the position of the window rectangle without changing its size.
 
+[!INCLUDE [no-vt-equiv-user-priv](./includes/no-vt-equiv-user-priv.md)]
+
 ## Examples
 
 For an example, see [Scrolling a Screen Buffer's Window](scrolling-a-screen-buffer-s-window.md).
