@@ -20,7 +20,7 @@ The focus of the current console/terminal era at Microsoft is to bring a first-c
 
 ## Definitions
 
-It is recommended to familiarize yourself with the [definitions](definitions.md) of common terminology used in this space before proceeding. Common terminology includes: [Command Line (or Console) applications](definitions#command-line-applications), [standard handles (`STDIN`, `STDOUT`, `STDERR`)](definitions#standard-handles), [TTY and PTY devices](definitions#ttypty), [clients and servers](definitions#clients-and-servers), [console subsystem](definitions#console-subsystem), [console host](definitions#console-host), [pseudoconsole](definitions#pseudoconsole), and [terminal](definitions#terminal).
+It is recommended to familiarize yourself with the [definitions](definitions.md) of common terminology used in this space before proceeding. Common terminology includes: [Command Line (or Console) applications](definitions.md#command-line-applications), [standard handles (`STDIN`, `STDOUT`, `STDERR`)](definitions.md#standard-handles), [TTY and PTY devices](definitions.md#ttypty), [clients and servers](definitions.md#clients-and-servers), [console subsystem](definitions.md#console-subsystem), [console host](definitions.md#console-host), [pseudoconsole](definitions.md#pseudoconsole), and [terminal](definitions.md#terminal).
 
 ## Architecture
 
