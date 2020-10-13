@@ -61,7 +61,8 @@ This is the traditional Windows user-interface for command-line applications. It
 
 ### Windows Terminal
 
-This is the new Windows interface for command-line applications.  Windows Terminal serves as a first-party example of using the [pseudoconsole](pseudoconsoles.md) to separate the concerns between API servicing and text-based application interfacing, much like all non-Windows platforms.
+This is the new Windows interface for command-line applications. Windows Terminal serves as a first-party example of using the [pseudoconsole](pseudoconsoles.md) to separate the concerns between API servicing and text-based application interfacing, much like all non-Windows platforms.
+
 
 Windows Terminal is the flagship text-mode user interface for Windows. It demonstrates the capabilities of the ecosystem and is driving Windows development toward unifying with other platforms. Windows Terminal is also an example of how to build a robust and complex modern application that spans the history and gamut of Windows APIs and frameworks. Per the definitions above, this product operates in a terminal role.
 
