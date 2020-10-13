@@ -69,7 +69,7 @@ Windows Terminal is the flagship text-mode user interface for Windows. It demons
 
 The major historical milestones for the console subsystem are broken into implementation prior to 2014 and then moves into an overview of work performed since 2014, when the renewed focus on the command-line was formed in the Windows 10 era.
 
-### Implementation prior to 2014
+### Initial Implementation
 
 **\[1989-1990s]** The initial console host system was implemented as an emulation of the DOS environment within the Windows operating system. Its code is entangled and cooperative with the [Command Prompt](https://docs.microsoft.com/windows-server/administration/windows-commands/cmd), `cmd.exe`, that is a representation of that DOS environment. The console host system code shares responsibilities and privileges with the Command Prompt interpreter/shell. It also provides a base level of services for other command-line utilities to perform services in a CMD-like manner.
 
