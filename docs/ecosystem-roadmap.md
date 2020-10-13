@@ -13,9 +13,9 @@ ms.prod: console
 This document is a high-level roadmap of the Windows Console and Windows Terminal products. It covers:
 
 
-- how Windows Console and Windows Terminal fit into the ecosystem of command-line applications across Windows and other operating systems; and
+- How Windows Console and Windows Terminal fit into the ecosystem of command-line applications across Windows and other operating systems.
 
-- a general roadmap of the products, features, and strategies that are part of building the platform and building for this platform.
+- A history and future roadmap of the products, features, and strategies that are part of building the platform, as well as building for this platform.
 
 The focus of the current console/terminal era at Microsoft is to bring a first-class terminal experience directly to developers on the Windows platform and to [phase out](classic-vs-vt.md) classic Windows Console APIs, replacing them with [virtual terminal sequences](console-virtual-terminal-sequences.md) utilizing [pseudoconsole](pseudoconsoles.md). **[Windows Terminal](/terminal/get-started)** showcases this transition into a first-class experience, inviting [open source collaboration](https://github.com/microsoft/terminal) from the developer community, supporting a full spectrum of mixing and matching of client command-line and terminal hosting applications, and unifying the Windows ecosystem with all other platforms.
 
