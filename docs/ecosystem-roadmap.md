@@ -10,7 +10,8 @@ ms.prod: console
 
 # Windows Console and Terminal Ecosystem Roadmap
 
-This document a high-level roadmap of the Windows Console and Windows Terminal products. It covers:
+This document is a high-level roadmap of the Windows Console and Windows Terminal products. It covers:
+
 
 - how Windows Console and Windows Terminal fit into the ecosystem of command-line applications across Windows and other operating systems; and
 
