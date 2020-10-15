@@ -43,7 +43,7 @@ The server interprets the requested API calls or messages from the client. On Wi
 
 ### Terminal
 
-The terminal is the final layer providing graphical display and interactivity services to the user. It is responsible for capturing input and encoding it as [virtual terminal sequences](console-virtual-terminal-sequences.md). These virtual terminal sequences eventually reach the clients `STDIN`, decoding and presenting the plain text and _virtual terminal sequences_ it received back from the clients `STDOUT`.
+The terminal is the final layer providing graphical display and interactivity services to the user. It is responsible for capturing input and encoding it as [virtual terminal sequences](console-virtual-terminal-sequences.md), which eventually reach the client's `STDIN`. It will also receive and decode the *virtual terminal sequences* that it receives back from the client's `STDOUT` for presentation on the screen.
 
 #### Further connections
 
