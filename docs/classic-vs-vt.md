@@ -15,7 +15,7 @@ Our recommendation is to replace the classic **Windows Console API** with **virt
 
 ## Definitions
 
-The classic **Windows Console API** surface is defined as the series of C language functional interfaces on `kernel32.dll` with "Console" in the name.
+The classic **[Windows Console API](console-functions.md)** surface is defined as the series of C language functional interfaces on `kernel32.dll` with "Console" in the name.
 
 **[Virtual terminal sequences](console-virtual-terminal-sequences.md)** is defined as a language of commands that's embedded in the standard input and standard output streams. Virtual terminal sequences use non-printable escape characters for signaling commands interleaved with normal printable text.
 
