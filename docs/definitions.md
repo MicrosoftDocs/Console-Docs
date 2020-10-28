@@ -18,9 +18,9 @@ Command line applications, or sometimes called "console applications" and/or ref
 
 ## Standard Handles
 
-The standard handles are a series of handles, `STDIN`, `STDOUT`, and `STDERR`, that are introduced a part of process space on startup and represent a place where information can be accepted on the way in and sent back on the way out (including a special place to report errors out). For command-line applications, these must always exist when the application starts and are either inherited from the parent automatically, set explicitly by the parent, or created automatically by the operating system if neither of the first two are specified/permitted. For classic windows applications, these may be blank on startup, but can be implicitly or explicitly inherited from the parent or allocated, attached, and freed during runtime by the application itself.
+The standard handles are a series, `STDIN`, `STDOUT`, and `STDERR`, introduced as part of a process space on startup. They represent a place for information to be accepted on the way in and sent back on the way out (including a special place to report errors out). For command-line applications, these must always exist when the application starts. They are either inherited from the parent automatically, set explicitly by the parent, or created automatically by the operating system if neither are specified/permitted. For classic Windows applications, these may be blank on startup. However, they can be implicitly or explicitly inherited from the parent or allocated, attached, and freed during runtime by the application itself.
 
-Standard handles do not imply a specific type of attached device, though in the case of command-line applications, the device is most commonly a console device, file (from redirection in a shell), or a pipe (from a shell connecting the output of one utility to the input of the next). It may also be a socket or any other type of device.
+Standard handles do not imply a specific type of attached device. In the case of command-line applications, however, the device is most commonly a console device, file (from redirection in a shell), or a pipe (from a shell connecting the output of one utility to the input of the next). It may also be a socket or any other type of device.
 
 ## TTY/PTY
 
