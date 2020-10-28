@@ -51,13 +51,15 @@ As Windows has evolved, the security controls and restrictions on window handles
 
 ### Unicode
 
-The implicit standard for communication across platforms and the web is Unicode, specifically in the UTF-8 form. Of course, other encodings still exist.  However, when otherwise undefined, using UTF-8 is widely accepted as the appropriate default. It represents the balance of portability, storage/transmission size, and breadth of expression required to support the world's languages and glyphs.
+The implicit standard for communication across platforms and the web is Unicode, specifically in the UTF-8 form. Of course, other encodings still exist. However, when otherwise undefined, using UTF-8 is widely accepted as the appropriate default. It represents the balance of portability, storage/transmission size, and breadth of expression required to support the world's languages and glyphs. However, an algorithmic equivalent in UTF-16 was chosen as the primary Unicode support mechanism for the Windows platform.
 
-The Windows console platform has supported and will continue to support all existing code pages and encodings, but we recommend UTF-8 for all forward looking development and also accept UTF-16 as an algorithmically-translatable alternative.
-
-UTF-8 support in the console can be found via the _A_ variant of all Console APIs against console handles after setting the codepage to `65001` or `CP_UTF8` with the [**SetConsoleOutputCP**](setconsoleoutputcp.md) and [**SetConsoleCP**](setconsolecp.md) methods as appropriate. Setting the code pages in advance is only necessary if the machine has not chosen "Use Unicode UTF-8 for worldwide language support" in the settings for Non-Unicode applications in the Region section of the Control Panel.
+The Windows console platform has supported and will continue to support all existing code pages and encodings. It is recommended to focus on UTF-16 for maximum compatibility across Windows versions and performing algorithmic translation with UTF-8 if necessary. Increased support of UTF-8 is in progress for the console system.
 
 UTF-16 support in the console can be utilized with no additional configuration via the _W_ variant of all console APIs and is a more likely choice for applications already well versed in UTF-16 through communication with the `wchar_t` and _W_ variant of other Microsoft and Windows platform functions and products.
+
+UTF-8 support in the console can be found via the _A_ variant of Console APIs against console handles after setting the codepage to `65001` or `CP_UTF8` with the [**SetConsoleOutputCP**](setconsoleoutputcp.md) and [**SetConsoleCP**](setconsolecp.md) methods as appropriate. Setting the code pages in advance is only necessary if the machine has not chosen "Use Unicode UTF-8 for worldwide language support" in the settings for Non-Unicode applications in the Region section of the Control Panel.
+
+>[!NOTE] As of now, UTF-8 is supported fully on the standard output stream with the [**WriteConsole**](writeconsole.md) and [**WriteFile**](https://msdn.microsoft.com/library/windows/desktop/aa365747) methods. Support on the input stream varies depending on the input mode and will continue to improve over time. Notably the default **["cooked"](high-level-console-modes.md)** modes on input do not fully support UTF-8 yet. The current status of this work can be found at [**microsoft/terminal#7777**](https://github.com/microsoft/terminal/issues/7777) on GitHub. The workaround is to use the algorithmically-translatable UTF-16 for reading input through [**ReadConsoleW**](readconsole.md) or [**ReadConsoleInputW**](readconsoleinput.md) until the outstanding issues are resolved.
 
 ## Recommendations
 
