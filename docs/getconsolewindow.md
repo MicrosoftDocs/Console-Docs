@@ -63,6 +63,8 @@ To compile an application that uses this function, define **\_WIN32\_WINNT** as 
 
 [!INCLUDE [no-vt-equiv-local-context](./includes/no-vt-equiv-local-context.md)]
 
+For an application that is hosted inside a [**pseudoconsole**](pseudoconsoles.md) session, this function returns a window handle for message queue purposes only. The associated window is not displayed locally as the _pseudoconsole_ is serializing all actions to a stream for presentation on another terminal window elsewhere.
+
 ## Requirements
 
 | &nbsp; | &nbsp; |
