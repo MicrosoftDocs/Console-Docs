@@ -108,7 +108,8 @@ The following commands control the visibility of the cursor and its blinking sta
 | ESC \[ ? 25 h | DECTCEM | Text Cursor Enable Mode Show | Show the cursor |
 | ESC \[ ? 25 l | DECTCEM | Text Cursor Enable Mode Hide | Hide the cursor |
 
-
+> [!TIP]
+> The enable sequences end in a lowercase H character (`h`) and the disable sequences end in a lowercase L character (`l`).
 
 ## <span id="Viewport_Positioning"></span><span id="viewport_positioning"></span><span id="VIEWPORT_POSITIONING"></span>Viewport Positioning
 
