@@ -33,11 +33,11 @@ api_type:
 
 # SetConsoleScreenBufferSize function
 
+[!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
 Changes the size of the specified console screen buffer.
 
-Syntax
-------
+## Syntax
 
 ```C
 BOOL WINAPI SetConsoleScreenBufferSize(
@@ -46,8 +46,7 @@ BOOL WINAPI SetConsoleScreenBufferSize(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *hConsoleOutput* \[in\]  
 A handle to the console screen buffer. The handle must have the **GENERIC\_READ** access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
@@ -55,53 +54,27 @@ A handle to the console screen buffer. The handle must have the **GENERIC\_READ*
 *dwSize* \[in\]  
 A [**COORD**](coord-str.md) structure that specifies the new size of the console screen buffer, in character rows and columns. The specified width and height cannot be less than the width and height of the console screen buffer's window. The specified dimensions also cannot be less than the minimum size allowed by the system. This minimum depends on the current font size for the console (selected by the user) and the **SM\_CXMIN** and **SM\_CYMIN** values returned by the [**GetSystemMetrics**](https://msdn.microsoft.com/library/windows/desktop/ms724385) function.
 
-Return value
-------------
+## Return value
 
 If the function succeeds, the return value is nonzero.
 
 If the function fails, the return value is zero. To get extended error information, call [**GetLastError**](https://msdn.microsoft.com/library/windows/desktop/ms679360).
 
-Requirements
-------------
+## Remarks
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Minimum supported client</p></td>
-<td><p>Windows 2000 Professional [desktop apps only]</p></td>
-</tr>
-<tr class="even">
-<td><p>Minimum supported server</p></td>
-<td><p>Windows 2000 Server [desktop apps only]</p></td>
-</tr>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>ConsoleApi2.h (via Wincon.h, include Windows.h)</td>
-</tr>
-<tr class="even">
-<td><p>Library</p></td>
-<td>Kernel32.lib</td>
-</tr>
-<tr class="odd">
-<td><p>DLL</p></td>
-<td>Kernel32.dll</td>
-</tr>
-<tr class="even">
-</tr>
-<tr class="odd">
-</tr>
-<tr class="even">
-</tr>
-</tbody>
-</table>
+[!INCLUDE [no-vt-equiv-user-priv](./includes/no-vt-equiv-user-priv.md)]
 
-## <span id="see_also"></span>See also
+## Requirements
 
+| &nbsp; | &nbsp; |
+|-|-|
+| Minimum supported client | Windows 2000 Professional \[desktop apps only\] |
+| Minimum supported server | Windows 2000 Server \[desktop apps only\] |
+| Header | ConsoleApi2.h (via WinCon.h, include Windows.h) |
+| Library | Kernel32.lib |
+| DLL | Kernel32.dll |
+
+## See also
 
 [Console Functions](console-functions.md)
 
@@ -112,11 +85,3 @@ Requirements
 [**GetConsoleScreenBufferInfo**](getconsolescreenbufferinfo.md)
 
 [**SetConsoleWindowInfo**](setconsolewindowinfo.md)
-
- 
-
- 
-
-
-
-

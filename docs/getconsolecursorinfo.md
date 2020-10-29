@@ -33,11 +33,11 @@ api_type:
 
 # GetConsoleCursorInfo function
 
+[!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
 Retrieves information about the size and visibility of the cursor for the specified console screen buffer.
 
-Syntax
-------
+## Syntax
 
 ```C
 BOOL WINAPI GetConsoleCursorInfo(
@@ -46,8 +46,7 @@ BOOL WINAPI GetConsoleCursorInfo(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *hConsoleOutput* \[in\]  
 A handle to the console screen buffer. The handle must have the **GENERIC\_READ** access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
@@ -55,53 +54,27 @@ A handle to the console screen buffer. The handle must have the **GENERIC\_READ*
 *lpConsoleCursorInfo* \[out\]  
 A pointer to a [**CONSOLE\_CURSOR\_INFO**](console-cursor-info-str.md) structure that receives information about the console's cursor.
 
-Return value
-------------
+## Return value
 
 If the function succeeds, the return value is nonzero.
 
 If the function fails, the return value is zero. To get extended error information, call [**GetLastError**](https://msdn.microsoft.com/library/windows/desktop/ms679360).
 
-Requirements
-------------
+## Remarks
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Minimum supported client</p></td>
-<td><p>Windows 2000 Professional [desktop apps only]</p></td>
-</tr>
-<tr class="even">
-<td><p>Minimum supported server</p></td>
-<td><p>Windows 2000 Server [desktop apps only]</p></td>
-</tr>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>ConsoleApi2.h (via Wincon.h, include Windows.h)</td>
-</tr>
-<tr class="even">
-<td><p>Library</p></td>
-<td>Kernel32.lib</td>
-</tr>
-<tr class="odd">
-<td><p>DLL</p></td>
-<td>Kernel32.dll</td>
-</tr>
-<tr class="even">
-</tr>
-<tr class="odd">
-</tr>
-<tr class="even">
-</tr>
-</tbody>
-</table>
+[!INCLUDE [no-vt-equiv-user-priv](./includes/no-vt-equiv-user-priv.md)]
 
-## <span id="see_also"></span>See also
+## Requirements
 
+| &nbsp; | &nbsp; |
+|-|-|
+| Minimum supported client | Windows 2000 Professional \[desktop apps only\] |
+| Minimum supported server | Windows 2000 Server \[desktop apps only\] |
+| Header | ConsoleApi2.h (via WinCon.h, include Windows.h) |
+| Library | Kernel32.lib |
+| DLL | Kernel32.dll |
+
+## See also
 
 [Console Functions](console-functions.md)
 
@@ -110,11 +83,3 @@ Requirements
 [**CONSOLE\_CURSOR\_INFO**](console-cursor-info-str.md)
 
 [**SetConsoleCursorInfo**](setconsolecursorinfo.md)
-
- 
-
- 
-
-
-
-

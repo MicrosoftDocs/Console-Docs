@@ -3,7 +3,7 @@ title: Console Application Issues
 description: Review console application issues, such as functions that take or return OEM character set strings vs. functions that take or return ANSI character set strings.
 author: miniksa
 ms.author: miniksa
-ms.topic: article
+ms.topic: conceptual
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
 - '\_win32\_console\_application\_issues'
@@ -19,7 +19,9 @@ ms.assetid: a561fbdd-b50d-4687-92d7-735377a7991d
 
 The 8-bit console functions use the OEM code page. All other functions use the ANSI code page by default. This means that strings returned by the console functions may not be processed correctly by the other functions and vice versa. For example, if **FindFirstFileA** returns a string that contains certain extended ANSI characters, **WriteConsoleA** will not display the string properly.
 
-The best long-term solution for a console application is to use Unicode. Barring that solution, a console application should use the [SetFileApisToOEM](https://msdn.microsoft.com/library/windows/desktop/aa365534) function. That function changes relevant file functions so that they produce OEM character set strings rather than ANSI character set strings.
+The best long-term solution for a console application is to use **[Unicode](https://docs.microsoft.com/windows/win32/intl/unicode)**. The console will accept UTF-16 encoding on the W variant of the APIs or UTF-8 encoding on the A variant of the APIs after using **[SetConsoleCP](setconsolecp.md)** and **[SetConsoleOutputCP](setconsoleoutputcp.md)** to `65001` (`CP_UTF8` constant) for the UTF-8 code page.
+
+Barring that solution, a console application should use the [SetFileApisToOEM](https://msdn.microsoft.com/library/windows/desktop/aa365534) function. That function changes relevant file functions so that they produce OEM character set strings rather than ANSI character set strings.
 
 The following are file functions:
 

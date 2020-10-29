@@ -1,9 +1,9 @@
 ---
-title: Consoles
+title: Character Mode Applications
 description: Consoles manage input and output (I/O) for character-mode applications (applications that do not provide their own graphical user interface).
 author: miniksa
 ms.author: miniksa
-ms.topic: article
+ms.topic: conceptual
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
 - '\_win32\_character\_mode\_applications'
@@ -15,8 +15,7 @@ MSHAttr:
 ms.assetid: ea3ea214-892c-4953-bc22-7905efbc173f
 ---
 
-# Consoles
-
+# Character Mode Applications
 
 Consoles manage input and output (I/O) for character-mode applications (applications that do not provide their own graphical user interface).
 
@@ -27,11 +26,3 @@ This overview describes support for character-mode applications.
 - [About Consoles](about-character-mode-applications.md)
 - [Using the Console](using-the-console.md)
 - [Console Reference](console-reference.md)
-
- 
-
- 
-
-
-
-

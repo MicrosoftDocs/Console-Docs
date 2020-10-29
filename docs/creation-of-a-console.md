@@ -3,7 +3,7 @@ title: Creation of a Console
 description: The system creates a new console when it starts a console process, a character-mode process whose entry point is the main function.
 author: miniksa
 ms.author: miniksa
-ms.topic: article
+ms.topic: conceptual
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
 - '\_win32\_creation\_of\_a\_console'
@@ -17,13 +17,12 @@ ms.assetid: 84ec2559-cade-447e-8594-5b824d3d3e81
 
 # Creation of a Console
 
-
-The system creates a new console when it starts a *console process*, a character-mode process whose entry point is the **main** function. For example, the system creates a new console when it starts the command processor. When the command processor starts a new console process, the user can specify whether the system creates a new console for the new process or whether it inherits the command processor's console.
+The system creates a new console when it starts a *console process*, a character-mode process whose entry point is the **main** function. For example, the system creates a new console when it starts the command processor `cmd.exe`. When the command processor starts a new console process, the user can specify whether the system creates a new console for the new process or whether it inherits the command processor's console.
 
 A process can create a console by using one of the following methods:
 
-- A GUI or console process can use the [**CreateProcess**](https://msdn.microsoft.com/library/windows/desktop/ms682425) function with **CREATE\_NEW\_CONSOLE** to create a console process with a new console. (By default, a console process inherits its parent's console, and there is no guarantee that input is received by the process for which it was intended.)
-- A graphical user interface (GUI) or console process that is not currently attached to a console can use the [**AllocConsole**](allocconsole.md) function to create a new console. (GUI processes are not attached to a console when they are created. Console processes are not attached to a console if they are created using [**CreateProcess**](https://msdn.microsoft.com/library/windows/desktop/ms682425) with **DETACHED\_PROCESS**.)
+- A graphical user interface (GUI) or console process can use the [**CreateProcess**](https://msdn.microsoft.com/library/windows/desktop/ms682425) function with **CREATE\_NEW\_CONSOLE** to create a console process with a new console. (By default, a console process inherits its parent's console, and there is no guarantee that input is received by the process for which it was intended.)
+- A GUI or console process that is not currently attached to a console can use the [**AllocConsole**](allocconsole.md) function to create a new console. (GUI processes are not attached to a console when they are created. Console processes are not attached to a console if they are created using [**CreateProcess**](https://msdn.microsoft.com/library/windows/desktop/ms682425) with **DETACHED\_PROCESS**.)
 
 Typically, a process uses [**AllocConsole**](allocconsole.md) to create a console when an error occurs requiring interaction with the user. For example, a GUI process can create a console when an error occurs that prevents it from using its normal graphical interface, or a console process that does not normally interact with the user can create a console to display an error.
 
@@ -43,25 +42,15 @@ The system uses default values if the [**STARTUPINFO**](https://msdn.microsoft.c
 
 A process cannot change the location of its console window on the screen, but the following console functions are available to set or retrieve the other properties specified in the [**STARTUPINFO**](https://msdn.microsoft.com/library/windows/desktop/ms686331) structure.
 
-
-| Function                                                         | Description                                                          |
-|------------------------------------------------------------------|----------------------------------------------------------------------|
+| Function | Description |
+|-|-|
 | [**GetConsoleScreenBufferInfo**](getconsolescreenbufferinfo.md) | Retrieves the window size, screen buffer size, and color attributes. |
-| [**SetConsoleWindowInfo**](setconsolewindowinfo.md)             | Changes the size of the console window.                              |
-| [**SetConsoleScreenBufferSize**](setconsolescreenbuffersize.md) | Changes the size of the console screen buffer.                       |
-| [**SetConsoleTextAttribute**](setconsoletextattribute.md)       | Sets the color attributes.                                           |
-| [**SetConsoleTitle**](setconsoletitle.md)                       | Sets the console window title.                                       |
-| [**GetConsoleTitle**](getconsoletitle.md)                       | Retrieves the console window title.                                  |
-
-
-
+| [**SetConsoleWindowInfo**](setconsolewindowinfo.md)  | Changes the size of the console window.  |
+| [**SetConsoleScreenBufferSize**](setconsolescreenbuffersize.md) | Changes the size of the console screen buffer. |
+| [**SetConsoleTextAttribute**](setconsoletextattribute.md) | Sets the color attributes.  |
+| [**SetConsoleTitle**](setconsoletitle.md)  | Sets the console window title. |
+| [**GetConsoleTitle**](getconsoletitle.md)  | Retrieves the console window title.  |
 
 A process can use the [**FreeConsole**](freeconsole.md) function to detach itself from an inherited console or from a console created by [**AllocConsole**](allocconsole.md).
 
-
-
-
-
-
-
-
+A process can use the [**AttachConsole**](attachconsole.md) function to attach itself to another existing console session after using [**FreeConsole**](freeconsole.md) to detach from its own session (or if there is otherwise no attached session).

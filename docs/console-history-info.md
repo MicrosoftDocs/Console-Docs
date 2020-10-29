@@ -25,18 +25,18 @@ topic_type:
 api_name:
 - CONSOLE_HISTORY_INFO
 api_location:
-- Wincon.h
+- WinCon.h
 api_type:
 - HeaderDef
 ---
 
 # CONSOLE\_HISTORY\_INFO structure
 
+[!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
 Contains information about the console history.
 
-Syntax
-------
+## Syntax
 
 ```C
 typedef struct {
@@ -47,8 +47,7 @@ typedef struct {
 } CONSOLE_HISTORY_INFO, *PCONSOLE_HISTORY_INFO;
 ```
 
-Members
--------
+## Members
 
 **cbSize**  
 The size of the structure, in bytes. Set this member to `sizeof(CONSOLE_HISTORY_INFO)`.
@@ -62,64 +61,20 @@ The number of history buffers kept for this console process.
 **dwFlags**  
 This parameter can be zero or the following value.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Value</th>
-<th>Meaning</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span id="HISTORY_NO_DUP_FLAG"></span><span id="history_no_dup_flag"></span>
-<strong>HISTORY_NO_DUP_FLAG</strong>
-0x1</td>
-<td><p>Duplicate entries will not be stored in the history buffer.</p></td>
-</tr>
-</tbody>
-</table>
+| Value | Meaning |
+|-|-|
+| **HISTORY_NO_DUP_FLAG** 0x1 | Duplicate entries will not be stored in the history buffer.
 
- 
+## Requirements
 
-Requirements
-------------
+| &nbsp; | &nbsp; |
+|-|-|
+| Minimum supported client | Windows Vista \[desktop apps only\] |
+| Minimum supported server | Windows Server 2008 \[desktop apps only\] |
+| Header | ConsoleApi3.h (via WinCon.h, include Windows.h) |
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Minimum supported client</p></td>
-<td><p>Windows Vista [desktop apps only]</p></td>
-</tr>
-<tr class="even">
-<td><p>Minimum supported server</p></td>
-<td><p>Windows Server 2008 [desktop apps only]</p></td>
-</tr>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>ConsoleApi3.h (via Wincon.h, include Windows.h)</td>
-</tr>
-</tbody>
-</table>
-
-## <span id="see_also"></span>See also
-
+## See also
 
 [**GetConsoleHistoryInfo**](getconsolehistoryinfo.md)
 
 [**SetConsoleHistoryInfo**](setconsolehistoryinfo.md)
-
- 
-
- 
-
-
-
-
