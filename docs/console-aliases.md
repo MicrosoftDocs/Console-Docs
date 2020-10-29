@@ -20,7 +20,7 @@ ms.assetid: 8169708b-83da-47ef-94be-eca3ca7d0a5b
 
 Console aliases are used to map source strings to target strings. For example, you can define a console alias that maps "test" to "cd \\a\_very\_long\_path\\test". When you type "test" at the command line, the console subsystem expands the alias and executes the specified cd command.
 
-To define a console alias, use `Doskey.exe` to create a macro, or use the [**AddConsoleAlias**](addconsolealias.md) function. The following example uses `Doskey.exe`:
+To define a console alias, use [**Doskey.exe**](https://docs.microsoft.com/windows-server/administration/windows-commands/doskey) to create a macro, or use the [**AddConsoleAlias**](addconsolealias.md) function. The following example uses `Doskey.exe`:
 
 **doskey test=cd \\**<em>a\_very\_long\_path</em>**\\test**
 

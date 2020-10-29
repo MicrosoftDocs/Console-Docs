@@ -19,6 +19,7 @@
 ## [Console Handles](console-handles.md) 
 ## [Console Input Buffer](console-input-buffer.md)
 ## [Console Screen Buffers](console-screen-buffers.md) 
+## [Console Modes](console-modes.md)
 ## [Window And Screen Buffer Size](window-and-screen-buffer-size.md) 
 ## [Console Selection](console-selection.md)
 ## [About Legacy Console Mode](legacymode.md)

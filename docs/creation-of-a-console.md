@@ -21,8 +21,8 @@ The system creates a new console when it starts a *console process*, a character
 
 A process can create a console by using one of the following methods:
 
-- A GUI or console process can use the [**CreateProcess**](https://msdn.microsoft.com/library/windows/desktop/ms682425) function with **CREATE\_NEW\_CONSOLE** to create a console process with a new console. (By default, a console process inherits its parent's console, and there is no guarantee that input is received by the process for which it was intended.)
-- A graphical user interface (GUI) or console process that is not currently attached to a console can use the [**AllocConsole**](allocconsole.md) function to create a new console. (GUI processes are not attached to a console when they are created. Console processes are not attached to a console if they are created using [**CreateProcess**](https://msdn.microsoft.com/library/windows/desktop/ms682425) with **DETACHED\_PROCESS**.)
+- A graphical user interface (GUI) or console process can use the [**CreateProcess**](https://msdn.microsoft.com/library/windows/desktop/ms682425) function with **CREATE\_NEW\_CONSOLE** to create a console process with a new console. (By default, a console process inherits its parent's console, and there is no guarantee that input is received by the process for which it was intended.)
+- A GUI or console process that is not currently attached to a console can use the [**AllocConsole**](allocconsole.md) function to create a new console. (GUI processes are not attached to a console when they are created. Console processes are not attached to a console if they are created using [**CreateProcess**](https://msdn.microsoft.com/library/windows/desktop/ms682425) with **DETACHED\_PROCESS**.)
 
 Typically, a process uses [**AllocConsole**](allocconsole.md) to create a console when an error occurs requiring interaction with the user. For example, a GUI process can create a console when an error occurs that prevents it from using its normal graphical interface, or a console process that does not normally interact with the user can create a console to display an error.
 
