@@ -20,9 +20,9 @@
     }
   ],
   "notification_subscribers": [
-    "richturn@microsoft.com",
     "duhowett@microsoft.com",
-    "miniksa@microsoft.com"
+    "miniksa@microsoft.com",
+    "cinnamon@microsoft.com"
   ],
   "sync_notification_subscribers": [],
   "branches_to_filter": [
