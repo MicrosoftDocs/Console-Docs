@@ -54,7 +54,7 @@ The size of the structure. Set this member to `sizeof(CONSOLE_READCONSOLE_CONTRO
 The number of characters to skip (and thus preserve) before writing newly read input in the buffer passed to the [**ReadConsole**](readconsole.md) function. This value must be less than the *nNumberOfCharsToRead* parameter of the **ReadConsole** function.
 
 **dwCtrlWakeupMask**  
-A user-defined control character used to signal that the read is complete.
+A mask specifying which control characters between `0x00` and `0x1F` should be used to signal that the read is complete. Each bit corresponds to a character with the least significant bit corresponding to `0x00` or `NUL` and the most significant bit corresponding to `0x1F` or `US`. Multiple bits (control characters) can be specified.
 
 **dwControlKeyState**  
 The state of the control keys. This member can be one or more of the following values.
