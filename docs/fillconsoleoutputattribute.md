@@ -33,11 +33,11 @@ api_type:
 
 # FillConsoleOutputAttribute function
 
+[!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
 Sets the character attributes for a specified number of character cells, beginning at the specified coordinates in a screen buffer.
 
-Syntax
-------
+## Syntax
 
 ```C
 BOOL WINAPI FillConsoleOutputAttribute(
@@ -49,14 +49,13 @@ BOOL WINAPI FillConsoleOutputAttribute(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *hConsoleOutput* \[in\]  
 A handle to the console screen buffer. The handle must have the **GENERIC\_WRITE** access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
 
 *wAttribute* \[in\]  
-The attributes to use when writing to the console screen buffer. For more information, see [Character Attributes](console-screen-buffers.md#_win32_font_attributes).
+The attributes to use when writing to the console screen buffer. For more information, see [Character Attributes](console-screen-buffers.md#character-attributes).
 
 *nLength* \[in\]  
 The number of character cells to be set to the specified color attributes.
@@ -67,60 +66,32 @@ A [**COORD**](coord-str.md) structure that specifies the character coordinates o
 *lpNumberOfAttrsWritten* \[out\]  
 A pointer to a variable that receives the number of character cells whose attributes were actually set.
 
-Return value
-------------
+## Return value
 
 If the function succeeds, the return value is nonzero.
 
 If the function fails, the return value is zero. To get extended error information, call [**GetLastError**](https://msdn.microsoft.com/library/windows/desktop/ms679360).
 
-Remarks
--------
+## Remarks
 
 If the number of character cells whose attributes are to be set extends beyond the end of the specified row in the console screen buffer, the cells of the next row are set. If the number of cells to write to extends beyond the end of the console screen buffer, the cells are written up to the end of the console screen buffer.
 
 The character values at the positions written to are not changed.
 
-Requirements
-------------
+> [!TIP]
+> This API is not recommended and does not have a specific **[virtual terminal](console-virtual-terminal-sequences.md)** equivalent. Filling the region outside the viewable window is not supported and is reserved for the terminal's history space. Filling a visible region with new text or color is performed through **[moving the cursor](console-virtual-terminal-sequences.md#cursor-positioning)**, **[setting the new attributes](console-virtual-terminal-sequences.md#text-formatting)**, then writing the desired text for that region, repeating characters if necessary for the length of the fill run. Additional cursor movement may be required followed by writing the desired text to fill a rectangular region. The client application is expected to keep its own memory of what is on the screen and is not able to query the remote state. More information can be found in **[classic console versus virtual terminal](classic-vs-vt.md)** documentation.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Minimum supported client</p></td>
-<td><p>Windows 2000 Professional [desktop apps only]</p></td>
-</tr>
-<tr class="even">
-<td><p>Minimum supported server</p></td>
-<td><p>Windows 2000 Server [desktop apps only]</p></td>
-</tr>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>ConsoleApi2.h (via Wincon.h, include Windows.h)</td>
-</tr>
-<tr class="even">
-<td><p>Library</p></td>
-<td>Kernel32.lib</td>
-</tr>
-<tr class="odd">
-<td><p>DLL</p></td>
-<td>Kernel32.dll</td>
-</tr>
-<tr class="even">
-</tr>
-<tr class="odd">
-</tr>
-<tr class="even">
-</tr>
-</tbody>
-</table>
+## Requirements
 
-## <span id="see_also"></span>See also
+| &nbsp; | &nbsp; |
+|-|-|
+| Minimum supported client | Windows 2000 Professional \[desktop apps only\] |
+| Minimum supported server | Windows 2000 Server \[desktop apps only\] |
+| Header | ConsoleApi2.h (via WinCon.h, include Windows.h) |
+| Library | Kernel32.lib |
+| DLL | Kernel32.dll |
 
+## See also
 
 [Console Functions](console-functions.md)
 
@@ -133,11 +104,3 @@ Requirements
 [**SetConsoleTextAttribute**](setconsoletextattribute.md)
 
 [**WriteConsoleOutputAttribute**](writeconsoleoutputattribute.md)
-
- 
-
- 
-
-
-
-

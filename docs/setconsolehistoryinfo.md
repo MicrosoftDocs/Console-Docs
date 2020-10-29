@@ -29,11 +29,11 @@ api_type:
 
 # SetConsoleHistoryInfo function
 
+[!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
 Sets the history settings for the calling process's console.
 
-Syntax
-------
+## Syntax
 
 ```C
 BOOL WINAPI SetConsoleHistoryInfo(
@@ -41,75 +41,37 @@ BOOL WINAPI SetConsoleHistoryInfo(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *lpConsoleHistoryInfo* \[in\]  
 A pointer to a [**CONSOLE\_HISTORY\_INFO**](console-history-info.md) structure that contains the history settings for the process's console.
 
-Return value
-------------
+## Return value
 
 If the function succeeds, the return value is nonzero.
 
 If the function fails, the return value is zero. To get extended error information, call [**GetLastError**](https://msdn.microsoft.com/library/windows/desktop/ms679360).
 
-Remarks
--------
+## Remarks
 
 If the calling process is not a console process, the function fails and sets the last error code to **ERROR\_ACCESS\_DENIED**.
 
-Requirements
-------------
+[!INCLUDE [no-vt-equiv-shell-banner](./includes/no-vt-equiv-shell-banner.md)]
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Minimum supported client</p></td>
-<td><p>Windows Vista [desktop apps only]</p></td>
-</tr>
-<tr class="even">
-<td><p>Minimum supported server</p></td>
-<td><p>Windows Server 2008 [desktop apps only]</p></td>
-</tr>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>ConsoleApi3.h (via Wincon.h, include Windows.h)</td>
-</tr>
-<tr class="even">
-<td><p>Library</p></td>
-<td>Kernel32.lib</td>
-</tr>
-<tr class="odd">
-<td><p>DLL</p></td>
-<td>Kernel32.dll</td>
-</tr>
-<tr class="even">
-</tr>
-<tr class="odd">
-</tr>
-<tr class="even">
-</tr>
-</tbody>
-</table>
+## Requirements
 
-## <span id="see_also"></span>See also
+| &nbsp; | &nbsp; |
+|-|-|
+| Minimum supported client | Windows Vista \[desktop apps only\] |
+| Minimum supported server | Windows Server 2008 \[desktop apps only\] |
+| Header | ConsoleApi3.h (via WinCon.h, include Windows.h) |
+| Library | Kernel32.lib |
+| DLL | Kernel32.dll |
 
+## See also
 
 [Console Functions](console-functions.md)
 
 [**CONSOLE\_HISTORY\_INFO**](console-history-info.md)
 
 [**GetConsoleHistoryInfo**](getconsolehistoryinfo.md)
-
- 
-
- 
-
-
-
-

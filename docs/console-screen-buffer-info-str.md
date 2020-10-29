@@ -26,18 +26,16 @@ topic_type:
 api_name:
 - CONSOLE_SCREEN_BUFFER_INFO
 api_location:
-- Wincon.h
+- WinCon.h
 api_type:
 - HeaderDef
 ---
 
 # CONSOLE\_SCREEN\_BUFFER\_INFO structure
 
-
 Contains information about a console screen buffer.
 
-Syntax
-------
+## Syntax
 
 ```C
 typedef struct _CONSOLE_SCREEN_BUFFER_INFO {
@@ -49,8 +47,7 @@ typedef struct _CONSOLE_SCREEN_BUFFER_INFO {
 } CONSOLE_SCREEN_BUFFER_INFO;
 ```
 
-Members
--------
+## Members
 
 **dwSize**  
 A [**COORD**](coord-str.md) structure that contains the size of the console screen buffer, in character columns and rows.
@@ -59,7 +56,7 @@ A [**COORD**](coord-str.md) structure that contains the size of the console scre
 A [**COORD**](coord-str.md) structure that contains the column and row coordinates of the cursor in the console screen buffer.
 
 **wAttributes**  
-The attributes of the characters written to a screen buffer by the [**WriteFile**](https://msdn.microsoft.com/library/windows/desktop/aa365747) and [**WriteConsole**](writeconsole.md) functions, or echoed to a screen buffer by the [**ReadFile**](https://msdn.microsoft.com/library/windows/desktop/aa365467) and [**ReadConsole**](readconsole.md) functions. For more information, see [Character Attributes](console-screen-buffers.md#_win32_font_attributes).
+The attributes of the characters written to a screen buffer by the [**WriteFile**](https://msdn.microsoft.com/library/windows/desktop/aa365747) and [**WriteConsole**](writeconsole.md) functions, or echoed to a screen buffer by the [**ReadFile**](https://msdn.microsoft.com/library/windows/desktop/aa365467) and [**ReadConsole**](readconsole.md) functions. For more information, see [Character Attributes](console-screen-buffers.md#character-attributes).
 
 **srWindow**  
 A [**SMALL\_RECT**](small-rect-str.md) structure that contains the console screen buffer coordinates of the upper-left and lower-right corners of the display window.
@@ -67,37 +64,19 @@ A [**SMALL\_RECT**](small-rect-str.md) structure that contains the console scree
 **dwMaximumWindowSize**  
 A [**COORD**](coord-str.md) structure that contains the maximum size of the console window, in character columns and rows, given the current screen buffer size and font and the screen size.
 
-Examples
---------
+## Examples
 
 For an example, see [Scrolling a Screen Buffer's Contents](scrolling-a-screen-buffer-s-contents.md).
 
-Requirements
-------------
+## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Minimum supported client</p></td>
-<td><p>Windows 2000 Professional [desktop apps only]</p></td>
-</tr>
-<tr class="even">
-<td><p>Minimum supported server</p></td>
-<td><p>Windows 2000 Server [desktop apps only]</p></td>
-</tr>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>ConsoleApi2.h (via Wincon.h, include Windows.h)</td>
-</tr>
-</tbody>
-</table>
+| &nbsp; | &nbsp; |
+|-|-|
+| Minimum supported client | Windows 2000 Professional \[desktop apps only\] |
+| Minimum supported server | Windows 2000 Server \[desktop apps only\] |
+| Header | ConsoleApi2.h (via WinCon.h, include Windows.h) |
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [**COORD**](coord-str.md)
 
@@ -112,11 +91,3 @@ Requirements
 [**WriteConsole**](writeconsole.md)
 
 [**WriteFile**](https://msdn.microsoft.com/library/windows/desktop/aa365747)
-
- 
-
- 
-
-
-
-

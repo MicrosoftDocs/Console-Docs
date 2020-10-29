@@ -37,11 +37,11 @@ api_type:
 
 # GetConsoleOriginalTitle function
 
+[!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
 Retrieves the original title for the current console window.
 
-Syntax
-------
+## Syntax
 
 ```C
 DWORD WINAPI GetConsoleOriginalTitle(
@@ -50,8 +50,7 @@ DWORD WINAPI GetConsoleOriginalTitle(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *lpConsoleTitle* \[out\]  
 A pointer to a buffer that receives a null-terminated string containing the original title.
@@ -59,8 +58,7 @@ A pointer to a buffer that receives a null-terminated string containing the orig
 *nSize* \[in\]  
 The size of the *lpConsoleTitle* buffer, in characters.
 
-Return value
-------------
+## Return value
 
 If the function succeeds, the return value is the length of the string copied to the buffer, in characters.
 
@@ -68,70 +66,30 @@ If the buffer is not large enough to store the title, the return value is zero a
 
 If the function fails, the return value is zero and [**GetLastError**](https://msdn.microsoft.com/library/windows/desktop/ms679360) returns the error code.
 
-Remarks
--------
+## Remarks
 
 To set the title for a console window, use the [**SetConsoleTitle**](setconsoletitle.md) function. To retrieve the current title string, use the [**GetConsoleTitle**](getconsoletitle.md) function.
 
 To compile an application that uses this function, define **\_WIN32\_WINNT** as 0x0600 or later. For more information, see [Using the Windows Headers](https://msdn.microsoft.com/library/windows/desktop/aa383745).
 
-Requirements
-------------
+> [!TIP]
+> This API is not recommended and does not have a **[virtual terminal](console-virtual-terminal-sequences.md)** equivalent. This decision intentionally aligns the Windows platform with other operating systems. Applications remoting via cross-platform utilities and transports like SSH may not work as expected if using this API.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Minimum supported client</p></td>
-<td><p>Windows Vista [desktop apps only]</p></td>
-</tr>
-<tr class="even">
-<td><p>Minimum supported server</p></td>
-<td><p>Windows Server 2008 [desktop apps only]</p></td>
-</tr>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>ConsoleApi2.h (via Wincon.h, include Windows.h)</td>
-</tr>
-<tr class="even">
-<td><p>Library</p></td>
-<td>Kernel32.lib</td>
-</tr>
-<tr class="odd">
-<td><p>DLL</p></td>
-<td>Kernel32.dll</td>
-</tr>
-<tr class="even">
-<td><p>Unicode and ANSI names</p></td>
-<td><p><strong>GetConsoleOriginalTitleW</strong> (Unicode) and <strong>GetConsoleOriginalTitleA</strong> (ANSI)</p></td>
-</tr>
-<tr class="odd">
-</tr>
-<tr class="even">
-</tr>
-<tr class="odd">
-</tr>
-<tr class="even">
-</tr>
-</tbody>
-</table>
+## Requirements
 
-## <span id="see_also"></span>See also
+| &nbsp; | &nbsp; |
+|-|-|
+| Minimum supported client | Windows Vista \[desktop apps only\] |
+| Minimum supported server | Windows Server 2008 \[desktop apps only\] |
+| Header | ConsoleApi2.h (via WinCon.h, include Windows.h) |
+| Library | Kernel32.lib |
+| DLL | Kernel32.dll |
+| Unicode and ANSI names | **GetConsoleOriginalTitleW** (Unicode) and **GetConsoleOriginalTitleA** (ANSI) |
 
+## See also
 
 [Console Functions](console-functions.md)
 
 [**GetConsoleTitle**](getconsoletitle.md)
 
 [**SetConsoleTitle**](setconsoletitle.md)
-
- 
-
- 
-
-
-
-

@@ -26,18 +26,16 @@ topic_type:
 api_name:
 - COORD
 api_location:
-- Wincon.h
+- WinCon.h
 api_type:
 - HeaderDef
 ---
 
 # COORD structure
 
-
 Defines the coordinates of a character cell in a console screen buffer. The origin of the coordinate system (0,0) is at the top, left cell of the buffer.
 
-Syntax
-------
+## Syntax
 
 ```C
 typedef struct _COORD {
@@ -46,8 +44,7 @@ typedef struct _COORD {
 } COORD, *PCOORD;
 ```
 
-Members
--------
+## Members
 
 **X**  
 The horizontal coordinate or column value. The units depend on the function call.
@@ -55,37 +52,19 @@ The horizontal coordinate or column value. The units depend on the function call
 **Y**  
 The vertical coordinate or row value. The units depend on the function call.
 
-Examples
---------
+## Examples
 
 For an example, see [Scrolling a Screen Buffer's Contents](scrolling-a-screen-buffer-s-contents.md).
 
-Requirements
-------------
+## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Minimum supported client</p></td>
-<td><p>Windows 2000 Professional [desktop apps only]</p></td>
-</tr>
-<tr class="even">
-<td><p>Minimum supported server</p></td>
-<td><p>Windows 2000 Server [desktop apps only]</p></td>
-</tr>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>WinConTypes.h (via Wincon.h, include Windows.h)</td>
-</tr>
-</tbody>
-</table>
+| &nbsp; | &nbsp; |
+|-|-|
+| Minimum supported client | Windows 2000 Professional \[desktop apps only\] |
+| Minimum supported server | Windows 2000 Server \[desktop apps only\] |
+| Header | WinConTypes.h (via WinCon.h, include Windows.h) |
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [**CONSOLE\_FONT\_INFO**](console-font-info-str.md)
 
@@ -124,11 +103,3 @@ Requirements
 [**WriteConsoleOutputAttribute**](writeconsoleoutputattribute.md)
 
 [**WriteConsoleOutputCharacter**](writeconsoleoutputcharacter.md)
-
- 
-
- 
-
-
-
-

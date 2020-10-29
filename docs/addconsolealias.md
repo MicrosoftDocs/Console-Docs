@@ -36,11 +36,11 @@ api_type:
 
 # AddConsoleAlias function
 
+[!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
 Defines a console alias for the specified executable.
 
-Syntax
-------
+## Syntax
 
 ```C
 BOOL WINAPI AddConsoleAlias(
@@ -50,8 +50,7 @@ BOOL WINAPI AddConsoleAlias(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *Source* \[in\]  
 The console alias to be mapped to the text specified by *Target*.
@@ -62,69 +61,34 @@ The text to be substituted for *Source*. If this parameter is **NULL**, then the
 *ExeName* \[in\]  
 The name of the executable file for which the console alias is to be defined.
 
-Return value
-------------
+## Return value
 
 If the function succeeds, the return value is **TRUE**.
 
 If the function fails, the return value is **FALSE**. To get extended error information, call [**GetLastError**](https://msdn.microsoft.com/library/windows/desktop/ms679360).
 
-Remarks
--------
+## Remarks
 
 To compile an application that uses this function, define **\_WIN32\_WINNT** as 0x0501 or later. For more information, see [Using the Windows Headers](https://msdn.microsoft.com/library/windows/desktop/aa383745).
 
-Examples
---------
+[!INCLUDE [no-vt-equiv-shell-banner](./includes/no-vt-equiv-shell-banner.md)]
+
+## Examples
 
 For an example, see [Console Aliases](console-aliases.md).
 
-Requirements
-------------
+## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Minimum supported client</p></td>
-<td><p>Windows 2000 Professional [desktop apps only]</p></td>
-</tr>
-<tr class="even">
-<td><p>Minimum supported server</p></td>
-<td><p>Windows 2000 Server [desktop apps only]</p></td>
-</tr>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>ConsoleApi3.h (via Wincon.h, include Windows.h)</td>
-</tr>
-<tr class="even">
-<td><p>Library</p></td>
-<td>Kernel32.lib</td>
-</tr>
-<tr class="odd">
-<td><p>DLL</p></td>
-<td>Kernel32.dll</td>
-</tr>
-<tr class="even">
-<td><p>Unicode and ANSI names</p></td>
-<td><p><strong>AddConsoleAliasW</strong> (Unicode) and <strong>AddConsoleAliasA</strong> (ANSI)</p></td>
-</tr>
-<tr class="odd">
-</tr>
-<tr class="even">
-</tr>
-<tr class="odd">
-</tr>
-<tr class="even">
-</tr>
-</tbody>
-</table>
+| &nbsp; | &nbsp; |
+|-|-|
+| Minimum supported client | Windows 2000 Professional \[desktop apps only\] |
+| Minimum supported server | Windows 2000 Server \[desktop apps only\] |
+| Header | ConsoleApi3.h (via WinCon.h, include Windows.h) |
+| Library | Kernel32.lib |
+| DLL | Kernel32.dll |
+| Unicode and ANSI names | **AddConsoleAliasW** (Unicode) and **AddConsoleAliasA** (ANSI) |
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [Console Aliases](console-aliases.md)
 
@@ -135,11 +99,3 @@ Requirements
 [**GetConsoleAliases**](getconsolealiases.md)
 
 [**GetConsoleAliasExes**](getconsolealiasexes.md)
-
- 
-
- 
-
-
-
-

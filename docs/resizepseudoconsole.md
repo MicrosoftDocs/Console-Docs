@@ -23,11 +23,9 @@ api_type:
 
 # ResizePseudoConsole function
 
-
 Resizes the internal buffers for a pseudoconsole to the given size.
 
-Syntax
-------
+## Syntax
 
 ```C
 HRESULT WINAPI ResizePseudoConsole(
@@ -36,66 +34,35 @@ HRESULT WINAPI ResizePseudoConsole(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *hPC* \[in\]  
-A handle to an active psuedoconsole as opened by [CreatePseudoConsole](createpseudoconsole.md).
+A handle to an active pseudoconsole as opened by [CreatePseudoConsole](createpseudoconsole.md).
 
 *size* \[in\]  
-The dimensions of the window/buffer in count of characters that will be used for the internal buffer of this pseudoconsole. 
+The dimensions of the window/buffer in count of characters that will be used for the internal buffer of this pseudoconsole.
 
-Return value
-------------
+## Return value
 
 Type: **HRESULT**
 
 If this method succeeds, it returns **S_OK**. Otherwise, it returns an **HRESULT** error code.
 
-Remarks
--------
+## Remarks
 
 This function can resize the internal buffers in the pseudoconsole session to match the window/buffer size being used for display on the terminal end. This ensures that attached Command-Line Interface (CUI) applications using the [Console Functions](console-functions.md) to communicate will have the correct dimensions returned in their calls.
 
-Requirements
-------------
+## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Minimum supported client</p></td>
-<td><p>Windows 10 1809 [desktop apps only]</p></td>
-</tr>
-<tr class="even">
-<td><p>Minimum supported server</p></td>
-<td><p>Windows Server 2019 [desktop apps only]</p></td>
-</tr>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>ConsoleApi.h (via Wincon.h, include Windows.h)</td>
-</tr>
-<tr class="even">
-<td><p>Library</p></td>
-<td>Kernel32.lib</td>
-</tr>
-<tr class="odd">
-<td><p>DLL</p></td>
-<td>Kernel32.dll</td>
-</tr>
-<tr class="even">
-</tr>
-<tr class="odd">
-</tr>
-<tr class="even">
-</tr>
-</tbody>
-</table>
+| &nbsp; | &nbsp; |
+|-|-|
+| Minimum supported client | Windows 10 October 2018 Update (version 1809) \[desktop apps only\] |
+| Minimum supported server | Windows Server 2019 \[desktop apps only\] |
+| Header | ConsoleApi.h (via WinCon.h, include Windows.h) |
+| Library | Kernel32.lib |
+| DLL | Kernel32.dll |
 
-## <span id="see_also"></span>See also
+## See also
 
 [Pseudoconsoles](pseudoconsoles.md)
 

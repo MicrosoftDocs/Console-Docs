@@ -3,7 +3,7 @@ title: Window and Screen Buffer Size
 description: The size of a screen buffer is expressed in terms of a coordinate grid based on character cells.
 author: miniksa
 ms.author: miniksa
-ms.topic: article
+ms.topic: conceptual
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
 - '\_win32\_window\_and\_screen\_buffer\_size'
@@ -17,8 +17,10 @@ ms.assetid: 55246039-31eb-41ca-ad8e-d314cb508644
 
 # Window and Screen Buffer Size
 
-
 The size of a screen buffer is expressed in terms of a coordinate grid based on character cells. The width is the number of character cells in each row, and the height is the number of rows. Associated with each screen buffer is a window that determines the size and location of the rectangular portion of the console screen buffer displayed in the console window. A screen buffer's window is defined by specifying the character-cell coordinates of the upper left and lower right cells of the window's rectangle.
+
+> [!NOTE]
+> In the **[virtual terminal sequences](console-virtual-terminal-sequences.md)** world, the size of the window and the size of the screen buffer are fixed to the same value. The terminal handles any scrollback region that would be the equivalent of a console with a screen buffer size larger than its window size. That content belongs to the terminal and is generally no longer a part of the addressable area. For more information, please see our comparison of the **[classic console functions versus virtual terminal sequences](classic-vs-vt.md)**.
 
 A screen buffer can be any size, limited only by available memory. The dimensions of a screen buffer's window cannot exceed the corresponding dimensions of either the console screen buffer or the maximum window that can fit on the screen based on the current font size (controlled exclusively by the user).
 
@@ -35,11 +37,3 @@ To change a screen buffer's size, use the [**SetConsoleScreenBufferSize**](setco
 To change the size or location of a screen buffer's window, use the [**SetConsoleWindowInfo**](setconsolewindowinfo.md) function. This function fails if the specified window-corner coordinates exceed the limits of the console screen buffer or the screen. Changing the window size of the active screen buffer changes the size of the console window displayed on the screen.
 
 A process can change its console's input mode to enable window input so that the process is able to receive input when the user changes the console screen buffer size. If an application enables window input, it can use [**GetConsoleScreenBufferInfo**](getconsolescreenbufferinfo.md) to retrieve window and screen buffer size at startup. This information can then be used to determine the way data is displayed in the window. If the user changes the console screen buffer size, the application can respond by changing the way data is displayed. For example, an application can adjust the way text wraps at the end of the line if the number of characters per row changes. If an application does not enable window input, it must either use the inherited window and screen buffer sizes, or set them to the desired size during startup and restore the inherited sizes at exit. For additional information about window input mode, see [Low-Level Console Modes](low-level-console-modes.md).
-
- 
-
- 
-
-
-
-

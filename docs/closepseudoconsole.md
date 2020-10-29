@@ -20,75 +20,42 @@ api_type:
 
 # ClosePseudoConsole function
 
-
 Closes a pseudoconsole from the given handle.
 
-Syntax
-------
+## Syntax
 
 ```C
 void WINAPI ClosePseudoConsole(
-    _In_ HPCON hPC 
+    _In_ HPCON hPC
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *hPC* \[in\]  
-A handle to an active psuedoconsole as opened by [CreatePseudoConsole](createpseudoconsole.md).
+A handle to an active pseudoconsole as opened by [CreatePseudoConsole](createpseudoconsole.md).
 
-Return value
-------------
+## Return value
 
 *none*
 
-Remarks
--------
+## Remarks
 
 Upon closing a pseudoconsole, client applications attached to the session will be terminated as well.
 
 A final painted frame may arrive on `hOutput` from the pseudoconsole when this API is called. It is expected that the caller will drain this information from the communication channel buffer and either present it or discard it. Failure to drain the buffer may cause the Close call to wait indefinitely until it is drained or the communication channels are broken another way.
 
-Requirements
-------------
+## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Minimum supported client</p></td>
-<td><p>Windows 10 1809 [desktop apps only]</p></td>
-</tr>
-<tr class="even">
-<td><p>Minimum supported server</p></td>
-<td><p>Windows Server 2019 [desktop apps only]</p></td>
-</tr>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>ConsoleApi.h (via Wincon.h, include Windows.h)</td>
-</tr>
-<tr class="even">
-<td><p>Library</p></td>
-<td>Kernel32.lib</td>
-</tr>
-<tr class="odd">
-<td><p>DLL</p></td>
-<td>Kernel32.dll</td>
-</tr>
-<tr class="even">
-</tr>
-<tr class="odd">
-</tr>
-<tr class="even">
-</tr>
-</tbody>
-</table>
+| &nbsp; | &nbsp; |
+|-|-|
+| Minimum supported client | Windows 10 October 2018 Update (version 1809) \[desktop apps only\] |
+| Minimum supported server | Windows Server 2019 \[desktop apps only\] |
+| Header | ConsoleApi.h (via WinCon.h, include Windows.h) |
+| Library | Kernel32.lib |
+| DLL | Kernel32.dll |
 
-## <span id="see_also"></span>See also
+## See also
 
 [Pseudoconsoles](pseudoconsoles.md)
 
