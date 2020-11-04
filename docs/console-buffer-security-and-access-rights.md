@@ -6,9 +6,9 @@ ms.author: miniksa
 ms.topic: conceptual
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
-- '\_win32\_console\_buffer\_security\_and\_access\_rights'
-- 'base.console\_buffer\_security\_and\_access\_rights'
-- 'consoles.console\_buffer\_security\_and\_access\_rights'
+- '_win32_console_buffer_security_and_access_rights'
+- 'base.console_buffer_security_and_access_rights'
+- 'consoles.console_buffer_security_and_access_rights'
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/desktop'
@@ -23,14 +23,14 @@ The Windows security model enables you to control access to console input buffer
 
 You can specify a [security descriptor](https://msdn.microsoft.com/library/windows/desktop/aa379563) for the console input and console screen buffers when you call the [`CreateFile`](https://msdn.microsoft.com/library/windows/desktop/aa363858) or [`CreateConsoleScreenBuffer`](createconsolescreenbuffer.md) function. If you specify `NULL`, the object gets a default security descriptor. The ACLs in the default security descriptor for a console buffer come from the primary or impersonation token of the creator.
 
-The handles returned by [`CreateFile`](https://msdn.microsoft.com/library/windows/desktop/aa363858), [`CreateConsoleScreenBuffer`](createconsolescreenbuffer.md), and [`GetStdHandle`](getstdhandle.md) have the `GENERIC\_READ` and `GENERIC\_WRITE` access rights.
+The handles returned by [`CreateFile`](https://msdn.microsoft.com/library/windows/desktop/aa363858), [`CreateConsoleScreenBuffer`](createconsolescreenbuffer.md), and [`GetStdHandle`](getstdhandle.md) have the `GENERIC_READ` and `GENERIC_WRITE` access rights.
 
-The valid access rights include the `GENERIC\_READ` and `GENERIC\_WRITE` [generic access rights](https://msdn.microsoft.com/library/windows/desktop/aa446632).
+The valid access rights include the `GENERIC_READ` and `GENERIC_WRITE` [generic access rights](https://msdn.microsoft.com/library/windows/desktop/aa446632).
 
 | Value | Meaning |
 |-|-|
-| `GENERIC\_READ` (0x80000000L)  | Requests read access to the console screen buffer, enabling the process to read data from the buffer. |
-| `GENERIC\_WRITE` (0x40000000L) | Requests write access to the console screen buffer, enabling the process to write data to the buffer. |
+| `GENERIC_READ` (0x80000000L)  | Requests read access to the console screen buffer, enabling the process to read data from the buffer. |
+| `GENERIC_WRITE` (0x40000000L) | Requests write access to the console screen buffer, enabling the process to write data to the buffer. |
 
 > [!NOTE]
 > `[Universal Windows Platform console apps](https://docs.microsoft.com/windows/uwp/launch-resume/console-uwp)` and those with a lower `[integrity level](https://docs.microsoft.com/windows/win32/secauthz/mandatory-integrity-control)` than the attached console will be prohibited from both reading the output buffer and writing to the input buffer even if the security descriptors above would normally permit it. Please see the `[Wrong Way Verbs](#wrong-way-verbs)` discussion below for more details.

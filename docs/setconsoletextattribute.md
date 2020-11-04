@@ -10,7 +10,7 @@ f1_keywords:
 - wincon/SetConsoleTextAttribute
 - SetConsoleTextAttribute
 MS-HAID:
-- '\_win32\_setconsoletextattribute'
+- '_win32_setconsoletextattribute'
 - 'base.setconsoletextattribute'
 - 'consoles.setconsoletextattribute'
 MSHAttr:
@@ -49,7 +49,7 @@ BOOL WINAPI SetConsoleTextAttribute(
 ## Parameters
 
 *hConsoleOutput* \[in\]  
-A handle to the console screen buffer. The handle must have the `GENERIC\_READ` access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
+A handle to the console screen buffer. The handle must have the `GENERIC_READ` access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
 
 *wAttributes* \[in\]  
 The [character attributes](console-screen-buffers.md#character-attributes).

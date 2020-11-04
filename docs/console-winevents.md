@@ -21,9 +21,9 @@ f1_keywords:
 - EVENT_CONSOLE_UPDATE_SCROLL
 - EVENT_CONSOLE_UPDATE_SIMPLE
 MS-HAID:
-- '\_win32\_console\_winevents'
-- 'base.console\_winevents'
-- 'consoles.console\_winevents'
+- '_win32_console_winevents'
+- 'base.console_winevents'
+- 'consoles.console_winevents'
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/desktop'

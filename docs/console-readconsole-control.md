@@ -13,8 +13,8 @@ f1_keywords:
 - wincon/PCONSOLE_READCONSOLE_CONTROL
 - PCONSOLE_READCONSOLE_CONTROL
 MS-HAID:
-- 'base.console\_readconsole\_control'
-- 'consoles.console\_readconsole\_control'
+- 'base.console_readconsole_control'
+- 'consoles.console_readconsole_control'
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/desktop'
@@ -30,7 +30,7 @@ api_type:
 - HeaderDef
 ---
 
-# CONSOLE\_READCONSOLE\_CONTROL structure
+# CONSOLE_READCONSOLE_CONTROL structure
 
 Contains information for a console read operation.
 

@@ -6,9 +6,9 @@ ms.author: miniksa
 ms.topic: sample
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
-- '\_win32\_using\_the\_high\_level\_input\_and\_output\_functions'
-- 'base.using\_the\_high\_level\_input\_and\_output\_functions'
-- 'consoles.using\_the\_high\_level\_input\_and\_output\_functions'
+- '_win32_using_the_high_level_input_and_output_functions'
+- 'base.using_the_high_level_input_and_output_functions'
+- 'consoles.using_the_high_level_input_and_output_functions'
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/desktop'

@@ -10,7 +10,7 @@ f1_keywords:
 - wincon/FlushConsoleInputBuffer
 - FlushConsoleInputBuffer
 MS-HAID:
-- '\_win32\_flushconsoleinputbuffer'
+- '_win32_flushconsoleinputbuffer'
 - 'base.flushconsoleinputbuffer'
 - 'consoles.flushconsoleinputbuffer'
 MSHAttr:
@@ -47,7 +47,7 @@ BOOL WINAPI FlushConsoleInputBuffer(
 ## Parameters
 
 *hConsoleInput* \[in\]  
-A handle to the console input buffer. The handle must have the `GENERIC\_WRITE` access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
+A handle to the console input buffer. The handle must have the `GENERIC_WRITE` access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
 
 ## Return value
 

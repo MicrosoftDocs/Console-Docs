@@ -6,9 +6,9 @@ ms.author: miniksa
 ms.topic: sample
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
-- '\_win32\_reading\_input\_buffer\_events'
-- 'base.reading\_input\_buffer\_events'
-- 'consoles.reading\_input\_buffer\_events'
+- '_win32_reading_input_buffer_events'
+- 'base.reading_input_buffer_events'
+- 'consoles.reading_input_buffer_events'
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/desktop'

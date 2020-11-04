@@ -68,7 +68,7 @@ If the function fails, the return value is zero. To get extended error informati
 
 To determine the required size for the *lpExeNameBuffer* buffer, use the [`GetConsoleAliasExesLength`](getconsolealiasexeslength.md) function.
 
-To compile an application that uses this function, define `\_WIN32\_WINNT` as 0x0501 or later. For more information, see [Using the Windows Headers](https://msdn.microsoft.com/library/windows/desktop/aa383745).
+To compile an application that uses this function, define `_WIN32_WINNT` as 0x0501 or later. For more information, see [Using the Windows Headers](https://msdn.microsoft.com/library/windows/desktop/aa383745).
 
 [!INCLUDE [no-vt-equiv-shell-banner](./includes/no-vt-equiv-shell-banner.md)]
 

@@ -16,7 +16,7 @@ f1_keywords:
 - wincon/GetConsoleTitleW
 - GetConsoleTitleW
 MS-HAID:
-- '\_win32\_getconsoletitle'
+- '_win32_getconsoletitle'
 - 'base.getconsoletitle'
 - 'consoles.getconsoletitle'
 MSHAttr:

@@ -1,6 +1,6 @@
 ---
 title: KEY_EVENT_RECORD structure
-description: Describes a keyboard input event in a console INPUT\_RECORD structure.
+description: Describes a keyboard input event in a console INPUT_RECORD structure.
 author: miniksa
 ms.author: miniksa
 ms.topic: article
@@ -13,9 +13,9 @@ f1_keywords:
 - wincon/PKEY_EVENT_RECORD
 - PKEY_EVENT_RECORD
 MS-HAID:
-- '\_win32\_key\_event\_record\_str'
-- 'base.key\_event\_record\_str'
-- 'consoles.key\_event\_record\_str'
+- '_win32_key_event_record_str'
+- 'base.key_event_record_str'
+- 'consoles.key_event_record_str'
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/desktop'
@@ -31,9 +31,9 @@ api_type:
 - HeaderDef
 ---
 
-# KEY\_EVENT\_RECORD structure
+# KEY_EVENT_RECORD structure
 
-Describes a keyboard input event in a console [`INPUT\_RECORD`](input-record-str.md) structure.
+Describes a keyboard input event in a console [`INPUT_RECORD`](input-record-str.md) structure.
 
 ## Syntax
 
@@ -93,7 +93,7 @@ The state of the control keys. This member can be one or more of the following v
 
 Enhanced keys for the IBM® 101- and 102-key keyboards are the INS, DEL, HOME, END, PAGE UP, PAGE DOWN, and direction keys in the clusters to the left of the keypad; and the divide (/) and ENTER keys in the keypad.
 
-Keyboard input events are generated when any key, including control keys, is pressed or released. However, the ALT key when pressed and released without combining with another character, has special meaning to the system and is not passed through to the application. Also, the CTRL+C key combination is not passed through if the input handle is in processed mode (`ENABLE\_PROCESSED\_INPUT`).
+Keyboard input events are generated when any key, including control keys, is pressed or released. However, the ALT key when pressed and released without combining with another character, has special meaning to the system and is not passed through to the application. Also, the CTRL+C key combination is not passed through if the input handle is in processed mode (`ENABLE_PROCESSED_INPUT`).
 
 ## Examples
 
@@ -115,4 +115,4 @@ For an example, see [Reading Input Buffer Events](reading-input-buffer-events.md
 
 [`WriteConsoleInput`](writeconsoleinput.md)
 
-[`INPUT\_RECORD`](input-record-str.md)
+[`INPUT_RECORD`](input-record-str.md)

@@ -6,9 +6,9 @@ ms.author: miniksa
 ms.topic: conceptual
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
-- '\_win32\_ctrl\_close\_signal'
-- 'base.ctrl\_close\_signal'
-- 'consoles.ctrl\_close\_signal'
+- '_win32_ctrl_close_signal'
+- 'base.ctrl_close_signal'
+- 'consoles.ctrl_close_signal'
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/desktop'

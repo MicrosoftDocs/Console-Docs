@@ -6,9 +6,9 @@ ms.author: miniksa
 ms.topic: hub-page
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
-- '\_win32\_console\_functions'
-- 'base.console\_functions'
-- 'consoles.console\_functions'
+- '_win32_console_functions'
+- 'base.console_functions'
+- 'consoles.console_functions'
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/desktop'

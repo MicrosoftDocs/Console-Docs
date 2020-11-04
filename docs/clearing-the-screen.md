@@ -6,9 +6,9 @@ ms.author: miniksa
 ms.topic: sample
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
-- '\_win32\_clearing\_the\_screen'
-- 'base.clearing\_the\_screen'
-- 'consoles.clearing\_the\_screen'
+- '_win32_clearing_the_screen'
+- 'base.clearing_the_screen'
+- 'consoles.clearing_the_screen'
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/desktop'

@@ -6,9 +6,9 @@ ms.author: miniksa
 ms.topic: sample
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
-- '\_win32\_reading\_and\_writing\_blocks\_of\_characters\_and\_attributes'
-- 'base.reading\_and\_writing\_blocks\_of\_characters\_and\_attributes'
-- 'consoles.reading\_and\_writing\_blocks\_of\_characters\_and\_attributes'
+- '_win32_reading_and_writing_blocks_of_characters_and_attributes'
+- 'base.reading_and_writing_blocks_of_characters_and_attributes'
+- 'consoles.reading_and_writing_blocks_of_characters_and_attributes'
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/desktop'
@@ -19,7 +19,7 @@ ms.assetid: eaa57723-f003-4e90-8156-be8c3b42b912
 
 [!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
-The [`ReadConsoleOutput`](readconsoleoutput.md) function copies a rectangular block of character and color attribute data from a console screen buffer into a destination buffer. The function treats the destination buffer as a two-dimensional array of [`CHAR\_INFO`](char-info-str.md) structures. Similarly, the [`WriteConsoleOutput`](writeconsoleoutput.md) function copies a rectangular block of character and color attribute data from a source buffer to a console screen buffer. For more information about reading from or writing to rectangular blocks of screen buffer cells, see [Input and Output Methods](input-and-output-methods.md).
+The [`ReadConsoleOutput`](readconsoleoutput.md) function copies a rectangular block of character and color attribute data from a console screen buffer into a destination buffer. The function treats the destination buffer as a two-dimensional array of [`CHAR_INFO`](char-info-str.md) structures. Similarly, the [`WriteConsoleOutput`](writeconsoleoutput.md) function copies a rectangular block of character and color attribute data from a source buffer to a console screen buffer. For more information about reading from or writing to rectangular blocks of screen buffer cells, see [Input and Output Methods](input-and-output-methods.md).
 
 The following example uses the [`CreateConsoleScreenBuffer`](createconsolescreenbuffer.md) function to create a new screen buffer. After the [`SetConsoleActiveScreenBuffer`](setconsoleactivescreenbuffer.md) function makes this the active screen buffer, a block of characters and color attributes is copied from the top two rows of the STDOUT screen buffer into a temporary buffer. The data is then copied from the temporary buffer into the new active screen buffer. When the application is finished using the new screen buffer, it calls `SetConsoleActiveScreenBuffer` to restore the original STDOUT screen buffer.
 

@@ -10,7 +10,7 @@ f1_keywords:
 - wincon/FreeConsole
 - FreeConsole
 MS-HAID:
-- '\_win32\_freeconsole'
+- '_win32_freeconsole'
 - 'base.freeconsole'
 - 'consoles.freeconsole'
 MSHAttr:
@@ -53,7 +53,7 @@ If the function fails, the return value is zero. To get extended error informati
 
 ## Remarks
 
-A process can be attached to at most one console. If the calling process is not already attached to a console, the error code returned is `ERROR\_INVALID\_PARAMETER` (87).
+A process can be attached to at most one console. If the calling process is not already attached to a console, the error code returned is `ERROR_INVALID_PARAMETER` (87).
 
 A process can use the `FreeConsole` function to detach itself from its console. If other processes share the console, the console is not destroyed, but the process that called `FreeConsole` cannot refer to it. A console is closed when the last process attached to it terminates or calls `FreeConsole`. After a process calls `FreeConsole`, it can call the [`AllocConsole`](allocconsole.md) function to create a new console or [`AttachConsole`](attachconsole.md) to attach to another console.
 

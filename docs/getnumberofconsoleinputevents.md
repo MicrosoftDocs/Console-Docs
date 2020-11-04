@@ -10,7 +10,7 @@ f1_keywords:
 - wincon/GetNumberOfConsoleInputEvents
 - GetNumberOfConsoleInputEvents
 MS-HAID:
-- '\_win32\_getnumberofconsoleinputevents'
+- '_win32_getnumberofconsoleinputevents'
 - 'base.getnumberofconsoleinputevents'
 - 'consoles.getnumberofconsoleinputevents'
 MSHAttr:
@@ -48,7 +48,7 @@ BOOL WINAPI GetNumberOfConsoleInputEvents(
 ## Parameters
 
 *hConsoleInput* \[in\]  
-A handle to the console input buffer. The handle must have the `GENERIC\_READ` access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
+A handle to the console input buffer. The handle must have the `GENERIC_READ` access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
 
 *lpcNumberOfEvents* \[out\]  
 A pointer to a variable that receives the number of unread input records in the console's input buffer.

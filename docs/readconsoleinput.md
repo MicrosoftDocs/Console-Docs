@@ -16,7 +16,7 @@ f1_keywords:
 - wincon/ReadConsoleInputW
 - ReadConsoleInputW
 MS-HAID:
-- '\_win32\_readconsoleinput'
+- '_win32_readconsoleinput'
 - 'base.readconsoleinput'
 - 'consoles.readconsoleinput'
 MSHAttr:
@@ -58,10 +58,10 @@ BOOL WINAPI ReadConsoleInput(
 ## Parameters
 
 *hConsoleInput* \[in\]  
-A handle to the console input buffer. The handle must have the `GENERIC\_READ` access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
+A handle to the console input buffer. The handle must have the `GENERIC_READ` access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
 
 *lpBuffer* \[out\]  
-A pointer to an array of [`INPUT\_RECORD`](input-record-str.md) structures that receives the input buffer data.
+A pointer to an array of [`INPUT_RECORD`](input-record-str.md) structures that receives the input buffer data.
 
 *nLength* \[in\]  
 The size of the array pointed to by the *lpBuffer* parameter, in array elements.
@@ -108,7 +108,7 @@ For an example, see [Reading Input Buffer Events](reading-input-buffer-events.md
 
 [`GetNumberOfConsoleInputEvents`](getnumberofconsoleinputevents.md)
 
-[`INPUT\_RECORD`](input-record-str.md)
+[`INPUT_RECORD`](input-record-str.md)
 
 [Low-Level Console Input Functions](low-level-console-input-functions.md)
 

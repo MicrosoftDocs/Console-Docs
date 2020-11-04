@@ -10,7 +10,7 @@ f1_keywords:
 - wincon/GetConsoleWindow
 - GetConsoleWindow
 MS-HAID:
-- '\_win32\_getconsolewindow'
+- '_win32_getconsolewindow'
 - 'base.getconsolewindow'
 - 'consoles.getconsolewindow'
 MSHAttr:
@@ -58,7 +58,7 @@ The return value is a handle to the window used by the console associated with t
 
 ## Remarks
 
-To compile an application that uses this function, define `\_WIN32\_WINNT` as 0x0500 or later. For more information, see [Using the Windows Headers](https://msdn.microsoft.com/library/windows/desktop/aa383745).
+To compile an application that uses this function, define `_WIN32_WINNT` as 0x0500 or later. For more information, see [Using the Windows Headers](https://msdn.microsoft.com/library/windows/desktop/aa383745).
 
 
 [!INCLUDE [no-vt-equiv-local-context](./includes/no-vt-equiv-local-context.md)]

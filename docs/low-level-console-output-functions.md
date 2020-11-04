@@ -6,9 +6,9 @@ ms.author: miniksa
 ms.topic: conceptual
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
-- '\_win32\_low\_level\_console\_output\_functions'
-- 'base.low\_level\_console\_output\_functions'
-- 'consoles.low\_level\_console\_output\_functions'
+- '_win32_low_level_console_output_functions'
+- 'base.low_level_console_output_functions'
+- 'consoles.low_level_console_output_functions'
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/desktop'
@@ -41,7 +41,7 @@ The following functions read from or write to rectangular blocks of character ce
 | [`ReadConsoleOutput`](readconsoleoutput.md) | Copies character and color data from a specified block of screen buffer cells into a given block in a destination buffer. |
 | [`WriteConsoleOutput`](writeconsoleoutput.md) | Writes character and color data to a specified block of screen buffer cells from a given block in a source buffer. |
 
-These functions treat screen buffers and source or destination buffers as two-dimensional arrays of [`CHAR\_INFO`](char-info-str.md) structures (containing character and color attribute data for each cell). The functions specify the width and height, in character cells, of the source or destination buffer, and the pointer to the buffer is treated as a pointer to the origin cell (0,0) of the two-dimensional array. The functions use a [`SMALL\_RECT`](small-rect-str.md) structure to specify which rectangle to access in the console screen buffer, and the coordinates of the upper left cell in the source or destination buffer determine the location of the corresponding rectangle in that buffer.
+These functions treat screen buffers and source or destination buffers as two-dimensional arrays of [`CHAR_INFO`](char-info-str.md) structures (containing character and color attribute data for each cell). The functions specify the width and height, in character cells, of the source or destination buffer, and the pointer to the buffer is treated as a pointer to the origin cell (0,0) of the two-dimensional array. The functions use a [`SMALL_RECT`](small-rect-str.md) structure to specify which rectangle to access in the console screen buffer, and the coordinates of the upper left cell in the source or destination buffer determine the location of the corresponding rectangle in that buffer.
 
 These functions automatically clip the specified screen buffer rectangle to fit within the boundaries of the console screen buffer. For example, if the rectangle specifies lower right coordinates that are (column 100, row 50) and the console screen buffer is only 80 columns wide, the coordinates are clipped so that they are (column 79, row 50). Similarly, this adjusted rectangle is again clipped to fit within the boundaries of the source or destination buffer. The screen buffer coordinates of the actual rectangle that was read from or written to are specified. For an example that uses these functions, see [Reading and Writing Blocks of Characters and Attributes](reading-and-writing-blocks-of-characters-and-attributes.md).
 

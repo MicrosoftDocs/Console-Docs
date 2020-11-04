@@ -16,7 +16,7 @@ f1_keywords:
 - wincon/ReadConsoleOutputCharacterW
 - ReadConsoleOutputCharacterW
 MS-HAID:
-- '\_win32\_readconsoleoutputcharacter'
+- '_win32_readconsoleoutputcharacter'
 - 'base.readconsoleoutputcharacter'
 - 'consoles.readconsoleoutputcharacter'
 MSHAttr:
@@ -60,7 +60,7 @@ BOOL WINAPI ReadConsoleOutputCharacter(
 ## Parameters
 
 *hConsoleOutput* \[in\]  
-A handle to the console screen buffer. The handle must have the `GENERIC\_READ` access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
+A handle to the console screen buffer. The handle must have the `GENERIC_READ` access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
 
 *lpCharacter* \[out\]  
 A pointer to a buffer that receives the characters read from the console screen buffer.

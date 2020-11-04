@@ -10,7 +10,7 @@ f1_keywords:
 - wincon/GetConsoleCursorInfo
 - GetConsoleCursorInfo
 MS-HAID:
-- '\_win32\_getconsolecursorinfo'
+- '_win32_getconsolecursorinfo'
 - 'base.getconsolecursorinfo'
 - 'consoles.getconsolecursorinfo'
 MSHAttr:
@@ -49,10 +49,10 @@ BOOL WINAPI GetConsoleCursorInfo(
 ## Parameters
 
 *hConsoleOutput* \[in\]  
-A handle to the console screen buffer. The handle must have the `GENERIC\_READ` access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
+A handle to the console screen buffer. The handle must have the `GENERIC_READ` access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
 
 *lpConsoleCursorInfo* \[out\]  
-A pointer to a [``CONSOLE\_CURSOR\_INFO``](console-cursor-info-str.md) structure that receives information about the console's cursor.
+A pointer to a [``CONSOLE_CURSOR_INFO``](console-cursor-info-str.md) structure that receives information about the console's cursor.
 
 ## Return value
 
@@ -80,6 +80,6 @@ If the function fails, the return value is zero. To get extended error informati
 
 [Console Screen Buffers](console-screen-buffers.md)
 
-[``CONSOLE\_CURSOR\_INFO``](console-cursor-info-str.md)
+[``CONSOLE_CURSOR_INFO``](console-cursor-info-str.md)
 
 [`SetConsoleCursorInfo`](setconsolecursorinfo.md)

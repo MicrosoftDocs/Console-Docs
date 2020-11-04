@@ -10,7 +10,7 @@ f1_keywords:
 - winbase/GetStdHandle
 - GetStdHandle
 MS-HAID:
-- '\_win32\_getstdhandle'
+- '_win32_getstdhandle'
 - 'base.getstdhandle'
 - 'consoles.getstdhandle'
 MSHAttr:
@@ -58,9 +58,9 @@ The standard device. This parameter can be one of the following values.
 
 ## Return value
 
-If the function succeeds, the return value is a handle to the specified device, or a redirected handle set by a previous call to [`SetStdHandle`](setstdhandle.md). The handle has `GENERIC\_READ` and `GENERIC\_WRITE` access rights, unless the application has used `SetStdHandle` to set a standard handle with lesser access.
+If the function succeeds, the return value is a handle to the specified device, or a redirected handle set by a previous call to [`SetStdHandle`](setstdhandle.md). The handle has `GENERIC_READ` and `GENERIC_WRITE` access rights, unless the application has used `SetStdHandle` to set a standard handle with lesser access.
 
-If the function fails, the return value is `INVALID\_HANDLE\_VALUE`. To get extended error information, call [`GetLastError`](https://msdn.microsoft.com/library/windows/desktop/ms679360).
+If the function fails, the return value is `INVALID_HANDLE_VALUE`. To get extended error information, call [`GetLastError`](https://msdn.microsoft.com/library/windows/desktop/ms679360).
 
 If an application does not have associated standard handles, such as a service running on an interactive desktop, and has not redirected them, the return value is `NULL`.
 
@@ -70,7 +70,7 @@ Handles returned by `GetStdHandle` can be used by applications that need to read
 
 The standard handles of a process may be redirected by a call to [`SetStdHandle`](setstdhandle.md), in which case `GetStdHandle` returns the redirected handle. If the standard handles have been redirected, you can specify the `CONIN$` value in a call to the [`CreateFile`](https://msdn.microsoft.com/library/windows/desktop/aa363858) function to get a handle to a console's input buffer. Similarly, you can specify the `CONOUT$` value to get a handle to a console's active screen buffer.
 
-The standard handles of a process on entry of the main method are dictated by the configuration of the [`/SUBSYSTEM`](https://docs.microsoft.com/cpp/build/reference/subsystem-specify-subsystem) flag passed to the linker when the application was built. Specifying `/SUBSYSTEM:CONSOLE` requests that the operating system fill the handles with a console session on startup, if the parent didn't already fill the standard handle table by inheritance. On the contrary, `/SUBSYSTEM:WINDOWS` implies that the application does not need a console and will likely not be making use of the standard handles. More information on handle inheritance can be found in the documentation for [`STARTF\_USESTDHANDLES`](https://docs.microsoft.com/windows/win32/api/processthreadsapi/ns-processthreadsapi-startupinfoa).
+The standard handles of a process on entry of the main method are dictated by the configuration of the [`/SUBSYSTEM`](https://docs.microsoft.com/cpp/build/reference/subsystem-specify-subsystem) flag passed to the linker when the application was built. Specifying `/SUBSYSTEM:CONSOLE` requests that the operating system fill the handles with a console session on startup, if the parent didn't already fill the standard handle table by inheritance. On the contrary, `/SUBSYSTEM:WINDOWS` implies that the application does not need a console and will likely not be making use of the standard handles. More information on handle inheritance can be found in the documentation for [`STARTF_USESTDHANDLES`](https://docs.microsoft.com/windows/win32/api/processthreadsapi/ns-processthreadsapi-startupinfoa).
 
 Some applications operate outside the boundaries of their declared subsystem; for instance, a `/SUBSYSTEM:WINDOWS` application might check/use standard handles for logging or debugging purposes but operate normally with a graphical user interface. These applications will need to carefully probe the state of standard handles on startup and make use of [`AttachConsole`](attachconsole.md), [`AllocConsole`](allocconsole.md), and [`FreeConsole`](freeconsole.md) to add/remove a console if desired.
 
@@ -78,11 +78,11 @@ Some applications may also vary their behavior on the type of inherited handle. 
 
 ### Attach/detach behavior
 
-When attaching to a new console, standard handles are always replaced with console handles unless `STARTF\_USESTDHANDLES` was specified during process creation.
+When attaching to a new console, standard handles are always replaced with console handles unless `STARTF_USESTDHANDLES` was specified during process creation.
 
 If the existing value of the standard handle is `NULL`, or the existing value of the standard handle looks like a console pseudohandle, the handle is replaced with a console handle.
 
-When a parent uses both `CREATE\_NEW\_CONSOLE` and `STARTF\_USESTDHANDLES` to create a console process, standard handles will not be replaced unless the existing value of the standard handle is `NULL` or a console pseudohandle.
+When a parent uses both `CREATE_NEW_CONSOLE` and `STARTF_USESTDHANDLES` to create a console process, standard handles will not be replaced unless the existing value of the standard handle is `NULL` or a console pseudohandle.
 
 > [!NOTE]
 >Console processes *must* start with the standard handles filled or they will be filled automatically with appropriate handles to a new console. Graphical user interface (GUI) applications can be started without the standard handles and they will not be automatically filled.

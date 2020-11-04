@@ -10,7 +10,7 @@ f1_keywords:
 - wincon/GenerateConsoleCtrlEvent
 - GenerateConsoleCtrlEvent
 MS-HAID:
-- '\_win32\_generateconsolectrlevent'
+- '_win32_generateconsolectrlevent'
 - 'base.generateconsolectrlevent'
 - 'consoles.generateconsolectrlevent'
 MSHAttr:
@@ -55,7 +55,7 @@ The type of signal to be generated. This parameter can be one of the following v
 | `CTRL_BREAK_EVENT` 1 | Generates a CTRL+BREAK signal. |
 
 *dwProcessGroupId* \[in\]  
-The identifier of the process group to receive the signal. A process group is created when the `CREATE\_NEW\_PROCESS\_GROUP` flag is specified in a call to the [`CreateProcess`](https://msdn.microsoft.com/library/windows/desktop/ms682425) function. The process identifier of the new process is also the process group identifier of a new process group. The process group includes all processes that are descendants of the root process. Only those processes in the group that share the same console as the calling process receive the signal. In other words, if a process in the group creates a new console, that process does not receive the signal, nor do its descendants.
+The identifier of the process group to receive the signal. A process group is created when the `CREATE_NEW_PROCESS_GROUP` flag is specified in a call to the [`CreateProcess`](https://msdn.microsoft.com/library/windows/desktop/ms682425) function. The process identifier of the new process is also the process group identifier of a new process group. The process group includes all processes that are descendants of the root process. Only those processes in the group that share the same console as the calling process receive the signal. In other words, if a process in the group creates a new console, that process does not receive the signal, nor do its descendants.
 
 If this parameter is zero, the signal is generated in all processes that share the console of the calling process.
 

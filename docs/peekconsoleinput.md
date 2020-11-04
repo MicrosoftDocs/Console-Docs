@@ -16,7 +16,7 @@ f1_keywords:
 - wincon/PeekConsoleInputW
 - PeekConsoleInputW
 MS-HAID:
-- '\_win32\_peekconsoleinput'
+- '_win32_peekconsoleinput'
 - 'base.peekconsoleinput'
 - 'consoles.peekconsoleinput'
 MSHAttr:
@@ -59,10 +59,10 @@ BOOL WINAPI PeekConsoleInput(
 ## Parameters
 
 *hConsoleInput* \[in\]  
-A handle to the console input buffer. The handle must have the `GENERIC\_READ` access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
+A handle to the console input buffer. The handle must have the `GENERIC_READ` access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
 
 *lpBuffer* \[out\]  
-A pointer to an array of [`INPUT\_RECORD`](input-record-str.md) structures that receives the input buffer data.
+A pointer to an array of [`INPUT_RECORD`](input-record-str.md) structures that receives the input buffer data.
 
 *nLength* \[in\]  
 The size of the array pointed to by the *lpBuffer* parameter, in array elements.
@@ -105,4 +105,4 @@ If the number of records requested exceeds the number of records available in th
 
 [`WriteConsoleInput`](writeconsoleinput.md)
 
-[`INPUT\_RECORD`](input-record-str.md)
+[`INPUT_RECORD`](input-record-str.md)

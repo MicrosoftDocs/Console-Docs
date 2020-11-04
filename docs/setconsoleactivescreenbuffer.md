@@ -10,7 +10,7 @@ f1_keywords:
 - wincon/SetConsoleActiveScreenBuffer
 - SetConsoleActiveScreenBuffer
 MS-HAID:
-- '\_win32\_setconsoleactivescreenbuffer'
+- '_win32_setconsoleactivescreenbuffer'
 - 'base.setconsoleactivescreenbuffer'
 - 'consoles.setconsoleactivescreenbuffer'
 MSHAttr:

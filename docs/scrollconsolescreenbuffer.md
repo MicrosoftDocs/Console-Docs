@@ -56,19 +56,19 @@ BOOL WINAPI ScrollConsoleScreenBuffer(
 ## Parameters
 
 *hConsoleOutput* \[in\]  
-A handle to the console screen buffer. The handle must have the `GENERIC\_READ` access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
+A handle to the console screen buffer. The handle must have the `GENERIC_READ` access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
 
 *lpScrollRectangle* \[in\]  
-A pointer to a [`SMALL\_RECT`](small-rect-str.md) structure whose members specify the upper-left and lower-right coordinates of the console screen buffer rectangle to be moved.
+A pointer to a [`SMALL_RECT`](small-rect-str.md) structure whose members specify the upper-left and lower-right coordinates of the console screen buffer rectangle to be moved.
 
 *lpClipRectangle* \[in, optional\]  
-A pointer to a [`SMALL\_RECT`](small-rect-str.md) structure whose members specify the upper-left and lower-right coordinates of the console screen buffer rectangle that is affected by the scrolling. This pointer can be `NULL`.
+A pointer to a [`SMALL_RECT`](small-rect-str.md) structure whose members specify the upper-left and lower-right coordinates of the console screen buffer rectangle that is affected by the scrolling. This pointer can be `NULL`.
 
 *dwDestinationOrigin* \[in\]  
 A [`COORD`](coord-str.md) structure that specifies the upper-left corner of the new location of the *lpScrollRectangle* contents, in characters.
 
 *lpFill* \[in\]  
-A pointer to a [`CHAR\_INFO`](char-info-str.md) structure that specifies the character and color attributes to be used in filling the cells within the intersection of *lpScrollRectangle* and *lpClipRectangle* that were left empty as a result of the move.
+A pointer to a [`CHAR_INFO`](char-info-str.md) structure that specifies the character and color attributes to be used in filling the cells within the intersection of *lpScrollRectangle* and *lpClipRectangle* that were left empty as a result of the move.
 
 ## Return value
 
@@ -82,7 +82,7 @@ If the function fails, the return value is zero. To get extended error informati
 
 The clipping rectangle applies to changes made in both the *lpScrollRectangle* rectangle and the target rectangle. For example, if the clipping rectangle does not include a region that would have been filled by the contents of *lpFill*, the original contents of the region are left unchanged.
 
-If the scroll or target regions extend beyond the dimensions of the console screen buffer, they are clipped. For example, if *lpScrollRectangle* is the region contained by (0,0) and (19,19) and *dwDestinationOrigin* is (10,15), the target rectangle is the region contained by (10,15) and (29,34). However, if the console screen buffer is 50 characters wide and 30 characters high, the target rectangle is clipped to (10,15) and (29,29). Changes to the console screen buffer are also clipped according to *lpClipRectangle*, if the parameter specifies a [`SMALL\_RECT`](small-rect-str.md) structure. If the clipping rectangle is specified as (0,0) and (49,19), only the changes that occur in that region of the console screen buffer are made.
+If the scroll or target regions extend beyond the dimensions of the console screen buffer, they are clipped. For example, if *lpScrollRectangle* is the region contained by (0,0) and (19,19) and *dwDestinationOrigin* is (10,15), the target rectangle is the region contained by (10,15) and (29,34). However, if the console screen buffer is 50 characters wide and 30 characters high, the target rectangle is clipped to (10,15) and (29,29). Changes to the console screen buffer are also clipped according to *lpClipRectangle*, if the parameter specifies a [`SMALL_RECT`](small-rect-str.md) structure. If the clipping rectangle is specified as (0,0) and (49,19), only the changes that occur in that region of the console screen buffer are made.
 
 [!INCLUDE [setting-codepage-mode-remarks](./includes/setting-codepage-mode-remarks.md)]
 
@@ -106,7 +106,7 @@ For an example, see [Scrolling a Screen Buffer's Contents](scrolling-a-screen-bu
 
 ## See also
 
-[`CHAR\_INFO`](char-info-str.md)
+[`CHAR_INFO`](char-info-str.md)
 
 [Console Functions](console-functions.md)
 
@@ -120,4 +120,4 @@ For an example, see [Scrolling a Screen Buffer's Contents](scrolling-a-screen-bu
 
 [`SetConsoleWindowInfo`](setconsolewindowinfo.md)
 
-[`SMALL\_RECT`](small-rect-str.md)
+[`SMALL_RECT`](small-rect-str.md)

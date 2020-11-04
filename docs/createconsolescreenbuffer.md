@@ -10,7 +10,7 @@ f1_keywords:
 - wincon/CreateConsoleScreenBuffer
 - CreateConsoleScreenBuffer
 MS-HAID:
-- '\_win32\_createconsolescreenbuffer'
+- '_win32_createconsolescreenbuffer'
 - 'base.createconsolescreenbuffer'
 - 'consoles.createconsolescreenbuffer'
 MSHAttr:
@@ -63,10 +63,10 @@ This parameter can be zero, indicating that the buffer cannot be shared, or it c
 | `FILE_SHARE_WRITE` 0x00000002 | Other open operations can be performed on the console screen buffer for write access. |
 
 *lpSecurityAttributes* \[in, optional\]  
-A pointer to a [`SECURITY\_ATTRIBUTES`](https://msdn.microsoft.com/library/windows/desktop/aa379560) structure that determines whether the returned handle can be inherited by child processes. If *lpSecurityAttributes* is `NULL`, the handle cannot be inherited. The `lpSecurityDescriptor` member of the structure specifies a security descriptor for the new console screen buffer. If *lpSecurityAttributes* is `NULL`, the console screen buffer gets a default security descriptor. The ACLs in the default security descriptor for a console screen buffer come from the primary or impersonation token of the creator.
+A pointer to a [`SECURITY_ATTRIBUTES`](https://msdn.microsoft.com/library/windows/desktop/aa379560) structure that determines whether the returned handle can be inherited by child processes. If *lpSecurityAttributes* is `NULL`, the handle cannot be inherited. The `lpSecurityDescriptor` member of the structure specifies a security descriptor for the new console screen buffer. If *lpSecurityAttributes* is `NULL`, the console screen buffer gets a default security descriptor. The ACLs in the default security descriptor for a console screen buffer come from the primary or impersonation token of the creator.
 
 *dwFlags* \[in\]  
-The type of console screen buffer to create. The only supported screen buffer type is `CONSOLE\_TEXTMODE\_BUFFER`.
+The type of console screen buffer to create. The only supported screen buffer type is `CONSOLE_TEXTMODE_BUFFER`.
 
 *lpScreenBufferData*  
 Reserved; should be `NULL`.
@@ -75,7 +75,7 @@ Reserved; should be `NULL`.
 
 If the function succeeds, the return value is a handle to the new console screen buffer.
 
-If the function fails, the return value is `INVALID\_HANDLE\_VALUE`. To get extended error information, call [`GetLastError`](https://msdn.microsoft.com/library/windows/desktop/ms679360).
+If the function fails, the return value is `INVALID_HANDLE_VALUE`. To get extended error information, call [`GetLastError`](https://msdn.microsoft.com/library/windows/desktop/ms679360).
 
 ## Remarks
 
@@ -123,7 +123,7 @@ For an example, see [Reading and Writing Blocks of Characters and Attributes](re
 
 [`GetConsoleScreenBufferInfo`](getconsolescreenbufferinfo.md)
 
-[`SECURITY\_ATTRIBUTES`](https://msdn.microsoft.com/library/windows/desktop/aa379560)
+[`SECURITY_ATTRIBUTES`](https://msdn.microsoft.com/library/windows/desktop/aa379560)
 
 [`SetConsoleActiveScreenBuffer`](setconsoleactivescreenbuffer.md)
 

@@ -10,7 +10,7 @@ f1_keywords:
 - wincon/GetConsoleSelectionInfo
 - GetConsoleSelectionInfo
 MS-HAID:
-- '\_win32\_getconsoleselectioninfo'
+- '_win32_getconsoleselectioninfo'
 - 'base.getconsoleselectioninfo'
 - 'consoles.getconsoleselectioninfo'
 MSHAttr:
@@ -45,7 +45,7 @@ BOOL WINAPI GetConsoleSelectionInfo(
 ## Parameters
 
 *lpConsoleSelectionInfo* \[out\]  
-A pointer to a [`CONSOLE\_SELECTION\_INFO`](console-selection-info-str.md) structure that receives the selection information.
+A pointer to a [`CONSOLE_SELECTION_INFO`](console-selection-info-str.md) structure that receives the selection information.
 
 ## Return value
 
@@ -55,7 +55,7 @@ If the function fails, the return value is zero. To get extended error informati
 
 ## Remarks
 
-To compile an application that uses this function, define `\_WIN32\_WINNT` as 0x0500 or later. For more information, see [Using the Windows Headers](https://msdn.microsoft.com/library/windows/desktop/aa383745).
+To compile an application that uses this function, define `_WIN32_WINNT` as 0x0500 or later. For more information, see [Using the Windows Headers](https://msdn.microsoft.com/library/windows/desktop/aa383745).
 
 [!INCLUDE [no-vt-equiv-user-priv](./includes/no-vt-equiv-user-priv.md)]
 
@@ -75,4 +75,4 @@ To compile an application that uses this function, define `\_WIN32\_WINNT` as 0x
 
 [Console Selection](console-selection.md)
 
-[`CONSOLE\_SELECTION\_INFO`](console-selection-info-str.md)
+[`CONSOLE_SELECTION_INFO`](console-selection-info-str.md)

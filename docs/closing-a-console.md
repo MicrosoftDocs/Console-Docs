@@ -6,9 +6,9 @@ ms.author: miniksa
 ms.topic: conceptual
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
-- '\_win32\_closing\_a\_console'
-- 'base.closing\_a\_console'
-- 'consoles.closing\_a\_console'
+- '_win32_closing_a_console'
+- 'base.closing_a_console'
+- 'consoles.closing_a_console'
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/desktop'

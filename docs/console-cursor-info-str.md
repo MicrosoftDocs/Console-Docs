@@ -13,9 +13,9 @@ f1_keywords:
 - wincon/PCONSOLE_CURSOR_INFO
 - PCONSOLE_CURSOR_INFO
 MS-HAID:
-- '\_win32\_console\_cursor\_info\_str`
-- 'base.console\_cursor\_info\_str'
-- 'consoles.console\_cursor\_info\_str'
+- '_win32_console_cursor_info_str`
+- 'base.console_cursor_info_str'
+- 'consoles.console_cursor_info_str'
 
 MSHAttr:
 - 'PreferredSiteName:MSDN'
@@ -32,7 +32,7 @@ api_type:
 - HeaderDef
 ---
 
-# `CONSOLE\_CURSOR\_INFO` structure
+# `CONSOLE_CURSOR_INFO` structure
 
 [!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 

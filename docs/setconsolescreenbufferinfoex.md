@@ -48,10 +48,10 @@ BOOL WINAPI SetConsoleScreenBufferInfoEx(
 ## Parameters
 
 *hConsoleOutput* \[in\]  
-A handle to the console screen buffer. The handle must have the `GENERIC\_WRITE` access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
+A handle to the console screen buffer. The handle must have the `GENERIC_WRITE` access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
 
 *lpConsoleScreenBufferInfoEx* \[in\]  
-A [`CONSOLE\_SCREEN\_BUFFER\_INFOEX`](console-screen-buffer-infoex.md) structure that contains the console screen buffer information.
+A [`CONSOLE_SCREEN_BUFFER_INFOEX`](console-screen-buffer-infoex.md) structure that contains the console screen buffer information.
 
 ## Return value
 
@@ -78,6 +78,6 @@ If the function fails, the return value is zero. To get extended error informati
 
 [Console Functions](console-functions.md)
 
-[`CONSOLE\_SCREEN\_BUFFER\_INFOEX`](console-screen-buffer-infoex.md)
+[`CONSOLE_SCREEN_BUFFER_INFOEX`](console-screen-buffer-infoex.md)
 
 [`GetConsoleScreenBufferInfoEx`](getconsolescreenbufferinfoex.md)

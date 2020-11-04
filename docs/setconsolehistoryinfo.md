@@ -44,7 +44,7 @@ BOOL WINAPI SetConsoleHistoryInfo(
 ## Parameters
 
 *lpConsoleHistoryInfo* \[in\]  
-A pointer to a [`CONSOLE\_HISTORY\_INFO`](console-history-info.md) structure that contains the history settings for the process's console.
+A pointer to a [`CONSOLE_HISTORY_INFO`](console-history-info.md) structure that contains the history settings for the process's console.
 
 ## Return value
 
@@ -54,7 +54,7 @@ If the function fails, the return value is zero. To get extended error informati
 
 ## Remarks
 
-If the calling process is not a console process, the function fails and sets the last error code to `ERROR\_ACCESS\_DENIED`.
+If the calling process is not a console process, the function fails and sets the last error code to `ERROR_ACCESS_DENIED`.
 
 [!INCLUDE [no-vt-equiv-shell-banner](./includes/no-vt-equiv-shell-banner.md)]
 
@@ -72,6 +72,6 @@ If the calling process is not a console process, the function fails and sets the
 
 [Console Functions](console-functions.md)
 
-[`CONSOLE\_HISTORY\_INFO`](console-history-info.md)
+[`CONSOLE_HISTORY_INFO`](console-history-info.md)
 
 [`GetConsoleHistoryInfo`](getconsolehistoryinfo.md)

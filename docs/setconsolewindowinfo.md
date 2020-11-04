@@ -10,7 +10,7 @@ f1_keywords:
 - wincon/SetConsoleWindowInfo
 - SetConsoleWindowInfo
 MS-HAID:
-- '\_win32\_setconsolewindowinfo'
+- '_win32_setconsolewindowinfo'
 - 'base.setconsolewindowinfo'
 - 'consoles.setconsolewindowinfo'
 MSHAttr:
@@ -50,13 +50,13 @@ BOOL WINAPI SetConsoleWindowInfo(
 ## Parameters
 
 *hConsoleOutput* \[in\]  
-A handle to the console screen buffer. The handle must have the `GENERIC\_READ` access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
+A handle to the console screen buffer. The handle must have the `GENERIC_READ` access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
 
 *bAbsolute* \[in\]  
 If this parameter is `TRUE`, the coordinates specify the new upper-left and lower-right corners of the window. If it is `FALSE`, the coordinates are relative to the current window-corner coordinates.
 
 *lpConsoleWindow* \[in\]  
-A pointer to a [`SMALL\_RECT`](small-rect-str.md) structure that specifies the new upper-left and lower-right corners of the window.
+A pointer to a [`SMALL_RECT`](small-rect-str.md) structure that specifies the new upper-left and lower-right corners of the window.
 
 ## Return value
 
@@ -102,4 +102,4 @@ For an example, see [Scrolling a Screen Buffer's Window](scrolling-a-screen-buff
 
 [Scrolling the Screen Buffer](scrolling-the-screen-buffer.md)
 
-[`SMALL\_RECT`](small-rect-str.md)
+[`SMALL_RECT`](small-rect-str.md)

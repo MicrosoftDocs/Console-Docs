@@ -6,9 +6,9 @@ ms.author: miniksa
 ms.topic: sample
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
-- '\_win32\_registering\_a\_control\_handler\_function'
-- 'base.registering\_a\_control\_handler\_function'
-- 'consoles.registering\_a\_control\_handler\_function'
+- '_win32_registering_a_control_handler_function'
+- 'base.registering_a_control_handler_function'
+- 'consoles.registering_a_control_handler_function'
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/desktop'
@@ -21,9 +21,9 @@ This is an example of the [`SetConsoleCtrlHandler`](setconsolectrlhandler.md) fu
 
 When a CTRL+C signal is received, the control handler returns `TRUE`, indicating that it has handled the signal. Doing this prevents other control handlers from being called.
 
-When a `CTRL\_CLOSE\_EVENT` signal is received, the control handler returns `TRUE` and the process terminates.
+When a `CTRL_CLOSE_EVENT` signal is received, the control handler returns `TRUE` and the process terminates.
 
-When a `CTRL\_BREAK\_EVENT`, `CTRL\_LOGOFF\_EVENT`, or `CTRL\_SHUTDOWN\_EVENT` signal is received, the control handler returns `FALSE`. Doing this causes the signal to be passed to the next control handler function. If no other control handlers have been registered or none of the registered handlers returns `TRUE`, the default handler will be used, resulting in the process being terminated.
+When a `CTRL_BREAK_EVENT`, `CTRL_LOGOFF_EVENT`, or `CTRL_SHUTDOWN_EVENT` signal is received, the control handler returns `FALSE`. Doing this causes the signal to be passed to the next control handler function. If no other control handlers have been registered or none of the registered handlers returns `TRUE`, the default handler will be used, resulting in the process being terminated.
 
 ```C
 // CtrlHandler.cpp : This file contains the 'main' function. Program execution begins and ends there.

@@ -16,7 +16,7 @@ f1_keywords:
 - wincon/ReadConsoleOutputW
 - ReadConsoleOutputW
 MS-HAID:
-- '\_win32\_readconsoleoutput'
+- '_win32_readconsoleoutput'
 - 'base.readconsoleoutput'
 - 'consoles.readconsoleoutput'
 MSHAttr:
@@ -60,10 +60,10 @@ BOOL WINAPI ReadConsoleOutput(
 ## Parameters
 
 *hConsoleOutput* \[in\]  
-A handle to the console screen buffer. The handle must have the `GENERIC\_READ` access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
+A handle to the console screen buffer. The handle must have the `GENERIC_READ` access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
 
 *lpBuffer* \[out\]  
-A pointer to a destination buffer that receives the data read from the console screen buffer. This pointer is treated as the origin of a two-dimensional array of [`CHAR\_INFO`](char-info-str.md) structures whose size is specified by the *dwBufferSize* parameter.
+A pointer to a destination buffer that receives the data read from the console screen buffer. This pointer is treated as the origin of a two-dimensional array of [`CHAR_INFO`](char-info-str.md) structures whose size is specified by the *dwBufferSize* parameter.
 
 *dwBufferSize* \[in\]  
 The size of the *lpBuffer* parameter, in character cells. The `X` member of the [`COORD`](coord-str.md) structure is the number of columns; the `Y` member is the number of rows.
@@ -72,7 +72,7 @@ The size of the *lpBuffer* parameter, in character cells. The `X` member of the 
 The coordinates of the upper-left cell in the *lpBuffer* parameter that receives the data read from the console screen buffer. The `X` member of the [`COORD`](coord-str.md) structure is the column, and the `Y` member is the row.
 
 *lpReadRegion* \[in, out\]  
-A pointer to a [`SMALL\_RECT`](small-rect-str.md) structure. On input, the structure members specify the upper-left and lower-right coordinates of the console screen buffer rectangle from which the function is to read. On output, the structure members specify the actual rectangle that was used.
+A pointer to a [`SMALL_RECT`](small-rect-str.md) structure. On input, the structure members specify the upper-left and lower-right coordinates of the console screen buffer rectangle from which the function is to read. On output, the structure members specify the actual rectangle that was used.
 
 ## Return value
 
@@ -125,10 +125,10 @@ For an example, see [Reading and Writing Blocks of Characters and Attributes](re
 
 [`SetConsoleOutputCP`](setconsoleoutputcp.md)
 
-[`SMALL\_RECT`](small-rect-str.md)
+[`SMALL_RECT`](small-rect-str.md)
 
 [`WriteConsoleOutput`](writeconsoleoutput.md)
 
-[`CHAR\_INFO`](char-info-str.md)
+[`CHAR_INFO`](char-info-str.md)
 
 [`COORD`](coord-str.md)

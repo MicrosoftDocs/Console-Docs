@@ -10,7 +10,7 @@ f1_keywords:
 - wincon/GetConsoleCP
 - GetConsoleCP
 MS-HAID:
-- '\_win32\_getconsolecp'
+- '_win32_getconsolecp'
 - 'base.getconsolecp'
 - 'consoles.getconsolecp'
 MSHAttr:

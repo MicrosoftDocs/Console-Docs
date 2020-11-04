@@ -10,7 +10,7 @@ f1_keywords:
 - wincon/SetConsoleMode
 - SetConsoleMode
 MS-HAID:
-- '\_win32\_setconsolemode'
+- '_win32_setconsolemode'
 - 'base.setconsolemode'
 - 'consoles.setconsolemode'
 MSHAttr:
@@ -48,7 +48,7 @@ BOOL WINAPI SetConsoleMode(
 ## Parameters
 
 *hConsoleHandle* \[in\]  
-A handle to the console input buffer or a console screen buffer. The handle must have the `GENERIC\_READ` access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
+A handle to the console input buffer or a console screen buffer. The handle must have the `GENERIC_READ` access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
 
 *dwMode* \[in\]  
 The input or output mode to be set.

@@ -16,7 +16,7 @@ f1_keywords:
 - wincon/ReadConsoleW
 - ReadConsoleW
 MS-HAID:
-- '\_win32\_readconsole'
+- '_win32_readconsole'
 - 'base.readconsole'
 - 'consoles.readconsole'
 MSHAttr:
@@ -59,7 +59,7 @@ BOOL WINAPI ReadConsole(
 ## Parameters
 
 *hConsoleInput* \[in\]  
-A handle to the console input buffer. The handle must have the `GENERIC\_READ` access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
+A handle to the console input buffer. The handle must have the `GENERIC_READ` access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
 
 *lpBuffer* \[out\]  
 A pointer to a buffer that receives the data read from the console input buffer.
@@ -71,7 +71,7 @@ The number of characters to be read. The size of the buffer pointed to by the *l
 A pointer to a variable that receives the number of characters actually read.
 
 *pInputControl* \[in, optional\]  
-A pointer to a [`CONSOLE\_READCONSOLE\_CONTROL`](console-readconsole-control.md) structure that specifies a control character to signal the end of the read operation. This parameter can be `NULL`.
+A pointer to a [`CONSOLE_READCONSOLE_CONTROL`](console-readconsole-control.md) structure that specifies a control character to signal the end of the read operation. This parameter can be `NULL`.
 
 This parameter requires Unicode input by default. For ANSI mode, set this parameter to `NULL`.
 
@@ -91,7 +91,7 @@ If the input buffer contains input events other than keyboard events (such as mo
 
 [!INCLUDE [setting-codepage-mode-remarks](./includes/setting-codepage-mode-remarks.md)]
 
-The *pInputControl* parameter can be used to enable intermediate wakeups from the read in response to a file-completion control character specified in a [`CONSOLE\_READCONSOLE\_CONTROL`](console-readconsole-control.md) structure. This feature requires command extensions to be enabled, the standard output handle to be a console output handle, and input to be Unicode.
+The *pInputControl* parameter can be used to enable intermediate wakeups from the read in response to a file-completion control character specified in a [`CONSOLE_READCONSOLE_CONTROL`](console-readconsole-control.md) structure. This feature requires command extensions to be enabled, the standard output handle to be a console output handle, and input to be Unicode.
 
 `Windows Server 2003 and Windows XP/2000:` The intermediate read feature is not supported.
 
@@ -110,7 +110,7 @@ The *pInputControl* parameter can be used to enable intermediate wakeups from th
 
 [Console Functions](console-functions.md)
 
-[`CONSOLE\_READCONSOLE\_CONTROL`](console-readconsole-control.md)
+[`CONSOLE_READCONSOLE_CONTROL`](console-readconsole-control.md)
 
 [`GetConsoleMode`](getconsolemode.md)
 

@@ -10,7 +10,7 @@ f1_keywords:
 - wincon/GetConsoleDisplayMode
 - GetConsoleDisplayMode
 MS-HAID:
-- '\_win32\_getconsoledisplaymode'
+- '_win32_getconsoledisplaymode'
 - 'base.getconsoledisplaymode'
 - 'consoles.getconsoledisplaymode'
 MSHAttr:
@@ -63,7 +63,7 @@ If the function fails, the return value is zero. To get extended error informati
 
 ## Remarks
 
-To compile an application that uses this function, define `\_WIN32\_WINNT` as 0x0500 or later. For more information, see [Using the Windows Headers](https://msdn.microsoft.com/library/windows/desktop/aa383745).
+To compile an application that uses this function, define `_WIN32_WINNT` as 0x0500 or later. For more information, see [Using the Windows Headers](https://msdn.microsoft.com/library/windows/desktop/aa383745).
 
 [!INCLUDE [no-vt-equiv-user-priv](./includes/no-vt-equiv-user-priv.md)]
 

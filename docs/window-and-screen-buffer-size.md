@@ -6,9 +6,9 @@ ms.author: miniksa
 ms.topic: conceptual
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
-- '\_win32\_window\_and\_screen\_buffer\_size'
-- 'base.window\_and\_screen\_buffer\_size'
-- 'consoles.window\_and\_screen\_buffer\_size'
+- '_win32_window_and_screen_buffer_size'
+- 'base.window_and_screen_buffer_size'
+- 'consoles.window_and_screen_buffer_size'
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/desktop'

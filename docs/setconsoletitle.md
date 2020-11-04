@@ -16,7 +16,7 @@ f1_keywords:
 - wincon/SetConsoleTitleW
 - SetConsoleTitleW
 MS-HAID:
-- '\_win32\_setconsoletitle'
+- '_win32_setconsoletitle'
 - 'base.setconsoletitle'
 - 'consoles.setconsoletitle'
 MSHAttr:

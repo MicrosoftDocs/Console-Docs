@@ -13,9 +13,9 @@ f1_keywords:
 - wincon/PMOUSE_EVENT_RECORD
 - PMOUSE_EVENT_RECORD
 MS-HAID:
-- '\_win32\_mouse\_event\_record\_str'
-- 'base.mouse\_event\_record\_str'
-- 'consoles.mouse\_event\_record\_str'
+- '_win32_mouse_event_record_str'
+- 'base.mouse_event_record_str'
+- 'consoles.mouse_event_record_str'
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/desktop'
@@ -31,11 +31,11 @@ api_type:
 - HeaderDef
 ---
 
-# MOUSE\_EVENT\_RECORD structure
+# MOUSE_EVENT_RECORD structure
 
 [!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
-Describes a mouse input event in a console [`INPUT\_RECORD`](input-record-str.md) structure.
+Describes a mouse input event in a console [`INPUT_RECORD`](input-record-str.md) structure.
 
 ## Syntax
 
@@ -93,7 +93,7 @@ The type of mouse event. If this value is zero, it indicates a mouse button bein
 
 ## Remarks
 
-Mouse events are placed in the input buffer when the console is in mouse mode (`ENABLE\_MOUSE\_INPUT`).
+Mouse events are placed in the input buffer when the console is in mouse mode (`ENABLE_MOUSE_INPUT`).
 
 Mouse events are generated whenever the user moves the mouse, or presses or releases one of the mouse buttons. Mouse events are placed in a console's input buffer only when the console group has the keyboard focus and the cursor is within the borders of the console's window.
 
@@ -113,7 +113,7 @@ For an example, see [Reading Input Buffer Events](reading-input-buffer-events.md
 
 [`COORD`](coord-str.md)
 
-[`INPUT\_RECORD`](input-record-str.md)
+[`INPUT_RECORD`](input-record-str.md)
 
 [`PeekConsoleInput`](peekconsoleinput.md)
 

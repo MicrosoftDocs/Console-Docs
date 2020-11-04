@@ -16,7 +16,7 @@ f1_keywords:
 - wincon/WriteConsoleW
 - WriteConsoleW
 MS-HAID:
-- '\_win32\_writeconsole'
+- '_win32_writeconsole'
 - 'base.writeconsole'
 - 'consoles.writeconsole'
 MSHAttr:
@@ -59,13 +59,13 @@ BOOL WINAPI WriteConsole(
 ## Parameters
 
 *hConsoleOutput* \[in\]  
-A handle to the console screen buffer. The handle must have the `GENERIC\_WRITE` access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
+A handle to the console screen buffer. The handle must have the `GENERIC_WRITE` access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
 
 *lpBuffer* \[in\]  
 A pointer to a buffer that contains characters to be written to the console screen buffer. This is expected to be an array of either `char` for `WriteConsoleA` or `wchar_t` for `WriteConsoleW`.
 
 *nNumberOfCharsToWrite* \[in\]  
-The number of characters to be written. If the total size of the specified number of characters exceeds the available heap, the function fails with `ERROR\_NOT\_ENOUGH\_MEMORY`.
+The number of characters to be written. If the total size of the specified number of characters exceeds the available heap, the function fails with `ERROR_NOT_ENOUGH_MEMORY`.
 
 *lpNumberOfCharsWritten* \[out, optional\]  
 A pointer to a variable that receives the number of characters actually written.

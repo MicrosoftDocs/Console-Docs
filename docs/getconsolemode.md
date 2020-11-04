@@ -10,7 +10,7 @@ f1_keywords:
 - wincon/GetConsoleMode
 - GetConsoleMode
 MS-HAID:
-- '\_win32\_getconsolemode'
+- '_win32_getconsolemode'
 - 'base.getconsolemode'
 - 'consoles.getconsolemode'
 MSHAttr:
@@ -48,7 +48,7 @@ BOOL WINAPI GetConsoleMode(
 ## Parameters
 
 *hConsoleHandle* \[in\]  
-A handle to the console input buffer or the console screen buffer. The handle must have the `GENERIC\_READ` access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
+A handle to the console input buffer or the console screen buffer. The handle must have the `GENERIC_READ` access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
 
 *lpMode* \[out\]  
 A pointer to a variable that receives the current mode of the specified buffer.

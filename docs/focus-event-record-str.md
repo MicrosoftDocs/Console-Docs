@@ -1,6 +1,6 @@
 ---
 title: FOCUS_EVENT_RECORD structure
-description: Describes a focus event in a console INPUT\_RECORD structure. These events are used internally and should be ignored.
+description: Describes a focus event in a console INPUT_RECORD structure. These events are used internally and should be ignored.
 author: miniksa
 ms.author: miniksa
 ms.topic: article
@@ -13,9 +13,9 @@ f1_keywords:
 - wincon/PFOCUS_EVENT_RECORD
 - PFOCUS_EVENT_RECORD
 MS-HAID:
-- '\_win32\_focus\_event\_record\_str'
-- 'base.focus\_event\_record\_str'
-- 'consoles.focus\_event\_record\_str'
+- '_win32_focus_event_record_str'
+- 'base.focus_event_record_str'
+- 'consoles.focus_event_record_str'
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/desktop'
@@ -31,9 +31,9 @@ api_type:
 - HeaderDef
 ---
 
-# FOCUS\_EVENT\_RECORD structure
+# FOCUS_EVENT_RECORD structure
 
-Describes a focus event in a console [`INPUT\_RECORD`](input-record-str.md) structure. These events are used internally and should be ignored.
+Describes a focus event in a console [`INPUT_RECORD`](input-record-str.md) structure. These events are used internally and should be ignored.
 
 ## Syntax
 
@@ -58,4 +58,4 @@ Reserved.
 
 ## See also
 
-[`INPUT\_RECORD`](input-record-str.md)
+[`INPUT_RECORD`](input-record-str.md)

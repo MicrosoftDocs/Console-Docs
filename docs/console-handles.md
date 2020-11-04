@@ -6,9 +6,9 @@ ms.author: miniksa
 ms.topic: conceptual
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
-- '\_win32\_console\_handles'
-- 'base.console\_handles'
-- 'consoles.console\_handles'
+- '_win32_console_handles'
+- 'base.console_handles'
+- 'consoles.console_handles'
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/desktop'

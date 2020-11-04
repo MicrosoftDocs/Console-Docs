@@ -6,9 +6,9 @@ ms.author: miniksa
 ms.topic: conceptual
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
-- '\_win32\_console\_input\_buffer'
-- 'base.console\_input\_buffer'
-- 'consoles.console\_input\_buffer'
+- '_win32_console_input_buffer'
+- 'base.console_input_buffer'
+- 'consoles.console_input_buffer'
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/desktop'
@@ -21,7 +21,7 @@ Each console has an input buffer that contains a queue of input event records. W
 
 Applications can access a console's input buffer indirectly by using the [high-level console I/O functions](high-level-console-input-and-output-functions.md), or directly by using the [low-level console input functions](low-level-console-input-functions.md). The high-level input functions filter and process the data in the input buffer, returning only a stream of input characters. The low-level input functions enable applications to read input records directly from a console's input buffer, or to place input records into the input buffer. To open a handle to a console's input buffer, specify the `CONIN$` value in a call to the [`CreateFile`](https://msdn.microsoft.com/library/windows/desktop/aa363858) function.
 
-An input record is a structure containing information about the type of event that occurred (keyboard, mouse, window resizing, focus, or menu event) as well as specific details about the event. The `EventType` member in an [`INPUT\_RECORD`](input-record-str.md) structure indicates which type of event is contained in the record.
+An input record is a structure containing information about the type of event that occurred (keyboard, mouse, window resizing, focus, or menu event) as well as specific details about the event. The `EventType` member in an [`INPUT_RECORD`](input-record-str.md) structure indicates which type of event is contained in the record.
 
 Focus and menu events are placed in a console's input buffer for internal use by the system and should be ignored by applications.
 
@@ -29,7 +29,7 @@ Focus and menu events are placed in a console's input buffer for internal use by
 
 Keyboard events are generated when any key is pressed or released; this includes control keys. However, the ALT key has special meaning to the system when pressed and released without being combined with another character, and it is not passed through to the application. Also, the CTRL+C key combination is not passed through if the input handle is in processed mode.
 
-If the input event is a keystroke, the `Event` member in [`INPUT\_RECORD`](input-record-str.md) is a [`KEY\_EVENT\_RECORD`](key-event-record-str.md) structure containing the following information:
+If the input event is a keystroke, the `Event` member in [`INPUT_RECORD`](input-record-str.md) is a [`KEY_EVENT_RECORD`](key-event-record-str.md) structure containing the following information:
 
 - A Boolean value indicating whether the key was pressed or released.
 - A repeat count that can be greater than one when a key is held down.
@@ -42,11 +42,11 @@ If the input event is a keystroke, the `Event` member in [`INPUT\_RECORD`](input
 
 Mouse events are generated whenever the user moves the mouse or presses or releases one of the mouse buttons. Mouse events are placed in the input buffer only if the following conditions are met:
 
-- The console input mode is set to `ENABLE\_MOUSE\_INPUT` (the default mode).
+- The console input mode is set to `ENABLE_MOUSE_INPUT` (the default mode).
 - The console window has the keyboard focus.
 - The mouse pointer is within the borders of the console's window.
 
-If the input event is a mouse event, the `Event` member in [`INPUT\_RECORD`](input-record-str.md) is a [`MOUSE\_EVENT\_RECORD`](mouse-event-record-str.md) structure containing the following information:
+If the input event is a mouse event, the `Event` member in [`INPUT_RECORD`](input-record-str.md) is a [`MOUSE_EVENT_RECORD`](mouse-event-record-str.md) structure containing the following information:
 
 - The coordinates of the mouse pointer in terms of the character-cell row and column in the console screen buffer's coordinate system.
 - A flag variable indicating the state of the mouse buttons.
@@ -56,13 +56,13 @@ If the input event is a mouse event, the `Event` member in [`INPUT\_RECORD`](inp
 > [!NOTE]
 >The mouse position coordinates are in terms of the console screen buffer, not the console window. The screen buffer may have been scrolled with respect to the window, so the upper left corner of the window is not necessarily the (0,0) coordinate of the console screen buffer. To determine the coordinates of the mouse relative to the coordinate system of the window, subtract the window origin coordinates from the mouse position coordinates. Use the [`GetConsoleScreenBufferInfo`](getconsolescreenbufferinfo.md) function to determine the window origin coordinates.
 
-The `dwButtonState` member of the [`MOUSE\_EVENT\_RECORD`](mouse-event-record-str.md) structure has a bit corresponding to each mouse button. The bit is 1 if the button is down and 0 if the button is up. A button-release event is detected by a 0 value for the `dwEventFlags` member of `MOUSE\_EVENT\_RECORD` and a change in a button's bit from 1 to 0. The [`GetNumberOfConsoleMouseButtons`](getnumberofconsolemousebuttons.md) function retrieves the number of buttons on the mouse.
+The `dwButtonState` member of the [`MOUSE_EVENT_RECORD`](mouse-event-record-str.md) structure has a bit corresponding to each mouse button. The bit is 1 if the button is down and 0 if the button is up. A button-release event is detected by a 0 value for the `dwEventFlags` member of `MOUSE_EVENT_RECORD` and a change in a button's bit from 1 to 0. The [`GetNumberOfConsoleMouseButtons`](getnumberofconsolemousebuttons.md) function retrieves the number of buttons on the mouse.
 
 ## Buffer-Resizing Events
 
-A console window's menu enables the user to change the size of the active screen buffer; this change generates a buffer-resizing event. Buffer-resizing events are placed in the input buffer if the console's input mode is set to `ENABLE\_WINDOW\_INPUT` (that is, the default mode is disabled).
+A console window's menu enables the user to change the size of the active screen buffer; this change generates a buffer-resizing event. Buffer-resizing events are placed in the input buffer if the console's input mode is set to `ENABLE_WINDOW_INPUT` (that is, the default mode is disabled).
 
-If the input event is a buffer-resizing event, the `Event` member of [`INPUT\_RECORD`](input-record-str.md) is a [`WINDOW\_BUFFER\_SIZE\_RECORD`](window-buffer-size-record-str.md) structure containing the new size of the console screen buffer, expressed in character-cell columns and rows.
+If the input event is a buffer-resizing event, the `Event` member of [`INPUT_RECORD`](input-record-str.md) is a [`WINDOW_BUFFER_SIZE_RECORD`](window-buffer-size-record-str.md) structure containing the new size of the console screen buffer, expressed in character-cell columns and rows.
 
 If the user reduces the size of the console screen buffer, any data in the discarded portion of the buffer is lost.
 

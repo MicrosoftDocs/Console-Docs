@@ -21,7 +21,7 @@ The behavior of the following sequences is based on the VT100 and derived termin
 
 ## Output_Sequences
 
-The following terminal sequences are intercepted by the console host when written into the output stream, if the `ENABLE\_VIRTUAL\_TERMINAL\_PROCESSING` flag is set on the screen buffer handle using the [`SetConsoleMode`](setconsolemode.md) function. Note that the `DISABLE\_NEWLINE\_AUTO\_RETURN` flag may also be useful in emulating the cursor positioning and scrolling behavior of other terminal emulators in relation to characters written to the final column in any row.
+The following terminal sequences are intercepted by the console host when written into the output stream, if the `ENABLE_VIRTUAL_TERMINAL_PROCESSING` flag is set on the screen buffer handle using the [`SetConsoleMode`](setconsolemode.md) function. Note that the `DISABLE_NEWLINE_AUTO_RETURN` flag may also be useful in emulating the cursor positioning and scrolling behavior of other terminal emulators in relation to characters written to the final column in any row.
 
 ## Simple Cursor Positioning
 
@@ -250,7 +250,7 @@ See the Cursor Keys and Numpad & Function Keys sections for the sequences emitte
 All commands in this section are generally equivalent to calling Get\* console APIs to retrieve status information about the current console buffer state.
 
 > [!NOTE]
->These queries will emit their responses into the console input stream immediately after being recognized on the output stream while ENABLE\_VIRTUAL\_TERMINAL\_PROCESSING is set. The ENABLE\_VIRTUAL\_TERMINAL\_INPUT flag does not apply to query commands as it is assumed that an application making the query will always want to receive the reply.
+>These queries will emit their responses into the console input stream immediately after being recognized on the output stream while ENABLE_VIRTUAL_TERMINAL_PROCESSING is set. The ENABLE_VIRTUAL_TERMINAL_INPUT flag does not apply to query commands as it is assumed that an application making the query will always want to receive the reply.
 
 | Sequence | Code | Description | Behavior |
 |------------|---------|-----------|----------|
@@ -365,7 +365,7 @@ The following sequence can be used to reset certain properties to their default 
 
 ## Input Sequences
 
-The following terminal sequences are emitted by the console host on the input stream if the ENABLE\_VIRTUAL\_TERMINAL\_INPUT flag is set on the input buffer handle using the SetConsoleMode flag.
+The following terminal sequences are emitted by the console host on the input stream if the ENABLE_VIRTUAL_TERMINAL_INPUT flag is set on the input buffer handle using the SetConsoleMode flag.
 
 There are two internal modes that control which sequences are emitted for the given input keys, the Cursor Keys Mode and the Keypad Keys Mode. These are described in the Mode Changes section.
 
@@ -489,7 +489,7 @@ The following code provides an example of the recommended way to enable virtual 
 
 1. The existing mode should always be retrieved via GetConsoleMode and analyzed before being set with SetConsoleMode.
 
-2. Checking whether SetConsoleMode returns `0` and ``GetLastError` returns `STATUS\_INVALID\_PARAMETER` is the current mechanism to determine when running on a down-level system. An application receiving `STATUS\_INVALID\_PARAMETER` with one of the newer console mode flags in the bit field should gracefully degrade behavior and try again.
+2. Checking whether SetConsoleMode returns `0` and ``GetLastError` returns `STATUS_INVALID_PARAMETER` is the current mechanism to determine when running on a down-level system. An application receiving `STATUS_INVALID_PARAMETER` with one of the newer console mode flags in the bit field should gracefully degrade behavior and try again.
 
 ```C
 #include <stdio.h>

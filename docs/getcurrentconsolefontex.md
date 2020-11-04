@@ -46,13 +46,13 @@ BOOL WINAPI GetCurrentConsoleFontEx(
 ## Parameters
 
 *hConsoleOutput* \[in\]  
-A handle to the console screen buffer. The handle must have the `GENERIC\_READ` access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
+A handle to the console screen buffer. The handle must have the `GENERIC_READ` access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
 
 *bMaximumWindow* \[in\]  
 If this parameter is `TRUE`, font information is retrieved for the maximum window size. If this parameter is `FALSE`, font information is retrieved for the current window size.
 
 *lpConsoleCurrentFontEx* \[out\]  
-A pointer to a [``CONSOLE\_FONT\_INFOEX``](console-font-infoex.md) structure that receives the requested font information.
+A pointer to a [``CONSOLE_FONT_INFOEX``](console-font-infoex.md) structure that receives the requested font information.
 
 ## Return value
 
@@ -76,4 +76,4 @@ If the function fails, the return value is zero. To get extended error informati
 
 [Console Functions](console-functions.md)
 
-[``CONSOLE\_FONT\_INFOEX``](console-font-infoex.md)
+[``CONSOLE_FONT_INFOEX``](console-font-infoex.md)

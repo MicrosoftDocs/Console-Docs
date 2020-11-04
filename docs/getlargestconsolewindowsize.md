@@ -10,7 +10,7 @@ f1_keywords:
 - wincon/GetLargestConsoleWindowSize
 - GetLargestConsoleWindowSize
 MS-HAID:
-- '\_win32\_getlargestconsolewindowsize'
+- '_win32_getlargestconsolewindowsize'
 - 'base.getlargestconsolewindowsize'
 - 'consoles.getlargestconsolewindowsize'
 MSHAttr:

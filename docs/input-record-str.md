@@ -13,9 +13,9 @@ f1_keywords:
 - wincon/PINPUT_RECORD
 - PINPUT_RECORD
 MS-HAID:
-- '\_win32\_input\_record\_str'
-- 'base.input\_record\_str'
-- 'consoles.input\_record\_str'
+- '_win32_input_record_str'
+- 'base.input_record_str'
+- 'consoles.input_record_str'
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/desktop'
@@ -31,7 +31,7 @@ api_type:
 - HeaderDef
 ---
 
-# INPUT\_RECORD structure
+# INPUT_RECORD structure
 
 Describes an input event in the console input buffer. These records can be read from the input buffer by using the [`ReadConsoleInput`](readconsoleinput.md) or [`PeekConsoleInput`](peekconsoleinput.md) function, or written to the input buffer by using the [`WriteConsoleInput`](writeconsoleinput.md) function.
 
@@ -82,13 +82,13 @@ For an example, see [Reading Input Buffer Events](reading-input-buffer-events.md
 
 ## See also
 
-[`FOCUS\_EVENT\_RECORD`](focus-event-record-str.md)
+[`FOCUS_EVENT_RECORD`](focus-event-record-str.md)
 
-[`KEY\_EVENT\_RECORD`](key-event-record-str.md)
+[`KEY_EVENT_RECORD`](key-event-record-str.md)
 
-[`MENU\_EVENT\_RECORD`](menu-event-record-str.md)
+[`MENU_EVENT_RECORD`](menu-event-record-str.md)
 
-[`MOUSE\_EVENT\_RECORD`](mouse-event-record-str.md)
+[`MOUSE_EVENT_RECORD`](mouse-event-record-str.md)
 
 [`PeekConsoleInput`](peekconsoleinput.md)
 

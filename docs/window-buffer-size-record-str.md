@@ -13,9 +13,9 @@ f1_keywords:
 - wincon/PWINDOW_BUFFER_SIZE_RECORD
 - PWINDOW_BUFFER_SIZE_RECORD
 MS-HAID:
-- '\_win32\_window\_buffer\_size\_record\_str'
-- 'base.window\_buffer\_size\_record\_str'
-- 'consoles.window\_buffer\_size\_record\_str'
+- '_win32_window_buffer_size_record_str'
+- 'base.window_buffer_size_record_str'
+- 'consoles.window_buffer_size_record_str'
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/desktop'
@@ -31,7 +31,7 @@ api_type:
 - HeaderDef
 ---
 
-# WINDOW\_BUFFER\_SIZE\_RECORD structure
+# WINDOW_BUFFER_SIZE_RECORD structure
 
 Describes a change in the size of the console screen buffer.
 
@@ -50,7 +50,7 @@ A [`COORD`](coord-str.md) structure that contains the size of the console screen
 
 ## Remarks
 
-Buffer size events are placed in the input buffer when the console is in window-aware mode (`ENABLE\_WINDOW\_INPUT`).
+Buffer size events are placed in the input buffer when the console is in window-aware mode (`ENABLE_WINDOW_INPUT`).
 
 ## Examples
 
@@ -68,6 +68,6 @@ For an example, see [Reading Input Buffer Events](reading-input-buffer-events.md
 
 [`COORD`](coord-str.md)
 
-[`INPUT\_RECORD`](input-record-str.md)
+[`INPUT_RECORD`](input-record-str.md)
 
 [`ReadConsoleInput`](readconsoleinput.md)

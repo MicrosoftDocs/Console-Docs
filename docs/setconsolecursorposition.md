@@ -10,7 +10,7 @@ f1_keywords:
 - wincon/SetConsoleCursorPosition
 - SetConsoleCursorPosition
 MS-HAID:
-- '\_win32\_setconsolecursorposition'
+- '_win32_setconsolecursorposition'
 - 'base.setconsolecursorposition'
 - 'consoles.setconsolecursorposition'
 MSHAttr:
@@ -49,7 +49,7 @@ BOOL WINAPI SetConsoleCursorPosition(
 ## Parameters
 
 *hConsoleOutput* \[in\]  
-A handle to the console screen buffer. The handle must have the `GENERIC\_READ` access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
+A handle to the console screen buffer. The handle must have the `GENERIC_READ` access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
 
 *dwCursorPosition* \[in\]  
 A [`COORD`](coord-str.md) structure that specifies the new cursor position, in characters. The coordinates are the column and row of a screen buffer character cell. The coordinates must be within the boundaries of the console screen buffer.

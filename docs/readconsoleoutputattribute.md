@@ -10,7 +10,7 @@ f1_keywords:
 - wincon/ReadConsoleOutputAttribute
 - ReadConsoleOutputAttribute
 MS-HAID:
-- '\_win32\_readconsoleoutputattribute'
+- '_win32_readconsoleoutputattribute'
 - 'base.readconsoleoutputattribute'
 - 'consoles.readconsoleoutputattribute'
 MSHAttr:
@@ -52,7 +52,7 @@ BOOL WINAPI ReadConsoleOutputAttribute(
 ## Parameters
 
 *hConsoleOutput* \[in\]  
-A handle to the console screen buffer. The handle must have the `GENERIC\_READ` access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
+A handle to the console screen buffer. The handle must have the `GENERIC_READ` access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
 
 *lpAttribute* \[out\]  
 A pointer to a buffer that receives the attributes being used by the console screen buffer.

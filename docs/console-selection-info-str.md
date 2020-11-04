@@ -13,9 +13,9 @@ f1_keywords:
 - wincon/PCONSOLE_SELECTION_INFO
 - PCONSOLE_SELECTION_INFO
 MS-HAID:
-- '\_win32\_console\_selection\_info\_str'
-- 'base.console\_selection\_info\_str'
-- 'consoles.console\_selection\_info\_str'
+- '_win32_console_selection_info_str'
+- 'base.console_selection_info_str'
+- 'consoles.console_selection_info_str'
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/desktop'
@@ -31,7 +31,7 @@ api_type:
 - HeaderDef
 ---
 
-# CONSOLE\_SELECTION\_INFO structure
+# CONSOLE_SELECTION_INFO structure
 
 [!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
@@ -64,7 +64,7 @@ The selection indicator. This member can be one or more of the following values.
 A [`COORD`](coord-str.md) structure that specifies the selection anchor, in characters.
 
 `srSelection`  
-A [`SMALL\_RECT`](small-rect-str.md) structure that specifies the selection rectangle.
+A [`SMALL_RECT`](small-rect-str.md) structure that specifies the selection rectangle.
 
 ## Requirements
 
@@ -80,4 +80,4 @@ A [`SMALL\_RECT`](small-rect-str.md) structure that specifies the selection rect
 
 [`GetConsoleSelectionInfo`](getconsoleselectioninfo.md)
 
-[`SMALL\_RECT`](small-rect-str.md)
+[`SMALL_RECT`](small-rect-str.md)

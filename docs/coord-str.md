@@ -13,9 +13,9 @@ f1_keywords:
 - wincon/PCOORD
 - PCOORD
 MS-HAID:
-- '\_win32\_coord\_str'
-- 'base.coord\_str'
-- 'consoles.coord\_str'
+- '_win32_coord_str'
+- 'base.coord_str'
+- 'consoles.coord_str'
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/desktop'
@@ -66,11 +66,11 @@ For an example, see [Scrolling a Screen Buffer's Contents](scrolling-a-screen-bu
 
 ## See also
 
-[`CONSOLE\_FONT\_INFO`](console-font-info-str.md)
+[`CONSOLE_FONT_INFO`](console-font-info-str.md)
 
-[`CONSOLE\_SCREEN\_BUFFER\_INFO`](console-screen-buffer-info-str.md)
+[`CONSOLE_SCREEN_BUFFER_INFO`](console-screen-buffer-info-str.md)
 
-[`CONSOLE\_SELECTION\_INFO`](console-selection-info-str.md)
+[`CONSOLE_SELECTION_INFO`](console-selection-info-str.md)
 
 [`FillConsoleOutputAttribute`](fillconsoleoutputattribute.md)
 
@@ -80,7 +80,7 @@ For an example, see [Scrolling a Screen Buffer's Contents](scrolling-a-screen-bu
 
 [`GetLargestConsoleWindowSize`](getlargestconsolewindowsize.md)
 
-[`MOUSE\_EVENT\_RECORD`](mouse-event-record-str.md)
+[`MOUSE_EVENT_RECORD`](mouse-event-record-str.md)
 
 [`ReadConsoleOutput`](readconsoleoutput.md)
 
@@ -96,7 +96,7 @@ For an example, see [Scrolling a Screen Buffer's Contents](scrolling-a-screen-bu
 
 [`SetConsoleScreenBufferSize`](setconsolescreenbuffersize.md)
 
-[`WINDOW\_BUFFER\_SIZE\_RECORD`](window-buffer-size-record-str.md)
+[`WINDOW_BUFFER_SIZE_RECORD`](window-buffer-size-record-str.md)
 
 [`WriteConsoleOutput`](writeconsoleoutput.md)
 

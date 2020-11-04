@@ -13,9 +13,9 @@ f1_keywords:
 - wincon/PCHAR_INFO
 - PCHAR_INFO
 MS-HAID:
-- '\_win32\_char\_info\_str'
-- 'base.char\_info\_str'
-- 'consoles.char\_info\_str'
+- '_win32_char_info_str'
+- 'base.char_info_str'
+- 'consoles.char_info_str'
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/desktop'
@@ -30,7 +30,7 @@ api_type:
 - HeaderDef
 ---
 
-# CHAR\_INFO structure
+# CHAR_INFO structure
 
 [!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 

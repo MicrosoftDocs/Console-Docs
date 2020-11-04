@@ -6,9 +6,9 @@ ms.author: miniksa
 ms.topic: conceptual
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
-- '\_win32\_console\_control\_handlers'
-- 'base.console\_control\_handlers'
-- 'consoles.console\_control\_handlers'
+- '_win32_console_control_handlers'
+- 'base.console_control_handlers'
+- 'consoles.console_control_handlers'
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/desktop'

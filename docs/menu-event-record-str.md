@@ -1,6 +1,6 @@
 ---
 title: MENU_EVENT_RECORD structure
-description: Describes a menu event in a console INPUT\_RECORD structure. These events are used internally and should be ignored.
+description: Describes a menu event in a console INPUT_RECORD structure. These events are used internally and should be ignored.
 author: miniksa
 ms.author: miniksa
 ms.topic: article
@@ -13,9 +13,9 @@ f1_keywords:
 - wincon/PMENU_EVENT_RECORD
 - PMENU_EVENT_RECORD
 MS-HAID:
-- '\_win32\_menu\_event\_record\_str'
-- 'base.menu\_event\_record\_str'
-- 'consoles.menu\_event\_record\_str'
+- '_win32_menu_event_record_str'
+- 'base.menu_event_record_str'
+- 'consoles.menu_event_record_str'
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/desktop'
@@ -31,11 +31,11 @@ api_type:
 - HeaderDef
 ---
 
-# MENU\_EVENT\_RECORD structure
+# MENU_EVENT_RECORD structure
 
 [!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
-Describes a menu event in a console [`INPUT\_RECORD`](input-record-str.md) structure. These events are used internally and should be ignored.
+Describes a menu event in a console [`INPUT_RECORD`](input-record-str.md) structure. These events are used internally and should be ignored.
 
 ## Syntax
 
@@ -60,4 +60,4 @@ Reserved.
 
 ## See also
 
-[`INPUT\_RECORD`](input-record-str.md)
+[`INPUT_RECORD`](input-record-str.md)

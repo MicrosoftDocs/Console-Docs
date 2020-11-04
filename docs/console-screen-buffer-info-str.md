@@ -13,9 +13,9 @@ f1_keywords:
 - wincon/PCONSOLE_SCREEN_BUFFER_INFO
 - PCONSOLE_SCREEN_BUFFER_INFO
 MS-HAID:
-- '\_win32\_console\_screen\_buffer\_info\_str'
-- 'base.console\_screen\_buffer\_info\_str'
-- 'consoles.console\_screen\_buffer\_info\_str'
+- '_win32_console_screen_buffer_info_str'
+- 'base.console_screen_buffer_info_str'
+- 'consoles.console_screen_buffer_info_str'
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/desktop'
@@ -31,7 +31,7 @@ api_type:
 - HeaderDef
 ---
 
-# CONSOLE\_SCREEN\_BUFFER\_INFO structure
+# CONSOLE_SCREEN_BUFFER_INFO structure
 
 Contains information about a console screen buffer.
 
@@ -59,7 +59,7 @@ A [`COORD`](coord-str.md) structure that contains the column and row coordinates
 The attributes of the characters written to a screen buffer by the [`WriteFile`](https://msdn.microsoft.com/library/windows/desktop/aa365747) and [`WriteConsole`](writeconsole.md) functions, or echoed to a screen buffer by the [`ReadFile`](https://msdn.microsoft.com/library/windows/desktop/aa365467) and [`ReadConsole`](readconsole.md) functions. For more information, see [Character Attributes](console-screen-buffers.md#character-attributes).
 
 `srWindow`  
-A [`SMALL\_RECT`](small-rect-str.md) structure that contains the console screen buffer coordinates of the upper-left and lower-right corners of the display window.
+A [`SMALL_RECT`](small-rect-str.md) structure that contains the console screen buffer coordinates of the upper-left and lower-right corners of the display window.
 
 `dwMaximumWindowSize`  
 A [`COORD`](coord-str.md) structure that contains the maximum size of the console window, in character columns and rows, given the current screen buffer size and font and the screen size.
@@ -86,7 +86,7 @@ For an example, see [Scrolling a Screen Buffer's Contents](scrolling-a-screen-bu
 
 [`ReadFile`](https://msdn.microsoft.com/library/windows/desktop/aa365467)
 
-[`SMALL\_RECT`](small-rect-str.md)
+[`SMALL_RECT`](small-rect-str.md)
 
 [`WriteConsole`](writeconsole.md)
 

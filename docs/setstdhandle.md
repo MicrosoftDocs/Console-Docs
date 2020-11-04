@@ -10,7 +10,7 @@ f1_keywords:
 - winbase/SetStdHandle
 - SetStdHandle
 MS-HAID:
-- '\_win32\_setstdhandle'
+- '_win32_setstdhandle'
 - 'base.setstdhandle'
 - 'consoles.setstdhandle'
 MSHAttr:

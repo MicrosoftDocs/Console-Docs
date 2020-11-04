@@ -6,9 +6,9 @@ ms.author: miniksa
 ms.topic: sample
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
-- '\_win32\_scrolling\_a\_screen\_buffer\_s\_contents'
-- 'base.scrolling\_a\_screen\_buffer\_s\_contents'
-- 'consoles.scrolling\_a\_screen\_buffer\_s\_contents'
+- '_win32_scrolling_a_screen_buffer_s_contents'
+- 'base.scrolling_a_screen_buffer_s_contents'
+- 'consoles.scrolling_a_screen_buffer_s_contents'
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/desktop'

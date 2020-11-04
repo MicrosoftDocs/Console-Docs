@@ -16,7 +16,7 @@ f1_keywords:
 - wincon/WriteConsoleInputW
 - WriteConsoleInputW
 MS-HAID:
-- '\_win32\_writeconsoleinput'
+- '_win32_writeconsoleinput'
 - 'base.writeconsoleinput'
 - 'consoles.writeconsoleinput'
 MSHAttr:
@@ -59,10 +59,10 @@ BOOL WINAPI WriteConsoleInput(
 ## Parameters
 
 *hConsoleInput* \[in\]  
-A handle to the console input buffer. The handle must have the `GENERIC\_WRITE` access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
+A handle to the console input buffer. The handle must have the `GENERIC_WRITE` access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
 
 *lpBuffer* \[in\]  
-A pointer to an array of [`INPUT\_RECORD`](input-record-str.md) structures that contain data to be written to the input buffer.
+A pointer to an array of [`INPUT_RECORD`](input-record-str.md) structures that contain data to be written to the input buffer.
 
 *nLength* \[in\]  
 The number of input records to be written.
@@ -100,7 +100,7 @@ If the function fails, the return value is zero. To get extended error informati
 
 [Console Functions](console-functions.md)
 
-[`INPUT\_RECORD`](input-record-str.md)
+[`INPUT_RECORD`](input-record-str.md)
 
 [Low-Level Console Input Functions](low-level-console-input-functions.md)
 

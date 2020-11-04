@@ -13,8 +13,8 @@ f1_keywords:
 - wincon/PCONSOLE_HISTORY_INFO
 - PCONSOLE_HISTORY_INFO
 MS-HAID:
-- 'base.console\_history\_info'
-- 'consoles.console\_history\_info'
+- 'base.console_history_info'
+- 'consoles.console_history_info'
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/desktop'
@@ -30,7 +30,7 @@ api_type:
 - HeaderDef
 ---
 
-# CONSOLE\_HISTORY\_INFO structure
+# CONSOLE_HISTORY_INFO structure
 
 [!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 

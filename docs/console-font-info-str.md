@@ -13,9 +13,9 @@ f1_keywords:
 - wincon/PCONSOLE_FONT_INFO
 - PCONSOLE_FONT_INFO
 MS-HAID:
-- '\_win32\_console\_font\_info\_str'
-- 'base.console\_font\_info\_str'
-- 'consoles.console\_font\_info\_str'
+- '_win32_console_font_info_str'
+- 'base.console_font_info_str'
+- 'consoles.console_font_info_str'
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/desktop'
@@ -30,7 +30,7 @@ api_type:
 - HeaderDef
 ---
 
-# CONSOLE\_FONT\_INFO structure
+# CONSOLE_FONT_INFO structure
 
 [!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 

@@ -6,9 +6,9 @@ ms.author: miniksa
 ms.topic: conceptual
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
-- '\_win32\_console\_screen\_buffers'
-- 'base.console\_screen\_buffers'
-- 'consoles.console\_screen\_buffers'
+- '_win32_console_screen_buffers'
+- 'base.console_screen_buffers'
+- 'consoles.console_screen_buffers'
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/desktop'
@@ -21,7 +21,7 @@ A *screen buffer* is a two-dimensional array of character and color data for out
 
 The system creates a screen buffer whenever it creates a new console. To open a handle to a console's active screen buffer, specify the `CONOUT$` value in a call to the [`CreateFile`](https://msdn.microsoft.com/library/windows/desktop/aa363858) function. A process can use the [`CreateConsoleScreenBuffer`](createconsolescreenbuffer.md) function to create additional screen buffers for its console. A new screen buffer is not active until its handle is specified in a call to the [`SetConsoleActiveScreenBuffer`](setconsoleactivescreenbuffer.md) function. However, screen buffers can be accessed for reading and writing whether they are active or inactive.
 
-Each screen buffer has its own two-dimensional array of character information records. The data for each character is stored in a [`CHAR\_INFO`](char-info-str.md) structure that specifies the Unicode or ANSI character and the foreground and background colors in which that character is displayed.
+Each screen buffer has its own two-dimensional array of character information records. The data for each character is stored in a [`CHAR_INFO`](char-info-str.md) structure that specifies the Unicode or ANSI character and the foreground and background colors in which that character is displayed.
 
 A number of properties associated with a screen buffer can be set independently for each screen buffer. This means that changing the active screen buffer can have a dramatic effect on the appearance of the console window. The properties associated with a screen buffer include:
 
@@ -29,7 +29,7 @@ A number of properties associated with a screen buffer can be set independently 
 - Text attributes (foreground and background colors for displaying text to be written by the [`WriteFile`](https://msdn.microsoft.com/library/windows/desktop/aa365747) or [`WriteConsole`](writeconsole.md) function).
 - Window size and location (the rectangular region of the console screen buffer that is displayed in the console window).
 - Cursor position, appearance, and visibility.
-- Output modes (`ENABLE\_PROCESSED\_OUTPUT`and `ENABLE\_WRAP\_AT\_EOL\_OUTPUT`). For more information about console output modes, see [High-Level Console Modes](high-level-console-modes.md).
+- Output modes (`ENABLE_PROCESSED_OUTPUT`and `ENABLE_WRAP_AT_EOL_OUTPUT`). For more information about console output modes, see [High-Level Console Modes](high-level-console-modes.md).
 
 When a screen buffer is created, it contains space characters in every position. Its cursor is visible and positioned at the buffer's origin (0,0), and the window is positioned with its upper left corner at the buffer's origin. The size of the console screen buffer, the window size, the text attributes, and the appearance of the cursor are determined by the user or by the system defaults. To retrieve the current values of the various properties associated with the console screen buffer, use the [`GetConsoleScreenBufferInfo`](getconsolescreenbufferinfo.md), [`GetConsoleCursorInfo`](getconsolecursorinfo.md), and [`GetConsoleMode`](getconsolemode.md) functions.
 
@@ -55,21 +55,21 @@ Character attributes can be divided into two classes: color and DBCS. The follow
 
 | Attribute | Meaning |
 |-|-|
-| `FOREGROUND\_BLUE` | Text color contains blue. |
-| `FOREGROUND\_GREEN` | Text color contains green. |
-| `FOREGROUND\_RED` | Text color contains red. |
-| `FOREGROUND\_INTENSITY` | Text color is intensified. |
-| `BACKGROUND\_BLUE` | Background color contains blue. |
-| `BACKGROUND\_GREEN` | Background color contains green. |
-| `BACKGROUND\_RED` | Background color contains red. |
-| `BACKGROUND\_INTENSITY` | Background color is intensified. |
-| `COMMON\_LVB\_LEADING\_BYTE` | Leading byte. |
-| `COMMON\_LVB\_TRAILING\_BYTE` | Trailing byte. |
-| `COMMON\_LVB\_GRID\_HORIZONTAL` | Top horizontal. |
-| `COMMON\_LVB\_GRID\_LVERTICAL` | Left vertical. |
-| `COMMON\_LVB\_GRID\_RVERTICAL` | Right vertical. |
-| `COMMON\_LVB\_REVERSE\_VIDEO` | Reverse foreground and background attributes. |
-| `COMMON\_LVB\_UNDERSCORE` | Underscore. |
+| `FOREGROUND_BLUE` | Text color contains blue. |
+| `FOREGROUND_GREEN` | Text color contains green. |
+| `FOREGROUND_RED` | Text color contains red. |
+| `FOREGROUND_INTENSITY` | Text color is intensified. |
+| `BACKGROUND_BLUE` | Background color contains blue. |
+| `BACKGROUND_GREEN` | Background color contains green. |
+| `BACKGROUND_RED` | Background color contains red. |
+| `BACKGROUND_INTENSITY` | Background color is intensified. |
+| `COMMON_LVB_LEADING_BYTE` | Leading byte. |
+| `COMMON_LVB_TRAILING_BYTE` | Trailing byte. |
+| `COMMON_LVB_GRID_HORIZONTAL` | Top horizontal. |
+| `COMMON_LVB_GRID_LVERTICAL` | Left vertical. |
+| `COMMON_LVB_GRID_RVERTICAL` | Right vertical. |
+| `COMMON_LVB_REVERSE_VIDEO` | Reverse foreground and background attributes. |
+| `COMMON_LVB_UNDERSCORE` | Underscore. |
 
 The foreground attributes specify the text color. The background attributes specify the color used to fill the cell's background. The other attributes are used with [DBCS](https://msdn.microsoft.com/library/windows/desktop/dd317794).
 
@@ -81,7 +81,7 @@ If no background constant is specified, the background is black, and if no foreg
 
 `BACKGROUND_BLUE | BACKGROUND_GREEN | BACKGROUND_RED`
 
-Each screen buffer character cell stores the color attributes for the colors used in drawing the foreground (text) and background of that cell. An application can set the color data for each character cell individually, storing the data in the `Attributes` member of the [`CHAR\_INFO`](char-info-str.md) structure for each cell. The current text attributes of each screen buffer are used for characters subsequently written or echoed by the high-level functions.
+Each screen buffer character cell stores the color attributes for the colors used in drawing the foreground (text) and background of that cell. An application can set the color data for each character cell individually, storing the data in the `Attributes` member of the [`CHAR_INFO`](char-info-str.md) structure for each cell. The current text attributes of each screen buffer are used for characters subsequently written or echoed by the high-level functions.
 
 An application can use [`GetConsoleScreenBufferInfo`](getconsolescreenbufferinfo.md) to determine the current text attributes of a screen buffer and the [`SetConsoleTextAttribute`](setconsoletextattribute.md) function to set the character attributes. Changing a screen buffer's attributes does not affect the display of characters previously written. These text attributes do not affect characters written by the low-level console I/O functions (such as the [`WriteConsoleOutput`](writeconsoleoutput.md) or [`WriteConsoleOutputCharacter`](writeconsoleoutputcharacter.md) function), which either explicitly specify the attributes for each cell that is written or leave the attributes unchanged.
 
@@ -90,7 +90,7 @@ An application can use [`GetConsoleScreenBufferInfo`](getconsolescreenbufferinfo
 
 ## Font Attributes
 
-The [`GetCurrentConsoleFont`](getcurrentconsolefont.md) function retrieves information about the current console font. The information stored in the [`CONSOLE\_FONT\_INFO`](console-font-info-str.md) structure includes the width and height of each character in the font.
+The [`GetCurrentConsoleFont`](getcurrentconsolefont.md) function retrieves information about the current console font. The information stored in the [`CONSOLE_FONT_INFO`](console-font-info-str.md) structure includes the width and height of each character in the font.
 
 The [`GetConsoleFontSize`](getconsolefontsize.md) function retrieves the size of the font used by the specified console screen buffer.
 

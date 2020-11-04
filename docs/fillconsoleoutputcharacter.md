@@ -16,7 +16,7 @@ f1_keywords:
 - wincon/FillConsoleOutputCharacterW
 - FillConsoleOutputCharacterW
 MS-HAID:
-- '\_win32\_fillconsoleoutputcharacter'
+- '_win32_fillconsoleoutputcharacter'
 - 'base.fillconsoleoutputcharacter'
 - 'consoles.fillconsoleoutputcharacter'
 MSHAttr:
@@ -60,7 +60,7 @@ BOOL WINAPI FillConsoleOutputCharacter(
 ## Parameters
 
 *hConsoleOutput* \[in\]  
-A handle to the console screen buffer. The handle must have the `GENERIC\_WRITE` access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
+A handle to the console screen buffer. The handle must have the `GENERIC_WRITE` access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
 
 *cCharacter* \[in\]  
 The character to be written to the console screen buffer.

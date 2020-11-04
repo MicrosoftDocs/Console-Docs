@@ -10,7 +10,7 @@ f1_keywords:
 - wincon/GetConsoleProcessList
 - GetConsoleProcessList
 MS-HAID:
-- '\_win32\_getconsoleprocesslist'
+- '_win32_getconsoleprocesslist'
 - 'base.getconsoleprocesslist'
 - 'consoles.getconsoleprocesslist'
 MSHAttr:
@@ -61,7 +61,7 @@ If a `NULL` process list was provided or the process count was 0, the call will 
 
 ## Remarks
 
-To compile an application that uses this function, define `\_WIN32\_WINNT` as 0x0501 or later. For more information, see [Using the Windows Headers](https://msdn.microsoft.com/library/windows/desktop/aa383745).
+To compile an application that uses this function, define `_WIN32_WINNT` as 0x0501 or later. For more information, see [Using the Windows Headers](https://msdn.microsoft.com/library/windows/desktop/aa383745).
 
 [!INCLUDE [no-vt-equiv-local-context](./includes/no-vt-equiv-local-context.md)]
 

@@ -10,7 +10,7 @@ f1_keywords:
 - wincon/WriteConsoleOutputAttribute
 - WriteConsoleOutputAttribute
 MS-HAID:
-- '\_win32\_writeconsoleoutputattribute'
+- '_win32_writeconsoleoutputattribute'
 - 'base.writeconsoleoutputattribute'
 - 'consoles.writeconsoleoutputattribute'
 MSHAttr:
@@ -52,7 +52,7 @@ BOOL WINAPI WriteConsoleOutputAttribute(
 ## Parameters
 
 *hConsoleOutput* \[in\]  
-A handle to the console screen buffer. The handle must have the `GENERIC\_WRITE` access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
+A handle to the console screen buffer. The handle must have the `GENERIC_WRITE` access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
 
 *lpAttribute* \[in\]  
 The attributes to be used when writing to the console screen buffer. For more information, see [Character Attributes](console-screen-buffers.md#character-attributes).

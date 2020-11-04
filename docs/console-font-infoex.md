@@ -13,8 +13,8 @@ f1_keywords:
 - wincon/PCONSOLE_FONT_INFOEX
 - PCONSOLE_FONT_INFOEX
 MS-HAID:
-- base.CONSOLE\_FONT\_INFOEX
-- consoles.CONSOLE\_FONT\_INFOEX
+- base.CONSOLE_FONT_INFOEX
+- consoles.CONSOLE_FONT_INFOEX
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
@@ -29,7 +29,7 @@ api_type:
 - HeaderDef
 ---
 
-# `CONSOLE\_FONT\_INFOEX` structure
+# `CONSOLE_FONT_INFOEX` structure
 
 [!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 

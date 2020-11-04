@@ -10,9 +10,9 @@ f1_keywords:
 title: SMALL_RECT structure
 description: Defines the coordinates of the upper left and lower right corners of a rectangle.
 MS-HAID:
-- '\_win32\_small\_rect\_str'
-- 'base.small\_rect\_str'
-- 'consoles.small\_rect\_str'
+- '_win32_small_rect_str'
+- 'base.small_rect_str'
+- 'consoles.small_rect_str'
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/desktop'
@@ -28,7 +28,7 @@ api_type:
 - HeaderDef
 ---
 
-# SMALL\_RECT structure
+# SMALL_RECT structure
 
 Defines the coordinates of the upper left and lower right corners of a rectangle.
 

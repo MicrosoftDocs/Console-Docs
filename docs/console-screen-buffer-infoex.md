@@ -13,8 +13,8 @@ f1_keywords:
 - wincon/PCONSOLE_SCREEN_BUFFER_INFOEX
 - PCONSOLE_SCREEN_BUFFER_INFOEX
 MS-HAID:
-- 'base.console\_screen\_buffer\_infoex'
-- 'consoles.console\_screen\_buffer\_infoex'
+- 'base.console_screen_buffer_infoex'
+- 'consoles.console_screen_buffer_infoex'
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/desktop'
@@ -30,7 +30,7 @@ api_type:
 - HeaderDef
 ---
 
-# CONSOLE\_SCREEN\_BUFFER\_INFOEX structure
+# CONSOLE_SCREEN_BUFFER_INFOEX structure
 
 Contains extended information about a console screen buffer.
 
@@ -65,7 +65,7 @@ A [`COORD`](coord-str.md) structure that contains the column and row coordinates
 The attributes of the characters written to a screen buffer by the [`WriteFile`](https://msdn.microsoft.com/library/windows/desktop/aa365747) and [`WriteConsole`](writeconsole.md) functions, or echoed to a screen buffer by the [`ReadFile`](https://msdn.microsoft.com/library/windows/desktop/aa365467) and [`ReadConsole`](readconsole.md) functions. For more information, see [Character Attributes](console-screen-buffers.md#character-attributes).
 
 `srWindow`  
-A [`SMALL\_RECT`](small-rect-str.md) structure that contains the console screen buffer coordinates of the upper-left and lower-right corners of the display window.
+A [`SMALL_RECT`](small-rect-str.md) structure that contains the console screen buffer coordinates of the upper-left and lower-right corners of the display window.
 
 `dwMaximumWindowSize`  
 A [`COORD`](coord-str.md) structure that contains the maximum size of the console window, in character columns and rows, given the current screen buffer size and font and the screen size.
@@ -95,4 +95,4 @@ An array of [`COLORREF`](https://msdn.microsoft.com/library/windows/desktop/dd18
 
 [`SetConsoleScreenBufferInfoEx`](setconsolescreenbufferinfoex.md)
 
-[`SMALL\_RECT`](small-rect-str.md)
+[`SMALL_RECT`](small-rect-str.md)
