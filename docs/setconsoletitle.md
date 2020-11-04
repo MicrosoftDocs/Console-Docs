@@ -70,7 +70,7 @@ The string to be displayed in the title bar of the console window. The total siz
 
 If the function succeeds, the return value is nonzero.
 
-If the function fails, the return value is zero. To get extended error information, call [**GetLastError**](https://msdn.microsoft.com/library/windows/desktop/ms679360).
+If the function fails, the return value is zero. To get extended error information, call [`GetLastError`](https://msdn.microsoft.com/library/windows/desktop/ms679360).
 
 ## Remarks
 
@@ -79,7 +79,7 @@ When the process terminates, the system restores the original console title.
 [!INCLUDE [setting-codepage-mode-remarks](./includes/setting-codepage-mode-remarks.md)]
 
 > [!TIP]
-> This API has a **[virtual terminal](console-virtual-terminal-sequences.md)** equivalent in the **[window title](console-virtual-terminal-sequences.md#window-title)** sequences. _Virtual terminal sequences_ are recommended for all new and ongoing development.
+> This API has a `[virtual terminal](console-virtual-terminal-sequences.md)` equivalent in the `[window title](console-virtual-terminal-sequences.md#window-title)` sequences. _Virtual terminal sequences_ are recommended for all new and ongoing development.
 
 ## Examples
 
@@ -128,16 +128,16 @@ int main( void )
 | Header | ConsoleApi2.h (via WinCon.h, include Windows.h) |
 | Library | Kernel32.lib |
 | DLL | Kernel32.dll |
-| Unicode and ANSI names | **SetConsoleTitleW** (Unicode) and **SetConsoleTitleA** (ANSI) |
+| Unicode and ANSI names | `SetConsoleTitleW` (Unicode) and `SetConsoleTitleA` (ANSI) |
 
 ## See also
 
 [Console Functions](console-functions.md)
 
-[**GetConsoleOriginalTitle**](getconsoleoriginaltitle.md)
+[`GetConsoleOriginalTitle`](getconsoleoriginaltitle.md)
 
-[**GetConsoleTitle**](getconsoletitle.md)
+[`GetConsoleTitle`](getconsoletitle.md)
 
-[**SetConsoleCP**](setconsolecp.md)
+[`SetConsoleCP`](setconsolecp.md)
 
-[**SetConsoleOutputCP**](setconsoleoutputcp.md)
+[`SetConsoleOutputCP`](setconsoleoutputcp.md)

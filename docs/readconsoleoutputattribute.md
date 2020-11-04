@@ -52,7 +52,7 @@ BOOL WINAPI ReadConsoleOutputAttribute(
 ## Parameters
 
 *hConsoleOutput* \[in\]  
-A handle to the console screen buffer. The handle must have the **GENERIC\_READ** access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
+A handle to the console screen buffer. The handle must have the `GENERIC\_READ` access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
 
 *lpAttribute* \[out\]  
 A pointer to a buffer that receives the attributes being used by the console screen buffer.
@@ -63,7 +63,7 @@ For more information, see [Character Attributes](console-screen-buffers.md#chara
 The number of screen buffer character cells from which to read. The size of the buffer pointed to by the *lpAttribute* parameter should be `nLength * sizeof(WORD)`.
 
 *dwReadCoord* \[in\]  
-The coordinates of the first cell in the console screen buffer from which to read, in characters. The **X** member of the [**COORD**](coord-str.md) structure is the column, and the **Y** member is the row.
+The coordinates of the first cell in the console screen buffer from which to read, in characters. The `X` member of the [`COORD`](coord-str.md) structure is the column, and the `Y` member is the row.
 
 *lpNumberOfAttrsRead* \[out\]  
 A pointer to a variable that receives the number of attributes actually read.
@@ -72,7 +72,7 @@ A pointer to a variable that receives the number of attributes actually read.
 
 If the function succeeds, the return value is nonzero.
 
-If the function fails, the return value is zero. To get extended error information, call [**GetLastError**](https://msdn.microsoft.com/library/windows/desktop/ms679360).
+If the function fails, the return value is zero. To get extended error information, call [`GetLastError`](https://msdn.microsoft.com/library/windows/desktop/ms679360).
 
 ## Remarks
 
@@ -94,16 +94,16 @@ If the number of attributes to be read from extends beyond the end of the specif
 
 [Console Functions](console-functions.md)
 
-[**COORD**](coord-str.md)
+[`COORD`](coord-str.md)
 
 [Low-Level Console Output Functions](low-level-console-output-functions.md)
 
-[**ReadConsoleOutput**](readconsoleoutput.md)
+[`ReadConsoleOutput`](readconsoleoutput.md)
 
-[**ReadConsoleOutputCharacter**](readconsoleoutputcharacter.md)
+[`ReadConsoleOutputCharacter`](readconsoleoutputcharacter.md)
 
-[**WriteConsoleOutput**](writeconsoleoutput.md)
+[`WriteConsoleOutput`](writeconsoleoutput.md)
 
-[**WriteConsoleOutputAttribute**](writeconsoleoutputattribute.md)
+[`WriteConsoleOutputAttribute`](writeconsoleoutputattribute.md)
 
-[**WriteConsoleOutputCharacter**](writeconsoleoutputcharacter.md)
+[`WriteConsoleOutputCharacter`](writeconsoleoutputcharacter.md)

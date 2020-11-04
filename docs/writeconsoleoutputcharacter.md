@@ -59,7 +59,7 @@ BOOL WINAPI WriteConsoleOutputCharacter(
 ## Parameters
 
 *hConsoleOutput* \[in\]  
-A handle to the console screen buffer. The handle must have the **GENERIC\_WRITE** access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
+A handle to the console screen buffer. The handle must have the `GENERIC\_WRITE` access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
 
 *lpCharacter* \[in\]  
 The characters to be written to the console screen buffer.
@@ -68,7 +68,7 @@ The characters to be written to the console screen buffer.
 The number of characters to be written.
 
 *dwWriteCoord* \[in\]  
-A [**COORD**](coord-str.md) structure that specifies the character coordinates of the first cell in the console screen buffer to which characters will be written.
+A [`COORD`](coord-str.md) structure that specifies the character coordinates of the first cell in the console screen buffer to which characters will be written.
 
 *lpNumberOfCharsWritten* \[out\]  
 A pointer to a variable that receives the number of characters actually written.
@@ -77,7 +77,7 @@ A pointer to a variable that receives the number of characters actually written.
 
 If the function succeeds, the return value is nonzero.
 
-If the function fails, the return value is zero. To get extended error information, call [**GetLastError**](https://msdn.microsoft.com/library/windows/desktop/ms679360).
+If the function fails, the return value is zero. To get extended error information, call [`GetLastError`](https://msdn.microsoft.com/library/windows/desktop/ms679360).
 
 ## Remarks
 
@@ -88,7 +88,7 @@ The attribute values at the positions written to are not changed.
 [!INCLUDE [setting-codepage-mode-remarks](./includes/setting-codepage-mode-remarks.md)]
 
 > [!TIP]
-> This API has a **[virtual terminal](console-virtual-terminal-sequences.md)** equivalent in the **[text formatting](console-virtual-terminal-sequences.md#text-formatting)** and **[cursor positioning](console-virtual-terminal-sequences.md#cursor-positioning)** sequences. Move the cursor to the location to insert, apply the formatting desired, and write out text to fill. There is no equivalent to emit text to an area without also applying the active color formatting. This decision intentionally aligns the Windows platform with other operating systems where the individual client application is expected to remember its own drawn state for further manipulation.
+> This API has a `[virtual terminal](console-virtual-terminal-sequences.md)` equivalent in the `[text formatting](console-virtual-terminal-sequences.md#text-formatting)` and `[cursor positioning](console-virtual-terminal-sequences.md#cursor-positioning)` sequences. Move the cursor to the location to insert, apply the formatting desired, and write out text to fill. There is no equivalent to emit text to an area without also applying the active color formatting. This decision intentionally aligns the Windows platform with other operating systems where the individual client application is expected to remember its own drawn state for further manipulation.
 
 ## Requirements
 
@@ -99,26 +99,26 @@ The attribute values at the positions written to are not changed.
 | Header | ConsoleApi2.h (via WinCon.h, include Windows.h) |
 | Library | Kernel32.lib |
 | DLL | Kernel32.dll |
-| Unicode and ANSI names | **WriteConsoleOutputCharacterW** (Unicode) and **WriteConsoleOutputCharacterA** (ANSI) |
+| Unicode and ANSI names | `WriteConsoleOutputCharacterW` (Unicode) and `WriteConsoleOutputCharacterA` (ANSI) |
 
 ## See also
 
 [Console Functions](console-functions.md)
 
-[**COORD**](coord-str.md)
+[`COORD`](coord-str.md)
 
 [Low-Level Console Output Functions](low-level-console-output-functions.md)
 
-[**ReadConsoleOutput**](readconsoleoutput.md)
+[`ReadConsoleOutput`](readconsoleoutput.md)
 
-[**ReadConsoleOutputAttribute**](readconsoleoutputattribute.md)
+[`ReadConsoleOutputAttribute`](readconsoleoutputattribute.md)
 
-[**ReadConsoleOutputCharacter**](readconsoleoutputcharacter.md)
+[`ReadConsoleOutputCharacter`](readconsoleoutputcharacter.md)
 
-[**SetConsoleCP**](setconsolecp.md)
+[`SetConsoleCP`](setconsolecp.md)
 
-[**SetConsoleOutputCP**](setconsoleoutputcp.md)
+[`SetConsoleOutputCP`](setconsoleoutputcp.md)
 
-[**WriteConsoleOutput**](writeconsoleoutput.md)
+[`WriteConsoleOutput`](writeconsoleoutput.md)
 
-[**WriteConsoleOutputAttribute**](writeconsoleoutputattribute.md)
+[`WriteConsoleOutputAttribute`](writeconsoleoutputattribute.md)

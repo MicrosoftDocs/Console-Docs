@@ -48,7 +48,7 @@ BOOL WINAPI GetConsoleMode(
 ## Parameters
 
 *hConsoleHandle* \[in\]  
-A handle to the console input buffer or the console screen buffer. The handle must have the **GENERIC\_READ** access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
+A handle to the console input buffer or the console screen buffer. The handle must have the `GENERIC\_READ` access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
 
 *lpMode* \[out\]  
 A pointer to a variable that receives the current mode of the specified buffer.
@@ -59,13 +59,13 @@ A pointer to a variable that receives the current mode of the specified buffer.
 
 If the function succeeds, the return value is nonzero.
 
-If the function fails, the return value is zero. To get extended error information, call [**GetLastError**](https://msdn.microsoft.com/library/windows/desktop/ms679360).
+If the function fails, the return value is zero. To get extended error information, call [`GetLastError`](https://msdn.microsoft.com/library/windows/desktop/ms679360).
 
 ## Remarks
 
 [!INCLUDE [console-mode-remarks](./includes/console-mode-remarks.md)]
 
-To change a console's I/O modes, call [**SetConsoleMode**](setconsolemode.md) function.
+To change a console's I/O modes, call [`SetConsoleMode`](setconsolemode.md) function.
 
 ## Examples
 
@@ -87,14 +87,14 @@ For an example, see [Reading Input Buffer Events](reading-input-buffer-events.md
 
 [Console Modes](console-modes.md)
 
-[**ReadConsole**](readconsole.md)
+[`ReadConsole`](readconsole.md)
 
-[**ReadConsoleInput**](readconsoleinput.md)
+[`ReadConsoleInput`](readconsoleinput.md)
 
-[**ReadFile**](https://msdn.microsoft.com/library/windows/desktop/aa365467)
+[`ReadFile`](https://msdn.microsoft.com/library/windows/desktop/aa365467)
 
-[**SetConsoleMode**](setconsolemode.md)
+[`SetConsoleMode`](setconsolemode.md)
 
-[**WriteConsole**](writeconsole.md)
+[`WriteConsole`](writeconsole.md)
 
-[**WriteFile**](https://msdn.microsoft.com/library/windows/desktop/aa365747)
+[`WriteFile`](https://msdn.microsoft.com/library/windows/desktop/aa365747)

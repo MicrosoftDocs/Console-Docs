@@ -48,21 +48,21 @@ BOOL WINAPI SetConsoleScreenBufferInfoEx(
 ## Parameters
 
 *hConsoleOutput* \[in\]  
-A handle to the console screen buffer. The handle must have the **GENERIC\_WRITE** access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
+A handle to the console screen buffer. The handle must have the `GENERIC\_WRITE` access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
 
 *lpConsoleScreenBufferInfoEx* \[in\]  
-A [**CONSOLE\_SCREEN\_BUFFER\_INFOEX**](console-screen-buffer-infoex.md) structure that contains the console screen buffer information.
+A [`CONSOLE\_SCREEN\_BUFFER\_INFOEX`](console-screen-buffer-infoex.md) structure that contains the console screen buffer information.
 
 ## Return value
 
 If the function succeeds, the return value is nonzero.
 
-If the function fails, the return value is zero. To get extended error information, call [**GetLastError**](https://msdn.microsoft.com/library/windows/desktop/ms679360).
+If the function fails, the return value is zero. To get extended error information, call [`GetLastError`](https://msdn.microsoft.com/library/windows/desktop/ms679360).
 
 ## Remarks
 
 > [!TIP]
-> This API has a partial **[virtual terminal](console-virtual-terminal-sequences.md)** equivalent. **[Cursor positioning buffer](console-virtual-terminal-sequences.md#cursor-positioning)** and **[text attributes](console-virtual-terminal-sequences.md#text-formatting)** have specific sequence equivalents. The color table is not configurable, but **[extended colors](console-virtual-terminal-sequences.md#extended-colors)** are available beyond what is normally available through **[console functions](console-functions.md)**. Popup attributes have no equivalent as popup menus are the responsibility of the command-line client application in the **virtual terminal** world. Finally, the size of the window and the full screen status are considered privileges owned by the user in the **virtual terminal** world and have no equivalent sequence.
+> This API has a partial `[virtual terminal](console-virtual-terminal-sequences.md)` equivalent. `[Cursor positioning buffer](console-virtual-terminal-sequences.md#cursor-positioning)` and `[text attributes](console-virtual-terminal-sequences.md#text-formatting)` have specific sequence equivalents. The color table is not configurable, but `[extended colors](console-virtual-terminal-sequences.md#extended-colors)` are available beyond what is normally available through `[console functions](console-functions.md)`. Popup attributes have no equivalent as popup menus are the responsibility of the command-line client application in the `virtual terminal` world. Finally, the size of the window and the full screen status are considered privileges owned by the user in the `virtual terminal` world and have no equivalent sequence.
 
 ## Requirements
 
@@ -78,6 +78,6 @@ If the function fails, the return value is zero. To get extended error informati
 
 [Console Functions](console-functions.md)
 
-[**CONSOLE\_SCREEN\_BUFFER\_INFOEX**](console-screen-buffer-infoex.md)
+[`CONSOLE\_SCREEN\_BUFFER\_INFOEX`](console-screen-buffer-infoex.md)
 
-[**GetConsoleScreenBufferInfoEx**](getconsolescreenbufferinfoex.md)
+[`GetConsoleScreenBufferInfoEx`](getconsolescreenbufferinfoex.md)

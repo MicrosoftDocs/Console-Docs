@@ -17,13 +17,13 @@ ms.assetid: f1c72277-f06c-4147-a74c-6aaf6feb730e
 
 # Registering a Control Handler Function
 
-This is an example of the [**SetConsoleCtrlHandler**](setconsolectrlhandler.md) function that is used to install a control handler.
+This is an example of the [`SetConsoleCtrlHandler`](setconsolectrlhandler.md) function that is used to install a control handler.
 
-When a CTRL+C signal is received, the control handler returns **TRUE**, indicating that it has handled the signal. Doing this prevents other control handlers from being called.
+When a CTRL+C signal is received, the control handler returns `TRUE`, indicating that it has handled the signal. Doing this prevents other control handlers from being called.
 
-When a **CTRL\_CLOSE\_EVENT** signal is received, the control handler returns **TRUE** and the process terminates.
+When a `CTRL\_CLOSE\_EVENT` signal is received, the control handler returns `TRUE` and the process terminates.
 
-When a **CTRL\_BREAK\_EVENT**, **CTRL\_LOGOFF\_EVENT**, or **CTRL\_SHUTDOWN\_EVENT** signal is received, the control handler returns **FALSE**. Doing this causes the signal to be passed to the next control handler function. If no other control handlers have been registered or none of the registered handlers returns **TRUE**, the default handler will be used, resulting in the process being terminated.
+When a `CTRL\_BREAK\_EVENT`, `CTRL\_LOGOFF\_EVENT`, or `CTRL\_SHUTDOWN\_EVENT` signal is received, the control handler returns `FALSE`. Doing this causes the signal to be passed to the next control handler function. If no other control handlers have been registered or none of the registered handlers returns `TRUE`, the default handler will be used, resulting in the process being terminated.
 
 ```C
 // CtrlHandler.cpp : This file contains the 'main' function. Program execution begins and ends there.

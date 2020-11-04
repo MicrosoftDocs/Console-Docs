@@ -45,12 +45,12 @@ typedef struct _WINDOW_BUFFER_SIZE_RECORD {
 
 ## Members
 
-**dwSize**  
-A [**COORD**](coord-str.md) structure that contains the size of the console screen buffer, in character cell columns and rows.
+`dwSize`  
+A [`COORD`](coord-str.md) structure that contains the size of the console screen buffer, in character cell columns and rows.
 
 ## Remarks
 
-Buffer size events are placed in the input buffer when the console is in window-aware mode (**ENABLE\_WINDOW\_INPUT**).
+Buffer size events are placed in the input buffer when the console is in window-aware mode (`ENABLE\_WINDOW\_INPUT`).
 
 ## Examples
 
@@ -66,8 +66,8 @@ For an example, see [Reading Input Buffer Events](reading-input-buffer-events.md
 
 ## See also
 
-[**COORD**](coord-str.md)
+[`COORD`](coord-str.md)
 
-[**INPUT\_RECORD**](input-record-str.md)
+[`INPUT\_RECORD`](input-record-str.md)
 
-[**ReadConsoleInput**](readconsoleinput.md)
+[`ReadConsoleInput`](readconsoleinput.md)

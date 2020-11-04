@@ -35,7 +35,7 @@ api_type:
 
 [!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
-Describes a menu event in a console [**INPUT\_RECORD**](input-record-str.md) structure. These events are used internally and should be ignored.
+Describes a menu event in a console [`INPUT\_RECORD`](input-record-str.md) structure. These events are used internally and should be ignored.
 
 ## Syntax
 
@@ -47,7 +47,7 @@ typedef struct _MENU_EVENT_RECORD {
 
 ## Members
 
-**dwCommandId**  
+`dwCommandId`  
 Reserved.
 
 ## Requirements
@@ -60,4 +60,4 @@ Reserved.
 
 ## See also
 
-[**INPUT\_RECORD**](input-record-str.md)
+[`INPUT\_RECORD`](input-record-str.md)

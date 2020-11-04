@@ -53,17 +53,17 @@ The display mode of the console. This parameter can be one or more of the follow
 
 | Value | Meaning |
 |-|-|
-| **CONSOLE_FULLSCREEN_MODE** 1 | Text is displayed in full-screen mode. |
-| **CONSOLE_WINDOWED_MODE** 2 | Text is displayed in a console window. |
+| `CONSOLE_FULLSCREEN_MODE` 1 | Text is displayed in full-screen mode. |
+| `CONSOLE_WINDOWED_MODE` 2 | Text is displayed in a console window. |
 
 *lpNewScreenBufferDimensions* \[out, optional\]  
-A pointer to a [**COORD**](coord-str.md) structure that receives the new dimensions of the screen buffer, in characters.
+A pointer to a [`COORD`](coord-str.md) structure that receives the new dimensions of the screen buffer, in characters.
 
 ## Return value
 
 If the function succeeds, the return value is nonzero.
 
-If the function fails, the return value is zero. To get extended error information, call [**GetLastError**](https://msdn.microsoft.com/library/windows/desktop/ms679360).
+If the function fails, the return value is zero. To get extended error information, call [`GetLastError`](https://msdn.microsoft.com/library/windows/desktop/ms679360).
 
 ## Remarks
 
@@ -85,4 +85,4 @@ If the function fails, the return value is zero. To get extended error informati
 
 [Console Modes](console-modes.md)
 
-[**GetConsoleDisplayMode**](getconsoledisplaymode.md)
+[`GetConsoleDisplayMode`](getconsoledisplaymode.md)

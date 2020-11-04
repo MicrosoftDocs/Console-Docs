@@ -22,7 +22,7 @@ There are four ways to clear the screen in a console application.
 ## Example 1
 
 > [!TIP]
-> This is the recommended method using **[virtual terminal sequences](console-virtual-terminal-sequences.md)** for all new development. For more information, see the discussion of **[classic console APIs versus virtual terminal sequences](classic-vs-vt.md)**.
+> This is the recommended method using `[virtual terminal sequences](console-virtual-terminal-sequences.md)` for all new development. For more information, see the discussion of `[classic console APIs versus virtual terminal sequences](classic-vs-vt.md)`.
 
 The first method is to set your application up for virtual terminal output sequences and then call the "clear screen" command.
 
@@ -72,7 +72,7 @@ int main( void )
 }
 ```
 
-You can find additional variations on this command in the virtual terminal sequences documentation on **[Erase In Display](console-virtual-terminal-sequences.md#text-modification)**.
+You can find additional variations on this command in the virtual terminal sequences documentation on `[Erase In Display](console-virtual-terminal-sequences.md#text-modification)`.
 
 ## Example 2
 
@@ -135,7 +135,7 @@ int main(void)
 
 ## Example 3
 
-The third method is to write a function to programmatically clear the screen using the [**FillConsoleOutputCharacter**](fillconsoleoutputcharacter.md) and [**FillConsoleOutputAttribute**](fillconsoleoutputattribute.md) functions.
+The third method is to write a function to programmatically clear the screen using the [`FillConsoleOutputCharacter`](fillconsoleoutputcharacter.md) and [`FillConsoleOutputAttribute`](fillconsoleoutputattribute.md) functions.
 
 The following sample code demonstrates this technique.
 

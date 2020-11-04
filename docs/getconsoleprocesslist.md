@@ -55,13 +55,13 @@ If the function succeeds, the return value is less than or equal to *dwProcessCo
 
 If the buffer is too small to hold all the valid process identifiers, the return value is the required number of array elements. The function will have stored no identifiers in the buffer. In this situation, use the return value to allocate a buffer that is large enough to store the entire list and call the function again.
 
-If the return value is zero, the function has failed, because every console has at least one process associated with it. To get extended error information, call [**GetLastError**](https://msdn.microsoft.com/library/windows/desktop/ms679360).
+If the return value is zero, the function has failed, because every console has at least one process associated with it. To get extended error information, call [`GetLastError`](https://msdn.microsoft.com/library/windows/desktop/ms679360).
 
-If a `NULL` process list was provided or the process count was 0, the call will return 0 and `GetLastError` will return `ERROR_INVALID_PARAMETER`. Please provide a buffer of at least one element to call this function. Allocate a larger buffer and call again if the return code is larger than the length of the provided buffer.
+If a `NULL` process list was provided or the process count was 0, the call will return 0 and ``GetLastError` will return `ERROR_INVALID_PARAMETER`. Please provide a buffer of at least one element to call this function. Allocate a larger buffer and call again if the return code is larger than the length of the provided buffer.
 
 ## Remarks
 
-To compile an application that uses this function, define **\_WIN32\_WINNT** as 0x0501 or later. For more information, see [Using the Windows Headers](https://msdn.microsoft.com/library/windows/desktop/aa383745).
+To compile an application that uses this function, define `\_WIN32\_WINNT` as 0x0501 or later. For more information, see [Using the Windows Headers](https://msdn.microsoft.com/library/windows/desktop/aa383745).
 
 [!INCLUDE [no-vt-equiv-local-context](./includes/no-vt-equiv-local-context.md)]
 
@@ -77,6 +77,6 @@ To compile an application that uses this function, define **\_WIN32\_WINNT** as 
 
 ## See also
 
-[**AttachConsole**](attachconsole.md)
+[`AttachConsole`](attachconsole.md)
 
 [Console Functions](console-functions.md)

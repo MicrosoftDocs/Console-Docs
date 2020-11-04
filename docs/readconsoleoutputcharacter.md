@@ -60,7 +60,7 @@ BOOL WINAPI ReadConsoleOutputCharacter(
 ## Parameters
 
 *hConsoleOutput* \[in\]  
-A handle to the console screen buffer. The handle must have the **GENERIC\_READ** access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
+A handle to the console screen buffer. The handle must have the `GENERIC\_READ` access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
 
 *lpCharacter* \[out\]  
 A pointer to a buffer that receives the characters read from the console screen buffer.
@@ -69,7 +69,7 @@ A pointer to a buffer that receives the characters read from the console screen 
 The number of screen buffer character cells from which to read. The size of the buffer pointed to by the *lpCharacter* parameter should be `nLength * sizeof(TCHAR)`.
 
 *dwReadCoord* \[in\]  
-The coordinates of the first cell in the console screen buffer from which to read, in characters. The **X** member of the [**COORD**](coord-str.md) structure is the column, and the **Y** member is the row.
+The coordinates of the first cell in the console screen buffer from which to read, in characters. The `X` member of the [`COORD`](coord-str.md) structure is the column, and the `Y` member is the row.
 
 *lpNumberOfCharsRead* \[out\]  
 A pointer to a variable that receives the number of characters actually read.
@@ -78,7 +78,7 @@ A pointer to a variable that receives the number of characters actually read.
 
 If the function succeeds, the return value is nonzero.
 
-If the function fails, the return value is zero. To get extended error information, call [**GetLastError**](https://msdn.microsoft.com/library/windows/desktop/ms679360).
+If the function fails, the return value is zero. To get extended error information, call [`GetLastError`](https://msdn.microsoft.com/library/windows/desktop/ms679360).
 
 ## Remarks
 
@@ -97,26 +97,26 @@ If the number of characters to be read from extends beyond the end of the specif
 | Header | ConsoleApi2.h (via WinCon.h, include Windows.h) |
 | Library | Kernel32.lib |
 | DLL | Kernel32.dll |
-| Unicode and ANSI names | **ReadConsoleOutputCharacterW** (Unicode) and **ReadConsoleOutputCharacterA** (ANSI) |
+| Unicode and ANSI names | `ReadConsoleOutputCharacterW` (Unicode) and `ReadConsoleOutputCharacterA` (ANSI) |
 
 ## See also
 
 [Console Functions](console-functions.md)
 
-[**COORD**](coord-str.md)
+[`COORD`](coord-str.md)
 
 [Low-Level Console Output Functions](low-level-console-output-functions.md)
 
-[**ReadConsoleOutput**](readconsoleoutput.md)
+[`ReadConsoleOutput`](readconsoleoutput.md)
 
-[**ReadConsoleOutputAttribute**](readconsoleoutputattribute.md)
+[`ReadConsoleOutputAttribute`](readconsoleoutputattribute.md)
 
-[**SetConsoleCP**](setconsolecp.md)
+[`SetConsoleCP`](setconsolecp.md)
 
-[**SetConsoleOutputCP**](setconsoleoutputcp.md)
+[`SetConsoleOutputCP`](setconsoleoutputcp.md)
 
-[**WriteConsoleOutput**](writeconsoleoutput.md)
+[`WriteConsoleOutput`](writeconsoleoutput.md)
 
-[**WriteConsoleOutputAttribute**](writeconsoleoutputattribute.md)
+[`WriteConsoleOutputAttribute`](writeconsoleoutputattribute.md)
 
-[**WriteConsoleOutputCharacter**](writeconsoleoutputcharacter.md)
+[`WriteConsoleOutputCharacter`](writeconsoleoutputcharacter.md)

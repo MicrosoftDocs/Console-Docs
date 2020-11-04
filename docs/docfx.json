@@ -3,25 +3,25 @@
     "content": [
       {
         "files": [
-          "**/*.md"
+          "`/*.md"
         ],
         "exclude": [
-          "**/obj/**",
-          "console/**",
-          "**/includes/**"
+          "`/obj/`",
+          "console/`",
+          "`/includes/`"
         ]
       }
     ],
     "resource": [
       {
         "files": [
-          "**/*.png",
-          "**/*.jpg"
+          "`/*.png",
+          "`/*.jpg"
         ],
         "exclude": [
-          "**/obj/**",
-          "console/**",
-          "**/includes/**"
+          "`/obj/`",
+          "console/`",
+          "`/includes/`"
         ]
       }
     ],

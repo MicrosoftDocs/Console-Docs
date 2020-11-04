@@ -62,13 +62,13 @@ The size of the buffer pointed to by *lpExeNameBuffer*, in bytes.
 
 If the function succeeds, the return value is nonzero.
 
-If the function fails, the return value is zero. To get extended error information, call [**GetLastError**](https://msdn.microsoft.com/library/windows/desktop/ms679360).
+If the function fails, the return value is zero. To get extended error information, call [`GetLastError`](https://msdn.microsoft.com/library/windows/desktop/ms679360).
 
 ## Remarks
 
-To determine the required size for the *lpExeNameBuffer* buffer, use the [**GetConsoleAliasExesLength**](getconsolealiasexeslength.md) function.
+To determine the required size for the *lpExeNameBuffer* buffer, use the [`GetConsoleAliasExesLength`](getconsolealiasexeslength.md) function.
 
-To compile an application that uses this function, define **\_WIN32\_WINNT** as 0x0501 or later. For more information, see [Using the Windows Headers](https://msdn.microsoft.com/library/windows/desktop/aa383745).
+To compile an application that uses this function, define `\_WIN32\_WINNT` as 0x0501 or later. For more information, see [Using the Windows Headers](https://msdn.microsoft.com/library/windows/desktop/aa383745).
 
 [!INCLUDE [no-vt-equiv-shell-banner](./includes/no-vt-equiv-shell-banner.md)]
 
@@ -81,18 +81,18 @@ To compile an application that uses this function, define **\_WIN32\_WINNT** as 
 | Header | ConsoleApi3.h (via WinCon.h, include Windows.h) |
 | Library | Kernel32.lib |
 | DLL | Kernel32.dll |
-| Unicode and ANSI names | **GetConsoleAliasExesW** (Unicode) and **GetConsoleAliasExesA** (ANSI) |
+| Unicode and ANSI names | `GetConsoleAliasExesW` (Unicode) and `GetConsoleAliasExesA` (ANSI) |
 
 ## See also
 
-[**AddConsoleAlias**](addconsolealias.md)
+[`AddConsoleAlias`](addconsolealias.md)
 
 [Console Aliases](console-aliases.md)
 
 [Console Functions](console-functions.md)
 
-[**GetConsoleAlias**](getconsolealias.md)
+[`GetConsoleAlias`](getconsolealias.md)
 
-[**GetConsoleAliasExesLength**](getconsolealiasexeslength.md)
+[`GetConsoleAliasExesLength`](getconsolealiasexeslength.md)
 
-[**GetConsoleAliases**](getconsolealiases.md)
+[`GetConsoleAliases`](getconsolealiases.md)

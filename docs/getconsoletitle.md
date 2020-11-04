@@ -68,20 +68,20 @@ The size of the buffer pointed to by the *lpConsoleTitle* parameter, in characte
 
 If the function succeeds, the return value is the length of the console window's title, in characters.
 
-If the function fails, the return value is zero and [**GetLastError**](https://msdn.microsoft.com/library/windows/desktop/ms679360) returns the error code.
+If the function fails, the return value is zero and [`GetLastError`](https://msdn.microsoft.com/library/windows/desktop/ms679360) returns the error code.
 
 ## Remarks
 
-To set the title for a console window, use the [**SetConsoleTitle**](setconsoletitle.md) function. To retrieve the original title string, use the [**GetConsoleOriginalTitle**](getconsoleoriginaltitle.md) function.
+To set the title for a console window, use the [`SetConsoleTitle`](setconsoletitle.md) function. To retrieve the original title string, use the [`GetConsoleOriginalTitle`](getconsoleoriginaltitle.md) function.
 
 [!INCLUDE [setting-codepage-mode-remarks](./includes/setting-codepage-mode-remarks.md)]
 
 > [!TIP]
-> This API is not recommended and does not have a **[virtual terminal](console-virtual-terminal-sequences.md)** equivalent. This decision intentionally aligns the Windows platform with other operating systems. Applications remoting via cross-platform utilities and transports like SSH may not work as expected if using this API.
+> This API is not recommended and does not have a `[virtual terminal](console-virtual-terminal-sequences.md)` equivalent. This decision intentionally aligns the Windows platform with other operating systems. Applications remoting via cross-platform utilities and transports like SSH may not work as expected if using this API.
 
 ## Examples
 
-For an example, see [**SetConsoleTitle**](setconsoletitle.md).
+For an example, see [`SetConsoleTitle`](setconsoletitle.md).
 
 ## Requirements
 
@@ -92,16 +92,16 @@ For an example, see [**SetConsoleTitle**](setconsoletitle.md).
 | Header | ConsoleApi2.h (via WinCon.h, include Windows.h) |
 | Library | Kernel32.lib |
 | DLL | Kernel32.dll |
-| Unicode and ANSI names | **GetConsoleTitleW** (Unicode) and **GetConsoleTitleA** (ANSI) |
+| Unicode and ANSI names | `GetConsoleTitleW` (Unicode) and `GetConsoleTitleA` (ANSI) |
 
 ## See also
 
 [Console Functions](console-functions.md)
 
-[**GetConsoleOriginalTitle**](getconsoleoriginaltitle.md)
+[`GetConsoleOriginalTitle`](getconsoleoriginaltitle.md)
 
-[**SetConsoleCP**](setconsolecp.md)
+[`SetConsoleCP`](setconsolecp.md)
 
-[**SetConsoleOutputCP**](setconsoleoutputcp.md)
+[`SetConsoleOutputCP`](setconsoleoutputcp.md)
 
-[**SetConsoleTitle**](setconsoletitle.md)
+[`SetConsoleTitle`](setconsoletitle.md)

@@ -33,7 +33,7 @@ api_type:
 
 # FOCUS\_EVENT\_RECORD structure
 
-Describes a focus event in a console [**INPUT\_RECORD**](input-record-str.md) structure. These events are used internally and should be ignored.
+Describes a focus event in a console [`INPUT\_RECORD`](input-record-str.md) structure. These events are used internally and should be ignored.
 
 ## Syntax
 
@@ -45,7 +45,7 @@ typedef struct _FOCUS_EVENT_RECORD {
 
 ## Members
 
-**bSetFocus**  
+`bSetFocus`  
 Reserved.
 
 ## Requirements
@@ -58,4 +58,4 @@ Reserved.
 
 ## See also
 
-[**INPUT\_RECORD**](input-record-str.md)
+[`INPUT\_RECORD`](input-record-str.md)

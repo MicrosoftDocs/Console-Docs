@@ -35,7 +35,7 @@ api_type:
 
 [!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
-Sets the attributes of characters written to the console screen buffer by the [**WriteFile**](https://msdn.microsoft.com/library/windows/desktop/aa365747) or [**WriteConsole**](writeconsole.md) function, or echoed by the [**ReadFile**](https://msdn.microsoft.com/library/windows/desktop/aa365467) or [**ReadConsole**](readconsole.md) function. This function affects text written after the function call.
+Sets the attributes of characters written to the console screen buffer by the [`WriteFile`](https://msdn.microsoft.com/library/windows/desktop/aa365747) or [`WriteConsole`](writeconsole.md) function, or echoed by the [`ReadFile`](https://msdn.microsoft.com/library/windows/desktop/aa365467) or [`ReadConsole`](readconsole.md) function. This function affects text written after the function call.
 
 ## Syntax
 
@@ -49,7 +49,7 @@ BOOL WINAPI SetConsoleTextAttribute(
 ## Parameters
 
 *hConsoleOutput* \[in\]  
-A handle to the console screen buffer. The handle must have the **GENERIC\_READ** access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
+A handle to the console screen buffer. The handle must have the `GENERIC\_READ` access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
 
 *wAttributes* \[in\]  
 The [character attributes](console-screen-buffers.md#character-attributes).
@@ -58,14 +58,14 @@ The [character attributes](console-screen-buffers.md#character-attributes).
 
 If the function succeeds, the return value is nonzero.
 
-If the function fails, the return value is zero. To get extended error information, call [**GetLastError**](https://msdn.microsoft.com/library/windows/desktop/ms679360).
+If the function fails, the return value is zero. To get extended error information, call [`GetLastError`](https://msdn.microsoft.com/library/windows/desktop/ms679360).
 
 ## Remarks
 
-To determine the current color attributes of a screen buffer, call the [**GetConsoleScreenBufferInfo**](getconsolescreenbufferinfo.md) function.
+To determine the current color attributes of a screen buffer, call the [`GetConsoleScreenBufferInfo`](getconsolescreenbufferinfo.md) function.
 
 > [!TIP]
-> This API has a **[virtual terminal](console-virtual-terminal-sequences.md)** equivalent in the **[text formatting](console-virtual-terminal-sequences.md#text-formatting)** sequences. _Virtual terminal sequences_ are recommended for all new and ongoing development.
+> This API has a `[virtual terminal](console-virtual-terminal-sequences.md)` equivalent in the `[text formatting](console-virtual-terminal-sequences.md#text-formatting)` sequences. _Virtual terminal sequences_ are recommended for all new and ongoing development.
 
 ## Examples
 
@@ -87,12 +87,12 @@ For an example, see [Using the High-Level Input and Output Functions](using-the-
 
 [Console Screen Buffers](console-screen-buffers.md)
 
-[**GetConsoleScreenBufferInfo**](getconsolescreenbufferinfo.md)
+[`GetConsoleScreenBufferInfo`](getconsolescreenbufferinfo.md)
 
-[**ReadConsole**](readconsole.md)
+[`ReadConsole`](readconsole.md)
 
-[**ReadFile**](https://msdn.microsoft.com/library/windows/desktop/aa365467)
+[`ReadFile`](https://msdn.microsoft.com/library/windows/desktop/aa365467)
 
-[**WriteConsole**](writeconsole.md)
+[`WriteConsole`](writeconsole.md)
 
-[**WriteFile**](https://msdn.microsoft.com/library/windows/desktop/aa365747)
+[`WriteFile`](https://msdn.microsoft.com/library/windows/desktop/aa365747)

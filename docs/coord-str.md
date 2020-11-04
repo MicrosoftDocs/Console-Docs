@@ -46,10 +46,10 @@ typedef struct _COORD {
 
 ## Members
 
-**X**  
+`X`  
 The horizontal coordinate or column value. The units depend on the function call.
 
-**Y**  
+`Y`  
 The vertical coordinate or row value. The units depend on the function call.
 
 ## Examples
@@ -66,40 +66,40 @@ For an example, see [Scrolling a Screen Buffer's Contents](scrolling-a-screen-bu
 
 ## See also
 
-[**CONSOLE\_FONT\_INFO**](console-font-info-str.md)
+[`CONSOLE\_FONT\_INFO`](console-font-info-str.md)
 
-[**CONSOLE\_SCREEN\_BUFFER\_INFO**](console-screen-buffer-info-str.md)
+[`CONSOLE\_SCREEN\_BUFFER\_INFO`](console-screen-buffer-info-str.md)
 
-[**CONSOLE\_SELECTION\_INFO**](console-selection-info-str.md)
+[`CONSOLE\_SELECTION\_INFO`](console-selection-info-str.md)
 
-[**FillConsoleOutputAttribute**](fillconsoleoutputattribute.md)
+[`FillConsoleOutputAttribute`](fillconsoleoutputattribute.md)
 
-[**FillConsoleOutputCharacter**](fillconsoleoutputcharacter.md)
+[`FillConsoleOutputCharacter`](fillconsoleoutputcharacter.md)
 
-[**GetConsoleFontSize**](getconsolefontsize.md)
+[`GetConsoleFontSize`](getconsolefontsize.md)
 
-[**GetLargestConsoleWindowSize**](getlargestconsolewindowsize.md)
+[`GetLargestConsoleWindowSize`](getlargestconsolewindowsize.md)
 
-[**MOUSE\_EVENT\_RECORD**](mouse-event-record-str.md)
+[`MOUSE\_EVENT\_RECORD`](mouse-event-record-str.md)
 
-[**ReadConsoleOutput**](readconsoleoutput.md)
+[`ReadConsoleOutput`](readconsoleoutput.md)
 
-[**ReadConsoleOutputAttribute**](readconsoleoutputattribute.md)
+[`ReadConsoleOutputAttribute`](readconsoleoutputattribute.md)
 
-[**ReadConsoleOutputCharacter**](readconsoleoutputcharacter.md)
+[`ReadConsoleOutputCharacter`](readconsoleoutputcharacter.md)
 
-[**ScrollConsoleScreenBuffer**](scrollconsolescreenbuffer.md)
+[`ScrollConsoleScreenBuffer`](scrollconsolescreenbuffer.md)
 
-[**SetConsoleCursorPosition**](setconsolecursorposition.md)
+[`SetConsoleCursorPosition`](setconsolecursorposition.md)
 
-[**SetConsoleDisplayMode**](setconsoledisplaymode.md)
+[`SetConsoleDisplayMode`](setconsoledisplaymode.md)
 
-[**SetConsoleScreenBufferSize**](setconsolescreenbuffersize.md)
+[`SetConsoleScreenBufferSize`](setconsolescreenbuffersize.md)
 
-[**WINDOW\_BUFFER\_SIZE\_RECORD**](window-buffer-size-record-str.md)
+[`WINDOW\_BUFFER\_SIZE\_RECORD`](window-buffer-size-record-str.md)
 
-[**WriteConsoleOutput**](writeconsoleoutput.md)
+[`WriteConsoleOutput`](writeconsoleoutput.md)
 
-[**WriteConsoleOutputAttribute**](writeconsoleoutputattribute.md)
+[`WriteConsoleOutputAttribute`](writeconsoleoutputattribute.md)
 
-[**WriteConsoleOutputCharacter**](writeconsoleoutputcharacter.md)
+[`WriteConsoleOutputCharacter`](writeconsoleoutputcharacter.md)

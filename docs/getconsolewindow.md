@@ -54,16 +54,16 @@ This function has no parameters.
 
 ## Return value
 
-The return value is a handle to the window used by the console associated with the calling process or **NULL** if there is no such associated console.
+The return value is a handle to the window used by the console associated with the calling process or `NULL` if there is no such associated console.
 
 ## Remarks
 
-To compile an application that uses this function, define **\_WIN32\_WINNT** as 0x0500 or later. For more information, see [Using the Windows Headers](https://msdn.microsoft.com/library/windows/desktop/aa383745).
+To compile an application that uses this function, define `\_WIN32\_WINNT` as 0x0500 or later. For more information, see [Using the Windows Headers](https://msdn.microsoft.com/library/windows/desktop/aa383745).
 
 
 [!INCLUDE [no-vt-equiv-local-context](./includes/no-vt-equiv-local-context.md)]
 
-For an application that is hosted inside a [**pseudoconsole**](pseudoconsoles.md) session, this function returns a window handle for message queue purposes only. The associated window is not displayed locally as the _pseudoconsole_ is serializing all actions to a stream for presentation on another terminal window elsewhere.
+For an application that is hosted inside a [`pseudoconsole`](pseudoconsoles.md) session, this function returns a window handle for message queue purposes only. The associated window is not displayed locally as the _pseudoconsole_ is serializing all actions to a stream for presentation on another terminal window elsewhere.
 
 ## Requirements
 

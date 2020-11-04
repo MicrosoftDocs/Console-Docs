@@ -54,11 +54,11 @@ A handle to the console screen buffer.
 
 If the function succeeds, the return value is nonzero.
 
-If the function fails, the return value is zero. To get extended error information, call [**GetLastError**](https://msdn.microsoft.com/library/windows/desktop/ms679360).
+If the function fails, the return value is zero. To get extended error information, call [`GetLastError`](https://msdn.microsoft.com/library/windows/desktop/ms679360).
 
 ## Remarks
 
-A console can have multiple screen buffers. **SetConsoleActiveScreenBuffer** determines which one is displayed. You can write to an inactive screen buffer and then use **SetConsoleActiveScreenBuffer** to display the buffer's contents.
+A console can have multiple screen buffers. `SetConsoleActiveScreenBuffer` determines which one is displayed. You can write to an inactive screen buffer and then use `SetConsoleActiveScreenBuffer` to display the buffer's contents.
 
 [!INCLUDE [no-vt-equiv-alt-buf](./includes/no-vt-equiv-alt-buf.md)]
 
@@ -82,4 +82,4 @@ For an example, see [Reading and Writing Blocks of Characters and Attributes](re
 
 [Console Screen Buffers](console-screen-buffers.md)
 
-[**CreateConsoleScreenBuffer**](createconsolescreenbuffer.md)
+[`CreateConsoleScreenBuffer`](createconsolescreenbuffer.md)

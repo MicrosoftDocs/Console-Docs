@@ -13,9 +13,9 @@ f1_keywords:
 - wincon/PCONSOLE_CURSOR_INFO
 - PCONSOLE_CURSOR_INFO
 MS-HAID:
-- '\_win32\_console\_cursor\_info\_str'
-- 'base.console\_cursor\_info\_str'
-- 'consoles.console\_cursor\_info\_str'
+- '\_win32\_`CONSOLE\_CURSOR\_INFO`\_str'
+- 'base.`CONSOLE\_CURSOR\_INFO`\_str'
+- 'consoles.`CONSOLE\_CURSOR\_INFO`\_str'
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/desktop'
@@ -31,7 +31,7 @@ api_type:
 - HeaderDef
 ---
 
-# CONSOLE\_CURSOR\_INFO structure
+# `CONSOLE\_CURSOR\_INFO` structure
 
 [!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
@@ -48,14 +48,14 @@ typedef struct _CONSOLE_CURSOR_INFO {
 
 ## Members
 
-**dwSize**  
+`dwSize`  
 The percentage of the character cell that is filled by the cursor. This value is between 1 and 100. The cursor appearance varies, ranging from completely filling the cell to showing up as a horizontal line at the bottom of the cell.
 
 > [!NOTE]
->While the **dwSize** value is normally between 1 and 100, under some circumstances a value outside of that range might be returned. For example, if **CursorSize** is set to 0 in the registry, the **dwSize** value returned would be 0.
+>While the `dwSize` value is normally between 1 and 100, under some circumstances a value outside of that range might be returned. For example, if `CursorSize` is set to 0 in the registry, the `dwSize` value returned would be 0.
 
- **bVisible**  
-The visibility of the cursor. If the cursor is visible, this member is **TRUE**.
+ `bVisible`  
+The visibility of the cursor. If the cursor is visible, this member is `TRUE`.
 
 ## Requirements
 
@@ -67,6 +67,6 @@ The visibility of the cursor. If the cursor is visible, this member is **TRUE**.
 
 ## See also
 
-[**GetConsoleCursorInfo**](getconsolecursorinfo.md)
+[`GetConsoleCursorInfo`](getconsolecursorinfo.md)
 
-[**SetConsoleCursorInfo**](setconsolecursorinfo.md)
+[`SetConsoleCursorInfo`](setconsolecursorinfo.md)

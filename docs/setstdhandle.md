@@ -53,9 +53,9 @@ The standard device for which the handle is to be set. This parameter can be one
 
 | Value | Meaning |
 |-|-|
-| **STD_INPUT_HANDLE** (DWORD) -10 | The standard input device. Initially, this is the console input buffer, `CONIN$`. |
-| **STD_OUTPUT_HANDLE** (DWORD) -11 | The standard output device. Initially, this is the active console screen buffer, `CONOUT$`. |
-| **STD_ERROR_HANDLE** (DWORD) -12 | The standard error device. Initially, this is the active console screen buffer, `CONOUT$`. |
+| `STD_INPUT_HANDLE` (DWORD) -10 | The standard input device. Initially, this is the console input buffer, `CONIN$`. |
+| `STD_OUTPUT_HANDLE` (DWORD) -11 | The standard output device. Initially, this is the active console screen buffer, `CONOUT$`. |
+| `STD_ERROR_HANDLE` (DWORD) -12 | The standard error device. Initially, this is the active console screen buffer, `CONOUT$`. |
 
 *hHandle* \[in\]  
 The handle for the standard device.
@@ -64,11 +64,11 @@ The handle for the standard device.
 
 If the function succeeds, the return value is nonzero.
 
-If the function fails, the return value is zero. To get extended error information, call [**GetLastError**](https://msdn.microsoft.com/library/windows/desktop/ms679360).
+If the function fails, the return value is zero. To get extended error information, call [`GetLastError`](https://msdn.microsoft.com/library/windows/desktop/ms679360).
 
 ## Remarks
 
-The standard handles of a process may have been redirected by a call to **SetStdHandle**, in which case [**GetStdHandle**](getstdhandle.md) will return the redirected handle. If the standard handles have been redirected, you can specify the CONIN$ value in a call to the [**CreateFile**](https://msdn.microsoft.com/library/windows/desktop/aa363858) function to get a handle to a console's input buffer. Similarly, you can specify the CONOUT$ value to get a handle to the console's active screen buffer.
+The standard handles of a process may have been redirected by a call to `SetStdHandle`, in which case [`GetStdHandle`](getstdhandle.md) will return the redirected handle. If the standard handles have been redirected, you can specify the CONIN$ value in a call to the [`CreateFile`](https://msdn.microsoft.com/library/windows/desktop/aa363858) function to get a handle to a console's input buffer. Similarly, you can specify the CONOUT$ value to get a handle to the console's active screen buffer.
 
 ## Examples
 
@@ -90,6 +90,6 @@ For an example, see [Creating a Child Process with Redirected Input and Output](
 
 [Console Handles](console-handles.md)
 
-[**CreateFile**](https://msdn.microsoft.com/library/windows/desktop/aa363858)
+[`CreateFile`](https://msdn.microsoft.com/library/windows/desktop/aa363858)
 
-[**GetStdHandle**](getstdhandle.md)
+[`GetStdHandle`](getstdhandle.md)

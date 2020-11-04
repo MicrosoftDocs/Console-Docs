@@ -39,7 +39,7 @@ api_type:
 
 [!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
-Retrieves the required size for the buffer used by the [**GetConsoleAliasExes**](getconsolealiasexes.md) function.
+Retrieves the required size for the buffer used by the [`GetConsoleAliasExes`](getconsolealiasexes.md) function.
 
 ## Syntax
 
@@ -57,7 +57,7 @@ The size of the buffer required to store the names of all executable files that 
 
 ## Remarks
 
-To compile an application that uses this function, define **\_WIN32\_WINNT** as 0x0501 or later. For more information, see [Using the Windows Headers](https://msdn.microsoft.com/library/windows/desktop/aa383745).
+To compile an application that uses this function, define `\_WIN32\_WINNT` as 0x0501 or later. For more information, see [Using the Windows Headers](https://msdn.microsoft.com/library/windows/desktop/aa383745).
 
 [!INCLUDE [no-vt-equiv-shell-banner](./includes/no-vt-equiv-shell-banner.md)]
 
@@ -70,18 +70,18 @@ To compile an application that uses this function, define **\_WIN32\_WINNT** as 
 | Header | ConsoleApi3.h (via WinCon.h, include Windows.h) |
 | Library | Kernel32.lib |
 | DLL | Kernel32.dll |
-| Unicode and ANSI names | **GetConsoleAliasExesLengthW** (Unicode) and **GetConsoleAliasExesLengthA** (ANSI) |
+| Unicode and ANSI names | `GetConsoleAliasExesLengthW` (Unicode) and `GetConsoleAliasExesLengthA` (ANSI) |
 
 ## See also
 
-[**AddConsoleAlias**](addconsolealias.md)
+[`AddConsoleAlias`](addconsolealias.md)
 
 [Console Aliases](console-aliases.md)
 
 [Console Functions](console-functions.md)
 
-[**GetConsoleAlias**](getconsolealias.md)
+[`GetConsoleAlias`](getconsolealias.md)
 
-[**GetConsoleAliases**](getconsolealiases.md)
+[`GetConsoleAliases`](getconsolealiases.md)
 
-[**GetConsoleAliasExes**](getconsolealiasexes.md)
+[`GetConsoleAliasExes`](getconsolealiasexes.md)

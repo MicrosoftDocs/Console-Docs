@@ -30,6 +30,6 @@ Both of the following console output modes are enabled for a console screen buff
 
 All three input modes, along with processed output mode, are designed to work together. It is best to either enable or disable all of these modes as a group. When all are enabled, the application is said to be in "cooked" mode, which means that most of the processing is handled for the application. When all are disabled, the application is in "raw" mode, which means that input is unfiltered and any processing is left to the application.
 
-An application can use the [**GetConsoleMode**](getconsolemode.md) function to determine the current mode of a console's input buffer or screen buffer. You can enable or disable any of these modes by using the following values in the [**SetConsoleMode**](setconsolemode.md) function. Note that setting the output mode of one screen buffer does not affect the output mode of other screen buffers.
+An application can use the [`GetConsoleMode`](getconsolemode.md) function to determine the current mode of a console's input buffer or screen buffer. You can enable or disable any of these modes by using the following values in the [`SetConsoleMode`](setconsolemode.md) function. Note that setting the output mode of one screen buffer does not affect the output mode of other screen buffers.
 
 [!INCLUDE [console-mode-flags](./includes/console-mode-flags.md)]

@@ -59,10 +59,10 @@ BOOL WINAPI PeekConsoleInput(
 ## Parameters
 
 *hConsoleInput* \[in\]  
-A handle to the console input buffer. The handle must have the **GENERIC\_READ** access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
+A handle to the console input buffer. The handle must have the `GENERIC\_READ` access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
 
 *lpBuffer* \[out\]  
-A pointer to an array of [**INPUT\_RECORD**](input-record-str.md) structures that receives the input buffer data.
+A pointer to an array of [`INPUT\_RECORD`](input-record-str.md) structures that receives the input buffer data.
 
 *nLength* \[in\]  
 The size of the array pointed to by the *lpBuffer* parameter, in array elements.
@@ -74,7 +74,7 @@ A pointer to a variable that receives the number of input records read.
 
 If the function succeeds, the return value is nonzero.
 
-If the function fails, the return value is zero. To get extended error information, call [**GetLastError**](https://msdn.microsoft.com/library/windows/desktop/ms679360).
+If the function fails, the return value is zero. To get extended error information, call [`GetLastError`](https://msdn.microsoft.com/library/windows/desktop/ms679360).
 
 ## Remarks
 
@@ -91,18 +91,18 @@ If the number of records requested exceeds the number of records available in th
 | Header | ConsoleApi.h (via WinCon.h, include Windows.h) |
 | Library | Kernel32.lib |
 | DLL | Kernel32.dll |
-| Unicode and ANSI names | **PeekConsoleInputW** (Unicode) and **PeekConsoleInputA** (ANSI) |
+| Unicode and ANSI names | `PeekConsoleInputW` (Unicode) and `PeekConsoleInputA` (ANSI) |
 
 ## See also
 
 [Console Functions](console-functions.md)
 
-[**ReadConsoleInput**](readconsoleinput.md)
+[`ReadConsoleInput`](readconsoleinput.md)
 
-[**SetConsoleCP**](setconsolecp.md)
+[`SetConsoleCP`](setconsolecp.md)
 
-[**SetConsoleOutputCP**](setconsoleoutputcp.md)
+[`SetConsoleOutputCP`](setconsoleoutputcp.md)
 
-[**WriteConsoleInput**](writeconsoleinput.md)
+[`WriteConsoleInput`](writeconsoleinput.md)
 
-[**INPUT\_RECORD**](input-record-str.md)
+[`INPUT\_RECORD`](input-record-str.md)

@@ -49,17 +49,17 @@ This function has no parameters.
 
 If the function succeeds, the return value is nonzero.
 
-If the function fails, the return value is zero. To get extended error information, call [**GetLastError**](https://msdn.microsoft.com/library/windows/desktop/ms679360).
+If the function fails, the return value is zero. To get extended error information, call [`GetLastError`](https://msdn.microsoft.com/library/windows/desktop/ms679360).
 
 ## Remarks
 
-A process can be associated with only one console, so the **AllocConsole** function fails if the calling process already has a console. A process can use the [**FreeConsole**](freeconsole.md) function to detach itself from its current console, then it can call **AllocConsole** to create a new console or [**AttachConsole**](attachconsole.md) to attach to another console.
+A process can be associated with only one console, so the `AllocConsole` function fails if the calling process already has a console. A process can use the [`FreeConsole`](freeconsole.md) function to detach itself from its current console, then it can call `AllocConsole` to create a new console or [`AttachConsole`](attachconsole.md) to attach to another console.
 
 If the calling process creates a child process, the child inherits the new console.
 
-**AllocConsole** initializes standard input, standard output, and standard error handles for the new console. The standard input handle is a handle to the console's input buffer, and the standard output and standard error handles are handles to the console's screen buffer. To retrieve these handles, use the [**GetStdHandle**](getstdhandle.md) function.
+`AllocConsole` initializes standard input, standard output, and standard error handles for the new console. The standard input handle is a handle to the console's input buffer, and the standard output and standard error handles are handles to the console's screen buffer. To retrieve these handles, use the [`GetStdHandle`](getstdhandle.md) function.
 
-This function is primarily used by a graphical user interface (GUI) application to create a console window. GUI applications are initialized without a console. Console applications are initialized with a console, unless they are created as detached processes (by calling the [**CreateProcess**](https://msdn.microsoft.com/library/windows/desktop/ms682425) function with the **DETACHED\_PROCESS** flag).
+This function is primarily used by a graphical user interface (GUI) application to create a console window. GUI applications are initialized without a console. Console applications are initialized with a console, unless they are created as detached processes (by calling the [`CreateProcess`](https://msdn.microsoft.com/library/windows/desktop/ms682425) function with the `DETACHED\_PROCESS` flag).
 
 ## Requirements
 
@@ -77,10 +77,10 @@ This function is primarily used by a graphical user interface (GUI) application 
 
 [Consoles](consoles.md)
 
-[**AttachConsole**](attachconsole.md)
+[`AttachConsole`](attachconsole.md)
 
-[**CreateProcess**](https://msdn.microsoft.com/library/windows/desktop/ms682425)
+[`CreateProcess`](https://msdn.microsoft.com/library/windows/desktop/ms682425)
 
-[**FreeConsole**](freeconsole.md)
+[`FreeConsole`](freeconsole.md)
 
-[**GetStdHandle**](getstdhandle.md)
+[`GetStdHandle`](getstdhandle.md)

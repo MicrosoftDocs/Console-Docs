@@ -49,21 +49,21 @@ typedef struct {
 
 ## Members
 
-**cbSize**  
+`cbSize`  
 The size of the structure, in bytes. Set this member to `sizeof(CONSOLE_HISTORY_INFO)`.
 
-**HistoryBufferSize**  
+`HistoryBufferSize`  
 The number of commands kept in each history buffer.
 
-**NumberOfHistoryBuffers**  
+`NumberOfHistoryBuffers`  
 The number of history buffers kept for this console process.
 
-**dwFlags**  
+`dwFlags`  
 This parameter can be zero or the following value.
 
 | Value | Meaning |
 |-|-|
-| **HISTORY_NO_DUP_FLAG** 0x1 | Duplicate entries will not be stored in the history buffer.
+| `HISTORY_NO_DUP_FLAG` 0x1 | Duplicate entries will not be stored in the history buffer.
 
 ## Requirements
 
@@ -75,6 +75,6 @@ This parameter can be zero or the following value.
 
 ## See also
 
-[**GetConsoleHistoryInfo**](getconsolehistoryinfo.md)
+[`GetConsoleHistoryInfo`](getconsolehistoryinfo.md)
 
-[**SetConsoleHistoryInfo**](setconsolehistoryinfo.md)
+[`SetConsoleHistoryInfo`](setconsolehistoryinfo.md)

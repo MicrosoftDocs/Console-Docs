@@ -51,14 +51,14 @@ A pointer to a variable that receives the number of mouse buttons.
 
 If the function succeeds, the return value is nonzero.
 
-If the function fails, the return value is zero. To get extended error information, call [**GetLastError**](https://msdn.microsoft.com/library/windows/desktop/ms679360).
+If the function fails, the return value is zero. To get extended error information, call [`GetLastError`](https://msdn.microsoft.com/library/windows/desktop/ms679360).
 
 ## Remarks
 
-When a console receives mouse input, an [**INPUT\_RECORD**](input-record-str.md) structure containing a [**MOUSE\_EVENT\_RECORD**](mouse-event-record-str.md) structure is placed in the console's input buffer. The **dwButtonState** member of **MOUSE\_EVENT\_RECORD** has a bit indicating the state of each mouse button. The bit is 1 if the button is down and 0 if the button is up. To determine the number of bits that are significant, use **GetNumberOfConsoleMouseButtons**.
+When a console receives mouse input, an [`INPUT\_RECORD`](input-record-str.md) structure containing a [`MOUSE\_EVENT\_RECORD`](mouse-event-record-str.md) structure is placed in the console's input buffer. The `dwButtonState` member of `MOUSE\_EVENT\_RECORD` has a bit indicating the state of each mouse button. The bit is 1 if the button is down and 0 if the button is up. To determine the number of bits that are significant, use `GetNumberOfConsoleMouseButtons`.
 
 > [!TIP]
-> This API is not recommended and does not have a **[virtual terminal](console-virtual-terminal-sequences.md)** equivalent. This decision intentionally aligns the Windows platform with other operating systems. This state is only relevant to the local user, session, and privilege context. Applications remoting via cross-platform utilities and transports like SSH may not work as expected if using this API.
+> This API is not recommended and does not have a `[virtual terminal](console-virtual-terminal-sequences.md)` equivalent. This decision intentionally aligns the Windows platform with other operating systems. This state is only relevant to the local user, session, and privilege context. Applications remoting via cross-platform utilities and transports like SSH may not work as expected if using this API.
 
 ## Requirements
 
@@ -76,8 +76,8 @@ When a console receives mouse input, an [**INPUT\_RECORD**](input-record-str.md)
 
 [Console Input Buffer](console-input-buffer.md)
 
-[**ReadConsoleInput**](readconsoleinput.md)
+[`ReadConsoleInput`](readconsoleinput.md)
 
-[**INPUT\_RECORD**](input-record-str.md)
+[`INPUT\_RECORD`](input-record-str.md)
 
-[**MOUSE\_EVENT\_RECORD**](mouse-event-record-str.md)
+[`MOUSE\_EVENT\_RECORD`](mouse-event-record-str.md)

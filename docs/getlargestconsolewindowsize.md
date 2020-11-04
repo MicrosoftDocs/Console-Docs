@@ -52,13 +52,13 @@ A handle to the console screen buffer.
 
 ## Return value
 
-If the function succeeds, the return value is a [**COORD**](coord-str.md) structure that specifies the number of character cell columns (**X** member) and rows (**Y** member) in the largest possible console window. Otherwise, the members of the structure are zero.
+If the function succeeds, the return value is a [`COORD`](coord-str.md) structure that specifies the number of character cell columns (`X` member) and rows (`Y` member) in the largest possible console window. Otherwise, the members of the structure are zero.
 
-To get extended error information, call [**GetLastError**](https://msdn.microsoft.com/library/windows/desktop/ms679360).
+To get extended error information, call [`GetLastError`](https://msdn.microsoft.com/library/windows/desktop/ms679360).
 
 ## Remarks
 
-The function does not take into consideration the size of the console screen buffer, which means that the window size returned may be larger than the size of the console screen buffer. The [**GetConsoleScreenBufferInfo**](getconsolescreenbufferinfo.md) function can be used to determine the maximum size of the console window, given the current screen buffer size, the current font, and the display size.
+The function does not take into consideration the size of the console screen buffer, which means that the window size returned may be larger than the size of the console screen buffer. The [`GetConsoleScreenBufferInfo`](getconsolescreenbufferinfo.md) function can be used to determine the maximum size of the console window, given the current screen buffer size, the current font, and the display size.
 
 [!INCLUDE [no-vt-equiv-user-priv](./includes/no-vt-equiv-user-priv.md)]
 
@@ -76,10 +76,10 @@ The function does not take into consideration the size of the console screen buf
 
 [Console Functions](console-functions.md)
 
-[**COORD**](coord-str.md)
+[`COORD`](coord-str.md)
 
-[**GetConsoleScreenBufferInfo**](getconsolescreenbufferinfo.md)
+[`GetConsoleScreenBufferInfo`](getconsolescreenbufferinfo.md)
 
-[**SetConsoleWindowInfo**](setconsolewindowinfo.md)
+[`SetConsoleWindowInfo`](setconsolewindowinfo.md)
 
 [Window and Screen Buffer Size](window-and-screen-buffer-size.md)

@@ -13,8 +13,8 @@ f1_keywords:
 - wincon/PCONSOLE_FONT_INFOEX
 - PCONSOLE_FONT_INFOEX
 MS-HAID:
-- 'base.console\_font\_infoex'
-- 'consoles.console\_font\_infoex'
+- 'base.CONSOLE\_FONT\_INFOEX'
+- 'consoles.CONSOLE\_FONT\_INFOEX'
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/desktop'
@@ -30,7 +30,7 @@ api_type:
 - HeaderDef
 ---
 
-# CONSOLE\_FONT\_INFOEX structure
+# ``CONSOLE\_FONT\_INFOEX`` structure
 
 [!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
@@ -51,27 +51,27 @@ typedef struct _CONSOLE_FONT_INFOEX {
 
 ## Members
 
-**cbSize**  
-The size of this structure, in bytes. This member must be set to `sizeof(CONSOLE_FONT_INFOEX)` before calling [**GetCurrentConsoleFontEx**](getcurrentconsolefontex.md) or it will fail.
+`cbSize`  
+The size of this structure, in bytes. This member must be set to `sizeof(CONSOLE_FONT_INFOEX)` before calling [`GetCurrentConsoleFontEx`](getcurrentconsolefontex.md) or it will fail.
 
-**nFont**  
+`nFont`  
 The index of the font in the system's console font table.
 
-**dwFontSize**  
-A [**COORD**](coord-str.md) structure that contains the width and height of each character in the font, in logical units. The **X** member contains the width, while the **Y** member contains the height.
+`dwFontSize`  
+A [`COORD`](coord-str.md) structure that contains the width and height of each character in the font, in logical units. The `X` member contains the width, while the `Y` member contains the height.
 
-**FontFamily**  
-The font pitch and family. For information about the possible values for this member, see the description of the **tmPitchAndFamily** member of the [**TEXTMETRIC**](https://msdn.microsoft.com/library/windows/desktop/dd145132) structure.
+`FontFamily`  
+The font pitch and family. For information about the possible values for this member, see the description of the `tmPitchAndFamily` member of the [`TEXTMETRIC`](https://msdn.microsoft.com/library/windows/desktop/dd145132) structure.
 
-**FontWeight**  
+`FontWeight`  
 The font weight. The weight can range from 100 to 1000, in multiples of 100. For example, the normal weight is 400, while 700 is bold.
 
-**FaceName**  
+`FaceName`  
 The name of the typeface (such as Courier or Arial).
 
 ## Remarks
 
-To obtain the size of the font, pass the font index to the [**GetConsoleFontSize**](getconsolefontsize.md) function.
+To obtain the size of the font, pass the font index to the [`GetConsoleFontSize`](getconsolefontsize.md) function.
 
 ## Requirements
 
@@ -83,4 +83,4 @@ To obtain the size of the font, pass the font index to the [**GetConsoleFontSize
 
 ## See also
 
-[**GetCurrentConsoleFontEx**](getcurrentconsolefontex.md)
+[`GetCurrentConsoleFontEx`](getcurrentconsolefontex.md)

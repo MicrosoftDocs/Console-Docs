@@ -49,13 +49,13 @@ This function has no parameters.
 
 If the function succeeds, the return value is nonzero.
 
-If the function fails, the return value is zero. To get extended error information, call [**GetLastError**](https://msdn.microsoft.com/library/windows/desktop/ms679360).
+If the function fails, the return value is zero. To get extended error information, call [`GetLastError`](https://msdn.microsoft.com/library/windows/desktop/ms679360).
 
 ## Remarks
 
-A process can be attached to at most one console. If the calling process is not already attached to a console, the error code returned is **ERROR\_INVALID\_PARAMETER** (87).
+A process can be attached to at most one console. If the calling process is not already attached to a console, the error code returned is `ERROR\_INVALID\_PARAMETER` (87).
 
-A process can use the **FreeConsole** function to detach itself from its console. If other processes share the console, the console is not destroyed, but the process that called **FreeConsole** cannot refer to it. A console is closed when the last process attached to it terminates or calls **FreeConsole**. After a process calls **FreeConsole**, it can call the [**AllocConsole**](allocconsole.md) function to create a new console or [**AttachConsole**](attachconsole.md) to attach to another console.
+A process can use the `FreeConsole` function to detach itself from its console. If other processes share the console, the console is not destroyed, but the process that called `FreeConsole` cannot refer to it. A console is closed when the last process attached to it terminates or calls `FreeConsole`. After a process calls `FreeConsole`, it can call the [`AllocConsole`](allocconsole.md) function to create a new console or [`AttachConsole`](attachconsole.md) to attach to another console.
 
 ## Requirements
 
@@ -69,9 +69,9 @@ A process can use the **FreeConsole** function to detach itself from its console
 
 ## See also
 
-[**AllocConsole**](allocconsole.md)
+[`AllocConsole`](allocconsole.md)
 
-[**AttachConsole**](attachconsole.md)
+[`AttachConsole`](attachconsole.md)
 
 [Console Functions](console-functions.md)
 

@@ -45,16 +45,16 @@ typedef struct _SMALL_RECT {
 
 ## Members
 
-**Left**  
+`Left`  
 The x-coordinate of the upper left corner of the rectangle.
 
-**Top**  
+`Top`  
 The y-coordinate of the upper left corner of the rectangle.
 
-**Right**  
+`Right`  
 The x-coordinate of the lower right corner of the rectangle.
 
-**Bottom**  
+`Bottom`  
 The y-coordinate of the lower right corner of the rectangle.
 
 ## Remarks
@@ -75,6 +75,6 @@ For an example, see [Scrolling a Screen Buffer's Contents](scrolling-a-screen-bu
 
 ## See also
 
-[**RECT**](https://msdn.microsoft.com/library/windows/desktop/dd162897)
+[`RECT`](https://msdn.microsoft.com/library/windows/desktop/dd162897)
 
-[**RECTL**](https://msdn.microsoft.com/library/windows/desktop/dd162907)
+[`RECTL`](https://msdn.microsoft.com/library/windows/desktop/dd162907)

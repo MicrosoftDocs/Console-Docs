@@ -53,17 +53,17 @@ The value can be one of the following:
 
 | Value | Meaning |
 |-|-|
-| **0** | Perform a standard pseudoconsole creation. |
-| **PSEUDOCONSOLE_INHERIT_CURSOR** (DWORD)1 | The created pseudoconsole session will attempt to inherit the cursor position of the paernt console. |
+| `0` | Perform a standard pseudoconsole creation. |
+| `PSEUDOCONSOLE_INHERIT_CURSOR` (DWORD)1 | The created pseudoconsole session will attempt to inherit the cursor position of the paernt console. |
 
 *phPC* \[out\]  
 Pointer to a location that will receive a handle to the new pseudoconsole device.
 
 ## Return value
 
-Type: **HRESULT**
+Type: `HRESULT`
 
-If this method succeeds, it returns **S_OK**. Otherwise, it returns an **HRESULT** error code.
+If this method succeeds, it returns `S_OK`. Otherwise, it returns an `HRESULT` error code.
 
 ## Remarks
 
@@ -99,6 +99,6 @@ For a full walkthrough on using this function to establish a pseudoconsole sessi
 
 [Creating a Pseudoconsole Session](creating-a-pseudoconsole-session.md)
 
-[**ResizePseudoConsole**](resizepseudoconsole.md)
+[`ResizePseudoConsole`](resizepseudoconsole.md)
 
-[**ClosePseudoConsole**](closepseudoconsole.md)
+[`ClosePseudoConsole`](closepseudoconsole.md)

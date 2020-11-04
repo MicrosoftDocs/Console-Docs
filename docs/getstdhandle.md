@@ -52,37 +52,37 @@ The standard device. This parameter can be one of the following values.
 
 | Value | Meaning |
 |-|-|
-| **STD_INPUT_HANDLE** (DWORD) -10 | The standard input device. Initially, this is the console input buffer, `CONIN$`. |
-| **STD_OUTPUT_HANDLE** (DWORD) -11 | The standard output device. Initially, this is the active console screen buffer, `CONOUT$`. |
-| **STD_ERROR_HANDLE** (DWORD) -12 | The standard error device. Initially, this is the active console screen buffer, `CONOUT$`. |
+| `STD_INPUT_HANDLE` (DWORD) -10 | The standard input device. Initially, this is the console input buffer, `CONIN$`. |
+| `STD_OUTPUT_HANDLE` (DWORD) -11 | The standard output device. Initially, this is the active console screen buffer, `CONOUT$`. |
+| `STD_ERROR_HANDLE` (DWORD) -12 | The standard error device. Initially, this is the active console screen buffer, `CONOUT$`. |
 
 ## Return value
 
-If the function succeeds, the return value is a handle to the specified device, or a redirected handle set by a previous call to [**SetStdHandle**](setstdhandle.md). The handle has **GENERIC\_READ** and **GENERIC\_WRITE** access rights, unless the application has used **SetStdHandle** to set a standard handle with lesser access.
+If the function succeeds, the return value is a handle to the specified device, or a redirected handle set by a previous call to [`SetStdHandle`](setstdhandle.md). The handle has `GENERIC\_READ` and `GENERIC\_WRITE` access rights, unless the application has used `SetStdHandle` to set a standard handle with lesser access.
 
-If the function fails, the return value is **INVALID\_HANDLE\_VALUE**. To get extended error information, call [**GetLastError**](https://msdn.microsoft.com/library/windows/desktop/ms679360).
+If the function fails, the return value is `INVALID\_HANDLE\_VALUE`. To get extended error information, call [`GetLastError`](https://msdn.microsoft.com/library/windows/desktop/ms679360).
 
-If an application does not have associated standard handles, such as a service running on an interactive desktop, and has not redirected them, the return value is **NULL**.
+If an application does not have associated standard handles, such as a service running on an interactive desktop, and has not redirected them, the return value is `NULL`.
 
 ## Remarks
 
-Handles returned by **GetStdHandle** can be used by applications that need to read from or write to the console. When a console is created, the standard input handle is a handle to the console's input buffer, and the standard output and standard error handles are handles of the console's active screen buffer. These handles can be used by the [**ReadFile**](https://msdn.microsoft.com/library/windows/desktop/aa365467) and [**WriteFile**](https://msdn.microsoft.com/library/windows/desktop/aa365747) functions, or by any of the console functions that access the console input buffer or a screen buffer (for example, the [**ReadConsoleInput**](readconsoleinput.md), [**WriteConsole**](writeconsole.md), or [**GetConsoleScreenBufferInfo**](getconsolescreenbufferinfo.md) functions).
+Handles returned by `GetStdHandle` can be used by applications that need to read from or write to the console. When a console is created, the standard input handle is a handle to the console's input buffer, and the standard output and standard error handles are handles of the console's active screen buffer. These handles can be used by the [`ReadFile`](https://msdn.microsoft.com/library/windows/desktop/aa365467) and [`WriteFile`](https://msdn.microsoft.com/library/windows/desktop/aa365747) functions, or by any of the console functions that access the console input buffer or a screen buffer (for example, the [`ReadConsoleInput`](readconsoleinput.md), [`WriteConsole`](writeconsole.md), or [`GetConsoleScreenBufferInfo`](getconsolescreenbufferinfo.md) functions).
 
-The standard handles of a process may be redirected by a call to [**SetStdHandle**](setstdhandle.md), in which case **GetStdHandle** returns the redirected handle. If the standard handles have been redirected, you can specify the `CONIN$` value in a call to the [**CreateFile**](https://msdn.microsoft.com/library/windows/desktop/aa363858) function to get a handle to a console's input buffer. Similarly, you can specify the `CONOUT$` value to get a handle to a console's active screen buffer.
+The standard handles of a process may be redirected by a call to [`SetStdHandle`](setstdhandle.md), in which case `GetStdHandle` returns the redirected handle. If the standard handles have been redirected, you can specify the `CONIN$` value in a call to the [`CreateFile`](https://msdn.microsoft.com/library/windows/desktop/aa363858) function to get a handle to a console's input buffer. Similarly, you can specify the `CONOUT$` value to get a handle to a console's active screen buffer.
 
-The standard handles of a process on entry of the main method are dictated by the configuration of the [**/SUBSYSTEM**](https://docs.microsoft.com/cpp/build/reference/subsystem-specify-subsystem) flag passed to the linker when the application was built. Specifying **/SUBSYSTEM:CONSOLE** requests that the operating system fill the handles with a console session on startup, if the parent didn't already fill the standard handle table by inheritance. On the contrary, **/SUBSYSTEM:WINDOWS** implies that the application does not need a console and will likely not be making use of the standard handles. More information on handle inheritance can be found in the documentation for [**STARTF\_USESTDHANDLES**](https://docs.microsoft.com/windows/win32/api/processthreadsapi/ns-processthreadsapi-startupinfoa).
+The standard handles of a process on entry of the main method are dictated by the configuration of the [`/SUBSYSTEM`](https://docs.microsoft.com/cpp/build/reference/subsystem-specify-subsystem) flag passed to the linker when the application was built. Specifying `/SUBSYSTEM:CONSOLE` requests that the operating system fill the handles with a console session on startup, if the parent didn't already fill the standard handle table by inheritance. On the contrary, `/SUBSYSTEM:WINDOWS` implies that the application does not need a console and will likely not be making use of the standard handles. More information on handle inheritance can be found in the documentation for [`STARTF\_USESTDHANDLES`](https://docs.microsoft.com/windows/win32/api/processthreadsapi/ns-processthreadsapi-startupinfoa).
 
-Some applications operate outside the boundaries of their declared subsystem; for instance, a **/SUBSYSTEM:WINDOWS** application might check/use standard handles for logging or debugging purposes but operate normally with a graphical user interface. These applications will need to carefully probe the state of standard handles on startup and make use of [**AttachConsole**](attachconsole.md), [**AllocConsole**](allocconsole.md), and [**FreeConsole**](freeconsole.md) to add/remove a console if desired.
+Some applications operate outside the boundaries of their declared subsystem; for instance, a `/SUBSYSTEM:WINDOWS` application might check/use standard handles for logging or debugging purposes but operate normally with a graphical user interface. These applications will need to carefully probe the state of standard handles on startup and make use of [`AttachConsole`](attachconsole.md), [`AllocConsole`](allocconsole.md), and [`FreeConsole`](freeconsole.md) to add/remove a console if desired.
 
-Some applications may also vary their behavior on the type of inherited handle. Disambiguating the type between console, pipe, file, and others can be performed with [**GetFileType**](https://docs.microsoft.com/windows/win32/api/fileapi/nf-fileapi-getfiletype).
+Some applications may also vary their behavior on the type of inherited handle. Disambiguating the type between console, pipe, file, and others can be performed with [`GetFileType`](https://docs.microsoft.com/windows/win32/api/fileapi/nf-fileapi-getfiletype).
 
 ### Attach/detach behavior
 
-When attaching to a new console, standard handles are always replaced with console handles unless **STARTF\_USESTDHANDLES** was specified during process creation.
+When attaching to a new console, standard handles are always replaced with console handles unless `STARTF\_USESTDHANDLES` was specified during process creation.
 
-If the existing value of the standard handle is **NULL**, or the existing value of the standard handle looks like a console pseudohandle, the handle is replaced with a console handle.
+If the existing value of the standard handle is `NULL`, or the existing value of the standard handle looks like a console pseudohandle, the handle is replaced with a console handle.
 
-When a parent uses both **CREATE\_NEW\_CONSOLE** and **STARTF\_USESTDHANDLES** to create a console process, standard handles will not be replaced unless the existing value of the standard handle is **NULL** or a console pseudohandle.
+When a parent uses both `CREATE\_NEW\_CONSOLE` and `STARTF\_USESTDHANDLES` to create a console process, standard handles will not be replaced unless the existing value of the standard handle is `NULL` or a console pseudohandle.
 
 > [!NOTE]
 >Console processes *must* start with the standard handles filled or they will be filled automatically with appropriate handles to a new console. Graphical user interface (GUI) applications can be started without the standard handles and they will not be automatically filled.
@@ -107,16 +107,16 @@ For an example, see [Reading Input Buffer Events](reading-input-buffer-events.md
 
 [Console Handles](console-handles.md)
 
-[**CreateFile**](https://msdn.microsoft.com/library/windows/desktop/aa363858)
+[`CreateFile`](https://msdn.microsoft.com/library/windows/desktop/aa363858)
 
-[**GetConsoleScreenBufferInfo**](getconsolescreenbufferinfo.md)
+[`GetConsoleScreenBufferInfo`](getconsolescreenbufferinfo.md)
 
-[**ReadConsoleInput**](readconsoleinput.md)
+[`ReadConsoleInput`](readconsoleinput.md)
 
-[**ReadFile**](https://msdn.microsoft.com/library/windows/desktop/aa365467)
+[`ReadFile`](https://msdn.microsoft.com/library/windows/desktop/aa365467)
 
-[**SetStdHandle**](setstdhandle.md)
+[`SetStdHandle`](setstdhandle.md)
 
-[**WriteConsole**](writeconsole.md)
+[`WriteConsole`](writeconsole.md)
 
-[**WriteFile**](https://msdn.microsoft.com/library/windows/desktop/aa365747)
+[`WriteFile`](https://msdn.microsoft.com/library/windows/desktop/aa365747)

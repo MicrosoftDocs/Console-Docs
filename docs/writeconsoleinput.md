@@ -59,10 +59,10 @@ BOOL WINAPI WriteConsoleInput(
 ## Parameters
 
 *hConsoleInput* \[in\]  
-A handle to the console input buffer. The handle must have the **GENERIC\_WRITE** access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
+A handle to the console input buffer. The handle must have the `GENERIC\_WRITE` access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
 
 *lpBuffer* \[in\]  
-A pointer to an array of [**INPUT\_RECORD**](input-record-str.md) structures that contain data to be written to the input buffer.
+A pointer to an array of [`INPUT\_RECORD`](input-record-str.md) structures that contain data to be written to the input buffer.
 
 *nLength* \[in\]  
 The number of input records to be written.
@@ -74,16 +74,16 @@ A pointer to a variable that receives the number of input records actually writt
 
 If the function succeeds, the return value is nonzero.
 
-If the function fails, the return value is zero. To get extended error information, call [**GetLastError**](https://msdn.microsoft.com/library/windows/desktop/ms679360).
+If the function fails, the return value is zero. To get extended error information, call [`GetLastError`](https://msdn.microsoft.com/library/windows/desktop/ms679360).
 
 ## Remarks
 
-**WriteConsoleInput** places input records into the input buffer behind any pending events in the buffer. The input buffer grows dynamically, if necessary, to hold as many events as are written.
+`WriteConsoleInput` places input records into the input buffer behind any pending events in the buffer. The input buffer grows dynamically, if necessary, to hold as many events as are written.
 
 [!INCLUDE [setting-codepage-mode-remarks](./includes/setting-codepage-mode-remarks.md)]
 
 > [!TIP]
-> This API is not recommended and does not have a **[virtual terminal](console-virtual-terminal-sequences.md)** equivalent. This decision intentionally aligns the Windows platform with other operating systems. This operation is considered the **[wrong-way verb](console-buffer-security-and-access-rights.md#wrong-way-verbs)** for this buffer. Applications remoting via cross-platform utilities and transports like SSH may not work as expected if using this API.
+> This API is not recommended and does not have a `[virtual terminal](console-virtual-terminal-sequences.md)` equivalent. This decision intentionally aligns the Windows platform with other operating systems. This operation is considered the `[wrong-way verb](console-buffer-security-and-access-rights.md#wrong-way-verbs)` for this buffer. Applications remoting via cross-platform utilities and transports like SSH may not work as expected if using this API.
 
 ## Requirements
 
@@ -94,24 +94,24 @@ If the function fails, the return value is zero. To get extended error informati
 | Header | ConsoleApi2.h (via WinCon.h, include Windows.h) |
 | Library | Kernel32.lib |
 | DLL | Kernel32.dll |
-| Unicode and ANSI names | **WriteConsoleInputW** (Unicode) and **WriteConsoleInputA** (ANSI) |
+| Unicode and ANSI names | `WriteConsoleInputW` (Unicode) and `WriteConsoleInputA` (ANSI) |
 
 ## See also
 
 [Console Functions](console-functions.md)
 
-[**INPUT\_RECORD**](input-record-str.md)
+[`INPUT\_RECORD`](input-record-str.md)
 
 [Low-Level Console Input Functions](low-level-console-input-functions.md)
 
-[**MapVirtualKey**](https://msdn.microsoft.com/library/windows/desktop/ms646306)
+[`MapVirtualKey`](https://msdn.microsoft.com/library/windows/desktop/ms646306)
 
-[**PeekConsoleInput**](peekconsoleinput.md)
+[`PeekConsoleInput`](peekconsoleinput.md)
 
-[**ReadConsoleInput**](readconsoleinput.md)
+[`ReadConsoleInput`](readconsoleinput.md)
 
-[**SetConsoleCP**](setconsolecp.md)
+[`SetConsoleCP`](setconsolecp.md)
 
-[**SetConsoleOutputCP**](setconsoleoutputcp.md)
+[`SetConsoleOutputCP`](setconsoleoutputcp.md)
 
-[**VkKeyScan**](https://msdn.microsoft.com/library/windows/desktop/ms646329)
+[`VkKeyScan`](https://msdn.microsoft.com/library/windows/desktop/ms646329)

@@ -50,23 +50,23 @@ The identifier of the process whose console is to be used. This parameter can be
 | Value | Meaning |
 |-|-|
 | *pid* | Use the console of the specified process. |
-| **ATTACH\_PARENT\_PROCESS** `(DWORD)-1` | Use the console of the parent of the current process. |
+| `ATTACH\_PARENT\_PROCESS` `(DWORD)-1` | Use the console of the parent of the current process. |
 
 ## Return value
 
 If the function succeeds, the return value is nonzero.
 
-If the function fails, the return value is zero. To get extended error information, call [**GetLastError**](https://msdn.microsoft.com/library/windows/desktop/ms679360).
+If the function fails, the return value is zero. To get extended error information, call [`GetLastError`](https://msdn.microsoft.com/library/windows/desktop/ms679360).
 
 ## Remarks
 
-A process can be attached to at most one console. If the calling process is already attached to a console, the error code returned is **ERROR\_ACCESS\_DENIED** (`5`). If the specified process does not have a console, the error code returned is **ERROR\_INVALID\_HANDLE** (`6`). If the specified process does not exist, the error code returned is **ERROR\_INVALID\_PARAMETER** (`87`).
+A process can be attached to at most one console. If the calling process is already attached to a console, the error code returned is `ERROR\_ACCESS\_DENIED` (`5`). If the specified process does not have a console, the error code returned is `ERROR\_INVALID\_HANDLE` (`6`). If the specified process does not exist, the error code returned is `ERROR\_INVALID\_PARAMETER` (`87`).
 
-A process can use the [**FreeConsole**](freeconsole.md) function to detach itself from its console. If other processes share the console, the console is not destroyed, but the process that called **FreeConsole** cannot refer to it. A console is closed when the last process attached to it terminates or calls **FreeConsole**. After a process calls **FreeConsole**, it can call the [**AllocConsole**](allocconsole.md) function to create a new console or **AttachConsole** to attach to another console.
+A process can use the [`FreeConsole`](freeconsole.md) function to detach itself from its console. If other processes share the console, the console is not destroyed, but the process that called `FreeConsole` cannot refer to it. A console is closed when the last process attached to it terminates or calls `FreeConsole`. After a process calls `FreeConsole`, it can call the [`AllocConsole`](allocconsole.md) function to create a new console or `AttachConsole` to attach to another console.
 
-This function is primarily useful to applications that were linked with [**/SUBSYSTEM:WINDOWS**](https://docs.microsoft.com/cpp/build/reference/subsystem-specify-subsystem), which implies to the operating system that a console is not needed before entering the program's main method. In that instance, the standard handles retrieved with [**GetStdHandle**](getstdhandle.md) will likely be invalid on startup until **AttachConsole** is called. The exception to this is if the application is launched with handle inheritance by its parent process.
+This function is primarily useful to applications that were linked with [`/SUBSYSTEM:WINDOWS`](https://docs.microsoft.com/cpp/build/reference/subsystem-specify-subsystem), which implies to the operating system that a console is not needed before entering the program's main method. In that instance, the standard handles retrieved with [`GetStdHandle`](getstdhandle.md) will likely be invalid on startup until `AttachConsole` is called. The exception to this is if the application is launched with handle inheritance by its parent process.
 
-To compile an application that uses this function, define **\_WIN32\_WINNT** as `0x0501` or later. For more information, see [Using the Windows Headers](https://msdn.microsoft.com/library/windows/desktop/aa383745).
+To compile an application that uses this function, define `\_WIN32\_WINNT` as `0x0501` or later. For more information, see [Using the Windows Headers](https://msdn.microsoft.com/library/windows/desktop/aa383745).
 
 ## Requirements
 
@@ -84,8 +84,8 @@ To compile an application that uses this function, define **\_WIN32\_WINNT** as 
 
 [Consoles](consoles.md)
 
-[**AllocConsole**](allocconsole.md)
+[`AllocConsole`](allocconsole.md)
 
-[**FreeConsole**](freeconsole.md)
+[`FreeConsole`](freeconsole.md)
 
-[**GetConsoleProcessList**](getconsoleprocesslist.md)
+[`GetConsoleProcessList`](getconsoleprocesslist.md)

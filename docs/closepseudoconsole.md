@@ -59,6 +59,6 @@ A final painted frame may arrive on the `hOutput` handle originally provided to 
 
 [Pseudoconsoles](pseudoconsoles.md)
 
-[**CreatePseudoConsole**](createpseudoconsole.md)
+[`CreatePseudoConsole`](createpseudoconsole.md)
 
-[**ResizePseudoConsole**](resizepseudoconsole.md)
+[`ResizePseudoConsole`](resizepseudoconsole.md)

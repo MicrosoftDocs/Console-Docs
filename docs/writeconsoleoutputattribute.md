@@ -52,7 +52,7 @@ BOOL WINAPI WriteConsoleOutputAttribute(
 ## Parameters
 
 *hConsoleOutput* \[in\]  
-A handle to the console screen buffer. The handle must have the **GENERIC\_WRITE** access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
+A handle to the console screen buffer. The handle must have the `GENERIC\_WRITE` access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
 
 *lpAttribute* \[in\]  
 The attributes to be used when writing to the console screen buffer. For more information, see [Character Attributes](console-screen-buffers.md#character-attributes).
@@ -61,7 +61,7 @@ The attributes to be used when writing to the console screen buffer. For more in
 The number of screen buffer character cells to which the attributes will be copied.
 
 *dwWriteCoord* \[in\]  
-A [**COORD**](coord-str.md) structure that specifies the character coordinates of the first cell in the console screen buffer to which the attributes will be written.
+A [`COORD`](coord-str.md) structure that specifies the character coordinates of the first cell in the console screen buffer to which the attributes will be written.
 
 *lpNumberOfAttrsWritten* \[out\]  
 A pointer to a variable that receives the number of attributes actually written to the console screen buffer.
@@ -70,7 +70,7 @@ A pointer to a variable that receives the number of attributes actually written 
 
 If the function succeeds, the return value is nonzero.
 
-If the function fails, the return value is zero. To get extended error information, call [**GetLastError**](https://msdn.microsoft.com/library/windows/desktop/ms679360).
+If the function fails, the return value is zero. To get extended error information, call [`GetLastError`](https://msdn.microsoft.com/library/windows/desktop/ms679360).
 
 ## Remarks
 
@@ -79,7 +79,7 @@ If the number of attributes to be written to extends beyond the end of the speci
 The character values at the positions written to are not changed.
 
 > [!TIP]
-> This API has a **[virtual terminal](console-virtual-terminal-sequences.md)** equivalent in the **[text formatting](console-virtual-terminal-sequences.md#text-formatting)** and **[cursor positioning](console-virtual-terminal-sequences.md#cursor-positioning)** sequences. Move the cursor to the location to insert, apply the formatting desired, and write out text to fill. There is no equivalent to apply color to an area without also emitting text. This decision intentionally aligns the Windows platform with other operating systems where the individual client application is expected to remember its own drawn state for further manipulation.
+> This API has a `[virtual terminal](console-virtual-terminal-sequences.md)` equivalent in the `[text formatting](console-virtual-terminal-sequences.md#text-formatting)` and `[cursor positioning](console-virtual-terminal-sequences.md#cursor-positioning)` sequences. Move the cursor to the location to insert, apply the formatting desired, and write out text to fill. There is no equivalent to apply color to an area without also emitting text. This decision intentionally aligns the Windows platform with other operating systems where the individual client application is expected to remember its own drawn state for further manipulation.
 
 ## Requirements
 
@@ -95,16 +95,16 @@ The character values at the positions written to are not changed.
 
 [Console Functions](console-functions.md)
 
-[**COORD**](coord-str.md)
+[`COORD`](coord-str.md)
 
 [Low-Level Console Output Functions](low-level-console-output-functions.md)
 
-[**ReadConsoleOutput**](readconsoleoutput.md)
+[`ReadConsoleOutput`](readconsoleoutput.md)
 
-[**ReadConsoleOutputAttribute**](readconsoleoutputattribute.md)
+[`ReadConsoleOutputAttribute`](readconsoleoutputattribute.md)
 
-[**ReadConsoleOutputCharacter**](readconsoleoutputcharacter.md)
+[`ReadConsoleOutputCharacter`](readconsoleoutputcharacter.md)
 
-[**WriteConsoleOutput**](writeconsoleoutput.md)
+[`WriteConsoleOutput`](writeconsoleoutput.md)
 
-[**WriteConsoleOutputCharacter**](writeconsoleoutputcharacter.md)
+[`WriteConsoleOutputCharacter`](writeconsoleoutputcharacter.md)

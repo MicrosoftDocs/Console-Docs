@@ -47,18 +47,18 @@ BOOL WINAPI FlushConsoleInputBuffer(
 ## Parameters
 
 *hConsoleInput* \[in\]  
-A handle to the console input buffer. The handle must have the **GENERIC\_WRITE** access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
+A handle to the console input buffer. The handle must have the `GENERIC\_WRITE` access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
 
 ## Return value
 
 If the function succeeds, the return value is nonzero.
 
-If the function fails, the return value is zero. To get extended error information, call [**GetLastError**](https://msdn.microsoft.com/library/windows/desktop/ms679360).
+If the function fails, the return value is zero. To get extended error information, call [`GetLastError`](https://msdn.microsoft.com/library/windows/desktop/ms679360).
 
 ## Remarks
 
 > [!TIP]
-> This API is not recommended and does not have a **[virtual terminal](console-virtual-terminal-sequences.md)** equivalent. Attempting to empty the input queue all at once can destroy state in the queue in an unexpected manner.
+> This API is not recommended and does not have a `[virtual terminal](console-virtual-terminal-sequences.md)` equivalent. Attempting to empty the input queue all at once can destroy state in the queue in an unexpected manner.
 
 ## Requirements
 
@@ -76,10 +76,10 @@ If the function fails, the return value is zero. To get extended error informati
 
 [Low-Level Console Input Functions](low-level-console-input-functions.md)
 
-[**GetNumberOfConsoleInputEvents**](getnumberofconsoleinputevents.md)
+[`GetNumberOfConsoleInputEvents`](getnumberofconsoleinputevents.md)
 
-[**PeekConsoleInput**](peekconsoleinput.md)
+[`PeekConsoleInput`](peekconsoleinput.md)
 
-[**ReadConsoleInput**](readconsoleinput.md)
+[`ReadConsoleInput`](readconsoleinput.md)
 
-[**WriteConsoleInput**](writeconsoleinput.md)
+[`WriteConsoleInput`](writeconsoleinput.md)

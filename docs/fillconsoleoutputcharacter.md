@@ -60,7 +60,7 @@ BOOL WINAPI FillConsoleOutputCharacter(
 ## Parameters
 
 *hConsoleOutput* \[in\]  
-A handle to the console screen buffer. The handle must have the **GENERIC\_WRITE** access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
+A handle to the console screen buffer. The handle must have the `GENERIC\_WRITE` access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
 
 *cCharacter* \[in\]  
 The character to be written to the console screen buffer.
@@ -69,7 +69,7 @@ The character to be written to the console screen buffer.
 The number of character cells to which the character should be written.
 
 *dwWriteCoord* \[in\]  
-A [**COORD**](coord-str.md) structure that specifies the character coordinates of the first cell to which the character is to be written.
+A [`COORD`](coord-str.md) structure that specifies the character coordinates of the first cell to which the character is to be written.
 
 *lpNumberOfCharsWritten* \[out\]  
 A pointer to a variable that receives the number of characters actually written to the console screen buffer.
@@ -78,7 +78,7 @@ A pointer to a variable that receives the number of characters actually written 
 
 If the function succeeds, the return value is nonzero.
 
-If the function fails, the return value is zero. To get extended error information, call [**GetLastError**](https://msdn.microsoft.com/library/windows/desktop/ms679360).
+If the function fails, the return value is zero. To get extended error information, call [`GetLastError`](https://msdn.microsoft.com/library/windows/desktop/ms679360).
 
 ## Remarks
 
@@ -89,7 +89,7 @@ The attribute values at the positions written are not changed.
 [!INCLUDE [setting-codepage-mode-remarks](./includes/setting-codepage-mode-remarks.md)]
 
 > [!TIP]
-> This API is not recommended and does not have a specific **[virtual terminal](console-virtual-terminal-sequences.md)** equivalent. Filling the region outside the viewable window is not supported and is reserved for the terminal's history space. Filling a visible region with new text or color is performed through **[moving the cursor](console-virtual-terminal-sequences.md#cursor-positioning)**, **[setting the new attributes](console-virtual-terminal-sequences.md#text-formatting)**, then writing the desired text for that region, repeating characters if necessary for the length of the fill run. Additional cursor movement may be required followed by writing the desired text to fill a rectangular region. The client application is expected to keep its own memory of what is on the screen and is not able to query the remote state. More information can be found in **[classic console versus virtual terminal](classic-vs-vt.md)** documentation.
+> This API is not recommended and does not have a specific `[virtual terminal](console-virtual-terminal-sequences.md)` equivalent. Filling the region outside the viewable window is not supported and is reserved for the terminal's history space. Filling a visible region with new text or color is performed through `[moving the cursor](console-virtual-terminal-sequences.md#cursor-positioning)`, `[setting the new attributes](console-virtual-terminal-sequences.md#text-formatting)`, then writing the desired text for that region, repeating characters if necessary for the length of the fill run. Additional cursor movement may be required followed by writing the desired text to fill a rectangular region. The client application is expected to keep its own memory of what is on the screen and is not able to query the remote state. More information can be found in `[classic console versus virtual terminal](classic-vs-vt.md)` documentation.
 
 ## Requirements
 
@@ -100,20 +100,20 @@ The attribute values at the positions written are not changed.
 | Header | ConsoleApi2.h (via WinCon.h, include Windows.h) |
 | Library | Kernel32.lib |
 | DLL | Kernel32.dll |
-| Unicode and ANSI names | **FillConsoleOutputCharacterW** (Unicode) and **FillConsoleOutputCharacterA** (ANSI) |
+| Unicode and ANSI names | `FillConsoleOutputCharacterW` (Unicode) and `FillConsoleOutputCharacterA` (ANSI) |
 
 ## See also
 
 [Console Functions](console-functions.md)
 
-[**COORD**](coord-str.md)
+[`COORD`](coord-str.md)
 
-[**FillConsoleOutputAttribute**](fillconsoleoutputattribute.md)
+[`FillConsoleOutputAttribute`](fillconsoleoutputattribute.md)
 
 [Low-Level Console Output Functions](low-level-console-output-functions.md)
 
-[**SetConsoleCP**](setconsolecp.md)
+[`SetConsoleCP`](setconsolecp.md)
 
-[**SetConsoleOutputCP**](setconsoleoutputcp.md)
+[`SetConsoleOutputCP`](setconsoleoutputcp.md)
 
-[**WriteConsoleOutputCharacter**](writeconsoleoutputcharacter.md)
+[`WriteConsoleOutputCharacter`](writeconsoleoutputcharacter.md)

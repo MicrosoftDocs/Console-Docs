@@ -19,9 +19,9 @@ ms.assetid: bc300349-9bfa-4417-92ad-57a05a658ce5
 
 [!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
-The [**SetConsoleWindowInfo**](setconsolewindowinfo.md) function can be used to scroll the contents of a screen buffer in the console window. This function can also change the window size. The function can either specify the new upper left and lower right corners of the console screen buffer's window as absolute screen buffer coordinates or specify the changes from the current window coordinates. The function fails if the specified window coordinates are outside the boundaries of the console screen buffer.
+The [`SetConsoleWindowInfo`](setconsolewindowinfo.md) function can be used to scroll the contents of a screen buffer in the console window. This function can also change the window size. The function can either specify the new upper left and lower right corners of the console screen buffer's window as absolute screen buffer coordinates or specify the changes from the current window coordinates. The function fails if the specified window coordinates are outside the boundaries of the console screen buffer.
 
-The following example scrolls the view of the console screen buffer up by modifying the window coordinates returned by the [**GetConsoleScreenBufferInfo**](getconsolescreenbufferinfo.md) function. The `ScrollByAbsoluteCoord` function demonstrates how to specify absolute coordinates, while the `ScrollByRelativeCoord` function demonstrates how to specify relative coordinates.
+The following example scrolls the view of the console screen buffer up by modifying the window coordinates returned by the [`GetConsoleScreenBufferInfo`](getconsolescreenbufferinfo.md) function. The `ScrollByAbsoluteCoord` function demonstrates how to specify absolute coordinates, while the `ScrollByRelativeCoord` function demonstrates how to specify relative coordinates.
 
 ```C
 #include <windows.h>
