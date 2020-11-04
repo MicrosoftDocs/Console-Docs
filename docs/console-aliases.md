@@ -26,7 +26,7 @@ To define a console alias, use [`Doskey.exe`](https://docs.microsoft.com/windows
 
 The following call to [`AddConsoleAlias`](addconsolealias.md) creates the same console alias:
 
-``` C
+```C
 AddConsoleAlias( TEXT("test"),
                  TEXT("cd \\<a_very_long_path>\\test"),
                  TEXT("cmd.exe"));
