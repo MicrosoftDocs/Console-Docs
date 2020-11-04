@@ -13,9 +13,10 @@ f1_keywords:
 - wincon/PCONSOLE_CURSOR_INFO
 - PCONSOLE_CURSOR_INFO
 MS-HAID:
-- '\_win32\_`CONSOLE\_CURSOR\_INFO`\_str'
-- 'base.`CONSOLE\_CURSOR\_INFO`\_str'
-- 'consoles.`CONSOLE\_CURSOR\_INFO`\_str'
+- '\_win32\_console\_cursor\_info\_str`
+- 'base.console\_cursor\_info\_str'
+- 'consoles.console\_cursor\_info\_str'
+
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/desktop'
