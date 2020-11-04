@@ -65,7 +65,7 @@ The name of the executable file for which the console alias is to be defined.
 
 If the function succeeds, the return value is `TRUE`.
 
-If the function fails, the return value is `FALSE`. To get extended error information, call [``GetLastError`](https://msdn.microsoft.com/library/windows/desktop/ms679360).
+If the function fails, the return value is `FALSE`. To get extended error information, call [`GetLastError`](https://msdn.microsoft.com/library/windows/desktop/ms679360).
 
 ## Remarks
 
