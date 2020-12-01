@@ -6,7 +6,7 @@ ms.author: miniksa
 ms.topic: conceptual
 keywords: console, terminal, virtual terminal, escape sequences, vt, vt100, console api
 ms.prod: console
-
+ms.localizationpriority: high
 ---
 
 # Classic Console APIs versus Virtual Terminal Sequences
