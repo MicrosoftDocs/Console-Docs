@@ -54,7 +54,7 @@ The value can be one of the following:
 | Value | Meaning |
 |-|-|
 | **0** | Perform a standard pseudoconsole creation. |
-| **PSEUDOCONSOLE_INHERIT_CURSOR** (DWORD)1 | The created pseudoconsole session will attempt to inherit the cursor position of the paernt console. |
+| **PSEUDOCONSOLE_INHERIT_CURSOR** (DWORD)1 | The created pseudoconsole session will attempt to inherit the cursor position of the parent console. |
 
 *phPC* \[out\]  
 Pointer to a location that will receive a handle to the new pseudoconsole device.
