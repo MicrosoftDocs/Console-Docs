@@ -38,6 +38,7 @@ api_location:
 - MinKernelBase.dll
 api_type:
 - DllExport
+ms.localizationpriority: high
 ---
 
 # WriteConsole function

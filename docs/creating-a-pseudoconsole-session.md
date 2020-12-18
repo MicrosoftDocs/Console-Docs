@@ -6,6 +6,7 @@ ms.author: miniksa
 ms.topic: conceptual
 ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api, conpty, pseudoconsole, windows pty, pseudo console
+ms.localizationpriority: high
 ---
 
 # Creating a Pseudoconsole session
