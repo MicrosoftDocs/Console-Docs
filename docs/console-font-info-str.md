@@ -13,9 +13,9 @@ f1_keywords:
 - wincon/PCONSOLE_FONT_INFO
 - PCONSOLE_FONT_INFO
 MS-HAID:
-- '\_win32\_console\_font\_info\_str'
-- 'base.console\_font\_info\_str'
-- 'consoles.console\_font\_info\_str'
+- '_win32_console_font_info_str'
+- 'base.console_font_info_str'
+- 'consoles.console_font_info_str'
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/desktop'
@@ -30,7 +30,7 @@ api_type:
 - HeaderDef
 ---
 
-# CONSOLE\_FONT\_INFO structure
+# CONSOLE_FONT_INFO structure
 
 [!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
@@ -47,15 +47,15 @@ typedef struct _CONSOLE_FONT_INFO {
 
 ## Members
 
-**nFont**  
+`nFont`  
 The index of the font in the system's console font table.
 
-**dwFontSize**  
-A [**COORD**](coord-str.md) structure that contains the width and height of each character in the font, in logical units. The **X** member contains the width, while the **Y** member contains the height.
+`dwFontSize`  
+A [`COORD`](coord-str.md) structure that contains the width and height of each character in the font, in logical units. The `X` member contains the width, while the `Y` member contains the height.
 
 ## Remarks
 
-To obtain the size of the font, pass the font index to the [**GetConsoleFontSize**](getconsolefontsize.md) function.
+To obtain the size of the font, pass the font index to the [`GetConsoleFontSize`](getconsolefontsize.md) function.
 
 ## Requirements
 
@@ -67,6 +67,6 @@ To obtain the size of the font, pass the font index to the [**GetConsoleFontSize
 
 ## See also
 
-[**COORD**](coord-str.md)
+[`COORD`](coord-str.md)
 
-[**GetCurrentConsoleFont**](getcurrentconsolefont.md)
+[`GetCurrentConsoleFont`](getcurrentconsolefont.md)

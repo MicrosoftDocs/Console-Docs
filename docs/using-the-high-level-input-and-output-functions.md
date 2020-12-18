@@ -6,9 +6,9 @@ ms.author: miniksa
 ms.topic: sample
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
-- '\_win32\_using\_the\_high\_level\_input\_and\_output\_functions'
-- 'base.using\_the\_high\_level\_input\_and\_output\_functions'
-- 'consoles.using\_the\_high\_level\_input\_and\_output\_functions'
+- '_win32_using_the_high_level_input_and_output_functions'
+- 'base.using_the_high_level_input_and_output_functions'
+- 'consoles.using_the_high_level_input_and_output_functions'
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/desktop'
@@ -21,7 +21,7 @@ ms.assetid: 0226cd94-86d0-452b-80e6-e0fed8af0a62
 
 The following example uses the high-level console I/O functions for console I/O. For more information about the high-level console I/O functions, see [High-Level Console I/O](high-level-console-i-o.md).
 
-The example assumes that the default I/O modes are in effect initially for the first calls to the [**ReadFile**](https://msdn.microsoft.com/library/windows/desktop/aa365467) and [**WriteFile**](https://msdn.microsoft.com/library/windows/desktop/aa365747) functions. Then the input mode is changed to turn offline input mode and echo input mode for the second calls to **ReadFile** and **WriteFile**. The [**SetConsoleTextAttribute**](setconsoletextattribute.md) function is used to set the colors in which subsequently written text will be displayed. Before exiting, the program restores the original console input mode and color attributes.
+The example assumes that the default I/O modes are in effect initially for the first calls to the [`ReadFile`](https://msdn.microsoft.com/library/windows/desktop/aa365467) and [`WriteFile`](https://msdn.microsoft.com/library/windows/desktop/aa365747) functions. Then the input mode is changed to turn offline input mode and echo input mode for the second calls to `ReadFile` and `WriteFile`. The [`SetConsoleTextAttribute`](setconsoletextattribute.md) function is used to set the colors in which subsequently written text will be displayed. Before exiting, the program restores the original console input mode and color attributes.
 
 The example's `NewLine` function is used when line input mode is disabled. It handles carriage returns by moving the cursor position to the first cell of the next row. If the cursor is already in the last row of the console screen buffer, the contents of the console screen buffer are scrolled up one line.
 

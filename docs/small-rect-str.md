@@ -10,9 +10,9 @@ f1_keywords:
 title: SMALL_RECT structure
 description: Defines the coordinates of the upper left and lower right corners of a rectangle.
 MS-HAID:
-- '\_win32\_small\_rect\_str'
-- 'base.small\_rect\_str'
-- 'consoles.small\_rect\_str'
+- '_win32_small_rect_str'
+- 'base.small_rect_str'
+- 'consoles.small_rect_str'
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/desktop'
@@ -28,7 +28,7 @@ api_type:
 - HeaderDef
 ---
 
-# SMALL\_RECT structure
+# SMALL_RECT structure
 
 Defines the coordinates of the upper left and lower right corners of a rectangle.
 
@@ -45,16 +45,16 @@ typedef struct _SMALL_RECT {
 
 ## Members
 
-**Left**  
+`Left`  
 The x-coordinate of the upper left corner of the rectangle.
 
-**Top**  
+`Top`  
 The y-coordinate of the upper left corner of the rectangle.
 
-**Right**  
+`Right`  
 The x-coordinate of the lower right corner of the rectangle.
 
-**Bottom**  
+`Bottom`  
 The y-coordinate of the lower right corner of the rectangle.
 
 ## Remarks
@@ -75,6 +75,6 @@ For an example, see [Scrolling a Screen Buffer's Contents](scrolling-a-screen-bu
 
 ## See also
 
-[**RECT**](https://msdn.microsoft.com/library/windows/desktop/dd162897)
+[`RECT`](https://msdn.microsoft.com/library/windows/desktop/dd162897)
 
-[**RECTL**](https://msdn.microsoft.com/library/windows/desktop/dd162907)
+[`RECTL`](https://msdn.microsoft.com/library/windows/desktop/dd162907)

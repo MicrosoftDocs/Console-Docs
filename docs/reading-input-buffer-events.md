@@ -6,9 +6,9 @@ ms.author: miniksa
 ms.topic: sample
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
-- '\_win32\_reading\_input\_buffer\_events'
-- 'base.reading\_input\_buffer\_events'
-- 'consoles.reading\_input\_buffer\_events'
+- '_win32_reading_input_buffer_events'
+- 'base.reading_input_buffer_events'
+- 'consoles.reading_input_buffer_events'
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/desktop'
@@ -17,7 +17,7 @@ ms.assetid: 57570f3b-4a37-4789-bf6c-474fae60171d
 
 # Reading Input Buffer Events
 
-The [**ReadConsoleInput**](readconsoleinput.md) function can be used to directly access a console's input buffer. When a console is created, mouse input is enabled and window input is disabled. To ensure that the process receives all types of events, this example uses the [**SetConsoleMode**](setconsolemode.md) function to enable window and mouse input. Then it goes into a loop that reads and handles 100 console input events. For example, the message "Keyboard event" is displayed when the user presses a key and the message "Mouse event" is displayed when the user interacts with the mouse.
+The [`ReadConsoleInput`](readconsoleinput.md) function can be used to directly access a console's input buffer. When a console is created, mouse input is enabled and window input is disabled. To ensure that the process receives all types of events, this example uses the [`SetConsoleMode`](setconsolemode.md) function to enable window and mouse input. Then it goes into a loop that reads and handles 100 console input events. For example, the message "Keyboard event" is displayed when the user presses a key and the message "Mouse event" is displayed when the user interacts with the mouse.
 
 ```C
 #include <windows.h>

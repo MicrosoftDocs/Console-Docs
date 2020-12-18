@@ -44,9 +44,9 @@ The dimensions of the window/buffer in count of characters that will be used for
 
 ## Return value
 
-Type: **HRESULT**
+Type: `HRESULT`
 
-If this method succeeds, it returns **S_OK**. Otherwise, it returns an **HRESULT** error code.
+If this method succeeds, it returns `S_OK`. Otherwise, it returns an `HRESULT` error code.
 
 ## Remarks
 
@@ -66,6 +66,6 @@ This function can resize the internal buffers in the pseudoconsole session to ma
 
 [Pseudoconsoles](pseudoconsoles.md)
 
-[**CreatePseudoConsole**](createpseudoconsole.md)
+[`CreatePseudoConsole`](createpseudoconsole.md)
 
-[**ClosePseudoConsole**](closepseudoconsole.md)
+[`ClosePseudoConsole`](closepseudoconsole.md)
