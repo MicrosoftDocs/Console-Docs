@@ -20,14 +20,14 @@ ms.localizationpriority: high
 
 A *screen buffer* is a two-dimensional array of character and color data for output in a console window. A console can have multiple screen buffers. The *active screen buffer* is the one that is displayed on the screen.
 
-The system creates a screen buffer whenever it creates a new console. To open a handle to a console's active screen buffer, specify the **CONOUT$** value in a call to the [**CreateFile**](https://msdn.microsoft.com/library/windows/desktop/aa363858) function. A process can use the [**CreateConsoleScreenBuffer**](createconsolescreenbuffer.md) function to create additional screen buffers for its console. A new screen buffer is not active until its handle is specified in a call to the [**SetConsoleActiveScreenBuffer**](setconsoleactivescreenbuffer.md) function. However, screen buffers can be accessed for reading and writing whether they are active or inactive.
+The system creates a screen buffer whenever it creates a new console. To open a handle to a console's active screen buffer, specify the **CONOUT$** value in a call to the [**CreateFile**](/windows/win32/api/fileapi/nf-fileapi-createfilea) function. A process can use the [**CreateConsoleScreenBuffer**](createconsolescreenbuffer.md) function to create additional screen buffers for its console. A new screen buffer is not active until its handle is specified in a call to the [**SetConsoleActiveScreenBuffer**](setconsoleactivescreenbuffer.md) function. However, screen buffers can be accessed for reading and writing whether they are active or inactive.
 
 Each screen buffer has its own two-dimensional array of character information records. The data for each character is stored in a [**CHAR\_INFO**](char-info-str.md) structure that specifies the Unicode or ANSI character and the foreground and background colors in which that character is displayed.
 
 A number of properties associated with a screen buffer can be set independently for each screen buffer. This means that changing the active screen buffer can have a dramatic effect on the appearance of the console window. The properties associated with a screen buffer include:
 
 - Screen buffer size, in character rows and columns.
-- Text attributes (foreground and background colors for displaying text to be written by the [**WriteFile**](https://msdn.microsoft.com/library/windows/desktop/aa365747) or [**WriteConsole**](writeconsole.md) function).
+- Text attributes (foreground and background colors for displaying text to be written by the [**WriteFile**](/windows/win32/api/fileapi/nf-fileapi-writefile) or [**WriteConsole**](writeconsole.md) function).
 - Window size and location (the rectangular region of the console screen buffer that is displayed in the console window).
 - Cursor position, appearance, and visibility.
 - Output modes (**ENABLE\_PROCESSED\_OUTPUT** and **ENABLE\_WRAP\_AT\_EOL\_OUTPUT**). For more information about console output modes, see [High-Level Console Modes](high-level-console-modes.md).
@@ -72,7 +72,7 @@ Character attributes can be divided into two classes: color and DBCS. The follow
 | **COMMON\_LVB\_REVERSE\_VIDEO** | Reverse foreground and background attributes. |
 | **COMMON\_LVB\_UNDERSCORE** | Underscore. |
 
-The foreground attributes specify the text color. The background attributes specify the color used to fill the cell's background. The other attributes are used with [DBCS](https://msdn.microsoft.com/library/windows/desktop/dd317794).
+The foreground attributes specify the text color. The background attributes specify the color used to fill the cell's background. The other attributes are used with [DBCS](/windows/win32/intl/double-byte-character-sets).
 
 An application can combine the foreground and background constants to achieve different colors. For example, the following combination results in bright cyan text on a blue background.
 

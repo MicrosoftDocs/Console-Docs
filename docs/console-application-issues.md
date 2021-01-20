@@ -19,46 +19,46 @@ ms.assetid: a561fbdd-b50d-4687-92d7-735377a7991d
 
 The 8-bit console functions use the OEM code page. All other functions use the ANSI code page by default. This means that strings returned by the console functions may not be processed correctly by the other functions and vice versa. For example, if **FindFirstFileA** returns a string that contains certain extended ANSI characters, **WriteConsoleA** will not display the string properly.
 
-The best long-term solution for a console application is to use **[Unicode](https://docs.microsoft.com/windows/win32/intl/unicode)**. The console will accept UTF-16 encoding on the W variant of the APIs or UTF-8 encoding on the A variant of the APIs after using **[SetConsoleCP](setconsolecp.md)** and **[SetConsoleOutputCP](setconsoleoutputcp.md)** to `65001` (`CP_UTF8` constant) for the UTF-8 code page.
+The best long-term solution for a console application is to use **[Unicode](/windows/win32/intl/unicode)**. The console will accept UTF-16 encoding on the W variant of the APIs or UTF-8 encoding on the A variant of the APIs after using **[SetConsoleCP](setconsolecp.md)** and **[SetConsoleOutputCP](setconsoleoutputcp.md)** to `65001` (`CP_UTF8` constant) for the UTF-8 code page.
 
-Barring that solution, a console application should use the [SetFileApisToOEM](https://msdn.microsoft.com/library/windows/desktop/aa365534) function. That function changes relevant file functions so that they produce OEM character set strings rather than ANSI character set strings.
+Barring that solution, a console application should use the [SetFileApisToOEM](/windows/win32/api/fileapi/nf-fileapi-setfileapistooem) function. That function changes relevant file functions so that they produce OEM character set strings rather than ANSI character set strings.
 
 The following are file functions:
 
 :::row:::
     :::column:::
-        [CopyFile](https://msdn.microsoft.com/library/windows/desktop/aa363851)  
-        [CreateDirectory](https://msdn.microsoft.com/library/windows/desktop/aa363855)  
-        [CreateFile](https://msdn.microsoft.com/library/windows/desktop/aa363858)  
-        [CreateProcess](https://msdn.microsoft.com/library/windows/desktop/ms682425)  
-        [DeleteFile](https://msdn.microsoft.com/library/windows/desktop/aa363915)  
-        [FindFirstFile](https://msdn.microsoft.com/library/windows/desktop/aa364418)  
-        [FindNextFile](https://msdn.microsoft.com/library/windows/desktop/aa364428)  
-        [GetCurrentDirectory](https://msdn.microsoft.com/library/windows/desktop/aa364934)  
-        [GetDiskFreeSpace](https://msdn.microsoft.com/library/windows/desktop/aa364935)  
-        [GetDriveType](https://msdn.microsoft.com/library/windows/desktop/aa364939)  
+        [CopyFile](/windows/win32/api/winbase/nf-winbase-copyfile)  
+        [CreateDirectory](/windows/win32/api/fileapi/nf-fileapi-createdirectorya)  
+        [CreateFile](/windows/win32/api/fileapi/nf-fileapi-createfilea)  
+        [CreateProcess](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessa)  
+        [DeleteFile](/windows/win32/api/fileapi/nf-fileapi-deletefilea)  
+        [FindFirstFile](/windows/win32/api/fileapi/nf-fileapi-findfirstfilea)  
+        [FindNextFile](/windows/win32/api/fileapi/nf-fileapi-findnextfilea)  
+        [GetCurrentDirectory](/windows/win32/api/winbase/nf-winbase-getcurrentdirectory)  
+        [GetDiskFreeSpace](/windows/win32/api/fileapi/nf-fileapi-getdiskfreespacea)  
+        [GetDriveType](/windows/win32/api/fileapi/nf-fileapi-getdrivetypea)  
     :::column-end:::
     :::column:::
-        [GetFileAttributes](https://msdn.microsoft.com/library/windows/desktop/aa364944)  
-        [GetFullPathName](https://msdn.microsoft.com/library/windows/desktop/aa364963)  
-        [GetModuleFileName](https://msdn.microsoft.com/library/windows/desktop/ms683197)  
-        [GetModuleHandle](https://msdn.microsoft.com/library/windows/desktop/ms683199)  
-        [GetSystemDirectory](https://msdn.microsoft.com/library/windows/desktop/ms724373)  
-        [GetTempFileName](https://msdn.microsoft.com/library/windows/desktop/aa364991)  
-        [GetTempPath](https://msdn.microsoft.com/library/windows/desktop/aa364992)  
-        [GetVolumeInformation](https://msdn.microsoft.com/library/windows/desktop/aa364993)  
-        [GetWindowsDirectory](https://msdn.microsoft.com/library/windows/desktop/ms724454)  
-        [LoadLibrary](https://msdn.microsoft.com/library/windows/desktop/ms684175)  
+        [GetFileAttributes](/windows/win32/api/fileapi/nf-fileapi-getfileattributesa)  
+        [GetFullPathName](/windows/win32/api/fileapi/nf-fileapi-getfullpathnamea)  
+        [GetModuleFileName](/windows/win32/api/libloaderapi/nf-libloaderapi-getmodulefilenamea)  
+        [GetModuleHandle](/windows/win32/api/libloaderapi/nf-libloaderapi-getmodulehandlea)  
+        [GetSystemDirectory](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getsystemdirectorya)  
+        [GetTempFileName](/windows/win32/api/fileapi/nf-fileapi-gettempfilenamea)  
+        [GetTempPath](/windows/win32/api/fileapi/nf-fileapi-gettemppatha)  
+        [GetVolumeInformation](/windows/win32/api/fileapi/nf-fileapi-getvolumeinformationa)  
+        [GetWindowsDirectory](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getwindowsdirectorya)  
+        [LoadLibrary](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya)  
     :::column-end:::
     :::column:::
-        [LoadLibraryEx](https://msdn.microsoft.com/library/windows/desktop/ms684179)  
-        [MoveFile](https://msdn.microsoft.com/library/windows/desktop/aa365239)  
-        [MoveFileEx](https://msdn.microsoft.com/library/windows/desktop/aa365240)  
-        [OpenFile](https://msdn.microsoft.com/library/windows/desktop/aa365430)  
-        [RemoveDirectory](https://msdn.microsoft.com/library/windows/desktop/aa365488)  
-        [SearchPath](https://msdn.microsoft.com/library/windows/desktop/aa365527)  
-        [SetCurrentDirectory](https://msdn.microsoft.com/library/windows/desktop/aa365530)  
-        [SetFileAttributes](https://msdn.microsoft.com/library/windows/desktop/aa365535)  
+        [LoadLibraryEx](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibraryexa)  
+        [MoveFile](/windows/win32/api/winbase/nf-winbase-movefile)  
+        [MoveFileEx](/windows/win32/api/winbase/nf-winbase-movefileexa)  
+        [OpenFile](/windows/win32/api/winbase/nf-winbase-openfile)  
+        [RemoveDirectory](/windows/win32/api/fileapi/nf-fileapi-removedirectorya)  
+        [SearchPath](/windows/win32/api/processenv/nf-processenv-searchpatha)  
+        [SetCurrentDirectory](/windows/win32/api/winbase/nf-winbase-setcurrentdirectory)  
+        [SetFileAttributes](/windows/win32/api/fileapi/nf-fileapi-setfileattributesa)  
     :::column-end:::
 :::row-end:::
 

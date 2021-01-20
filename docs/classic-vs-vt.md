@@ -76,7 +76,7 @@ UTF-16 support in the console can be utilized with no additional configuration v
 UTF-8 support in the console can be utilized via the _A_ variant of Console APIs against console handles after setting the codepage to `65001` or `CP_UTF8` with the [**SetConsoleOutputCP**](setconsoleoutputcp.md) and [**SetConsoleCP**](setconsolecp.md) methods, as appropriate. Setting the code pages in advance is only necessary if the machine has not chosen "Use Unicode UTF-8 for worldwide language support" in the settings for Non-Unicode applications in the Region section of the Control Panel.
 
 >[!NOTE]
-> As of now, UTF-8 is supported fully on the standard output stream with the [**WriteConsole**](writeconsole.md) and [**WriteFile**](https://msdn.microsoft.com/library/windows/desktop/aa365747) methods. Support on the input stream varies depending on the input mode and will continue to improve over time. Notably the default **["cooked"](high-level-console-modes.md)** modes on input do not fully support UTF-8 yet. The current status of this work can be found at [**microsoft/terminal#7777**](https://github.com/microsoft/terminal/issues/7777) on GitHub. The workaround is to use the algorithmically-translatable UTF-16 for reading input through [**ReadConsoleW**](readconsole.md) or [**ReadConsoleInputW**](readconsoleinput.md) until the outstanding issues are resolved.
+> As of now, UTF-8 is supported fully on the standard output stream with the [**WriteConsole**](writeconsole.md) and [**WriteFile**](/windows/win32/api/fileapi/nf-fileapi-writefile) methods. Support on the input stream varies depending on the input mode and will continue to improve over time. Notably the default **["cooked"](high-level-console-modes.md)** modes on input do not fully support UTF-8 yet. The current status of this work can be found at [**microsoft/terminal#7777**](https://github.com/microsoft/terminal/issues/7777) on GitHub. The workaround is to use the algorithmically-translatable UTF-16 for reading input through [**ReadConsoleW**](readconsole.md) or [**ReadConsoleInputW**](readconsoleinput.md) until the outstanding issues are resolved.
 
 ## Recommendations
 
@@ -97,9 +97,9 @@ A **limited subset of Windows Console APIs is still necessary** to establish the
 - Signals and signal handling will continue to be conducted with [**SetConsoleCtrlHandler**](setconsolectrlhandler.md), [**HandlerRoutine**](handlerroutine.md), and [**GenerateConsoleCtrlEvent**](generateconsolectrlevent.md).
 
 - Communication with the console device handles can be conducted with [**WriteConsole**](writeconsole.md) and [**ReadConsole**](readconsole.md). These may also be leveraged through programming language runtimes in the forms of:
-        - C Runtime (CRT): [Stream I/O](https://docs.microsoft.com/cpp/c-runtime-library/stream-i-o) like **printf**, **scanf**, **putc**, **getc**, or [other levels of I/O functions](https://docs.microsoft.com/cpp/c-runtime-library/input-and-output).
-        - C++ Standard Library (STL): [iostream](https://docs.microsoft.com/cpp/standard-library/iostream) like **cout** and **cin**.
-        - .NET Runtime: [System.Console](https://docs.microsoft.com/dotnet/api/system.console) like **Console.WriteLine**.
+        - C Runtime (CRT): [Stream I/O](/cpp/c-runtime-library/stream-i-o) like **printf**, **scanf**, **putc**, **getc**, or [other levels of I/O functions](/cpp/c-runtime-library/input-and-output).
+        - C++ Standard Library (STL): [iostream](/cpp/standard-library/iostream) like **cout** and **cin**.
+        - .NET Runtime: [System.Console](/dotnet/api/system.console) like **Console.WriteLine**.
 
 - Applications that must be aware of window size changes will still need to use [**ReadConsoleInput**](readconsoleinput.md) to receive them interleaved with key events as **ReadConsole** alone will discard them.
 

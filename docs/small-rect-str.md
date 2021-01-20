@@ -75,6 +75,6 @@ For an example, see [Scrolling a Screen Buffer's Contents](scrolling-a-screen-bu
 
 ## See also
 
-[**RECT**](https://msdn.microsoft.com/library/windows/desktop/dd162897)
+[**RECT**](/previous-versions//dd162897(v=vs.85))
 
-[**RECTL**](https://msdn.microsoft.com/library/windows/desktop/dd162907)
+[**RECTL**](/previous-versions//dd162907(v=vs.85))

@@ -74,7 +74,7 @@ A pointer to a variable that receives the number of input records actually writt
 
 If the function succeeds, the return value is nonzero.
 
-If the function fails, the return value is zero. To get extended error information, call [**GetLastError**](https://msdn.microsoft.com/library/windows/desktop/ms679360).
+If the function fails, the return value is zero. To get extended error information, call [**GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror).
 
 ## Remarks
 
@@ -104,7 +104,7 @@ If the function fails, the return value is zero. To get extended error informati
 
 [Low-Level Console Input Functions](low-level-console-input-functions.md)
 
-[**MapVirtualKey**](https://msdn.microsoft.com/library/windows/desktop/ms646306)
+[**MapVirtualKey**](/windows/win32/api/winuser/nf-winuser-mapvirtualkeya)
 
 [**PeekConsoleInput**](peekconsoleinput.md)
 
@@ -114,4 +114,4 @@ If the function fails, the return value is zero. To get extended error informati
 
 [**SetConsoleOutputCP**](setconsoleoutputcp.md)
 
-[**VkKeyScan**](https://msdn.microsoft.com/library/windows/desktop/ms646329)
+[**VkKeyScan**](/windows/win32/api/winuser/nf-winuser-vkkeyscana)
