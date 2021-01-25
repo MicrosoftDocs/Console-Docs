@@ -20,7 +20,7 @@ ms.assetid: 8169708b-83da-47ef-94be-eca3ca7d0a5b
 
 Console aliases are used to map source strings to target strings. For example, you can define a console alias that maps "test" to "cd \\a\_very\_long\_path\\test". When you type "test" at the command line, the console subsystem expands the alias and executes the specified cd command.
 
-To define a console alias, use [**Doskey.exe**](https://docs.microsoft.com/windows-server/administration/windows-commands/doskey) to create a macro, or use the [**AddConsoleAlias**](addconsolealias.md) function. The following example uses `Doskey.exe`:
+To define a console alias, use [**Doskey.exe**](/windows-server/administration/windows-commands/doskey) to create a macro, or use the [**AddConsoleAlias**](addconsolealias.md) function. The following example uses `Doskey.exe`:
 
 **doskey test=cd \\**<em>a\_very\_long\_path</em>**\\test**
 
@@ -32,7 +32,7 @@ AddConsoleAlias( TEXT("test"),
                  TEXT("cmd.exe"));
 ```
 
-To add parameters to a console alias macro using `Doskey.exe`, use the batch parameters `$1` through `$9`. For more information on the special codes that can be used in Doskey macro definitions, see the command-line help for `Doskey.exe` or [Doskey](https://go.microsoft.com/fwlink/p/?linkid=196265) on TechNet.
+To add parameters to a console alias macro using `Doskey.exe`, use the batch parameters `$1` through `$9`. For more information on the special codes that can be used in Doskey macro definitions, see the command-line help for `Doskey.exe` or [Doskey](/previous-versions/windows/it-pro/windows-xp/bb490894(v=technet.10)) on TechNet.
 
 All instances of an executable file running in the same console window share any defined console aliases. Multiple instances of the same executable file running in different console windows do not share console aliases. Different executable files running in the same console window do not share console aliases.
 

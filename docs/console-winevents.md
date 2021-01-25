@@ -47,12 +47,12 @@ api_type:
 # Console WinEvents
 
 > [!IMPORTANT]
-> WinEvents are part of the legacy **[Microsoft Active Accessibility](https://docs.microsoft.com/windows/win32/winauto/microsoft-active-accessibility)** framework. Development using these events is strongly discouraged in favor of the **[Microsoft UI Automation](https://docs.microsoft.com/windows/win32/winauto/entry-uiauto-win32)** framework which provides a more robust and comprehensive suite of interfaces for accessibility and automation applications to interact with the console. 
+> WinEvents are part of the legacy **[Microsoft Active Accessibility](/windows/win32/winauto/microsoft-active-accessibility)** framework. Development using these events is strongly discouraged in favor of the **[Microsoft UI Automation](/windows/win32/winauto/entry-uiauto-win32)** framework which provides a more robust and comprehensive suite of interfaces for accessibility and automation applications to interact with the console. 
 
 > [!WARNING]
 > Registering for these events is a global activity and will significantly impact performance of all command-line applications running on a system at the same time, including services and background utilities. The **Microsoft UI Automation** framework is console session specific and overcomes this limitation.
 
-The following event constants are used in the *event* parameter of the [*WinEventProc*](https://msdn.microsoft.com/library/windows/desktop/dd373885(v=vs.85).aspx) callback function. For more information, see [WinEvents](https://msdn.microsoft.com/library/windows/desktop/dd373889).
+The following event constants are used in the *event* parameter of the [*WinEventProc*](/windows/win32/api/winuser/nc-winuser-wineventproc) callback function. For more information, see [WinEvents](https://msdn.microsoft.com/library/windows/desktop/dd373889).
 
 | Constant/value | Description |
 |-|-|

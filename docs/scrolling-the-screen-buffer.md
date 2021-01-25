@@ -27,14 +27,14 @@ The window rectangle can change to display different parts of the console screen
 
   ![screen buffer window panning around large buffer of content](images/cscon-01.png)
 
-- When using the [**WriteFile**](https://msdn.microsoft.com/library/windows/desktop/aa365747) function to write to a screen buffer with wrap at end-of-line (EOL) output mode enabled, the window rectangle shifts automatically, so the cursor is always displayed.
+- When using the [**WriteFile**](/windows/win32/api/fileapi/nf-fileapi-writefile) function to write to a screen buffer with wrap at end-of-line (EOL) output mode enabled, the window rectangle shifts automatically, so the cursor is always displayed.
 - When the [**SetConsoleCursorPosition**](setconsolecursorposition.md) function specifies a new cursor position that is outside the boundaries of the current window rectangle, the window rectangle shifts automatically to display the cursor.
 - When the user changes the size of the console window or uses the window's scroll bars, the window rectangle of the active screen buffer can change. This change is not reported as a window resizing event in the input buffer.
 
 In each of these situations, the window rectangle shifts to display a different part of the console screen buffer, but the contents of the console screen buffer remain in the same position. The following situations can cause the console screen buffer's contents to shift:
 
 - When the [**ScrollConsoleScreenBuffer**](scrollconsolescreenbuffer.md) function is called, a rectangular block is copied from one part of a screen buffer to another.
-- When using [**WriteFile**](https://msdn.microsoft.com/library/windows/desktop/aa365747) to write to a screen buffer with wrap at EOL output mode enabled, the console screen buffer's contents scroll automatically when the end of the console screen buffer is encountered. This scrolling discards the top row of the console screen buffer.
+- When using [**WriteFile**](/windows/win32/api/fileapi/nf-fileapi-writefile) to write to a screen buffer with wrap at EOL output mode enabled, the console screen buffer's contents scroll automatically when the end of the console screen buffer is encountered. This scrolling discards the top row of the console screen buffer.
 
 [**ScrollConsoleScreenBuffer**](scrollconsolescreenbuffer.md) specifies the console screen buffer rectangle that is moved and the new upper left coordinates to which the rectangle is copied. This function can scroll a portion or the entire contents of the console screen buffer.
 
