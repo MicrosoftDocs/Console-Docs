@@ -198,6 +198,7 @@ For options that specify colors, the colors will be used as defined in the conso
 |-------|---------------------------|--------------------------------------------------------------------|
 | 0 | Default | Returns all attributes to the default state prior to modification |
 | 1 | Bold/Bright | Applies brightness/intensity flag to foreground color |
+| 22 | No bold/bright | Removes brightness/intensity flag from foreground color |
 | 4 | Underline | Adds underline |
 | 24 | No underline | Removes underline |
 | 7 | Negative | Swaps foreground and background colors |
