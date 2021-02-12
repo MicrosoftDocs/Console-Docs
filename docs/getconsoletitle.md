@@ -68,7 +68,7 @@ The size of the buffer pointed to by the *lpConsoleTitle* parameter, in characte
 
 If the function succeeds, the return value is the length of the console window's title, in characters.
 
-If the function fails, the return value is zero and [**GetLastError**](https://msdn.microsoft.com/library/windows/desktop/ms679360) returns the error code.
+If the function fails, the return value is zero and [**GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) returns the error code.
 
 ## Remarks
 

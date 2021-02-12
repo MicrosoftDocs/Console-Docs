@@ -17,15 +17,15 @@ ms.assetid: f9a50063-8fc8-4cd1-8f24-9ae3946d3119
 
 # Console Buffer Security and Access Rights
 
-The Windows security model enables you to control access to console input buffers and console screen buffers. For more information about security, see [Access-Control Model](https://msdn.microsoft.com/library/windows/desktop/aa374876).
+The Windows security model enables you to control access to console input buffers and console screen buffers. For more information about security, see [Access-Control Model](/windows/win32/secauthz/access-control-model).
 
 ## Console Object Security Descriptors
 
-You can specify a [security descriptor](https://msdn.microsoft.com/library/windows/desktop/aa379563) for the console input and console screen buffers when you call the [**CreateFile**](https://msdn.microsoft.com/library/windows/desktop/aa363858) or [**CreateConsoleScreenBuffer**](createconsolescreenbuffer.md) function. If you specify **NULL**, the object gets a default security descriptor. The ACLs in the default security descriptor for a console buffer come from the primary or impersonation token of the creator.
+You can specify a [security descriptor](/windows/win32/secauthz/security-descriptors) for the console input and console screen buffers when you call the [**CreateFile**](/windows/win32/api/fileapi/nf-fileapi-createfilea) or [**CreateConsoleScreenBuffer**](createconsolescreenbuffer.md) function. If you specify **NULL**, the object gets a default security descriptor. The ACLs in the default security descriptor for a console buffer come from the primary or impersonation token of the creator.
 
-The handles returned by [**CreateFile**](https://msdn.microsoft.com/library/windows/desktop/aa363858), [**CreateConsoleScreenBuffer**](createconsolescreenbuffer.md), and [**GetStdHandle**](getstdhandle.md) have the **GENERIC\_READ** and **GENERIC\_WRITE** access rights.
+The handles returned by [**CreateFile**](/windows/win32/api/fileapi/nf-fileapi-createfilea), [**CreateConsoleScreenBuffer**](createconsolescreenbuffer.md), and [**GetStdHandle**](getstdhandle.md) have the **GENERIC\_READ** and **GENERIC\_WRITE** access rights.
 
-The valid access rights include the **GENERIC\_READ** and **GENERIC\_WRITE** [generic access rights](https://msdn.microsoft.com/library/windows/desktop/aa446632).
+The valid access rights include the **GENERIC\_READ** and **GENERIC\_WRITE** [generic access rights](/windows/win32/secauthz/generic-access-rights).
 
 | Value | Meaning |
 |-|-|
@@ -33,7 +33,7 @@ The valid access rights include the **GENERIC\_READ** and **GENERIC\_WRITE** [ge
 | **GENERIC\_WRITE** (0x40000000L) | Requests write access to the console screen buffer, enabling the process to write data to the buffer. |
 
 > [!NOTE]
-> **[Universal Windows Platform console apps](https://docs.microsoft.com/windows/uwp/launch-resume/console-uwp)** and those with a lower **[integrity level](https://docs.microsoft.com/windows/win32/secauthz/mandatory-integrity-control)** than the attached console will be prohibited from both reading the output buffer and writing to the input buffer even if the security descriptors above would normally permit it. Please see the **[Wrong Way Verbs](#wrong-way-verbs)** discussion below for more details.
+> **[Universal Windows Platform console apps](/windows/uwp/launch-resume/console-uwp)** and those with a lower **[integrity level](/windows/win32/secauthz/mandatory-integrity-control)** than the attached console will be prohibited from both reading the output buffer and writing to the input buffer even if the security descriptors above would normally permit it. Please see the **[Wrong Way Verbs](#wrong-way-verbs)** discussion below for more details.
 
 ## Wrong-Way Verbs
 
@@ -43,8 +43,8 @@ The term "wrong-way verbs" is intended to apply to the operation that is the con
 
 The two scenarios where this can be found are:
 
-1. **[Universal Windows Platform console apps](https://docs.microsoft.com/windows/uwp/launch-resume/console-uwp)**. As these are cousins of other Universal Windows Platform applications, they hold a promise that they are isolated from other applications and provide user guarantees around the effects of their operation.
-1. Any console application intentionally launched with a lower **[integrity level](https://docs.microsoft.com/windows/win32/secauthz/mandatory-integrity-control)** than the existing session which can be accomplished with **[labeling or token manipulation during CreateProcess](https://docs.microsoft.com/previous-versions/dotnet/articles/bb625960(v=msdn.10))**.
+1. **[Universal Windows Platform console apps](/windows/uwp/launch-resume/console-uwp)**. As these are cousins of other Universal Windows Platform applications, they hold a promise that they are isolated from other applications and provide user guarantees around the effects of their operation.
+1. Any console application intentionally launched with a lower **[integrity level](/windows/win32/secauthz/mandatory-integrity-control)** than the existing session which can be accomplished with **[labeling or token manipulation during CreateProcess](/previous-versions/dotnet/articles/bb625960(v=msdn.10))**.
 
 If either of these scenarios is detected, the console will apply the "wrong-way verbs" flag to the command-line application connection and reject calls to the following APIs to reduce the surface of communication between the levels:
 

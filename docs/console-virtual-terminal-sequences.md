@@ -198,6 +198,7 @@ For options that specify colors, the colors will be used as defined in the conso
 |-------|---------------------------|--------------------------------------------------------------------|
 | 0 | Default | Returns all attributes to the default state prior to modification |
 | 1 | Bold/Bright | Applies brightness/intensity flag to foreground color |
+| 22 | No bold/bright | Removes brightness/intensity flag from foreground color |
 | 4 | Underline | Adds underline |
 | 24 | No underline | Removes underline |
 | 7 | Negative | Swaps foreground and background colors |
@@ -545,36 +546,36 @@ The following code provides several examples of text formatting.
 
 int main()
 {
- // Set output mode to handle virtual terminal sequences
- HANDLE hOut = GetStdHandle(STD_OUTPUT_HANDLE);
- if (hOut == INVALID_HANDLE_VALUE)
- {
- return GetLastError();
- }
+    // Set output mode to handle virtual terminal sequences
+    HANDLE hOut = GetStdHandle(STD_OUTPUT_HANDLE);
+    if (hOut == INVALID_HANDLE_VALUE)
+    {
+        return GetLastError();
+    }
 
- DWORD dwMode = 0;
- if (!GetConsoleMode(hOut, &dwMode))
- {
- return GetLastError();
- }
+    DWORD dwMode = 0;
+    if (!GetConsoleMode(hOut, &dwMode))
+    {
+        return GetLastError();
+    }
 
- dwMode |= ENABLE_VIRTUAL_TERMINAL_PROCESSING;
- if (!SetConsoleMode(hOut, dwMode))
- {
- return GetLastError();
- }
+    dwMode |= ENABLE_VIRTUAL_TERMINAL_PROCESSING;
+    if (!SetConsoleMode(hOut, dwMode))
+    {
+        return GetLastError();
+    }
 
- // Try some Set Graphics Rendition (SGR) terminal escape sequences
- wprintf(L"\x1b[31mThis text has a red foreground using SGR.31.\r\n");
- wprintf(L"\x1b[1mThis text has a bright (bold) red foreground using SGR.1 to affect the previous color setting.\r\n");
- wprintf(L"\x1b[mThis text has returned to default colors using SGR.0 implicitly.\r\n");
- wprintf(L"\x1b[34;46mThis text shows the foreground and background change at the same time.\r\n");
- wprintf(L"\x1b[0mThis text has returned to default colors using SGR.0 explicitly.\r\n");
- wprintf(L"\x1b[31;32;33;34;35;36;101;102;103;104;105;106;107mThis text attempts to apply many colors in the same command. Note the colors are applied from left to right so only the right-most option of foreground cyan (SGR.36) and background bright white (SGR.107) is effective.\r\n");
- wprintf(L"\x1b[39mThis text has restored the foreground color only.\r\n");
- wprintf(L"\x1b[49mThis text has restored the background color only.\r\n");
+    // Try some Set Graphics Rendition (SGR) terminal escape sequences
+    wprintf(L"\x1b[31mThis text has a red foreground using SGR.31.\r\n");
+    wprintf(L"\x1b[1mThis text has a bright (bold) red foreground using SGR.1 to affect the previous color setting.\r\n");
+    wprintf(L"\x1b[mThis text has returned to default colors using SGR.0 implicitly.\r\n");
+    wprintf(L"\x1b[34;46mThis text shows the foreground and background change at the same time.\r\n");
+    wprintf(L"\x1b[0mThis text has returned to default colors using SGR.0 explicitly.\r\n");
+    wprintf(L"\x1b[31;32;33;34;35;36;101;102;103;104;105;106;107mThis text attempts to apply many colors in the same command. Note the colors are applied from left to right so only the right-most option of foreground cyan (SGR.36) and background bright white (SGR.107) is effective.\r\n");
+    wprintf(L"\x1b[39mThis text has restored the foreground color only.\r\n");
+    wprintf(L"\x1b[49mThis text has restored the background color only.\r\n");
 
- return 0;
+    return 0;
 }
 ```
 
@@ -602,53 +603,53 @@ The following code provides an example of the recommended way to enable virtual 
 
 int main()
 {
- // Set output mode to handle virtual terminal sequences
- HANDLE hOut = GetStdHandle(STD_OUTPUT_HANDLE);
- if (hOut == INVALID_HANDLE_VALUE)
- {
- return false;
- }
- HANDLE hIn = GetStdHandle(STD_INPUT_HANDLE);
- if (hIn == INVALID_HANDLE_VALUE)
- {
- return false;
- }
+    // Set output mode to handle virtual terminal sequences
+    HANDLE hOut = GetStdHandle(STD_OUTPUT_HANDLE);
+    if (hOut == INVALID_HANDLE_VALUE)
+    {
+        return false;
+    }
+    HANDLE hIn = GetStdHandle(STD_INPUT_HANDLE);
+    if (hIn == INVALID_HANDLE_VALUE)
+    {
+        return false;
+    }
 
- DWORD dwOriginalOutMode = 0;
- DWORD dwOriginalInMode = 0;
- if (!GetConsoleMode(hOut, &dwOriginalOutMode))
- {
- return false;
- }
- if (!GetConsoleMode(hIn, &dwOriginalInMode))
- {
- return false;
- }
+    DWORD dwOriginalOutMode = 0;
+    DWORD dwOriginalInMode = 0;
+    if (!GetConsoleMode(hOut, &dwOriginalOutMode))
+    {
+        return false;
+    }
+    if (!GetConsoleMode(hIn, &dwOriginalInMode))
+    {
+        return false;
+    }
 
- DWORD dwRequestedOutModes = ENABLE_VIRTUAL_TERMINAL_PROCESSING | DISABLE_NEWLINE_AUTO_RETURN;
- DWORD dwRequestedInModes = ENABLE_VIRTUAL_TERMINAL_INPUT;
+    DWORD dwRequestedOutModes = ENABLE_VIRTUAL_TERMINAL_PROCESSING | DISABLE_NEWLINE_AUTO_RETURN;
+    DWORD dwRequestedInModes = ENABLE_VIRTUAL_TERMINAL_INPUT;
 
- DWORD dwOutMode = dwOriginalOutMode | dwRequestedOutModes;
- if (!SetConsoleMode(hOut, dwOutMode))
- {
- // we failed to set both modes, try to step down mode gracefully.
- dwRequestedOutModes = ENABLE_VIRTUAL_TERMINAL_PROCESSING;
- dwOutMode = dwOriginalOutMode | dwRequestedOutModes;
- if (!SetConsoleMode(hOut, dwOutMode))
- {
- // Failed to set any VT mode, can't do anything here.
- return -1;
- }
- }
+    DWORD dwOutMode = dwOriginalOutMode | dwRequestedOutModes;
+    if (!SetConsoleMode(hOut, dwOutMode))
+    {
+        // we failed to set both modes, try to step down mode gracefully.
+        dwRequestedOutModes = ENABLE_VIRTUAL_TERMINAL_PROCESSING;
+        dwOutMode = dwOriginalOutMode | dwRequestedOutModes;
+        if (!SetConsoleMode(hOut, dwOutMode))
+        {
+            // Failed to set any VT mode, can't do anything here.
+            return -1;
+        }
+    }
 
- DWORD dwInMode = dwOriginalInMode | ENABLE_VIRTUAL_TERMINAL_INPUT;
- if (!SetConsoleMode(hIn, dwInMode))
- {
- // Failed to set VT input mode, can't do anything here.
- return -1;
- }
+    DWORD dwInMode = dwOriginalInMode | ENABLE_VIRTUAL_TERMINAL_INPUT;
+    if (!SetConsoleMode(hIn, dwInMode))
+    {
+        // Failed to set VT input mode, can't do anything here.
+        return -1;
+    }
 
- return 0;
+    return 0;
 }
 ```
 
@@ -659,11 +660,6 @@ The following example is intended to be a more robust example of code using a va
 This example makes use of the alternate screen buffer, manipulating tab stops, setting scrolling margins, and changing the character set.
 
 ```C
-//
-// Copyright (C) Microsoft. All rights reserved.
-//
-#define DEFINE_CONSOLEV2_PROPERTIES
-
 // System headers
 #include <windows.h>
 
@@ -677,180 +673,172 @@ This example makes use of the alternate screen buffer, manipulating tab stops, s
 
 bool EnableVTMode()
 {
- // Set output mode to handle virtual terminal sequences
- HANDLE hOut = GetStdHandle(STD_OUTPUT_HANDLE);
- if (hOut == INVALID_HANDLE_VALUE)
- {
- return false;
- }
+    // Set output mode to handle virtual terminal sequences
+    HANDLE hOut = GetStdHandle(STD_OUTPUT_HANDLE);
+    if (hOut == INVALID_HANDLE_VALUE)
+    {
+        return false;
+    }
 
- DWORD dwMode = 0;
- if (!GetConsoleMode(hOut, &dwMode))
- {
- return false;
- }
+    DWORD dwMode = 0;
+    if (!GetConsoleMode(hOut, &dwMode))
+    {
+        return false;
+    }
 
- dwMode |= ENABLE_VIRTUAL_TERMINAL_PROCESSING;
- if (!SetConsoleMode(hOut, dwMode))
- {
- return false;
- }
- return true;
+    dwMode |= ENABLE_VIRTUAL_TERMINAL_PROCESSING;
+    if (!SetConsoleMode(hOut, dwMode))
+    {
+        return false;
+    }
+    return true;
 }
 
 void PrintVerticalBorder()
 {
- printf(ESC "(0"); // Enter Line drawing mode
- printf(CSI "104;93m"); // bright yellow on bright blue
- printf("x"); // in line drawing mode, \x78 -> \u2502 "Vertical Bar"
- printf(CSI "0m"); // restore color
- printf(ESC "(B"); // exit line drawing mode
+    printf(ESC "(0"); // Enter Line drawing mode
+    printf(CSI "104;93m"); // bright yellow on bright blue
+    printf("x"); // in line drawing mode, \x78 -> \u2502 "Vertical Bar"
+    printf(CSI "0m"); // restore color
+    printf(ESC "(B"); // exit line drawing mode
 }
 
 void PrintHorizontalBorder(COORD const Size, bool fIsTop)
 {
- printf(ESC "(0"); // Enter Line drawing mode
- printf(CSI "104;93m"); // Make the border bright yellow on bright blue
- printf(fIsTop? "l" : "m"); // print left corner 
+    printf(ESC "(0"); // Enter Line drawing mode
+    printf(CSI "104;93m"); // Make the border bright yellow on bright blue
+    printf(fIsTop ? "l" : "m"); // print left corner 
 
- for (int i = 1; i < Size.X - 1; i++) 
- printf("q"); // in line drawing mode, \x71 -> \u2500 "HORIZONTAL SCAN LINE-5"
+    for (int i = 1; i < Size.X - 1; i++)
+        printf("q"); // in line drawing mode, \x71 -> \u2500 "HORIZONTAL SCAN LINE-5"
 
- printf(fIsTop? "k" : "j"); // print right corner
- printf(CSI "0m");
- printf(ESC "(B"); // exit line drawing mode
+    printf(fIsTop ? "k" : "j"); // print right corner
+    printf(CSI "0m");
+    printf(ESC "(B"); // exit line drawing mode
 }
 
-void PrintStatusLine(char* const pszMessage, COORD const Size)
+void PrintStatusLine(const char* const pszMessage, COORD const Size)
 {
- printf(CSI "%d;1H", Size.Y);
- printf(CSI "K"); // clear the line
- printf(pszMessage); 
+    printf(CSI "%d;1H", Size.Y);
+    printf(CSI "K"); // clear the line
+    printf(pszMessage);
 }
 
 int __cdecl wmain(int argc, WCHAR* argv[])
-{ 
- argc; // unused
- argv; // unused
- //First, enable VT mode
- bool fSuccess = EnableVTMode();
- if (!fSuccess)
- {
- printf("Unable to enter VT processing mode. Quitting.\n");
- return -1;
- }
- HANDLE hOut = GetStdHandle(STD_OUTPUT_HANDLE);
- if (hOut == INVALID_HANDLE_VALUE)
- {
- printf("Couldn't get the console handle. Quitting.\n");
- return -1;
- }
+{
+    argc; // unused
+    argv; // unused
+    //First, enable VT mode
+    bool fSuccess = EnableVTMode();
+    if (!fSuccess)
+    {
+        printf("Unable to enter VT processing mode. Quitting.\n");
+        return -1;
+    }
+    HANDLE hOut = GetStdHandle(STD_OUTPUT_HANDLE);
+    if (hOut == INVALID_HANDLE_VALUE)
+    {
+        printf("Couldn't get the console handle. Quitting.\n");
+        return -1;
+    }
 
- CONSOLE_SCREEN_BUFFER_INFO ScreenBufferInfo;
- GetConsoleScreenBufferInfo(hOut, &ScreenBufferInfo);
- COORD Size;
- Size.X = ScreenBufferInfo.srWindow.Right - ScreenBufferInfo.srWindow.Left + 1;
- Size.Y = ScreenBufferInfo.srWindow.Bottom - ScreenBufferInfo.srWindow.Top + 1;
+    CONSOLE_SCREEN_BUFFER_INFO ScreenBufferInfo;
+    GetConsoleScreenBufferInfo(hOut, &ScreenBufferInfo);
+    COORD Size;
+    Size.X = ScreenBufferInfo.srWindow.Right - ScreenBufferInfo.srWindow.Left + 1;
+    Size.Y = ScreenBufferInfo.srWindow.Bottom - ScreenBufferInfo.srWindow.Top + 1;
 
- // Enter the alternate buffer
- printf(CSI "?1049h");
+    // Enter the alternate buffer
+    printf(CSI "?1049h");
 
- // Clear screen, tab stops, set, stop at columns 16, 32
- printf(CSI "1;1H");
- printf(CSI "2J"); // Clear screen
+    // Clear screen, tab stops, set, stop at columns 16, 32
+    printf(CSI "1;1H");
+    printf(CSI "2J"); // Clear screen
 
- int iNumTabStops = 4; // (0, 20, 40, width)
- printf(CSI "3g"); // clear all tab stops
- printf(CSI "1;20H"); // Move to column 20
- printf(ESC "H"); // set a tab stop
+    int iNumTabStops = 4; // (0, 20, 40, width)
+    printf(CSI "3g"); // clear all tab stops
+    printf(CSI "1;20H"); // Move to column 20
+    printf(ESC "H"); // set a tab stop
 
- printf(CSI "1;40H"); // Move to column 40
- printf(ESC "H"); // set a tab stop
+    printf(CSI "1;40H"); // Move to column 40
+    printf(ESC "H"); // set a tab stop
 
- // Set scrolling margins to 3, h-2
- printf(CSI "3;%dr", Size.Y-2);
- int iNumLines = Size.Y - 4;
+    // Set scrolling margins to 3, h-2
+    printf(CSI "3;%dr", Size.Y - 2);
+    int iNumLines = Size.Y - 4;
 
- printf(CSI "1;1H");
- printf(CSI "102;30m");
- printf("Windows 10 Anniversary Update - VT Example"); 
- printf(CSI "0m");
+    printf(CSI "1;1H");
+    printf(CSI "102;30m");
+    printf("Windows 10 Anniversary Update - VT Example");
+    printf(CSI "0m");
 
- // Print a top border - Yellow
- printf(CSI "2;1H");
- PrintHorizontalBorder(Size, true);
+    // Print a top border - Yellow
+    printf(CSI "2;1H");
+    PrintHorizontalBorder(Size, true);
 
- // // Print a bottom border
- printf(CSI "%d;1H", Size.Y-1);
- PrintHorizontalBorder(Size, false);
+    // // Print a bottom border
+    printf(CSI "%d;1H", Size.Y - 1);
+    PrintHorizontalBorder(Size, false);
 
- wchar_t wch;
+    wchar_t wch;
 
- // draw columns
- printf(CSI "3;1H"); 
- int line = 0;
- for (line = 0; line < iNumLines * iNumTabStops; line++)
- {
- PrintVerticalBorder();
- if (line + 1 != iNumLines * iNumTabStops) // don't advance to next line if this is the last line
- printf("\t"); // advance to next tab stop
+    // draw columns
+    printf(CSI "3;1H");
+    int line = 0;
+    for (line = 0; line < iNumLines * iNumTabStops; line++)
+    {
+        PrintVerticalBorder();
+        if (line + 1 != iNumLines * iNumTabStops) // don't advance to next line if this is the last line
+            printf("\t"); // advance to next tab stop
 
- }
+    }
 
- PrintStatusLine("Press any key to see text printed between tab stops.", Size);
- wch = _getwch();
+    PrintStatusLine("Press any key to see text printed between tab stops.", Size);
+    wch = _getwch();
 
- // Fill columns with output
- printf(CSI "3;1H"); 
- for (line = 0; line < iNumLines; line++)
- {
- int tab = 0;
- for (tab = 0; tab < iNumTabStops-1; tab++)
- {
- PrintVerticalBorder();
- printf("line=%d", line);
- printf("\t"); // advance to next tab stop
- }
- PrintVerticalBorder();// print border at right side
- if (line+1 != iNumLines)
- printf("\t"); // advance to next tab stop, (on the next line)
- }
+    // Fill columns with output
+    printf(CSI "3;1H");
+    for (line = 0; line < iNumLines; line++)
+    {
+        int tab = 0;
+        for (tab = 0; tab < iNumTabStops - 1; tab++)
+        {
+            PrintVerticalBorder();
+            printf("line=%d", line);
+            printf("\t"); // advance to next tab stop
+        }
+        PrintVerticalBorder();// print border at right side
+        if (line + 1 != iNumLines)
+            printf("\t"); // advance to next tab stop, (on the next line)
+    }
 
- PrintStatusLine("Press any key to demonstrate scroll margins", Size);
- wch = _getwch();
+    PrintStatusLine("Press any key to demonstrate scroll margins", Size);
+    wch = _getwch();
 
- printf(CSI "3;1H"); 
- for (line = 0; line < iNumLines * 2; line++)
- {
- printf(CSI "K"); // clear the line
- int tab = 0;
- for (tab = 0; tab < iNumTabStops-1; tab++)
- {
- PrintVerticalBorder();
- printf("line=%d", line);
- printf("\t"); // advance to next tab stop
- }
- PrintVerticalBorder(); // print border at right side
- if (line+1 != iNumLines * 2)
- {
- printf("\n"); //Advance to next line. If we're at the bottom of the margins, the text will scroll.
- printf("\r"); //return to first col in buffer
- }
- }
+    printf(CSI "3;1H");
+    for (line = 0; line < iNumLines * 2; line++)
+    {
+        printf(CSI "K"); // clear the line
+        int tab = 0;
+        for (tab = 0; tab < iNumTabStops - 1; tab++)
+        {
+            PrintVerticalBorder();
+            printf("line=%d", line);
+            printf("\t"); // advance to next tab stop
+        }
+        PrintVerticalBorder(); // print border at right side
+        if (line + 1 != iNumLines * 2)
+        {
+            printf("\n"); //Advance to next line. If we're at the bottom of the margins, the text will scroll.
+            printf("\r"); //return to first col in buffer
+        }
+    }
 
- PrintStatusLine("Press any key to exit", Size);
- wch = _getwch();
+    PrintStatusLine("Press any key to exit", Size);
+    wch = _getwch();
 
- // Exit the alternate buffer
- printf(CSI "?1049l");
+    // Exit the alternate buffer
+    printf(CSI "?1049l");
 
 }
 ```
-
-
-
-
-
-
-
-

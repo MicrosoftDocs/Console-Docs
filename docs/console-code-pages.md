@@ -24,7 +24,7 @@ Associated with each console are two code pages: one for input and one for outpu
 The identifiers of the code pages available on the local computer are stored in the registry under the following key:
 `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Nls\CodePage`
 
-For information about using the registry functions to determine the available code pages, see [**Registry**](https://msdn.microsoft.com/library/windows/desktop/ms724871).
+For information about using the registry functions to determine the available code pages, see [**Registry**](/windows/win32/sysinfo/registry).
 
 > [!TIP]
-> It is recommended for all new and updated command-line applications to avoid code pages and use **[Unicode](https://docs.microsoft.com/windows/win32/intl/unicode)**. UTF-16 formatted text can be sent to the *W* family of console APIs. UTF-8 formatted text can be sent to the *A* family of console APIs after ensuring the code page is first set to **[65001 (CP_UTF8)](https://docs.microsoft.com/windows/win32/intl/code-page-identifiers)** with the [**SetConsoleCP**](setconsolecp.md) and [**SetConsoleOutputCP**](setconsoleoutputcp.md) functions.
+> It is recommended for all new and updated command-line applications to avoid code pages and use **[Unicode](/windows/win32/intl/unicode)**. UTF-16 formatted text can be sent to the *W* family of console APIs. UTF-8 formatted text can be sent to the *A* family of console APIs after ensuring the code page is first set to **[65001 (CP_UTF8)](/windows/win32/intl/code-page-identifiers)** with the [**SetConsoleCP**](setconsolecp.md) and [**SetConsoleOutputCP**](setconsoleoutputcp.md) functions.
