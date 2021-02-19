@@ -46,7 +46,7 @@ typedef struct _FOCUS_EVENT_RECORD {
 ## Members
 
 **bSetFocus**  
-Reserved.
+If the console is focused, this member is TRUE. Otherwise, this member is FALSE.
 
 ## Requirements
 
