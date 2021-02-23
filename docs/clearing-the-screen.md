@@ -29,11 +29,11 @@ The first method is to set your application up for virtual terminal output seque
 ```C
 #include <windows.h>
 
-int main( void )
+int main(void)
 {
-    HANDLE hStdout;
+    HANDLE hStdOut;
 
-    hStdout = GetStdHandle(STD_OUTPUT_HANDLE);
+    hStdOut = GetStdHandle(STD_OUTPUT_HANDLE);
 
     // Fetch existing console mode so we correctly add a flag and not turn off others
     DWORD mode = 0;
@@ -55,7 +55,7 @@ int main( void )
     // Write the sequence for clearing the display.
     DWORD written = 0;
     PCWSTR sequence = L"\x1b[2J";
-    if (!WriteConsoleW(hStdOut, sequence, ARRAYSIZE(sequence), &written, NULL))
+    if (!WriteConsoleW(hStdOut, sequence, (DWORD)wcslen(sequence), &written, NULL))
     {
         // If we fail, try to restore the mode on the way out.
         SetConsoleMode(hStdOut, originalMode);
