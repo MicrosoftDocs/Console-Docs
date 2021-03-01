@@ -20,11 +20,11 @@
 ## [Console Input Buffer](console-input-buffer.md)
 ## [Console Screen Buffers](console-screen-buffers.md) 
 ## [Console Modes](console-modes.md)
+## [Console Process Groups](console-process-groups.md)
 ## [Window And Screen Buffer Size](window-and-screen-buffer-size.md) 
 ## [Console Selection](console-selection.md)
 ## [About Legacy Console Mode](legacymode.md)
 ## [About Pseudoconsoles](pseudoconsoles.md)
-
 
 # [Console Developer's guide & API Reference](console-reference.md) 
 ## [Using The Console API](using-the-console.md) 
