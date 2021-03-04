@@ -119,7 +119,7 @@ HRESULT PrepareStartupInformation(HPCON hpc, STARTUPINFOEX* psi)
     }
 
     // Set the pseudoconsole information into the list
-    if (!UpdateProcThreadAttribute(attributeList,
+    if (!UpdateProcThreadAttribute(si.lpAttributeList,
                                    0,
                                    PROC_THREAD_ATTRIBUTE_PSEUDOCONSOLE,
                                    hpc,
@@ -158,7 +158,7 @@ HRESULT SetUpPseudoConsole(COORD size)
         return E_OUTOFMEMORY;
     }
 
-    wcscpy_s(cmdLineMutable, bytesRequired, childApplication);
+    wcscpy_s(cmdLineMutable, charsRequired, childApplication);
 
     PROCESS_INFORMATION pi;
     ZeroMemory(&pi, sizeof(pi));
