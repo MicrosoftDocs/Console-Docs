@@ -3,7 +3,7 @@ title: Console Functions
 description: Describes a complete list of all functions that are used to access a console.
 author: miniksa
 ms.author: miniksa
-ms.topic: hub-page
+ms.topic: reference
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
 - '\_win32\_console\_functions'
