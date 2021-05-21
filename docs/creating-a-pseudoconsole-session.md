@@ -140,7 +140,7 @@ HRESULT PrepareStartupInformation(HPCON hpc, STARTUPINFOEX* psi)
 
 ## Creating the Hosted Process
 
-Next, call [**CreateProcess**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessa) passing the [**STARTUPINFOEX**](/windows/desktop/api/winbase/ns-winbase-_startupinfoexw) structure along with the path to the executable and any additional configuration information if applicable. It is important to set the **EXTENDED_STARTUPINFO_PRESENT** flag when calling to alert the system that the pseudoconsole reference is contained in the extended information.
+Next, call [**CreateProcess**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessa) passing the [**STARTUPINFOEX**](/windows/win32/api/winbase/ns-winbase-startupinfoexw) structure along with the path to the executable and any additional configuration information if applicable. It is important to set the **EXTENDED_STARTUPINFO_PRESENT** flag when calling to alert the system that the pseudoconsole reference is contained in the extended information.
 
 ```C
 HRESULT SetUpPseudoConsole(COORD size)
