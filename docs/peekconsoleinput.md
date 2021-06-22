@@ -33,6 +33,7 @@ api_name:
 api_location:
 - Kernel32.dll
 - API-MS-Win-Core-Console-l1-1-0.dll
+- API-MS-Win-Core-Console-l1-2-0.dll
 - KernelBase.dll
 - API-MS-Win-Core-Console-l2-1-0.dll
 - API-MS-Win-DownLevel-Kernel32-l1-1-0.dll
