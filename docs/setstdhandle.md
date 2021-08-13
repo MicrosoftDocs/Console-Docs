@@ -35,11 +35,9 @@ api_type:
 
 # SetStdHandle function
 
-
 Sets the handle for the specified standard device (standard input, standard output, or standard error).
 
-Syntax
-------
+## Syntax
 
 ```cpp
 BOOL WINAPI SetStdHandle(
@@ -48,120 +46,50 @@ BOOL WINAPI SetStdHandle(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *nStdHandle* \[in\]  
 The standard device for which the handle is to be set. This parameter can be one of the following values.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Value</th>
-<th>Meaning</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span id="STD_INPUT_HANDLE"></span><span id="std_input_handle"></span>
-<strong>STD_INPUT_HANDLE</strong>
-(DWORD)-10</td>
-<td><p>The standard input device.</p></td>
-</tr>
-<tr class="even">
-<td><span id="STD_OUTPUT_HANDLE"></span><span id="std_output_handle"></span>
-<strong>STD_OUTPUT_HANDLE</strong>
-(DWORD)-11</td>
-<td><p>The standard output device.</p></td>
-</tr>
-<tr class="odd">
-<td><span id="STD_ERROR_HANDLE"></span><span id="std_error_handle"></span>
-<strong>STD_ERROR_HANDLE</strong>
-(DWORD)-12</td>
-<td><p>The standard error device.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Value | Meaning |
+|-|-|
+| **STD_INPUT_HANDLE** (DWORD) -10 | The standard input device. Initially, this is the console input buffer, `CONIN$`. |
+| **STD_OUTPUT_HANDLE** (DWORD) -11 | The standard output device. Initially, this is the active console screen buffer, `CONOUT$`. |
+| **STD_ERROR_HANDLE** (DWORD) -12 | The standard error device. Initially, this is the active console screen buffer, `CONOUT$`. |
 
 *hHandle* \[in\]  
 The handle for the standard device.
 
-Return value
-------------
+## Return value
 
 If the function succeeds, the return value is nonzero.
 
-If the function fails, the return value is zero. To get extended error information, call [**GetLastError**](https://msdn.microsoft.com/library/windows/desktop/ms679360).
+If the function fails, the return value is zero. To get extended error information, call [**GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror).
 
-Remarks
--------
+## Remarks
 
-The standard handles of a process may have been redirected by a call to **SetStdHandle**, in which case [**GetStdHandle**](getstdhandle.md) will return the redirected handle. If the standard handles have been redirected, you can specify the CONIN$ value in a call to the [**CreateFile**](https://msdn.microsoft.com/library/windows/desktop/aa363858) function to get a handle to a console's input buffer. Similarly, you can specify the CONOUT$ value to get a handle to the console's active screen buffer.
+The standard handles of a process may have been redirected by a call to **SetStdHandle**, in which case [**GetStdHandle**](getstdhandle.md) will return the redirected handle. If the standard handles have been redirected, you can specify the CONIN$ value in a call to the [**CreateFile**](/windows/win32/api/fileapi/nf-fileapi-createfilea) function to get a handle to a console's input buffer. Similarly, you can specify the CONOUT$ value to get a handle to the console's active screen buffer.
 
-Examples
---------
+## Examples
 
-For an example, see [Creating a Child Process with Redirected Input and Output](https://msdn.microsoft.com/library/windows/desktop/ms682499).
+For an example, see [Creating a Child Process with Redirected Input and Output](/windows/win32/procthread/creating-a-child-process-with-redirected-input-and-output).
 
-Requirements
-------------
+## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Minimum supported client</p></td>
-<td><p>Windows 2000 Professional [desktop apps only]</p></td>
-</tr>
-<tr class="even">
-<td><p>Minimum supported server</p></td>
-<td><p>Windows 2000 Server [desktop apps only]</p></td>
-</tr>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>ProcessEnv.h (via Winbase.h, include Windows.h)</td>
-</tr>
-<tr class="even">
-<td><p>Library</p></td>
-<td>Kernel32.lib</td>
-</tr>
-<tr class="odd">
-<td><p>DLL</p></td>
-<td>Kernel32.dll</td>
-</tr>
-<tr class="even">
-</tr>
-<tr class="odd">
-</tr>
-<tr class="even">
-</tr>
-</tbody>
-</table>
+| &nbsp; | &nbsp; |
+|-|-|
+| Minimum supported client | Windows 2000 Professional \[desktop apps only\] |
+| Minimum supported server | Windows 2000 Server \[desktop apps only\] |
+| Header | ProcessEnv.h (via Winbase.h, include Windows.h) |
+| Library | Kernel32.lib |
+| DLL | Kernel32.dll |
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [Console Functions](console-functions.md)
 
 [Console Handles](console-handles.md)
 
-[**CreateFile**](https://msdn.microsoft.com/library/windows/desktop/aa363858)
+[**CreateFile**](/windows/win32/api/fileapi/nf-fileapi-createfilea)
 
 [**GetStdHandle**](getstdhandle.md)
-
- 
-
- 
-
-
-
-

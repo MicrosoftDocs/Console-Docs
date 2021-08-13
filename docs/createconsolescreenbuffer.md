@@ -33,11 +33,11 @@ api_type:
 
 # CreateConsoleScreenBuffer function
 
+[!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
 Creates a console screen buffer.
 
-Syntax
-------
+## Syntax
 
 ```C
 HANDLE WINAPI CreateConsoleScreenBuffer(
@@ -49,8 +49,7 @@ HANDLE WINAPI CreateConsoleScreenBuffer(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *dwDesiredAccess* \[in\]  
 The access to the console screen buffer. For a list of access rights, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
@@ -58,57 +57,32 @@ The access to the console screen buffer. For a list of access rights, see [Conso
 *dwShareMode* \[in\]  
 This parameter can be zero, indicating that the buffer cannot be shared, or it can be one or more of the following values.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Value</th>
-<th>Meaning</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span id="FILE_SHARE_READ"></span><span id="file_share_read"></span>
-<strong>FILE_SHARE_READ</strong>
-0x00000001</td>
-<td><p>Other open operations can be performed on the console screen buffer for read access.</p></td>
-</tr>
-<tr class="even">
-<td><span id="FILE_SHARE_WRITE"></span><span id="file_share_write"></span>
-<strong>FILE_SHARE_WRITE</strong>
-0x00000002</td>
-<td><p>Other open operations can be performed on the console screen buffer for write access.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Value | Meaning |
+|-|-|
+| **FILE_SHARE_READ** 0x00000001 | Other open operations can be performed on the console screen buffer for read access. |
+| **FILE_SHARE_WRITE** 0x00000002 | Other open operations can be performed on the console screen buffer for write access. |
 
 *lpSecurityAttributes* \[in, optional\]  
-A pointer to a [**SECURITY\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/desktop/aa379560) structure that determines whether the returned handle can be inherited by child processes. If *lpSecurityAttributes* is **NULL**, the handle cannot be inherited. The **lpSecurityDescriptor** member of the structure specifies a security descriptor for the new console screen buffer. If *lpSecurityAttributes* is **NULL**, the console screen buffer gets a default security descriptor. The ACLs in the default security descriptor for a console screen buffer come from the primary or impersonation token of the creator.
+A pointer to a [**SECURITY\_ATTRIBUTES**](/previous-versions/windows/desktop/legacy/aa379560(v=vs.85)) structure that determines whether the returned handle can be inherited by child processes. If *lpSecurityAttributes* is **NULL**, the handle cannot be inherited. The **lpSecurityDescriptor** member of the structure specifies a security descriptor for the new console screen buffer. If *lpSecurityAttributes* is **NULL**, the console screen buffer gets a default security descriptor. The ACLs in the default security descriptor for a console screen buffer come from the primary or impersonation token of the creator.
 
 *dwFlags* \[in\]  
 The type of console screen buffer to create. The only supported screen buffer type is **CONSOLE\_TEXTMODE\_BUFFER**.
 
-*lpScreenBufferData*   
+*lpScreenBufferData*  
 Reserved; should be **NULL**.
 
-Return value
-------------
+## Return value
 
 If the function succeeds, the return value is a handle to the new console screen buffer.
 
-If the function fails, the return value is **INVALID\_HANDLE\_VALUE**. To get extended error information, call [**GetLastError**](https://msdn.microsoft.com/library/windows/desktop/ms679360).
+If the function fails, the return value is **INVALID\_HANDLE\_VALUE**. To get extended error information, call [**GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror).
 
-Remarks
--------
+## Remarks
 
 A console can have multiple screen buffers but only one active screen buffer. Inactive screen buffers can be accessed for reading and writing, but only the active screen buffer is displayed. To make the new screen buffer the active screen buffer, use the [**SetConsoleActiveScreenBuffer**](setconsoleactivescreenbuffer.md) function.
 
 The newly created screen buffer will copy some properties from the active screen buffer at the time that this function is called. The behavior is as follows:
+
 - `Font` - copied from active screen buffer
 - `Display Window Size` - copied from active screen buffer
 - `Buffer Size` - matched to `Display Window Size` (**NOT** copied)
@@ -117,76 +91,40 @@ The newly created screen buffer will copy some properties from the active screen
 
 The calling process can use the returned handle in any function that requires a handle to a console screen buffer, subject to the limitations of access specified by the *dwDesiredAccess* parameter.
 
-The calling process can use the [**DuplicateHandle**](https://msdn.microsoft.com/library/windows/desktop/ms724251) function to create a duplicate screen buffer handle that has different access or inheritability from the original handle. However, **DuplicateHandle** cannot be used to create a duplicate that is valid for a different process (except through inheritance).
+The calling process can use the [**DuplicateHandle**](/windows/win32/api/handleapi/nf-handleapi-duplicatehandle) function to create a duplicate screen buffer handle that has different access or inheritability from the original handle. However, **DuplicateHandle** cannot be used to create a duplicate that is valid for a different process (except through inheritance).
 
-To close the console screen buffer handle, use the [**CloseHandle**](https://msdn.microsoft.com/library/windows/desktop/ms724211) function.
+To close the console screen buffer handle, use the [**CloseHandle**](/windows/win32/api/handleapi/nf-handleapi-closehandle) function.
 
-Examples
---------
+[!INCLUDE [no-vt-equiv-alt-buf](./includes/no-vt-equiv-alt-buf.md)]
+
+## Examples
 
 For an example, see [Reading and Writing Blocks of Characters and Attributes](reading-and-writing-blocks-of-characters-and-attributes.md).
 
-Requirements
-------------
+## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Minimum supported client</p></td>
-<td><p>Windows 2000 Professional [desktop apps only]</p></td>
-</tr>
-<tr class="even">
-<td><p>Minimum supported server</p></td>
-<td><p>Windows 2000 Server [desktop apps only]</p></td>
-</tr>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>ConsoleApi2.h (via Wincon.h, include Windows.h)</td>
-</tr>
-<tr class="even">
-<td><p>Library</p></td>
-<td>Kernel32.lib</td>
-</tr>
-<tr class="odd">
-<td><p>DLL</p></td>
-<td>Kernel32.dll</td>
-</tr>
-<tr class="even">
-</tr>
-<tr class="odd">
-</tr>
-<tr class="even">
-</tr>
-</tbody>
-</table>
+| &nbsp; | &nbsp; |
+|-|-|
+| Minimum supported client | Windows 2000 Professional \[desktop apps only\] |
+| Minimum supported server | Windows 2000 Server \[desktop apps only\] |
+| Header | ConsoleApi2.h (via WinCon.h, include Windows.h) |
+| Library | Kernel32.lib |
+| DLL | Kernel32.dll |
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [Console Functions](console-functions.md)
 
 [Console Screen Buffers](console-screen-buffers.md)
 
-[**CloseHandle**](https://msdn.microsoft.com/library/windows/desktop/ms724211)
+[**CloseHandle**](/windows/win32/api/handleapi/nf-handleapi-closehandle)
 
-[**DuplicateHandle**](https://msdn.microsoft.com/library/windows/desktop/ms724251)
+[**DuplicateHandle**](/windows/win32/api/handleapi/nf-handleapi-duplicatehandle)
 
 [**GetConsoleScreenBufferInfo**](getconsolescreenbufferinfo.md)
 
-[**SECURITY\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/desktop/aa379560)
+[**SECURITY\_ATTRIBUTES**](/previous-versions/windows/desktop/legacy/aa379560(v=vs.85))
 
 [**SetConsoleActiveScreenBuffer**](setconsoleactivescreenbuffer.md)
 
 [**SetConsoleScreenBufferSize**](setconsolescreenbuffersize.md)
-
- 
-
- 
-
-
-
-

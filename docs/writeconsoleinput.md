@@ -41,11 +41,11 @@ api_type:
 
 # WriteConsoleInput function
 
+[!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
 Writes data directly to the console input buffer.
 
-Syntax
-------
+## Syntax
 
 ```C
 BOOL WINAPI WriteConsoleInput(
@@ -56,8 +56,7 @@ BOOL WINAPI WriteConsoleInput(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *hConsoleInput* \[in\]  
 A handle to the console input buffer. The handle must have the **GENERIC\_WRITE** access right. For more information, see [Console Buffer Security and Access Rights](console-buffer-security-and-access-rights.md).
@@ -71,66 +70,33 @@ The number of input records to be written.
 *lpNumberOfEventsWritten* \[out\]  
 A pointer to a variable that receives the number of input records actually written.
 
-Return value
-------------
+## Return value
 
 If the function succeeds, the return value is nonzero.
 
-If the function fails, the return value is zero. To get extended error information, call [**GetLastError**](https://msdn.microsoft.com/library/windows/desktop/ms679360).
+If the function fails, the return value is zero. To get extended error information, call [**GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror).
 
-Remarks
--------
+## Remarks
 
 **WriteConsoleInput** places input records into the input buffer behind any pending events in the buffer. The input buffer grows dynamically, if necessary, to hold as many events as are written.
 
-This function uses either Unicode characters or 8-bit characters from the console's current code page. The console's code page defaults initially to the system's OEM code page. To change the console's code page, use the [**SetConsoleCP**](setconsolecp.md) or [**SetConsoleOutputCP**](setconsoleoutputcp.md) functions, or use the **chcp** or **mode con cp select=** commands.
+[!INCLUDE [setting-codepage-mode-remarks](./includes/setting-codepage-mode-remarks.md)]
 
-Requirements
-------------
+> [!TIP]
+> This API is not recommended and does not have a **[virtual terminal](console-virtual-terminal-sequences.md)** equivalent. This decision intentionally aligns the Windows platform with other operating systems. This operation is considered the **[wrong-way verb](console-buffer-security-and-access-rights.md#wrong-way-verbs)** for this buffer. Applications remoting via cross-platform utilities and transports like SSH may not work as expected if using this API.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Minimum supported client</p></td>
-<td><p>Windows 2000 Professional [desktop apps only]</p></td>
-</tr>
-<tr class="even">
-<td><p>Minimum supported server</p></td>
-<td><p>Windows 2000 Server [desktop apps only]</p></td>
-</tr>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>ConsoleApi2.h (via Wincon.h, include Windows.h)</td>
-</tr>
-<tr class="even">
-<td><p>Library</p></td>
-<td>Kernel32.lib</td>
-</tr>
-<tr class="odd">
-<td><p>DLL</p></td>
-<td>Kernel32.dll</td>
-</tr>
-<tr class="even">
-<td><p>Unicode and ANSI names</p></td>
-<td><p><strong>WriteConsoleInputW</strong> (Unicode) and <strong>WriteConsoleInputA</strong> (ANSI)</p></td>
-</tr>
-<tr class="odd">
-</tr>
-<tr class="even">
-</tr>
-<tr class="odd">
-</tr>
-<tr class="even">
-</tr>
-</tbody>
-</table>
+## Requirements
 
-## <span id="see_also"></span>See also
+| &nbsp; | &nbsp; |
+|-|-|
+| Minimum supported client | Windows 2000 Professional \[desktop apps only\] |
+| Minimum supported server | Windows 2000 Server \[desktop apps only\] |
+| Header | ConsoleApi2.h (via WinCon.h, include Windows.h) |
+| Library | Kernel32.lib |
+| DLL | Kernel32.dll |
+| Unicode and ANSI names | **WriteConsoleInputW** (Unicode) and **WriteConsoleInputA** (ANSI) |
 
+## See also
 
 [Console Functions](console-functions.md)
 
@@ -138,7 +104,7 @@ Requirements
 
 [Low-Level Console Input Functions](low-level-console-input-functions.md)
 
-[**MapVirtualKey**](https://msdn.microsoft.com/library/windows/desktop/ms646306)
+[**MapVirtualKey**](/windows/win32/api/winuser/nf-winuser-mapvirtualkeya)
 
 [**PeekConsoleInput**](peekconsoleinput.md)
 
@@ -148,12 +114,4 @@ Requirements
 
 [**SetConsoleOutputCP**](setconsoleoutputcp.md)
 
-[**VkKeyScan**](https://msdn.microsoft.com/library/windows/desktop/ms646329)
-
- 
-
- 
-
-
-
-
+[**VkKeyScan**](/windows/win32/api/winuser/nf-winuser-vkkeyscana)

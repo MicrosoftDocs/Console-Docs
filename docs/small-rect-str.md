@@ -23,18 +23,16 @@ topic_type:
 api_name:
 - SMALL_RECT
 api_location:
-- Wincon.h
+- WinCon.h
 api_type:
 - HeaderDef
 ---
 
 # SMALL\_RECT structure
 
-
 Defines the coordinates of the upper left and lower right corners of a rectangle.
 
-Syntax
-------
+## Syntax
 
 ```C
 typedef struct _SMALL_RECT {
@@ -45,8 +43,7 @@ typedef struct _SMALL_RECT {
 } SMALL_RECT;
 ```
 
-Members
--------
+## Members
 
 **Left**  
 The x-coordinate of the upper left corner of the rectangle.
@@ -60,51 +57,24 @@ The x-coordinate of the lower right corner of the rectangle.
 **Bottom**  
 The y-coordinate of the lower right corner of the rectangle.
 
-Remarks
--------
+## Remarks
 
 This structure is used by console functions to specify rectangular areas of console screen buffers, where the coordinates specify the rows and columns of screen-buffer character cells.
 
-Examples
---------
+## Examples
 
 For an example, see [Scrolling a Screen Buffer's Contents](scrolling-a-screen-buffer-s-contents.md).
 
-Requirements
-------------
+## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Minimum supported client</p></td>
-<td><p>Windows 2000 Professional [desktop apps only]</p></td>
-</tr>
-<tr class="even">
-<td><p>Minimum supported server</p></td>
-<td><p>Windows 2000 Server [desktop apps only]</p></td>
-</tr>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>WinConTypes.h (via Wincon.h, include Windows.h)</td>
-</tr>
-</tbody>
-</table>
+| &nbsp; | &nbsp; |
+|-|-|
+| Minimum supported client | Windows 2000 Professional \[desktop apps only\] |
+| Minimum supported server | Windows 2000 Server \[desktop apps only\] |
+| Header | WinConTypes.h (via WinCon.h, include Windows.h) |
 
-## <span id="see_also"></span>See also
+## See also
 
+[**RECT**](/previous-versions//dd162897(v=vs.85))
 
-[**RECT**](https://msdn.microsoft.com/library/windows/desktop/dd162897)
-
-[**RECTL**](https://msdn.microsoft.com/library/windows/desktop/dd162907)
-
- 
-
- 
-
-
-
-
+[**RECTL**](/previous-versions//dd162907(v=vs.85))

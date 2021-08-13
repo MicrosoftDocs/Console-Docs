@@ -32,11 +32,9 @@ api_type:
 
 # AttachConsole function
 
+Attaches the calling process to the console of the specified process as a client application.
 
-Attaches the calling process to the console of the specified process.
-
-Syntax
-------
+## Syntax
 
 ```C
 BOOL WINAPI AttachConsole(
@@ -44,95 +42,43 @@ BOOL WINAPI AttachConsole(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *dwProcessId* \[in\]  
 The identifier of the process whose console is to be used. This parameter can be one of the following values.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Value</th>
-<th>Meaning</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><em>pid</em></td>
-<td><p>Use the console of the specified process.</p></td>
-</tr>
-<tr class="even">
-<td><span id="ATTACH_PARENT_PROCESS"></span><span id="attach_parent_process"></span>
-<strong>ATTACH_PARENT_PROCESS</strong>
-(DWORD)-1</td>
-<td><p>Use the console of the parent of the current process.</p></td>
-</tr>
-</tbody>
-</table>
+| Value | Meaning |
+|-|-|
+| *pid* | Use the console of the specified process. |
+| **ATTACH\_PARENT\_PROCESS** `(DWORD)-1` | Use the console of the parent of the current process. |
 
- 
-
-Return value
-------------
+## Return value
 
 If the function succeeds, the return value is nonzero.
 
-If the function fails, the return value is zero. To get extended error information, call [**GetLastError**](https://msdn.microsoft.com/library/windows/desktop/ms679360).
+If the function fails, the return value is zero. To get extended error information, call [**GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror).
 
-Remarks
--------
+## Remarks
 
-A process can be attached to at most one console. If the calling process is already attached to a console, the error code returned is **ERROR\_ACCESS\_DENIED** (5). If the specified process does not have a console, the error code returned is **ERROR\_INVALID\_HANDLE** (6). If the specified process does not exist, the error code returned is **ERROR\_INVALID\_PARAMETER** (87).
+A process can be attached to at most one console. If the calling process is already attached to a console, the error code returned is **ERROR\_ACCESS\_DENIED** (`5`). If the specified process does not have a console, the error code returned is **ERROR\_INVALID\_HANDLE** (`6`). If the specified process does not exist, the error code returned is **ERROR\_INVALID\_PARAMETER** (`87`).
 
 A process can use the [**FreeConsole**](freeconsole.md) function to detach itself from its console. If other processes share the console, the console is not destroyed, but the process that called **FreeConsole** cannot refer to it. A console is closed when the last process attached to it terminates or calls **FreeConsole**. After a process calls **FreeConsole**, it can call the [**AllocConsole**](allocconsole.md) function to create a new console or **AttachConsole** to attach to another console.
 
-To compile an application that uses this function, define **\_WIN32\_WINNT** as 0x0501 or later. For more information, see [Using the Windows Headers](https://msdn.microsoft.com/library/windows/desktop/aa383745).
+This function is primarily useful to applications that were linked with [**/SUBSYSTEM:WINDOWS**](/cpp/build/reference/subsystem-specify-subsystem), which implies to the operating system that a console is not needed before entering the program's main method. In that instance, the standard handles retrieved with [**GetStdHandle**](getstdhandle.md) will likely be invalid on startup until **AttachConsole** is called. The exception to this is if the application is launched with handle inheritance by its parent process.
 
-Requirements
-------------
+To compile an application that uses this function, define **\_WIN32\_WINNT** as `0x0501` or later. For more information, see [Using the Windows Headers](/windows/win32/winprog/using-the-windows-headers).
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Minimum supported client</p></td>
-<td><p>Windows XP [desktop apps only]</p></td>
-</tr>
-<tr class="even">
-<td><p>Minimum supported server</p></td>
-<td><p>Windows Server 2003 [desktop apps only]</p></td>
-</tr>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>ConsoleApi.h (via Wincon.h, include Windows.h)</td>
-</tr>
-<tr class="even">
-<td><p>Library</p></td>
-<td>Kernel32.lib</td>
-</tr>
-<tr class="odd">
-<td><p>DLL</p></td>
-<td>Kernel32.dll</td>
-</tr>
-<tr class="even">
-</tr>
-<tr class="odd">
-</tr>
-<tr class="even">
-</tr>
-</tbody>
-</table>
+## Requirements
 
-## <span id="see_also"></span>See also
+| &nbsp; | &nbsp; |
+|-|-|
+| Minimum supported client | Windows XP \[desktop apps only\] |
+| Minimum supported server | Windows Server 2003 \[desktop apps only\] |
+| Header | ConsoleApi.h (via WinCon.h, include Windows.h) |
+| Library | Kernel32.lib |
+| DLL | Kernel32.dll |
 
+## See also
 
 [Console Functions](console-functions.md)
 
@@ -143,11 +89,3 @@ Requirements
 [**FreeConsole**](freeconsole.md)
 
 [**GetConsoleProcessList**](getconsoleprocesslist.md)
-
- 
-
- 
-
-
-
-

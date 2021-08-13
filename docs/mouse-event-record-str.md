@@ -26,18 +26,18 @@ topic_type:
 api_name:
 - MOUSE_EVENT_RECORD
 api_location:
-- Wincon.h
+- WinCon.h
 api_type:
 - HeaderDef
 ---
 
 # MOUSE\_EVENT\_RECORD structure
 
+[!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
 Describes a mouse input event in a console [**INPUT\_RECORD**](input-record-str.md) structure.
 
-Syntax
-------
+## Syntax
 
 ```C
 typedef struct _MOUSE_EVENT_RECORD {
@@ -48,8 +48,7 @@ typedef struct _MOUSE_EVENT_RECORD {
 } MOUSE_EVENT_RECORD;
 ```
 
-Members
--------
+## Members
 
 **dwMousePosition**  
 A [**COORD**](coord-str.md) structure that contains the location of the cursor, in terms of the console screen buffer's character-cell coordinates.
@@ -59,235 +58,58 @@ The status of the mouse buttons. The least significant bit corresponds to the le
 
 The following constants are defined for the first five mouse buttons.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Value</th>
-<th>Meaning</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span id="FROM_LEFT_1ST_BUTTON_PRESSED"></span><span id="from_left_1st_button_pressed"></span>
-<strong>FROM_LEFT_1ST_BUTTON_PRESSED</strong>
-0x0001</td>
-<td><p>The leftmost mouse button.</p></td>
-</tr>
-<tr class="even">
-<td><span id="FROM_LEFT_2ND_BUTTON_PRESSED"></span><span id="from_left_2nd_button_pressed"></span>
-<strong>FROM_LEFT_2ND_BUTTON_PRESSED</strong>
-0x0004</td>
-<td><p>The second button from the left.</p></td>
-</tr>
-<tr class="odd">
-<td><span id="FROM_LEFT_3RD_BUTTON_PRESSED"></span><span id="from_left_3rd_button_pressed"></span>
-<strong>FROM_LEFT_3RD_BUTTON_PRESSED</strong>
-0x0008</td>
-<td><p>The third button from the left.</p></td>
-</tr>
-<tr class="even">
-<td><span id="FROM_LEFT_4TH_BUTTON_PRESSED"></span><span id="from_left_4th_button_pressed"></span>
-<strong>FROM_LEFT_4TH_BUTTON_PRESSED</strong>
-0x0010</td>
-<td><p>The fourth button from the left.</p></td>
-</tr>
-<tr class="odd">
-<td><span id="RIGHTMOST_BUTTON_PRESSED"></span><span id="rightmost_button_pressed"></span>
-<strong>RIGHTMOST_BUTTON_PRESSED</strong>
-0x0002</td>
-<td><p>The rightmost mouse button.</p></td>
-</tr>
-<tr class="even">
-</tr>
-<tr class="odd">
-</tr>
-<tr class="even">
-</tr>
-</tbody>
-</table>
-
- 
+| Value | Meaning |
+|-|-|
+| **FROM_LEFT_1ST_BUTTON_PRESSED** 0x0001 | The leftmost mouse button. |
+| **FROM_LEFT_2ND_BUTTON_PRESSED** 0x0004 | The second button fom the left. |
+| **FROM_LEFT_3RD_BUTTON_PRESSED** 0x0008 | The third button from the left. |
+| **FROM_LEFT_4TH_BUTTON_PRESSED** 0x0010 | The fourth button from the left. |
+| **RIGHTMOST_BUTTON_PRESSED** 0x0002 | The rightmost mouse button. |
 
 **dwControlKeyState**  
 The state of the control keys. This member can be one or more of the following values.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Value</th>
-<th>Meaning</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span id="CAPSLOCK_ON"></span><span id="capslock_on"></span>
-<strong>CAPSLOCK_ON</strong>
-0x0080</td>
-<td><p>The CAPS LOCK light is on.</p></td>
-</tr>
-<tr class="even">
-<td><span id="ENHANCED_KEY"></span><span id="enhanced_key"></span>
-<strong>ENHANCED_KEY</strong>
-0x0100</td>
-<td><p>The key is enhanced.</p></td>
-</tr>
-<tr class="odd">
-<td><span id="LEFT_ALT_PRESSED"></span><span id="left_alt_pressed"></span>
-<strong>LEFT_ALT_PRESSED</strong>
-0x0002</td>
-<td><p>The left ALT key is pressed.</p></td>
-</tr>
-<tr class="even">
-<td><span id="LEFT_CTRL_PRESSED"></span><span id="left_ctrl_pressed"></span>
-<strong>LEFT_CTRL_PRESSED</strong>
-0x0008</td>
-<td><p>The left CTRL key is pressed.</p></td>
-</tr>
-<tr class="odd">
-<td><span id="NUMLOCK_ON"></span><span id="numlock_on"></span>
-<strong>NUMLOCK_ON</strong>
-0x0020</td>
-<td><p>The NUM LOCK light is on.</p></td>
-</tr>
-<tr class="even">
-<td><span id="RIGHT_ALT_PRESSED"></span><span id="right_alt_pressed"></span>
-<strong>RIGHT_ALT_PRESSED</strong>
-0x0001</td>
-<td><p>The right ALT key is pressed.</p></td>
-</tr>
-<tr class="odd">
-<td><span id="RIGHT_CTRL_PRESSED"></span><span id="right_ctrl_pressed"></span>
-<strong>RIGHT_CTRL_PRESSED</strong>
-0x0004</td>
-<td><p>The right CTRL key is pressed.</p></td>
-</tr>
-<tr class="even">
-<td><span id="SCROLLLOCK_ON"></span><span id="scrolllock_on"></span>
-<strong>SCROLLLOCK_ON</strong>
-0x0040</td>
-<td><p>The SCROLL LOCK light is on.</p></td>
-</tr>
-<tr class="odd">
-<td><span id="SHIFT_PRESSED"></span><span id="shift_pressed"></span>
-<strong>SHIFT_PRESSED</strong>
-0x0010</td>
-<td><p>The SHIFT key is pressed.</p></td>
-</tr>
-<tr class="even">
-</tr>
-<tr class="odd">
-</tr>
-<tr class="even">
-</tr>
-<tr class="odd">
-</tr>
-<tr class="even">
-</tr>
-<tr class="odd">
-</tr>
-<tr class="even">
-</tr>
-</tbody>
-</table>
-
- 
+| Value | Meaning |
+|-|-|
+| **CAPSLOCK_ON** 0x0080 | The CAPS LOCK light is on. |
+| **ENHANCED_KEY** 0x0100 | The key is enhanced. See [remarks](key-event-record-str.md#remarks). |
+| **LEFT_ALT_PRESSED** 0x0002 | The left ALT key is pressed. |
+| **LEFT_CTRL_PRESSED** 0x0008 | The left CTRL key is pressed. |
+| **NUMLOCK_ON** 0x0020 | The NUM LOCK light is on. |
+| **RIGHT_ALT_PRESSED** 0x0001 | The right ALT key is pressed. |
+| **RIGHT_CTRL_PRESSED** 0x0004 | The right CTRL key is pressed. |
+| **SCROLLLOCK_ON** 0x0040 | The SCROLL LOCK light is on. |
+| **SHIFT_PRESSED** 0x0010 | The SHIFT key is pressed. |
 
 **dwEventFlags**  
 The type of mouse event. If this value is zero, it indicates a mouse button being pressed or released. Otherwise, this member is one of the following values.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Value</th>
-<th>Meaning</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span id="DOUBLE_CLICK"></span><span id="double_click"></span>
-<strong>DOUBLE_CLICK</strong>
-0x0002</td>
-<td><p>The second click (button press) of a double-click occurred. The first click is returned as a regular button-press event.</p></td>
-</tr>
-<tr class="even">
-<td><span id="MOUSE_HWHEELED"></span><span id="mouse_hwheeled"></span>
-<strong>MOUSE_HWHEELED</strong>
-0x0008</td>
-<td><p>The horizontal mouse wheel was moved.</p>
-<p>If the high word of the <strong>dwButtonState</strong> member contains a positive value, the wheel was rotated to the right. Otherwise, the wheel was rotated to the left.</p></td>
-</tr>
-<tr class="odd">
-<td><span id="MOUSE_MOVED"></span><span id="mouse_moved"></span>
-<strong>MOUSE_MOVED</strong>
-0x0001</td>
-<td><p>A change in mouse position occurred.</p></td>
-</tr>
-<tr class="even">
-<td><span id="MOUSE_WHEELED"></span><span id="mouse_wheeled"></span>
-<strong>MOUSE_WHEELED</strong>
-0x0004</td>
-<td><p>The vertical mouse wheel was moved.</p>
-<p>If the high word of the <strong>dwButtonState</strong> member contains a positive value, the wheel was rotated forward, away from the user. Otherwise, the wheel was rotated backward, toward the user.</p></td>
-</tr>
-<tr class="odd">
-</tr>
-<tr class="even">
-</tr>
-</tbody>
-</table>
+| Value | Meaning |
+|-|-|
+| **DOUBLE_CLICK** 0x0002 | The second click (button press) of a double-click occurred. The first click is returned as a regular button-press event. |
+| **MOUSE_HWHEELED** 0x0008 | The horizontal mouse wheel was moved.<br /><br />If the high word of the **dwButtonState** member contains a positive value, the wheel was rotated to the right. Otherwise, the wheel was rotated to the left. |
+| **MOUSE_MOVED** 0x0001 | A change in mouse position occurred. |
+| **MOUSE_WHEELED** 0x0004 | The vertical mouse wheel was moved.<br /><br />If the high word of the **dwButtonState** member contains a positive value, the wheel was rotated forward, away from the user. Otherwise, the wheel was rotated backward, toward the user. |
 
- 
-
-Remarks
--------
+## Remarks
 
 Mouse events are placed in the input buffer when the console is in mouse mode (**ENABLE\_MOUSE\_INPUT**).
 
 Mouse events are generated whenever the user moves the mouse, or presses or releases one of the mouse buttons. Mouse events are placed in a console's input buffer only when the console group has the keyboard focus and the cursor is within the borders of the console's window.
 
-Examples
---------
+## Examples
 
 For an example, see [Reading Input Buffer Events](reading-input-buffer-events.md).
 
-Requirements
-------------
+## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Minimum supported client</p></td>
-<td><p>Windows 2000 Professional [desktop apps only]</p></td>
-</tr>
-<tr class="even">
-<td><p>Minimum supported server</p></td>
-<td><p>Windows 2000 Server [desktop apps only]</p></td>
-</tr>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>WinConTypes.h (via Wincon.h, include Windows.h)</td>
-</tr>
-</tbody>
-</table>
+| &nbsp; | &nbsp; |
+|-|-|
+| Minimum supported client | Windows 2000 Professional \[desktop apps only\] |
+| Minimum supported server | Windows 2000 Server \[desktop apps only\] |
+| Header | WinConTypes.h (via WinCon.h, include Windows.h) |
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [**COORD**](coord-str.md)
 
@@ -298,11 +120,3 @@ Requirements
 [**ReadConsoleInput**](readconsoleinput.md)
 
 [**WriteConsoleInput**](writeconsoleinput.md)
-
- 
-
- 
-
-
-
-

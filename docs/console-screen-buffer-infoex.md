@@ -25,18 +25,16 @@ topic_type:
 api_name:
 - CONSOLE_SCREEN_BUFFER_INFOEX
 api_location:
-- Wincon.h
+- WinCon.h
 api_type:
 - HeaderDef
 ---
 
 # CONSOLE\_SCREEN\_BUFFER\_INFOEX structure
 
-
 Contains extended information about a console screen buffer.
 
-Syntax
-------
+## Syntax
 
 ```C
 typedef struct _CONSOLE_SCREEN_BUFFER_INFOEX {
@@ -52,8 +50,7 @@ typedef struct _CONSOLE_SCREEN_BUFFER_INFOEX {
 } CONSOLE_SCREEN_BUFFER_INFOEX, *PCONSOLE_SCREEN_BUFFER_INFOEX;
 ```
 
-Members
--------
+## Members
 
 **cbSize**  
 The size of this structure, in bytes.
@@ -65,7 +62,7 @@ A [**COORD**](coord-str.md) structure that contains the size of the console scre
 A [**COORD**](coord-str.md) structure that contains the column and row coordinates of the cursor in the console screen buffer.
 
 **wAttributes**  
-The attributes of the characters written to a screen buffer by the [**WriteFile**](https://msdn.microsoft.com/library/windows/desktop/aa365747) and [**WriteConsole**](writeconsole.md) functions, or echoed to a screen buffer by the [**ReadFile**](https://msdn.microsoft.com/library/windows/desktop/aa365467) and [**ReadConsole**](readconsole.md) functions. For more information, see [Character Attributes](console-screen-buffers.md#_win32_font_attributes).
+The attributes of the characters written to a screen buffer by the [**WriteFile**](/windows/win32/api/fileapi/nf-fileapi-writefile) and [**WriteConsole**](writeconsole.md) functions, or echoed to a screen buffer by the [**ReadFile**](/windows/win32/api/fileapi/nf-fileapi-readfile) and [**ReadConsole**](readconsole.md) functions. For more information, see [Character Attributes](console-screen-buffers.md#character-attributes).
 
 **srWindow**  
 A [**SMALL\_RECT**](small-rect-str.md) structure that contains the console screen buffer coordinates of the upper-left and lower-right corners of the display window.
@@ -77,37 +74,20 @@ A [**COORD**](coord-str.md) structure that contains the maximum size of the cons
 The fill attribute for console pop-ups.
 
 **bFullscreenSupported**  
-If this member is TRUE, full-screen mode is supported; otherwise, it is not.
+If this member is `TRUE`, full-screen mode is supported; otherwise, it is not. This will always be `FALSE` for systems after Windows Vista with the [WDDM driver model](/windows-hardware/drivers/display/introduction-to-the-windows-vista-and-later-display-driver-model) as true direct VGA access to the monitor is no longer available.
 
 **ColorTable**  
-An array of [**COLORREF**](https://msdn.microsoft.com/library/windows/desktop/dd183449) values that describe the console's color settings.
+An array of [**COLORREF**](/windows/win32/gdi/colorref) values that describe the console's color settings.
 
-Requirements
-------------
+## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Minimum supported client</p></td>
-<td><p>Windows Vista [desktop apps only]</p></td>
-</tr>
-<tr class="even">
-<td><p>Minimum supported server</p></td>
-<td><p>Windows Server 2008 [desktop apps only]</p></td>
-</tr>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>ConsoleApi2.h (via Wincon.h, include Windows.h)</td>
-</tr>
-</tbody>
-</table>
+| &nbsp; | &nbsp; |
+|-|-|
+| Minimum supported client | Windows Vista \[desktop apps only\] |
+| Minimum supported server | Windows Server 2008 \[desktop apps only\] |
+| Header | ConsoleApi2.h (via WinCon.h, include Windows.h) |
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [**COORD**](coord-str.md)
 
@@ -116,11 +96,3 @@ Requirements
 [**SetConsoleScreenBufferInfoEx**](setconsolescreenbufferinfoex.md)
 
 [**SMALL\_RECT**](small-rect-str.md)
-
- 
-
- 
-
-
-
-

@@ -1,0 +1,2 @@
+> [!TIP]
+> This API is not recommended and does not have a **[virtual terminal](../console-virtual-terminal-sequences.md)** equivalent. This decision intentionally aligns the Windows platform with other operating systems. This state is only relevant to the local user, session, and privilege context. Applications remoting via cross-platform utilities and transports like SSH may not work as expected if using this API.

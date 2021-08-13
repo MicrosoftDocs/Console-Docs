@@ -30,11 +30,11 @@ api_type:
 
 # GetConsoleDisplayMode function
 
+[!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
 Retrieves the display mode of the current console.
 
-Syntax
-------
+## Syntax
 
 ```C
 BOOL WINAPI GetConsoleDisplayMode(
@@ -42,104 +42,45 @@ BOOL WINAPI GetConsoleDisplayMode(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *lpModeFlags* \[out\]  
 The display mode of the console. This parameter can be one or more of the following values.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Value</th>
-<th>Meaning</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span id="CONSOLE_FULLSCREEN"></span><span id="console_fullscreen"></span>
-<strong>CONSOLE_FULLSCREEN</strong>
-1</td>
-<td><p>Full-screen console. The console is in this mode as soon as the window is maximized. At this point, the transition to full-screen mode can still fail.</p></td>
-</tr>
-<tr class="even">
-<td><span id="CONSOLE_FULLSCREEN_HARDWARE"></span><span id="console_fullscreen_hardware"></span>
-<strong>CONSOLE_FULLSCREEN_HARDWARE</strong>
-2</td>
-<td><p>Full-screen console communicating directly with the video hardware. This mode is set after the console is in <strong>CONSOLE_FULLSCREEN</strong> mode to indicate that the transition to full-screen mode has completed.</p></td>
-</tr>
-</tbody>
-</table>
+| Value | Meaning |
+|-|-|
+| **CONSOLE_FULLSCREEN** 1 | Full-screen console. The console is in this mode as soon as the window is maximized. At this point, the transition to full-screen mode can still fail. |
+| **CONSOLE_FULLSCREEN_HARDWARE** 2 | Full-screen console communicating directly with the video hardware. This mode is set after the console is in **CONSOLE_FULLSCREEN** mode to indicate that the transition to full-screen mode has completed. |
 
- 
+> [!NOTE]
+> The transition to a 100% full screen video hardware mode was removed in Windows Vista with the replatforming of the graphics stack to [WDDM](//windows-hardware/drivers/display/introduction-to-the-windows-vista-and-later-display-driver-model). On later versions of Windows, the maximum resulting state is **CONSOLE_FULLSCREEN** representing a frameless window that appears full screen but isn't in exclusive control of the hardware.
 
-Return value
-------------
+## Return value
 
 If the function succeeds, the return value is nonzero.
 
-If the function fails, the return value is zero. To get extended error information, call [**GetLastError**](https://msdn.microsoft.com/library/windows/desktop/ms679360).
+If the function fails, the return value is zero. To get extended error information, call [**GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror).
 
-Remarks
--------
+## Remarks
 
-To compile an application that uses this function, define **\_WIN32\_WINNT** as 0x0500 or later. For more information, see [Using the Windows Headers](https://msdn.microsoft.com/library/windows/desktop/aa383745).
+To compile an application that uses this function, define **\_WIN32\_WINNT** as 0x0500 or later. For more information, see [Using the Windows Headers](/windows/win32/winprog/using-the-windows-headers).
 
-Requirements
-------------
+[!INCLUDE [no-vt-equiv-user-priv](./includes/no-vt-equiv-user-priv.md)]
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Minimum supported client</p></td>
-<td><p>Windows XP [desktop apps only]</p></td>
-</tr>
-<tr class="even">
-<td><p>Minimum supported server</p></td>
-<td><p>Windows Server 2003 [desktop apps only]</p></td>
-</tr>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>ConsoleApi3.h (via Wincon.h, include Windows.h)</td>
-</tr>
-<tr class="even">
-<td><p>Library</p></td>
-<td>Kernel32.lib</td>
-</tr>
-<tr class="odd">
-<td><p>DLL</p></td>
-<td>Kernel32.dll</td>
-</tr>
-<tr class="even">
-</tr>
-<tr class="odd">
-</tr>
-<tr class="even">
-</tr>
-</tbody>
-</table>
+## Requirements
 
-## <span id="see_also"></span>See also
+| &nbsp; | &nbsp; |
+|-|-|
+| Minimum supported client | Windows XP \[desktop apps only\] |
+| Minimum supported server | Windows Server 2003 \[desktop apps only\] |
+| Header | ConsoleApi3.h (via WinCon.h, include Windows.h) |
+| Library | Kernel32.lib |
+| DLL | Kernel32.dll |
 
+## See also
 
 [Console Functions](console-functions.md)
 
 [Console Modes](console-modes.md)
 
 [**SetConsoleDisplayMode**](setconsoledisplaymode.md)
-
- 
-
- 
-
-
-
-
