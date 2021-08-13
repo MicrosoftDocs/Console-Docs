@@ -30,7 +30,7 @@ api_type:
 - HeaderDef
 ---
 
-# `CHAR\_INFO structure`
+# CHAR\_INFO structure
 
 [!INCLUDE [not-recommended-banner](./includes/not-recommended-banner.md)]
 
