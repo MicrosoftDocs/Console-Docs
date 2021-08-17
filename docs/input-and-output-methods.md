@@ -17,7 +17,7 @@ ms.assetid: 55a86d5d-d0b1-4d0c-b42f-7342809289ad
 
 # Input and Output Methods
 
-There are two different approaches to console I/O, the choice of which depends on how much flexibility and control an application needs. The high-level approach enables simple character stream I/O, but it limits access to a console's input and screen buffers. The low-level approach requires that developers write more code and choose among a greater range of functions, but it also gives an application more flexibility.
+There are two different approaches to console I/O, the choice of which depends on how much flexibility and control an application needs. The high-level approach enables simple character stream I/O, but it limits access to a console's [input](console-input-buffer.md) and [screen](console-screen-buffers.md) buffers. The low-level approach requires that developers write more code and choose among a greater range of functions, but it also gives an application more flexibility.
 
 > [!NOTE]
 > The low-level approach is not recommended for new and ongoing development. Applications needing functionality from the low-level console I/O functions are encouraged to use **[virtual terminal sequences](console-virtual-terminal-sequences.md)** and explore our documentation on both **[classic functions versus virtual terminal](classic-vs-vt.md)** and **[the ecosystem roadmap](ecosystem-roadmap.md)**.
