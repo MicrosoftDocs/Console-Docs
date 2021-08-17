@@ -24,3 +24,5 @@ The function's *dwCtrlType* parameter identifies which control signal was receiv
 A new thread is started inside the command-line client process to run the handler routines. More information on the timeout values and action of this thread can be found in the [**HandlerRoutine**](handlerroutine.md#remarks) function documentation.
 
 For an example of a control handler function, see [Registering a Control Handler Function](registering-a-control-handler-function.md).
+
+Note that calling [**AttachConsole**](attachconsole.md), [**AllocConsole**](allocconsole.md), or [**FreeConsole**](freeconsole.md) will reset the table of control handlers in the client process to its initial default state.

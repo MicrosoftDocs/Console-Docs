@@ -25,6 +25,9 @@ When a **CTRL\_CLOSE\_EVENT** signal is received, the control handler returns **
 
 When a **CTRL\_BREAK\_EVENT**, **CTRL\_LOGOFF\_EVENT**, or **CTRL\_SHUTDOWN\_EVENT** signal is received, the control handler returns **FALSE**. Doing this causes the signal to be passed to the next control handler function. If no other control handlers have been registered or none of the registered handlers returns **TRUE**, the default handler will be used, resulting in the process being terminated.
 
+> [!NOTE]
+> Calling [**AttachConsole**](attachconsole.md), [**AllocConsole**](allocconsole.md), or [**FreeConsole**](freeconsole.md) will reset the table of control handlers in the client process to its initial default state. Handlers must be registered again when the attached console session changes.
+
 ```C
 // CtrlHandler.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
