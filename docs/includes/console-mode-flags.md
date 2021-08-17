@@ -1,4 +1,4 @@
-If the *hConsoleHandle* parameter is an input handle, the mode can be one or more of the following values. When a console is created, all input modes except **ENABLE\_WINDOW\_INPUT** are enabled by default.
+If the *hConsoleHandle* parameter is an input handle, the mode can be one or more of the following values. When a console is created, all input modes except **ENABLE\_WINDOW\_INPUT** and **ENABLE\_VIRTUAL\_TERMINAL\_INPUT** are enabled by default.
 
 | Value | Meaning |
 |-|-|
