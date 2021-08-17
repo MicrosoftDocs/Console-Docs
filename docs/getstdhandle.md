@@ -53,9 +53,13 @@ The standard device. This parameter can be one of the following values.
 
 | Value | Meaning |
 |-|-|
-| **STD_INPUT_HANDLE** (DWORD) -10 | The standard input device. Initially, this is the console input buffer, `CONIN$`. |
-| **STD_OUTPUT_HANDLE** (DWORD) -11 | The standard output device. Initially, this is the active console screen buffer, `CONOUT$`. |
-| **STD_ERROR_HANDLE** (DWORD) -12 | The standard error device. Initially, this is the active console screen buffer, `CONOUT$`. |
+| **STD_INPUT_HANDLE** `((DWORD)-10)` | The standard input device. Initially, this is the console input buffer, `CONIN$`. |
+| **STD_OUTPUT_HANDLE** `((DWORD)-11)` | The standard output device. Initially, this is the active console screen buffer, `CONOUT$`. |
+| **STD_ERROR_HANDLE** `((DWORD)-12)` | The standard error device. Initially, this is the active console screen buffer, `CONOUT$`. |
+
+> [!NOTE]
+> The values for these constants are unsigned numbers, but are defined in the header files as a cast from a 
+signed number and take advantage of the C compiler rolling them over to just under the maximum 32-bit value. When interfacing with these handles in a language that does not parse the headers and is re-defining the constants, please be aware of this constraint. As an example, `((DWORD)-10)` is actually the unsigned number `4294967286`.
 
 ## Return value
 
