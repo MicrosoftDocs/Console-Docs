@@ -78,7 +78,7 @@ An application can combine the foreground and background constants to achieve di
 
 `FOREGROUND_BLUE | FOREGROUND_GREEN | FOREGROUND_INTENSITY | BACKGROUND_BLUE`
 
-If no background constant is specified, the background is black, and if no foreground constant is specified, the text is black. For example, the following combination produces black text on a white background because the foreground flags are unspecified (and thus zero for black) while `RED | GREEN | BLUE` for the foreground makes white.
+If no background constant is specified, the background is black, and if no foreground constant is specified, the text is black. For example, the following combination produces black text on a white background, because the foreground flags are unspecified while `RED | GREEN | BLUE` for the background create a white color.
 
 `BACKGROUND_BLUE | BACKGROUND_GREEN | BACKGROUND_RED`
 
