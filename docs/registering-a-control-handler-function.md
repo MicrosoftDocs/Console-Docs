@@ -96,9 +96,7 @@ int main(void)
 
 ## Listen with Hidden Window Example
 
-Per the remarks, if the gdi32.dll or user32.dll library are loaded,  **SetConsoleCtrlHandler** does not get called for the **CTRL\_LOGOFF\_EVENT** and **CTRL\_SHUTDOWN\_EVENT** events. The workaround specified is to create a hidden window by calling the [**CreateWindowEx**](/windows/win32/api/winuser/nf-winuser-createwindowexa) method with the *dwExStyle* parameter set to 0 and listen for the  [**WM\_QUERYENDSESSION**](/windows/win32/shutdown/wm-queryendsession) and [**WM\_ENDSESSION**](/windows/win32/shutdown/wm-endsession) window messages.
-
-It is also valid to have a visible window and listen for these messages. It is likely that in using gdi32.dll or user32.dll that the application would have a window. In that case, add the two messages to the existing [Window Procedure](/windows/win32/winmsg/using-window-procedures).
+Per the remarks, if the gdi32.dll or user32.dll library are loaded,  **SetConsoleCtrlHandler** does not get called for the **CTRL\_LOGOFF\_EVENT** and **CTRL\_SHUTDOWN\_EVENT** events. The workaround specified is to create a hidden window, if no window already exists, by calling the [**CreateWindowEx**](/windows/win32/api/winuser/nf-winuser-createwindowexa) method with the *dwExStyle* parameter set to 0 and listen for the  [**WM\_QUERYENDSESSION**](/windows/win32/shutdown/wm-queryendsession) and [**WM\_ENDSESSION**](/windows/win32/shutdown/wm-endsession) window messages. If a window already exists, add the two messages to the existing [Window Procedure](/windows/win32/winmsg/using-window-procedures).
 
 More information on setting up a window and its messaging loop can be found at [Creating a Window](/windows/win32/learnwin32/creating-a-window).
 
@@ -216,12 +214,12 @@ int main(void)
             TranslateMessage(&msg);
             DispatchMessage(&msg);
         }
+        return 0;
     }
     else
     {
         printf("\nERROR: Could not set control handler");
         return 1;
     }
-    return 0;
 }
 ```

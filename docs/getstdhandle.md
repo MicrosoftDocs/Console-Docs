@@ -66,7 +66,7 @@ signed number and take advantage of the C compiler rolling them over to just und
 If the function succeeds, the return value is a handle to the specified device, or a redirected handle set by a previous call to [**SetStdHandle**](setstdhandle.md). The handle has **GENERIC\_READ** and **GENERIC\_WRITE** access rights, unless the application has used **SetStdHandle** to set a standard handle with lesser access.
 
 > [!TIP]
-> It is not required to dispose of this handle with [**CloseHandle**](/windows/win32/api/handleapi/nf-handleapi-closehandle) when use is complete. See [**Remarks**](#handle-disposal) for more information.
+> It is not required to dispose of this handle with [**CloseHandle**](/windows/win32/api/handleapi/nf-handleapi-closehandle) when done. See [**Remarks**](#handle-disposal) for more information.
 
 If the function fails, the return value is **INVALID\_HANDLE\_VALUE**. To get extended error information, call [**GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror).
 
@@ -86,11 +86,11 @@ Some applications may also vary their behavior on the type of inherited handle. 
 
 ### Handle disposal
 
-It is not required to [**CloseHandle**](/windows/win32/api/handleapi/nf-handleapi-closehandle) when use is complete. The returned value is simply a copy of the value stored in the process table. The process itself is generally considered the owner of these handles and their lifetime. It is placed in the table on creation depending on the inheritance and launch specifics of the [**CreateProcess**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessw) call and will be freed when the process is destroyed.
+It is not required to [**CloseHandle**](/windows/win32/api/handleapi/nf-handleapi-closehandle) when done with the handle retrieved from **GetStdHandle**. The returned value is simply a copy of the value stored in the process table. The process itself is generally considered the owner of these handles and their lifetime. It is placed in the table on creation depending on the inheritance and launch specifics of the [**CreateProcess**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessw) call and will be freed when the process is destroyed.
 
-The case to manipulate the lifetime of these handles manually with **CloseHandle** is if intentionally trying to replace or block other parts of the process from using these handles going forward. Remember that `HANDLE` is a numerical value so another thread storing it locally will not necessarily be updated when the value from the table is updated with **SetStdHandle**. Closing the value will close it process wide and the next usage of the stored copy will encounter an error on **ReadFile** or **WriteFile** accordingly.
+The case to manipulate the lifetime of these handles manually with **CloseHandle** is if intentionally trying to replace or block other parts of the process from using these handles going forward. `HANDLE` is a numerical value, so another thread storing it locally will not necessarily be updated when the value from the table is updated with **SetStdHandle**. Closing the value will close it process wide and the next usage of the stored copy will encounter an error on **ReadFile** or **WriteFile** accordingly.
 
-Guidance for replacing would be to get the existing `HANDLE` from the table with **GetStdHandle**, use **SetStdHandle** to place a new `HANDLE` in that is opened with **CreateFile** (or a similar function), then to close the retrieved handle.
+Guidance for replacing a standard handle in the process table would be to get the existing `HANDLE` from the table with **GetStdHandle**, use **SetStdHandle** to place a new `HANDLE` in that is opened with **CreateFile** (or a similar function), then to close the retrieved handle.
 
 There is no validation of the values stored as handles in the process table by either the **GetStdHandle** or **SetStdHandle** functions. Validation is performed at the time of the actual read/write operation such as **ReadFile** or **WriteFile**.
 
