@@ -106,7 +106,7 @@ More information on setting up a window and its messaging loop can be found at [
 // CtrlHandler.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
-#include <windows.h>
+#include <Windows.h>
 #include <stdio.h>
 
 BOOL WINAPI CtrlHandler(DWORD fdwCtrlType)
