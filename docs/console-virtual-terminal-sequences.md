@@ -39,10 +39,6 @@ Cursor movement will be bounded by the current viewport into the buffer. Scrolli
 
 | Sequence | Shorthand | Behavior |
 |----------|-----------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| ESC A | CUU | Cursor Up by 1 |
-| ESC B | CUD | Cursor Down by 1 |
-| ESC C | CUF | Cursor Forward (Right) by 1 |
-| ESC D | CUB | Cursor Backward (Left) by 1 |
 | ESC M | RI | Reverse Index – Performs the reverse operation of \\n, moves cursor up one line, maintains horizontal position, scrolls buffer if necessary\* |
 | ESC 7 | DECSC | Save Cursor Position in Memory\*\* |
 | ESC 8 | DECSR | Restore Cursor Position from Memory\*\* |
