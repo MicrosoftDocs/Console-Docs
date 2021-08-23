@@ -28,7 +28,7 @@ When a **CTRL\_CLOSE\_EVENT** signal is received, the control handler returns **
 When a **CTRL\_BREAK\_EVENT**, **CTRL\_LOGOFF\_EVENT**, or **CTRL\_SHUTDOWN\_EVENT** signal is received, the control handler returns **FALSE**. Doing this causes the signal to be passed to the next control handler function. If no other control handlers have been registered or none of the registered handlers returns **TRUE**, the default handler will be used, resulting in the process being terminated.
 
 > [!NOTE]
-> Calling [**AttachConsole**](attachconsole.md), [**AllocConsole**](allocconsole.md), or [**FreeConsole**](freeconsole.md) will reset the table of control handlers in the client process to its initial default state. Handlers must be registered again when the attached console session changes.
+> Calling [**AttachConsole**](attachconsole.md), [**AllocConsole**](allocconsole.md), or [**FreeConsole**](freeconsole.md) will reset the table of control handlers in the client process to its initial state. Handlers must be registered again when the attached console session changes.
 
 ```C
 // CtrlHandler.cpp : This file contains the 'main' function. Program execution begins and ends there.
@@ -100,7 +100,7 @@ Per the remarks, if the gdi32.dll or user32.dll library are loaded,  **SetConsol
 
 More information on setting up a window and its messaging loop can be found at [Creating a Window](/windows/win32/learnwin32/creating-a-window).
 
-```C
+```C++
 // CtrlHandler.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
@@ -186,10 +186,10 @@ int main(void)
         CW_USEDEFAULT,
         CW_USEDEFAULT,
         CW_USEDEFAULT,
-        NULL,
-        NULL,
-        NULL,
-        NULL
+        nullptr,
+        nullptr,
+        nullptr,
+        nullptr
     );
 
     if (!hwnd)
@@ -209,7 +209,7 @@ int main(void)
 
         // Pump message loop for the window we created.
         MSG msg{};
-        while (GetMessage(&msg, NULL, 0, 0) > 0)
+        while (GetMessage(&msg, nullptr, 0, 0) > 0)
         {
             TranslateMessage(&msg);
             DispatchMessage(&msg);

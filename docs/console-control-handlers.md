@@ -25,4 +25,4 @@ A new thread is started inside the command-line client process to run the handle
 
 For an example of a control handler function, see [Registering a Control Handler Function](registering-a-control-handler-function.md).
 
-Note that calling [**AttachConsole**](attachconsole.md), [**AllocConsole**](allocconsole.md), or [**FreeConsole**](freeconsole.md) will reset the table of control handlers in the client process to its initial default state.
+Note that calling [**AttachConsole**](attachconsole.md), [**AllocConsole**](allocconsole.md), or [**FreeConsole**](freeconsole.md) will reset the table of control handlers in the client process to its initial state.
