@@ -60,7 +60,7 @@ If the function fails, the return value is zero. To get extended error informati
 
 ## Remarks
 
-A process can be attached to at most one console. If the calling process is already attached to a console, the error code returned is **ERROR\_ACCESS\_DENIED** (`5`). If the specified process does not have a console, the error code returned is **ERROR\_INVALID\_HANDLE** (`6`). If the specified process does not exist, the error code returned is **ERROR\_INVALID\_PARAMETER** (`87`).
+A process can be attached to at most one console. If the calling process is already attached to a console, the error code returned is **ERROR\_ACCESS\_DENIED**. If the specified process does not have a console, the error code returned is **ERROR\_INVALID\_HANDLE**. If the specified process does not exist, the error code returned is **ERROR\_INVALID\_PARAMETER**.
 
 A process can use the [**FreeConsole**](freeconsole.md) function to detach itself from its console. If other processes share the console, the console is not destroyed, but the process that called **FreeConsole** cannot refer to it. A console is closed when the last process attached to it terminates or calls **FreeConsole**. After a process calls **FreeConsole**, it can call the [**AllocConsole**](allocconsole.md) function to create a new console or **AttachConsole** to attach to another console.
 

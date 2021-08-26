@@ -39,10 +39,6 @@ Cursor movement will be bounded by the current viewport into the buffer. Scrolli
 
 | Sequence | Shorthand | Behavior |
 |----------|-----------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| ESC A | CUU | Cursor Up by 1 |
-| ESC B | CUD | Cursor Down by 1 |
-| ESC C | CUF | Cursor Forward (Right) by 1 |
-| ESC D | CUB | Cursor Backward (Left) by 1 |
 | ESC M | RI | Reverse Index – Performs the reverse operation of \\n, moves cursor up one line, maintains horizontal position, scrolls buffer if necessary\* |
 | ESC 7 | DECSC | Save Cursor Position in Memory\*\* |
 | ESC 8 | DECSR | Restore Cursor Position from Memory\*\* |
@@ -395,7 +391,7 @@ Note that these sequences are OSC “Operating system command” sequences, and 
 
 | Sequence | Description | Behavior |
 |-------------------------------|---------------------------|----------------------------------------------------|
-| ESC \] 0 ; &lt;string&gt; BEL | Set Icon and Window Title | Sets the console window’s title to &lt;string&gt;. |
+| ESC \] 0 ; &lt;string&gt; BEL | Set Window Title | Sets the console window’s title to &lt;string&gt;. |
 | ESC \] 2 ; &lt;string&gt; BEL | Set Window Title | Sets the console window’s title to &lt;string&gt;. |
 
 
@@ -594,7 +590,7 @@ The following code provides an example of the recommended way to enable virtual 
 
 1. The existing mode should always be retrieved via GetConsoleMode and analyzed before being set with SetConsoleMode.
 
-2. Checking whether SetConsoleMode returns `0` and GetLastError returns STATUS\_INVALID\_PARAMETER is the current mechanism to determine when running on a down-level system. An application receiving STATUS\_INVALID\_PARAMETER with one of the newer console mode flags in the bit field should gracefully degrade behavior and try again.
+2. Checking whether SetConsoleMode returns `0` and GetLastError returns ERROR\_INVALID\_PARAMETER is the current mechanism to determine when running on a down-level system. An application receiving ERROR\_INVALID\_PARAMETER with one of the newer console mode flags in the bit field should gracefully degrade behavior and try again.
 
 ```C
 #include <stdio.h>

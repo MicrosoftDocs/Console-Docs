@@ -53,13 +53,20 @@ The standard device. This parameter can be one of the following values.
 
 | Value | Meaning |
 |-|-|
-| **STD_INPUT_HANDLE** (DWORD) -10 | The standard input device. Initially, this is the console input buffer, `CONIN$`. |
-| **STD_OUTPUT_HANDLE** (DWORD) -11 | The standard output device. Initially, this is the active console screen buffer, `CONOUT$`. |
-| **STD_ERROR_HANDLE** (DWORD) -12 | The standard error device. Initially, this is the active console screen buffer, `CONOUT$`. |
+| **STD_INPUT_HANDLE** `((DWORD)-10)` | The standard input device. Initially, this is the console input buffer, `CONIN$`. |
+| **STD_OUTPUT_HANDLE** `((DWORD)-11)` | The standard output device. Initially, this is the active console screen buffer, `CONOUT$`. |
+| **STD_ERROR_HANDLE** `((DWORD)-12)` | The standard error device. Initially, this is the active console screen buffer, `CONOUT$`. |
+
+> [!NOTE]
+> The values for these constants are unsigned numbers, but are defined in the header files as a cast from a 
+signed number and take advantage of the C compiler rolling them over to just under the maximum 32-bit value. When interfacing with these handles in a language that does not parse the headers and is re-defining the constants, please be aware of this constraint. As an example, `((DWORD)-10)` is actually the unsigned number `4294967286`.
 
 ## Return value
 
 If the function succeeds, the return value is a handle to the specified device, or a redirected handle set by a previous call to [**SetStdHandle**](setstdhandle.md). The handle has **GENERIC\_READ** and **GENERIC\_WRITE** access rights, unless the application has used **SetStdHandle** to set a standard handle with lesser access.
+
+> [!TIP]
+> It is not required to dispose of this handle with [**CloseHandle**](/windows/win32/api/handleapi/nf-handleapi-closehandle) when done. See [**Remarks**](#handle-disposal) for more information.
 
 If the function fails, the return value is **INVALID\_HANDLE\_VALUE**. To get extended error information, call [**GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror).
 
@@ -76,6 +83,16 @@ The standard handles of a process on entry of the main method are dictated by th
 Some applications operate outside the boundaries of their declared subsystem; for instance, a **/SUBSYSTEM:WINDOWS** application might check/use standard handles for logging or debugging purposes but operate normally with a graphical user interface. These applications will need to carefully probe the state of standard handles on startup and make use of [**AttachConsole**](attachconsole.md), [**AllocConsole**](allocconsole.md), and [**FreeConsole**](freeconsole.md) to add/remove a console if desired.
 
 Some applications may also vary their behavior on the type of inherited handle. Disambiguating the type between console, pipe, file, and others can be performed with [**GetFileType**](/windows/win32/api/fileapi/nf-fileapi-getfiletype).
+
+### Handle disposal
+
+It is not required to [**CloseHandle**](/windows/win32/api/handleapi/nf-handleapi-closehandle) when done with the handle retrieved from **GetStdHandle**. The returned value is simply a copy of the value stored in the process table. The process itself is generally considered the owner of these handles and their lifetime. Each handle is placed in the table on creation depending on the inheritance and launch specifics of the [**CreateProcess**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessw) call and will be freed when the process is destroyed.
+
+Manual manipulation of the lifetime of these handles may be desirable for an application intentionally trying to replace them or block other parts of the process from using them. As a `HANDLE` can be cached by running code, that code will not necessarily pick up changes made via **SetStdHandle**. Closing the handle explicitly via **CloseHandle** will close it process-wide and the next usage of any cached reference will encounter an error.
+
+Guidance for replacing a standard handle in the process table would be to get the existing `HANDLE` from the table with **GetStdHandle**, use **SetStdHandle** to place a new `HANDLE` in that is opened with **CreateFile** (or a similar function), then to close the retrieved handle.
+
+There is no validation of the values stored as handles in the process table by either the **GetStdHandle** or **SetStdHandle** functions. Validation is performed at the time of the actual read/write operation such as **ReadFile** or **WriteFile**.
 
 ### Attach/detach behavior
 
