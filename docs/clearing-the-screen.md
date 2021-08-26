@@ -17,7 +17,7 @@ ms.assetid: 2097cc53-13b9-4f29-9d2c-feea56a27cb8
 
 # Clearing the Screen
 
-There are four ways to clear the screen in a console application.
+There are three ways to clear the screen in a console application.
 
 ## Example 1
 

@@ -395,7 +395,7 @@ Note that these sequences are OSC “Operating system command” sequences, and 
 
 | Sequence | Description | Behavior |
 |-------------------------------|---------------------------|----------------------------------------------------|
-| ESC \] 0 ; &lt;string&gt; BEL | Set Icon and Window Title | Sets the console window’s title to &lt;string&gt;. |
+| ESC \] 0 ; &lt;string&gt; BEL | Set Window Title | Sets the console window’s title to &lt;string&gt;. |
 | ESC \] 2 ; &lt;string&gt; BEL | Set Window Title | Sets the console window’s title to &lt;string&gt;. |
 
 
