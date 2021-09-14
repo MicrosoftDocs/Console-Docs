@@ -267,7 +267,7 @@ Note that this sequence is an OSC “Operating system command” sequence, and n
 
 | Sequence | Description | Behavior |
 |--------------------------------------------------------------------|----------------------|--------------------------------------------------------------------------------------------------------------|
-| ESC \] 4 ; &lt;i&gt; ; rgb : &lt;r&gt; / &lt;g&gt; / &lt;b&gt; ESC | Modify Screen Colors | Sets the screen color palette index &lt;i&gt; to the RGB values specified in &lt;r&gt;, &lt;g&gt;, &lt;b&gt; |
+| ESC \] 4 ; &lt;i&gt; ; rgb : &lt;r&gt; / &lt;g&gt; / &lt;b&gt; ESC \\ | Modify Screen Colors | Sets the screen color palette index &lt;i&gt; to the RGB values specified in &lt;r&gt;, &lt;g&gt;, &lt;b&gt; |
 
 
 
