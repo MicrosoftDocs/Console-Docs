@@ -262,12 +262,12 @@ The following command allows the application to set the screen colors palette va
 
 The RGB values should be hexadecimal values between `0` and `ff`, and separated by the forward-slash character (e.g. `rgb:1/24/86`).
 
-Note that this sequence is an OSC “Operating system command” sequence, and not a CSI like many of the other sequences listed, and as such start with “\\x1b\]”, not “\\x1b\[”.
+Note that this sequence is an OSC “Operating system command” sequence, and not a CSI like many of the other sequences listed, and as such start with “\\x1b\]”, not “\\x1b\[”. As OSC sequences, they are ended with a _String Terminator_ represented as `<ST>` and transmitted with  `ESC \` (`0x1B 0x5C`). `BEL` (`0x7`) may be used instead as the terminator, but the longer form is preferred.
 
 
 | Sequence | Description | Behavior |
 |--------------------------------------------------------------------|----------------------|--------------------------------------------------------------------------------------------------------------|
-| ESC \] 4 ; &lt;i&gt; ; rgb : &lt;r&gt; / &lt;g&gt; / &lt;b&gt; ESC | Modify Screen Colors | Sets the screen color palette index &lt;i&gt; to the RGB values specified in &lt;r&gt;, &lt;g&gt;, &lt;b&gt; |
+| ESC \] 4 ; &lt;i&gt; ; rgb : &lt;r&gt; / &lt;g&gt; / &lt;b&gt; &lt;ST&gt; | Modify Screen Colors | Sets the screen color palette index &lt;i&gt; to the RGB values specified in &lt;r&gt;, &lt;g&gt;, &lt;b&gt; |
 
 
 
@@ -386,13 +386,12 @@ Scrolling margins are per-buffer, so importantly, the Alternate Buffer and Main 
 
 The following commands allows the application to set the title of the console window to the given &lt;string&gt; parameter. The string must be less than 255 characters to be accepted. This is equivalent to calling SetConsoleTitle with the given string.
 
-Note that these sequences are OSC “Operating system command” sequences, and not a CSI like many of the other sequences listed, and as such starts with “\\x1b\]”, not “\\x1b\[”.
-
+Note that these sequences are OSC “Operating system command” sequences, and not a CSI like many of the other sequences listed, and as such starts with “\\x1b\]”, not “\\x1b\[”. As OSC sequences, they are ended with a _String Terminator_ represented as `<ST>` and transmitted with  `ESC \` (`0x1B 0x5C`). `BEL` (`0x7`) may be used instead as the terminator, but the longer form is preferred.
 
 | Sequence | Description | Behavior |
 |-------------------------------|---------------------------|----------------------------------------------------|
-| ESC \] 0 ; &lt;string&gt; BEL | Set Window Title | Sets the console window’s title to &lt;string&gt;. |
-| ESC \] 2 ; &lt;string&gt; BEL | Set Window Title | Sets the console window’s title to &lt;string&gt;. |
+| ESC \] 0 ; &lt;string&gt; &lt;ST&gt; | Set Window Title | Sets the console window’s title to &lt;string&gt;. |
+| ESC \] 2 ; &lt;string&gt; &lt;ST&gt; | Set Window Title | Sets the console window’s title to &lt;string&gt;. |
 
 
 
