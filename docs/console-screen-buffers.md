@@ -13,7 +13,6 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/desktop'
 ms.assetid: f94995fc-5f5f-4fcd-969d-7e10020634c2
-ms.localizationpriority: high
 ---
 
 # Console Screen Buffers

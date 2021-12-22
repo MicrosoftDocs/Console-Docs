@@ -13,7 +13,6 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/desktop'
 ms.assetid: 5357ed99-920b-47a0-a922-d5faed7bf23e
-ms.localizationpriority: high
 ---
 
 # CTRL+C and CTRL+BREAK Signals

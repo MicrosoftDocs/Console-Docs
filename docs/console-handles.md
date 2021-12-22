@@ -13,7 +13,6 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/desktop'
 ms.assetid: dc723046-b3e9-418a-b386-79be411e5ac8
-ms.localizationpriority: high
 ---
 
 # Console Handles

@@ -30,7 +30,6 @@ api_location:
 - MinKernelBase.dll
 api_type:
 - DllExport
-ms.localizationpriority: high
 ---
 
 # SetConsoleCtrlHandler function
