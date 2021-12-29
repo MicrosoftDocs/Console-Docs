@@ -13,7 +13,6 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/desktop'
 ms.assetid: 84ec2559-cade-447e-8594-5b824d3d3e81
-ms.localizationpriority: high
 ---
 
 # Creation of a Console
