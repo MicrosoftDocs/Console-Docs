@@ -95,6 +95,10 @@ The *pInputControl* parameter can be used to enable intermediate wakeups from th
 
 **Windows Server 2003 and Windows XP/2000:** The intermediate read feature is not supported.
 
+**Cooked Mode** is when **ENABLE_LINE_INPUT** is set with [**SetConsoleMode**](setconsolemode.md) on the console input handle. In cooked mode, the console host will provide an edit line on the command-line application's behalf and calls to **ReadFile** or **ReadConsole** will not return until the enter key is pressed.
+
+**Intermediate Read** is an augmentation to that behavior on the **ReadConsole** call in cooked read mode. Setting a flag in [**dwCtrlWakeupMask**](console-readconsole-control.md) on the [**CONSOLE\_READCONSOLE\_CONTROL**](console-readconsole-control.md) structure and pass it into *pinputControl* as it calls **ReadConsole**, will result in the read will not necessarily waiting for a newline, but returning on a specified character as well.
+
 ## Requirements
 
 | &nbsp; | &nbsp; |
