@@ -60,9 +60,9 @@ The size of the *lpConsoleTitle* buffer, in characters.
 
 ## Return value
 
-If the function succeeds, the return value is the length of the string copied to the buffer, in characters.
+If *nSize* is zero, the return value is zero.
 
-If the buffer is not large enough to store the title, the return value is zero and [**GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) returns **ERROR\_SUCCESS**.
+If the function succeeds, the return value is the length of the original console title, in characters.
 
 If the function fails, the return value is zero and [**GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) returns the error code.
 
