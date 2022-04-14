@@ -26,7 +26,7 @@ The [**ReadConsoleInput**](readconsoleinput.md) function can be used to directly
 HANDLE hStdin;
 DWORD fdwSaveOldMode;
 
-VOID ErrorExit(LPSTR);
+VOID ErrorExit(LPCSTR);
 VOID KeyEventProc(KEY_EVENT_RECORD);
 VOID MouseEventProc(MOUSE_EVENT_RECORD);
 VOID ResizeEventProc(WINDOW_BUFFER_SIZE_RECORD);
