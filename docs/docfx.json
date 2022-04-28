@@ -33,7 +33,8 @@
         "Console"
       ],
       "ms.topic": "article",
-      "ms.date": "07/12/2018",       
+      "ms.date": "07/12/2018", 
+      "ms.prod": "console",
       "ms.technology": "windows-console",
       "breadcrumb_path": "/windows/console/breadcrumb/toc.json",
       "extendBreadcrumb": true,
