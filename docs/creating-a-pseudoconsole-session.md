@@ -4,7 +4,7 @@ description: A pseudoconsole session will allow an application to host the activ
 author: miniksa
 ms.author: miniksa
 ms.topic: conceptual
-ms.prod: console
+ms.technology: windows-console
 keywords: console, character mode applications, command line applications, terminal applications, console api, conpty, pseudoconsole, windows pty, pseudo console
 ---
 
