@@ -14,7 +14,7 @@ ms.assetid: A5C553A5-FD84-4D16-A814-EDB3B8699B91
 # Console Virtual Terminal Sequences
 
 
-Virtual terminal sequences are control character sequences that can control cursor movement, color/font mode, and other operations when written to the output stream. Sequences may also be received on the input stream in response to an output stream query information sequence or as an encoding of user input when the appropriate mode is set.
+Virtual terminal sequences are control character sequences that can control cursor movement, console color, and other operations when written to the output stream. Sequences may also be received on the input stream in response to an output stream query information sequence or as an encoding of user input when the appropriate mode is set.
 
 You can use [**GetConsoleMode**](getconsolemode.md) and [**SetConsoleMode**](setconsolemode.md) functions to configure this behavior. A sample of the suggested way to enable virtual terminal behaviors is included at the end of this document.
 
