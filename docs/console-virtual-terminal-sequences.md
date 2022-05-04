@@ -124,7 +124,7 @@ The following commands control and allow for customization of the cursor shape.
 | ESC \[ 6 SP q | DECSCUSR | Steady Bar | Steady bar cursor shape |
 
 > [!NOTE]
-> `SP` is a literal space character of 0x20 as an Intermediate Byte, followed by `q` which is 0x71 as a Final Byte. 
+> `SP` is a literal space character (0x20) in the intermediate position, and it is followed by `q` (0x71) in the final position. 
 
 ## <span id="Viewport_Positioning"></span><span id="viewport_positioning"></span><span id="VIEWPORT_POSITIONING"></span>Viewport Positioning
 
