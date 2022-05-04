@@ -637,7 +637,7 @@ int main()
         }
     }
 
-    DWORD dwInMode = dwOriginalInMode | ENABLE_VIRTUAL_TERMINAL_INPUT;
+    DWORD dwInMode = dwOriginalInMode | dwRequestedInModes;
     if (!SetConsoleMode(hIn, dwInMode))
     {
         // Failed to set VT input mode, can't do anything here.
