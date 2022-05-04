@@ -72,7 +72,7 @@ Cursor movement will be bounded by the current viewport into the buffer. Scrolli
 | ESC \[ &lt;n&gt; A | CUU | Cursor Up | Cursor up by &lt;n&gt; |
 | ESC \[ &lt;n&gt; B | CUD | Cursor Down | Cursor down by &lt;n&gt; |
 | ESC \[ &lt;n&gt; C | CUF | Cursor Forward | Cursor forward (Right) by &lt;n&gt; |
-| ESC \[ &lt;n&gt; D | CUB | Cursor Backward | Cursor backward (Left) by &lt;n&gt; |
+| ESC \[ &lt;n&gt; D | IND | Cursor Down | Cursor down one line from current position in the same column |
 | ESC \[ &lt;n&gt; E | CNL | Cursor Next Line | Cursor down &lt;n&gt; lines from current position |
 | ESC \[ &lt;n&gt; F | CPL | Cursor Previous Line | Cursor up &lt;n&gt; lines from current position |
 | ESC \[ &lt;n&gt; G | CHA | Cursor Horizontal Absolute | Cursor moves to &lt;n&gt;th position horizontally in the current line |
