@@ -107,6 +107,22 @@ The following commands control the visibility of the cursor and its blinking sta
 > [!TIP]
 > The enable sequences end in a lowercase H character (`h`) and the disable sequences end in a lowercase L character (`l`).
 
+## <span id="Cursor_Shape"></span><span id="cursor_shape"></span><span id="CURSOR_SHAPE"></span>Cursor Shape
+
+
+The following commands control and allow for customization of the cursor shape. 
+
+
+| Sequence | Code | Description | Behavior |
+|---------------|---------|------------------------------|---------------------------|
+| ESC \[ 0 &lt;n&gt; q | |  | Default cursor shape configured by the user |
+| ESC \[ 1 &lt;n&gt; q | |  | Blinking block cursor shape |
+| ESC \[ 2 &lt;n&gt; q | |  | Steady block cursor shape |
+| ESC \[ 3 &lt;n&gt; q | |  | Blinking underline cursor shape |
+| ESC \[ 4 &lt;n&gt; q | |  | Steady underline cursor shape  |
+| ESC \[ 5 &lt;n&gt; q | |  | Blinking bar cursor shape  |
+| ESC \[ 6 &lt;n&gt; q | |  | Steady bar cursor shape |
+
 ## <span id="Viewport_Positioning"></span><span id="viewport_positioning"></span><span id="VIEWPORT_POSITIONING"></span>Viewport Positioning
 
 
