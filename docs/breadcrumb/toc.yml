@@ -1,0 +1,8 @@
+- name: Docs
+  tocHref: /
+  topicHref: /
+  items:
+
+  - name: Windows Console
+    tocHref: /windows/console/
+    topicHref: /windows/console/index
