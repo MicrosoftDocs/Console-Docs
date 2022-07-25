@@ -116,6 +116,8 @@ For an example, see [Reading Input Buffer Events](reading-input-buffer-events.md
 
 [**ReadConsole**](readconsole.md)
 
+[**ReadConsoleInputEx**](readconsoleinputex.md)
+
 [**ReadFile**](/windows/win32/api/fileapi/nf-fileapi-readfile)
 
 [**SetConsoleCP**](setconsolecp.md)

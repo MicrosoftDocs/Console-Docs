@@ -61,6 +61,7 @@ The following functions are used to access a console.
 | [**PeekConsoleInput**](peekconsoleinput.md) | Reads data from the specified console input buffer without removing it from the buffer. |
 | [**ReadConsole**](readconsole.md) | Reads character input from the console input buffer and removes it from the buffer. |
 | [**ReadConsoleInput**](readconsoleinput.md) | Reads data from a console input buffer and removes it from the buffer. |
+| [**ReadConsoleInputEx**](readconsoleinputex.md) | Reads data from a console input buffer and removes it from the buffer, with configurable behavior. |
 | [**ReadConsoleOutput**](readconsoleoutput.md) | Reads character and color attribute data from a rectangular block of character cells in a console screen buffer. |
 | [**ReadConsoleOutputAttribute**](readconsoleoutputattribute.md) | Copies a specified number of foreground and background color attributes from consecutive cells of a console screen buffer. |
 | [**ReadConsoleOutputCharacter**](readconsoleoutputcharacter.md) | Copies a number of characters from consecutive cells of a console screen buffer. |

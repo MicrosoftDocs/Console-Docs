@@ -14,7 +14,7 @@ ms.assetid: A5C553A5-FD84-4D16-A814-EDB3B8699B91
 # Console Virtual Terminal Sequences
 
 
-Virtual terminal sequences are control character sequences that can control cursor movement, color/font mode, and other operations when written to the output stream. Sequences may also be received on the input stream in response to an output stream query information sequence or as an encoding of user input when the appropriate mode is set.
+Virtual terminal sequences are control character sequences that can control cursor movement, console color, and other operations when written to the output stream. Sequences may also be received on the input stream in response to an output stream query information sequence or as an encoding of user input when the appropriate mode is set.
 
 You can use [**GetConsoleMode**](getconsolemode.md) and [**SetConsoleMode**](setconsolemode.md) functions to configure this behavior. A sample of the suggested way to enable virtual terminal behaviors is included at the end of this document.
 
@@ -28,7 +28,7 @@ The following terminal sequences are intercepted by the console host when writte
 ## <span id="Simple_Cursor_Positioning"></span><span id="simple_cursor_positioning"></span><span id="SIMPLE_CURSOR_POSITIONING"></span>Simple Cursor Positioning
 
 
-In all of the following descriptions, ESC is always the hexadecimal value 0x1B. No spaces are to be included in terminal sequences. For an example of how these sequences are used in practice, please see the [example](#example) at the end of this topic.
+In all of the following descriptions, ESC is always the hexadecimal value 0x1B. No spaces are to be included in terminal sequences. Individual terminal sequences can be split, at any character or byte position, across multiple sequential calls to [**WriteFile**](/windows/win32/api/fileapi/nf-fileapi-writefile) or [**WriteConsole**](writeconsole.md) but it is best practice to include the whole sequence in one call. For an example of how these sequences are used in practice, please see the [example](#example) at the end of this topic.
 
 The following table describes simple escape sequences with a single action command directly after the ESC character. These sequences have no parameters and take effect immediately.
 
@@ -106,6 +106,25 @@ The following commands control the visibility of the cursor and its blinking sta
 
 > [!TIP]
 > The enable sequences end in a lowercase H character (`h`) and the disable sequences end in a lowercase L character (`l`).
+
+## <span id="Cursor_Shape"></span><span id="cursor_shape"></span><span id="CURSOR_SHAPE"></span>Cursor Shape
+
+
+The following commands control and allow for customization of the cursor shape.
+
+
+| Sequence | Code | Description | Behavior |
+|---------------|---------|------------------------------|---------------------------|
+| ESC \[ 0 SP q | DECSCUSR | User Shape | Default cursor shape configured by the user |
+| ESC \[ 1 SP q | DECSCUSR | Blinking Block | Blinking block cursor shape |
+| ESC \[ 2 SP q | DECSCUSR | Steady Block | Steady block cursor shape |
+| ESC \[ 3 SP q | DECSCUSR | Blinking Underline | Blinking underline cursor shape |
+| ESC \[ 4 SP q | DECSCUSR | Steady Underline | Steady underline cursor shape |
+| ESC \[ 5 SP q | DECSCUSR | Blinking Bar | Blinking bar cursor shape |
+| ESC \[ 6 SP q | DECSCUSR | Steady Bar | Steady bar cursor shape |
+
+> [!NOTE]
+> `SP` is a literal space character (0x20) in the intermediate position, and it is followed by `q` (0x71) in the final position. 
 
 ## <span id="Viewport_Positioning"></span><span id="viewport_positioning"></span><span id="VIEWPORT_POSITIONING"></span>Viewport Positioning
 
@@ -637,7 +656,7 @@ int main()
         }
     }
 
-    DWORD dwInMode = dwOriginalInMode | ENABLE_VIRTUAL_TERMINAL_INPUT;
+    DWORD dwInMode = dwOriginalInMode | dwRequestedInModes;
     if (!SetConsoleMode(hIn, dwInMode))
     {
         // Failed to set VT input mode, can't do anything here.
