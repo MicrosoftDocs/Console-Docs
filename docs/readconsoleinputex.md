@@ -96,8 +96,13 @@ Calling `ReadConsoleInputEx` with the flags `CONSOLE_READ_NOMOVE | CONSOLE_READ_
 This function does not exist in the Windows Console headers. To gain access to it from a C or C++ application, include the following declarations and dynamically link kernel32.dll as noted above.
 
 ```c
+#ifndef CONSOLE_READ_NOREMOVE
 #define CONSOLE_READ_NOREMOVE   0x0001
+#endif
+
+#ifndef CONSOLE_READ_NOWAIT
 #define CONSOLE_READ_NOWAIT     0x0002
+#endif
 
 BOOL
 WINAPI
