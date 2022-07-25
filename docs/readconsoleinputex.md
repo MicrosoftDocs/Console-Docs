@@ -2,7 +2,7 @@
 title: ReadConsoleInputEx function
 description: Reads data from a console input buffer with a specified set of flags and removes it from the buffer.
 author: DHowett
-ms.author: DHowett
+ms.author: duhowett
 ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
 f1_keywords:
