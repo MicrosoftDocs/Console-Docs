@@ -89,6 +89,7 @@
 ### [PeekConsoleInput](peekconsoleinput.md) 
 ### [ReadConsole](readconsole.md) 
 ### [ReadConsoleInput](readconsoleinput.md) 
+### [ReadConsoleInputEx](readconsoleinputex.md)
 ### [ReadConsoleOutput](readconsoleoutput.md) 
 ### [ReadConsoleOutputAttribute](readconsoleoutputattribute.md) 
 ### [ReadConsoleOutputCharacter](readconsoleoutputcharacter.md) 
