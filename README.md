@@ -33,16 +33,14 @@ Notes on metadata:
 While some metadata is stored per file (like above), common metadata required by all files within a documentation set (docset) is stored in the `docfx.json` file in the root of the `docs` folder. For example:
 
 ```json
-  "build": {
-    #...
-    "fileMetadata": {
-      "ms.prod": { "/console/**.yml": "windows"},
-      "ms.technology": { "/console/**.yml": "desktop"},
-      "manager": {"/console/**.yml": "miniksa"}
-    }
+"build": {
+  #...
+  "fileMetadata": {
+    "ms.prod": { "/console/**.yml": "windows"},
+    "ms.technology": { "/console/**.yml": "desktop"},
+    "manager": {"/console/**.yml": "miniksa"}
   }
 }
-
 ```
 
 The values for `ms.prod` and `ms.technology` are standard for Win32 APIs and desktop technology, as defined in the Excel workbook above. Custom values can be registered if required.
