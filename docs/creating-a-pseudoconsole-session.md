@@ -20,7 +20,7 @@ Complete examples of using the Pseudoconsole are available on our GitHub reposit
 
 ## Preparing the communication channels
 
-The first step is to create a pair of synchronous communication channels that will be provided during creation of the pseudoconsole session for bidirectional communication with the hosted application. These channels are processed by the pseudoconsole system using [**ReadFile**](/windows/desktop/api/fileapi/nf-fileapi-readfile) and [**WriteFile**](/windows/desktop/api/fileapi/nf-fileapi-writefile) with [synchronous I/O](/windows/desktop/Sync/synchronization-and-overlapped-input-and-output). File or I/O device handles like a file stream or pipe are acceptable as long as an [**OVERLAPPED**](/windows/desktop/api/minwinbase/ns-minwinbase-_overlapped) structure is not required for asynchronous communication.
+The first step is to create a pair of synchronous communication channels that will be provided during creation of the pseudoconsole session for bidirectional communication with the hosted application. These channels are processed by the pseudoconsole system using [**ReadFile**](/windows/desktop/api/fileapi/nf-fileapi-readfile) and [**WriteFile**](/windows/desktop/api/fileapi/nf-fileapi-writefile) with [synchronous I/O](/windows/desktop/Sync/synchronization-and-overlapped-input-and-output). File or I/O device handles like a file stream or pipe are acceptable as long as an [**OVERLAPPED**](/windows/desktop/api/minwinbase/ns-minwinbase-overlapped) structure is not required for asynchronous communication.
 
 > [!WARNING]
 >To prevent race conditions and deadlocks, we highly recommend that each of the communication channels is serviced on a separate thread that maintains its own client buffer state and messaging queue inside your application. Servicing all of the pseudoconsole activities on the same thread may result in a deadlock where one of the communications buffers is filled and waiting for your action while you attempt to dispatch a blocking request on another channel.
@@ -82,7 +82,7 @@ Upon completion of the [**CreateProcess**](/windows/win32/api/processthreadsapi/
 
 ## Preparing for Creation of the Child Process
 
-The next phase is to prepare the [**STARTUPINFOEX**](/windows/desktop/api/winbase/ns-winbase-_startupinfoexw) structure that will convey the pseudoconsole information while starting the child process.
+The next phase is to prepare the [**STARTUPINFOEX**](/windows/desktop/api/winbase/ns-winbase-startupinfoexw) structure that will convey the pseudoconsole information while starting the child process.
 
 This structure contains the ability to provide complex startup information including attributes for process and thread creation.
 
