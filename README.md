@@ -1,6 +1,6 @@
 # Windows Console Documentation
 
-Welcome to the Windows Console documentation repo. The published articles are generated from the markdown stored in this repo and published at [Windows Console documentation](https://docs.microsoft.com/windows/console/).
+Welcome to the Windows Console documentation repo. The published articles are generated from the markdown stored in this repo and published at [Windows Console documentation](https://learn.microsoft.com/windows/console/).
 
 For code issues related to the Windows Console, Windows Terminal, and related command-line and terminal tooling products acquired with Windows, from the Windows Store, or other sources like GitHub, please check out the [microsoft/terminal](https://github.com/microsoft/terminal) repository.
 
