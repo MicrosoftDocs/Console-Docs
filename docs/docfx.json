@@ -3,7 +3,8 @@
     "content": [
       {
         "files": [
-          "**/*.md"
+          "**/*.md",
+          "breadcrumb/toc.yml"
         ],
         "exclude": [
           "**/obj/**",
