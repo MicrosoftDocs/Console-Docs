@@ -52,7 +52,7 @@ api_type:
 > [!WARNING]
 > Registering for these events is a global activity and will significantly impact performance of all command-line applications running on a system at the same time, including services and background utilities. The **Microsoft UI Automation** framework is console session specific and overcomes this limitation.
 
-The following event constants are used in the *event* parameter of the [*WinEventProc*](/windows/win32/api/winuser/nc-winuser-wineventproc) callback function. For more information, see [WinEvents](https://msdn.microsoft.com/library/windows/desktop/dd373889).
+The following event constants are used in the *event* parameter of the [*WinEventProc*](/windows/win32/api/winuser/nc-winuser-wineventproc) callback function. For more information, see [WinEvents](/windows/win32/winauto/winevents-infrastructure).
 
 | Constant/value | Description |
 |-|-|

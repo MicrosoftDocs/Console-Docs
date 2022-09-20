@@ -4,7 +4,7 @@ description: See reference information about the ClosePseudoConsole function, wh
 author: miniksa
 ms.author: miniksa
 ms.topic: article
-ms.prod: console
+ms.prod: windows
 keywords: console, character mode applications, command line applications, terminal applications, console api, conpty, pseudoconsole
 topic_type:
 - apiref

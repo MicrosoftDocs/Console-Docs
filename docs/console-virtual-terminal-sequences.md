@@ -80,7 +80,7 @@ Cursor movement will be bounded by the current viewport into the buffer. Scrolli
 | ESC \[ &lt;y&gt; ; &lt;x&gt; H | CUP | Cursor Position | \*Cursor moves to &lt;x&gt;; &lt;y&gt; coordinate within the viewport, where &lt;x&gt; is the column of the &lt;y&gt; line |
 | ESC \[ &lt;y&gt; ; &lt;x&gt; f | HVP | Horizontal Vertical Position | \*Cursor moves to &lt;x&gt;; &lt;y&gt; coordinate within the viewport, where &lt;x&gt; is the column of the &lt;y&gt; line |
 | ESC \[ s | ANSISYSSC | Save Cursor – Ansi.sys emulation | \*\*With no parameters, performs a save cursor operation like DECSC |
-| ESC \[ u | ANSISYSSC | Restore Cursor – Ansi.sys emulation | \*\*With no parameters, performs a restore cursor operation like DECRC |
+| ESC \[ u | ANSISYSRC | Restore Cursor – Ansi.sys emulation | \*\*With no parameters, performs a restore cursor operation like DECRC |
 
 
 
