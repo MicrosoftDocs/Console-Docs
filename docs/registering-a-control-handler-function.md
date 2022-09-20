@@ -151,13 +151,13 @@ LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
     case WM_QUERYENDSESSION:
     {
         // Check `lParam` for which system shutdown function and handle events.
-        // See https://docs.microsoft.com/windows/win32/shutdown/wm-queryendsession
+        // See https://learn.microsoft.com/windows/win32/shutdown/wm-queryendsession
         return TRUE; // Respect user's intent and allow shutdown.
     }
     case WM_ENDSESSION:
     {
         // Check `lParam` for which system shutdown function and handle events.
-        // See https://docs.microsoft.com/windows/win32/shutdown/wm-endsession
+        // See https://learn.microsoft.com/windows/win32/shutdown/wm-endsession
         return 0; // We have handled this message.
     }
     default:
