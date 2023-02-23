@@ -32,6 +32,7 @@ api_location:
 - API-MS-Win-Core-Kernel32-Legacy-L1-1-3.dll
 - API-MS-Win-Core-Kernel32-Legacy-L1-1-4.dll
 - API-MS-Win-Core-Kernel32-Legacy-L1-1-5.dll
+- api-ms-win-core-console-l3-2-0.dll
 api_type:
 - DllExport
 ---
