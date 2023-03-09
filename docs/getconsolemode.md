@@ -75,8 +75,8 @@ For an example, see [Reading Input Buffer Events](reading-input-buffer-events.md
 
 | &nbsp; | &nbsp; |
 |-|-|
-| Minimum supported client | Windows 2000 Professional \[desktop apps only\] |
-| Minimum supported server | Windows 2000 Server \[desktop apps only\] |
+| Minimum supported client | Windows 2000 Professional \[desktop apps \| UWP apps\] |
+| Minimum supported server | Windows 2000 Server \[desktop apps \| UWP apps\] |
 | Header | ConsoleApi.h (via WinCon.h, include Windows.h) |
 | Library | Kernel32.lib |
 | DLL | Kernel32.dll |
