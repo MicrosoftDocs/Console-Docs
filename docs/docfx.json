@@ -29,6 +29,7 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+      "uhfHeaderId": "MSDocsHeader-Windows",
       "ms.technology": "windows-console",
       "titleSuffix": "Windows Console",
       "searchScope": [
