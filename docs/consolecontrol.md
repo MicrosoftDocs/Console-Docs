@@ -124,7 +124,7 @@ Each command expects a different struct for the `ConsoleInformation` parameter.
 | &nbsp; | &nbsp; |
 |-|-|
 | Minimum supported client | Windows 7 \[desktop apps only\] |
-| Minimum supported server | Windows Server 2003 \[desktop apps only\] |
+| Minimum supported server | Windows Server 2008 R2 \[desktop apps only\] |
 | Header | none, see remarks |
 | Library | none, see remarks |
 | DLL | User32.dll |
