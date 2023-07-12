@@ -71,6 +71,18 @@ typedef struct _CONSOLESETFOREGROUND
     BOOL bForeground;
 } CONSOLESETFOREGROUND, *PCONSOLESETFOREGROUND;
 
+typedef struct _CONSOLE_PROCESS_INFO
+{
+    IN DWORD dwProcessID;
+    IN DWORD dwFlags;
+} CONSOLE_PROCESS_INFO, *PCONSOLE_PROCESS_INFO;
+
+typedef struct _CONSOLE_CARET_INFO
+{
+    IN HWND hwnd;
+    IN RECT rc;
+} CONSOLE_CARET_INFO, *PCONSOLE_CARET_INFO;
+
 
 NTSTATUS ConsoleControl(
   _In_ CONSOLECONTROL Command,
@@ -98,7 +110,14 @@ If the function fails, the return value is an `NTSTATUS` indicating the reason f
 
 ## Remarks
 
-This function is not defined in an SDK header and must be declared by the caller. This function is exported from user32.dll
+This function is not defined in an SDK header and must be declared by the caller. This function is exported from user32.dll.
+
+Each command expects a different struct for the `ConsoleInformation` parameter.
+* `ConsoleNotifyConsoleApplication`: expects a pointer to a `CONSOLE_PROCESS_INFO`
+* `ConsoleSetCaretInfo`: expects a pointer to a `CONSOLE_CARET_INFO`
+* `ConsoleSetForeground`: expects a pointer to a `CONSOLESETFOREGROUND`
+* `ConsoleSetWindowOwner`: expects a pointer to a `CONSOLEWINDOWOWNER`
+* `ConsoleEndTask`: expects a pointer to a `CONSOLEENDTASK`
 
 ## Requirements
 
