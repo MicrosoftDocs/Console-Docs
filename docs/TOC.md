@@ -55,6 +55,7 @@
 ### [ClosePseudoConsole](closepseudoconsole.md)
 ### [CreateConsoleScreenBuffer](createconsolescreenbuffer.md) 
 ### [CreatePseudoConsole](createpseudoconsole.md)
+### [ConsoleControl](consolecontrol.md)
 ### [FillConsoleOutputAttribute](fillconsoleoutputattribute.md) 
 ### [FillConsoleOutputCharacter](fillconsoleoutputcharacter.md) 
 ### [FlushConsoleInputBuffer](flushconsoleinputbuffer.md) 
