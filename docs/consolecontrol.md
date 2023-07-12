@@ -30,9 +30,9 @@ api_type:
 
 # ConsoleControl function
 
-Performs special kernel operations for console host applications. This includes: reparenting the console window, allowing the console to give launched applications foreground rights, and terminating attached processes. 
+Performs special kernel operations for console host applications. This includes reparenting the console window, allowing the console to pass foreground rights on to launched console subsystem applications and terminating attached processes. 
 
-<div class="alert"><b>Note</b> This function has no associated import library. This function is available as the resources named <b>ConsoleControl</b> in User32.dll. You must use the <a href="/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya">LoadLibrary</a> and <a href="/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress">GetProcAddress</a> functions to dynamically link to User32.dll.</div><div> </div>
+<div class="alert"><b>Note</b> This function has no associated import library. This function is available as the resource named <b>ConsoleControl</b> in User32.dll. You must use the <a href="/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya">LoadLibrary</a> and <a href="/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress">GetProcAddress</a> functions to dynamically link to User32.dll.</div><div> </div>
 
 ## Syntax
 
