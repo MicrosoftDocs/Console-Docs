@@ -4,7 +4,6 @@ description: A pseudoconsole is a concept used to provide the hosting or servici
 author: miniksa
 ms.author: miniksa
 ms.topic: article
-ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api, conpty, pseudoconsole
 
 ---

@@ -4,7 +4,6 @@ description: See reference information about the CreatePseudoConsole function, w
 author: miniksa
 ms.author: miniksa
 ms.topic: article
-ms.prod: console
 keywords: console, character mode applications, command line applications, terminal applications, console api, conpty, pseudoconsole
 topic_type:
 - apiref
