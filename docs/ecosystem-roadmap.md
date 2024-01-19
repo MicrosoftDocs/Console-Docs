@@ -5,7 +5,6 @@ author: miniksa
 ms.author: miniksa
 ms.topic: conceptual
 keywords: console, terminal, virtual terminal, console host, command-line, subsystem, roadmap, ecosystem
-ms.prod: windows
 ---
 
 # Windows Console and Terminal Ecosystem Roadmap

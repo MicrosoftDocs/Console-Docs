@@ -30,14 +30,14 @@
     "externalReference": [],
     "globalMetadata": {
       "uhfHeaderId": "MSDocsHeader-Windows",
-      "ms.technology": "windows-console",
+      "ms.subservice": "windows-console",
       "titleSuffix": "Windows Console",
       "searchScope": [
         "Console"
       ],
       "ms.topic": "article",
       "ms.date": "07/12/2018",       
-      "ms.prod": "windows",
+      "ms.service": "windows",
       "breadcrumb_path": "/windows/console/breadcrumb/toc.json",
       "extendBreadcrumb": true,
       "feedback_system": "GitHub",
