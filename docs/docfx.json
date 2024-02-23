@@ -40,6 +40,7 @@
       "ms.service": "windows",
       "breadcrumb_path": "/windows/console/breadcrumb/toc.json",
       "extendBreadcrumb": true,
+      "feedback_system": "Standard",
       "feedback_product_url": "https://github.com/microsoft/terminal/issues",
       "feedback_help_link_url": "https://learn.microsoft.com/answers/",
       "feedback_help_link_type": "get-help-at-qna"
