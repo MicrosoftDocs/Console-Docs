@@ -40,9 +40,9 @@
       "ms.service": "windows",
       "breadcrumb_path": "/windows/console/breadcrumb/toc.json",
       "extendBreadcrumb": true,
-      "feedback_system": "GitHub",
-      "feedback_github_repo": "MicrosoftDocs/Console-Docs",
-      "feedback_product_url": "https://github.com/microsoft/console/issues"
+      "feedback_product_url": "https://github.com/microsoft/terminal/issues",
+      "feedback_help_link_url": "https://learn.microsoft.com/answers/",
+      "feedback_help_link_type": "get-help-at-qna",
     },
     "fileMetadata": {},
     "template": [],
