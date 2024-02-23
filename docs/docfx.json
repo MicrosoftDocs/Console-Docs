@@ -42,7 +42,7 @@
       "extendBreadcrumb": true,
       "feedback_product_url": "https://github.com/microsoft/terminal/issues",
       "feedback_help_link_url": "https://learn.microsoft.com/answers/",
-      "feedback_help_link_type": "get-help-at-qna",
+      "feedback_help_link_type": "get-help-at-qna"
     },
     "fileMetadata": {},
     "template": [],
