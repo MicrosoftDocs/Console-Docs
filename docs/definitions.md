@@ -5,7 +5,6 @@ author: miniksa
 ms.author: miniksa
 ms.topic: conceptual
 keywords: console, terminal, virtual terminal, console host, command-line, subsystem, definitions
-ms.prod: windows
 ---
 
 # Definitions

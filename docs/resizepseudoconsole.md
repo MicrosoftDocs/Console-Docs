@@ -4,7 +4,6 @@ description: See reference information about the ResizePseudoConsole function, w
 author: miniksa
 ms.author: miniksa
 ms.topic: article
-ms.prod: windows
 keywords: console, character mode applications, command line applications, terminal applications, console api, conpty, pseudoconsole
 f1_keywords:
 - consoleapi/ResizePseudoConsole
