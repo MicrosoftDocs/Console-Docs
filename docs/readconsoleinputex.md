@@ -91,7 +91,7 @@ If the function fails, the return value is zero. To get extended error informati
 
 This function is a configurable version of `ReadConsoleInput`. See the [remarks for `ReadConsoleInput`](readconsoleinput.md) for additional operational details.
 
-Calling `ReadConsoleInputEx` with the flags `CONSOLE_READ_NOMOVE | CONSOLE_READ_NOWAIT` is equivalent to calling [`PeekConsoleInput`](peekconsoleinput.md).
+Calling `ReadConsoleInputEx` with the flags `CONSOLE_READ_NOREMOVE | CONSOLE_READ_NOWAIT` is equivalent to calling [`PeekConsoleInput`](peekconsoleinput.md).
 
 This function does not exist in the Windows Console headers. To gain access to it from a C or C++ application, include the following declarations and dynamically link kernel32.dll as noted above.
 
