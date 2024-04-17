@@ -49,8 +49,9 @@ int main(VOID)
         ErrorExit("GetConsoleMode");
 
     // Enable the window and mouse input events.
+    // Disable quick edit mode because it interfers with receiving mouse inputs.
 
-    fdwMode = ENABLE_WINDOW_INPUT | ENABLE_MOUSE_INPUT;
+    fdwMode = (ENABLE_WINDOW_INPUT | ENABLE_MOUSE_INPUT | ENABLE_EXTENDED_FLAGS) & ~ENABLE_QUICK_EDIT_MODE;
     if (! SetConsoleMode(hStdin, fdwMode) )
         ErrorExit("SetConsoleMode");
 
