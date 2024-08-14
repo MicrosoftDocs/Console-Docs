@@ -5,7 +5,7 @@ author: miniksa
 ms.author: miniksa
 ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
-f1_keywords: 
+f1_keywords:
 - consoleapi/AllocConsole
 - wincon/AllocConsole
 - AllocConsole
@@ -76,6 +76,8 @@ This function is primarily used by a graphical user interface (GUI) application 
 [Console Functions](console-functions.md)
 
 [Consoles](consoles.md)
+
+[**AllocConsoleWithOptions**](allocconsolewithoptions.md)
 
 [**AttachConsole**](attachconsole.md)
 

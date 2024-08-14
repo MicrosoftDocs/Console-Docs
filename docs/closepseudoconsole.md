@@ -19,7 +19,7 @@ api_type:
 
 # ClosePseudoConsole function
 
-Closes a pseudoconsole from the given handle.
+Shuts down and releases resources associated with the given pseudoconsole.
 
 ## Syntax
 
@@ -31,7 +31,7 @@ void WINAPI ClosePseudoConsole(
 
 ## Parameters
 
-*hPC* \[in\]  
+*hPC* \[in\]
 A handle to an active pseudoconsole as opened by [CreatePseudoConsole](createpseudoconsole.md).
 
 ## Return value
@@ -40,9 +40,13 @@ A handle to an active pseudoconsole as opened by [CreatePseudoConsole](createpse
 
 ## Remarks
 
-Upon closing a pseudoconsole, client applications attached to the session will be terminated as well.
+Closing a pseudoconsole will send **CTRL_CLOSE_EVENT** to each client application that is still connected. Until the applications have disconnected they may continue writing more output. Because of this, your application is expected to either close the output pipe before calling **ClosePseudoConsole** or to continue reading from the pipe until after **ClosePseudoConsole** has returned.
 
-A final painted frame may arrive on the `hOutput` handle originally provided to [CreatePseudoConsole](createpseudoconsole.md) when this API is called. It is expected that the caller will drain this information from the communication channel buffer and either present it or discard it. Failure to drain the buffer may cause the Close call to wait indefinitely until it is drained or the communication channels are broken another way.
+> [!NOTE]
+> Starting Windows 11 24H2 (build 26100) **ClosePseudoConsole** will return immediately to avoid accidental deadlocks. Earlier versions will wait indefinitely for the pseudoconsole to exit. If you need to know when all clients have disconnected, simply continue reading from the output pipe until it has been closed on you.
+
+> [!WARNING]
+> As a consequence of the above, failure to either close or drain the output pipe may cause **ClosePseudoConsole** to wait indefinitely in earlier versions of Windows. To avoid deadlocks on older versions, don't call **ClosePseudoConsole** on the same thread that you're reading the output pipe from, unless the output pipe was previously closed by you or closed on you by the pseudoconsole.
 
 ## Requirements
 
