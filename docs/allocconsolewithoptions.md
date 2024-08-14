@@ -32,10 +32,10 @@ HRESULT WINAPI AllocConsoleWithOptions(
 
 ## Parameters
 
-*allocOptions* \[in, optional\]
+*allocOptions* \[in, optional\]  
 A [**ALLOC\_CONSOLE\_OPTIONS**](alloc-console-options.md) structure that controls how this function allocates a window.
 
-*result* \[out, optional\]
+*result* \[out, optional\]  
 Receives one of the following values:
 
 | Value | Meaning |

@@ -44,7 +44,7 @@ BOOL WINAPI AttachConsole(
 
 ## Parameters
 
-*dwProcessId* \[in\]
+*dwProcessId* \[in\]  
 The identifier of the process whose console is to be used. This parameter can be one of the following values.
 
 | Value | Meaning |
