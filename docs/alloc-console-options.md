@@ -35,7 +35,7 @@ typedef struct _ALLOC_CONSOLE_OPTIONS {
 
 ## Members
 
-**mode**  
+**mode**
 This parameter can be one of the following values:
 
 | Value | Meaning |
@@ -44,18 +44,19 @@ This parameter can be one of the following values:
 | **ALLOC\_CONSOLE\_MODE\_NEW\_WINDOW** 1 | Allocate a console session with a window, even if this process was created with **CREATE\_NO\_CONSOLE** or **DETACHED\_PROCESS**. |
 | **ALLOC\_CONSOLE\_MODE\_NO\_WINDOW** 2 | 	Allocate a console session without a window, even if this process was created with **CREATE\_NEW\_WINDOW** or **DETACHED\_PROCESS**. |
 
-**useShowWindow**  
+**useShowWindow**
 Specifies whether the **showWindow** parameter should be used.
 
-**showWindow**  
-If **useShowWindow** is **TRUE**, this specifies the **nCmdShow** used to show the console window. See [**ShowWindow**](/windows/win32/api/winuser/nf-winuser-showwindow) for more information.
+**showWindow**
+If **useShowWindow** is **TRUE**, this specifies the **nCmdShow** used to show the console window.
+See [**ShowWindow**](/windows/win32/api/winuser/nf-winuser-showwindow) for more information.
 
 ## Requirements
 
 | &nbsp; | &nbsp; |
 |-|-|
 | Minimum supported client | Windows 11 24H2 (build 26100) \[desktop apps only\] |
-| Minimum supported server | n/a |
+| Minimum supported server | Windows Server 2025 (build 26100) |
 | Header | ConsoleApi.h (via WinCon.h, include Windows.h) |
 
 ## See also

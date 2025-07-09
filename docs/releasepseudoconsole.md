@@ -46,12 +46,26 @@ The call is not expected to fail unless the **hPC** argument is invalid in which
 
 ## Remarks
 
-Before this method was introduced, the initial pseudoconsole API was inherently flawed: **ClosePseudoConsole** would only exit until after the pseudoconsole has finished using the output pipe. This meant that the pseudoconsole effectively kept your application alive. The **HPCON** handle owned by your application on the other hand kept the pseudoconsole session alive until **ClosePseudoConsole** was called. This created a lifetime and ownership loop. The way applications were expected to break this loop up was by manually waiting for the spawned terminal processes to exit and then call **ClosePseudoConsole**. This made the API failure prone and resulted in shutdown deadlocks in various applications.
-
-**ReleasePseudoConsole** solves this problem: It allows you to relinquish your half of the ownership. This in turn allows the pseudoconsole to automatically exit as soon as all clients have disconnected. All you need to do now is to read from or write to your output and input pipe handles until they return a failure. This indicates to you that all clients have disconnected and the the pseudoconsole is about to exit on its own.
-
 > [!WARNING]
-> **ReleasePseudoConsole** does not deallocate the memory associated with the **HPCON**. You must still call **ClosePseudoConsole** once you're done using the **HPCON** instance. See [ClosePseudoConsole](closepseudoconsole.md) for important information about its correct usage.
+> **ReleasePseudoConsole** does not deallocate the memory associated with the **HPCON**.
+> You must still call **ClosePseudoConsole** once you're done using the **HPCON** instance.
+> See [ClosePseudoConsole](closepseudoconsole.md) for important information about its correct usage.
+
+The **HPCON** handle owned by your application keeps the pseudoconsole session alive indefinitely by default.
+In previous versions of Windows, only **ClosePseudoConsole** would relinquish ownership of the **HPCON** handle.
+However, it would also wait until all clients had disconnected before returning.
+
+This resulted in two issues:
+1. It was not possibly reliably detect whether all clients had disconnected.
+   Simply testing whether the initially spawned console process had exited is insufficient, as it may have spawned additional processes that are still running.
+2. It created a lifetime and ownership loop between the pseudoconsole and the application.
+   Your application would keep the pseudoconsole session alive by holding on to the **HPCON** handle, while the pseudoconsole would keep your application alive, as you were waiting for an indication that all clients had disconnected before calling **ClosePseudoConsole**.
+
+**ReleasePseudoConsole** solves this problem:
+After calling this function, the pseudoconsole will automatically exit once all clients have disconnected.
+All you need to do now is to read from or write to your output and input pipe handles until they return a failure.
+This indicates that the all clients have disconnected and that the pseudoconsole has exited.
+Call **ClosePseudoConsole** to release the remaining bits the **HPCON** handle is holding onto.
 
 ## Examples
 
@@ -62,7 +76,7 @@ For a full walkthrough on using this function to establish a pseudoconsole sessi
 | &nbsp; | &nbsp; |
 |-|-|
 | Minimum supported client | Windows 11 24H2 (build 26100) \[desktop apps only\] |
-| Minimum supported server | n/a |
+| Minimum supported server | Windows Server 2025 (build 26100) |
 | Header | ConsoleApi.h (via WinCon.h, include Windows.h) |
 | Library | Kernel32.lib |
 | DLL | Kernel32.dll |

@@ -32,10 +32,10 @@ HRESULT WINAPI AllocConsoleWithOptions(
 
 ## Parameters
 
-*allocOptions* \[in, optional\]  
+*allocOptions* \[in, optional\]
 A [**ALLOC\_CONSOLE\_OPTIONS**](alloc-console-options.md) structure that controls how this function allocates a window.
 
-*result* \[out, optional\]  
+*result* \[out, optional\]
 Receives one of the following values:
 
 | Value | Meaning |
@@ -55,14 +55,15 @@ If this method succeeds, it returns **S_OK**. Otherwise, it returns an **HRESULT
 Unlike with [**AllocConsole**](allocconsole.md) or [**AttachConsole**](attachconsole.md), calling this method when already connected to a console session does not result in an error.
 The *result* parameter will be set to **ALLOC\_CONSOLE\_RESULT\_EXISTING\_CONSOLE** in that case.
 
-A process can use the [**FreeConsole**](freeconsole.md) function to detach itself from its current console. A console is closed when the last process attached to it terminates or calls **FreeConsole**.
+A process can use the [**FreeConsole**](freeconsole.md) function to detach itself from its current console.
+A console is closed when the last process attached to it terminates or calls **FreeConsole**.
 
 ## Requirements
 
 | &nbsp; | &nbsp; |
 |-|-|
 | Minimum supported client | Windows 11 24H2 (build 26100) \[desktop apps only\] |
-| Minimum supported server | n/a |
+| Minimum supported server | Windows Server 2025 (build 26100) |
 | Header | ConsoleApi.h (via WinCon.h, include Windows.h) |
 | Library | Kernel32.lib |
 | DLL | Kernel32.dll |

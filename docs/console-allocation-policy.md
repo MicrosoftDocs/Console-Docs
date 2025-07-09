@@ -40,7 +40,7 @@ The **IMAGE_SUBSYSTEM_WINDOWS_CUI** type informs shells that they need to block 
 | &nbsp; | &nbsp; |
 |-|-|
 | Minimum supported client | Windows 11 24H2 (build 26100) \[desktop apps only\] |
-| Minimum supported server | n/a |
+| Minimum supported server | Windows Server 2025 (build 26100) |
 
 ## See also
 
