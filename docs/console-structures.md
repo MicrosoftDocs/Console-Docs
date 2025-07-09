@@ -19,6 +19,7 @@ ms.assetid: 60f59616-d42b-469a-acf1-c1b71e68f560
 
 The following structures are used to access a console.
 
+- [**ALLOC\_CONSOLE\_OPTIONS**](alloc-console-options.md)
 - [**CHAR\_INFO**](char-info-str.md)
 - [**CONSOLE\_CURSOR\_INFO**](console-cursor-info-str.md)
 - [**CONSOLE\_FONT\_INFO**](console-font-info-str.md)

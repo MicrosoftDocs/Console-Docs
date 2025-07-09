@@ -23,10 +23,11 @@ The following functions are used to access a console.
 |-|-|
 | [**AddConsoleAlias**](addconsolealias.md) | Defines a console alias for the specified executable. |
 | [**AllocConsole**](allocconsole.md) | Allocates a new console for the calling process. |
+| [**AllocConsoleWithOptions**](allocconsolewithoptions.md) | Optionally allocates a new console for the calling process, while allowing you to specify the visibility of the new console window. |
 | [**AttachConsole**](attachconsole.md) | Attaches the calling process to the console of the specified process. |
 | [**ClosePseudoConsole**](closepseudoconsole.md) | Closes a pseudoconsole from the given handle. |
-| [**CreatePseudoConsole**](createpseudoconsole.md) | Allocates a new pseudoconsole for the calling process. |
 | [**CreateConsoleScreenBuffer**](createconsolescreenbuffer.md) | Creates a console screen buffer. |
+| [**CreatePseudoConsole**](createpseudoconsole.md) | Allocates a new pseudoconsole for the calling process. |
 | [**FillConsoleOutputAttribute**](fillconsoleoutputattribute.md) | Sets the text and background color attributes for a specified number of character cells. |
 | [**FillConsoleOutputCharacter**](fillconsoleoutputcharacter.md) | Writes a character to the console screen buffer a specified number of times. |
 | [**FlushConsoleInputBuffer**](flushconsoleinputbuffer.md) | Flushes the console input buffer. |
@@ -65,6 +66,7 @@ The following functions are used to access a console.
 | [**ReadConsoleOutput**](readconsoleoutput.md) | Reads character and color attribute data from a rectangular block of character cells in a console screen buffer. |
 | [**ReadConsoleOutputAttribute**](readconsoleoutputattribute.md) | Copies a specified number of foreground and background color attributes from consecutive cells of a console screen buffer. |
 | [**ReadConsoleOutputCharacter**](readconsoleoutputcharacter.md) | Copies a number of characters from consecutive cells of a console screen buffer. |
+| [**ReleasePseudoConsole**](releasepseudoconsole.md) | Relinquishes ownership of the `HPCON` handle to the pseudoconsole, allowing it to automatically exit once all clients have disconnected. |
 | [**ResizePseudoConsole**](resizepseudoconsole.md) | Resizes the internal buffers for a pseudoconsole to the given size. |
 | [**ScrollConsoleScreenBuffer**](scrollconsolescreenbuffer.md) | Moves a block of data in a screen buffer. |
 | [**SetConsoleActiveScreenBuffer**](setconsoleactivescreenbuffer.md) | Sets the specified screen buffer to be the currently displayed console screen buffer. |
