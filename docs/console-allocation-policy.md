@@ -44,4 +44,4 @@ The **IMAGE_SUBSYSTEM_WINDOWS_CUI** type informs shells that they need to block 
 
 ## See also
 
-[**GetNumberOfConsoleInputEvents**](allocconsolewithoptions.md)
+[**AllocConsoleWithOptions**](allocconsolewithoptions.md)
