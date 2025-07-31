@@ -3,7 +3,7 @@ title: CONSOLE_SCREEN_BUFFER_INFOEX structure
 description: See reference information about the CONSOLE_SCREEN_BUFFER_INFOEX structure, which contains extended information about a console screen buffer.
 author: miniksa
 ms.author: miniksa
-ms.topic: article
+ms.topic: reference
 keywords: console, character mode applications, command line applications, terminal applications, console api
 f1_keywords: 
 - consoleapi2/CONSOLE_SCREEN_BUFFER_INFOEX
