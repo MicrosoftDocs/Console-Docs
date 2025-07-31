@@ -3,7 +3,7 @@ title: INPUT_RECORD structure
 description: See reference information about the INPUT_RECORD structure, which describes an input event in the console input buffer.
 author: miniksa
 ms.author: miniksa
-ms.topic: article
+ms.topic: reference
 keywords: console, character mode applications, command line applications, terminal applications, console api
 f1_keywords:
 - wincontypes/INPUT_RECORD

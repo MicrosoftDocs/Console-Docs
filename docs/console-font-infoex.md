@@ -3,7 +3,7 @@ title: CONSOLE_FONT_INFOEX structure
 description: See reference information about the CONSOLE_FONT_INFOEX structure, which contains extended information for a console font.
 author: miniksa
 ms.author: miniksa
-ms.topic: article
+ms.topic: reference
 keywords: console, character mode applications, command line applications, terminal applications, console api
 f1_keywords: 
 - consoleapi3/CONSOLE_FONT_INFOEX

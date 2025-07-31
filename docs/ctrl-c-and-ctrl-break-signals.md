@@ -3,7 +3,7 @@ title: CTRL+C and CTRL+BREAK Signals
 description: The CTRL+C and CTRL+BREAK key combinations receive special handling by console processes.
 author: miniksa
 ms.author: miniksa
-ms.topic: conceptual
+ms.topic: reference
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
 - '\_win32\_ctrl\_c\_and\_ctrl\_break\_signals'

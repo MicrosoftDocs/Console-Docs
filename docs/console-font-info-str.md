@@ -3,7 +3,7 @@ title: CONSOLE_FONT_INFO structure
 description: See reference information about the CONSOLE_FONT_INFO structure, which contains the index and size for a console font.
 author: miniksa
 ms.author: miniksa
-ms.topic: article
+ms.topic: reference
 keywords: console, character mode applications, command line applications, terminal applications, console api
 f1_keywords: 
 - wincontypes/CONSOLE_FONT_INFO

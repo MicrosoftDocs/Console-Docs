@@ -1,7 +1,7 @@
 ---
 author: miniksa
 ms.author: miniksa
-ms.topic: article
+ms.topic: reference
 keywords: console, character mode applications, command line applications, terminal applications, console api
 f1_keywords:
 - wincontypes/SMALL_RECT

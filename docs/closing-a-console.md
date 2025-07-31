@@ -3,7 +3,7 @@ title: Closing a Console
 description: A process can use the FreeConsole function to detach itself from its console.
 author: miniksa
 ms.author: miniksa
-ms.topic: conceptual
+ms.topic: reference
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
 - '\_win32\_closing\_a\_console'

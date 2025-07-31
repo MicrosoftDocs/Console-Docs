@@ -3,7 +3,7 @@ title: Creating a Pseudoconsole session
 description: A pseudoconsole session will allow an application to host the activities of a character-mode application
 author: miniksa
 ms.author: miniksa
-ms.topic: conceptual
+ms.topic: reference
 keywords: console, character mode applications, command line applications, terminal applications, console api, conpty, pseudoconsole, windows pty, pseudo console
 ---
 

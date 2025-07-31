@@ -3,7 +3,7 @@ title: Windows Console and Terminal Definitions
 description: Provides definitions of words and phrases commonly used in this space and document set related to the console and terminal system.
 author: miniksa
 ms.author: miniksa
-ms.topic: conceptual
+ms.topic: article
 keywords: console, terminal, virtual terminal, console host, command-line, subsystem, definitions
 ---
 

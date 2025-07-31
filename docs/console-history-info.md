@@ -3,7 +3,7 @@ title: CONSOLE_HISTORY_INFO structure
 description: See reference information about the CONSOLE_HISTORY_INFO structure, which contains information about the console history.
 author: miniksa
 ms.author: miniksa
-ms.topic: article
+ms.topic: reference
 keywords: console, character mode applications, command line applications, terminal applications, console api
 f1_keywords: 
 - consoleapi3/CONSOLE_HISTORY_INFO

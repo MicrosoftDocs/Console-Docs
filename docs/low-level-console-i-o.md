@@ -3,7 +3,7 @@ title: Low-Level Console I/O
 description: The low-level console I/O functions expand an application's control over console I/O by enabling direct access to a console's input and screen buffers.
 author: miniksa
 ms.author: miniksa
-ms.topic: conceptual
+ms.topic: reference
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
 - '\_win32\_low\_level\_console\_i\_o'

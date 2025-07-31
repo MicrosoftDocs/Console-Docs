@@ -3,7 +3,7 @@ title: Console Application Issues
 description: Review console application issues, such as functions that take or return OEM character set strings vs. functions that take or return ANSI character set strings.
 author: miniksa
 ms.author: miniksa
-ms.topic: conceptual
+ms.topic: reference
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
 - '\_win32\_console\_application\_issues'

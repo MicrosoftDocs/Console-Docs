@@ -3,7 +3,7 @@ title: CONSOLE_CURSOR_INFO structure
 description: Contains the size and visibility information about the about the console cursor.
 author: miniksa
 ms.author: miniksa
-ms.topic: article
+ms.topic: reference
 keywords: console, character mode applications, command line applications, terminal applications, console api
 f1_keywords: 
 - wincontypes/CONSOLE_CURSOR_INFO

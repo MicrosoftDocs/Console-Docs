@@ -3,7 +3,7 @@ title: KEY_EVENT_RECORD structure
 description: Describes a keyboard input event in a console INPUT\_RECORD structure.
 author: miniksa
 ms.author: miniksa
-ms.topic: article
+ms.topic: reference
 keywords: console, character mode applications, command line applications, terminal applications, console api
 f1_keywords:
 - wincontypes/KEY_EVENT_RECORD
