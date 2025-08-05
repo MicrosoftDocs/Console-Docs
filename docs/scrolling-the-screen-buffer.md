@@ -3,7 +3,7 @@ title: Scrolling the Screen Buffer
 description: Describes how the console window displays a portion of the active screen buffer.
 author: miniksa
 ms.author: miniksa
-ms.topic: conceptual
+ms.topic: reference
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
 - '\_win32\_scrolling\_the\_screen\_buffer'

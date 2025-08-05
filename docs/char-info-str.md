@@ -3,7 +3,7 @@ title: CHAR_INFO structure
 description: Specifies a Unicode or ANSI character and its attributes. This structure is used by console functions to read from and write to a console screen buffer.
 author: miniksa
 ms.author: miniksa
-ms.topic: article
+ms.topic: reference
 keywords: console, character mode applications, command line applications, terminal applications, console api
 f1_keywords: 
 - wincontypes/CHAR_INFO

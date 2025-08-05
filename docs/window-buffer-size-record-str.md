@@ -3,7 +3,7 @@ title: WINDOW_BUFFER_SIZE_RECORD structure
 description: See reference information about the WINDOW_BUFFER_SIZE_RECORD structure, which describes a change in the size of the console screen buffer.
 author: miniksa
 ms.author: miniksa
-ms.topic: article
+ms.topic: reference
 keywords: console, character mode applications, command line applications, terminal applications, console api
 f1_keywords:
 - wincontypes/WINDOW_BUFFER_SIZE_RECORD
