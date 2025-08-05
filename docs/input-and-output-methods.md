@@ -3,7 +3,7 @@ title: Input and Output Methods
 description: There are two different approaches to console I/O, the choice of which depends on how much flexibility and control an application needs.
 author: miniksa
 ms.author: miniksa
-ms.topic: conceptual
+ms.topic: reference
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
 - '\_win32\_input\_and\_output\_methods'

@@ -3,7 +3,7 @@ title: Console Modes
 description: Associated with each console input buffer is a set of input modes that affects input operations.
 author: miniksa
 ms.author: miniksa
-ms.topic: conceptual
+ms.topic: reference
 keywords: console, character mode applications, command line applications, terminal applications, console api
 MS-HAID:
 - '\_win32\_console\_modes'

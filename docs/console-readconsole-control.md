@@ -3,7 +3,7 @@ title: CONSOLE_READCONSOLE_CONTROL structure
 description: See reference information about the CONSOLE_READCONSOLE_CONTROL structure, which contains information for a console read operation.
 author: miniksa
 ms.author: miniksa
-ms.topic: article
+ms.topic: reference
 keywords: console, character mode applications, command line applications, terminal applications, console api
 f1_keywords: 
 - consoleapi/CONSOLE_READCONSOLE_CONTROL

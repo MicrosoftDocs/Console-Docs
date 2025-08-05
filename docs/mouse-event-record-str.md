@@ -3,7 +3,7 @@ title: MOUSE_EVENT_RECORD structure
 description: See reference information about the MOUSE_EVENT_RECORD structure, which describes a mouse input event in a console INPUT_RECORD structure.
 author: miniksa
 ms.author: miniksa
-ms.topic: article
+ms.topic: reference
 keywords: console, character mode applications, command line applications, terminal applications, console api
 f1_keywords:
 - wincontypes/MOUSE_EVENT_RECORD
