@@ -105,7 +105,7 @@ int main(VOID)
     return 0;
 }
 
-VOID ErrorExit (LPSTR lpszMessage)
+VOID ErrorExit (LPCSTR lpszMessage)
 {
     fprintf(stderr, "%s\n", lpszMessage);
 
