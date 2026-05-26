@@ -464,6 +464,31 @@ The following sequence can be used to reset certain properties to their default 
 
 
 
+## <span id="Synchronized_Output"></span><span id="synchronized_output"></span><span id="SYNCHRONIZED_OUTPUT"></span>Synchronized Output
+
+
+This description is largely taken from the [spec](https://github.com/contour-terminal/vt-extensions/blob/master/synchronized-output.md), only edited for clarity.
+
+When rendering the screen, the terminal usually iterates through each visible grid cell and renders its current state. With applications updating the screen at high frequencies, this can cause "tearing" if the renderer shows only *part* of an application's update.
+
+This mode attempts to mitigate that.
+
+When the synchronization mode is enabled (with the BSU sequence), the terminal keeps processing incoming text and sequences, but stores them without rendering them. In other words, rendering during this time will keep rendering the last rendered state without any updates.
+
+When the synchronized update mode is disabled (using the ESU sequence), the renderer will fetch the latest screen buffer state, effectively avoiding the tearing effect caused by unintentionally rendering in the middle of an application's screen update.
+
+
+
+| Sequence | Code | Description | Behavior |
+|------------|--------|-------------|----------------------------------------------------|
+| ESC \[ ? 2026 h | BSU | Begin Synchronized Update | Begin batching updates until ESU is encountered. |
+| ESC \[ ? 2026 l | ESU | End Synchronized Update | End batching updates. |
+
+> [!TIP]
+> The begin sequence ends in a lowercase H character (`h`), and the end sequence ends in a lowercase L character (`l`).
+
+
+
 ## <span id="Input_Sequences"></span><span id="input_sequences"></span><span id="INPUT_SEQUENCES"></span>Input Sequences
 
 
