@@ -3,7 +3,7 @@ title: Console Allocation Policy
 description: Learn more about the Console Allocation Policy, allowing you to create hybrid graphical/console applications.
 author: lhecker
 ms.author: lhecker
-ms.topic: conceptual
+ms.topic: article
 keywords: console, character mode applications, command line applications, terminal applications, console api
 ---
 
