@@ -463,6 +463,20 @@ The following sequence can be used to reset certain properties to their default 
 | ESC \[ ! p | DECSTR | Soft Reset | Reset certain terminal settings to their defaults. |
 
 
+## <span id="Synchronized_Output"></span><span id="synchronized_output"></span><span id="SYNCHRONIZED_OUTPUT"></span>Synchronized Output
+
+
+The synchronized output sequence can be used by text UI applications to avoid flickering. `BSU` tells the terminal to stop rendering output until it receives an `ESU` sequence. To prevent flickering, the application should emit a `BSU` sequence, then all of its updates, and finally an `ESU` sequence.
+
+See also the [specification](https://github.com/contour-terminal/vt-extensions/blob/master/synchronized-output.md) for more information.
+
+
+| Sequence | Code | Description | Behavior |
+|------------|--------|-------------|----------------------------------------------------|
+| ESC \[ ? 2026 h | BSU | Begin Synchronized Update | Begin batching updates until ESU is encountered. |
+| ESC \[ ? 2026 l | ESU | End Synchronized Update | End batching updates. |
+
+
 
 ## <span id="Input_Sequences"></span><span id="input_sequences"></span><span id="INPUT_SEQUENCES"></span>Input Sequences
 
