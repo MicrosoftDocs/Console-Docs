@@ -1,6 +1,6 @@
 ---
 title: Legacy Console Mode – Windows Desktop 
-description: Legacy console mode is a compatibility tool to assist with running command-line applications that may not work with the Windows 10 console host
+description: Legacy console mode is a compatibility tool to assist with running command-line applications that may not work with the current Windows console host
 author: miniksa
 ms.author: miniksa
 ms.topic: reference
@@ -10,7 +10,7 @@ keywords: console, character mode applications, command line applications, termi
 
 # Legacy Console mode
 
-Legacy Console mode is a compatibility tool designed to help users of older command-line tools on Windows 10. For any command-line tool that is not displaying or operating correctly in the default Windows 10 console experience, this mode provides a coarse-grained solution to stepping the system back to an older version of the console hosting experience.
+Legacy Console mode is a compatibility tool designed to help users of older command-line tools on Windows 10 and Windows 11. For any command-line tool that is not displaying or operating correctly in the default Windows console experience, this mode provides a coarse-grained solution to stepping the system back to an older version of the console hosting experience.
 
 ## Using Legacy Console Mode
 
@@ -37,6 +37,6 @@ The legacy Console Host embedded the suggestion portion of the IME inside the ho
 
 ### API Differences
 
-The major known difference between legacy and current is the implementation of UTF-8. The legacy host has extremely rudimentary and often incorrect support of UTF-8 with [code page 65001](/windows/win32/intl/code-pages). The current console host contains incremental improvements release-over-release of Windows 10 to improve this support. Applications that are attempting to rely on predicting "known incorrect" interpretations of UTF-8 from the legacy console will find themselves receiving different answers as support is improved.
+The major known difference between legacy and current is the implementation of UTF-8. The legacy host has extremely rudimentary and often incorrect support of UTF-8 with [code page 65001](/windows/win32/intl/code-pages). The current console host contains incremental improvements across Windows 10 and Windows 11 releases to improve this support. Applications that are attempting to rely on predicting "known incorrect" interpretations of UTF-8 from the legacy console will find themselves receiving different answers as support is improved.
 
 Other differences experienced with APIs should be reported to the [microsoft/terminal GitHub repository](https://github.com/microsoft/terminal/) or via the [Feedback Hub](/windows-insider/feedback-hub/feedback-hub-app) for triage and possible remediation.
