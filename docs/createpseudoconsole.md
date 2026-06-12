@@ -74,6 +74,8 @@ On the output stream, the [virtual terminal sequences](console-virtual-terminal-
 
 On the input stream, plain text represents standard keyboard keys input by a user. More complicated operations are represented by encoding control keys and mouse movements as [virtual terminal sequences](console-virtual-terminal-sequences.md) embedded in this stream.
 
+The `CreatePseudoConsole` function creates a process called the [Console Host](definitions.md#console-host) that is in charge of translating console activity to and from the input and output streams. This runs as a separate system process from any applications run within the same console. As such, security and isolation flags set during process creation can affect the ability of the Console Host to properly control console applications. For example, if a child process associated with a pseudo console is started with the [`CREATE_NEW_PROCESS_GROUP`](/windows/win32/procthread/process-creation-flags#CREATE_NEW_PROCESS_GROUP) flag, then the Console Host and the application will be running in different signalling groups, which prevents Ctrl-C and Ctrl-Break signals from propagating properly.
+
 The handle created by this function must be closed with [ClosePseudoConsole](closepseudoconsole.md) when operations are complete.
 
 If using `PSEUDOCONSOLE_INHERIT_CURSOR`, the calling application should be prepared to respond to the request for the cursor state in an asynchronous fashion on a background thread by forwarding or interpreting the request for cursor information that will be received on `hOutput` and replying on `hInput`. Failure to do so may cause the calling application to hang while making another request of the pseudoconsole system.
