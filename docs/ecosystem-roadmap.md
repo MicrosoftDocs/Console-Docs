@@ -99,13 +99,13 @@ In this time period, the [pseudoconsole](pseudoconsoles.md) infrastructure was i
 
 ### Terminal applications
 
-**\[2019-Now\]** This is the open source era for the console subsystem, focusing on the new Windows Terminal. Announced during the Microsoft Build conference in May 2019, Windows Terminal is entirely on GitHub at [microsoft/terminal](https://github.com/microsoft/terminal). Building the Windows Terminal application on top of the refined platform for [pseudoconsole](pseudoconsoles.md) will be the focus of this era, bringing a first-class terminal experience directly to developers on the Windows platform.
+**\[2019-Present\]** This is the open source era for the console subsystem. Windows Terminal was announced at the Microsoft Build conference in May 2019 and has been available on GitHub at [microsoft/terminal](https://github.com/microsoft/terminal) since its initial release. Built on top of the [pseudoconsole](pseudoconsoles.md) platform, Windows Terminal delivers a first-class terminal experience directly to developers on the Windows platform.
 
-**[Windows Terminal](/windows/terminal/)** intends not only to showcase the platform — including the [WinUI](/windows/apps/winui/) interface technology, the [MSIX](/windows/msix/) packaging model, and the [C++/WinRT](/windows/uwp/winrt-components/create-a-windows-runtime-component-in-cppwinrt) component architecture — but also as a validation of the platform itself. Windows Terminal is driving the Windows organization to open and evolve the app platform as necessary to continue to lift the productivity of developers. The Windows Terminal unique set of power user and developer requirements drive the modern Windows platform requirements for what those markets truly need from Windows.
+**[Windows Terminal](/windows/terminal/)** showcases the platform — including the [WinUI](/windows/apps/winui/) interface technology, the [MSIX](/windows/msix/) packaging model, and the [C++/WinRT](/windows/uwp/winrt-components/create-a-windows-runtime-component-in-cppwinrt) component architecture — and serves as a validation of the platform itself. Windows Terminal continues to drive the Windows organization to evolve the app platform for the needs of developers and power users.
 
-Inside the Windows operating system, this includes [retiring the classic console host user interface](./classic-vs-vt.md) from its default position in favor of [Windows Terminal](/windows/terminal/), [ConPTY](https://devblogs.microsoft.com/commandline/windows-command-line-introducing-the-windows-pseudo-console-conpty/), and [virtual terminal sequences](console-virtual-terminal-sequences.md).
+As of **Windows 11 version 22H2**, Windows Terminal is the **default terminal** on Windows, completing the goal of [retiring the classic console host user interface](./classic-vs-vt.md) from its default position in favor of [Windows Terminal](/windows/terminal/), [ConPTY](https://devblogs.microsoft.com/commandline/windows-command-line-introducing-the-windows-pseudo-console-conpty/), and [virtual terminal sequences](console-virtual-terminal-sequences.md).
 
-Lastly, this era intends to offer full choice over the default experience, whether it is the Windows Terminal product or any alternative terminals.
+Users have full choice over their default terminal experience. The default can be changed in **Windows Settings > Privacy & Security > For developers > Terminal**.
 
 ### Client support library
 
