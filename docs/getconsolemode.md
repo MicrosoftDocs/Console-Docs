@@ -67,6 +67,8 @@ If the function fails, the return value is zero. To get extended error informati
 
 To change a console's I/O modes, call [**SetConsoleMode**](setconsolemode.md) function.
 
+GetConsoleMode should not be used to determine whether a handle refers to a console. Instead, use [**NtQueryVolumeInformationFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntqueryvolumeinformationfile), which offers much better performance. See [Console Handles](console-handles.md).
+
 ## Examples
 
 For an example, see [Reading Input Buffer Events](reading-input-buffer-events.md).
